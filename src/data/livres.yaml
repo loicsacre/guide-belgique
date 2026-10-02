@@ -1,0 +1,12 @@
+# Les petits livres : un livre = une suite de chapitres (situations) + les fiches qu'ils mobilisent.
+# Rendus en PDF A5 (cahier, reMarkable) et en EPUB par `npm run export`. Voir CONTENT_MODEL.md.
+livres:
+  - id: entreprise
+    titre: Créer son entreprise
+    sous_titre: De l'indépendant à la société, comprendre ce qu'on signe et ce qu'on paie
+    couleur: '#2f6f5e'
+    chapitres:
+      - devenir-independant
+      - creer-societe
+    # Fiches ajoutées en annexe en plus de celles que les chapitres mobilisent (facultatif).
+    fiches: []

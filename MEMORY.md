@@ -30,8 +30,17 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 | 2026-10-02 | Situations = récits (concept introduit en contexte avant le lien) ; fiches = encyclopédie | Le lecteur décrochait entre une affirmation (« 7 ans ») et une fiche qui ne la démontrait pas. |
 | 2026-10-02 | Autolink avec infobulle plutôt que liens manuels partout | Couvre les 110 fiches sans réécriture ; `STOP` évite les mots trop génériques. |
 | 2026-10-02 | Bloc « ponts entre domaines » dans le parcours | Les mots polysémiques (revenu, dette, contrat…) sont la principale source de confusion entre domaines. |
+| 2026-10-02 | « Une source, plusieurs lectures » : modèle éditorial GBCF (`CONTENT_MODEL.md`) — web, mémo A4, fiche pratique A4, livre A5, EPUB, quiz | Lolo veut lire le guide sur liseuse, reMarkable et papier sans maintenir plusieurs contenus. |
+| 2026-10-02 | On étend le frontmatter (`memo`, `checklist`, `savoir`) et on ajoute `src/data/quiz/` et `livres.yaml`, sans dossier par contenu | Garde les URLs, les plugins et la validation existants ; pas de nouveau format de fichier. |
+| 2026-10-02 | Les PDF et l'EPUB partent du HTML rendu par Astro (pages `/imprimer/`), pas du Markdown brut | Pandoc sur le Markdown perdait `[[liens]]`, autolink, encadrés et composants MDX. |
+| 2026-10-02 | PDF via Chromium (playwright-core), EPUB écrit en Node (jszip), sans pandoc | Même chaîne sur le Mac, dans le cloud et en CI ; EPUB validé par epubcheck. |
+| 2026-10-02 | Cinq formes de savoir : comprendre (fiche), faire (situation), vérifier (document), calculer (outil), réagir (à venir) | Taxonomie commune aux quiz et aux portes d'entrée ; seul « réagir » manque comme type. |
+| 2026-10-02 | Le mémo et la checklist se rédigent à la main, situation par situation | Ils ne se déduisent pas du récit ; d'où un pilote avant de généraliser. |
 
 ## État actuel
+
+- **Passe 5 (2026-10-02, nuit) — une source, plusieurs lectures (pilote)** : modèle GBCF documenté dans `CONTENT_MODEL.md`. Pilote complet sur `creer-societe` : mémo, checklist par phases, quiz de 10 questions (QCM, vrai/faux, ordre, calcul), bandeau « Lire autrement » en tête de page, quiz interactif en bas. Pages papier `/imprimer/memo|fiche|fiches|livre/`, page `/bibliotheque/`, premier petit livre « Créer son entreprise » (devenir-independant + creer-societe + 27 fiches). `npm run export` produit mémo (1 page), fiche (3 pages), classeur, livre A5 (~107 pages, pages de notes, QR codes) et EPUB (epubcheck sans erreur). La CI installe Chromium et lance l'export : à vérifier au premier push. Commit local, pas encore poussé.
+- **Chantier maison (session précédente, non commité)** : 2 blocs dans `parcours.yaml` (« Comprendre sa maison », « Rénover sa maison », 22 notions), domaine `maison` dans `domains.mjs`, lien sidebar vers `/maison/` dont la page n'existe pas encore (lien cassé). Laissé hors du commit de la passe 5.
 
 - **Passe 4 (2026-10-02, nuit) — profondeur pédagogique** : les 14 situations réécrites en **récits** (concepts introduits en contexte, « Et si… ? », « Ce que tu dois retenir », « Nature des chiffres », sources propres). `louer-vs-acheter` démontre le point d'équilibre (3/7/15 ans × prix stable/+2 %/−1 %) et un 7e outil `louer-ou-acheter` le simule. **Autolink** : première occurrence d'un terme connu liée à sa fiche avec la définition courte en infobulle. Sources affichées en pied de toutes les pages (situations, documents, outils). Règles « magiques » (tiers des revenus, 7 ans, 10 % d'apport) requalifiées en repères. Site publié : https://loicsacre.github.io/guide-belgique/ (déploiement via `npm run deploy`).
 
@@ -45,6 +54,9 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 - Publié : repo public `loicsacre/guide-belgique`, Pages via GitHub Actions → https://loicsacre.github.io/guide-belgique/ (chaque push sur `main` redéploie).
 
 ## Prochaines étapes
+
+0. **Formats** : relire le pilote (PDF, EPUB sur une vraie liseuse, reMarkable), puis généraliser `memo` + `checklist` + quiz aux 13 autres situations ; d'autres livres (Travail & salaire, Argent & crédit, Acheter un logement, Comprendre sa maison) ; le type `reagir` (« J'ai reçu un courrier du SPF », « Fuite d'eau ») ; un quiz « reconnaître un document » à partir des composants Paper.
+0bis. **Maison** : créer la page `/maison/` (carte SVG des sous-systèmes, sur le modèle de `/systeme/`) et rédiger les 22 fiches directement au format GBCF.
 
 1. Repasser les 5 fiches `relecture` avec les sources officielles primaires (ONEM, SPF Finances, Régions).
 2. Lacunes identifiées (à ajouter dans `parcours.yaml` puis rédiger) : allocations familiales régionales ; congés thématiques (parental, crédit-temps) ; travail étudiant et flexi-jobs ; télétravail et frais propres ; pension de survie et GRAPA ; allocations de chômage : montants ; aide sociale / CPAS / revenu d'intégration ; crédit auto et leasing privé ; achat sur plan (loi Breyne, TVA) ; seconde résidence et location (fiscalité du bailleur) ; assurance revenu garanti ; protection juridique ; divorce et contributions alimentaires (détail) ; ASBL ; comptabilité simplifiée de l'indépendant ; dette publique et budget de l'État ; télécom et abonnements ; mobilité (budget mobilité, vélo) ; permis d'urbanisme.
@@ -60,6 +72,9 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 - Push sur le Mac de Lolo : `~/.ssh/config` pointe github.com vers `~/.ssh/github_id` (corrigé le 2026-10-02 ; `id_rsa.github` est refusée par GitHub). Le token `gh` n'a pas le scope `workflow`.
 - La CI fait `npm ci` (Node 22 / npm 10) : si « Missing … from lock file », régénérer le lock (`rm -rf node_modules package-lock.json && npm install`).
 - Ne pas copier `node_modules` d'une machine à l'autre (binaires natifs) : `npm install` sur chaque PC.
+- `npm run export` cherche Chromium : celui de Playwright (`npx playwright-core install chromium`), sinon Google Chrome installé, sinon `CHROME_PATH`. En session cloud : `CHROME_PATH=/opt/pw-browsers/chromium-*/chrome-linux/chrome`.
+- Quiz YAML : mettre entre apostrophes une question ou explication qui contient « : ».
+- EPUB : `export.mjs` nettoie le HTML (blocs expressive-code → `<pre>`, `align` → style, liens internes → fichiers du livre). Valider avec `epubcheck` (pip) après un changement de rendu.
 
 ## Journal des sessions
 
@@ -68,3 +83,4 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 - **2026-10-02 (soir)** — Mission « système pédagogique » : étapes de situations, documents annotés, outils, grand système, ponts, organisme, pourquoi-ça-existe, accueil six portes. Vérifié en navigateur (calculs des outils OK, pas d'erreur console).
 - **2026-10-02 (suite)** — Mission « encyclopédie » : 4 niveaux, domaines banque et économie, champs status/tags, section « Pour aller plus loin » (fiches dont celle-ci est prérequis), parcours étendu à 104 notions en 13 blocs. 90 fiches et 5 situations ajoutées → 104 fiches, 6 situations, 114 pages. Vérifications factuelles : voir État actuel.
 - **2026-10-02 (publication)** — Repo GitHub créé, push, Pages activé ; lockfile régénéré pour `npm ci`. Site en ligne.
+- **2026-10-02 (formats)** — Mission « une source, plusieurs lectures » : modèle GBCF, pilote `creer-societe` (mémo, checklist, quiz), pages d'impression, export PDF/EPUB, bibliothèque, livre « Créer son entreprise ». Correction factuelle : apports en argent sur compte bloqué avant l'acte, registre UBO dans le mois.

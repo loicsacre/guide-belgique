@@ -1,0 +1,55 @@
+---
+import Memo from './Memo.astro';
+import Checklist from './Checklist.astro';
+import { SITE_URL, inlineRenderer } from '../../lib/gbcf';
+import { getIndex, fmtDate, type Entry } from '../../lib/notions';
+import { qrSvg } from '../../lib/qr';
+interface Props { entry: Entry; numero?: number }
+const { entry, numero } = Astro.props;
+const d = entry.data;
+const url = `${SITE_URL}/${entry.id}/`;
+const qr = await qrSvg(url);
+const { fiches, notionsOf } = await getIndex();
+const h = await inlineRenderer();
+const notions = [...notionsOf(entry)].filter((s) => fiches.has(s)).map((s) => fiches.get(s)!);
+// Le mémo sans les chiffres ni le piège (repris plus bas) : les idées seulement en tête.
+const ideas = d.memo ? { memo: { ...d.memo, chemin: [], acteurs: [], documents: [], chiffres: [], piege: undefined } } : null;
+---
+<article class="fiche-pratique" id={`fp-${entry.id.split('/').pop()}`}>
+  <header class="print-head">
+    <div>
+      <div class="print-badge">Fiche pratique{numero ? ` n° ${String(numero).padStart(2, '0')}` : ''} · La vie adulte en Belgique</div>
+      <h1>{d.title}</h1>
+      {d.description && <p class="print-lede">{d.description}</p>}
+    </div>
+    <div class="print-qr"><Fragment set:html={qr} />Récit complet, calculs et quiz</div>
+  </header>
+
+  {ideas && <><h2>À retenir</h2><Memo data={ideas} /></>}
+  {d.memo?.chemin?.length > 0 && <><h3>Le chemin</h3><ol class="gb-flow">{d.memo.chemin.map((c: string) => <li><span set:html={h(c)} /></li>)}</ol></>}
+
+  {d.checklist.length > 0 && <><h2>Checklist</h2><Checklist data={d} /></>}
+
+
+  {d.memo && (d.memo.acteurs.length > 0 || d.memo.documents.length > 0 || d.memo.chiffres.length > 0) && (
+    <>
+      <h2>Qui, quels documents, quels chiffres</h2>
+      <div class="fp-details"><Memo data={{ memo: { ...d.memo, idees: [], chemin: [] } }} /></div>
+    </>
+  )}
+
+  {notions.length > 0 && (
+    <>
+      <h2>Les mots à connaître</h2>
+      <dl class="mini-glossaire">{notions.map((n) => <><dt>{n.data.title}</dt><dd>{n.data.short}</dd></>)}</dl>
+    </>
+  )}
+
+  <h3>Mes notes</h3>
+  <div class="notes-lines"></div>
+
+  <footer class="print-footer">
+    <span>Un résumé pour comprendre, pas un conseil personnalisé. Vérifié : {fmtDate(d.last_verified)}. Sources : voir la version en ligne.</span>
+    <span>{url.replace('https://', '')}</span>
+  </footer>
+</article>

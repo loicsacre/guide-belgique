@@ -1,0 +1,22 @@
+---
+// Mise en page des versions papier (mémo, fiche pratique, livre). Pas de Starlight : du HTML propre,
+// imprimable depuis le navigateur (Ctrl+P) et transformé en PDF / EPUB par `npm run export`.
+import '../styles/gbcf.css';
+import '../styles/print.css';
+interface Props { title: string; format: 'a4' | 'a5'; kind: 'memo' | 'fiche' | 'livre'; description?: string; lang?: string }
+const { title, format, kind, description } = Astro.props;
+---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <meta name="robots" content="noindex" />
+    <style is:inline set:html={`@page { size: ${format === 'a5' ? 'A5' : 'A4'}; margin: ${format === 'a5' ? '16mm 14mm 18mm' : '14mm 15mm 16mm'}; }`} />
+  </head>
+  <body class={`print print-${kind} print-${format}`}>
+    <slot />
+  </body>
+</html>

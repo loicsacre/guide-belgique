@@ -42,8 +42,18 @@ src/content/docs/
 src/pages/systeme.astro   « Le grand système » : carte SVG des domaines et des flux
 src/pages/parcours.astro  parcours, glossaire.astro
 src/data/parcours.yaml    tous les blocs et notions planifiées (14 blocs, dont « ponts »)
+src/data/quiz/<slug>.yaml le quiz d'un contenu (même nom que la page)
+src/data/livres.yaml      les petits livres (chapitres = situations)
+src/pages/imprimer/       versions papier : mémo, fiche pratique, classeur, livre
+src/pages/bibliotheque.astro  les téléchargements (PDF, EPUB)
+scripts/export.mjs        PDF (Chromium) + EPUB depuis les pages /imprimer/
 templates/fiche.md        modèle de fiche
+CONTENT_MODEL.md          le modèle éditorial (GBCF) : mémo, checklist, quiz, livres, cinq formes de savoir
 ```
+
+### Une source, plusieurs lectures
+
+Chaque contenu peut être lu comme page web, fiche imprimable, chapitre de livre et quiz. Les blocs structurés `memo:` et `checklist:` (frontmatter) et le quiz (`src/data/quiz/<slug>.yaml`) alimentent tous ces formats ; leur format est décrit dans **`CONTENT_MODEL.md`**, à lire avant d'en écrire. Une nouvelle situation reçoit d'emblée son mémo, sa checklist et 6 à 10 questions de quiz.
 
 ### Six portes d'entrée (architecture pédagogique)
 
@@ -55,6 +65,7 @@ templates/fiche.md        modèle de fiche
 | « Je veux comprendre le système » | `/systeme/` |
 | « Je dois lire ce document » | `documents/` (fictif, numéros cliquables) |
 | « Je veux calculer » | `outils/` (toujours avec l'avertissement « pédagogique ») |
+| « Je veux l'emporter » | `/bibliotheque/` (livres EPUB et A5, fiches pratiques A4, mémos, quiz) |
 
 - Les fiches sont **à plat** dans `fiches/` (le domaine est une métadonnée) : les liens ne cassent jamais quand on reclasse.
 - La sidebar est générée depuis le frontmatter (`domain`, `sidebar.order`).
@@ -66,7 +77,7 @@ templates/fiche.md        modèle de fiche
 | --- | --- |
 | `title`, `short` | Titre, définition en une phrase (affichée en tête et dans le glossaire). |
 | `kind: fiche` | Obligatoire. |
-| `domain` | `systeme`, `travail`, `securite-sociale`, `fiscalite`, `argent`, `credit`, `immobilier`, `investissement`, `comptabilite`, `entreprise`, `assurances`, `famille`, `quotidien` (voir `src/lib/domains.mjs`). |
+| `domain` | `systeme`, `travail`, `securite-sociale`, `fiscalite`, `argent`, `banque`, `credit`, `immobilier`, `investissement`, `comptabilite`, `entreprise`, `assurances`, `famille`, `maison`, `quotidien` (voir `src/lib/domains.mjs`). |
 | `level` | `essentiel`, `utile`, `approfondissement`. |
 | `nature` | `stable`, `mixte`, `regle-datee`. |
 | `scope` | `federal`, `wallonie`, `bruxelles`, `flandre`, `communal`. |
@@ -76,6 +87,7 @@ templates/fiche.md        modèle de fiche
 | `status`, `tags` | `publie` / `relecture` / `brouillon` ; mots-clés libres. |
 | `sources` | Au moins une source officielle `{ title, url, org }`. |
 | `last_verified`, `valid_for` | Date de vérification, période de validité des règles datées. |
+| `savoir`, `memo`, `checklist` | Facultatifs : forme de savoir, mémo d'une page, checklist par phases (voir `CONTENT_MODEL.md`). |
 
 ### Liens entre notions
 
@@ -110,7 +122,8 @@ Quand deux fiches se touchent, chacune garde un rôle précis : `cotisations-soc
 | « Montre-moi le guide » | Résumer la structure : domaines, fiches rédigées, progression du parcours. |
 | « Qu'est-ce que je devrais apprendre ensuite ? » | Partir de `parcours.yaml` et des prérequis des fiches existantes : proposer les 3 à 5 notions non rédigées les plus utiles. |
 | « Vérifie le guide » | `npm run check`, puis revérifier les fiches signalées comme anciennes ou en `relecture`. |
-| « Ajoute une situation / un document / un outil » | Respecter le format de la section correspondante ; déclarer toutes les notions mobilisées pour alimenter « Dans la vraie vie ». |
+| « Ajoute une situation / un document / un outil » | Respecter le format de la section correspondante ; déclarer toutes les notions mobilisées pour alimenter « Dans la vraie vie ». Pour une situation : `memo`, `checklist` et quiz (voir `CONTENT_MODEL.md`). |
+| « Fais un quiz / un mémo / une fiche pratique / un livre » | Suivre `CONTENT_MODEL.md`, puis `npm run build && npm run export` et vérifier les PDF (mémo sur 1 page, fiche sur 3 pages au plus). |
 
 Une question qui touche plusieurs domaines → montrer les connexions (ex. « j'achète une maison » → immobilier, crédit, notaire, droits d'enregistrement, assurances, fiscalité, budget, patrimoine).
 
@@ -123,6 +136,7 @@ npm run check        # cohérence : champs obligatoires, liens, fraîcheur
 npm run check:links  # les URLs des sources répondent-elles encore ?
 npm run build        # check + build statique dans dist/
 npm run new -- quotite-emprunt credit
+npm run export       # après build : PDF (mémos, fiches, livres A5) + EPUB dans dist/telechargements/
 npm run deploy -- "message"   # check + build + commit + push (merge, jamais de rebase)
 ```
 

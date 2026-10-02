@@ -1,0 +1,16 @@
+---
+// Fiche pratique : 1 à 3 pages A4 à glisser dans un classeur.
+// À retenir → checklist par phases → le fil daté → les chiffres → mini-glossaire des notions → notes.
+import Print from '../../../layouts/Print.astro';
+import FichePratique from '../../../components/gbcf/FichePratique.astro';
+import { practicalEntries } from '../../../lib/gbcf';
+import { slugOf } from '../../../lib/notions';
+
+export async function getStaticPaths() {
+  return (await practicalEntries()).map((entry) => ({ params: { slug: slugOf(entry) }, props: { entry } }));
+}
+const { entry } = Astro.props;
+---
+<Print title={`${entry.data.title} — fiche pratique`} format="a4" kind="fiche" description={entry.data.description}>
+  <FichePratique entry={entry} />
+</Print>

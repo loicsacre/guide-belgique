@@ -2,6 +2,10 @@
 // Surcharge Starlight : enveloppe le contenu des fiches et situations avec leurs métadonnées.
 import Default from '@astrojs/starlight/components/MarkdownContent.astro';
 import NotionLink from './NotionLink.astro';
+import Formats from './gbcf/Formats.astro';
+import Memo from './gbcf/Memo.astro';
+import Checklist from './gbcf/Checklist.astro';
+import Quiz from './gbcf/Quiz.astro';
 import { getIndex, slugOf, hrefOf, fmtDate } from '../lib/notions';
 import { LEVELS, NATURES, SCOPES, STATUSES, domainOf } from '../lib/domains.mjs';
 
@@ -75,6 +79,8 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
     </div>
   )}
 
+  {(isSituation || isFiche || isDocument || isOutil) && <Formats slug={slug} data={d} />}
+
   <slot />
 
   {isSituation && ctx.etapes.length > 0 && (
@@ -92,6 +98,23 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
       </ol>
     </>
   )}
+
+  {(d.checklist?.length ?? 0) > 0 && (
+    <>
+      <h2 id="checklist">Ta checklist</h2>
+      <Checklist data={d} />
+    </>
+  )}
+
+  {d.memo && (
+    <>
+      <h2 id="memo">Le mémo</h2>
+      <p class="not-content gb-hint">Tout ce qui précède, sur une page. Aussi en PDF via « Lire autrement » en haut de page.</p>
+      <Memo data={d} />
+    </>
+  )}
+
+  <Quiz slug={slug} />
 
   {(isSituation || isDocument || isOutil) && ctx.notions.length > 0 && (
     <>

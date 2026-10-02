@@ -51,3 +51,22 @@ export const SCOPES = {
   communal: 'Communal',
 };
 export const SCOPE_KEYS = Object.keys(SCOPES);
+
+// Les cinq formes de savoir (modèle éditorial, voir CONTENT_MODEL.md).
+// Chaque type de contenu répond par défaut à une forme ; une question de quiz ou un item peut en déclarer une autre.
+export const SAVOIRS = {
+  comprendre: { label: 'Comprendre', emoji: '🧠', kind: 'fiche', hint: 'Qu\'est-ce que c\'est, pourquoi ça existe ?' },
+  faire: { label: 'Savoir faire', emoji: '🔧', kind: 'situation', hint: 'Par quelles étapes passer, dans quel ordre ?' },
+  verifier: { label: 'Savoir vérifier', emoji: '📋', kind: 'document', hint: 'Lire un document, repérer une erreur.' },
+  calculer: { label: 'Savoir calculer', emoji: '🧮', kind: 'outil', hint: 'Passer d\'un chiffre à l\'autre.' },
+  reagir: { label: 'Savoir réagir', emoji: '🚨', kind: 'reagir', hint: 'Que faire quand quelque chose arrive ?' },
+};
+export const SAVOIR_KEYS = Object.keys(SAVOIRS);
+
+// Nature d'un chiffre (principe 0bis de CLAUDE.md).
+export const CHIFFRES = {
+  legal: { emoji: '🔴', label: 'Règle légale, datée' },
+  repere: { emoji: '🟠', label: 'Repère pratique' },
+  fictif: { emoji: '🔵', label: 'Exemple fictif' },
+};
+export const CHIFFRE_KEYS = Object.keys(CHIFFRES);

@@ -1,0 +1,10 @@
+---
+// Toutes les fiches pratiques, numérotées, en un seul PDF A4 (le classeur).
+import Print from '../../layouts/Print.astro';
+import FichePratique from '../../components/gbcf/FichePratique.astro';
+import { practicalEntries } from '../../lib/gbcf';
+const entries = await practicalEntries();
+---
+<Print title="Fiches pratiques — La vie adulte en Belgique" format="a4" kind="fiche">
+  {entries.map((entry, i) => <div class={i > 0 ? 'page-break' : ''}><FichePratique entry={entry} numero={i + 1} /></div>)}
+</Print>

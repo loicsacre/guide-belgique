@@ -1,0 +1,83 @@
+/* Feuille de style papier : mémo (A4, 1 page), fiche pratique (A4, 1-3 pages), livre (A5, cahier). */
+:root { --gb-accent: #2f6f5e; --gb-accent-low: #e6f0ec; --gb-line: #bbb; --gb-soft: #f3f3f3; --gb-muted: #555; --gb-text: #151515; --gb-bg: #fff; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body.print { margin: 0 auto; max-width: 210mm; color: var(--gb-text); background: #fff; font: 10.5pt/1.45 'Charter', 'Georgia', 'Iowan Old Style', serif; }
+body.print-a5 { max-width: 148mm; font-size: 10pt; line-height: 1.5; }
+@media screen { body.print { padding: 12mm; box-shadow: 0 0 0 1px #ddd; margin: 1rem auto; } }
+.print h1, .print h2, .print h3, .print h4, .gb-memo-title, .gb-flow, .gb-savoir, .print-badge, .print-footer, .cover { font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif; }
+.print h1 { font-size: 20pt; line-height: 1.15; margin: 0 0 0.3rem; }
+.print h2 { font-size: 13pt; margin: 1.2rem 0 0.4rem; color: var(--gb-accent); break-after: avoid; }
+.print h3 { font-size: 11pt; margin: 0.9rem 0 0.3rem; break-after: avoid; }
+.print p, .print li { orphans: 3; widows: 3; }
+.print a { color: inherit; text-decoration: underline; text-decoration-color: #9bb; text-underline-offset: 2px; }
+.print table { border-collapse: collapse; width: 100%; font-size: 0.9em; margin: 0.6rem 0; break-inside: avoid; }
+.print th, .print td { border-bottom: 1px solid #ddd; padding: 0.2rem 0.35rem; text-align: left; vertical-align: top; }
+.print th { border-bottom: 1.5px solid #888; }
+.print pre { white-space: pre-wrap; font-size: 0.82em; background: var(--gb-soft); padding: 0.5rem; border-radius: 3px; break-inside: avoid; }
+.print code { font-size: 0.9em; }
+.print aside, .print .starlight-aside { border-left: 3px solid var(--gb-accent); background: var(--gb-soft); padding: 0.4rem 0.7rem; margin: 0.7rem 0; break-inside: avoid; }
+.print .starlight-aside__title { font-weight: 700; font-family: sans-serif; font-size: 0.9em; display: flex; gap: 0.3rem; align-items: center; }
+.print .starlight-aside__icon { width: 1em; height: 1em; }
+.print .notion-todo { font-style: italic; }
+.print .expressive-code .copy, .print .expressive-code button { display: none; }
+
+/* En-tête et pied communs */
+.print-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; border-bottom: 3px solid var(--gb-accent); padding-bottom: 0.4rem; margin-bottom: 0.7rem; }
+.print-badge { font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gb-accent); font-weight: 700; }
+.print-lede { margin: 0.2rem 0 0; color: var(--gb-muted); font-size: 0.95em; }
+.print-qr { flex: none; width: 21mm; text-align: center; font: 6.5pt/1.2 sans-serif; color: var(--gb-muted); }
+.print-qr svg { width: 21mm; height: 21mm; display: block; }
+.print-footer { margin-top: 0.8rem; padding-top: 0.3rem; border-top: 1px solid #ccc; font-size: 7.5pt; color: var(--gb-muted); display: flex; justify-content: space-between; gap: 1rem; }
+
+/* Mémo : tout sur une page */
+.print-memo .gb-memo { border: none; padding: 0; margin: 0; font-size: 9.6pt; }
+.print-memo .gb-memo h4 { margin-top: 0.7rem; }
+.print-memo .gb-memo-idees ol { grid-template-columns: repeat(3, 1fr); }
+.print-memo .gb-memo-cols { grid-template-columns: 1fr 1fr; }
+
+/* Fiche pratique */
+.fp-details .gb-memo { border: none; padding: 0; margin: 0; }
+.gb-memo-chiffres table { break-inside: auto; }
+.gb-memo-chiffres tr { break-inside: avoid; }
+.print-fiche .gb-checklist { grid-template-columns: 1fr 1fr; gap: 0.3rem 1.4rem; margin: 0.4rem 0; }
+.print-fiche .gb-checklist li { font-size: 9.5pt; margin: 0.15rem 0; }
+.print-fiche .gb-memo { font-size: 9.3pt; }
+.print-fiche .gb-memo-idees ol { grid-template-columns: repeat(3, 1fr); }
+.fil { width: 100%; font-size: 9pt; }
+.fil td:first-child { white-space: nowrap; color: var(--gb-muted); width: 1%; }
+.fil td:nth-child(2) { font-weight: 700; width: 28%; }
+.mini-glossaire { columns: 2; column-gap: 1.2rem; font-size: 8.6pt; margin: 0.3rem 0; }
+.mini-glossaire dt { font-weight: 700; break-after: avoid; }
+.mini-glossaire dd { margin: 0 0 0.3rem; break-inside: avoid; }
+.page-break { break-before: page; }
+.notes-lines { height: 60mm; background: repeating-linear-gradient(#fff 0 7.5mm, #ccc 7.5mm calc(7.5mm + 1px)); margin-top: 0.4rem; }
+
+/* Livre (A5, cahier) */
+.cover { height: 175mm; display: flex; flex-direction: column; justify-content: space-between; padding: 6mm 2mm; break-after: page; }
+.cover-kicker { text-transform: uppercase; letter-spacing: 0.12em; font-size: 8pt; color: var(--gb-muted); }
+.cover h1 { font-size: 28pt; margin-top: 30mm; color: var(--gb-cover, var(--gb-accent)); }
+.cover-sub { font-size: 12pt; color: var(--gb-muted); margin-top: 0.5rem; }
+.cover-bar { height: 6mm; background: var(--gb-cover, var(--gb-accent)); border-radius: 2px; }
+.cover-meta { font-size: 8pt; color: var(--gb-muted); }
+.toc { break-after: page; }
+.toc ol { padding-left: 1.2rem; }
+.toc li { margin: 0.2rem 0; }
+.toc .toc-part { margin: 0.8rem 0 0.2rem; font-weight: 700; font-family: sans-serif; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gb-accent); }
+.part-title { break-before: page; break-after: page; height: 160mm; display: flex; flex-direction: column; justify-content: center; }
+.part-title h1 { color: var(--gb-accent); }
+.chapitre { break-before: page; }
+.chapitre > header h1 { font-size: 18pt; }
+.chapitre .bloc { break-before: page; }
+.chapitre .bloc.keep { break-before: auto; }
+.print-a5 .gb-memo-idees ol { grid-template-columns: 1fr; }
+.print-a5 .gb-memo-cols, .print-a5 .gb-checklist { grid-template-columns: 1fr; }
+.print-a5 .gb-memo { font-size: 9.3pt; }
+.annexe-fiche { break-before: page; }
+.annexe-fiche .fiche-short { border-left: 3px solid var(--gb-accent); padding: 0.3rem 0.6rem; background: var(--gb-accent-low); }
+.notes-page { break-before: page; }
+.notes-page .notes-lines { height: 150mm; }
+.online { font-size: 0.85em; border: 1px dashed #999; padding: 0.4rem 0.6rem; border-radius: 3px; }
+
+.print .sl-anchor-link { display: none; }
+.toc ol, .toc ul { margin: 0; }

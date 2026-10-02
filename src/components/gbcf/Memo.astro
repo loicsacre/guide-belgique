@@ -1,0 +1,50 @@
+---
+// Le mémo : une page, relu en deux minutes. Rendu identique sur le web, en PDF et dans les livres.
+import { inlineRenderer } from '../../lib/gbcf';
+import { CHIFFRES } from '../../lib/domains.mjs';
+interface Props { data: any; title?: string }
+const { data, title } = Astro.props;
+const m = data.memo;
+const h = await inlineRenderer();
+---
+{m && (
+  <div class="gb-memo">
+    {title && <div class="gb-memo-title">{title}<span>l'essentiel</span></div>}
+    {m.idees.length > 0 && (
+      <section class="gb-memo-idees">
+        <h4>{m.idees.length === 3 ? '3 choses à comprendre' : 'À comprendre'}</h4>
+        <ol>{m.idees.map((i: any) => <li><strong set:html={h(i.titre)} /><span set:html={h(i.texte)} /></li>)}</ol>
+      </section>
+    )}
+    {m.chemin.length > 0 && (
+      <section class="gb-memo-chemin">
+        <h4>Le chemin</h4>
+        <ol class="gb-flow">{m.chemin.map((c: string) => <li><span set:html={h(c)} /></li>)}</ol>
+      </section>
+    )}
+    <div class="gb-memo-cols">
+      {m.acteurs.length > 0 && (
+        <section>
+          <h4>Qui fait quoi</h4>
+          <dl>{m.acteurs.map((a: any) => <><dt set:html={h(a.qui)} /><dd set:html={h(a.role)} /></>)}</dl>
+        </section>
+      )}
+      {m.documents.length > 0 && (
+        <section>
+          <h4>Les documents</h4>
+          <dl>{m.documents.map((d: any) => <><dt><span set:html={h(d.nom)} />{d.quand && <small> · {d.quand}</small>}</dt>{d.texte && <dd set:html={h(d.texte)} />}</>)}</dl>
+        </section>
+      )}
+    </div>
+    {m.chiffres.length > 0 && (
+      <section class="gb-memo-chiffres">
+        <h4>Les chiffres</h4>
+        <table>
+          <tbody>{m.chiffres.map((c: any) => <tr><td class="v">{c.valeur}</td><td set:html={h(c.sens)} /><td class="n" title={CHIFFRES[c.nature as keyof typeof CHIFFRES].label}>{CHIFFRES[c.nature as keyof typeof CHIFFRES].emoji}</td></tr>)}</tbody>
+        </table>
+        <p class="gb-legend">🔴 règle légale, datée · 🟠 repère pratique · 🔵 exemple fictif</p>
+      </section>
+    )}
+    {m.piege && <p class="gb-memo-piege"><strong>Le piège classique — </strong><span set:html={h(m.piege)} /></p>}
+  </div>
+)}

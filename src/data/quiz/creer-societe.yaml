@@ -1,0 +1,109 @@
+# Quiz de la situation « Je crée une société » (src/content/docs/situations/creer-societe.md).
+# Format : voir CONTENT_MODEL.md, section Quiz.
+titre: As-tu compris comment fonctionne une société ?
+questions:
+  - id: ca-benefice
+    type: qcm
+    savoir: calculer
+    question: 'Une SRL réalise 100 000 € de chiffre d''affaires et a 70 000 € de charges. Quel est son bénéfice avant impôt ?'
+    choix: ['100 000 €', '70 000 €', '30 000 €', 'Impossible à savoir']
+    reponse: 2
+    explication: 'Le chiffre d''affaires, ce sont les ventes. On en retire les charges (achats, loyers, rémunérations, amortissements) pour obtenir le résultat. 100 000 − 70 000 = 30 000 €. C''est sur ce montant, pas sur les ventes, que l''impôt des sociétés est calculé.'
+    notions: [chiffre-affaires-marge-benefice, impot-des-societes]
+
+  - id: capital-minimum
+    type: vrai-faux
+    savoir: comprendre
+    question: '« Pour créer une SRL, il faut un capital minimum de 18 550 €. »'
+    reponse: false
+    explication: 'Faux depuis le Code des sociétés et des associations de 2019. Il n''y a plus de capital minimum, mais des fonds propres suffisants pour l''activité prévue, justifiés par un plan financier sur deux ans. S''ils étaient manifestement insuffisants et que la société fait faillite dans les trois ans, les fondateurs peuvent en répondre personnellement.'
+    notions: [actif-passif-bilan]
+
+  - id: ou-est-le-gain
+    type: qcm
+    savoir: comprendre
+    question: 'D''où vient l''avantage fiscal d''une société par rapport à la personne physique ?'
+    choix:
+      - La société ne paie pas de cotisations sociales
+      - Le bénéfice laissé dans la société est taxé à 20-25 % au lieu de 50 %
+      - Tout ce que la société dépense est déductible
+      - Les dividendes ne sont pas taxés
+    reponse: 1
+    explication: 'Le gain vient du bénéfice que tu ne sors pas. Laissé dans la société, il est taxé à l''impôt des sociétés (20 % ou 25 %) au lieu des tranches les plus hautes de l''IPP. Dès que tu le sors, il est taxé une seconde fois. Si tu as besoin de tout pour vivre, la société coûte plus qu''elle ne rapporte.'
+    notions: [personne-physique-vs-societe, tranches-imposition]
+
+  - id: ordre-creation
+    type: ordre
+    savoir: faire
+    question: 'Remets les étapes de création d''une SRL dans l''ordre.'
+    ordre:
+      - Faire établir le plan financier
+      - Verser les apports sur un compte bloqué
+      - Signer l'acte chez le notaire
+      - Recevoir le numéro d'entreprise (BCE)
+      - Inscrire les bénéficiaires au registre UBO
+      - Déposer les premiers comptes annuels
+    explication: 'Le plan financier et l''attestation bancaire sont remis au notaire le jour de l''acte. L''acte fait naître la société, qui reçoit ensuite son numéro BCE. Le registre UBO se remplit dans le mois. Les comptes annuels arrivent après la clôture du premier exercice.'
+    notions: [notaire-acte-authentique, bce-numero-entreprise]
+
+  - id: isoc-calcul
+    type: nombre
+    savoir: calculer
+    question: 'Une petite SRL qui remplit les conditions du taux réduit a 40 000 € de bénéfice imposable. Combien d''impôt des sociétés paie-t-elle ?'
+    reponse: 8000
+    unite: €
+    tolerance: 0
+    explication: 'Les premiers 100 000 € de bénéfice d''une petite société sont taxés à 20 % si les conditions sont remplies. 40 000 × 20 % = 8 000 €. Sans le taux réduit, ce serait 25 %, soit 10 000 €.'
+    notions: [impot-des-societes]
+
+  - id: taux-reduit-auto
+    type: vrai-faux
+    savoir: comprendre
+    question: '« Toute SRL paie automatiquement 20 % d''impôt sur ses premiers 100 000 € de bénéfice. »'
+    reponse: false
+    explication: 'Le taux réduit a des conditions. La société doit être petite, ne pas être détenue à plus de 50 % par d''autres sociétés, et verser à au moins un dirigeant une rémunération d''au moins 45 000 € (ou égale au bénéfice si celui-ci est plus bas). Sinon, tout le bénéfice est taxé à 25 %.'
+    notions: [impot-des-societes]
+
+  - id: cuisine
+    type: qcm
+    savoir: reagir
+    question: 'Ta SRL a 40 000 € sur son compte. Tu paies ta nouvelle cuisine avec. Qu''est-ce qui vient de se passer ?'
+    choix:
+      - Rien, c'est ta société, c'est ton argent
+      - Tu as emprunté de l'argent à ta société
+      - La cuisine devient déductible
+      - La société a payé un dividende exonéré
+    reponse: 1
+    explication: 'L''argent de la société n''est pas le tien. Tu lui dois maintenant 40 000 € (un compte courant débiteur). Elle doit te facturer des intérêts, sinon le fisc calcule des intérêts fictifs taxés chez toi comme un avantage, et il peut requalifier le tout en rémunération ou en dividende. La bonne voie, c''est de te verser une rémunération ou un dividende.'
+    notions: [personne-physique-vs-societe]
+
+  - id: dividende-net
+    type: nombre
+    savoir: calculer
+    question: 'Ta société te verse un dividende brut de 10 000 € au précompte mobilier normal. Combien arrive sur ton compte ?'
+    reponse: 7000
+    unite: €
+    tolerance: 0
+    explication: 'Le précompte mobilier normal est de 30 %. La société le retient et le verse à l''État, c''est un impôt définitif. 10 000 − 3 000 = 7 000 €. Il existe des taux réduits (VVPR-bis, réserve de liquidation) sous conditions.'
+    notions: [precompte-mobilier]
+
+  - id: comptes-publics
+    type: vrai-faux
+    savoir: verifier
+    question: '« Les comptes annuels de ta SRL sont confidentiels : seuls toi, ton comptable et le fisc les voient. »'
+    reponse: false
+    explication: 'Ils sont déposés à la Banque nationale et deviennent publics. Clients, concurrents ou banques peuvent consulter ton bilan et ton résultat.'
+    notions: [actif-passif-bilan]
+
+  - id: caution
+    type: qcm
+    savoir: reagir
+    question: 'La banque prête 50 000 € à ta SRL et te demande de signer une caution personnelle. Si la société ne rembourse pas, ta maison est-elle protégée par la responsabilité limitée ?'
+    choix:
+      - Oui, la responsabilité limitée protège tout ton patrimoine privé
+      - Non, la caution t'engage personnellement envers la banque
+      - Oui, sauf si tu es marié·e
+      - Seulement si le prêt dépasse le capital
+    reponse: 1
+    explication: 'La responsabilité limitée protège ton patrimoine des dettes de la société. Une caution est un engagement personnel séparé, signé par toi. Si la société ne paie pas, la banque peut se retourner contre toi. Elle en demande presque toujours une aux petites sociétés.'
+    notions: [personne-physique-vs-societe, responsabilite]
