@@ -67,3 +67,10 @@
 .systeme svg { width: 100%; height: auto; }
 .systeme a { text-decoration: none; }
 .systeme a:hover rect { stroke-width: 3; }
+
+/* Liens automatiques vers les fiches : discrets, avec infobulle (définition courte) */
+a.autolink { color: inherit; text-decoration: underline dotted var(--sl-color-gray-3); text-underline-offset: 3px; cursor: help; }
+a.autolink:hover { color: var(--sl-color-text-accent); text-decoration-style: solid; }
+/* Encadré « nature de l'information » */
+.sl-markdown-content .starlight-aside--tip .starlight-aside__title::before { content: ''; }
+.repere { border-left: 4px solid var(--sl-color-orange); background: var(--sl-color-orange-low); padding: .6rem .9rem; border-radius: .3rem; font-size: var(--sl-text-sm); }

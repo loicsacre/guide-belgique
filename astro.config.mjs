@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 import { unified } from '@astrojs/markdown-remark';
 import { buildSidebar } from './src/lib/fiches.mjs';
 import remarkWikilinks from './src/lib/remark-wikilinks.mjs';
+import remarkAutolink from './src/lib/remark-autolink.mjs';
 
 // GitHub Pages : https://<user>.github.io/<repo>/  — surchargeable via variables d'environnement.
 const SITE = process.env.SITE ?? 'https://loicsacre.github.io';
@@ -13,7 +14,7 @@ const REPO = process.env.REPO ?? 'https://github.com/loicsacre/guide-belgique';
 export default defineConfig({
   site: SITE,
   base: BASE,
-  markdown: { processor: unified({ remarkPlugins: [[remarkWikilinks, { base: BASE }]] }) },
+  markdown: { processor: unified({ remarkPlugins: [[remarkWikilinks, { base: BASE }], [remarkAutolink, { base: BASE }]] }) },
   integrations: [
     starlight({
       title: 'La vie adulte en Belgique',

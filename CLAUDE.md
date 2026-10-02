@@ -16,6 +16,9 @@ Un trentenaire résidant en Belgique, intelligent mais non spécialiste, qui par
 
 ## Principes de rédaction
 
+0. **Les situations sont des récits, les fiches des encyclopédies.** Une situation raconte ce qui arrive à une personne, étape par étape ; chaque notion technique est **introduite dans le contexte, expliquée immédiatement en langage simple, illustrée si utile, puis seulement liée** vers la fiche. Le lecteur doit comprendre l'histoire sans cliquer. Mauvais : « Regarde le TAEG, la quotité et le capital restant dû. » Bon : « La banque te prête 200 000 €. Tu rembourseras davantage : une partie de chaque mensualité est de l'intérêt, et il y a des frais. Pour comparer deux offres, tu rencontreras le **TAEG**, un pourcentage qui réunit intérêts et frais obligatoires selon une formule unique. » Chaque situation se termine par « Ce que tu dois retenir » et « Nature des chiffres de cette page ».
+0bis. **Aucune règle magique.** Toute affirmation chiffrée dit sa nature : 🔴 règle légale ou administrative (datée, régionalisée), 🟠 repère pratique ou pratique bancaire (ordre de grandeur, à expliquer), 🔵 exemple fictif (chiffres inventés, signalés). « Il faut rester 7 ans » est interdit ; « on cite souvent 7 à 10 ans : c'est le temps typique, à prix stable, pour amortir les frais d'entrée ; le point d'équilibre dépend de… » est attendu, suivi d'une démonstration chiffrée ou d'un lien vers l'outil qui la fait.
+
 1. **Montrer les flux, pas des définitions isolées.** Qui paie, qui reçoit, quand, pourquoi, ce qui se passe si on ne fait rien. Schémas texte (`text`), tableaux, exemples chiffrés.
 2. **Contexte belge strict.** Signaler explicitement quand une règle est régionale (Wallonie / Bruxelles / Flandre) et ne jamais présenter une règle régionale comme belge.
 3. **Distinguer la nature de l'information** :
@@ -82,11 +85,13 @@ Dans le texte : `[[slug]]` ou `[[slug|libellé]]` (dans un tableau : `[[slug\|li
 
 Sections habituelles (adapter si une section n'apporte rien) : *En langage simple* → *Pourquoi ça existe* → *Comment ça marche* (flux) → *Exemple concret* → *Ce que ça change pour toi* → *À ne pas confondre*. Qui paie / qui reçoit / quand en tableau quand c'est pertinent.
 
+Les termes connus (titres courts et alias des fiches) sont **liés automatiquement** à leur première occurrence dans une page, avec la définition courte en infobulle (`src/lib/remark-autolink.mjs`, liste de mots exclus `STOP`). Un `[[slug]]` explicite reste prioritaire. Cela ne dispense pas d'expliquer un terme dans le contexte : le lien sert à approfondir.
+
 Sont **générés automatiquement** en pied de fiche, ne pas les écrire à la main : « Voir aussi » (`related`), « Pour aller plus loin » (fiches dont celle-ci est prérequis), « Cette notion est aussi citée par », « Dans la vraie vie » (situations, documents et outils qui citent le slug), sources, navigation ← → du parcours.
 
 ### Situations (chaînes de vie)
 
-Frontmatter `etapes:` : liste de `{ titre, quand, texte, notions: [slugs] }` dans l'ordre chronologique. Le corps Markdown ne contient que l'intro, les tableaux de pièges et les repères ; la timeline et la liste des notions sont rendues automatiquement.
+Frontmatter `etapes:` : liste de `{ titre, quand, texte, notions: [slugs] }` dans l'ordre chronologique, rendue en fin de page comme « Le fil en bref ». Le corps Markdown est le **récit** (voir principe 0) : situation humaine → problème → mécanismes introduits au moment utile → variantes (« Et si… ? ») → « Ce que tu dois retenir » → « Nature des chiffres de cette page ». Chaque situation a ses propres `sources` (affichées en pied de page) et `last_verified`.
 
 ### Documents annotés
 

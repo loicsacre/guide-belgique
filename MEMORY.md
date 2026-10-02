@@ -27,9 +27,13 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 | 2026-10-02 | Documents annotés en MDX avec composants Paper/Row/Legend, données fictives explicites | Numéros cliquables → fiches ; aucun risque de donnée réelle. |
 | 2026-10-02 | Outils = composants Astro avec `<script>` vanilla, un fichier par outil, avertissement automatique via `kind: outil` | Pas de framework, build statique, testable. |
 | 2026-10-02 | Carte du système en SVG généré dans `systeme.astro` (nœuds/flèches en données) | Modifiable sans dessiner ; couleurs via variables Starlight (thèmes clair/sombre). |
+| 2026-10-02 | Situations = récits (concept introduit en contexte avant le lien) ; fiches = encyclopédie | Le lecteur décrochait entre une affirmation (« 7 ans ») et une fiche qui ne la démontrait pas. |
+| 2026-10-02 | Autolink avec infobulle plutôt que liens manuels partout | Couvre les 110 fiches sans réécriture ; `STOP` évite les mots trop génériques. |
 | 2026-10-02 | Bloc « ponts entre domaines » dans le parcours | Les mots polysémiques (revenu, dette, contrat…) sont la principale source de confusion entre domaines. |
 
 ## État actuel
+
+- **Passe 4 (2026-10-02, nuit) — profondeur pédagogique** : les 14 situations réécrites en **récits** (concepts introduits en contexte, « Et si… ? », « Ce que tu dois retenir », « Nature des chiffres », sources propres). `louer-vs-acheter` démontre le point d'équilibre (3/7/15 ans × prix stable/+2 %/−1 %) et un 7e outil `louer-ou-acheter` le simule. **Autolink** : première occurrence d'un terme connu liée à sa fiche avec la définition courte en infobulle. Sources affichées en pied de toutes les pages (situations, documents, outils). Règles « magiques » (tiers des revenus, 7 ans, 10 % d'apport) requalifiées en repères. Site publié : https://loicsacre.github.io/guide-belgique/ (déploiement via `npm run deploy`).
 
 - **Passe 3 (2026-10-02, soir) — système pédagogique** : 110 fiches (6 ponts ajoutés : revenu, dette, contrat, responsabilite, statut-familial, residence-fiscale), **14 chaînes de vie** avec étapes chronologiques en frontmatter, **9 documents annotés** (fiche de paie, AER, facture énergie, offre de crédit, tableau d'amortissement, compromis, extrait bancaire, facture, contrat de travail), **6 outils** (crédit, budget, patrimoine, intérêts composés, épargne/réserve, brut→net), page **Le grand système** (SVG cliquable + flèches expliquées), accueil à six portes d'entrée, champ `organisme` sur toutes les fiches, section « Pourquoi ça existe » sur 15 fiches clés, pied de fiche « Dans la vraie vie » généré (situations / documents / outils citant la notion). Build : 143 pages.
 
@@ -60,6 +64,7 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 ## Journal des sessions
 
 - **2026-10-02** — Cadrage du guide, structure en 15 parties, prompt maître (→ `CLAUDE.md`). Scaffold Astro Starlight, schéma de fiche, sidebar/glossaire/parcours automatiques, workflow Pages. 14 fiches + 1 situation.
+- **2026-10-02 (nuit)** — Mission « profondeur pédagogique » : récits, autolink, sources partout, outil louer/acheter, requalification des repères.
 - **2026-10-02 (soir)** — Mission « système pédagogique » : étapes de situations, documents annotés, outils, grand système, ponts, organisme, pourquoi-ça-existe, accueil six portes. Vérifié en navigateur (calculs des outils OK, pas d'erreur console).
 - **2026-10-02 (suite)** — Mission « encyclopédie » : 4 niveaux, domaines banque et économie, champs status/tags, section « Pour aller plus loin » (fiches dont celle-ci est prérequis), parcours étendu à 104 notions en 13 blocs. 90 fiches et 5 situations ajoutées → 104 fiches, 6 situations, 114 pages. Vérifications factuelles : voir État actuel.
 - **2026-10-02 (publication)** — Repo GitHub créé, push, Pages activé ; lockfile régénéré pour `npm ci`. Site en ligne.

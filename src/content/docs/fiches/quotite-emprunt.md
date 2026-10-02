@@ -63,7 +63,7 @@ Sans oublier de **garder** ton [[epargne-de-precaution]] : une maison crée des 
 
 ```text
 Revenus nets du ménage : 4 200 €
-× ≈ 33 % (règle du tiers)  = 1 400 € de mensualité maximale (tous crédits confondus)
+× ≈ 33 % (« règle du tiers » : une habitude bancaire, pas une loi)  = 1 400 € de mensualité maximale (tous crédits confondus)
 → à 3 % sur 25 ans ≈ 295 000 € empruntables
 ```
 

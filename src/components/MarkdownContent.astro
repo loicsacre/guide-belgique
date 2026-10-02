@@ -79,7 +79,8 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
 
   {isSituation && ctx.etapes.length > 0 && (
     <>
-      <h2 id="etapes">Les étapes, dans l'ordre</h2>
+      <h2 id="etapes">Le fil en bref</h2>
+      <p class="not-content" style="font-size:var(--sl-text-sm);color:var(--sl-color-gray-3)">Le récit ci-dessus, résumé étape par étape, avec les notions à approfondir.</p>
       <ol class="timeline not-content">
         {ctx.etapes.map((e: any, k: number) => (
           <li>
@@ -99,6 +100,16 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
         {ctx.notions.map((n: any) => <li class={n.written ? 'done' : ''}><NotionLink {...n} /></li>)}
       </ul>
     </>
+  )}
+
+  {!isFiche && (d.sources?.length ?? 0) > 0 && (
+    <footer class="fiche-footer not-content">
+      <section>
+        <h3>Sources</h3>
+        <ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener">{s.title}</a>{s.org && <> — {s.org}</>}</li>)}</ul>
+        {d.last_verified && <p style="font-size:var(--sl-text-xs);color:var(--sl-color-gray-3)">Vérifié : {fmtDate(d.last_verified)}{d.valid_for && <> · valable pour : {d.valid_for}</>}</p>}
+      </section>
+    </footer>
   )}
 
   {isFiche && (

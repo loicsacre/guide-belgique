@@ -1,0 +1,54 @@
+---
+// Louer ou acheter : compare, à chaque horizon, ce que le propriétaire récupère en revendant
+// (prix − capital restant dû − frais de vente) à ce que le locataire aurait accumulé
+// (apport placé + différence de flux mensuels). Modèle volontairement simple, hypothèses visibles.
+---
+<div class="tool not-content">
+  <strong>Achat</strong>
+  <label>Prix du bien (€) <input type="number" id="la-prix" value="250000" step="5000" /></label>
+  <label>Frais d'acquisition et de crédit (€) <input type="number" id="la-frais" value="15800" step="500" /></label>
+  <label>Apport hors frais (€) <input type="number" id="la-apport" value="50000" step="5000" /></label>
+  <label>Taux du crédit (%) <input type="number" id="la-taux" value="3" step="0.1" /></label>
+  <label>Durée du crédit (années) <input type="number" id="la-duree" value="25" step="1" min="5" max="35" /></label>
+  <label>Coûts annuels du propriétaire : précompte immobilier, assurance, entretien, charges non récupérables (€/an) <input type="number" id="la-charges" value="4250" step="250" /></label>
+  <label>Évolution annuelle du prix du bien (%) <input type="number" id="la-evol" value="0" step="0.5" min="-5" max="8" /></label>
+  <label>Frais de revente (% du prix : agence, mainlevée) <input type="number" id="la-vente" value="2" step="0.5" min="0" max="6" /></label>
+  <strong>Location</strong>
+  <label>Loyer mensuel équivalent (€) <input type="number" id="la-loyer" value="950" step="25" /></label>
+  <label>Indexation annuelle du loyer (%) <input type="number" id="la-index" value="2" step="0.5" /></label>
+  <label>Rendement annuel net de l'argent non immobilisé (%) <input type="number" id="la-rend" value="2" step="0.5" /></label>
+  <div class="tool-out">
+    <div id="la-head"></div>
+    <table style="margin-top:.5rem"><thead><tr><th>Après</th><th>Le propriétaire récupère</th><th>Le locataire a accumulé</th><th>Écart</th></tr></thead><tbody id="la-table"></tbody></table>
+    <div id="la-be" style="margin-top:.5rem;font-weight:600"></div>
+  </div>
+  <p style="font-size:var(--sl-text-xs);margin-top:.5rem">Modèle : chaque mois, le propriétaire paie mensualité + charges ; le locataire paie son loyer et place la différence (si elle est positive) au rendement indiqué, en plus de son apport et des frais qu'il n'a pas dépensés. « Récupère » = prix de revente − capital restant dû − frais de revente. Rien sur la fiscalité, la plus-value éventuelle non taxée, les travaux imprévus, ni la valeur non financière d'être chez soi.</p>
+</div>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const eur = (n: number) => n.toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  const ids = ['la-prix','la-frais','la-apport','la-taux','la-duree','la-charges','la-evol','la-vente','la-loyer','la-index','la-rend'];
+  function calc() {
+    const v = Object.fromEntries(ids.map((i) => [i, +$(i).value || 0]));
+    const P = v['la-prix'], L = Math.max(0, P - v['la-apport']), r = v['la-taux'] / 100 / 12, n = v['la-duree'] * 12;
+    const m = r === 0 ? L / n : (L * r) / (1 - Math.pow(1 + r, -n));
+    const rm = v['la-rend'] / 100 / 12;
+    let bal = L, renter = v['la-apport'] + v['la-frais'], rent = v['la-loyer'], rows = '', be: number | null = null;
+    const horizons = [1, 3, 5, 7, 10, 15, 20, 25];
+    $('la-head').innerHTML = `Emprunt ${eur(L)} · mensualité <strong>${eur(m)}</strong> + charges ${eur(v['la-charges'] / 12)}/mois = <strong>${eur(m + v['la-charges'] / 12)}</strong> contre un loyer de ${eur(v['la-loyer'])}.`;
+    for (let month = 1; month <= 300; month++) {
+      const i = bal * r; bal -= (m - i); if (month > n) bal = 0;
+      const ownerOut = (month <= n ? m : 0) + v['la-charges'] / 12;
+      renter = renter * (1 + rm) + Math.max(0, ownerOut - rent) - Math.max(0, rent - ownerOut);
+      if (month % 12 === 0) rent *= 1 + v['la-index'] / 100;
+      const y = month / 12;
+      const price = P * Math.pow(1 + v['la-evol'] / 100, y);
+      const owner = price - bal - price * v['la-vente'] / 100;
+      if (be === null && owner >= renter && month > 1) be = y;
+      if (Number.isInteger(y) && horizons.includes(y)) rows += `<tr><td>${y} an${y > 1 ? 's' : ''}</td><td>${eur(owner)}</td><td>${eur(renter)}</td><td style="color:${owner >= renter ? 'var(--sl-color-green-high)' : 'var(--sl-color-orange-high)'}">${owner >= renter ? '+' : ''}${eur(owner - renter)}</td></tr>`;
+    }
+    $('la-table').innerHTML = rows;
+    $('la-be').textContent = be === null ? 'Avec ces hypothèses, acheter ne rattrape pas louer en 25 ans.' : `Avec ces hypothèses, acheter dépasse louer après environ ${be.toFixed(1)} an${be >= 2 ? 's' : ''}. Change l'évolution du prix ou le loyer : ce point bouge beaucoup.`;
+  }
+  ids.forEach((id) => $(id).addEventListener('input', calc)); calc();
+</script>

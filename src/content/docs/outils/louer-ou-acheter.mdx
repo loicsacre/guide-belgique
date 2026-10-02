@@ -1,0 +1,22 @@
+---
+title: Louer ou acheter, selon la durée
+kind: outil
+description: "Pour chaque horizon, ce que le propriétaire récupère en revendant contre ce que le locataire aurait accumulé : le point d'équilibre dépend de tes hypothèses, pas d'une règle de 7 ans."
+notions: [louer-vs-acheter, cout-reel-achat, mensualite-amortissement, droits-enregistrement, precompte-immobilier, indexation-loyer, patrimoine-net, rendement-risque-liquidite]
+sidebar:
+  order: 7
+---
+import Tool from '../../../components/tools/ToolLouerAcheter.astro';
+
+On entend « il faut rester 7 ans ». Cet outil montre d'où vient cet ordre de grandeur, et surtout **pourquoi il bouge** : essaie 0 %, +2 % puis −1 % d'évolution du prix, ou un loyer de 800 € au lieu de 950 €.
+
+<Tool />
+
+## Ce qu'il faut voir
+
+- Au départ, le propriétaire est **en retard** : il a payé des frais d'acquisition qu'il ne reverra jamais, et ses premières mensualités sont surtout des intérêts. Voir [[cout-reel-achat]] et [[mensualite-amortissement]].
+- Il **rattrape** par deux voies : le capital remboursé chaque mois (qui lui revient à la revente) et l'éventuelle hausse du prix.
+- Le locataire n'est pas « à la rue » financièrement : il garde son apport et place la différence. Son résultat dépend du rendement de cet argent et de l'indexation de son loyer.
+- Avec les valeurs par défaut (prix stable), l'achat dépasse la location vers **10 ans** ; avec +2 % par an, dès **3 ans** ; avec −1 % par an, pas avant **15 ans**. C'est pour ça que « 7 ans » n'est qu'un repère.
+
+Le raisonnement complet est dans [[louer-vs-acheter]].

@@ -49,7 +49,7 @@ Peu de gens peuvent payer un logement comptant ; sans crédit long et bon march�
 
 | Critère | Pratique courante |
 | --- | --- |
-| **Capacité de remboursement** | Mensualité ≤ environ **un tiers** des revenus nets du ménage (jusqu'à 40-45 % pour des revenus élevés) |
+| **Capacité de remboursement** | Mensualité ≤ environ **un tiers** des revenus nets du ménage (jusqu'à 40-45 % pour des revenus élevés). **Pratique bancaire**, pas une loi : chaque banque a sa grille, et ton budget réel compte plus |
 | **Quotité** | Montant emprunté ÷ valeur du bien ; la BNB recommande ≤ 90 %, les frais d'achat restent à ta charge. Voir [[quotite-emprunt]] |
 | **Stabilité** | CDI, ancienneté, pas de défaut à la Centrale des crédits |
 | **Reste à vivre** | Ce qu'il reste après toutes les charges |
