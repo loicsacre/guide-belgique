@@ -53,7 +53,7 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 - Sources : plusieurs pages profondes de finances.belgium.be, emploi.belgique.be et belgium.be n'ont pas pu être vérifiées. Les fiches pointent vers l'accueil de ces sites ou vers des pages confirmées. Lancer `npm run check:links` depuis un vrai PC.
 - `js-yaml` doit rester en v4 : Starlight fait `import yaml from 'js-yaml'` et la v5 casse le build.
 - Astro 7 utilise Sätteri par défaut : le plugin wiki-links passe par `unified()` de `@astrojs/markdown-remark` dans `astro.config.mjs`.
-- Push sur le Mac de Lolo : `~/.ssh/config` pointe github.com vers `id_rsa.github` (absent) ; la clé qui marche est `~/.ssh/github_id` (`GIT_SSH_COMMAND="ssh -i ~/.ssh/github_id -o IdentitiesOnly=yes" git push`). Le token `gh` n'a pas le scope `workflow`.
+- Push sur le Mac de Lolo : `~/.ssh/config` pointe github.com vers `~/.ssh/github_id` (corrigé le 2026-10-02 ; `id_rsa.github` est refusée par GitHub). Le token `gh` n'a pas le scope `workflow`.
 - La CI fait `npm ci` (Node 22 / npm 10) : si « Missing … from lock file », régénérer le lock (`rm -rf node_modules package-lock.json && npm install`).
 - Ne pas copier `node_modules` d'une machine à l'autre (binaires natifs) : `npm install` sur chaque PC.
 

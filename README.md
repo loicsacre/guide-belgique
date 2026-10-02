@@ -23,6 +23,13 @@ Le parcours niveau 1, et donc la barre de progression, se trouve dans `src/data/
 
 ## Publier sur GitHub Pages
 
+```bash
+npm run deploy                       # check + build + commit + push → GitHub Actions déploie
+npm run deploy -- "fiche: quotite"   # avec un message de commit
+```
+
+Première fois :
+
 1. Crée le dépôt `guide-belgique` sur GitHub et pousse la branche `main`.
 2. *Settings → Pages → Source : GitHub Actions*.
 3. Chaque push sur `main` déploie sur `https://loicsacre.github.io/guide-belgique/`.

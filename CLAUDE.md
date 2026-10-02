@@ -118,6 +118,7 @@ npm run check        # cohérence : champs obligatoires, liens, fraîcheur
 npm run check:links  # les URLs des sources répondent-elles encore ?
 npm run build        # check + build statique dans dist/
 npm run new -- quotite-emprunt credit
+npm run deploy -- "message"   # check + build + commit + push (merge, jamais de rebase)
 ```
 
 Toujours lancer `npm run check` après avoir ajouté ou modifié une fiche.
