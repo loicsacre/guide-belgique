@@ -12,7 +12,7 @@ organisme: "Notaire, Région"
 short: "Le prix affiché n'est jamais ce que tu paies : il faut ajouter droits d'enregistrement (ou TVA), honoraires et frais d'acte du notaire, frais de crédit, puis les coûts récurrents du propriétaire."
 aliases: [frais de notaire, frais d'acquisition, frais d'achat, coût total, charges du propriétaire]
 prerequisites: [louer-vs-acheter, credit-hypothecaire]
-related: [droits-enregistrement, notaire-acte-authentique, hypotheque, quotite-emprunt, precompte-immobilier, assurance-habitation]
+related: [droits-enregistrement, notaire-acte-authentique, hypotheque, quotite-emprunt, precompte-immobilier, assurance-habitation, diagnostic-maison, budget-renovation, entretien-maison]
 last_verified: 2026-10-02
 sources:
   - title: Droits d'enregistrement à l'achat d'un logement en Belgique

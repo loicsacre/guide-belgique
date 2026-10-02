@@ -15,6 +15,7 @@ export const DOMAINS = [
   { key: 'entreprise', label: 'Indépendant & société', emoji: '👨‍💻' },
   { key: 'assurances', label: 'Assurances', emoji: '☂️' },
   { key: 'famille', label: 'Famille & patrimoine', emoji: '👨‍👩‍👧' },
+  { key: 'maison', label: 'Maison & travaux', emoji: '🔧' },
   { key: 'quotidien', label: 'Vie pratique', emoji: '🚗' },
 ];
 export const DOMAIN_KEYS = DOMAINS.map((d) => d.key);
@@ -44,6 +45,7 @@ export const NATURES = {
 export const NATURE_KEYS = Object.keys(NATURES);
 
 export const SCOPES = {
+  belgique: 'Toute la Belgique',
   federal: 'Fédéral',
   wallonie: 'Wallonie',
   bruxelles: 'Bruxelles',

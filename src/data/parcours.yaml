@@ -146,3 +146,31 @@ blocs:
       - { slug: responsabilite, title: "Responsabilité : civile, contractuelle, pénale, limitée" }
       - { slug: statut-familial, title: "Statut familial : isolé, cohabitant, chef de ménage selon le système" }
       - { slug: residence-fiscale, title: "Résidence fiscale et domicile : qui te taxe, et où" }
+  - title: Comprendre sa maison
+    intro: Une maison est un système de sous-systèmes. Du réseau au compteur, du compteur à l'appareil, de l'appareil à la facture.
+    notions:
+      - { slug: maison-systemes, title: "Ma maison, vue comme un système" }
+      - { slug: electricite-maison, title: "L'électricité : du compteur à la prise" }
+      - { slug: eau-maison, title: "L'eau : arrivée, compteur, évacuation" }
+      - { slug: chauffage-maison, title: "Le chauffage central : chaudière, radiateurs, thermostat" }
+      - { slug: eau-chaude-sanitaire, title: "L'eau chaude sanitaire" }
+      - { slug: pompe-a-chaleur, title: "La pompe à chaleur" }
+      - { slug: ventilation-maison, title: "La ventilation" }
+      - { slug: isolation-maison, title: "L'isolation" }
+      - { slug: toiture-maison, title: "La toiture" }
+      - { slug: chassis-vitrage, title: "Châssis et vitrages" }
+      - { slug: humidite-maison, title: "L'humidité : comprendre avant de traiter" }
+      - { slug: panneaux-solaires, title: "Panneaux photovoltaïques" }
+  - title: Rénover sa maison
+    intro: Diagnostiquer, ordonner, budgéter, faire faire, réceptionner, entretenir.
+    notions:
+      - { slug: diagnostic-maison, title: "Diagnostiquer une maison avant de décider" }
+      - { slug: audit-logement, title: "L'audit logement (Wallonie) et ses équivalents" }
+      - { slug: ordre-des-travaux, title: "Dans quel ordre rénover ?" }
+      - { slug: budget-renovation, title: "Budgéter une rénovation" }
+      - { slug: primes-renovation, title: "Les primes à la rénovation" }
+      - { slug: permis-urbanisme, title: "Permis d'urbanisme : quand il en faut un" }
+      - { slug: choisir-entrepreneur, title: "Choisir un entrepreneur" }
+      - { slug: devis-travaux, title: "Le devis et le contrat d'entreprise" }
+      - { slug: reception-travaux, title: "Réception des travaux et garanties" }
+      - { slug: entretien-maison, title: "Entretenir sa maison : le calendrier" }

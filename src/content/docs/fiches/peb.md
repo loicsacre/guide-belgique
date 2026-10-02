@@ -12,7 +12,7 @@ organisme: "Région (énergie), certificateur agréé"
 short: "Le certificat PEB classe la performance énergétique d'un logement de A à G ; obligatoire pour vendre ou louer, il influence de plus en plus le prix, le loyer (indexation), les droits d'enregistrement et les obligations de rénovation."
 aliases: [certificat PEB, EPC, performance énergétique, label énergétique, rénovation obligatoire, primes énergie, audit logement]
 prerequisites: [cout-reel-achat]
-related: [indexation-loyer, droits-enregistrement, energie, copropriete, bail]
+related: [indexation-loyer, droits-enregistrement, energie, copropriete, bail, isolation-maison, audit-logement, ordre-des-travaux, primes-renovation]
 last_verified: 2026-10-02
 sources:
   - title: Wallonie — Énergie et PEB

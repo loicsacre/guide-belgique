@@ -1,0 +1,120 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { ficheHref, BASE } from '../lib/notions';
+
+// Carte « ma maison » : chaque système suit la même chaîne réseau → compteur → installation → appareils → facture ;
+// l'enveloppe et la ventilation décident de combien d'énergie il faut acheter ; la ligne du bas est le parcours de rénovation.
+type Node = { id: string; label: string; sub?: string; x: number; y: number; w?: number; fiche: string; color: string };
+const C = { elec: 'var(--sl-color-orange-low)', eau: 'var(--sl-color-blue-low)', chaleur: 'var(--sl-color-red-low)', env: 'var(--sl-color-green-low)', reno: 'var(--sl-color-accent-low)', facture: 'var(--sl-color-gray-6)' };
+const W = 160, H = 64;
+const X = [20, 205, 390, 575, 760];
+const nodes: Node[] = [
+  // Électricité
+  { id: 'e-res', label: 'Réseau électrique', sub: 'ORES, RESA, Sibelga, Fluvius', x: X[0], y: 60, fiche: 'maison-systemes', color: C.elec },
+  { id: 'e-cpt', label: 'Compteur + disjoncteur', sub: 'la frontière', x: X[1], y: 60, fiche: 'electricite-maison', color: C.elec },
+  { id: 'e-inst', label: 'Tableau, circuits', sub: 'RGIE, contrôle 25 ans', x: X[2], y: 60, fiche: 'electricite-maison', color: C.elec },
+  { id: 'e-app', label: 'Appareils, panneaux', sub: 'kWh consommés / injectés', x: X[3], y: 60, fiche: 'panneaux-solaires', color: C.elec },
+  // Eau
+  { id: 'w-res', label: 'Réseau d\'eau', sub: 'SWDE, Vivaqua, De Watergroep…', x: X[0], y: 150, fiche: 'eau-maison', color: C.eau },
+  { id: 'w-cpt', label: 'Compteur + vanne', sub: 'la tienne, après', x: X[1], y: 150, fiche: 'eau-maison', color: C.eau },
+  { id: 'w-inst', label: 'Tuyaux, citerne, égout', sub: 'arrivée, pluie, évacuation', x: X[2], y: 150, fiche: 'eau-maison', color: C.eau },
+  { id: 'w-app', label: 'Eau chaude sanitaire', sub: 'boiler, mixte, thermodynamique', x: X[3], y: 150, fiche: 'eau-chaude-sanitaire', color: C.eau },
+  // Chaleur
+  { id: 'h-res', label: 'Gaz / mazout / électricité', sub: 'la source d\'énergie', x: X[0], y: 240, fiche: 'energie', color: C.chaleur },
+  { id: 'h-cpt', label: 'Compteur gaz / cuve', sub: 'kWh ou litres', x: X[1], y: 240, fiche: 'chauffage-maison', color: C.chaleur },
+  { id: 'h-inst', label: 'Chaudière ou PAC', sub: 'entretien obligatoire', x: X[2], y: 240, fiche: 'chauffage-maison', color: C.chaleur },
+  { id: 'h-app', label: 'Radiateurs, thermostat', sub: 'régulation, basse température', x: X[3], y: 240, fiche: 'pompe-a-chaleur', color: C.chaleur },
+  // Factures
+  { id: 'fact', label: 'Factures', sub: 'énergie, eau, entretien', x: X[4], y: 150, fiche: 'entretien-maison', color: C.facture },
+  // Enveloppe
+  { id: 'toit', label: 'Toiture', sub: 'étanche + isolée', x: X[0], y: 360, fiche: 'toiture-maison', color: C.env },
+  { id: 'murs', label: 'Murs, sol', sub: 'isolation, valeur R', x: X[1], y: 360, fiche: 'isolation-maison', color: C.env },
+  { id: 'chassis', label: 'Châssis', sub: 'valeur Uw, pose', x: X[2], y: 360, fiche: 'chassis-vitrage', color: C.env },
+  { id: 'vent', label: 'Ventilation', sub: 'systèmes C et D', x: X[3], y: 360, fiche: 'ventilation-maison', color: C.env },
+  { id: 'hum', label: 'Humidité', sub: 'condensation, infiltration, remontée', x: X[4], y: 360, fiche: 'humidite-maison', color: C.env },
+  // Rénover
+  { id: 'diag', label: 'Diagnostic', sub: 'système par système', x: X[0], y: 480, fiche: 'diagnostic-maison', color: C.reno },
+  { id: 'audit', label: 'Audit + ordre', sub: 'bouquets, feuille de route', x: X[1], y: 480, fiche: 'ordre-des-travaux', color: C.reno },
+  { id: 'budget', label: 'Budget + primes', sub: 'TVA 6 %, prêts 0 %', x: X[2], y: 480, fiche: 'budget-renovation', color: C.reno },
+  { id: 'entr', label: 'Entreprises + devis', sub: 'BCE, décennale, 3 devis', x: X[3], y: 480, fiche: 'choisir-entrepreneur', color: C.reno },
+  { id: 'recep', label: 'Réception + entretien', sub: 'PV, garanties, calendrier', x: X[4], y: 480, fiche: 'reception-travaux', color: C.reno },
+];
+const byId = Object.fromEntries(nodes.map((n) => [n.id, n]));
+const center = (n: Node) => ({ cx: n.x + (n.w ?? W) / 2, cy: n.y + H / 2 });
+const edges: [string, string, string][] = [
+  ['e-res', 'e-cpt', ''], ['e-cpt', 'e-inst', ''], ['e-inst', 'e-app', ''], ['e-app', 'fact', 'kWh'],
+  ['w-res', 'w-cpt', ''], ['w-cpt', 'w-inst', ''], ['w-inst', 'w-app', ''], ['w-app', 'fact', 'm³'],
+  ['h-res', 'h-cpt', ''], ['h-cpt', 'h-inst', ''], ['h-inst', 'h-app', ''], ['h-app', 'fact', 'kWh'],
+  ['e-inst', 'h-inst', 'alimente la PAC'],
+  ['h-inst', 'w-app', 'chauffe l\'ECS'],
+  ['toit', 'h-app', 'pertes'], ['murs', 'h-app', 'pertes'], ['chassis', 'h-app', 'pertes'],
+  ['vent', 'hum', 'évite'], ['chassis', 'vent', 'exige'],
+  ['diag', 'audit', ''], ['audit', 'budget', ''], ['budget', 'entr', ''], ['entr', 'recep', ''],
+  ['recep', 'fact', 'baisse'],
+];
+function path(a: string, b: string) {
+  const A = center(byId[a]), B = center(byId[b]);
+  const na = byId[a], nb = byId[b];
+  const wa = na.w ?? W, wb = nb.w ?? W;
+  const dx = B.cx - A.cx, dy = B.cy - A.cy;
+  let x1 = A.cx, y1 = A.cy, x2 = B.cx, y2 = B.cy;
+  if (Math.abs(dx) > Math.abs(dy)) { x1 += Math.sign(dx) * wa / 2; x2 -= Math.sign(dx) * wb / 2; } else { y1 += Math.sign(dy) * H / 2; y2 -= Math.sign(dy) * H / 2; }
+  const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
+  return { d: `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`, mx, my };
+}
+const explain: { title: string; text: string; fiches: string[] }[] = [
+  { title: 'Avant ou après le compteur ?', text: 'Le compteur est la frontière : avant, c\'est le réseau (panne gratuite, appelle le gestionnaire) ; après, c\'est ton installation, ta responsabilité et ta facture. La même règle vaut pour l\'électricité, l\'eau et le gaz.', fiches: ['maison-systemes', 'electricite-maison', 'eau-maison'] },
+  { title: 'L\'enveloppe décide de la facture de chauffage', text: 'Toit, murs, châssis et sol laissent fuir la chaleur ; la chaudière ne fait que compenser. Isoler réduit la puissance nécessaire : c\'est pourquoi on isole avant de remplacer la production.', fiches: ['isolation-maison', 'toiture-maison', 'ordre-des-travaux'] },
+  { title: 'Des châssis étanches exigent une ventilation', text: 'Une maison rendue étanche sans ventilation condense et moisit. La ventilation est le complément obligé de l\'isolation, et le premier remède à l\'humidité de condensation.', fiches: ['ventilation-maison', 'chassis-vitrage', 'humidite-maison'] },
+  { title: 'L\'électricité alimente de plus en plus la chaleur', text: 'Pompe à chaleur, boiler thermodynamique, voiture : le tableau et le branchement doivent suivre, et les panneaux solaires rendent l\'ensemble rentable.', fiches: ['pompe-a-chaleur', 'panneaux-solaires', 'electricite-maison'] },
+  { title: 'Rénover suit un ordre', text: 'Diagnostic, audit, plan en six étapes, budget TVAC 6 % avec primes versées après, entreprises vérifiées, réception écrite : chaque étape conditionne la suivante, et chaque bouquet terminé fait baisser la facture.', fiches: ['diagnostic-maison', 'audit-logement', 'budget-renovation', 'choisir-entrepreneur', 'reception-travaux'] },
+  { title: 'Entretenir coûte 1 à 2 % par an', text: 'Calendrier saisonnier, carnet, provision mensuelle : la maison devient une ligne du budget au lieu d\'une suite de surprises.', fiches: ['entretien-maison', 'budget-renovation'] },
+];
+---
+<StarlightPage frontmatter={{ title: 'Ma maison, le système', description: 'Électricité, eau, chauffage, enveloppe, ventilation : comment les systèmes d\'une maison se tiennent, et dans quel ordre on la comprend puis on la rénove.' }}>
+  <p>Une maison n'est pas un objet mais un empilement de systèmes. Chacun suit la même chaîne de gauche à droite : <strong>réseau → compteur → installation → appareils → facture</strong>. Au-dessous, l'enveloppe et la ventilation décident de combien d'énergie il faut acheter ; tout en bas, le parcours pour la rénover. <strong>Clique sur une case</strong> pour ouvrir la fiche.</p>
+
+  <div class="systeme not-content">
+    <svg viewBox="0 0 960 560" role="img" aria-label="Carte des systèmes d'une maison : électricité, eau, chaleur, enveloppe, rénovation">
+      <defs>
+        <marker id="arrow-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--sl-color-gray-3)" /></marker>
+      </defs>
+      <text x="20" y="40" font-size="12" font-weight="700" fill="var(--sl-color-gray-2)">LES RÉSEAUX — réseau → compteur → installation → appareils → facture</text>
+      <text x="20" y="340" font-size="12" font-weight="700" fill="var(--sl-color-gray-2)">L'ENVELOPPE ET L'AIR — ce qui décide de combien il faut chauffer</text>
+      <text x="20" y="460" font-size="12" font-weight="700" fill="var(--sl-color-gray-2)">RÉNOVER — dans cet ordre</text>
+      {edges.map(([a, b, l]) => { const p = path(a, b); return (
+        <g>
+          <path d={p.d} fill="none" stroke="var(--sl-color-gray-3)" stroke-width="1.6" marker-end="url(#arrow-m)" />
+          {l && <text x={p.mx} y={p.my - 5} font-size="10" text-anchor="middle" fill="var(--sl-color-gray-2)" style="paint-order:stroke" stroke="var(--sl-color-bg)" stroke-width="4">{l}</text>}
+        </g>
+      ); })}
+      {nodes.map((n) => (
+        <a href={ficheHref(n.fiche)}>
+          <rect x={n.x} y={n.y} width={n.w ?? W} height={H} rx="10" fill={n.color} stroke="var(--sl-color-gray-3)" stroke-width="1.5" />
+          <text x={n.x + (n.w ?? W) / 2} y={n.y + 27} text-anchor="middle" font-size="13" font-weight="700" fill="var(--sl-color-white)">{n.label}</text>
+          {n.sub && <text x={n.x + (n.w ?? W) / 2} y={n.y + 46} text-anchor="middle" font-size="10" fill="var(--sl-color-gray-2)">{n.sub}</text>}
+        </a>
+      ))}
+    </svg>
+  </div>
+
+  <h2>Les liens expliqués</h2>
+  <dl class="glossary">
+    {explain.map((e) => (
+      <>
+        <dt>{e.title}</dt>
+        <dd>{e.text} → {e.fiches.map((f, i) => <>{i > 0 && ' · '}<a href={ficheHref(f)}>{f}</a></>)}</dd>
+      </>
+    ))}
+  </dl>
+
+  <h2>Par où entrer</h2>
+  <ul>
+    <li><a href={`${BASE}/situations/comprendre-ma-maison/`}>Je viens d'acheter ma première maison</a> : la première année, racontée.</li>
+    <li><a href={`${BASE}/situations/renover-ma-maison/`}>Je rénove ma maison</a> : du rapport d'audit au procès-verbal de réception.</li>
+    <li><a href={`${BASE}/documents/certificat-peb/`}>Lire un certificat PEB</a>, <a href={`${BASE}/documents/controle-electrique/`}>un contrôle électrique</a>, <a href={`${BASE}/documents/devis-renovation/`}>un devis</a> : les trois documents annotés.</li>
+    <li><a href={`${BASE}/outils/simulateur-renovation/`}>Simuler un budget de rénovation</a> et <a href={`${BASE}/outils/budget-maison/`}>le budget annuel de ma maison</a>.</li>
+    <li><a href={`${BASE}/fiches/maison-systemes/`}>La maison vue comme un système</a> : la fiche d'entrée du domaine.</li>
+    <li><a href={`${BASE}/systeme/`}>Le grand système</a> : comment le logement s'insère dans le reste (crédit, impôts, patrimoine, assurances).</li>
+  </ul>
+</StarlightPage>

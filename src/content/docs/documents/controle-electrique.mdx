@@ -1,0 +1,58 @@
+---
+title: Lire un contrôle électrique
+kind: document
+description: "Un procès-verbal de contrôle d'installation électrique fictif (RGIE), négatif à la vente : ce que chaque infraction signifie, ce qui est dangereux, ce qui est administratif, et le délai de 18 mois."
+notions: [electricite-maison, maison-systemes, diagnostic-maison, choisir-entrepreneur, primes-renovation, panneaux-solaires, pompe-a-chaleur]
+sidebar:
+  order: 11
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Le document le plus technique de la vente, et celui qui engage un délai. Procès-verbal fictif d'un organisme agréé pour la maison de 1972 de nos récits, établi à la demande du vendeur.
+
+<Paper title="PROCÈS-VERBAL DE CONTRÔLE — Installation électrique domestique" sub="Organisme agréé : Contrôle Fictif asbl (agrément SPF Économie n° XXX) · Visite du 08.12.2025 · Motif : vente d'une habitation (installation antérieure au 01.10.1981) · Réf. 2025-XXXXX">
+  <Row section k="Identification" />
+  <Row n="1" k="Rue des Exemples 12, 4000 Liège · Compteur EAN 54144… · Branchement monophasé 230 V · Disjoncteur de branchement 40 A" v="" f="electricite-maison" />
+  <Row n="2" k="Schéma unifilaire et plan de position : NON PRÉSENTÉS" v="Infraction" f="electricite-maison" />
+  <Row section k="Mesures" />
+  <Row n="3" k="Résistance de dispersion de la prise de terre" v="68 Ω" f="electricite-maison" />
+  <Row n="4" k="Différentiel général 300 mA : présent, fonctionne au test" v="OK" f="electricite-maison" />
+  <Row n="5" k="Différentiel 30 mA (salle de bain, buanderie, cuisine)" v="ABSENT" f="electricite-maison" />
+  <Row n="6" k="Continuité des conducteurs de protection (terre) : 12 prises sans terre (chambres, salon)" v="Infraction" f="electricite-maison" />
+  <Row section k="Constatations" />
+  <Row n="7" k="Circuit cuisine : disjoncteur 20 A sur conducteurs 1,5 mm²" v="Infraction" f="electricite-maison" />
+  <Row n="8" k="Tableau : absence de repérage des circuits, bornes non protégées accessibles" v="Infraction" f="electricite-maison" />
+  <Row n="9" k="Salle de bain : prise à moins de 60 cm de la baignoire (volume 2)" v="Infraction" f="electricite-maison" />
+  <Row n="10" k="Liaison équipotentielle salle de bain (baignoire, canalisations) : absente" v="Infraction" f="electricite-maison" />
+  <Row n="11" k="Câblage apparent cave : conducteurs sous gaine textile, boîtes de dérivation ouvertes" v="Infraction" f="electricite-maison" />
+  <Row section k="Conclusion" />
+  <Row n="12" k="L'installation N'EST PAS CONFORME au RGIE (AR du 08.09.2019, livre 1)." v="NÉGATIF" f="electricite-maison" total />
+  <Row n="13" k="En cas de vente : l'acquéreur dispose d'un délai de 18 mois à dater de l'acte authentique pour faire mettre l'installation en conformité et solliciter une nouvelle visite de contrôle." v="" f="diagnostic-maison" />
+  <Row n="14" k="Prochain contrôle périodique après mise en conformité : 25 ans" v="" f="electricite-maison" />
+</Paper>
+
+## Ce que dit chaque ligne
+
+<Legend>
+<li>**Identification** : monophasé 40 A ≈ 9,2 kW disponibles. C'est la contrainte à vérifier avant une pompe à chaleur, une borne de recharge ou une plaque à induction : il faudra peut-être renforcer le branchement auprès du gestionnaire de réseau. → [[electricite-maison]], [[pompe-a-chaleur]]</li>
+<li>**Schémas non présentés** : le RGIE exige un schéma unifilaire (quel disjoncteur protège quoi) et un plan de position. Sans eux, aucun PV positif n'est possible, même si tout le reste est en ordre. Un électricien les dessine 🟠 pour 150 à 400 €. Administratif, mais bloquant.</li>
+<li>**Terre à 68 Ω** 🔴 : conforme si l'installation a des différentiels 30 mA (limite 100 Ω), non conforme sinon (limite 30 Ω). Ici, sans 30 mA, la terre est insuffisante : améliorer la prise de terre **ou** poser les différentiels 30 mA, ce qui est de toute façon exigé.</li>
+<li>**Différentiel 300 mA OK** : protège contre l'incendie d'origine électrique ; il fonctionne, c'est déjà ça. Le bouton « T » est à presser régulièrement.</li>
+<li>**30 mA absent** : le dispositif qui coupe en 30 millisecondes avant qu'un courant de fuite à travers un corps humain ne soit mortel. Obligatoire pour salle de bain, buanderie, lave-linge, lave-vaisselle, cuisine. **Dangereux : à faire en premier**, 🟠 150 à 300 € posé.</li>
+<li>**Prises sans terre** : un appareil à carcasse métallique défectueux reste sous tension sans faire sauter le différentiel. Les prises des pièces sèches peuvent parfois être tolérées sous conditions ; celles qui alimentent des appareils de classe I (frigo, machines, four) doivent être reliées à la terre. Souvent, c'est tirer de nouveaux circuits.</li>
+<li>**20 A sur 1,5 mm²** : le disjoncteur laisse passer plus de courant que le câble ne supporte ; le câble chauffe, c'est un risque d'incendie. Remède : disjoncteur 16 A (si l'usage le permet) ou câble 2,5 mm². Quelqu'un a « remplacé par un plus gros parce que ça sautait » : la pire des réparations.</li>
+<li>**Tableau sans repérage** : chaque disjoncteur doit être étiqueté ; les parties sous tension doivent être inaccessibles aux doigts. Administratif et sécurité.</li>
+<li>**Prise en volume 2** 🔴 : le RGIE découpe la salle de bain en volumes autour de la baignoire ; les prises sont interdites à moins de 60 cm de son bord. Déplacer la prise.</li>
+<li>**Équipotentielle** : relier entre elles et à la terre la baignoire métallique, les tuyaux, le radiateur, pour qu'aucune différence de potentiel ne traverse une personne mouillée. Peu coûteux, souvent oublié.</li>
+<li>**Câblage textile, boîtes ouvertes** : les fils d'avant 1960 à isolant tissu sont à remplacer ; les boîtes de dérivation doivent être fermées. Une partie se règle en une journée.</li>
+<li>**NÉGATIF** : la vente a eu lieu quand même ; le PV est annexé à l'acte. Rien n'empêche d'habiter, mais le danger (items 5, 7, 9, 10) est réel aujourd'hui.</li>
+<li>**18 mois** 🔴 : délai légal pour mettre en conformité et faire **revenir un organisme agréé** (recontrôle 🟠 130 à 200 €). L'organisme informe le SPF Économie si rien n'est fait ; au-delà du risque administratif, c'est l'assureur qui pourrait invoquer le défaut en cas d'incendie. → [[diagnostic-maison]]</li>
+<li>**25 ans** : périodicité du contrôle d'une installation conforme ; toute modification importante (nouveau tableau, panneaux solaires, borne) déclenche un nouveau contrôle. → [[panneaux-solaires]]</li>
+</Legend>
+
+## Pour aller plus loin
+
+- Comment trier : **sécurité d'abord** (30 mA, calibres, salle de bain, équipotentielle), puis **circuits** (terre, câbles anciens), puis **administratif** (schémas, repérage). Un électricien chiffre souvent un **nouveau tableau complet** (🟠 2 000 à 4 000 €) qui règle les items 2, 4 à 8 d'un coup : c'est en général le bon choix sur une installation de 1972, à coordonner avec les autres travaux pour n'ouvrir les murs qu'une fois. → [[ordre-des-travaux]]
+- Le choix de l'électricien et la vérification de ses assurances : [[choisir-entrepreneur]] ; la prime wallonne à la mise en conformité électrique : [[primes-renovation]].

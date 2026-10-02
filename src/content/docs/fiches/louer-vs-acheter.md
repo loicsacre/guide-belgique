@@ -11,7 +11,7 @@ organisme: "Toi"
 short: "Comparer un loyer à une mensualité est trompeur : une partie de la mensualité te revient (le capital), mais l'achat ajoute des coûts que le locataire n'a pas (frais d'entrée, intérêts, taxes, entretien). Le point d'équilibre dépend de la durée, du prix, du loyer et de l'évolution du marché : il n'y a pas de règle des 7 ans."
 aliases: [acheter ou louer, locataire ou propriétaire, brique dans le ventre, coût non récupérable, point d'équilibre, règle des 7 ans]
 prerequisites: [budget, credit-hypothecaire]
-related: [cout-reel-achat, bail, mensualite-amortissement, precompte-immobilier, patrimoine-net, rendement-risque-liquidite, droits-enregistrement]
+related: [cout-reel-achat, bail, mensualite-amortissement, precompte-immobilier, patrimoine-net, rendement-risque-liquidite, droits-enregistrement, entretien-maison]
 last_verified: 2026-10-02
 sources:
   - title: Wikifin — Logement et emprunt hypothécaire

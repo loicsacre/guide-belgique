@@ -34,18 +34,19 @@ Un trentenaire résidant en Belgique, intelligent mais non spécialiste, qui par
 
 ```
 src/content/docs/
-  index.mdx               accueil : six portes d'entrée
+  index.mdx               accueil : sept portes d'entrée
   fiches/<slug>.md        une notion = une fiche (URL /fiches/<slug>/)
   situations/<slug>.md    une chaîne de vie : étapes chronologiques (frontmatter `etapes:`) + notions
   documents/<slug>.mdx    un document fictif annoté (composants Paper / Row / Legend)
   outils/<slug>.mdx       un calculateur pédagogique (composant dans src/components/tools/)
 src/pages/systeme.astro   « Le grand système » : carte SVG des domaines et des flux
+src/pages/maison.astro    « Ma maison, le système » : carte SVG des systèmes d'une maison (réseaux, enveloppe, rénover)
 src/pages/parcours.astro  parcours, glossaire.astro
-src/data/parcours.yaml    tous les blocs et notions planifiées (14 blocs, dont « ponts »)
+src/data/parcours.yaml    tous les blocs et notions planifiées (16 blocs, dont « ponts » et les deux blocs maison)
 templates/fiche.md        modèle de fiche
 ```
 
-### Six portes d'entrée (architecture pédagogique)
+### Sept portes d'entrée (architecture pédagogique)
 
 | Le lecteur dit | Il va vers |
 | --- | --- |
@@ -55,7 +56,9 @@ templates/fiche.md        modèle de fiche
 | « Je veux comprendre le système » | `/systeme/` |
 | « Je dois lire ce document » | `documents/` (fictif, numéros cliquables) |
 | « Je veux calculer » | `outils/` (toujours avec l'avertissement « pédagogique ») |
+| « Je dois comprendre ma maison » | `/maison/` puis le domaine `maison` (🔧 Maison & travaux) |
 
+- **Domaine `maison`** : la maison est traitée comme un **système de sous-systèmes** qui suivent tous la chaîne *réseau → compteur → installation privée → appareils → consommation → facture* ; l'enveloppe et la ventilation décident de l'énergie à acheter. Chaque fiche maison dit « qui est responsable de quoi » et « avant ou après le compteur ». L'ordre des travaux (sécuriser → enveloppe → ventilation/gaines → production → finitions) est la colonne vertébrale des fiches « rénover ». Primes et obligations sont **régionales et datées** (🔴), prix au m² = repères (🟠), devis = fictifs (🔵). Les documents et outils se lient depuis une fiche par lien relatif (`../../documents/<slug>/`, `../../outils/<slug>/`), pas par `[[...]]` (réservé aux fiches).
 - Les fiches sont **à plat** dans `fiches/` (le domaine est une métadonnée) : les liens ne cassent jamais quand on reclasse.
 - La sidebar est générée depuis le frontmatter (`domain`, `sidebar.order`).
 - Le glossaire, le parcours, les « voir aussi », « utilisé par » et la navigation ← → sont calculés automatiquement.

@@ -65,6 +65,7 @@ export function buildSidebar() {
         { label: 'Accueil', link: '/' },
         { label: 'Parcours — je pars de zéro', link: '/parcours/' },
         { label: 'Le grand système', link: '/systeme/' },
+        { label: 'Ma maison, le système', link: '/maison/' },
         { label: 'Glossaire', link: '/glossaire/' },
       ],
     },

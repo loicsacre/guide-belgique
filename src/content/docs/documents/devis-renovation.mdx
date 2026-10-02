@@ -1,0 +1,67 @@
+---
+title: Lire un devis de travaux
+kind: document
+description: "Un devis de toiture fictif, annoté ligne par ligne : quantités, performances, exclusions, TVA 6 %, acompte, délais, assurances, et les pièges qui se cachent dans les conditions."
+notions: [devis-travaux, choisir-entrepreneur, budget-renovation, tva, toiture-maison, isolation-maison, reception-travaux, primes-renovation, contrats-consommation, bce-numero-entreprise]
+sidebar:
+  order: 12
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Le devis « C » de nos récits : le plus cher des trois en apparence, le moins cher à travail égal. Toiture complète d'une maison de 1972, 110 m² de toit incliné.
+
+<Paper title="DEVIS n° 2026-0147" sub="Toitures Fictives SRL · Rue du Chantier 5, 4000 Liège · BCE / TVA BE 0999.999.999 · IBAN BE00 0000 0000 0000 · Date : 14.03.2026 · Validité : 60 jours">
+  <Row section k="Chantier : Rue des Exemples 12, 4000 Liège — Réfection complète de la toiture inclinée (110 m²)" />
+  <Row n="1" k="Échafaudage périphérique, protection, location 6 semaines" v="1 800,00" f="devis-travaux" />
+  <Row n="2" k="Désamiantage : dépose des ardoises fibrociment par entreprise agréée (sous-traitant : Amiante Fictif SA, agrément SPF Emploi), conditionnement, transport et traitement en centre agréé, attestation d'évacuation" v="4 200,00" f="toiture-maison" />
+  <Row n="3" k="Dépose lattage et voligeage, évacuation des déchets (container 20 m³)" v="900,00" f="devis-travaux" />
+  <Row n="4" k="Vérification charpente ; remplacement bois dégradé en régie : 55 €/h + fournitures sur présentation, après accord écrit" v="p.m." f="devis-travaux" />
+  <Row n="5" k="Sous-toiture HPV type « Membrane Fictive 150 » + contre-lattes + lattes, 110 m²" v="3 800,00" f="toiture-maison" />
+  <Row n="6" k="Isolation entre et sous chevrons : laine minérale λ 0,035, 2 × 11 cm = 22 cm, R = 6,28 m²K/W, fiche technique annexée · pare-vapeur « Frein Fictif Sd 2–20 » collé et scotché en continu, 110 m²" v="6 000,00" f="isolation-maison" />
+  <Row n="7" k="Couverture tuiles terre cuite « Tuile Fictive » coloris ardoise, 110 m², fixation selon pente ; faîtage à sec ventilé" v="9 200,00" f="toiture-maison" />
+  <Row n="8" k="Zinguerie zinc naturel ép. 0,8 mm : gouttières pendantes 24 m, 3 descentes Ø 80, noues, solins cheminée en plomb 2 mm" v="2 600,00" f="toiture-maison" />
+  <Row n="9" k="Fenêtre de toit « Fenêtre Fictive » 78 × 118, Uw 1,1, raccord d'étanchéité, pose avec chevêtre" v="1 450,00" f="devis-travaux" />
+  <Row n="10" k="Crochets de fixation pour panneaux solaires futurs (22 pcs), en attente" v="380,00" f="devis-travaux" />
+  <Row n="11" k="Non compris : plafonnage et finitions intérieures sous isolation ; déplacement d'antennes ; travaux de maçonnerie sur cheminée au-delà du rejointoyage ; permis éventuel" v="" f="devis-travaux" />
+  <Row k="Total HTVA" v="30 330,00" />
+  <Row n="12" k="TVA 6 % — habitation privée de plus de 10 ans, attestation client jointe (AR n° 20, rubrique XXXVIII)" v="1 819,80" f="tva" />
+  <Row k="TOTAL TVAC" v="32 149,80" total />
+  <Row n="13" k="Remise commerciale négociée" v="− 4 050,00" f="devis-travaux" />
+  <Row k="TOTAL TVAC NET" v="28 099,80" total />
+  <Row n="14" k="Paiement : acompte 15 % à la commande · 40 % à la pose de la sous-toiture et de l'isolation (état d'avancement contradictoire) · 40 % à la fin de la couverture · solde 5 % à la levée des réserves, 15 jours après réception" v="" f="choisir-entrepreneur" />
+  <Row n="15" k="Délai : début semaine 22 (sous réserve météo), durée 6 semaines · Pénalité de retard : 0,1 %/jour calendrier au-delà de 15 jours, plafonnée à 5 %" v="" f="devis-travaux" />
+  <Row n="16" k="Assurances : RC exploitation police n° XXX (Assureur Fictif) · RC décennale loi 31.05.2017 police n° YYY · attestations jointes" v="" f="reception-travaux" />
+  <Row n="17" k="Garanties : décennale sur étanchéité et structure ; garantie fabricant tuiles 30 ans, membrane 15 ans · Conditions générales au verso ; droit de rétractation 14 jours si signature hors établissement" v="" f="contrats-consommation" />
+  <Row n="18" k="Bon pour accord, date et signature du client — ce devis signé vaut contrat d'entreprise" v="" f="devis-travaux" />
+</Paper>
+
+## Ce que dit chaque ligne
+
+<Legend>
+<li>**En-tête** : dénomination, numéro d'entreprise (à vérifier **actif** à la Banque-Carrefour avec un code d'activité « toiture »), compte bancaire au nom de la société, **validité**. Un devis sans numéro d'entreprise est un devis à jeter. → [[bce-numero-entreprise]], [[choisir-entrepreneur]]</li>
+<li>**Échafaudage** : le poste que le devis « A » laissait « à charge du client ». Il conditionne la sécurité (chutes = premier accident du bâtiment) et il n'est payé qu'une fois si l'isolation se fait pendant le même chantier. → [[ordre-des-travaux]]</li>
+<li>**Désamiantage** : les ardoises fibrociment d'avant 1998 contiennent de l'amiante ; seule une entreprise **agréée** peut les déposer, et l'**attestation d'évacuation** est à exiger à la réception (elle sera demandée à la vente). → [[toiture-maison]]</li>
+<li>**Évacuation** : qui paie le container ? Ici inclus. Un « évacuation par le client » cache 🟠 500 à 1 500 €.</li>
+<li>**Régie sur découverte** : l'imprévisible (charpente) est prévu : tarif horaire, fournitures sur facture, **accord écrit** préalable. C'est la bonne manière d'écrire un supplément ; « hors imprévus » tout court ne l'est pas. → [[devis-travaux]]</li>
+<li>**Sous-toiture** : la membrane qui rattrape les infiltrations ; « HPV » = perméable à la vapeur, nécessaire quand l'isolant est au contact. Produit nommé, surface indiquée.</li>
+<li>**Isolation** : la ligne qui vaut la prime : λ, **épaisseur**, **valeur R** (ici 6,28 ≥ 4,5 exigé en Wallonie), fiche technique **annexée**, et le **pare-vapeur** côté chaud, continu. Un devis « isolation toiture : forfait » n'ouvre ni prime ni recours. → [[isolation-maison]], [[primes-renovation]]</li>
+<li>**Couverture** : matériau, coloris (le règlement communal peut l'imposer), surface, mode de fixation. → [[permis-urbanisme]]</li>
+<li>**Zinguerie** : souvent le poste oublié ou sous-dimensionné ; épaisseur du zinc et du plomb précisées = comparables.</li>
+<li>**Fenêtre de toit** : ajoutée parce que « c'est maintenant ou jamais » ; Uw indiqué comme pour un châssis. → [[chassis-vitrage]]</li>
+<li>**Crochets solaires** : 380 € aujourd'hui pour éviter de démonter des tuiles dans trois ans. → [[panneaux-solaires]]</li>
+<li>**Non compris** : la ligne à lire **avant** le total. Le plafonnage sous l'isolant (🟠 1 500 à 3 000 €) et la cheminée sont des postes réels du budget. → [[budget-renovation]]</li>
+<li>**TVA 6 %** 🔴 : taux réduit pour la rénovation d'un logement privé de plus de 10 ans, main-d'œuvre et matériaux fournis par l'entrepreneur ; mention de l'attestation. Sur une maison plus récente, ce serait 21 % : + 4 500 € ici, et le redressement est pour le client si l'attestation est fausse. → [[tva]]</li>
+<li>**Remise** : négociée après comparaison des trois devis ; notée sur le devis, pas promise oralement.</li>
+<li>**Paiement** : acompte limité à 15 % (contre 30 % demandé), tranches sur **états d'avancement contradictoires** (tu montes voir), **solde après réception** et levée des réserves. En cas de faillite, l'acompte versé est perdu : d'où sa limitation. → [[choisir-entrepreneur]], [[reception-travaux]]</li>
+<li>**Délai et pénalité** : une date de début, une durée, une clause de retard chiffrée. Sans cela, « dès que possible » ne t'engage à rien… lui non plus.</li>
+<li>**Assurances** 🔴 : RC exploitation (dégâts pendant le chantier) et RC **décennale** obligatoire (loi du 31 mai 2017) pour le gros œuvre fermé d'une habitation ; **attestations jointes**, nom de l'assureur et numéros de police. À conserver 10 ans et à transmettre à l'acheteur en cas de vente. → [[reception-travaux]]</li>
+<li>**Garanties et conditions** : garanties fabricants distinctes de la décennale ; lis le verso (révision de prix, tribunal compétent). Le **droit de rétractation de 14 jours** s'applique si le devis a été signé chez toi lors d'un démarchage. → [[contrats-consommation]]</li>
+<li>**Signature** : le devis signé est un **contrat d'entreprise** ; tout changement ultérieur passe par un avenant écrit. → [[contrat]]</li>
+</Legend>
+
+## Pour aller plus loin
+
+- Comment ce devis a été comparé aux deux autres, poste par poste, dans [[devis-travaux]] ; et comment il a été réceptionné dans [[reception-travaux]].
+- Le récit complet du chantier : [Je rénove ma maison](../../situations/renover-ma-maison/).

@@ -1,0 +1,63 @@
+---
+title: Lire un certificat PEB
+kind: document
+description: "Un certificat PEB wallon fictif, annoté : la lettre, les kWh/m².an, ce qui est mesuré et ce qui est supposé, les recommandations et ce qu'elles valent."
+notions: [peb, isolation-maison, chauffage-maison, chassis-vitrage, ventilation-maison, eau-chaude-sanitaire, audit-logement, ordre-des-travaux, droits-enregistrement]
+sidebar:
+  order: 10
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Le document que tout acheteur reçoit et que presque personne ne lit au-delà de la lettre. Certificat fictif d'une maison mitoyenne wallonne de 1972, 140 m², établi pour la vente.
+
+<Paper title="CERTIFICAT PEB — Bâtiment résidentiel existant" sub="Région wallonne · N° 2026-00-XXXXX · Établi le 12.01.2026 · Valable jusqu'au 11.01.2036 · Certificateur agréé n° PEB-XXXXX">
+  <Row section k="Identification" />
+  <Row n="1" k="Rue des Exemples 12, 4000 Liège · Maison unitaire mitoyenne · Année de construction : 1972 · Surface de plancher chauffée : 140 m²" v="" f="peb" />
+  <Row section k="Performance énergétique" />
+  <Row n="2" k="Classe énergétique" v="E" f="peb" total />
+  <Row n="3" k="Consommation spécifique d'énergie primaire (Espec)" v="310 kWh/m².an" f="peb" />
+  <Row n="4" k="Consommation totale théorique d'énergie primaire (Etotale)" v="43 400 kWh/an" f="peb" />
+  <Row n="5" k="Émissions de CO₂ théoriques" v="8 900 kg/an" f="peb" />
+  <Row n="6" k="Échelle : A++ < 0 · A+ 0–45 · A 45–85 · B 85–170 · C 170–255 · D 255–340 · E 340–425 · F 425–510 · G > 510" v="" f="peb" />
+  <Row section k="Enveloppe (valeurs U, W/m²K)" />
+  <Row n="7" k="Toiture inclinée 110 m² — isolation 6 cm (relevée)" v="U = 0,65" f="isolation-maison" />
+  <Row n="8" k="Murs extérieurs 140 m² — mur creux non isolé (hypothèse par défaut : année de construction)" v="U = 1,70" f="isolation-maison" />
+  <Row n="9" k="Fenêtres 22 m² — double vitrage ordinaire, châssis PVC 1995" v="Uw = 2,80" f="chassis-vitrage" />
+  <Row n="10" k="Plancher sur cave 70 m² — non isolé" v="U = 1,10" f="isolation-maison" />
+  <Row n="11" k="Étanchéité à l'air : valeur par défaut (pas de test)" v="12 m³/h.m²" f="isolation-maison" />
+  <Row section k="Installations" />
+  <Row n="12" k="Chauffage : chaudière gaz atmosphérique 1998, non condensation, rendement de production estimé 78 % · Régulation : thermostat d'ambiance" v="" f="chauffage-maison" />
+  <Row n="13" k="Eau chaude sanitaire : produite par la chaudière, pas de ballon, pas de solaire" v="" f="eau-chaude-sanitaire" />
+  <Row n="14" k="Ventilation : aucun système (naturelle non contrôlée)" v="" f="ventilation-maison" />
+  <Row n="15" k="Énergie renouvelable : aucune" v="" f="peb" />
+  <Row section k="Recommandations (par ordre d'impact estimé)" />
+  <Row n="16" k="1. Isoler la toiture (R ≥ 6) · 2. Isoler les murs · 3. Remplacer le générateur de chaleur · 4. Remplacer les vitrages · 5. Installer une ventilation" v="→ classe B atteignable" f="ordre-des-travaux" />
+  <Row n="17" k="Ce certificat ne constitue ni un audit, ni une garantie de consommation réelle." v="" f="audit-logement" />
+</Paper>
+
+## Ce que dit chaque ligne
+
+<Legend>
+<li>**Identification** : le certificat est attaché au **bâtiment**, pas au propriétaire : il reste valable 10 ans en cas de revente, sauf travaux qui changent la performance. La surface « de plancher chauffée » n'est pas la surface habitable de l'annonce. → [[peb]]</li>
+<li>**Classe** : la lettre résume l'Espec. Elle est obligatoire dans l'annonce de vente ou de location et influence le prix, le loyer (indexation limitée pour les mauvaises classes) et, en Flandre, une obligation de rénover. → [[peb]]</li>
+<li>**Espec** : kWh d'énergie **primaire** par m² et par an, **théoriques**, pour une occupation standard (19 °C partout, ventilation réglementaire). L'énergie primaire compte l'électricité 🔴 avec un facteur 2,5 : une maison tout électrique est pénalisée, une maison avec pompe à chaleur et panneaux récupère. Ce n'est **pas** ta facture : ta consommation réelle dépend de ta façon d'habiter. → [[peb]]</li>
+<li>**Etotale** : Espec × surface ; sert à comparer deux maisons de tailles différentes en valeur absolue.</li>
+<li>**CO₂** : dérivé des énergies utilisées ; le mazout et le gaz pèsent plus que l'électricité verte.</li>
+<li>**Échelle** 🔴 : celle de la Wallonie ; Bruxelles utilise des seuils proches avec des lettres A à G, la Flandre une échelle différente (A+ à F) avec d'autres seuils. Un « C » bruxellois et un « C » wallon ne sont pas strictement comparables.</li>
+<li>**Toiture, murs, plancher** : pour chaque paroi, une valeur U (plus elle est basse, mieux c'est). Le mot clé est **« relevée »** ou **« hypothèse par défaut »** : quand le certificateur ne peut pas voir l'isolant (mur creux, plancher), il prend la valeur la plus défavorable de l'année de construction. D'où l'intérêt de lui fournir **factures et photos** des travaux : elles améliorent la classe. → [[isolation-maison]]</li>
+<li>**Fenêtres** : Uw de l'ensemble châssis + vitrage ; 2,8 pour un double vitrage de 1995, 1,1 pour un double HR actuel. → [[chassis-vitrage]]</li>
+<li>**Étanchéité à l'air** : sans test d'infiltrométrie, une valeur par défaut pénalisante ; un test (300 à 600 €) peut à lui seul gagner des points après rénovation.</li>
+<li>**Chauffage** : type, âge et rendement estimé du générateur, régulation. Une chaudière non condensation à 78 % contre 95 % pour une condensation : le remplacement est souvent la recommandation n° 3, pas la n° 1. → [[chauffage-maison]]</li>
+<li>**Eau chaude** : produite par la chaudière (mixte) ; un boiler électrique aurait aggravé l'Espec (facteur 2,5). → [[eau-chaude-sanitaire]]</li>
+<li>**Ventilation** : « aucun système » est la norme avant 2000 ; la PEB considère alors un renouvellement d'air non maîtrisé. → [[ventilation-maison]]</li>
+<li>**Recommandations** : générées par le logiciel, classées par impact théorique. Elles donnent l'ordre général (toit, murs, chauffage) mais ne tiennent compte ni de l'état réel (toit à refaire ?), ni de ton budget, ni de la salubrité : c'est le rôle de l'audit. → [[ordre-des-travaux]], [[audit-logement]]</li>
+<li>**Pas un audit** : le certificat est une photographie standardisée ; l'audit logement est un plan de travaux chiffré et ordonné par bouquets, obligatoire pour les primes wallonnes. Deux documents, souvent le même professionnel agréé. → [[audit-logement]]</li>
+</Legend>
+
+## Pour aller plus loin
+
+- La classe pèse sur les **droits d'enregistrement** réduits en Flandre et sur le prix négocié partout : [[droits-enregistrement]], [[peb]].
+- Les valeurs U « par défaut » sont la première chose à contester si tu as les factures des travaux précédents : un nouveau certificat coûte 🟠 à partir de 165 € HTVA.
+- Le récit [Je viens d'acheter ma première maison](../../situations/comprendre-ma-maison/) montre comment ce certificat devient une feuille de route.

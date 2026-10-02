@@ -1,0 +1,61 @@
+---
+// Coût annuel d'une maison : charges de propriétaire, énergie, eau, entretien et provision → coût mensuel réel du logement.
+---
+<div class="tool not-content">
+  <strong>La maison</strong>
+  <label>Valeur de reconstruction (hors terrain, base de l'assurance) <input type="number" id="m-recon" value="250000" step="5000" /></label>
+  <label>Mensualité du crédit hypothécaire (0 si payée) <input type="number" id="m-credit" value="948" step="10" /></label>
+  <strong>Charges annuelles de propriétaire</strong>
+  <label>Précompte immobilier (avertissement-extrait de rôle) <input type="number" id="m-pri" value="1100" step="50" /></label>
+  <label>Assurance habitation + protection juridique (par an) <input type="number" id="m-assur" value="520" step="10" /></label>
+  <label>Taxes communales (déchets, égouts, …) <input type="number" id="m-taxes" value="180" step="10" /></label>
+  <strong>Consommations annuelles</strong>
+  <label>Électricité : kWh/an <input type="number" id="m-elec-kwh" value="3500" step="100" /></label>
+  <label>Électricité : prix TVAC tout compris (€/kWh) <input type="number" id="m-elec-prix" value="0.32" step="0.01" /></label>
+  <label>Gaz ou mazout : kWh/an (1 l mazout ≈ 10 kWh) <input type="number" id="m-gaz-kwh" value="22000" step="500" /></label>
+  <label>Gaz / mazout : prix TVAC tout compris (€/kWh) <input type="number" id="m-gaz-prix" value="0.11" step="0.005" /></label>
+  <label>Eau : m³/an (≈ 35–40 par personne) <input type="number" id="m-eau-m3" value="110" step="5" /></label>
+  <label>Eau : prix tout compris (€/m³) <input type="number" id="m-eau-prix" value="5.5" step="0.1" /></label>
+  <strong>Entretien et renouvellement</strong>
+  <label>Entretiens annuels (chaudière, ramonage, gouttières, détecteurs…) <input type="number" id="m-entretien" value="500" step="50" /></label>
+  <label>Provision pour renouvellement (% de la valeur de reconstruction par an, repère 1 à 2 %) <input type="number" id="m-prov" value="1.2" step="0.1" /></label>
+  <div class="tool-out">
+    <div>Coût mensuel réel de la maison : <span class="big" id="m-total">—</span></div>
+    <div id="m-detail" style="font-size:var(--sl-text-sm);margin-top:.4rem"></div>
+    <div class="tool-bar" style="margin-top:.5rem"><span id="m-bar-credit" style="background:var(--sl-color-gray-3)"></span><span id="m-bar-fixe" style="background:var(--sl-color-orange)"></span><span id="m-bar-conso" style="background:var(--sl-color-blue)"></span><span id="m-bar-ent" style="background:var(--sl-color-green)"></span></div>
+    <div style="font-size:var(--sl-text-xs)">■ crédit · <span style="color:var(--sl-color-orange)">■</span> précompte, assurance, taxes · <span style="color:var(--sl-color-blue)">■</span> énergie et eau · <span style="color:var(--sl-color-green)">■</span> entretien et provision</div>
+    <div id="m-conseil" style="margin-top:.5rem;font-size:var(--sl-text-sm)"></div>
+  </div>
+</div>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const eur = (n: number) => n.toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  const ids = ['m-recon','m-credit','m-pri','m-assur','m-taxes','m-elec-kwh','m-elec-prix','m-gaz-kwh','m-gaz-prix','m-eau-m3','m-eau-prix','m-entretien','m-prov'];
+  function calc() {
+    const v: Record<string, number> = {};
+    ids.forEach((i) => (v[i] = +$(i).value || 0));
+    const fixe = (v['m-pri'] + v['m-assur'] + v['m-taxes']) / 12;
+    const elec = (v['m-elec-kwh'] * v['m-elec-prix']) / 12;
+    const gaz = (v['m-gaz-kwh'] * v['m-gaz-prix']) / 12;
+    const eau = (v['m-eau-m3'] * v['m-eau-prix']) / 12;
+    const conso = elec + gaz + eau;
+    const prov = (v['m-recon'] * v['m-prov']) / 100 / 12;
+    const ent = v['m-entretien'] / 12 + prov;
+    const total = v['m-credit'] + fixe + conso + ent;
+    const horsCredit = total - v['m-credit'];
+    $('m-total').textContent = eur(total);
+    $('m-detail').innerHTML = `Crédit ${eur(v['m-credit'])} · précompte, assurance, taxes ${eur(fixe)} · électricité ${eur(elec)} · chauffage ${eur(gaz)} · eau ${eur(eau)} · entretiens ${eur(v['m-entretien'] / 12)} · <strong>provision renouvellement ${eur(prov)}</strong>.<br/>Hors crédit, la maison coûte <strong>${eur(horsCredit)}/mois</strong> (${eur(horsCredit * 12)}/an) : c'est la part qu'un loyer « tout compris » cache et que la mensualité ne montre pas.`;
+    const t = Math.max(total, 1);
+    $('m-bar-credit').style.width = (v['m-credit'] / t) * 100 + '%';
+    $('m-bar-fixe').style.width = (fixe / t) * 100 + '%';
+    $('m-bar-conso').style.width = (conso / t) * 100 + '%';
+    $('m-bar-ent').style.width = (ent / t) * 100 + '%';
+    const kwhm2 = v['m-gaz-kwh'];
+    let c = '';
+    if (gaz > v['m-credit'] * 0.3 && kwhm2 > 15000) c = 'Le chauffage pèse lourd : c\'est le signe d\'une enveloppe à isoler ; le PEB et un audit logement diront par où commencer.';
+    else if (prov < 100) c = 'Provision faible : une chaudière (4 000 à 7 000 €) ou une toiture (20 000 € et plus) arrivera un jour ; 1 à 2 % de la valeur de reconstruction par an est le repère des gestionnaires.';
+    else c = 'Mets la provision sur un compte « maison » séparé, alimenté chaque mois : la maison devient une ligne du budget, plus une série de surprises.';
+    $('m-conseil').textContent = c;
+  }
+  ids.forEach((id) => $(id).addEventListener('input', calc)); calc();
+</script>

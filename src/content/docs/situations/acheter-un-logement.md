@@ -218,6 +218,8 @@ Les mensualités commencent le mois suivant : 948 €. S'y ajoutent, et c'est ce
 
 Et un dernier mécanisme à comprendre : ton **patrimoine**. Le jour de l'acte, tu n'es pas plus riche : tu as transformé 65 800 € d'épargne et 200 000 € de dette en un actif de 250 000 €. Ce qui te rend plus riche, c'est chaque mensualité qui rembourse du capital (448 € le premier mois, davantage ensuite) et, peut-être, la hausse du prix. Voir [[patrimoine-net]].
 
+Et si tu as acheté une maison plutôt qu'un appartement, le vrai travail commence : comprendre l'électricité, l'eau, le chauffage, le toit, l'humidité, puis décider dans quel ordre rénover. C'est l'objet du récit suivant, [Je viens d'acheter ma première maison : je dois comprendre quoi ?](../comprendre-ma-maison/), et de la carte [Ma maison, le système](../../maison/). L'outil [budget annuel de ma maison](../../outils/budget-maison/) refait le tableau ci-dessus avec tes chiffres.
+
 ## Et si… ? Trois variantes
 
 **Tu dois revendre après 3 ans** (mutation, séparation). Tu as remboursé ≈ 17 000 € de capital et payé ≈ 17 000 € d'intérêts, 15 800 € de frais d'entrée, 12 750 € de charges. À prix stable, tu récupères ≈ 67 000 € pour 112 000 € sortis de ta poche (apport + frais + mensualités + charges) : tu es derrière le locataire d'environ 15 000 €. C'est le coût de l'incertitude.

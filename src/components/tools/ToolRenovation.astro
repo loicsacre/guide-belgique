@@ -1,0 +1,101 @@
+---
+// Budget rénovation : postes, TVA, imprévus, primes wallonnes (base × coefficient, plafond), financement et trésorerie.
+---
+<div class="tool not-content">
+  <strong>Ma situation</strong>
+  <label>Région <select id="r-region"><option value="wal">Wallonie (primes Habitation)</option><option value="bxl">Bruxelles (Rénolution)</option><option value="vla">Flandre (Mijn VerbouwPremie)</option></select></label>
+  <label>Catégorie de revenus (Wallonie : revenu imposable du ménage) <select id="r-cat"><option value="6">R1 ≤ 26 900 € (×6)</option><option value="4" selected>R2 ≤ 38 300 € (×4)</option><option value="3">R3 ≤ 50 600 € (×3)</option><option value="2">R4 ≤ 114 400 € (×2)</option><option value="1">R5 au-delà (×1)</option></select></label>
+  <label>Logement de plus de 10 ans (TVA 6 % au lieu de 21 %) <select id="r-tva"><option value="0.06" selected>Oui — 6 %</option><option value="0.21">Non — 21 %</option></select></label>
+  <strong>Les postes (montants HTVA, devis entrepreneur)</strong>
+  <label>Toiture : isolation, surface m² <input type="number" id="r-toit-m2" value="110" step="5" /></label>
+  <label>Toiture : coût total HTVA (couverture + isolation) <input type="number" id="r-toit" value="26500" step="100" /></label>
+  <label>Toiture : dont part « isolation » HTVA (base du plafond de prime) <input type="number" id="r-toit-iso" value="7000" step="100" /></label>
+  <label>Murs : isolation, surface m² <input type="number" id="r-mur-m2" value="0" step="5" /></label>
+  <label>Murs : coût HTVA <input type="number" id="r-mur" value="0" step="100" /></label>
+  <label>Châssis : surface m² <input type="number" id="r-chassis-m2" value="0" step="1" /></label>
+  <label>Châssis : coût HTVA <input type="number" id="r-chassis" value="0" step="100" /></label>
+  <label>Pompe à chaleur : coût HTVA <input type="number" id="r-pac" value="0" step="100" /></label>
+  <label>Ventilation double flux : coût HTVA <input type="number" id="r-vmc" value="0" step="100" /></label>
+  <label>Électricité (mise en conformité) : coût HTVA <input type="number" id="r-elec" value="6100" step="100" /></label>
+  <label>Autres travaux non primés (ventilation simple, plafonnage, cuisine…) HTVA <input type="number" id="r-autres" value="3600" step="100" /></label>
+  <label>Réserve pour imprévus (%) <input type="number" id="r-imprevus" value="12" step="1" /></label>
+  <strong>Financement</strong>
+  <label>Épargne mobilisée <input type="number" id="r-epargne" value="15000" step="500" /></label>
+  <label>Prêt régional à 0 % (Rénopack, prêt vert…) <input type="number" id="r-pret0" value="20000" step="500" /></label>
+  <label>Durée du prêt à 0 % (ans) <input type="number" id="r-pret0-ans" value="15" step="1" /></label>
+  <label>Taux du crédit bancaire complémentaire (%) <input type="number" id="r-taux" value="4.5" step="0.1" /></label>
+  <label>Durée du crédit complémentaire (ans) <input type="number" id="r-duree" value="5" step="1" /></label>
+  <div class="tool-out">
+    <div>Budget total TVAC, imprévus compris : <span class="big" id="r-total">—</span></div>
+    <div id="r-detail" style="font-size:var(--sl-text-sm);margin-top:.4rem"></div>
+    <table style="margin-top:.6rem;width:100%"><thead><tr><th style="text-align:left">Prime (mécanique wallonne)</th><th style="text-align:right">Base × coef.</th><th style="text-align:right">Plafond</th><th style="text-align:right">Prime</th></tr></thead><tbody id="r-primes"></tbody></table>
+    <div id="r-fin" style="font-size:var(--sl-text-sm);margin-top:.6rem"></div>
+    <div class="tool-bar" style="margin-top:.5rem"><span id="r-bar-ep" style="background:var(--sl-color-green)"></span><span id="r-bar-prime" style="background:var(--sl-color-orange)"></span><span id="r-bar-p0" style="background:var(--sl-color-blue)"></span><span id="r-bar-cred" style="background:var(--sl-color-gray-3)"></span></div>
+    <div style="font-size:var(--sl-text-xs)"><span style="color:var(--sl-color-green)">■</span> épargne · <span style="color:var(--sl-color-orange)">■</span> primes (après travaux) · <span style="color:var(--sl-color-blue)">■</span> prêt 0 % · ■ crédit bancaire</div>
+    <div id="r-conseil" style="margin-top:.5rem;font-size:var(--sl-text-sm)"></div>
+  </div>
+</div>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const eur = (n: number) => n.toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  const ids = ['r-region','r-cat','r-tva','r-toit-m2','r-toit','r-toit-iso','r-mur-m2','r-mur','r-chassis-m2','r-chassis','r-pac','r-vmc','r-elec','r-autres','r-imprevus','r-epargne','r-pret0','r-pret0-ans','r-taux','r-duree'];
+  // Montants de base wallons (régime Habitation jusqu'au 30/09/2026) — 🔴 à vérifier à la date de la demande.
+  const BASE = { toit: 20, mur: 8.8, chassis: 26, pac: 600, vmc: 680, elec: 320 };
+  function mens(cap: number, taux: number, ans: number) {
+    if (cap <= 0 || ans <= 0) return 0;
+    const i = taux / 100 / 12, n = ans * 12;
+    return i === 0 ? cap / n : (cap * i) / (1 - Math.pow(1 + i, -n));
+  }
+  function calc() {
+    const v: Record<string, number> = {};
+    ids.forEach((i) => (v[i] = +$(i).value || 0));
+    const region = $('r-region').value;
+    const coef = v['r-cat'];
+    const tva = v['r-tva'];
+    const plafond = coef >= 2 ? 0.7 : 0.5;
+    const postes = [
+      { k: 'Toiture (isolation)', ht: v['r-toit'], prim: Math.min(v['r-toit'], v['r-toit-iso']), base: BASE.toit * v['r-toit-m2'] },
+      { k: 'Murs (isolation)', ht: v['r-mur'], base: BASE.mur * v['r-mur-m2'] },
+      { k: 'Châssis', ht: v['r-chassis'], base: BASE.chassis * v['r-chassis-m2'] },
+      { k: 'Pompe à chaleur', ht: v['r-pac'], base: v['r-pac'] > 0 ? BASE.pac : 0 },
+      { k: 'Ventilation double flux', ht: v['r-vmc'], base: v['r-vmc'] > 0 ? BASE.vmc : 0 },
+      { k: 'Électricité', ht: v['r-elec'], base: v['r-elec'] > 0 ? BASE.elec : 0 },
+    ];
+    const ht = postes.reduce((s, p) => s + p.ht, 0) + v['r-autres'];
+    const ttc = ht * (1 + tva);
+    const imprevus = ttc * (v['r-imprevus'] / 100);
+    const total = ttc + imprevus;
+    let primes = 0;
+    const rows: string[] = [];
+    for (const p of postes) {
+      if (p.ht <= 0) continue;
+      const ttcPoste = ((p as any).prim ?? p.ht) * (1 + tva);
+      const brut = p.base * coef;
+      const cap = ttcPoste * plafond;
+      const prime = region === 'wal' ? Math.min(brut, cap) : 0;
+      primes += prime;
+      rows.push(`<tr><td>${p.k}</td><td style="text-align:right">${eur(brut)}</td><td style="text-align:right">${eur(cap)}</td><td style="text-align:right"><strong>${region === 'wal' ? eur(prime) : 'voir guichet régional'}</strong></td></tr>`);
+    }
+    $('r-primes').innerHTML = rows.join('') || '<tr><td colspan="4">Aucun poste primable encodé.</td></tr>';
+    $('r-total').textContent = eur(total);
+    $('r-detail').innerHTML = `HTVA ${eur(ht)} · TVA ${Math.round(tva * 100)} % ${eur(ttc - ht)} · imprévus ${eur(imprevus)}${tva > 0.1 ? ' · <strong>à 6 %, le même chantier coûterait ' + eur(ht * 1.06 * (1 + v['r-imprevus'] / 100)) + '</strong>' : ''}`;
+    const aFinancer = total; // les primes arrivent après : elles ne financent pas le chantier
+    const credit = Math.max(0, aFinancer - v['r-epargne'] - v['r-pret0']);
+    const m0 = mens(v['r-pret0'], 0, v['r-pret0-ans']);
+    const mc = mens(credit, v['r-taux'], v['r-duree']);
+    const interets = mc * v['r-duree'] * 12 - credit;
+    $('r-fin').innerHTML = `À avancer avant les primes : <strong>${eur(aFinancer)}</strong> = épargne ${eur(v['r-epargne'])} + prêt 0 % ${eur(v['r-pret0'])} + crédit bancaire <strong>${eur(credit)}</strong>.<br/>Mensualités : prêt 0 % ${eur(m0)}/mois pendant ${v['r-pret0-ans']} ans · crédit ${eur(mc)}/mois pendant ${v['r-duree']} ans (intérêts ${eur(interets)}).<br/>Primes attendues <strong>${eur(primes)}</strong> (${total ? Math.round((primes / total) * 100) : 0} % du budget), versées 2 à 6 mois après les factures : coût net après primes <strong>${eur(total - primes)}</strong>.`;
+    const t = Math.max(total, 1);
+    $('r-bar-ep').style.width = Math.min(100, (v['r-epargne'] / t) * 100) + '%';
+    $('r-bar-prime').style.width = Math.min(100, (primes / t) * 100) + '%';
+    $('r-bar-p0').style.width = Math.min(100, (v['r-pret0'] / t) * 100) + '%';
+    $('r-bar-cred').style.width = Math.min(100, (Math.max(0, credit - primes) / t) * 100) + '%';
+    let c = '';
+    if (region !== 'wal') c = 'Les primes bruxelloises et flamandes suivent la même logique (base ou pourcentage × catégorie de revenus, plafond) mais avec d\'autres barèmes : utilise le simulateur officiel de ta Région et reporte le montant ici en épargne « différée ».';
+    else if (credit > primes * 1.5 && credit > 5000) c = 'Le crédit bancaire dépasse largement les primes à venir : vérifie si un prêt régional à 0 % plus élevé ou l\'intégration des travaux au crédit hypothécaire est possible.';
+    else if (primes > 0 && credit <= primes) c = 'Le crédit complémentaire sera remboursé par les primes : montage sain, à condition de garder l\'épargne de précaution intacte.';
+    else c = 'Pense au calendrier : les gros paiements tombent au milieu du chantier, les primes après la dernière facture.';
+    $('r-conseil').textContent = c;
+  }
+  ids.forEach((id) => $(id).addEventListener('input', calc)); calc();
+</script>

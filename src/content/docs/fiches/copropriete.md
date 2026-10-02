@@ -11,7 +11,7 @@ organisme: "Syndic, assemblée générale"
 short: "Dans un immeuble à appartements, tu possèdes ton lot en exclusivité et une quote-part des parties communes ; les décisions se prennent en assemblée générale, le syndic gère, et les charges communes se répartissent selon les quotités."
 aliases: [syndic, assemblée générale, AG, quotités, parties communes, fonds de roulement, fonds de réserve, acte de base, règlement de copropriété, ACP]
 prerequisites: [cout-reel-achat]
-related: [indexation-loyer, assurance-habitation, peb, droits-reels]
+related: [indexation-loyer, assurance-habitation, peb, droits-reels, primes-renovation, entretien-maison]
 last_verified: 2026-10-02
 sources:
   - title: Notaire.be — Copropriété
