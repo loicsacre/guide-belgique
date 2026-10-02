@@ -31,25 +31,27 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 - 5 fiches en `status: relecture` (chiffres ou règles en mouvement à revérifier) : chomage (réforme limitation dans le temps), fiscalite-investissements (taxe plus-values 2026), peb (calendriers régionaux de rénovation obligatoire), voiture-taxes (formules TMC régionales), incapacite-de-travail (pourcentages indicatifs).
 - Chiffres datés vérifiés le 2026-10-02 : ONSS 13,07 % ; barème IPP exercice 2026 (16 320 / 28 800 / 49 840 €, 25-50 %) ; quotité exemptée 10 910 € ; forfait frais 30 % max 5 930 € ; délais déclaration 2026 (30/06, 15/07, 16/10) ; chèques-repas 10 € dès 2026 ; droits d'enregistrement W 3 % / Fl 2 % (3 % en 2027) / Bxl abattement 200 000 € ; garantie locative 2/2/3 mois ; cotisations indépendant 20,5 % jusqu'à 75 024 €, minimum 926,48 €/trim ; pension légale 66 ans (67 en 2030), anticipée 63/42 ; TVA 21/12/6 %, franchise 25 000 € ; ISoc 25 % / 20 % PME avec rémunération ≥ 45 000 € ; précompte mobilier 30 %, exonération épargne 1 020 € ; garantie des dépôts 100 000 € ; succession ligne directe 3-30 % (Fl 27 %), réforme wallonne 2028 ; dons non enregistrés : rappel 3 ans (Fl, Bxl) / 5 ans (W).
 - Exemples fil rouge réutilisés entre fiches : salaire 3 500 € brut ; 42 000 € imposables → 36 070 € → 9 616 € d'impôt ; achat 250 000 € avec crédit 200 000 € à 3 % sur 25 ans (948 €/mois ; 250 000 € → 1 185,53 €/mois).
-- Pas encore poussé sur GitHub au moment de cette note.
+- Publié : repo public `loicsacre/guide-belgique`, Pages via GitHub Actions → https://loicsacre.github.io/guide-belgique/ (chaque push sur `main` redéploie).
 
 ## Prochaines étapes
 
-1. Pousser sur GitHub et activer Pages (Settings → Pages → Source : GitHub Actions).
-2. Repasser les 5 fiches `relecture` avec les sources officielles primaires (ONEM, SPF Finances, Régions).
-3. Lacunes identifiées (à ajouter dans `parcours.yaml` puis rédiger) : allocations familiales régionales ; congés thématiques (parental, crédit-temps) ; travail étudiant et flexi-jobs ; télétravail et frais propres ; pension de survie et GRAPA ; allocations de chômage : montants ; aide sociale / CPAS / revenu d'intégration ; crédit auto et leasing privé ; achat sur plan (loi Breyne, TVA) ; seconde résidence et location (fiscalité du bailleur) ; assurance revenu garanti ; protection juridique ; divorce et contributions alimentaires (détail) ; ASBL ; comptabilité simplifiée de l'indépendant ; dette publique et budget de l'État ; télécom et abonnements ; mobilité (budget mobilité, vélo) ; permis d'urbanisme.
-4. Idée en attente : décortiquer une vraie fiche de paie anonymisée de Lolo.
-5. Idée en attente : page « carte des connaissances » (graphe des prérequis), page par niveau, page par tag.
-6. Idée : script `npm run check:links` à lancer depuis le Mac (le proxy de la session cloud bloque node fetch).
+1. Repasser les 5 fiches `relecture` avec les sources officielles primaires (ONEM, SPF Finances, Régions).
+2. Lacunes identifiées (à ajouter dans `parcours.yaml` puis rédiger) : allocations familiales régionales ; congés thématiques (parental, crédit-temps) ; travail étudiant et flexi-jobs ; télétravail et frais propres ; pension de survie et GRAPA ; allocations de chômage : montants ; aide sociale / CPAS / revenu d'intégration ; crédit auto et leasing privé ; achat sur plan (loi Breyne, TVA) ; seconde résidence et location (fiscalité du bailleur) ; assurance revenu garanti ; protection juridique ; divorce et contributions alimentaires (détail) ; ASBL ; comptabilité simplifiée de l'indépendant ; dette publique et budget de l'État ; télécom et abonnements ; mobilité (budget mobilité, vélo) ; permis d'urbanisme.
+3. Idée en attente : décortiquer une vraie fiche de paie anonymisée de Lolo.
+4. Idée en attente : page « carte des connaissances » (graphe des prérequis), page par niveau, page par tag.
+5. Idée : script `npm run check:links` à lancer depuis le Mac (le proxy de la session cloud bloque node fetch).
 
 ## Pièges connus
 
 - Sources : plusieurs pages profondes de finances.belgium.be, emploi.belgique.be et belgium.be n'ont pas pu être vérifiées. Les fiches pointent vers l'accueil de ces sites ou vers des pages confirmées. Lancer `npm run check:links` depuis un vrai PC.
 - `js-yaml` doit rester en v4 : Starlight fait `import yaml from 'js-yaml'` et la v5 casse le build.
 - Astro 7 utilise Sätteri par défaut : le plugin wiki-links passe par `unified()` de `@astrojs/markdown-remark` dans `astro.config.mjs`.
+- Push sur le Mac de Lolo : `~/.ssh/config` pointe github.com vers `id_rsa.github` (absent) ; la clé qui marche est `~/.ssh/github_id` (`GIT_SSH_COMMAND="ssh -i ~/.ssh/github_id -o IdentitiesOnly=yes" git push`). Le token `gh` n'a pas le scope `workflow`.
+- La CI fait `npm ci` (Node 22 / npm 10) : si « Missing … from lock file », régénérer le lock (`rm -rf node_modules package-lock.json && npm install`).
 - Ne pas copier `node_modules` d'une machine à l'autre (binaires natifs) : `npm install` sur chaque PC.
 
 ## Journal des sessions
 
 - **2026-10-02** — Cadrage du guide, structure en 15 parties, prompt maître (→ `CLAUDE.md`). Scaffold Astro Starlight, schéma de fiche, sidebar/glossaire/parcours automatiques, workflow Pages. 14 fiches + 1 situation.
 - **2026-10-02 (suite)** — Mission « encyclopédie » : 4 niveaux, domaines banque et économie, champs status/tags, section « Pour aller plus loin » (fiches dont celle-ci est prérequis), parcours étendu à 104 notions en 13 blocs. 90 fiches et 5 situations ajoutées → 104 fiches, 6 situations, 114 pages. Vérifications factuelles : voir État actuel.
+- **2026-10-02 (publication)** — Repo GitHub créé, push, Pages activé ; lockfile régénéré pour `npm ci`. Site en ligne.
