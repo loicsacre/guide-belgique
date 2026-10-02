@@ -21,6 +21,18 @@ npm run check                           # vérifie métadonnées, liens [[slug]]
 
 Le parcours niveau 1, et donc la barre de progression, se trouve dans `src/data/parcours.yaml`.
 
+## Lire autrement : PDF et EPUB
+
+Le même contenu existe en mémo d'une page, en fiche pratique A4, en petit livre A5 (cahier, reMarkable) et en EPUB (Kobo, Kindle, Apple Books). Voir [`CONTENT_MODEL.md`](./CONTENT_MODEL.md).
+
+```bash
+npm run build
+npx playwright-core install chromium   # une fois (sinon Google Chrome installé est utilisé)
+npm run export                         # → dist/telechargements/
+```
+
+En ligne, GitHub Actions les produit à chaque déploiement : page « Bibliothèque » du site.
+
 ## Publier sur GitHub Pages
 
 ```bash

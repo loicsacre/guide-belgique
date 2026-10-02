@@ -1,0 +1,102 @@
+/* Blocs du modèle éditorial (mémo, checklist, quiz, formats).
+   Partagé par le site (via Starlight) et les pages d'impression (sans Starlight) : variables avec repli. */
+:root {
+  --gb-accent: var(--sl-color-accent, #2f6f5e);
+  --gb-accent-low: var(--sl-color-accent-low, #e3efeb);
+  --gb-line: var(--sl-color-gray-5, #c9c9c9);
+  --gb-soft: var(--sl-color-gray-6, #f2f2f2);
+  --gb-muted: var(--sl-color-gray-3, #666);
+  --gb-ok: var(--sl-color-green, #2e7d32);
+  --gb-ko: var(--sl-color-red, #c62828);
+  --gb-text: var(--sl-color-text, #1b1b1b);
+  --gb-bg: var(--sl-color-bg, #fff);
+}
+
+/* Bandeau « Lire autrement » */
+.gb-formats { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; margin: 0 0 1.5rem; font-size: var(--sl-text-sm, 0.875rem); }
+.gb-formats-label { color: var(--gb-muted); font-weight: 600; margin-right: 0.2rem; }
+.gb-formats a { text-decoration: none; padding: 0.15rem 0.6rem; border: 1px solid var(--gb-line); border-radius: 999px; color: var(--gb-text); }
+.gb-formats a:hover { border-color: var(--gb-accent); background: var(--gb-accent-low); }
+.gb-hint { font-size: var(--sl-text-sm, 0.875rem); color: var(--gb-muted); }
+
+/* Mémo */
+.gb-memo { border: 2px solid var(--gb-accent); border-radius: 0.6rem; padding: 1rem 1.25rem; margin: 1rem 0; }
+.gb-memo h4 { margin: 0.9rem 0 0.35rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gb-accent); }
+.gb-memo section:first-child h4, .gb-memo-title + section h4 { margin-top: 0.2rem; }
+.gb-memo-title { font-size: 1.35rem; font-weight: 800; border-bottom: 2px solid var(--gb-accent); padding-bottom: 0.3rem; margin-bottom: 0.6rem; }
+.gb-memo-title span { font-weight: 400; color: var(--gb-muted); font-size: 0.9rem; margin-left: 0.6rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.gb-memo-idees ol { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 0.6rem; counter-reset: i; }
+.gb-memo-idees li { background: var(--gb-accent-low); border-radius: 0.4rem; padding: 0.55rem 0.7rem; margin: 0; counter-increment: i; }
+.gb-memo-idees li strong { display: block; margin-bottom: 0.2rem; }
+.gb-memo-idees li strong::before { content: counter(i) '. '; color: var(--gb-accent); }
+.gb-memo-idees li span { font-size: 0.88em; }
+.gb-flow { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.3rem; align-items: center; }
+.gb-flow li { margin: 0; display: flex; align-items: center; font-size: 0.85em; font-weight: 600; }
+.gb-flow li span { padding: 0.15rem 0.55rem; border: 1px solid var(--gb-accent); border-radius: 0.3rem; }
+.gb-flow li + li::before { content: '→'; margin-right: 0.3rem; color: var(--gb-accent); font-weight: 700; }
+.gb-memo-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0 1.5rem; }
+.gb-memo dl { margin: 0; font-size: 0.88em; }
+.gb-memo dt { font-weight: 700; margin-top: 0.3rem; }
+.gb-memo dt small { font-weight: 400; color: var(--gb-muted); }
+.gb-memo dd { margin: 0; }
+.gb-memo-chiffres table { width: 100%; border-collapse: collapse; font-size: 0.88em; margin: 0; display: table; }
+.gb-memo-chiffres td { padding: 0.2rem 0.4rem; border-bottom: 1px dotted var(--gb-line); vertical-align: top; }
+.gb-memo-chiffres td.v { font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.gb-memo-chiffres td.n { width: 1.4rem; text-align: center; }
+.gb-legend { font-size: 0.75em; color: var(--gb-muted); margin: 0.3rem 0 0; }
+.gb-memo-piege { margin: 0.9rem 0 0; padding: 0.5rem 0.75rem; border-left: 4px solid var(--gb-ko); background: var(--gb-soft); font-size: 0.9em; }
+
+/* Checklist */
+.gb-checklist { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0.5rem 1.5rem; margin: 1rem 0; }
+.gb-checklist section { break-inside: avoid; }
+.gb-checklist h4 { margin: 0.4rem 0 0.3rem; font-size: 1rem; display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; border-bottom: 1px solid var(--gb-line); }
+.gb-checklist h4 small { font-weight: 400; font-size: 0.75rem; color: var(--gb-muted); }
+.gb-checklist ul { list-style: none; padding: 0; margin: 0; }
+.gb-checklist li { position: relative; padding-left: 1.5rem; margin: 0.25rem 0; font-size: 0.92em; }
+.gb-checklist li::before { content: ''; position: absolute; left: 0; top: 0.2em; width: 0.85em; height: 0.85em; border: 1.5px solid var(--gb-text); border-radius: 0.15em; }
+
+/* Quiz web */
+.gb-quiz { margin-top: 2.5rem; }
+.gb-quiz-intro { color: var(--gb-muted); font-size: var(--sl-text-sm, 0.875rem); }
+.gb-q-list { list-style: none; padding: 0; counter-reset: q; }
+.gb-q { counter-increment: q; border: 1px solid var(--gb-line); border-radius: 0.5rem; padding: 0.9rem 1.1rem; margin: 0.9rem 0; }
+.gb-q.is-ok { border-color: var(--gb-ok); }
+.gb-q.is-ko { border-color: var(--gb-ko); }
+.gb-q-text { font-weight: 600; margin: 0.2rem 0 0.6rem; }
+.gb-q-text::before { content: counter(q) '. '; color: var(--gb-accent); }
+.gb-savoir { font-size: 0.72rem; color: var(--gb-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.gb-choices { display: grid; gap: 0.4rem; }
+.gb-choices.gb-row { grid-template-columns: repeat(2, minmax(0, 10rem)); }
+.gb-q button { font: inherit; color: var(--gb-text); background: var(--gb-bg); border: 1px solid var(--gb-line); border-radius: 0.4rem; padding: 0.45rem 0.7rem; text-align: left; cursor: pointer; }
+.gb-q button:hover:not(:disabled) { border-color: var(--gb-accent); background: var(--gb-accent-low); }
+.gb-q button:disabled { cursor: default; }
+.gb-q button.picked { border-width: 2px; }
+.gb-q .right { border-color: var(--gb-ok) !important; background: color-mix(in srgb, var(--gb-ok) 12%, transparent); }
+.gb-q .picked:not(.right) { border-color: var(--gb-ko); background: color-mix(in srgb, var(--gb-ko) 10%, transparent); }
+.gb-q .wrong { border-color: var(--gb-ko) !important; }
+.gb-number { display: flex; gap: 0.5rem; align-items: center; }
+.gb-number input { font: inherit; width: 9rem; padding: 0.4rem 0.5rem; border: 1px solid var(--gb-line); border-radius: 0.4rem; background: var(--gb-bg); color: var(--gb-text); text-align: right; }
+.gb-order ol { list-style: none; padding: 0; margin: 0 0 0.5rem; }
+.gb-order li { display: grid; grid-template-columns: 1fr auto auto; gap: 0.3rem; align-items: center; border: 1px solid var(--gb-line); border-radius: 0.4rem; padding: 0.25rem 0.3rem 0.25rem 0.7rem; margin: 0.3rem 0; }
+.gb-order li button { padding: 0.1rem 0.5rem; }
+.gb-expl { margin-top: 0.7rem; padding-top: 0.6rem; border-top: 1px dashed var(--gb-line); font-size: 0.92em; }
+.gb-expl p { margin: 0.25rem 0; }
+.gb-verdict { font-weight: 700; }
+.gb-q-notions { font-size: 0.9em; color: var(--gb-muted); }
+.gb-score { font-weight: 700; padding: 0.6rem 0.9rem; background: var(--gb-accent-low); border-radius: 0.4rem; }
+
+/* Quiz papier et corrigé */
+.gb-quiz-paper ol { padding-left: 1.3rem; }
+.gb-quiz-paper > ol > li { margin-bottom: 0.7rem; break-inside: avoid; }
+.gb-quiz-paper p { margin: 0 0 0.2rem; }
+.gb-paper-choices { list-style: none; padding-left: 0.3rem; margin: 0; }
+.gb-paper-line { color: var(--gb-muted); }
+.gb-corrige { padding-left: 1.3rem; font-size: 0.9em; }
+.gb-corrige li { margin-bottom: 0.4rem; }
+
+/* Bibliothèque */
+.gb-livre { border-left: 6px solid var(--gb-cover, var(--gb-accent)); padding: 0.2rem 0 0.2rem 1rem; margin: 1rem 0 1.5rem; }
+.gb-livre h3 { margin-top: 0; }
+.gb-livre .gb-formats { margin: 0.5rem 0 0; }
+.sl-markdown-content .gb-memo dd { margin-inline-start: 0; }
+.sl-markdown-content .gb-memo dt { margin-top: 0.35rem; }

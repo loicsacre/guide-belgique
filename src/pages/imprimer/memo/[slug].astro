@@ -1,0 +1,31 @@
+---
+// Mémo : une page A4, relue en deux minutes.
+import Print from '../../../layouts/Print.astro';
+import Memo from '../../../components/gbcf/Memo.astro';
+import { practicalEntries, SITE_URL } from '../../../lib/gbcf';
+import { slugOf, fmtDate } from '../../../lib/notions';
+import { qrSvg } from '../../../lib/qr';
+
+export async function getStaticPaths() {
+  return (await practicalEntries()).filter((e) => e.data.memo).map((entry) => ({ params: { slug: slugOf(entry) }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const d = entry.data;
+const url = `${SITE_URL}/${entry.id}/`;
+const qr = await qrSvg(url);
+---
+<Print title={`${d.title} — mémo`} format="a4" kind="memo" description={d.description}>
+  <header class="print-head">
+    <div>
+      <div class="print-badge">La vie adulte en Belgique · Mémo</div>
+      <h1>{d.title}</h1>
+      {d.description && <p class="print-lede">{d.description}</p>}
+    </div>
+    <div class="print-qr"><Fragment set:html={qr} />Version complète, calculs et quiz</div>
+  </header>
+  <Memo data={d} />
+  <footer class="print-footer">
+    <span>Pas un conseil personnalisé : un résumé pour comprendre. Chiffres vérifiés : {fmtDate(d.last_verified)}.</span>
+    <span>{url.replace('https://', '')}</span>
+  </footer>
+</Print>

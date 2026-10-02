@@ -12,7 +12,7 @@ etapes:
   - cotisations-independant
 - titre: Préparer le plan financier
   quand: Mois −2
-  texte: 'Obligatoire pour une SRL : prévisions sur 2 ans, fonds propres suffisants (plus de capital minimum, mais responsabilité des fondateurs si insuffisants).'
+  texte: 'Obligatoire pour une SRL : prévisions sur 2 ans, fonds propres suffisants (plus de capital minimum, mais responsabilité des fondateurs si insuffisants). Les apports en argent sont versés sur un compte bloqué au nom de la société en formation ; la banque remet une attestation au notaire.'
   notions:
   - tresorerie-cash-flow
   - actif-passif-bilan
@@ -25,7 +25,7 @@ etapes:
   - regime-matrimonial
 - titre: Ouvrir les circuits
   quand: Semaine 1
-  texte: Compte bancaire au nom de la société, logiciel de facturation Peppol, assurances (RC, revenu garanti du dirigeant).
+  texte: Le compte bloqué devient le compte de la société ; registre UBO dans le mois ; logiciel de facturation Peppol, assurances (RC, revenu garanti du dirigeant).
   notions:
   - bce-numero-entreprise
   - compte-a-vue
@@ -56,6 +56,118 @@ etapes:
   - actif-passif-bilan
   - impot-des-societes
   - precompte-mobilier
+savoir: faire
+memo:
+  idees:
+  - titre: La société n'est pas toi
+    texte: Elle a son propre compte, ses propres dettes, son propre impôt. Son argent n'est pas le tien tant qu'il n'est pas sorti.
+  - titre: Le gain vient de ce que tu laisses dedans
+    texte: Le bénéfice laissé dans la société est taxé à 20-25 % au lieu de 50 %. Si tu as besoin de tout pour vivre, il n'y a pas de gain, seulement des frais.
+  - titre: Chaque sortie est taxée une seconde fois
+    texte: Rémunération (cotisations + IPP), dividende (précompte mobilier) ou liquidation. Le calcul honnête compare ce qui arrive dans ta poche.
+  chemin:
+  - Simulation
+  - Plan financier
+  - Compte bloqué
+  - Acte notarié
+  - Moniteur + BCE
+  - TVA + UBO
+  - Rémunération
+  - Comptabilité
+  - Comptes annuels + ISoc
+  acteurs:
+  - qui: Toi
+    role: associée et administratrice, tu signes et tu réponds de la gestion
+  - qui: Le comptable
+    role: plan financier, comptabilité en partie double, déclarations TVA et ISoc
+  - qui: Le notaire
+    role: acte constitutif, publication au Moniteur, inscription à la BCE
+  - qui: La banque
+    role: compte bloqué et attestation, puis compte de la société
+  - qui: Le SPF Finances
+    role: TVA, impôt des sociétés, versements anticipés, registre UBO
+  - qui: La caisse d'assurances sociales
+    role: tes cotisations de dirigeante, calculées sur ta rémunération
+  - qui: La Banque nationale
+    role: reçoit les comptes annuels et les rend publics
+  documents:
+  - nom: Plan financier
+    quand: avant l'acte
+    texte: prévisions sur 2 ans, remis au notaire, non publié
+  - nom: Attestation bancaire
+    quand: avant l'acte
+    texte: prouve que les apports en argent sont versés et bloqués
+  - nom: Acte constitutif et statuts
+    quand: jour 0
+    texte: les règles de la société, publiées au Moniteur
+  - nom: Extrait BCE
+    quand: semaine 1
+    texte: numéro d'entreprise, qui sert aussi de numéro de TVA
+  - nom: Comptes annuels
+    quand: chaque année
+    texte: bilan et compte de résultats, déposés à la BNB, publics
+  chiffres:
+  - valeur: 20 %
+    sens: taux réduit d'ISoc sur les premiers 100 000 € de bénéfice (petite société, rémunération ≥ 45 000 €)
+    nature: legal
+  - valeur: 25 %
+    sens: taux normal de l'impôt des sociétés
+    nature: legal
+  - valeur: 45 000 €
+    sens: rémunération minimale d'un dirigeant pour le taux réduit
+    nature: legal
+  - valeur: 30 %
+    sens: précompte mobilier normal sur un dividende
+    nature: legal
+  - valeur: 6 / 7 mois
+    sens: approbation des comptes en AG, puis dépôt à la BNB, après la clôture
+    nature: legal
+  - valeur: 60-80 000 €
+    sens: bénéfice durable à partir duquel on commence à en parler
+    nature: repere
+  - valeur: 3 000-6 000 €
+    sens: coût annuel de la structure (comptable, dépôt, assurances, banque)
+    nature: repere
+  piege: Payer une dépense privée avec le compte de la société. C'est un emprunt à ta société (compte courant débiteur) qui coûte des intérêts, ou un avantage taxé chez toi.
+checklist:
+- phase: Avant de décider
+  quand: Mois −3
+  items:
+  - Calculer de combien j'ai besoin pour vivre chaque mois
+  - Faire simuler personne physique vs société par un comptable, sur 3 ans
+  - Vérifier que la rémunération de 45 000 € est tenable
+  - Si marié·e, regarder le [[regime-matrimonial|régime matrimonial]] avec le notaire
+- phase: Préparer
+  quand: Mois −2
+  items:
+  - Choisir le nom et vérifier qu'il est libre (BCE, marques)
+  - Faire établir le [[tresorerie-cash-flow|plan financier]] sur 2 ans
+  - Décider des apports (argent, matériel, clientèle)
+  - Ouvrir le compte bloqué et y verser les apports en argent
+  - Récupérer l'attestation bancaire
+- phase: Créer
+  quand: Jour 0 → semaine 2
+  items:
+  - Signer l'acte chez le [[notaire-acte-authentique|notaire]]
+  - Recevoir le numéro d'entreprise ([[bce-numero-entreprise|BCE]])
+  - Activer la [[tva|TVA]] si l'activité y est soumise
+  - Inscrire les bénéficiaires effectifs au registre UBO (dans le mois)
+  - S'affilier comme dirigeant·e à une caisse d'assurances sociales
+  - Transférer contrats, clients et fournisseurs à la société
+- phase: Faire tourner
+  quand: Chaque mois, chaque trimestre
+  items:
+  - Payer ta rémunération sur ton compte privé, rien d'autre
+  - Mettre toutes les factures d'achat au nom de la société
+  - Déclarer la TVA
+  - Faire les [[impot-des-societes|versements anticipés]] d'ISoc
+- phase: Clôturer
+  quand: Après chaque exercice
+  items:
+  - Faire approuver les comptes annuels en AG (6 mois)
+  - Les déposer à la Banque nationale (7 mois)
+  - Rentrer la déclaration ISoc (Biztax)
+  - Décider réserves ou [[precompte-mobilier|dividende]]
 notions: []
 sidebar:
   order: 12
@@ -68,6 +180,12 @@ sources:
   org: SPF Économie
 - title: SPF Finances — Entreprises (ISoc, versements anticipés)
   url: https://finances.belgium.be/fr/entreprises
+  org: SPF Finances
+- title: 'Créer une SRL en Belgique : étapes et coûts (tarifs notariaux 2026)'
+  url: https://lexpress-franchise.com/fr-be/articles/srl-belgique/
+  org: L'Express Franchise
+- title: SPF Finances — Registre UBO
+  url: https://finances.belgium.be/fr/E-services/Registre-UBO
   org: SPF Finances
 - title: Notaire.be — Créer une société
   url: https://www.notaire.be/
@@ -112,9 +230,9 @@ Le **20 %** n'est pas automatique. Il faut être une **petite société** (moins
 
 ## 4. Créer : le notaire, le plan financier, les fonds propres
 
-Une SRL se constitue par **acte notarié** (≈ 1 500 à 2 500 € avec les frais). Il n'y a plus de capital minimum, mais la loi exige des **fonds propres suffisants** pour l'activité prévue, justifiés par un **plan financier** sur deux ans que ton comptable prépare : prévisions de ventes, de charges, de trésorerie. Ce n'est pas une formalité : si la société fait faillite dans les trois ans avec des fonds propres manifestement insuffisants au départ, les fondateurs peuvent être tenus personnellement responsables. Voir [[notaire-acte-authentique]], [[tresorerie-cash-flow]], [[actif-passif-bilan]].
+Une SRL se constitue par **acte notarié** (≈ 1 200 à 2 500 € avec la publication et l'inscription, selon que les statuts sont standard ou sur mesure). Il n'y a plus de capital minimum, mais la loi exige des **fonds propres suffisants** pour l'activité prévue, justifiés par un **plan financier** sur deux ans que ton comptable prépare : prévisions de ventes, de charges, de trésorerie. Ce n'est pas une formalité : si la société fait faillite dans les trois ans avec des fonds propres manifestement insuffisants au départ, les fondateurs peuvent être tenus personnellement responsables. Voir [[notaire-acte-authentique]], [[tresorerie-cash-flow]], [[actif-passif-bilan]].
 
-Le notaire publie les statuts au Moniteur belge et inscrit la société à la **BCE** : nouveau numéro d'entreprise, nouvelle TVA. Ton activité de personne physique est **apportée** ou cédée à la société ; tes contrats et factures changent d'émetteur. Voir [[bce-numero-entreprise]].
+Avant la signature, l'argent que tu apportes est versé sur un **compte bloqué** ouvert au nom de la « société en formation » : la banque délivre une attestation que le notaire joint à l'acte, et le compte ne se débloque qu'une fois la société née. Le notaire publie ensuite les statuts au Moniteur belge et inscrit la société à la **BCE** : nouveau numéro d'entreprise, nouvelle TVA. Dans le mois qui suit, l'organe d'administration (toi) inscrit les **bénéficiaires effectifs** de la société au **registre UBO** via MyMinfin : qui la possède et la contrôle réellement. Ton activité de personne physique est **apportée** ou cédée à la société ; tes contrats et factures changent d'émetteur. Voir [[bce-numero-entreprise]].
 
 Si tu es mariée sous le régime légal, les parts de la société sont communes même si tu es seule associée : un **contrat de mariage** ou une clause spécifique se discute. Voir [[regime-matrimonial]].
 

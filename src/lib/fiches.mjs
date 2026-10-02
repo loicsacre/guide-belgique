@@ -33,6 +33,23 @@ export function loadParcours() {
   return yaml.load(fs.readFileSync(path.join(ROOT, 'src/data/parcours.yaml'), 'utf8'));
 }
 
+/** Petits livres (src/data/livres.yaml). */
+export function loadLivres() {
+  const f = path.join(ROOT, 'src/data/livres.yaml');
+  return fs.existsSync(f) ? yaml.load(fs.readFileSync(f, 'utf8')).livres ?? [] : [];
+}
+
+/** Quiz d'un contenu (src/data/quiz/<slug>.yaml), ou null. */
+export function loadQuiz(slug) {
+  const f = path.join(ROOT, 'src/data/quiz', `${slug}.yaml`);
+  return fs.existsSync(f) ? { slug, ...yaml.load(fs.readFileSync(f, 'utf8')) } : null;
+}
+export function loadAllQuiz() {
+  const dir = path.join(ROOT, 'src/data/quiz');
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir).filter((f) => f.endsWith('.yaml')).map((f) => loadQuiz(f.replace(/\.yaml$/, '')));
+}
+
 /** Toutes les notions connues : fiches rédigées + notions planifiées dans le parcours. */
 export function knownNotions() {
   const map = new Map();
@@ -67,6 +84,7 @@ export function buildSidebar() {
         { label: 'Le grand système', link: '/systeme/' },
         { label: 'Ma maison, le système', link: '/maison/' },
         { label: 'Glossaire', link: '/glossaire/' },
+        { label: 'Bibliothèque — livres et fiches', link: '/bibliotheque/' },
       ],
     },
     ...(situations.length ? [{ label: '🧭 Chaînes de vie', items: situations }] : []),

@@ -22,7 +22,7 @@ export default defineConfig({
       locales: { root: { label: 'Français', lang: 'fr' } },
       social: [{ icon: 'github', label: 'GitHub', href: REPO }],
       editLink: { baseUrl: `${REPO}/edit/main/` },
-      customCss: ['./src/styles/custom.css'],
+      customCss: ['./src/styles/custom.css', './src/styles/gbcf.css'],
       components: { MarkdownContent: './src/components/MarkdownContent.astro' },
       pagination: false, // remplacée par la navigation du parcours (voir MarkdownContent)
       sidebar: buildSidebar(),

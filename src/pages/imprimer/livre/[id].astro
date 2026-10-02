@@ -1,0 +1,106 @@
+---
+// Un petit livre : couverture, sommaire, chapitres (récit + fil + mémo + checklist + quiz + notes),
+// puis les fiches mobilisées, les corrigés et les sources. Format A5 (cahier, reMarkable, impression livret).
+// La même page sert de source à l'EPUB : chaque bloc [data-epub-file] devient un fichier du livre.
+import { render } from 'astro:content';
+import Print from '../../../layouts/Print.astro';
+import Memo from '../../../components/gbcf/Memo.astro';
+import Checklist from '../../../components/gbcf/Checklist.astro';
+import Quiz from '../../../components/gbcf/Quiz.astro';
+import { getLivres, resolveLivre, getQuiz, SITE_URL, inlineRenderer, type Livre } from '../../../lib/gbcf';
+import { slugOf, fmtDate } from '../../../lib/notions';
+import { qrSvg } from '../../../lib/qr';
+
+export async function getStaticPaths() {
+  return getLivres().map((livre) => ({ params: { id: livre.id }, props: { livre } }));
+}
+const { livre } = Astro.props as { livre: Livre };
+const { chapitres, annexes } = await resolveLivre(livre);
+const h = await inlineRenderer();
+const chap = await Promise.all(
+  chapitres.map(async (e) => ({ e, slug: slugOf(e), Content: (await render(e)).Content, quiz: getQuiz(slugOf(e)), qr: await qrSvg(`${SITE_URL}/${e.id}/`) })),
+);
+const fiches = await Promise.all(annexes.map(async (e) => ({ e, slug: slugOf(e), Content: (await render(e)).Content })));
+const sources = new Map<string, { title: string; url: string; org?: string }>();
+for (const e of [...chapitres, ...annexes]) for (const s of e.data.sources) sources.set(s.url, s);
+const today = new Date();
+const withQuiz = chap.filter((c) => c.quiz);
+---
+<Print title={livre.titre} format="a5" kind="livre" description={livre.sous_titre}>
+  <section class="cover" style={livre.couleur ? `--gb-cover:${livre.couleur}` : ''} data-epub-file="couverture" data-epub-title="Couverture">
+    <div class="cover-kicker">La vie adulte en Belgique</div>
+    <div>
+      <h1>{livre.titre}</h1>
+      {livre.sous_titre && <p class="cover-sub">{livre.sous_titre}</p>}
+    </div>
+    <div>
+      <div class="cover-bar"></div>
+      <p class="cover-meta">Édition du {today.toLocaleDateString('fr-BE', { day: 'numeric', month: 'long', year: 'numeric' })} · {SITE_URL.replace('https://', '')}<br />Un guide pour comprendre, pas un conseil personnalisé. Les règles datées sont signalées 🔴, les repères 🟠, les exemples inventés 🔵.</p>
+    </div>
+  </section>
+
+  <section class="toc" data-epub-file="sommaire" data-epub-title="Sommaire">
+    <h2>Sommaire</h2>
+    <h3 class="toc-part">Les situations</h3>
+    <ol>{chap.map((c) => <li><a href={`#chap-${c.slug}`}>{c.e.data.title}</a></li>)}</ol>
+    <h3 class="toc-part">Les notions</h3>
+    <ol>{fiches.map((f) => <li><a href={`#fiche-${f.slug}`}>{f.e.data.title}</a></li>)}</ol>
+    <h3 class="toc-part">Fin du livre</h3>
+    <ul>
+      {withQuiz.length > 0 && <li><a href="#corriges">Corrigés des quiz</a></li>}
+      <li><a href="#sources">Sources</a></li>
+    </ul>
+    <h3>Comment lire ce livre</h3>
+    <p>Chaque chapitre raconte une situation, puis la résume : le fil daté, le mémo d'une page, la checklist, un quiz et une page pour tes notes. Les mots techniques renvoient aux fiches de la deuxième partie, rangées dans l'ordre où on les apprend. Les calculateurs et les documents annotés restent en ligne : le QR code de chaque chapitre y mène.</p>
+  </section>
+
+  {chap.map(({ e, slug, Content, quiz, qr }) => (
+    <section class="chapitre" id={`chap-${slug}`} data-epub-file={`chap-${slug}`} data-epub-title={e.data.title} data-epub-group="Les situations">
+      <header class="print-head">
+        <div>
+          <div class="print-badge">Situation</div>
+          <h1>{e.data.title}</h1>
+          {e.data.description && <p class="print-lede">{e.data.description}</p>}
+        </div>
+        <div class="print-qr"><Fragment set:html={qr} />En ligne</div>
+      </header>
+      <Content />
+      {e.data.etapes.length > 0 && (
+        <div class="bloc keep">
+          <h2>Le fil en bref</h2>
+          <table class="fil"><tbody>{e.data.etapes.map((x) => <tr><td>{x.quand}</td><td>{x.titre}</td><td set:html={h(x.texte ?? '')} /></tr>)}</tbody></table>
+        </div>
+      )}
+      {e.data.memo && <div class="bloc"><h2>Le mémo</h2><Memo data={e.data} /></div>}
+      {e.data.checklist.length > 0 && <div class="bloc"><h2>La checklist</h2><Checklist data={e.data} /></div>}
+      {quiz && <div class="bloc"><h2>Teste-toi</h2><p class="print-lede">Réponses en fin de livre.</p><Quiz slug={slug} mode="papier" heading={false} /></div>}
+      <div class="notes-page"><h2>Mes notes — {e.data.title}</h2><div class="notes-lines"></div></div>
+    </section>
+  ))}
+
+  <section class="part-title" data-epub-file="partie-notions" data-epub-title="Les notions">
+    <div class="print-badge">Deuxième partie</div>
+    <h1>Les notions</h1>
+    <p class="print-lede">Les {fiches.length} fiches que les chapitres mobilisent, de la plus fondamentale à la plus technique.</p>
+  </section>
+  {fiches.map(({ e, slug, Content }) => (
+    <section class="annexe-fiche" id={`fiche-${slug}`} data-epub-file={`fiche-${slug}`} data-epub-title={e.data.title} data-epub-group="Les notions">
+      <h1>{e.data.title}</h1>
+      {e.data.short && <p class="fiche-short"><strong>En une phrase —</strong> {e.data.short}</p>}
+      <Content />
+      <p class="print-footer"><span>Vérifié : {fmtDate(e.data.last_verified)}{e.data.valid_for && <> · valable pour : {e.data.valid_for}</>}</span></p>
+    </section>
+  ))}
+
+  {withQuiz.length > 0 && (
+    <section class="chapitre" id="corriges" data-epub-file="corriges" data-epub-title="Corrigés des quiz">
+      <h1>Corrigés des quiz</h1>
+      {withQuiz.map((c) => <><h2>{c.e.data.title}</h2><Quiz slug={c.slug} mode="corrige" /></>)}
+    </section>
+  )}
+
+  <section class="chapitre" id="sources" data-epub-file="sources" data-epub-title="Sources">
+    <h1>Sources</h1>
+    <ul>{[...sources.values()].map((s) => <li>{s.title}{s.org && <> — {s.org}</>} · <a href={s.url}>{s.url.replace(/^https?:\/\//, '')}</a></li>)}</ul>
+  </section>
+</Print>
