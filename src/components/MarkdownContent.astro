@@ -1,0 +1,91 @@
+---
+// Surcharge Starlight : enveloppe le contenu des fiches et situations avec leurs métadonnées.
+import Default from '@astrojs/starlight/components/MarkdownContent.astro';
+import NotionLink from './NotionLink.astro';
+import { getIndex, slugOf, fmtDate } from '../lib/notions';
+import { LEVELS, NATURES, SCOPES, domainOf } from '../lib/domains.mjs';
+
+const { entry } = Astro.locals.starlightRoute;
+const d = entry.data;
+const isFiche = d.kind === 'fiche';
+const isSituation = d.kind === 'situation';
+const slug = slugOf(entry);
+
+let ctx: any = null;
+if (isFiche || isSituation) {
+  const { fiches, parcours, titleOf } = await getIndex();
+  const link = (s: string) => ({ slug: s, title: titleOf(s), written: fiches.has(s) });
+  const order = parcours.blocs.flatMap((b) => b.notions.map((n) => n.slug)).filter((s) => fiches.has(s));
+  const i = order.indexOf(slug);
+  const backlinks = [...fiches.entries()]
+    .filter(([s, e]) => s !== slug && (e.data.prerequisites.includes(slug) || e.data.related.includes(slug)))
+    .map(([s]) => link(s));
+  ctx = {
+    prerequisites: d.prerequisites.map(link),
+    related: d.related.map(link),
+    notions: d.notions.map(link),
+    backlinks,
+    prev: i > 0 ? link(order[i - 1]) : null,
+    next: i >= 0 && i < order.length - 1 ? link(order[i + 1]) : null,
+  };
+}
+const domain = d.domain ? domainOf(d.domain) : null;
+const level = d.level ? LEVELS[d.level as keyof typeof LEVELS] : null;
+const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
+---
+
+<Default>
+  {isFiche && (
+    <div class="fiche-meta not-content">
+      <div class="fiche-badges">
+        {level && <span class={`badge level-${d.level}`}>{level.emoji} {level.label}</span>}
+        {domain && <span class="badge">{domain.emoji} {domain.label}</span>}
+        {nature && <span class={`badge nature-${d.nature}`} title={nature.hint}>{nature.label}</span>}
+        {d.scope.map((s) => <span class="badge scope">{SCOPES[s as keyof typeof SCOPES]}</span>)}
+        {d.last_verified && <span class="badge verified">Vérifié : {fmtDate(d.last_verified)}</span>}
+        {d.valid_for && <span class="badge verified">Valable pour : {d.valid_for}</span>}
+      </div>
+      {d.short && <p class="fiche-short"><strong>En une phrase —</strong> {d.short}</p>}
+      {ctx.prerequisites.length > 0 && (
+        <p class="fiche-prereq">
+          <strong>À comprendre d'abord :</strong>{' '}
+          {ctx.prerequisites.map((n: any, k: number) => <>{k > 0 && ' · '}<NotionLink {...n} /></>)}
+        </p>
+      )}
+    </div>
+  )}
+
+  <slot />
+
+  {isSituation && ctx.notions.length > 0 && (
+    <>
+      <h2 id="notions">Les notions à maîtriser</h2>
+      <ul class="checklist">
+        {ctx.notions.map((n: any) => <li class={n.written ? 'done' : ''}><NotionLink {...n} /></li>)}
+      </ul>
+    </>
+  )}
+
+  {isFiche && (
+    <footer class="fiche-footer not-content">
+      {ctx.related.length > 0 && (
+        <section><h3>Voir aussi</h3><p>{ctx.related.map((n: any, k: number) => <>{k > 0 && ' · '}<NotionLink {...n} /></>)}</p></section>
+      )}
+      {ctx.backlinks.length > 0 && (
+        <section><h3>Cette notion est utilisée par</h3><p>{ctx.backlinks.map((n: any, k: number) => <>{k > 0 && ' · '}<NotionLink {...n} /></>)}</p></section>
+      )}
+      {d.sources.length > 0 && (
+        <section>
+          <h3>Sources</h3>
+          <ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener">{s.title}</a>{s.org && <> — {s.org}</>}</li>)}</ul>
+        </section>
+      )}
+      {(ctx.prev || ctx.next) && (
+        <nav class="parcours-nav" aria-label="Parcours">
+          <span>{ctx.prev && <>← <NotionLink {...ctx.prev} /></>}</span>
+          <span>{ctx.next && <><NotionLink {...ctx.next} /> →</>}</span>
+        </nav>
+      )}
+    </footer>
+  )}
+</Default>

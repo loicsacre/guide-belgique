@@ -1,0 +1,20 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import NotionLink from '../components/NotionLink.astro';
+import Progress from '../components/Progress.astro';
+import { getIndex } from '../lib/notions';
+const { fiches, parcours } = await getIndex();
+---
+<StarlightPage frontmatter={{ title: 'Parcours — niveau 1', description: 'Les notions essentielles, dans un ordre où chacune prépare la suivante.' }}>
+  <p>Chaque bloc s'appuie sur le précédent. Les notions en italique grisé ne sont pas encore rédigées.</p>
+  <Progress />
+  {parcours.blocs.map((b, i) => (
+    <>
+      <h2>{String.fromCharCode(65 + i)} — {b.title}</h2>
+      {b.intro && <p>{b.intro}</p>}
+      <ol class="checklist">
+        {b.notions.map((n) => <li class={fiches.has(n.slug) ? 'done' : ''}><NotionLink slug={n.slug} title={fiches.get(n.slug)?.data.title ?? n.title} written={fiches.has(n.slug)} /></li>)}
+      </ol>
+    </>
+  ))}
+</StarlightPage>

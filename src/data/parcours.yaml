@@ -1,0 +1,70 @@
+# Parcours niveau 1 — ordre pédagogique : chaque notion prépare la suivante.
+# Une notion listée ici sans fiche apparaît "à rédiger" (glossaire, parcours, wiki-links).
+# Le slug doit correspondre au nom du fichier src/content/docs/fiches/<slug>.md
+blocs:
+  - title: Comprendre la Belgique
+    intro: Qui décide de quoi, et à qui s'adresser.
+    notions:
+      - { slug: qui-fait-quoi, title: Qui fait quoi en Belgique ? }
+      - { slug: securite-sociale, title: Sécurité sociale }
+      - { slug: onss, title: ONSS }
+      - { slug: domicile, title: Domicile et registre national }
+      - { slug: identite-numerique, title: "Identité numérique (eID, itsme, MyMinfin)" }
+  - title: Ton travail
+    intro: "À la fin du bloc : comprendre chaque étape entre le brut annoncé et le net reçu."
+    notions:
+      - { slug: emploi-salarie, title: Comment fonctionne un emploi salarié ? }
+      - { slug: contrat-de-travail, title: Contrat de travail }
+      - { slug: commission-paritaire, title: Commission paritaire et CCT }
+      - { slug: salaire-brut, title: Salaire brut }
+      - { slug: cotisations-sociales, title: Cotisations sociales }
+      - { slug: precompte-professionnel, title: Précompte professionnel }
+      - { slug: salaire-net, title: Salaire net }
+      - { slug: fiche-de-paie, title: Fiche de paie }
+      - { slug: avantages-extralegaux, title: Avantages extralégaux }
+      - { slug: pecule-de-vacances, title: Pécule de vacances }
+      - { slug: treizieme-mois, title: 13e mois (prime de fin d'année) }
+      - { slug: indexation, title: Indexation des salaires }
+  - title: Tes impôts
+    intro: De l'avance retenue chaque mois au décompte final.
+    notions:
+      - { slug: impot-taxe-cotisation, title: "Impôt, taxe, cotisation : quelle différence ?" }
+      - { slug: ipp, title: Impôt des personnes physiques (IPP) }
+      - { slug: revenu-imposable, title: Revenu imposable }
+      - { slug: tranches-imposition, title: Tranches d'imposition et taux marginal }
+      - { slug: quotite-exemptee, title: Quotité exemptée d'impôt }
+      - { slug: personne-a-charge, title: Personne à charge }
+      - { slug: deduction-reduction-credit, title: "Déduction, réduction, crédit d'impôt" }
+      - { slug: centimes-additionnels, title: Additionnels communaux et régionaux }
+      - { slug: declaration-fiscale, title: Déclaration fiscale }
+      - { slug: avertissement-extrait-de-role, title: Avertissement-extrait de rôle (AER) }
+  - title: Ton argent
+    intro: Revenus, dépenses, réserve et patrimoine.
+    notions:
+      - { slug: budget, title: Budget personnel }
+      - { slug: compte-a-vue, title: Compte à vue }
+      - { slug: compte-epargne, title: Compte d'épargne réglementé }
+      - { slug: epargne-de-precaution, title: Épargne de précaution }
+      - { slug: inflation, title: Inflation et pouvoir d'achat }
+      - { slug: patrimoine-net, title: "Patrimoine net : actifs − dettes" }
+  - title: Le crédit
+    notions:
+      - { slug: credit, title: "Crédit : capital, intérêts, durée" }
+      - { slug: taux-interet, title: Taux d'intérêt fixe et variable }
+      - { slug: taeg, title: TAEG }
+      - { slug: mensualite-amortissement, title: Mensualité et tableau d'amortissement }
+      - { slug: credit-hypothecaire, title: Crédit hypothécaire }
+      - { slug: quotite-emprunt, title: Quotité d'emprunt et apport personnel }
+      - { slug: hypotheque, title: Hypothèque }
+  - title: L'immobilier
+    notions:
+      - { slug: louer-vs-acheter, title: Louer ou acheter ? }
+      - { slug: bail, title: Bail de résidence principale }
+      - { slug: garantie-locative, title: Garantie locative }
+      - { slug: cout-reel-achat, title: "Prix d'achat vs coût réel d'acquisition" }
+      - { slug: compromis, title: Compromis de vente }
+      - { slug: notaire-acte-authentique, title: Notaire et acte authentique }
+      - { slug: droits-enregistrement, title: Droits d'enregistrement }
+      - { slug: revenu-cadastral, title: Revenu cadastral }
+      - { slug: precompte-immobilier, title: Précompte immobilier }
+      - { slug: peb, title: Certificat PEB }

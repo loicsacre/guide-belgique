@@ -1,0 +1,6 @@
+---
+import { ficheHref } from '../lib/notions';
+interface Props { slug: string; title: string; written: boolean }
+const { slug, title, written } = Astro.props;
+---
+{written ? <a href={ficheHref(slug)}>{title}</a> : <em class="notion-todo" title="Fiche à rédiger">{title}</em>}

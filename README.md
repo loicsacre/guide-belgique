@@ -1,0 +1,32 @@
+# 🇧🇪 La vie adulte en Belgique
+
+Manuel personnel et évolutif : travail, impôts, sécurité sociale, argent, crédit, immobilier… Chaque terme rencontré devient une fiche reliée aux autres.
+
+- **Stack** : Astro 7 + Starlight, Markdown, GitHub Pages
+- **Conventions et prompt maître** : [`CLAUDE.md`](./CLAUDE.md)
+
+## Démarrer
+
+```bash
+npm install
+npm run dev     # http://localhost:4321/guide-belgique/
+```
+
+## Ajouter une fiche
+
+```bash
+npm run new -- quotite-emprunt credit   # crée src/content/docs/fiches/quotite-emprunt.md depuis templates/fiche.md
+npm run check                           # vérifie métadonnées, liens [[slug]], fraîcheur
+```
+
+Le parcours niveau 1, et donc la barre de progression, se trouve dans `src/data/parcours.yaml`.
+
+## Publier sur GitHub Pages
+
+1. Crée le dépôt `guide-belgique` sur GitHub et pousse la branche `main`.
+2. *Settings → Pages → Source : GitHub Actions*.
+3. Chaque push sur `main` déploie sur `https://loicsacre.github.io/guide-belgique/`.
+
+Autre nom de dépôt ou de domaine : adapte `SITE`, `BASE` et `REPO` dans `astro.config.mjs` (ou en variables d'environnement dans le workflow).
+
+> Ce guide explique des mécanismes généraux. Ce n'est pas un conseil fiscal, juridique ou financier personnalisé.

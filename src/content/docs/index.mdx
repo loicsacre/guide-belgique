@@ -1,0 +1,41 @@
+---
+title: La vie adulte en Belgique
+description: Comprendre le système belge — travail, impôts, argent, logement — sans devoir être expert.
+template: splash
+hero:
+  tagline: Comprendre le système sans devoir être expert. Un manuel personnel, vivant, où chaque mot entendu devient une fiche reliée aux autres.
+  actions:
+    - text: 🚀 Commencer le parcours
+      link: parcours/
+      icon: right-arrow
+    - text: 📚 Glossaire
+      link: glossaire/
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import Progress from '../../components/Progress.astro';
+
+<Progress />
+
+## Par où entrer ?
+
+<CardGrid>
+  <LinkCard title="💼 Je commence à travailler" description="Du brut annoncé au net sur le compte." href="situations/premier-emploi/" />
+  <LinkCard title="🧾 Je ne comprends pas mes impôts" description="Précompte, IPP, déclaration, AER." href="fiches/precompte-professionnel/" />
+  <LinkCard title="💰 Je veux mieux gérer mon argent" description="Budget, réserve, dépenses annuelles." href="fiches/budget/" />
+  <LinkCard title="🏛️ Qui décide de quoi ?" description="Fédéral, Régions, Communautés, communes." href="fiches/qui-fait-quoi/" />
+</CardGrid>
+
+## Comment lire une fiche
+
+<CardGrid>
+  <Card title="Niveau" icon="star">🟢 Essentiel · 🟡 Utile · 🔵 Approfondissement</Card>
+  <Card title="Nature de l'information" icon="information">**Concept stable** (vieillit bien) vs **règle datée** (montants, taux, dates — à revérifier).</Card>
+  <Card title="Portée" icon="seti:world">Fédéral, Wallonie, Bruxelles, Flandre : une règle régionale n'est jamais présentée comme belge.</Card>
+  <Card title="Liens" icon="random">Prérequis en haut, « voir aussi » et « utilisé par » en bas : le guide est un réseau, pas un dictionnaire.</Card>
+</CardGrid>
+
+:::note
+Ce guide explique des mécanismes généraux. Ce n'est pas un conseil fiscal, juridique ou financier personnalisé.
+:::

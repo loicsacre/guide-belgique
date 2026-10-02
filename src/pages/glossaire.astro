@@ -1,0 +1,45 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import NotionLink from '../components/NotionLink.astro';
+import { getIndex, slugOf } from '../lib/notions';
+import { LEVELS, domainOf } from '../lib/domains.mjs';
+
+const { fiches, planned } = await getIndex();
+type Row = { term: string; slug: string; written: boolean; short?: string; level?: string; domain?: string; alias?: boolean };
+const rows: Row[] = [];
+for (const [slug, e] of fiches) {
+  const base = { slug, written: true, short: e.data.short, level: e.data.level, domain: e.data.domain };
+  rows.push({ ...base, term: e.data.title });
+  for (const a of e.data.aliases) rows.push({ ...base, term: a, alias: true });
+}
+for (const [slug, title] of planned) if (!fiches.has(slug)) rows.push({ slug, term: title, written: false });
+
+const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toUpperCase();
+rows.sort((a, b) => norm(a.term).localeCompare(norm(b.term), 'fr'));
+const letters = new Map<string, Row[]>();
+for (const r of rows) {
+  const l = norm(r.term)[0];
+  letters.set(l, [...(letters.get(l) ?? []), r]);
+}
+---
+<StarlightPage frontmatter={{ title: 'Glossaire', description: 'Tous les termes du guide, rédigés ou à venir.' }}>
+  <p class="glossary-letters">{[...letters.keys()].map((l) => <a href={`#lettre-${l}`}>{l}</a>)}</p>
+  {[...letters].map(([l, list]) => (
+    <>
+      <h2 id={`lettre-${l}`}>{l}</h2>
+      <dl class="glossary">
+        {list.map((r) => (
+          <>
+            <dt>
+              {r.alias ? <>{r.term} → </> : null}
+              <NotionLink slug={r.slug} title={r.alias ? (fiches.get(r.slug)?.data.title ?? r.term) : r.term} written={r.written} />
+              {r.level && <span class="badge small">{LEVELS[r.level as keyof typeof LEVELS].emoji}</span>}
+              {r.domain && <span class="badge small">{domainOf(r.domain)?.emoji}</span>}
+            </dt>
+            {!r.alias && <dd>{r.written ? r.short : 'À rédiger.'}</dd>}
+          </>
+        ))}
+      </dl>
+    </>
+  ))}
+</StarlightPage>
