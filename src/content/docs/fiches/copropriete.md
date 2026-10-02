@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [copropriété, syndic, assemblée générale, charges communes, fonds de réserve]
+organisme: "Syndic, assemblée générale"
 short: "Dans un immeuble à appartements, tu possèdes ton lot en exclusivité et une quote-part des parties communes ; les décisions se prennent en assemblée générale, le syndic gère, et les charges communes se répartissent selon les quotités."
 aliases: [syndic, assemblée générale, AG, quotités, parties communes, fonds de roulement, fonds de réserve, acte de base, règlement de copropriété, ACP]
 prerequisites: [cout-reel-achat]

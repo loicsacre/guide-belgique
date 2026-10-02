@@ -7,6 +7,7 @@ nature: stable
 scope: []
 status: publie
 tags: [diversification, horizon, allocation, risque, DCA]
+organisme: "Toi"
 short: "Ne pas mettre tous ses œufs dans le même panier (titres, secteurs, pays, classes d'actifs) et adapter la part d'actions à la durée pendant laquelle on peut se passer de l'argent : les deux règles qui transforment un pari en placement."
 aliases: [allocation d'actifs, répartition des risques, horizon de placement, investissement périodique, DCA, profil investisseur, rééquilibrage]
 prerequisites: [actions-obligations-etf, rendement-risque-liquidite]

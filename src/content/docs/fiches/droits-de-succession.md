@@ -8,8 +8,9 @@ valid_for: "tarifs 2026 ; réforme wallonne annoncée pour 2028"
 scope: [wallonie, bruxelles, flandre]
 status: publie
 tags: [droits de succession, impôt régional, héritage, tarifs]
+organisme: "Région (administration fiscale régionale)"
 short: "L'impôt régional prélevé sur ce que chaque héritier reçoit, par tranches progressives, à des taux qui dépendent surtout du lien de parenté : de 3 % à 30 % en ligne directe, jusqu'à 55 à 80 % entre étrangers ; le logement familial est exonéré pour le conjoint."
-aliases: [droits de succession, successierechten, tarifs successoraux, ligne directe, exonération logement familial, planification successorale]
+aliases: [successierechten, tarifs successoraux, ligne directe, exonération logement familial, planification successorale]
 prerequisites: [succession, qui-fait-quoi]
 related: [donation, droits-reels, assurance-solde-restant-du, formes-de-couple]
 last_verified: 2026-10-02

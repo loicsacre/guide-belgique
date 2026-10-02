@@ -7,6 +7,7 @@ nature: stable
 scope: [federal, wallonie, bruxelles, flandre]
 status: publie
 tags: [location, achat, logement, décision]
+organisme: "Toi"
 short: "Acheter n'est pas « jeter l'argent par les fenêtres » en moins : c'est échanger un loyer contre des intérêts, des frais d'achat, des taxes et de l'entretien, en pariant sur la durée et la valeur du bien. La bonne réponse dépend surtout de combien de temps tu restes."
 aliases: [acheter ou louer, locataire ou propriétaire, brique dans le ventre]
 prerequisites: [budget, credit-hypothecaire]

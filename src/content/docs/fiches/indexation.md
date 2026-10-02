@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [indexation, inflation, indice santé, pouvoir d'achat]
+organisme: "Statbel (indice), commissions paritaires"
 short: "Le mécanisme belge qui adapte automatiquement salaires, allocations et loyers à l'évolution des prix (indice santé lissé), selon des règles propres à chaque commission paritaire."
 aliases: [index, indice santé, indice pivot, indice santé lissé, saut d'index, norme salariale]
 prerequisites: [commission-paritaire, inflation]

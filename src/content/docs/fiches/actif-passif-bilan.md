@@ -7,6 +7,7 @@ nature: stable
 scope: []
 status: publie
 tags: [bilan, actif, passif, capitaux propres, comptabilité]
+organisme: "BNB (Centrale des bilans)"
 short: "Le bilan est la photo du patrimoine d'une entreprise à une date : à gauche l'actif (ce qu'elle possède), à droite le passif (comment c'est financé : dettes et capitaux propres). Les deux colonnes sont toujours égales."
 aliases: [bilan, actif, passif, capitaux propres, fonds propres, dettes, immobilisations, actifs circulants, solvabilité, comptes annuels]
 prerequisites: [patrimoine-net]

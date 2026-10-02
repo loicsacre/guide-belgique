@@ -1,0 +1,20 @@
+---
+title: Simuler un crédit
+kind: outil
+description: "Mensualité, coût total des intérêts et tableau d'amortissement selon le capital, le taux et la durée."
+notions: [credit, mensualite-amortissement, taux-interet, credit-hypothecaire, taeg, taux-fixe-variable]
+sidebar:
+  order: 1
+---
+import Tool from '../../../components/tools/ToolCredit.astro';
+
+Change la durée et regarde la mensualité baisser pendant que les intérêts totaux montent : c'est tout le dilemme d'un crédit. Le calcul suppose des mensualités constantes et un taux fixe (hors frais et assurances, qui font la différence entre le taux et le [[taeg]]).
+
+<Tool />
+
+## Ce qu'il faut voir
+
+- La **première ligne** du tableau : la majorité de ce que tu paies au début est de l'intérêt. Voir [[mensualite-amortissement]].
+- **5 ans de plus** sur 25 ans : environ 200 €/mois de moins, 20 000 € de plus au total (à 3 %).
+- **+ 0,5 % de taux** sur 200 000 € pendant 25 ans ≈ 50 €/mois et 15 000 € au total : d'où l'intérêt de négocier et de comparer. Voir [[taux-fixe-variable]].
+- Pour savoir **combien tu peux emprunter**, pars de la mensualité supportable (≈ ⅓ des revenus nets) : voir [[quotite-emprunt]].

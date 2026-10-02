@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [crédit, emprunt, capital, intérêts, durée]
+organisme: "Banque, BNB (Centrale des crédits)"
 short: "Emprunter, c'est recevoir un capital aujourd'hui et le rembourser plus tard avec des intérêts ; le coût total dépend de trois choses : le montant, le taux et la durée."
 aliases: [emprunt, prêt, dette, capital emprunté, coût total du crédit, prêteur, emprunteur]
 prerequisites: [taux-interet, budget]

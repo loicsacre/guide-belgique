@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [régime matrimonial, communauté, séparation de biens, contrat de mariage, divorce]
+organisme: "Notaire, tribunal de la famille"
 short: "Le régime matrimonial dit à qui appartient quoi dans un couple marié : sans contrat, c'est la communauté réduite aux acquêts (ce qui est gagné pendant le mariage est commun) ; avec contrat, souvent la séparation de biens. Il détermine le partage au divorce et au décès."
 aliases: [communauté réduite aux acquêts, séparation de biens, contrat de mariage, biens propres, biens communs, divorce, pension alimentaire, liquidation-partage]
 prerequisites: [formes-de-couple]

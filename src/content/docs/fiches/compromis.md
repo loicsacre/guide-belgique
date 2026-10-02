@@ -7,6 +7,7 @@ nature: stable
 scope: [wallonie, bruxelles, flandre]
 status: publie
 tags: [compromis, offre d'achat, condition suspensive, acompte]
+organisme: "Notaire"
 short: "Le compromis est déjà la vente : un contrat définitif qui t'engage, signé des mois avant l'acte notarié. L'offre d'achat qui le précède engage aussi. Les conditions suspensives (crédit) sont ta seule porte de sortie."
 aliases: [offre d'achat, promesse de vente, condition suspensive, acompte, sous seing privé, option d'achat]
 prerequisites: [cout-reel-achat]

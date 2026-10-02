@@ -8,6 +8,7 @@ valid_for: "plafond 100 000 € (règle européenne)"
 scope: [federal]
 status: publie
 tags: [garantie des dépôts, faillite bancaire, sécurité, Fonds de garantie]
+organisme: "Fonds de garantie (SPF Finances)"
 short: "Si ta banque fait faillite, le Fonds de garantie te rembourse jusqu'à 100 000 € par personne et par banque (comptes à vue, épargne, comptes à terme) ; les placements en titres ne sont pas couverts mais te restent."
 aliases: [Fonds de garantie, protection des dépôts, 100 000 euros, faillite de banque]
 prerequisites: [compte-a-vue, compte-epargne]

@@ -7,6 +7,7 @@ nature: stable
 scope: []
 status: publie
 tags: [patrimoine, actif, passif, valeur nette, bilan personnel]
+organisme: "Toi"
 short: "Ton patrimoine net, c'est tout ce que tu possèdes (actifs) moins tout ce que tu dois (dettes) à un instant donné : la photo de ta situation, à côté du film qu'est ton budget."
 aliases: [valeur nette, actif, passif, bilan personnel, richesse nette, fortune]
 prerequisites: [budget]

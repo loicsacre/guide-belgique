@@ -1,0 +1,29 @@
+---
+// Capacité d'épargne et réserve de sécurité : combien de temps pour atteindre l'objectif.
+---
+<div class="tool not-content">
+  <label>Revenus nets mensuels <input type="number" id="e-rev" value="2440" step="10" /></label>
+  <label>Dépenses incompressibles mensuelles (logement, énergie, alimentation, assurances, transport) <input type="number" id="e-inc" value="1500" step="10" /></label>
+  <label>Autres dépenses mensuelles <input type="number" id="e-autres" value="500" step="10" /></label>
+  <label>Réserve déjà constituée <input type="number" id="e-deja" value="2000" step="100" /></label>
+  <label>Objectif de réserve (mois de dépenses incompressibles) <input type="number" id="e-mois" value="4" step="1" min="1" max="12" /></label>
+  <div class="tool-out">
+    <div>Capacité d'épargne : <span class="big" id="e-cap">—</span> <span id="e-pct"></span></div>
+    <div id="e-detail" style="font-size:var(--sl-text-sm);margin-top:.4rem"></div>
+  </div>
+</div>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const eur = (n: number) => n.toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  function calc() {
+    const rev = +$('e-rev').value || 0, inc = +$('e-inc').value || 0, au = +$('e-autres').value || 0, deja = +$('e-deja').value || 0, mois = +$('e-mois').value || 1;
+    const cap = rev - inc - au, obj = inc * mois, manque = Math.max(0, obj - deja);
+    $('e-cap').textContent = eur(cap) + '/mois'; $('e-pct').textContent = rev ? `(${Math.round(cap / rev * 100)} % des revenus)` : '';
+    let d = `Objectif : ${eur(obj)} (${mois} mois × ${eur(inc)}). Déjà : ${eur(deja)}. Il manque ${eur(manque)}.`;
+    if (cap <= 0) d += ' Capacité nulle ou négative : la réserve ne peut pas se constituer sans réduire les dépenses.';
+    else if (manque > 0) d += ` À ${eur(cap)}/mois : objectif atteint dans <strong>${Math.ceil(manque / cap)} mois</strong>. Astuce : un ordre permanent le lendemain du salaire.`;
+    else d += ' Réserve atteinte : l\'épargne suivante peut viser des projets ou le long terme.';
+    $('e-detail').innerHTML = d;
+  }
+  ['e-rev','e-inc','e-autres','e-deja','e-mois'].forEach((id) => $(id).addEventListener('input', calc)); calc();
+</script>

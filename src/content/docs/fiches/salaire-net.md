@@ -5,6 +5,7 @@ domain: travail
 level: essentiel
 nature: stable
 scope: [federal]
+organisme: "Employeur, secrétariat social"
 short: "Ce qui reste de ta rémunération après les retenues sociales et fiscales : le montant qui arrive réellement sur ton compte."
 aliases: [net, net à payer, rémunération nette]
 prerequisites: [salaire-brut, cotisations-sociales, precompte-professionnel]

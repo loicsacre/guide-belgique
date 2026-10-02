@@ -2,18 +2,20 @@
 // Surcharge Starlight : enveloppe le contenu des fiches et situations avec leurs métadonnées.
 import Default from '@astrojs/starlight/components/MarkdownContent.astro';
 import NotionLink from './NotionLink.astro';
-import { getIndex, slugOf, fmtDate } from '../lib/notions';
+import { getIndex, slugOf, hrefOf, fmtDate } from '../lib/notions';
 import { LEVELS, NATURES, SCOPES, STATUSES, domainOf } from '../lib/domains.mjs';
 
 const { entry } = Astro.locals.starlightRoute;
 const d = entry.data;
 const isFiche = d.kind === 'fiche';
 const isSituation = d.kind === 'situation';
+const isDocument = d.kind === 'document';
+const isOutil = d.kind === 'outil';
 const slug = slugOf(entry);
 
 let ctx: any = null;
-if (isFiche || isSituation) {
-  const { fiches, parcours, titleOf } = await getIndex();
+if (isFiche || isSituation || isDocument || isOutil) {
+  const { fiches, parcours, titleOf, usedBy, notionsOf } = await getIndex();
   const link = (s: string) => ({ slug: s, title: titleOf(s), written: fiches.has(s) });
   const order = parcours.blocs.flatMap((b) => b.notions.map((n) => n.slug)).filter((s) => fiches.has(s));
   const i = order.indexOf(slug);
@@ -22,10 +24,16 @@ if (isFiche || isSituation) {
   // Autres fiches qui pointent vers celle-ci sans être déjà listées.
   const listed = new Set([slug, ...d.related, ...advanced.map((n) => n.slug)]);
   const backlinks = [...fiches.entries()].filter(([s, e]) => !listed.has(s) && e.data.related.includes(slug)).map(([s]) => link(s));
+  const uses = usedBy(slug);
+  const allNotions = [...notionsOf(entry)].map(link);
   ctx = {
     prerequisites: d.prerequisites.map(link),
     related: d.related.map(link),
-    notions: d.notions.map(link),
+    notions: allNotions,
+    etapes: d.etapes.map((e) => ({ ...e, notions: e.notions.map(link) })),
+    situations: uses.situations.map((e) => ({ title: e.data.title, href: hrefOf(e) })),
+    documents: uses.documents.map((e) => ({ title: e.data.title, href: hrefOf(e) })),
+    outils: uses.outils.map((e) => ({ title: e.data.title, href: hrefOf(e) })),
     advanced,
     backlinks,
     prev: i > 0 ? link(order[i - 1]) : null,
@@ -46,6 +54,7 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
         {domain && <span class="badge">{domain.emoji} {domain.label}</span>}
         {nature && <span class={`badge nature-${d.nature}`} title={nature.hint}>{nature.label}</span>}
         {d.scope.map((s) => <span class="badge scope">{SCOPES[s as keyof typeof SCOPES]}</span>)}
+        {d.organisme && <span class="badge organisme" title="Organisme compétent">🏛️ {d.organisme}</span>}
         {d.last_verified && <span class="badge verified">Vérifié : {fmtDate(d.last_verified)}</span>}
         {d.valid_for && <span class="badge verified">Valable pour : {d.valid_for}</span>}
       </div>
@@ -59,11 +68,33 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
     </div>
   )}
 
+  {(isDocument || isOutil) && (
+    <div class="fiche-meta not-content">
+      {isOutil && <p class="disclaimer"><strong>Outil pédagogique.</strong> Les calculs sont simplifiés pour comprendre un mécanisme : ils ne remplacent ni un simulateur officiel, ni un conseil professionnel.</p>}
+      {isDocument && <p class="disclaimer"><strong>Document fictif.</strong> Toutes les données (noms, montants, numéros) sont inventées à des fins pédagogiques. Chaque numéro renvoie à la notion expliquée.</p>}
+    </div>
+  )}
+
   <slot />
 
-  {isSituation && ctx.notions.length > 0 && (
+  {isSituation && ctx.etapes.length > 0 && (
     <>
-      <h2 id="notions">Les notions à maîtriser</h2>
+      <h2 id="etapes">Les étapes, dans l'ordre</h2>
+      <ol class="timeline not-content">
+        {ctx.etapes.map((e: any, k: number) => (
+          <li>
+            <div class="timeline-head"><span class="timeline-n">{k + 1}</span><strong>{e.titre}</strong>{e.quand && <span class="timeline-when">{e.quand}</span>}</div>
+            {e.texte && <p>{e.texte}</p>}
+            {e.notions.length > 0 && <p class="timeline-notions">{e.notions.map((n: any, j: number) => <>{j > 0 && ' · '}<NotionLink {...n} /></>)}</p>}
+          </li>
+        ))}
+      </ol>
+    </>
+  )}
+
+  {(isSituation || isDocument || isOutil) && ctx.notions.length > 0 && (
+    <>
+      <h2 id="notions">Les notions mobilisées</h2>
       <ul class="checklist">
         {ctx.notions.map((n: any) => <li class={n.written ? 'done' : ''}><NotionLink {...n} /></li>)}
       </ul>
@@ -80,6 +111,14 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
       )}
       {ctx.backlinks.length > 0 && (
         <section><h3>Cette notion est aussi citée par</h3><p>{ctx.backlinks.map((n: any, k: number) => <>{k > 0 && ' · '}<NotionLink {...n} /></>)}</p></section>
+      )}
+      {(ctx.situations.length > 0 || ctx.documents.length > 0 || ctx.outils.length > 0) && (
+        <section class="dans-la-vraie-vie">
+          <h3>Dans la vraie vie</h3>
+          {ctx.situations.length > 0 && <p><strong>Situations :</strong> {ctx.situations.map((x: any, k: number) => <>{k > 0 && ' · '}<a href={x.href}>{x.title}</a></>)}</p>}
+          {ctx.documents.length > 0 && <p><strong>Tu verras cette notion sur :</strong> {ctx.documents.map((x: any, k: number) => <>{k > 0 && ' · '}<a href={x.href}>{x.title}</a></>)}</p>}
+          {ctx.outils.length > 0 && <p><strong>Calculer :</strong> {ctx.outils.map((x: any, k: number) => <>{k > 0 && ' · '}<a href={x.href}>{x.title}</a></>)}</p>}
+        </section>
       )}
       {d.sources.length > 0 && (
         <section>

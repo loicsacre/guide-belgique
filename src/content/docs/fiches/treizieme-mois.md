@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [13e mois, prime de fin d'année, bonus, CCT 90]
+organisme: "Commission paritaire, employeur"
 short: "Une prime, souvent égale à un mois de brut, payée en décembre quand ta commission paritaire ou ton contrat la prévoit ; elle n'est pas un droit légal général et son net est plus faible qu'un mois ordinaire."
 aliases: [prime de fin d'année, treizième mois, bonus, CCT 90, prime bénéficiaire, warrants]
 prerequisites: [salaire-brut, commission-paritaire]

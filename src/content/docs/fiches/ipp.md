@@ -6,6 +6,7 @@ level: essentiel
 nature: mixte
 valid_for: "principes ; barèmes indexés chaque année"
 scope: [federal, communal]
+organisme: "SPF Finances"
 short: "L'impôt annuel sur l'ensemble des revenus d'une personne résidant en Belgique, calculé après la déclaration, dont on déduit les précomptes déjà payés."
 aliases: [impôt sur le revenu, impôt des personnes physiques, personenbelasting]
 prerequisites: [precompte-professionnel]
@@ -25,6 +26,10 @@ sidebar:
 ## En langage simple
 
 Le [[precompte-professionnel]] est l'avance ; l'**IPP est la facture finale**. Une fois par an, le SPF Finances additionne tous tes revenus, applique les règles (barème, exonérations, réductions) et compare le résultat à ce que tu as déjà payé.
+
+## Pourquoi ça existe
+
+Un impôt sur le revenu **progressif** repose sur l'idée que chaque euro supplémentaire pèse moins lourd pour qui en gagne beaucoup : on taxe plus fort les hauts revenus, en pourcentage, pour financer les services publics tout en tenant compte de la capacité de chacun. C'est aussi l'outil par lequel l'État encourage certains comportements (épargne-pension, dons, enfants à charge).
 
 ## Deux années à ne pas mélanger
 

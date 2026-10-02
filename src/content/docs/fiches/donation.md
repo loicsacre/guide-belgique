@@ -8,6 +8,7 @@ valid_for: "tarifs 2026 ; délai de rappel 5 ans en Wallonie, 3 ans ailleurs"
 scope: [wallonie, bruxelles, flandre]
 status: publie
 tags: [donation, don manuel, don bancaire, droits de donation, planification]
+organisme: "Notaire, Région"
 short: "Donner de son vivant, c'est transmettre à un taux fixe et bas (3 à 7 % pour les biens meubles, barème progressif plus doux pour l'immobilier) au lieu des droits de succession ; un don non enregistré est gratuit mais réintégré dans la succession si le donateur décède dans les 3 ans (5 en Wallonie)."
 aliases: [don manuel, don bancaire, donation enregistrée, droits de donation, donation immobilière, donation avec réserve d'usufruit, pacte adjoint, avance d'hoirie]
 prerequisites: [succession, droits-de-succession]

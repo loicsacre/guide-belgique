@@ -8,6 +8,7 @@ valid_for: "démarches et seuils 2026"
 scope: [federal, wallonie, bruxelles, flandre]
 status: publie
 tags: [indépendant, statut social, guichet d'entreprise, activité complémentaire]
+organisme: "INASTI, guichet d'entreprise, caisse d'assurances sociales"
 short: "Être indépendant, c'est travailler sans lien de subordination, en assumant soi-même sa protection sociale (cotisations trimestrielles), sa TVA, sa comptabilité et ses impôts ; à titre principal ou complémentaire, en personne physique ou en société."
 aliases: [indépendant à titre principal, indépendant complémentaire, freelance, statut d'indépendant, guichet d'entreprise, caisse d'assurances sociales, INASTI, droit passerelle, connaissances de gestion, aidant, conjoint aidant]
 prerequisites: [emploi-salarie, securite-sociale]

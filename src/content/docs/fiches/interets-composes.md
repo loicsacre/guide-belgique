@@ -7,6 +7,7 @@ nature: stable
 scope: []
 status: publie
 tags: [intérêts composés, capitalisation, long terme, épargne]
+organisme: "Toi"
 short: "Quand les intérêts produisent eux-mêmes des intérêts, la croissance devient exponentielle : le temps compte plus que le montant. C'est ce qui rend l'épargne précoce si puissante, et les crédits renouvelables si dangereux."
 aliases: [capitalisation, effet boule de neige, règle de 72, intérêt composé]
 prerequisites: [taux-interet, inflation]

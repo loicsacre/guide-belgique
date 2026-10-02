@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [contrat, CDI, CDD, règlement de travail]
+organisme: "SPF Emploi"
 short: "L'accord par lequel tu t'engages à travailler sous l'autorité d'un employeur contre rémunération ; il fixe la fonction, le temps de travail, le salaire et le type de durée (CDI, CDD, intérim…)."
 aliases: [CDI, CDD, contrat à durée indéterminée, contrat à durée déterminée, intérim, règlement de travail, lien de subordination]
 prerequisites: [emploi-salarie]

@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [usufruit, nue-propriété, indivision, droits réels, démembrement]
+organisme: "Notaire, Bureau Sécurité juridique"
 short: "La propriété se découpe : l'usufruitier use du bien et en touche les revenus, le nu-propriétaire en garde le fond et récupère tout au décès de l'usufruitier. L'indivision, c'est posséder ensemble un même bien. Ces notions structurent couples, successions et donations."
 aliases: [usufruit, nue-propriété, pleine propriété, indivision, démembrement, emphytéose, superficie, servitude, sortie d'indivision]
 prerequisites: [patrimoine-net]

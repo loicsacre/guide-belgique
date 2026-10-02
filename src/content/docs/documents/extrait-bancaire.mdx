@@ -1,0 +1,58 @@
+---
+title: Lire un extrait de compte
+kind: document
+description: "Un mois d'extraits de compte à vue, annoté : salaire, domiciliations, ordre permanent, virements structurés, paiements par carte, frais, et ce qu'un budget en tire."
+notions: [compte-a-vue, domiciliation-ordre-permanent, salaire-net, budget, epargne-de-precaution, compte-epargne, credit-consommation, fraude-phishing, energie]
+sidebar:
+  order: 7
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Un extrait de compte est le **budget réel**, sans tableur. Mois fictif d'une salariée locataire.
+
+<Paper title="EXTRAITS DE COMPTE — Compte à vue BE00 0000 0000 0000" sub="Titulaire : M. Dupont-Exemple · Mars 2026 · Solde initial 1 240,18 €">
+  <Row n="1" k="28/02 Virement reçu · ATELIER FICTIF SRL · Salaire 02/2026" v="+ 2 439,66" f="salaire-net" />
+  <Row n="2" k="01/03 Ordre permanent · vers BE00 … épargne · « réserve »" v="− 250,00" f="epargne-de-precaution" />
+  <Row n="3" k="01/03 Virement · PROPRIÉTAIRE EXEMPLE · +++ loyer 03/2026 +++" v="− 800,00" f="domiciliation-ordre-permanent" />
+  <Row n="4" k="03/03 Domiciliation · ÉNERGIE FICTIVE SA · acompte" v="− 145,00" f="energie" />
+  <Row k="05/03 Domiciliation · TÉLÉCOM FICTIF · abonnement" v="− 42,00" />
+  <Row k="05/03 Domiciliation · ASSUREUR FICTIF · incendie + RC familiale" v="− 21,50" />
+  <Row n="5" k="06/03 Paiement Bancontact · SUPERMARCHÉ · Liège" v="− 87,34" f="compte-a-vue" />
+  <Row k="08/03 Paiement Bancontact · PHARMACIE" v="− 14,20" />
+  <Row n="6" k="10/03 Virement · SPF FINANCES · +++ 123/4567/89012 +++ · précompte immobilier ? non : amende de stationnement" v="− 30,00" f="domiciliation-ordre-permanent" />
+  <Row n="7" k="15/03 Prélèvement carte de crédit · relevé 02/2026 (remboursement intégral)" v="− 312,40" f="credit-consommation" />
+  <Row k="18/03 Virement reçu · Remboursement CM · consultation" v="+ 26,00" />
+  <Row k="20/03 Retrait Bancontact · distributeur" v="− 60,00" />
+  <Row n="8" k="22/03 Paiement par carte · SHOP-ONLINE.EXAMPLE · (vérifier : site inconnu)" v="− 59,99" f="fraude-phishing" />
+  <Row k="25/03 Paiements divers (restaurant, transports, loisirs)" v="− 231,60" />
+  <Row n="9" k="31/03 Frais de tenue de compte · forfait mensuel" v="− 3,50" f="compte-a-vue" />
+  <Row n="10" k="Solde final" v="1 638,31" f="budget" total />
+</Paper>
+
+## Ce que dit chaque ligne
+
+<Legend>
+<li>**Salaire** : le net de la [fiche de paie](../fiche-de-paie/), versé fin de mois pour le mois écoulé. → [[salaire-net]]</li>
+<li>**Ordre permanent le lendemain du salaire** : l'épargne part avant d'être vue ; c'est la méthode la plus efficace pour la réserve. → [[epargne-de-precaution]]</li>
+<li>**Loyer avec communication structurée** : à toi de pousser le paiement (ordre permanent) ; le bailleur ne prélève pas. → [[domiciliation-ordre-permanent]]</li>
+<li>**Domiciliation énergie** : le fournisseur prélève le montant qu'il a fixé ; révisable après le décompte annuel. → [[energie]]</li>
+<li>**Paiements par carte de débit** : ton argent, débité immédiatement. → [[compte-a-vue]]</li>
+<li>**Communication structurée +++ … +++** : obligatoire pour tout paiement à l'État : elle identifie le dossier ; sans elle, le paiement n'est pas attribué. → [[domiciliation-ordre-permanent]]</li>
+<li>**Carte de crédit** : toutes les dépenses du mois précédent prélevées en une fois. Remboursement intégral = pas d'intérêts ; partiel = crédit à 12-15 %. → [[credit-consommation]]</li>
+<li>**Paiement à un commerçant inconnu** : vérifie chaque mois les lignes que tu ne reconnais pas ; contestation possible auprès de la banque. → [[fraude-phishing]]</li>
+<li>**Frais de compte** : de 0 à ≈ 5 €/mois ; comparables. → [[compte-a-vue]]</li>
+<li>**Solde final** : ce mois dégage ≈ 400 € après l'épargne. Mais mars n'a ni assurance annuelle, ni régularisation d'énergie, ni taxe : les dépenses annuelles doivent être provisionnées. → [[budget]]</li>
+</Legend>
+
+## Ce qu'un budget tire de cet extrait
+
+| Catégorie | Montant | Part du net |
+| --- | ---: | ---: |
+| Logement (loyer, énergie, assurance, télécom) | 1 008,50 € | 41 % |
+| Épargne | 250,00 € | 10 % |
+| Alimentation, santé, transports, loisirs | ≈ 795 € | 33 % |
+| Reste | ≈ 386 € | 16 % |
+
+Le loyer seul représente 33 % du net : la limite habituelle. Voir [[budget]] et l'[outil budget](../../outils/budget/).

@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [phishing, fraude, sécurité, arnaque, itsme]
+organisme: "Card Stop, Safeonweb (CCB), police"
 short: "Les fraudes bancaires passent presque toujours par toi, pas par un piratage : un faux message qui te fait saisir tes codes ou valider un paiement. Les règles de prudence et le réflexe Card Stop limitent les dégâts."
 aliases: [phishing, hameçonnage, arnaque, Card Stop, fraude au faux conseiller, safeonweb, usurpation]
 prerequisites: [compte-a-vue, identite-numerique]

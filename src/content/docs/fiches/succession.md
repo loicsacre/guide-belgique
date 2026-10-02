@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [succession, héritage, héritiers, testament, réserve héréditaire]
+organisme: "Notaire, tribunal de la famille"
 short: "Au décès, la loi désigne qui hérite (conjoint, enfants, puis famille) et dans quelles proportions ; un testament peut modifier cela dans la limite de la réserve des enfants (la moitié) ; le conjoint reçoit en principe l'usufruit, les enfants la nue-propriété."
 aliases: [héritage, héritier, testament, réserve héréditaire, quotité disponible, ordre successoral, acceptation sous bénéfice d'inventaire, renonciation, déclaration de succession, pacte successoral]
 prerequisites: [droits-reels, formes-de-couple]

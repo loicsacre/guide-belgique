@@ -1,0 +1,10 @@
+---
+// Document fictif annoté : enveloppe « papier ».
+interface Props { title: string; sub?: string }
+const { title, sub } = Astro.props;
+---
+<div class="paper not-content">
+  <div class="paper-title">{title}</div>
+  {sub && <div class="paper-sub">{sub}</div>}
+  <slot />
+</div>

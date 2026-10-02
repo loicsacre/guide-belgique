@@ -7,6 +7,7 @@ nature: stable
 scope: []
 status: publie
 tags: [trésorerie, cash-flow, liquidités, besoin en fonds de roulement]
+organisme: "Toi, comptable"
 short: "Le bénéfice est une opinion comptable, la trésorerie est un fait : l'argent réellement disponible sur le compte. Une entreprise rentable peut faire faillite faute de cash (clients qui paient tard), et une entreprise en perte peut tenir longtemps avec de la trésorerie."
 aliases: [trésorerie, cash, cash-flow, flux de trésorerie, liquidités, besoin en fonds de roulement, BFR, délai de paiement, plan de trésorerie]
 prerequisites: [chiffre-affaires-marge-benefice, actif-passif-bilan]

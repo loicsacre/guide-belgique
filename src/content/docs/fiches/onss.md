@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [ONSS, cotisations, employeur]
+organisme: "ONSS"
 short: "L'Office national de sécurité sociale : l'organisme fédéral qui perçoit les cotisations sociales des salariés et des employeurs, puis répartit l'argent entre les branches de la sécurité sociale."
 aliases: [Office national de sécurité sociale, RSZ, Dmfa, Dimona]
 prerequisites: [cotisations-sociales, securite-sociale]

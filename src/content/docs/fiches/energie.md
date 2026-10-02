@@ -8,6 +8,7 @@ valid_for: "marché libéralisé ; TVA 6 % ; tarifs réseau régionaux 2026"
 scope: [wallonie, bruxelles, flandre]
 status: publie
 tags: [énergie, électricité, gaz, facture, acompte, compteur, fournisseur]
+organisme: "Fournisseur, gestionnaire de réseau, CREG / CWaPE / Brugel / VREG"
 short: "Ta facture d'énergie additionne le prix de l'énergie (ton fournisseur, que tu choisis), les frais de réseau (le gestionnaire, imposé), des taxes et la TVA ; tu paies des acomptes mensuels et un décompte annuel régularise sur base du relevé de compteur."
 aliases: [facture d'énergie, acompte, décompte annuel, fournisseur d'énergie, gestionnaire de réseau, ORES, RESA, Sibelga, Fluvius, compteur communicant, tarif social, CREG, CWaPE, Brugel, VREG, contrat fixe, contrat variable]
 prerequisites: [budget, domiciliation-ordre-permanent]

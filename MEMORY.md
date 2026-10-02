@@ -23,8 +23,15 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 | 2026-10-02 | 4 niveaux (Fondations / Compréhension / Approfondissement / Expert) en gardant les clés `essentiel/utile/approfondissement` + `expert` | Pas de réécriture des fiches existantes, labels adaptés dans `domains.mjs`. |
 | 2026-10-02 | `status: relecture` plutôt que `draft` pour les fiches aux chiffres incertains | Publiées (utiles) mais signalées au lecteur et dans `npm run check`. |
 | 2026-10-02 | Dans les situations, le « fil » est une liste numérotée avec liens `[[slug]]`, pas un bloc de code | Les blocs de code débordaient et les slugs n'étaient pas cliquables. |
+| 2026-10-02 | Situations : étapes en frontmatter `etapes:` rendues en timeline ; notions dérivées automatiquement | Une seule source de vérité, réutilisable par le graphe (« Dans la vraie vie »). |
+| 2026-10-02 | Documents annotés en MDX avec composants Paper/Row/Legend, données fictives explicites | Numéros cliquables → fiches ; aucun risque de donnée réelle. |
+| 2026-10-02 | Outils = composants Astro avec `<script>` vanilla, un fichier par outil, avertissement automatique via `kind: outil` | Pas de framework, build statique, testable. |
+| 2026-10-02 | Carte du système en SVG généré dans `systeme.astro` (nœuds/flèches en données) | Modifiable sans dessiner ; couleurs via variables Starlight (thèmes clair/sombre). |
+| 2026-10-02 | Bloc « ponts entre domaines » dans le parcours | Les mots polysémiques (revenu, dette, contrat…) sont la principale source de confusion entre domaines. |
 
 ## État actuel
+
+- **Passe 3 (2026-10-02, soir) — système pédagogique** : 110 fiches (6 ponts ajoutés : revenu, dette, contrat, responsabilite, statut-familial, residence-fiscale), **14 chaînes de vie** avec étapes chronologiques en frontmatter, **9 documents annotés** (fiche de paie, AER, facture énergie, offre de crédit, tableau d'amortissement, compromis, extrait bancaire, facture, contrat de travail), **6 outils** (crédit, budget, patrimoine, intérêts composés, épargne/réserve, brut→net), page **Le grand système** (SVG cliquable + flèches expliquées), accueil à six portes d'entrée, champ `organisme` sur toutes les fiches, section « Pourquoi ça existe » sur 15 fiches clés, pied de fiche « Dans la vraie vie » généré (situations / documents / outils citant la notion). Build : 143 pages.
 
 - **104 fiches** couvrant les 104 notions du parcours (13 domaines, 13 blocs dans `parcours.yaml`) ; **6 situations** : premier-emploi, acheter-un-logement, louer-un-logement, declaration-fiscale, devenir-independant, couple-et-famille. Build : 114 pages.
 - 4 niveaux pédagogiques (clés inchangées : essentiel = 1 Fondations, utile = 2 Compréhension, approfondissement = 3, expert = 4) ; champs `status` (publie / relecture / brouillon) et `tags`.
@@ -53,5 +60,6 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 ## Journal des sessions
 
 - **2026-10-02** — Cadrage du guide, structure en 15 parties, prompt maître (→ `CLAUDE.md`). Scaffold Astro Starlight, schéma de fiche, sidebar/glossaire/parcours automatiques, workflow Pages. 14 fiches + 1 situation.
+- **2026-10-02 (soir)** — Mission « système pédagogique » : étapes de situations, documents annotés, outils, grand système, ponts, organisme, pourquoi-ça-existe, accueil six portes. Vérifié en navigateur (calculs des outils OK, pas d'erreur console).
 - **2026-10-02 (suite)** — Mission « encyclopédie » : 4 niveaux, domaines banque et économie, champs status/tags, section « Pour aller plus loin » (fiches dont celle-ci est prérequis), parcours étendu à 104 notions en 13 blocs. 90 fiches et 5 situations ajoutées → 104 fiches, 6 situations, 114 pages. Vérifications factuelles : voir État actuel.
 - **2026-10-02 (publication)** — Repo GitHub créé, push, Pages activé ; lockfile régénéré pour `npm ci`. Site en ligne.

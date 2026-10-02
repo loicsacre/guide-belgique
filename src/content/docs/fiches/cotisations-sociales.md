@@ -6,8 +6,9 @@ level: essentiel
 nature: mixte
 valid_for: "taux en vigueur en 2026"
 scope: [federal]
+organisme: "ONSS"
 short: "Des prélèvements sur le salaire, payés par le travailleur et par l'employeur, qui financent la sécurité sociale : pensions, soins de santé, chômage, maladie…"
-aliases: [ONSS, cotisations ONSS, cotisations personnelles, cotisations patronales, CSSS]
+aliases: [cotisations personnelles, cotisations patronales, CSSS]
 prerequisites: [salaire-brut]
 related: [securite-sociale, onss, precompte-professionnel, salaire-net]
 last_verified: 2026-10-02
@@ -25,6 +26,10 @@ sidebar:
 ## En langage simple
 
 C'est une **assurance collective obligatoire**. Tant que tu travailles, toi et ton employeur payez ; quand un risque arrive (maladie, perte d'emploi, retraite…), le système te verse un revenu ou rembourse des frais.
+
+## Pourquoi ça existe
+
+Avant 1944, perdre son emploi, tomber malade ou vieillir sans fortune signifiait la misère ou la charité. Le pacte social d'après-guerre a créé une **assurance obligatoire** financée par le travail : tout le monde cotise, donc tout le monde est couvert, et personne ne peut en être exclu pour mauvaise santé. Les cotisations sont le prix de cette couverture universelle.
 
 ## Le flux
 

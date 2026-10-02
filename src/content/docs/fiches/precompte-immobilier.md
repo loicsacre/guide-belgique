@@ -8,6 +8,7 @@ valid_for: "taux de base régionaux et mécanismes 2026 ; additionnels communaux
 scope: [wallonie, bruxelles, flandre, communal]
 status: publie
 tags: [précompte immobilier, impôt foncier, propriétaire, commune]
+organisme: "Région (SPW Fiscalité, Bruxelles Fiscalité, Vlabel)"
 short: "L'impôt annuel que paie tout propriétaire (ou usufruitier) sur son bien, calculé sur le revenu cadastral indexé : un taux régional, fortement multiplié par les additionnels provinciaux et communaux. Malgré son nom, ce n'est pas une avance sur l'IPP."
 aliases: [PrI, onroerende voorheffing, impôt foncier, taxe foncière, additionnels provinciaux, réduction précompte immobilier]
 prerequisites: [revenu-cadastral, impot-taxe-cotisation]
@@ -27,6 +28,10 @@ sidebar:
 ## En langage simple
 
 Posséder un bien coûte un impôt chaque année, même si tu y habites et même si tu n'as aucun revenu dessus. Il s'appelle « précompte » pour des raisons historiques (il était jadis imputable sur l'IPP), mais aujourd'hui c'est un **impôt régional à part entière**, que tu ne récupères pas. Trois « précomptes » existent, et seul le professionnel est vraiment une avance : voir [[precompte-professionnel]].
+
+## Pourquoi ça existe
+
+Posséder un immeuble, c'est bénéficier d'infrastructures publiques (voirie, égouts, école, pompiers) financées en grande partie localement. Le précompte immobilier est la contribution des propriétaires à ces services : d'où sa structure, un petit taux régional **multiplié** par les additionnels des provinces et surtout des communes, qui en sont les vraies bénéficiaires.
 
 ## Le calcul
 

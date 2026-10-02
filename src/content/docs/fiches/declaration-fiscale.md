@@ -6,6 +6,7 @@ level: essentiel
 nature: mixte
 valid_for: "exercice d'imposition 2026 (revenus 2025)"
 scope: [federal]
+organisme: "SPF Finances (MyMinfin)"
 short: "Le document annuel par lequel tu communiques au SPF Finances tes revenus et ta situation, pour qu'il calcule ton impôt définitif."
 aliases: [déclaration d'impôt, Tax-on-web, déclaration IPP, proposition de déclaration simplifiée, PDS]
 prerequisites: [ipp]

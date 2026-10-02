@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [assurance auto, RC auto, omnium, bonus-malus, constat]
+organisme: "Ton assureur, Fonds commun de garantie"
 short: "La RC auto est obligatoire : elle indemnise les dommages que tu causes aux autres avec ton véhicule. L'omnium (partielle ou complète) couvre en plus les dégâts à ta propre voiture. Le prix dépend de ton profil, de la voiture et de ton historique de sinistres."
 aliases: [RC auto, omnium, mini-omnium, bonus-malus, constat amiable, carte verte, conducteur protégé, assistance, Fonds commun de garantie, usagers faibles]
 prerequisites: [assurance-principes]

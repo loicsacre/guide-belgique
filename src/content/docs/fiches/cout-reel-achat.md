@@ -8,6 +8,7 @@ valid_for: "droits régionaux 2026 (Wallonie 3 %, Flandre 2 %, Bruxelles 12,5 % 
 scope: [wallonie, bruxelles, flandre]
 status: publie
 tags: [frais d'achat, frais de notaire, droits d'enregistrement, budget achat]
+organisme: "Notaire, Région"
 short: "Le prix affiché n'est jamais ce que tu paies : il faut ajouter droits d'enregistrement (ou TVA), honoraires et frais d'acte du notaire, frais de crédit, puis les coûts récurrents du propriétaire."
 aliases: [frais de notaire, frais d'acquisition, frais d'achat, coût total, charges du propriétaire]
 prerequisites: [louer-vs-acheter, credit-hypothecaire]

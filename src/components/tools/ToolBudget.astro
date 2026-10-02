@@ -1,0 +1,52 @@
+---
+// Budget mensuel : revenus, charges fixes, provisions annuelles, variables → reste et taux d'épargne.
+---
+<div class="tool not-content">
+  <strong>Revenus nets mensuels</strong>
+  <label>Salaire(s) net(s) <input type="number" id="b-sal" value="2440" step="10" /></label>
+  <label>Autres revenus (allocations, loyers…) <input type="number" id="b-autres" value="0" step="10" /></label>
+  <strong>Charges fixes mensuelles</strong>
+  <label>Loyer ou mensualité de crédit <input type="number" id="b-logement" value="800" step="10" /></label>
+  <label>Énergie, eau, télécom <input type="number" id="b-energie" value="200" step="10" /></label>
+  <label>Assurances mensualisées <input type="number" id="b-assur" value="40" step="5" /></label>
+  <label>Transports (abonnement, voiture) <input type="number" id="b-transport" value="150" step="10" /></label>
+  <label>Autres fixes (crédits, abonnements, garde…) <input type="number" id="b-fixes" value="60" step="10" /></label>
+  <strong>Dépenses annuelles à provisionner (par an)</strong>
+  <label>Taxes, précompte immobilier, assurances annuelles, entretien, cadeaux, vacances <input type="number" id="b-annuel" value="2400" step="100" /></label>
+  <strong>Dépenses variables mensuelles</strong>
+  <label>Alimentation, santé, loisirs, vêtements <input type="number" id="b-var" value="650" step="10" /></label>
+  <div class="tool-out">
+    <div>Reste disponible pour épargner : <span class="big" id="b-reste">—</span> <span id="b-taux"></span></div>
+    <div id="b-detail" style="font-size:var(--sl-text-sm);margin-top:.4rem"></div>
+    <div class="tool-bar" style="margin-top:.5rem"><span id="b-bar-fix" style="background:var(--sl-color-gray-3)"></span><span id="b-bar-prov" style="background:var(--sl-color-orange)"></span><span id="b-bar-var" style="background:var(--sl-color-blue)"></span><span id="b-bar-ep" style="background:var(--sl-color-green)"></span></div>
+    <div style="font-size:var(--sl-text-xs)">■ fixes · <span style="color:var(--sl-color-orange)">■</span> provisions annuelles · <span style="color:var(--sl-color-blue)">■</span> variables · <span style="color:var(--sl-color-green)">■</span> épargne</div>
+    <div id="b-conseil" style="margin-top:.5rem;font-size:var(--sl-text-sm)"></div>
+  </div>
+</div>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const eur = (n: number) => n.toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  const ids = ['b-sal','b-autres','b-logement','b-energie','b-assur','b-transport','b-fixes','b-annuel','b-var'];
+  function calc() {
+    const v = Object.fromEntries(ids.map((i) => [i, +$(i).value || 0]));
+    const rev = v['b-sal'] + v['b-autres'];
+    const fixes = v['b-logement'] + v['b-energie'] + v['b-assur'] + v['b-transport'] + v['b-fixes'];
+    const prov = v['b-annuel'] / 12;
+    const reste = rev - fixes - prov - v['b-var'];
+    $('b-reste').textContent = eur(reste);
+    $('b-taux').textContent = rev ? `(${Math.round((reste / rev) * 100)} % des revenus)` : '';
+    $('b-detail').innerHTML = `Fixes ${eur(fixes)} (${rev ? Math.round(fixes/rev*100) : 0} %) · provisions ${eur(prov)}/mois · variables ${eur(v['b-var'])} · logement seul : ${rev ? Math.round(v['b-logement']/rev*100) : 0} % des revenus`;
+    const tot = Math.max(rev, 1);
+    $('b-bar-fix').style.width = (fixes / tot) * 100 + '%';
+    $('b-bar-prov').style.width = (prov / tot) * 100 + '%';
+    $('b-bar-var').style.width = (v['b-var'] / tot) * 100 + '%';
+    $('b-bar-ep').style.width = Math.max(0, reste / tot) * 100 + '%';
+    let c = '';
+    if (reste < 0) c = '⚠️ Budget négatif : les dépenses annuelles sont souvent le poste oublié ; réduis les variables ou les fixes avant d\'emprunter.';
+    else if (v['b-logement'] / tot > 0.35) c = 'Le logement dépasse le tiers des revenus : c\'est la limite que les banques et les bailleurs appliquent.';
+    else if (reste / tot < 0.1) c = 'Moins de 10 % d\'épargne : vise d\'abord 3 à 6 mois de dépenses en réserve.';
+    else c = 'Reste confortable : réserve de sécurité d\'abord, puis projets et long terme.';
+    $('b-conseil').textContent = c;
+  }
+  ids.forEach((id) => $(id).addEventListener('input', calc)); calc();
+</script>

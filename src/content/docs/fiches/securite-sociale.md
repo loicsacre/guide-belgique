@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [sécurité sociale, solidarité, cotisations]
+organisme: "ONSS, INAMI, ONEM, SFP"
 short: "Le système collectif qui remplace ou complète tes revenus quand un risque de la vie survient (maladie, chômage, vieillesse, accident) et rembourse une partie de tes soins ; il est financé surtout par les cotisations sociales."
 aliases: [sécu, protection sociale, branches de la sécurité sociale, Banque-Carrefour de la sécurité sociale]
 prerequisites: [qui-fait-quoi, cotisations-sociales]
@@ -26,6 +27,10 @@ sidebar:
 ## En langage simple
 
 Pense à une **assurance obligatoire géante** à laquelle tout le monde cotise selon ses revenus et dont tout le monde bénéficie selon ses besoins. C'est le principe de **solidarité** : tu paies quand tu travailles, tu reçois quand tu ne peux plus (ou plus assez) travailler, et tes soins sont en grande partie remboursés.
+
+## Pourquoi ça existe
+
+Les risques de la vie (maladie, chômage, vieillesse, accident) frappent au hasard et coûtent plus qu'une personne seule ne peut épargner. En les **mutualisant à l'échelle du pays**, le coût devient supportable pour chacun. Le système est obligatoire pour éviter que seuls les plus à risque s'assurent, ce qui le rendrait impayable.
 
 ## Les branches (salariés)
 

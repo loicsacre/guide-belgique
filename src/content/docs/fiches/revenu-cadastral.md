@@ -7,6 +7,7 @@ nature: stable
 scope: [federal, wallonie, bruxelles, flandre]
 status: publie
 tags: [revenu cadastral, RC, cadastre, fiscalité immobilière]
+organisme: "SPF Finances (cadastre)"
 short: "Le revenu cadastral (RC) est un loyer annuel net théorique attribué à chaque bien par le SPF Finances, figé sur les valeurs de 1975 puis indexé ; il sert de base au précompte immobilier et à l'impôt sur les revenus immobiliers."
 aliases: [RC, KI, kadastraal inkomen, cadastre, RC indexé, RC non indexé, péréquation, documentation patrimoniale]
 prerequisites: [cout-reel-achat]
@@ -26,6 +27,10 @@ sidebar:
 ## En langage simple
 
 Le RC est une **fiction fiscale** : « combien ce bien rapporterait-il par an si on le louait, en 1975 ? ». Cette valeur n'a jamais été remise à jour globalement (la dernière péréquation date de 1975-1980), on l'**indexe** simplement chaque année. Résultat : un RC de 900 € pour une maison qui se loue 1 200 €/mois n'a rien d'anormal.
+
+## Pourquoi ça existe
+
+L'État a besoin d'une base pour taxer la propriété immobilière sans connaître le loyer réel de chaque bien (beaucoup ne sont pas loués). Le RC est cette **valeur conventionnelle**, attribuée à tous les biens selon une même méthode. Sa dernière réévaluation générale date de 1975 parce que la refaire serait politiquement explosif : les gagnants et perdants seraient nombreux.
 
 ## À quoi il sert
 

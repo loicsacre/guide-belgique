@@ -8,6 +8,7 @@ valid_for: "obligations régionales 2026 (rénovation obligatoire en Flandre, ca
 scope: [wallonie, bruxelles, flandre]
 status: relecture
 tags: [PEB, énergie, rénovation, primes, isolation]
+organisme: "Région (énergie), certificateur agréé"
 short: "Le certificat PEB classe la performance énergétique d'un logement de A à G ; obligatoire pour vendre ou louer, il influence de plus en plus le prix, le loyer (indexation), les droits d'enregistrement et les obligations de rénovation."
 aliases: [certificat PEB, EPC, performance énergétique, label énergétique, rénovation obligatoire, primes énergie, audit logement]
 prerequisites: [cout-reel-achat]

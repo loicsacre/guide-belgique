@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [notaire, acte authentique, honoraires, officier public]
+organisme: "Notaire (Fednot)"
 short: "Le notaire est un officier public indépendant qui rédige les actes authentiques (vente, crédit, donation, mariage, succession), perçoit les impôts pour l'État, et conseille les deux parties ; ses honoraires sont fixés par la loi."
 aliases: [acte notarié, acte authentique, honoraires du notaire, Fednot, étude notariale, officier public]
 prerequisites: [compromis]

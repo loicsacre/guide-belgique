@@ -7,6 +7,7 @@ nature: stable
 scope: [federal, wallonie, bruxelles, flandre, communal]
 status: publie
 tags: [recours, réclamation, médiateur, ombudsman, délais]
+organisme: "Médiateurs, justice de paix"
 short: "Pour tout problème avec une administration ou une entreprise, la méthode est la même : identifier l'organisme compétent, réclamer par écrit en respectant les délais, puis saisir le médiateur gratuit avant d'envisager la justice."
 aliases: [réclamation, recours, médiateur fédéral, ombudsman, délai de recours, mise en demeure, aide juridique, justice de paix, "1718", "1700"]
 prerequisites: [qui-fait-quoi, administrations-et-organismes]

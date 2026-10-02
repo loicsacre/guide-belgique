@@ -1,0 +1,59 @@
+---
+title: Lire une fiche de paie
+kind: document
+description: "Une fiche de paie d'employé, mois ordinaire, annotée ligne par ligne : du brut au net à payer."
+notions: [fiche-de-paie, salaire-brut, cotisations-sociales, revenu-imposable, precompte-professionnel, salaire-net, avantages-extralegaux, voiture-de-societe, commission-paritaire, contrat-de-travail, personne-a-charge]
+sidebar:
+  order: 1
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Le document ci-dessous est une **fiche de paie fictive** d'une employée, pour un mois sans prime. Les montants d'ONSS sont exacts (13,07 %) ; le précompte est un ordre de grandeur. Clique sur un numéro pour ouvrir la notion.
+
+<Paper title="DÉCOMPTE DE PAIE — Mars 2026" sub="Employeur : Atelier Fictif SRL · BE 0999.999.999 · Travailleuse : M. Dupont-Exemple · Matricule 00042">
+  <Row section k="Identification" />
+  <Row n="1" k="Commission paritaire" v="200" f="commission-paritaire" />
+  <Row n="2" k="Régime de travail · jours prestés" v="38 h/sem. · 21 jours" f="contrat-de-travail" />
+  <Row n="3" k="Situation familiale · personnes à charge" v="Isolée · 0" f="personne-a-charge" />
+  <Row section k="Rémunération" />
+  <Row n="4" k="Salaire mensuel brut" v="3 500,00" f="salaire-brut" />
+  <Row n="5" k="Avantage de toute nature (voiture)" v="+ 150,00" f="voiture-de-societe" />
+  <Row k="Brut soumis à l'ONSS" v="3 500,00" />
+  <Row section k="Retenues" />
+  <Row n="6" k="Cotisation ONSS travailleur 13,07 %" v="− 457,45" f="cotisations-sociales" />
+  <Row n="7" k="Rémunération imposable" v="3 192,55" f="revenu-imposable" total />
+  <Row n="8" k="Précompte professionnel" v="− 700,00" f="precompte-professionnel" />
+  <Row n="9" k="Cotisation spéciale de sécurité sociale" v="− 30,00" f="cotisations-sociales" />
+  <Row section k="Éléments nets" />
+  <Row n="10" k="Neutralisation ATN voiture" v="− 150,00" f="voiture-de-societe" />
+  <Row n="11" k="Indemnité forfaitaire de télétravail" v="+ 150,00" f="avantages-extralegaux" />
+  <Row n="12" k="Chèques-repas 21 × 1,09 € (part personnelle)" v="− 22,89" f="avantages-extralegaux" />
+  <Row n="13" k="NET À PAYER" v="2 439,66" f="salaire-net" total />
+  <Row k="Versé sur BE00 0000 0000 0000 le 28/03/2026" v="" />
+</Paper>
+
+## Ce que dit chaque ligne
+
+<Legend>
+<li>**Commission paritaire 200** : le secteur des employés « résiduaires ». Elle fixe le barème minimum, l'indexation (en janvier pour la CP 200) et la prime de fin d'année. → [[commission-paritaire]]</li>
+<li>**Régime et prestations** : 38 h par semaine, 21 jours prestés. Un temps partiel ou des absences modifient le brut au prorata. → [[contrat-de-travail]]</li>
+<li>**Situation familiale** : déclarée par la travailleuse à l'employeur. Avec deux enfants à charge, le précompte serait plus bas de plusieurs dizaines d'euros. → [[personne-a-charge]]</li>
+<li>**Salaire brut** : le montant du contrat. Pas ce qui arrive sur le compte. → [[salaire-brut]]</li>
+<li>**ATN voiture** : l'usage privé de la voiture de société vaut fiscalement 150 €/mois. Il est **ajouté** ici pour calculer l'impôt. → [[voiture-de-societe]]</li>
+<li>**ONSS 13,07 %** : la part personnelle de cotisations sociales, calculée sur le brut (sans l'ATN voiture). L'employeur verse en plus ≈ 25 % de part patronale, qui n'apparaît pas. → [[cotisations-sociales]]</li>
+<li>**Rémunération imposable** : brut − ONSS + ATN. C'est sur ce montant que le précompte est calculé. → [[revenu-imposable]]</li>
+<li>**Précompte professionnel** : avance d'impôt selon les barèmes (isolée, sans enfant). Le montant exact dépend de l'année ; c'est le solde avec l'IPP réel qui est régularisé sur l'AER. → [[precompte-professionnel]]</li>
+<li>**Cotisation spéciale de sécurité sociale** : petite retenue mensuelle, régularisée aussi sur l'AER selon les revenus du ménage. → [[cotisations-sociales]]</li>
+<li>**Neutralisation ATN** : la voiture a été ajoutée pour l'impôt (ligne 5) ; on la **retire** du net puisqu'elle n'est pas payée en argent. Net effet : la travailleuse paie l'impôt sur 150 €, pas 150 €. → [[voiture-de-societe]]</li>
+<li>**Indemnité de télétravail** : remboursement forfaitaire de frais, **sans ONSS ni impôt** dans les limites légales. → [[avantages-extralegaux]]</li>
+<li>**Chèques-repas** : un chèque par jour presté ; la part personnelle (1,09 €) est retenue, l'employeur paie le reste (jusqu'à 8,91 € en 2026). → [[avantages-extralegaux]]</li>
+<li>**Net à payer** : ce qui arrive sur le compte. Ici ≈ 70 % du brut, avant les avantages. Les mois de double pécule et de 13e mois, le précompte est calculé à un taux « exceptionnel » plus élevé. → [[salaire-net]]</li>
+</Legend>
+
+## Ce qui n'apparaît pas
+
+- La **part patronale** de cotisations (≈ 875 € ici) : voir [[cout-employeur]].
+- La **prime d'assurance groupe** versée par l'employeur, la **cotisation CO₂** de la voiture.
+- Le **brut annuel** : ce mois × 12 + 13e mois + double pécule ≈ 13,92 mois. Voir [[salaire-brut]].

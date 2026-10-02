@@ -1,37 +1,82 @@
 ---
 title: Je reçois ma déclaration fiscale
 kind: situation
-description: "De la retenue mensuelle au décompte final : ce qu'il faut vérifier, compléter et comprendre entre mai et l'arrivée de l'AER."
+description: 'De la retenue mensuelle au décompte final : ce qu''il faut vérifier, compléter et comprendre entre mai et l''arrivée de l''AER.'
 notions:
-  - annee-revenus-exercice
-  - precompte-professionnel
-  - ipp
-  - revenu-imposable
-  - categories-de-revenus
-  - tranches-imposition
-  - quotite-exemptee
-  - personne-a-charge
-  - deduction-reduction-credit
-  - centimes-additionnels
-  - precompte-mobilier
-  - identite-numerique
-  - declaration-fiscale
-  - avertissement-extrait-de-role
-  - probleme-administratif
+- annee-revenus-exercice
+- precompte-professionnel
+- ipp
+- revenu-imposable
+- categories-de-revenus
+- tranches-imposition
+- quotite-exemptee
+- personne-a-charge
+- deduction-reduction-credit
+- centimes-additionnels
+- precompte-mobilier
+- identite-numerique
+- declaration-fiscale
+- avertissement-extrait-de-role
+- probleme-administratif
 sidebar:
   order: 4
+etapes:
+- titre: 'Pendant l''année : le précompte'
+  quand: Année N
+  texte: Chaque mois, une avance est retenue sur ton salaire.
+  notions:
+  - precompte-professionnel
+  - annee-revenus-exercice
+- titre: Recevoir les fiches et attestations
+  quand: Février-mars N+1
+  texte: Fiche 281.10 de l'employeur ; attestations d'épargne-pension, de garde d'enfants, de dons.
+  notions:
+  - fiche-de-paie
+  - epargne-pension
+  - deduction-reduction-credit
+- titre: Ouvrir la déclaration préremplie
+  quand: Mai N+1
+  texte: MyMinfin avec itsme ou eID ; ou proposition de déclaration simplifiée reçue par courrier/eBox.
+  notions:
+  - identite-numerique
+  - declaration-fiscale
+- titre: Vérifier cadre par cadre
+  quand: Juin N+1
+  texte: Situation familiale au 1er janvier, salaires, biens immobiliers, revenus mobiliers non précomptés, comptes à l'étranger.
+  notions:
+  - personne-a-charge
+  - revenu-imposable
+  - revenu-cadastral
+  - precompte-mobilier
+  - categories-de-revenus
+- titre: Compléter les réductions
+  quand: Juin N+1
+  texte: Épargne-pension, dons, titres-services, garde d'enfants, pensions alimentaires.
+  notions:
+  - deduction-reduction-credit
+  - epargne-pension
+- titre: Signer et envoyer avant la date limite
+  quand: Juin-juillet N+1
+  texte: Papier fin juin, Tax-on-web mi-juillet, mandataire mi-octobre (dates 2026).
+  notions:
+  - declaration-fiscale
+- titre: Comprendre le calcul
+  quand: Automatique
+  texte: Revenu imposable → tranches → − quotité exemptée → − réductions → + additionnels = IPP.
+  notions:
+  - tranches-imposition
+  - quotite-exemptee
+  - centimes-additionnels
+  - ipp
+- titre: Recevoir l'AER et agir
+  quand: Août N+1 → juin N+2
+  texte: IPP − précomptes = solde. Paiement dans les 2 mois, remboursement automatique, réclamation dans l'année si erreur.
+  notions:
+  - avertissement-extrait-de-role
+  - probleme-administratif
 ---
 
 En mai, Tax-on-web s'ouvre ou une **proposition de déclaration simplifiée** arrive. Dans les deux cas, l'essentiel du travail est fait par l'administration ; le tien est de **vérifier** et de **compléter**.
-
-## Le fil
-
-1. **Année N** — salaire → précompte retenu chaque mois (une avance) → [[precompte-professionnel]], [[annee-revenus-exercice]]
-2. **Février N+1** — fiche 281.10 de l'employeur ; attestations (épargne-pension, garde d'enfants…)
-3. **Mai N+1** — déclaration préremplie dans MyMinfin (itsme ou eID) → [[identite-numerique]], [[declaration-fiscale]]
-4. **Juin-juillet** — vérifier, compléter, signer avant la date limite
-5. **Calcul** — revenu imposable → tranches → − quotité exemptée → − réductions → + additionnels = IPP → [[revenu-imposable]], [[tranches-imposition]], [[quotite-exemptee]], [[centimes-additionnels]]
-6. **Été N+1 → juin N+2** — AER : IPP − précomptes = solde à payer (2 mois) ou remboursé → [[avertissement-extrait-de-role]]
 
 ## Ce qu'il faut vérifier, cadre par cadre
 

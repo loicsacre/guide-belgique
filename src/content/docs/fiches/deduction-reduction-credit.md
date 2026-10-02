@@ -8,8 +8,9 @@ valid_for: "exemples d'avantages en vigueur pour l'exercice 2026"
 scope: [federal, wallonie, bruxelles, flandre]
 status: publie
 tags: [avantages fiscaux, déduction, réduction d'impôt, crédit d'impôt, titres-services, épargne-pension]
+organisme: "SPF Finances, Régions"
 short: "Trois mécanismes qui baissent ton impôt mais pas de la même façon : la déduction retire un montant de ton revenu imposable, la réduction retire un montant de l'impôt lui-même, et le crédit d'impôt peut même t'être remboursé."
-aliases: [réduction d'impôt, déduction fiscale, crédit d'impôt, avantage fiscal, dépenses déductibles, titres-services, dons, épargne-pension, bonus logement, chèque habitat]
+aliases: [réduction d'impôt, déduction fiscale, crédit d'impôt, avantage fiscal, dépenses déductibles, titres-services, dons, bonus logement, chèque habitat]
 prerequisites: [tranches-imposition]
 related: [epargne-pension, revenu-imposable, declaration-fiscale, personne-a-charge, credit-hypothecaire]
 last_verified: 2026-10-02

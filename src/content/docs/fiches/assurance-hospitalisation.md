@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [hospitalisation, mutualité, chambre individuelle, suppléments, DKV]
+organisme: "Mutualité ou assureur"
 short: "Une assurance facultative qui paie ce que l'assurance maladie obligatoire laisse à ta charge lors d'un séjour à l'hôpital : tickets modérateurs, suppléments d'honoraires et de chambre, soins avant et après ; via la mutualité (bon marché, plafonnée) ou un assureur privé (complète, plus chère)."
 aliases: [assurance hospi, DKV, chambre individuelle, suppléments d'honoraires, maladies graves, soins ambulatoires, continuation individuelle]
 prerequisites: [mutualite, assurance-principes]

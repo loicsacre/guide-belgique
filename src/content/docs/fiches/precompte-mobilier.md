@@ -8,6 +8,7 @@ valid_for: "taux 30 % ; exonérations exercice 2026"
 scope: [federal]
 status: publie
 tags: [précompte mobilier, dividendes, intérêts, placements, épargne]
+organisme: "SPF Finances (retenu par la banque)"
 short: "L'impôt de 30 % retenu à la source sur tes intérêts et dividendes ; en général libératoire (rien à redéclarer), avec des exonérations pour les intérêts du compte d'épargne réglementé et une première tranche de dividendes."
 aliases: [PM, roerende voorheffing, précompte libératoire, taxation des dividendes, taxation des intérêts]
 prerequisites: [impot-taxe-cotisation, categories-de-revenus]

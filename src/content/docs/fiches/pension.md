@@ -8,6 +8,7 @@ valid_for: "âge légal 66 ans (2025-2029), 67 ans dès 2030"
 scope: [federal]
 status: publie
 tags: [pension, retraite, MyPension, piliers, carrière]
+organisme: "Service fédéral des Pensions (MyPension)"
 short: "La pension légale (1er pilier) est calculée sur toute ta carrière salariée et payée par l'État ; elle est complétée par la pension via l'employeur (2e pilier) et ton épargne personnelle (3e pilier)."
 aliases: [retraite, pension légale, piliers de pension, MyPension, SFP, pension anticipée, âge légal de la pension, carrière complète]
 prerequisites: [securite-sociale, cotisations-sociales]
@@ -36,6 +37,10 @@ La pension belge repose sur **trois piliers** :
 ```
 
 Le 1er pilier fonctionne par **répartition** : tes cotisations paient les pensionnés actuels ; les actifs de demain paieront la tienne. Les 2e et 3e piliers fonctionnent par **capitalisation** : ton argent est placé pour toi.
+
+## Pourquoi ça existe
+
+Vivre vingt ou trente ans sans travailler exige soit une fortune, soit un système collectif. La pension légale par **répartition** fait payer les actifs d'aujourd'hui pour les retraités d'aujourd'hui, en échange de la promesse que les actifs de demain feront de même. Les 2e et 3e piliers ont été ajoutés parce que le vieillissement de la population fragilise cette promesse.
 
 ## Quand ?
 

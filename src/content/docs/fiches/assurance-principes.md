@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [assurance, prime, franchise, sinistre, exclusion, Ombudsman]
+organisme: "FSMA, Ombudsman des assurances"
 short: "Une assurance mutualise un risque : beaucoup paient une petite prime, les quelques-uns touchés par le sinistre sont indemnisés. Le contrat fixe ce qui est couvert, ce qui est exclu, la franchise à ta charge et le plafond."
 aliases: [prime, franchise, sinistre, exclusion, plafond, couverture, police d'assurance, courtier, Ombudsman des assurances, résiliation]
 prerequisites: [budget]
@@ -28,6 +29,10 @@ sidebar:
 Tu ne peux pas épargner 500 000 € au cas où tu blesserais quelqu'un. Mais 10 000 personnes qui mettent 10 € par mois dans un pot commun peuvent indemniser celle à qui ça arrive. L'assurance, c'est ce pot, géré par une entreprise qui calcule les probabilités.
 
 La logique : **assure ce que tu ne pourrais pas payer toi-même** (ta responsabilité, ta maison, l'hôpital), pas ce que ta réserve couvre (un smartphone). Voir [[epargne-de-precaution]].
+
+## Pourquoi ça existe
+
+Certains risques (incendie, accident corporel grave, responsabilité) coûtent plus que ce qu'un ménage peut épargner en une vie. L'assurance **transforme un risque rare et énorme en une dépense petite et certaine** : la prime. La loi en rend certaines obligatoires quand c'est autrui qui subirait le dommage (RC auto).
 
 ## Le vocabulaire d'un contrat
 

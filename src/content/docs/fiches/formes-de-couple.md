@@ -7,6 +7,7 @@ nature: stable
 scope: [federal, wallonie, bruxelles, flandre]
 status: publie
 tags: [couple, mariage, cohabitation légale, cohabitation de fait, droits]
+organisme: "Commune (état civil), notaire"
 short: "Trois statuts de couple, trois niveaux de protection : le mariage protège le plus (succession, pension de survie, logement), la cohabitation légale un peu (logement, succession partielle), la cohabitation de fait pas du tout, même après 20 ans et trois enfants."
 aliases: [cohabitation légale, cohabitation de fait, mariage, concubinage, déclaration de cohabitation, pension de survie, logement familial]
 prerequisites: [domicile]

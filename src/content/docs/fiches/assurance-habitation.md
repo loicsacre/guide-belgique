@@ -7,6 +7,7 @@ nature: stable
 scope: [federal, wallonie, bruxelles, flandre]
 status: publie
 tags: [assurance incendie, habitation, locataire, propriétaire, catastrophes naturelles]
+organisme: "Ton assureur"
 short: "Appelée « incendie » par habitude, elle couvre le bâtiment et/ou son contenu contre l'incendie, les dégâts des eaux, la tempête, les catastrophes naturelles, le vol en option ; le locataire assure sa responsabilité envers le bailleur, le propriétaire assure le bien."
 aliases: [assurance incendie, assurance habitation, assurance locataire, responsabilité locative, abandon de recours, contenu, vol, catastrophes naturelles, grille d'évaluation]
 prerequisites: [assurance-principes]

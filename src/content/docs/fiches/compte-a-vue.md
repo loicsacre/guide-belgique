@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [compte à vue, carte de débit, carte de crédit, IBAN, virement, Bancontact]
+organisme: "Ta banque, Ombudsfin"
 short: "Le compte courant où arrivent ton salaire et d'où partent tes paiements ; il va avec une carte de débit (ton argent) et éventuellement une carte de crédit (l'argent de la banque, remboursé plus tard)."
 aliases: [compte courant, compte bancaire, IBAN, BIC, carte de débit, carte de crédit, Bancontact, Maestro, Visa, virement instantané, découvert, service bancaire de base]
 prerequisites: [budget]

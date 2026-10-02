@@ -6,6 +6,7 @@ level: essentiel
 nature: mixte
 valid_for: "exercice d'imposition 2026 (revenus 2025)"
 scope: [federal]
+organisme: "SPF Finances"
 short: "Une première part de revenu sur laquelle tu ne paies pas d'impôt ; elle augmente si tu as des personnes à charge."
 aliases: [quotité exemptée, minimum non imposable, belastingvrije som]
 prerequisites: [tranches-imposition]

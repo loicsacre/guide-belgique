@@ -5,6 +5,7 @@ domain: systeme
 level: essentiel
 nature: stable
 scope: [federal, wallonie, bruxelles, flandre, communal]
+organisme: "belgium.be"
 short: "La Belgique répartit les compétences entre l'État fédéral, trois Régions, trois Communautés, les provinces et les communes : pour chaque sujet, la première question est « qui est compétent ? »."
 aliases: [État fédéral, Région, Communauté, entités fédérées, commune]
 prerequisites: []

@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [RC familiale, responsabilité civile, assurance familiale, protection juridique]
+organisme: "Ton assureur"
 short: "Tu es responsable des dommages que toi, tes enfants, tes animaux ou tes objets causent à d'autres ; la RC familiale couvre cette responsabilité dans la vie privée, pour quelques dizaines d'euros par an. C'est l'assurance la plus rentable qui existe."
 aliases: [RC familiale, assurance familiale, responsabilité civile vie privée, protection juridique, article 1382, défense en justice]
 prerequisites: [assurance-principes]

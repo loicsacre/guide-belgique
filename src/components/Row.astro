@@ -1,0 +1,13 @@
+---
+// Une ligne de document : numéro d'annotation (lien vers la fiche), libellé, valeur.
+import { ficheHref } from '../lib/notions';
+interface Props { n?: number | string; k: string; v?: string; f?: string; total?: boolean; section?: boolean }
+const { n, k, v, f, total = false, section = false } = Astro.props;
+---
+{section ? <div class="paper-section">{k}</div> : (
+  <div class={`paper-row${total ? ' total' : ''}`}>
+    <span>{n !== undefined && (f ? <a class="annot" href={ficheHref(f)} title="Voir la notion">{n}</a> : <span class="annot">{n}</span>)}</span>
+    <span>{k}</span>
+    <span class="v">{v}</span>
+  </div>
+)}

@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [domiciliation, ordre permanent, paiements automatiques, SEPA]
+organisme: "Ta banque"
 short: "Deux façons d'automatiser un paiement : avec l'ordre permanent, tu pousses un montant fixe à date fixe ; avec la domiciliation, tu autorises un créancier à prélever ce qu'il te facture. Les deux se contestent et s'annulent différemment."
 aliases: [prélèvement automatique, mandat SEPA, domiciliation européenne, ordre permanent, remboursement de domiciliation]
 prerequisites: [compte-a-vue]

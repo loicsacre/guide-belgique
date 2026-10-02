@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [exercice d'imposition, année des revenus, calendrier fiscal]
+organisme: "SPF Finances"
 short: "Les revenus d'une année N sont déclarés et imposés en N+1 : N est l'année des revenus, N+1 l'exercice d'imposition. Tous les documents officiels utilisent le second, d'où des confusions constantes."
 aliases: [exercice d'imposition, année des revenus, période imposable, calendrier fiscal]
 prerequisites: [ipp]

@@ -1,0 +1,141 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { ficheHref, BASE } from '../lib/notions';
+
+// Carte du grand système : nœuds (domaines) et flèches (flux). Chaque nœud pointe vers une fiche d'entrée.
+type Node = { id: string; label: string; sub?: string; x: number; y: number; w?: number; fiche: string; color: string };
+const C = { travail: 'var(--sl-color-blue-low)', sec: 'var(--sl-color-green-low)', fisc: 'var(--sl-color-orange-low)', argent: 'var(--sl-color-accent-low)', vie: 'var(--sl-color-purple-low)', etat: 'var(--sl-color-gray-6)' };
+const nodes: Node[] = [
+  { id: 'etat', label: 'État, Régions, communes', sub: 'qui décide de quoi', x: 500, y: 40, w: 260, fiche: 'qui-fait-quoi', color: C.etat },
+  { id: 'travail', label: 'Travail', sub: 'contrat, CP, employeur', x: 90, y: 150, fiche: 'emploi-salarie', color: C.travail },
+  { id: 'brut', label: 'Salaire brut', sub: 'le chiffre négocié', x: 90, y: 260, fiche: 'salaire-brut', color: C.travail },
+  { id: 'cotis', label: 'Cotisations sociales', sub: '13,07 % + part patronale', x: 300, y: 150, fiche: 'cotisations-sociales', color: C.sec },
+  { id: 'secu', label: 'Sécurité sociale', sub: 'chômage, maladie, pension, soins', x: 300, y: 40, w: 180, fiche: 'securite-sociale', color: C.sec },
+  { id: 'impot', label: 'Impôts', sub: 'précompte → IPP → AER', x: 300, y: 260, fiche: 'ipp', color: C.fisc },
+  { id: 'net', label: 'Salaire net', sub: 'ce qui arrive', x: 90, y: 370, fiche: 'salaire-net', color: C.travail },
+  { id: 'banque', label: 'Banque', sub: 'compte, cartes, paiements', x: 300, y: 370, fiche: 'compte-a-vue', color: C.argent },
+  { id: 'budget', label: 'Budget', sub: 'revenus − dépenses', x: 510, y: 370, fiche: 'budget', color: C.argent },
+  { id: 'epargne', label: 'Épargne & investissement', sub: 'réserve, ETF, pension', x: 720, y: 370, w: 200, fiche: 'epargne-de-precaution', color: C.argent },
+  { id: 'credit', label: 'Crédit', sub: 'capital, taux, TAEG', x: 510, y: 480, fiche: 'credit', color: C.argent },
+  { id: 'logement', label: 'Logement', sub: 'louer ou acheter', x: 300, y: 480, fiche: 'louer-vs-acheter', color: C.vie },
+  { id: 'patrimoine', label: 'Patrimoine net', sub: 'actifs − dettes', x: 720, y: 480, w: 200, fiche: 'patrimoine-net', color: C.argent },
+  { id: 'assur', label: 'Assurances', sub: 'RC, habitation, auto, hospi', x: 90, y: 590, fiche: 'assurance-principes', color: C.vie },
+  { id: 'famille', label: 'Famille', sub: 'couple, enfants, succession', x: 300, y: 590, fiche: 'formes-de-couple', color: C.vie },
+  { id: 'retraite', label: 'Retraite', sub: 'pension légale + 2e/3e pilier', x: 720, y: 590, w: 200, fiche: 'pension', color: C.sec },
+  { id: 'immo-fisc', label: 'Impôts du propriétaire', sub: 'droits, précompte immobilier', x: 510, y: 590, fiche: 'precompte-immobilier', color: C.fisc },
+];
+const W = 170, H = 70;
+const byId = Object.fromEntries(nodes.map((n) => [n.id, n]));
+const center = (n: Node) => ({ cx: n.x + (n.w ?? W) / 2, cy: n.y + H / 2 });
+// Flèches : [de, vers, libellé court]
+const edges: [string, string, string][] = [
+  ['travail', 'brut', 'produit'],
+  ['brut', 'cotis', 'retenue'],
+  ['brut', 'impot', 'précompte'],
+  ['brut', 'net', 'reste'],
+  ['cotis', 'secu', 'finance'],
+  ['secu', 'retraite', 'pension légale'],
+  ['impot', 'etat', 'finance'],
+  ['etat', 'secu', 'complète'],
+  ['net', 'banque', 'versé'],
+  ['banque', 'budget', 'flux'],
+  ['budget', 'epargne', 'reste'],
+  ['budget', 'credit', 'mensualité'],
+  ['credit', 'logement', 'finance'],
+  ['logement', 'immo-fisc', 'déclenche'],
+  ['epargne', 'patrimoine', 'construit'],
+  ['credit', 'patrimoine', 'dette'],
+  ['logement', 'patrimoine', 'actif'],
+  ['epargne', 'retraite', '2e/3e pilier'],
+  ['patrimoine', 'famille', 'se transmet'],
+  ['famille', 'impot', 'situation familiale'],
+  ['assur', 'logement', 'protège'],
+  ['assur', 'famille', 'protège'],
+  ['secu', 'net', 'remplace'],
+];
+function path(a: string, b: string) {
+  const A = center(byId[a]), B = center(byId[b]);
+  // point d'ancrage sur le bord du rectangle, direction dominante
+  const na = byId[a], nb = byId[b];
+  const wa = na.w ?? W, wb = nb.w ?? W;
+  const dx = B.cx - A.cx, dy = B.cy - A.cy;
+  let x1 = A.cx, y1 = A.cy, x2 = B.cx, y2 = B.cy;
+  if (Math.abs(dx) > Math.abs(dy)) { x1 += Math.sign(dx) * wa / 2; x2 -= Math.sign(dx) * wb / 2; } else { y1 += Math.sign(dy) * H / 2; y2 -= Math.sign(dy) * H / 2; }
+  const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
+  return { d: `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`, mx, my };
+}
+const explain: Record<string, { title: string; text: string; fiches: string[] }> = {
+  'travail→brut': { title: 'Le travail produit un brut', text: "Ton contrat et ta commission paritaire fixent un salaire brut : le chiffre négocié, pas celui du compte.", fiches: ['contrat-de-travail', 'commission-paritaire', 'salaire-brut'] },
+  'brut→cotis': { title: 'Le brut finance la sécurité sociale', text: "13,07 % sont retenus ; l'employeur paie en plus ≈ 25 % de part patronale. Les deux vont à l'ONSS.", fiches: ['cotisations-sociales', 'onss', 'cout-employeur'] },
+  'brut→impot': { title: 'Le brut finance l\'État par le précompte', text: "Une avance d'impôt est retenue chaque mois ; l'IPP réel se calcule l'année suivante et l'AER régularise.", fiches: ['precompte-professionnel', 'ipp', 'avertissement-extrait-de-role'] },
+  'secu→net': { title: 'La sécurité sociale remplace le net quand il manque', text: "Chômage, maladie, pension : des revenus de remplacement, proportionnés à ce que tu as cotisé.", fiches: ['chomage', 'incapacite-de-travail', 'pension'] },
+  'budget→credit': { title: 'Le budget décide du crédit', text: "La mensualité supportable (≈ ⅓ des revenus) détermine ce que tu peux emprunter, pas l'inverse.", fiches: ['quotite-emprunt', 'credit', 'taeg'] },
+  'credit→patrimoine': { title: 'Le crédit est une dette, le logement un actif', text: "Acheter transforme de l'épargne et une dette en un actif ; le patrimoine net grandit à mesure que le capital est remboursé.", fiches: ['patrimoine-net', 'mensualite-amortissement', 'dette'] },
+  'famille→impot': { title: 'La famille change l\'impôt', text: "Mariage ou cohabitation légale (déclaration commune), enfants à charge (quotité exemptée), domicile (commune) : la situation familiale traverse tout le système.", fiches: ['statut-familial', 'personne-a-charge', 'formes-de-couple'] },
+  'patrimoine→famille': { title: 'Le patrimoine se transmet', text: "Succession et donation : qui reçoit (droit civil) et combien l'État prélève (droits régionaux).", fiches: ['succession', 'droits-de-succession', 'donation'] },
+  'epargne→retraite': { title: 'L\'épargne prépare la retraite', text: "La pension légale remplace une partie du salaire ; l'assurance groupe et l'épargne-pension complètent, avec avantage fiscal.", fiches: ['epargne-pension', 'interets-composes', 'pension'] },
+  'logement→immo-fisc': { title: 'Posséder déclenche d\'autres impôts', text: "Droits d'enregistrement à l'achat, précompte immobilier chaque année, sur base du revenu cadastral ; des règles régionales.", fiches: ['droits-enregistrement', 'precompte-immobilier', 'revenu-cadastral'] },
+  'assur→logement': { title: 'Les assurances bornent les risques', text: "Responsabilité civile, incendie, auto, hospitalisation, solde restant dû : ce que tu ne pourrais pas payer seul.", fiches: ['assurance-principes', 'rc-familiale', 'assurance-habitation'] },
+  'impot→etat': { title: 'Qui décide de quoi', text: "Fédéral (IPP, sécu, travail), Régions (logement, immobilier, succession), communes (domicile, additionnels).", fiches: ['qui-fait-quoi', 'impot-taxe-cotisation', 'centimes-additionnels'] },
+};
+---
+<StarlightPage frontmatter={{ title: 'Le grand système', description: 'Comment travail, salaire, cotisations, impôts, banque, budget, crédit, logement, patrimoine, famille, assurances, investissement et retraite se tiennent.' }}>
+  <p>Tout part du travail et tout revient au patrimoine. Entre les deux, l'argent est prélevé, redistribué, épargné, emprunté, assuré, transmis. <strong>Clique sur une case</strong> pour ouvrir la fiche d'entrée du domaine ; les flèches sont expliquées sous la carte.</p>
+
+  <div class="systeme not-content">
+    <svg viewBox="0 0 960 680" role="img" aria-label="Carte des relations entre les domaines de la vie adulte en Belgique">
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--sl-color-gray-3)" /></marker>
+      </defs>
+      {edges.map(([a, b, l]) => { const p = path(a, b); return (
+        <g>
+          <path d={p.d} fill="none" stroke="var(--sl-color-gray-3)" stroke-width="1.6" marker-end="url(#arrow)" />
+          <text x={p.mx} y={p.my - 5} font-size="10" text-anchor="middle" fill="var(--sl-color-gray-2)" style="paint-order:stroke" stroke="var(--sl-color-bg)" stroke-width="4">{l}</text>
+        </g>
+      ); })}
+      {nodes.map((n) => (
+        <a href={ficheHref(n.fiche)}>
+          <rect x={n.x} y={n.y} width={n.w ?? W} height={H} rx="10" fill={n.color} stroke="var(--sl-color-gray-3)" stroke-width="1.5" />
+          <text x={n.x + (n.w ?? W) / 2} y={n.y + 29} text-anchor="middle" font-size="14" font-weight="700" fill="var(--sl-color-white)">{n.label}</text>
+          {n.sub && <text x={n.x + (n.w ?? W) / 2} y={n.y + 50} text-anchor="middle" font-size="11" fill="var(--sl-color-gray-2)">{n.sub}</text>}
+        </a>
+      ))}
+    </svg>
+  </div>
+
+  <h2>Le circuit d'un euro gagné</h2>
+  <p>Sur 100 € de coût pour ton employeur (ordre de grandeur, salarié isolé) :</p>
+  <div class="tool-bar not-content" style="height:1.4rem;margin:.5rem 0">
+    <span style="width:20%;background:var(--sl-color-green)" title="cotisations patronales"></span>
+    <span style="width:10.5%;background:var(--sl-color-green-high)" title="cotisations personnelles"></span>
+    <span style="width:19%;background:var(--sl-color-orange)" title="impôt"></span>
+    <span style="width:50.5%;background:var(--sl-color-accent)" title="net"></span>
+  </div>
+  <p style="font-size:var(--sl-text-sm)"><span style="color:var(--sl-color-green)">■</span> ≈ 20 € cotisations patronales · <span style="color:var(--sl-color-green-high)">■</span> ≈ 10 € cotisations personnelles → <a href={ficheHref('securite-sociale')}>sécurité sociale</a> · <span style="color:var(--sl-color-orange)">■</span> ≈ 19 € impôt → <a href={ficheHref('qui-fait-quoi')}>État, Régions, communes</a> · <span style="color:var(--sl-color-accent)">■</span> ≈ 50 € net → <a href={ficheHref('budget')}>ton budget</a>. Voir <a href={ficheHref('cout-employeur')}>coût employeur</a>.</p>
+
+  <h2>Les flèches expliquées</h2>
+  <dl class="glossary">
+    {Object.entries(explain).map(([k, e]) => (
+      <>
+        <dt>{e.title}</dt>
+        <dd>{e.text} → {e.fiches.map((f, i) => <>{i > 0 && ' · '}<a href={ficheHref(f)}>{f}</a></>)}</dd>
+      </>
+    ))}
+  </dl>
+
+  <h2>Trois boucles à retenir</h2>
+  <ol>
+    <li><strong>La boucle sociale</strong> : travail → cotisations → sécurité sociale → revenus de remplacement quand le travail s'arrête (chômage, maladie, pension). Tu paies pendant que tu peux, tu reçois quand tu ne peux plus.</li>
+    <li><strong>La boucle fiscale</strong> : revenus → précompte (avance) → déclaration → IPP → AER (solde). Et en parallèle : posséder → précompte immobilier ; acheter → droits d'enregistrement ; hériter → droits de succession. Chaque niveau de pouvoir y prend sa part.</li>
+    <li><strong>La boucle patrimoniale</strong> : net → budget → épargne ou crédit → actifs (logement, placements) − dettes = patrimoine → transmission à la famille. Le temps (intérêts composés, remboursement du capital) fait la différence.</li>
+  </ol>
+
+  <h2>Entrer par une autre porte</h2>
+  <ul>
+    <li><a href={`${BASE}/parcours/`}>Je pars de zéro</a> : le parcours, bloc par bloc.</li>
+    <li><a href={`${BASE}/glossaire/`}>Je rencontre un terme</a> : le glossaire et la recherche (Ctrl K).</li>
+    <li><a href={`${BASE}/situations/premier-emploi/`}>Je vis une situation</a> : les chaînes de vie, étape par étape.</li>
+    <li><a href={`${BASE}/documents/fiche-de-paie/`}>Je dois lire un document</a> : fiche de paie, AER, facture, offre de crédit… annotés.</li>
+    <li><a href={`${BASE}/outils/credit/`}>Je veux calculer</a> : crédit, budget, patrimoine, intérêts composés, brut-net.</li>
+  </ul>
+</StarlightPage>

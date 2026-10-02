@@ -1,0 +1,41 @@
+---
+title: Lire un tableau d'amortissement
+kind: document
+description: "Le tableau qui accompagne tout crédit : mois par mois, la part d'intérêts, la part de capital et le capital restant dû."
+notions: [mensualite-amortissement, credit, taux-interet, credit-hypothecaire, patrimoine-net, louer-vs-acheter]
+sidebar:
+  order: 5
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Le tableau d'amortissement du crédit de l'[offre précédente](../offre-de-credit/) : 200 000 € à 3 % fixe sur 25 ans, mensualité 948,42 €. Extrait des lignes clés.
+
+<Paper title="TABLEAU D'AMORTISSEMENT" sub="Crédit n° 2026-00042 · 200 000 € · 3,00 % fixe · 300 mensualités de 948,42 €">
+  <Row section k="Mois · Mensualité · dont intérêts · dont capital · Capital restant dû" />
+  <Row n="1" k="Mois 1 · 948,42 · 500,00 · 448,42" v="199 551,58" f="taux-interet" />
+  <Row k="Mois 2 · 948,42 · 498,88 · 449,54" v="199 102,04" />
+  <Row k="Mois 12 · 948,42 · 487,54 · 460,88" v="194 554,68" />
+  <Row n="2" k="Mois 60 (5 ans) · 948,42 · 430,10 · 518,32" v="171 522,13" f="louer-vs-acheter" />
+  <Row n="3" k="Mois 120 (10 ans) · 948,42 · 346,61 · 601,81" v="138 043,50" f="patrimoine-net" />
+  <Row k="Mois 180 (15 ans) · 948,42 · 249,65 · 698,77" v="99 161,80" />
+  <Row n="4" k="Mois 240 (20 ans) · 948,42 · 137,07 · 811,35" v="54 016,52" f="mensualite-amortissement" />
+  <Row k="Mois 299 · 948,42 · 4,72 · 943,70" v="943,70" />
+  <Row n="5" k="Mois 300 · 946,06 · 2,36 · 943,70" v="0,00" f="credit" />
+  <Row section k="Totaux" />
+  <Row n="6" k="Total payé · dont intérêts · dont capital" v="284 526 · 84 526 · 200 000" f="mensualite-amortissement" total />
+</Paper>
+
+## Ce que dit chaque ligne
+
+<Legend>
+<li>**Mois 1** : intérêts = 200 000 × 3 % ÷ 12 = 500 €. Le reste de la mensualité (448 €) rembourse du capital. Plus de la moitié de ce que tu paies au début est du « loyer d'argent ». → [[taux-interet]]</li>
+<li>**5 ans** : tu as payé 56 900 € ; le capital restant dû n'a baissé que de 28 500 €. Revendre maintenant, c'est avoir payé 28 400 € d'intérêts plus les frais d'achat : la règle des 7-10 ans vient de là. → [[louer-vs-acheter]]</li>
+<li>**10 ans** : la part de capital dépasse enfin nettement les intérêts. Chaque mensualité augmente ton patrimoine net d'environ 600 €. → [[patrimoine-net]]</li>
+<li>**20 ans** : presque tout va au capital. Un remboursement anticipé ici fait économiser peu d'intérêts ; c'est au début qu'il rapporte. → [[mensualite-amortissement]]</li>
+<li>**Dernière mensualité** : légèrement différente pour solder exactement. Le crédit est clos ; l'hypothèque reste inscrite jusqu'à mainlevée ou expiration (30 ans). → [[credit]]</li>
+<li>**Totaux** : 84 526 € d'intérêts pour 200 000 € empruntés, soit 42 % du capital. À 20 ans : 66 000 €. À 3,5 % sur 25 ans : 100 000 €. → [[mensualite-amortissement]]</li>
+</Legend>
+
+Calcule tes propres chiffres avec l'[outil crédit](../../outils/credit/).

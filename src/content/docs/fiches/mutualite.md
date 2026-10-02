@@ -8,6 +8,7 @@ valid_for: "principes stables ; montants (ticket modérateur, MAF) à vérifier 
 scope: [federal]
 status: publie
 tags: [mutualité, INAMI, santé, remboursement, ticket modérateur]
+organisme: "INAMI, via ta mutualité"
 short: "Ta mutualité est le guichet obligatoire de l'assurance soins de santé : elle te rembourse une partie de tes frais médicaux et te verse des indemnités si tu ne peux pas travailler, pour le compte de l'INAMI."
 aliases: [mutuelle, INAMI, ticket modérateur, tiers payant, maximum à facturer, MAF, conventionné, BIM, CAAMI]
 prerequisites: [securite-sociale]

@@ -7,6 +7,7 @@ nature: stable
 scope: []
 status: publie
 tags: [épargne, réserve, imprévus, budget]
+organisme: "Toi"
 short: "Une réserve d'argent disponible immédiatement, séparée de ton compte courant, pour absorber les imprévus sans emprunter ni vendre un placement : 3 à 6 mois de dépenses est le repère habituel."
 aliases: [réserve de sécurité, fonds d'urgence, matelas de sécurité, coussin financier]
 prerequisites: [budget]

@@ -8,6 +8,7 @@ valid_for: "ordres de grandeur 2026"
 scope: [federal]
 status: publie
 tags: [coût salarial, cotisations patronales, package]
+organisme: "ONSS"
 short: "Ce que ton emploi coûte réellement à ton employeur : ton brut plus les cotisations patronales, le pécule, les primes et les avantages. Souvent 1,5 à 2 fois ton net."
 aliases: [coût salarial, cotisations patronales, charges patronales, package salarial, coût total]
 prerequisites: [salaire-brut, cotisations-sociales]

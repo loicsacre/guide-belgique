@@ -8,6 +8,7 @@ valid_for: "2026 : 20,5 % jusqu'à 75 024 €, 14,16 % au-delà, minimum 926,48 
 scope: [federal]
 status: publie
 tags: [cotisations sociales, indépendant, trimestrielles, régularisation, PLCI]
+organisme: "Caisse d'assurances sociales, INASTI"
 short: "L'indépendant paie lui-même ses cotisations, chaque trimestre, à une caisse d'assurances sociales : 20,5 % de son revenu net imposable (jusqu'à un plafond), avec un minimum même sans revenu, d'abord sur une base provisoire puis régularisées trois ans plus tard."
 aliases: [cotisations trimestrielles, caisse d'assurances sociales, régularisation, cotisations provisoires, PLCI, pension libre complémentaire, revenu de référence]
 prerequisites: [independant, cotisations-sociales]

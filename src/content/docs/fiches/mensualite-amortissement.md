@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [mensualité, amortissement, capital restant dû, tableau]
+organisme: "Banque"
 short: "Chaque mensualité contient une part d'intérêts (calculée sur ce qu'il reste à rembourser) et une part de capital ; au début, surtout des intérêts, à la fin, surtout du capital. Le tableau d'amortissement détaille cette évolution mois par mois."
 aliases: [tableau d'amortissement, capital restant dû, annuité constante, amortissement, remboursement anticipé, indemnité de remploi]
 prerequisites: [credit]

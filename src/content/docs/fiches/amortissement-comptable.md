@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [amortissement, investissement, immobilisation, durée de vie]
+organisme: "SPF Finances, comptable"
 short: "Un investissement durable (machine, voiture, ordinateur) n'est pas une charge de l'année d'achat : son coût est étalé sur sa durée d'utilisation, par une charge annuelle appelée amortissement. À ne pas confondre avec l'amortissement d'un crédit."
 aliases: [amortissement, dotation aux amortissements, immobilisation, durée d'amortissement, valeur nette comptable, amortissement linéaire, amortissement dégressif]
 prerequisites: [chiffre-affaires-marge-benefice]

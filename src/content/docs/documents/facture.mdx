@@ -1,0 +1,44 @@
+---
+title: Lire une facture (et en émettre une)
+kind: document
+description: "Une facture d'indépendant à une société, annotée : mentions obligatoires, numéro d'entreprise, TVA, échéance, communication, e-facturation."
+notions: [facturation, tva, bce-numero-entreprise, independant, tresorerie-cash-flow, frais-professionnels, contrats-consommation]
+sidebar:
+  order: 8
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Facture fictive d'une consultante indépendante à une société cliente. Les mêmes mentions se retrouvent sur toute facture que tu **reçois** d'un professionnel.
+
+<Paper title="FACTURE n° 2026-014" sub="Émise le 31.03.2026 · Prestations du 01.03 au 31.03.2026 · Échéance : 30.04.2026">
+  <Row n="1" k="Émetteur : S. Martin-Exemple · Consultance informatique · rue Fictive 3, 4000 Liège · BE 0999.888.777 · TVA BE0999.888.777 · IBAN BE00 0000 0000 0001" v="" f="bce-numero-entreprise" />
+  <Row n="2" k="Client : Société Fictive SA · avenue Imaginaire 10, 1000 Bruxelles · TVA BE0888.777.666" v="" f="facturation" />
+  <Row section k="Détail" />
+  <Row n="3" k="Développement application mobile · 12 jours × 600,00 € HTVA" v="7 200,00" f="independant" />
+  <Row k="Frais de déplacement refacturés (forfait)" v="150,00" />
+  <Row n="4" k="Base imposable HTVA" v="7 350,00" f="tva" total />
+  <Row n="5" k="TVA 21 %" v="1 543,50" f="tva" />
+  <Row n="6" k="TOTAL TVAC" v="8 893,50" f="tresorerie-cash-flow" total />
+  <Row n="7" k="Paiement à 30 jours · communication : +++ 026/0014/00000 +++ · Intérêts de retard légaux et indemnité forfaitaire de 40 € de plein droit en cas de retard" v="" f="facturation" />
+  <Row n="8" k="Facture électronique structurée transmise via le réseau Peppol (obligatoire B2B depuis le 01.01.2026) · Conservation 10 ans" v="" f="facturation" />
+</Paper>
+
+## Ce que dit chaque élément
+
+<Legend>
+<li>**Émetteur** : dénomination, adresse, numéro d'entreprise (= numéro de TVA précédé de BE), compte bancaire. Vérifie-les dans la BCE avant de payer un inconnu. → [[bce-numero-entreprise]]</li>
+<li>**Client** : son numéro de TVA est obligatoire s'il est assujetti : c'est ce qui lui permet de déduire la TVA. → [[facturation]]</li>
+<li>**Prestation** : description, quantité, prix unitaire HTVA, période. Les professionnels parlent toujours hors TVA. → [[independant]]</li>
+<li>**Base imposable** : le montant sur lequel la TVA se calcule ; c'est aussi le chiffre d'affaires de l'indépendante. → [[tva]]</li>
+<li>**TVA 21 %** : collectée pour l'État ; le client assujetti la récupère, l'indépendante la reverse à sa déclaration trimestrielle. → [[tva]]</li>
+<li>**Total TVAC** : ce qui arrive sur le compte, mais 1 543,50 € n'appartiennent pas à l'indépendante. → [[tresorerie-cash-flow]]</li>
+<li>**Conditions de paiement** : 30 jours par défaut entre entreprises (max 60 par contrat) ; intérêts et indemnité de 40 € automatiques en cas de retard. → [[facturation]]</li>
+<li>**Peppol** : depuis 2026, un PDF par e-mail ne suffit plus entre assujettis belges ; les logiciels de facturation s'en chargent. → [[facturation]]</li>
+</Legend>
+
+## Côté client
+
+- La facture est la **pièce justificative** de la déduction : sans elle, pas de frais professionnel déductible. → [[frais-professionnels]]
+- Pour un **particulier**, les mentions sont plus légères et les règles de la consommation s'ajoutent (rétractation, garantie). → [[contrats-consommation]]

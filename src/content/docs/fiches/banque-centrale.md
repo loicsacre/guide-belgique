@@ -7,6 +7,7 @@ nature: stable
 scope: []
 status: publie
 tags: [BCE, BNB, taux directeurs, politique monétaire, euro]
+organisme: "BCE, BNB"
 short: "La Banque centrale européenne fixe les taux directeurs de la zone euro pour maintenir l'inflation autour de 2 % ; ses décisions se répercutent sur ton compte d'épargne, ton crédit hypothécaire et le cours de l'euro. La Banque nationale de Belgique en est le relais national."
 aliases: [BCE, Banque centrale européenne, BNB, Banque nationale de Belgique, taux directeur, politique monétaire, Euribor, taux OLO, quantitative easing, euro]
 prerequisites: [taux-interet, inflation]

@@ -5,6 +5,7 @@ domain: travail
 level: essentiel
 nature: stable
 scope: [federal]
+organisme: "Employeur, secrétariat social, SPF Emploi"
 short: "Le décompte que ton employeur te remet à chaque paie : il montre ligne par ligne comment ton brut devient ton net."
 aliases: [décompte de paie, fiche de salaire, bulletin de paie, loonbrief]
 prerequisites: [salaire-brut, cotisations-sociales, precompte-professionnel, salaire-net]

@@ -8,6 +8,7 @@ valid_for: "règles régionales 2026 (réforme wallonne TMC 2023, Flandre verdis
 scope: [wallonie, bruxelles, flandre]
 status: relecture
 tags: [voiture, TMC, taxe de circulation, contrôle technique, Car-Pass, coût total]
+organisme: "Région (fiscalité auto), DIV"
 short: "Posséder une voiture déclenche deux impôts régionaux (la taxe de mise en circulation, une fois, et la taxe de circulation, chaque année), le contrôle technique périodique, l'assurance obligatoire ; le coût total de possession dépasse souvent 400 à 600 € par mois."
 aliases: [TMC, taxe de mise en circulation, taxe de circulation, contrôle technique, Car-Pass, DIV, immatriculation, coût total de possession, leasing privé, LEZ]
 prerequisites: [budget, assurance-auto]

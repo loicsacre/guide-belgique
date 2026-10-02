@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [eID, itsme, MyMinfin, eBox, administration en ligne]
+organisme: "SPF BOSA (CSAM), SPF Finances (MyMinfin)"
 short: "Ta carte d'identité électronique et l'application itsme te permettent de prouver qui tu es en ligne et d'accéder à tous les portails « My… » de l'administration ; l'eBox centralise les courriers officiels."
 aliases: [eID, itsme, MyMinfin, MyPension, My eBox, eBox, CSAM, Tax-on-web, MySocialSecurity]
 prerequisites: [domicile]

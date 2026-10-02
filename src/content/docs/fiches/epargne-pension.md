@@ -8,6 +8,7 @@ valid_for: "plafonds exercice 2026 (1 050 € / 1 350 €), taxe anticipative à
 scope: [federal]
 status: publie
 tags: [épargne-pension, 3e pilier, assurance groupe, 2e pilier, réduction d'impôt]
+organisme: "SPF Finances, banque ou assureur"
 short: "Le 3e pilier : tu verses chaque année sur un fonds ou une assurance d'épargne-pension, l'État te rend 30 % (ou 25 %) en réduction d'impôt, l'argent est bloqué jusqu'à 60 ans et taxé une fois, à 8 %. Le 2e pilier, c'est la même logique via ton employeur."
 aliases: [épargne-pension, fonds d'épargne-pension, assurance épargne-pension, épargne à long terme, assurance groupe, fonds de pension, 2e pilier, 3e pilier, taxe anticipative, branche 21, branche 23]
 prerequisites: [pension, deduction-reduction-credit]

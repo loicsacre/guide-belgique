@@ -8,6 +8,7 @@ valid_for: "taux communaux de 0 à 9 % selon la commune (2026)"
 scope: [federal, wallonie, bruxelles, flandre, communal]
 status: publie
 tags: [taxe communale, additionnels, IPP régional, commune]
+organisme: "Commune, Région, SPF Finances"
 short: "Ta commune ajoute un pourcentage (souvent 6 à 8 %) à ton impôt fédéral, et ta Région perçoit une part de l'IPP qu'elle peut moduler : ton impôt final dépend donc aussi d'où tu habites au 1er janvier."
 aliases: [taxe communale additionnelle, centimes additionnels, IPP régional, autonomie fiscale régionale, taxe communale]
 prerequisites: [ipp, domicile]

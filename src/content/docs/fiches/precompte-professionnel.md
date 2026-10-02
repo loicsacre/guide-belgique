@@ -5,6 +5,7 @@ domain: fiscalite
 level: essentiel
 nature: stable
 scope: [federal]
+organisme: "SPF Finances (retenu par l'employeur)"
 short: "Une avance sur ton impôt sur le revenu, retenue chaque mois sur ton salaire par l'employeur et versée au SPF Finances, puis déduite de ton impôt final."
 aliases: [PP, précompte, bedrijfsvoorheffing]
 prerequisites: [salaire-brut, cotisations-sociales]
@@ -24,6 +25,10 @@ sidebar:
 ## En langage simple
 
 Plutôt que de te réclamer tout ton impôt d'un coup l'année suivante, l'État le **prélève à la source**, chaque mois, via ton employeur. C'est une **avance** — comme un acompte sur une facture finale.
+
+## Pourquoi ça existe
+
+Réclamer l'impôt d'une année entière en une fois, l'année suivante, serait insupportable pour la plupart des ménages et incertain pour l'État. La retenue à la source **lisse** la charge sur douze mois, sécurise la recette publique et limite la fraude : l'employeur, tiers payeur, déclare et verse.
 
 ## Le mécanisme en deux temps
 

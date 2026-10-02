@@ -7,6 +7,7 @@ nature: stable
 scope: [federal, wallonie, bruxelles, flandre, communal]
 status: publie
 tags: [impôt, taxe, cotisation, redevance, vocabulaire]
+organisme: "SPF Finances"
 short: "Quatre mots pour quatre logiques : l'impôt finance l'État sans contrepartie directe, la cotisation sociale ouvre des droits, la redevance paie un service précis, et « taxe » est utilisé un peu partout, souvent à tort."
 aliases: [taxe, redevance, prélèvement obligatoire, accises, pression fiscale]
 prerequisites: [qui-fait-quoi]

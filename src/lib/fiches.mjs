@@ -26,6 +26,8 @@ function readDir(sub) {
 
 export const loadFiches = () => readDir('fiches');
 export const loadSituations = () => readDir('situations');
+export const loadDocuments = () => readDir('documents');
+export const loadOutils = () => readDir('outils');
 
 export function loadParcours() {
   return yaml.load(fs.readFileSync(path.join(ROOT, 'src/data/parcours.yaml'), 'utf8'));
@@ -53,17 +55,22 @@ export function buildSidebar() {
   })).filter((g) => g.items.length);
 
   const situations = loadSituations().sort(byOrder).map((s) => ({ slug: s.id }));
+  const documents = loadDocuments().sort(byOrder).map((s) => ({ slug: s.id }));
+  const outils = loadOutils().sort(byOrder).map((s) => ({ slug: s.id }));
 
   return [
     {
       label: 'Commencer',
       items: [
         { label: 'Accueil', link: '/' },
-        { label: 'Parcours', link: '/parcours/' },
+        { label: 'Parcours — je pars de zéro', link: '/parcours/' },
+        { label: 'Le grand système', link: '/systeme/' },
         { label: 'Glossaire', link: '/glossaire/' },
       ],
     },
-    ...(situations.length ? [{ label: '🧭 Situations de vie', items: situations }] : []),
+    ...(situations.length ? [{ label: '🧭 Chaînes de vie', items: situations }] : []),
+    ...(documents.length ? [{ label: '📄 Lire un document', items: documents }] : []),
+    ...(outils.length ? [{ label: '🧮 Outils pédagogiques', items: outils }] : []),
     ...groups,
   ];
 }

@@ -5,6 +5,7 @@ domain: argent
 level: essentiel
 nature: stable
 scope: []
+organisme: "Toi"
 short: "Une vue d'ensemble de tes revenus et de toutes tes dépenses — mensuelles, annuelles, prévues et imprévues — pour savoir ce que tu peux réellement dépenser, épargner ou emprunter."
 aliases: [gestion de budget, budget mensuel]
 prerequisites: [salaire-net]
@@ -24,6 +25,10 @@ sidebar:
 ## En langage simple
 
 Un budget répond à une question : **« combien me reste-t-il vraiment ? »** Le piège classique est de ne regarder que le mois en cours ; les dépenses annuelles et les imprévus te rattrapent ensuite.
+
+## Pourquoi ça existe
+
+Nos dépenses arrivent à des rythmes différents (mensuelles, annuelles, imprévues) alors que les revenus arrivent chaque mois : sans vue d'ensemble, le mois de la taxe ou de l'assurance se termine à découvert. Le budget sert à **faire coïncider** ces rythmes, et à rendre visible ce qui reste réellement.
 
 ## Le modèle de base
 

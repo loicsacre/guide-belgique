@@ -1,0 +1,38 @@
+---
+// Patrimoine net : actifs − dettes, avec part liquide.
+---
+<div class="tool not-content">
+  <strong>Actifs</strong>
+  <label>Comptes à vue et d'épargne <input type="number" id="p-cash" value="15000" step="500" /></label>
+  <label>Placements (titres, ETF, fonds) <input type="number" id="p-inv" value="5000" step="500" /></label>
+  <label>Épargne-pension, assurance groupe (valeur acquise) <input type="number" id="p-pens" value="12000" step="500" /></label>
+  <label>Logement (valeur de marché estimée) <input type="number" id="p-immo" value="260000" step="5000" /></label>
+  <label>Voiture et autres biens (valeur de revente) <input type="number" id="p-biens" value="10000" step="500" /></label>
+  <strong>Dettes</strong>
+  <label>Crédit hypothécaire : capital restant dû <input type="number" id="p-hypo" value="190000" step="1000" /></label>
+  <label>Autres crédits (auto, conso, carte) <input type="number" id="p-conso" value="8000" step="500" /></label>
+  <label>Dettes diverses (impôts à payer, prêts familiaux) <input type="number" id="p-div" value="0" step="100" /></label>
+  <div class="tool-out">
+    <div>Patrimoine net : <span class="big" id="p-net">—</span></div>
+    <div id="p-detail" style="font-size:var(--sl-text-sm);margin-top:.4rem"></div>
+    <div class="tool-bar" style="margin-top:.5rem"><span id="p-bar-liq" style="background:var(--sl-color-green)"></span><span id="p-bar-ill" style="background:var(--sl-color-blue)"></span><span id="p-bar-dette" style="background:var(--sl-color-orange)"></span></div>
+    <div style="font-size:var(--sl-text-xs)"><span style="color:var(--sl-color-green)">■</span> actifs liquides · <span style="color:var(--sl-color-blue)">■</span> actifs illiquides · <span style="color:var(--sl-color-orange)">■</span> dettes</div>
+  </div>
+</div>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const eur = (n: number) => n.toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  const ids = ['p-cash','p-inv','p-pens','p-immo','p-biens','p-hypo','p-conso','p-div'];
+  function calc() {
+    const v = Object.fromEntries(ids.map((i) => [i, +$(i).value || 0]));
+    const liq = v['p-cash'] + v['p-inv'], ill = v['p-pens'] + v['p-immo'] + v['p-biens'];
+    const actifs = liq + ill, dettes = v['p-hypo'] + v['p-conso'] + v['p-div'], net = actifs - dettes;
+    $('p-net').textContent = eur(net);
+    $('p-detail').innerHTML = `Actifs ${eur(actifs)} (dont liquides ${eur(liq)}) − dettes ${eur(dettes)} · Ratio dettes/actifs : ${actifs ? Math.round(dettes/actifs*100) : 0} % · Part liquide du patrimoine net : ${net > 0 ? Math.min(100, Math.round(liq/net*100)) : 0} %`;
+    const tot = Math.max(actifs, 1);
+    $('p-bar-liq').style.width = (liq / tot) * 100 + '%';
+    $('p-bar-ill').style.width = (ill / tot) * 100 + '%';
+    $('p-bar-dette').style.width = Math.min(100, (dettes / tot) * 100) + '%';
+  }
+  ids.forEach((id) => $(id).addEventListener('input', calc)); calc();
+</script>

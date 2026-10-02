@@ -1,0 +1,40 @@
+---
+// Brut → net PÉDAGOGIQUE : ONSS 13,07 %, frais forfaitaires 30 % (max 5 930 €), barème exercice 2026,
+// quotité exemptée 10 910 € (+ enfants simplifié), additionnel communal paramétrable. Pas de CSSS, pas de bonus à l'emploi,
+// pas de réductions d'impôt. Le précompte mensuel réel diffère (barèmes forfaitaires).
+---
+<div class="tool not-content">
+  <label>Salaire mensuel brut (€) <input type="number" id="n-brut" value="3500" step="50" /></label>
+  <label>Nombre de mois payés par an <select id="n-mois"><option value="12">12 (sans 13e mois ni double pécule)</option><option value="13.92" selected>13,92 (13e mois + double pécule)</option><option value="12.92">12,92 (double pécule seul)</option></select></label>
+  <label>Enfants à charge <input type="number" id="n-enf" value="0" min="0" max="6" step="1" /></label>
+  <label>Additionnel communal (%) <input type="number" id="n-com" value="7" min="0" max="9" step="0.5" /></label>
+  <label>Avantage de toute nature mensuel (voiture…) imposable <input type="number" id="n-atn" value="0" step="10" /></label>
+  <div class="tool-out">
+    <div>Net mensuel moyen estimé : <span class="big" id="n-net">—</span></div>
+    <div id="n-detail" style="font-size:var(--sl-text-sm);margin-top:.4rem"></div>
+    <div class="tool-bar" style="margin-top:.5rem"><span id="n-bar-net" style="background:var(--sl-color-green)"></span><span id="n-bar-onss" style="background:var(--sl-color-blue)"></span><span id="n-bar-ipp" style="background:var(--sl-color-orange)"></span></div>
+    <div style="font-size:var(--sl-text-xs)"><span style="color:var(--sl-color-green)">■</span> net · <span style="color:var(--sl-color-blue)">■</span> ONSS 13,07 % · <span style="color:var(--sl-color-orange)">■</span> impôt (IPP + additionnel)</div>
+  </div>
+  <p style="font-size:var(--sl-text-xs);margin-top:.5rem">Hypothèses : isolé, salarié employé, ONSS 13,07 %, forfait de frais 30 % plafonné à 5 930 €, barème et quotité de l'exercice d'imposition 2026, majoration simplifiée par enfant, pas de bonus à l'emploi ni de cotisation spéciale ni de réductions d'impôt. Le net affiché est une <strong>moyenne annuelle lissée</strong> ; ta fiche de paie mensuelle diffère (barèmes de précompte, primes à taux exceptionnel).</p>
+</div>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const eur = (n: number) => n.toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  const TR: [number, number][] = [[16320, 0.25], [28800, 0.40], [49840, 0.45], [Infinity, 0.50]];
+  const QE = 10910; const ENF = [0, 1980, 5110, 11440, 18500]; // majorations indicatives exercice 2026 (1 à 4 enfants)
+  function tax(x: number) { let t = 0, lo = 0; for (const [hi, r] of TR) { if (x > lo) t += (Math.min(x, hi) - lo) * r; lo = hi; } return t; }
+  function calc() {
+    const brut = +$('n-brut').value || 0, mois = +$('n-mois').value, enf = Math.min(+$('n-enf').value || 0, 6), com = +$('n-com').value || 0, atn = +$('n-atn').value || 0;
+    const brutAn = brut * mois, onss = brutAn * 0.1307, impAn = brutAn - onss + atn * 12;
+    const frais = Math.min(impAn * 0.30, 5930), base = Math.max(0, impAn - frais);
+    const qe = QE + (enf <= 4 ? ENF[enf] : ENF[4] + (enf - 4) * 7100);
+    const impot = Math.max(0, tax(base) - tax(Math.min(qe, base)));
+    const total = impot * (1 + com / 100);
+    const netAn = brutAn - onss - total, netM = netAn / 12;
+    $('n-net').textContent = eur(netM);
+    $('n-detail').innerHTML = `Brut annuel ${eur(brutAn)} → ONSS ${eur(onss)} → imposable ${eur(impAn)} → − frais ${eur(frais)} = base ${eur(base)} → impôt ${eur(impot)} + additionnel ${eur(total - impot)} = ${eur(total)} · Net annuel ${eur(netAn)} (${Math.round(netAn / brutAn * 100)} % du brut) · taux moyen d'imposition ${Math.round(total / base * 100 || 0)} %`;
+    const g = Math.max(brutAn, 1);
+    $('n-bar-net').style.width = (netAn / g) * 100 + '%'; $('n-bar-onss').style.width = (onss / g) * 100 + '%'; $('n-bar-ipp').style.width = (total / g) * 100 + '%';
+  }
+  ['n-brut','n-mois','n-enf','n-com','n-atn'].forEach((id) => $(id).addEventListener('input', calc)); calc();
+</script>

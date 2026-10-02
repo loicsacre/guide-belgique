@@ -1,37 +1,77 @@
 ---
 title: Je loue mon premier appartement
 kind: situation
-description: "Bail, garantie, état des lieux, loyer et charges, indexation, assurance, domicile : les règles régionales de la location, côté locataire."
+description: 'Bail, garantie, état des lieux, loyer et charges, indexation, assurance, domicile : les règles régionales de la location, côté locataire.'
 notions:
-  - louer-vs-acheter
+- louer-vs-acheter
+- budget
+- bail
+- garantie-locative
+- indexation-loyer
+- assurance-habitation
+- rc-familiale
+- domicile
+- energie
+- domiciliation-ordre-permanent
+- precompte-immobilier
+- peb
+sidebar:
+  order: 3
+etapes:
+- titre: Fixer le budget logement
+  quand: Mois −2
+  texte: Loyer ≤ ⅓ du net, plus charges, énergie, assurance, internet.
+  notions:
   - budget
-  - bail
-  - garantie-locative
+- titre: Visiter en lisant le PEB et les charges
+  quand: Mois −1
+  texte: Le PEB annonce ta facture d'énergie ; demande le décompte de charges de l'année passée.
+  notions:
+  - peb
   - indexation-loyer
+- titre: Signer le bail
+  quand: Jour 0
+  texte: Écrit, durée, annexe régionale ; le bailleur doit l'enregistrer (gratuit, 2 mois).
+  notions:
+  - bail
+- titre: Constituer la garantie
+  quand: Avant l'entrée
+  texte: 2 mois (Wallonie, Bruxelles) ou 3 (Flandre) sur un compte bloqué à ton nom, jamais en liquide.
+  notions:
+  - garantie-locative
+- titre: Faire l'état des lieux d'entrée
+  quand: Remise des clés
+  texte: Détaillé, photos datées, relevés de compteurs, signé par les deux.
+  notions:
+  - garantie-locative
+- titre: S'assurer
+  quand: Avant l'entrée
+  texte: Incendie locataire (obligatoire en Wallonie et Flandre) + RC familiale.
+  notions:
   - assurance-habitation
   - rc-familiale
+- titre: Emménager administrativement
+  quand: Semaine 1
+  texte: Changement d'adresse à la commune (8 jours), reprise des énergies, domiciliations.
+  notions:
   - domicile
   - energie
   - domiciliation-ordre-permanent
+- titre: Vivre en locataire
+  quand: Chaque année
+  texte: Indexation 1×/an à la demande du bailleur ; décompte de charges annuel avec justificatifs ; réduction de précompte si 2 enfants.
+  notions:
+  - indexation-loyer
   - precompte-immobilier
-  - peb
-sidebar:
-  order: 3
+- titre: Partir
+  quand: Fin du bail
+  texte: Préavis par recommandé (3 mois), état des lieux de sortie, libération de la garantie avec intérêts.
+  notions:
+  - bail
+  - garantie-locative
 ---
 
 Louer est simple en apparence ; les ennuis viennent presque toujours d'un **état des lieux bâclé**, d'une **garantie mal constituée** ou d'un **décompte de charges** jamais réclamé.
-
-## Le fil
-
-1. **Budget** — loyer ≤ ⅓ du net, plus charges, énergie et assurance → [[budget]]
-2. **Recherche** — PEB (ta future facture d'énergie), charges, grille indicative des loyers → [[peb]], [[indexation-loyer]]
-3. **Bail** — écrit, durée (9 ans ou courte durée), annexe régionale, enregistrement par le bailleur → [[bail]]
-4. **Garantie** — 2 mois (Wallonie, Bruxelles) ou 3 mois (Flandre), sur un compte bloqué **à ton nom** → [[garantie-locative]]
-5. **État des lieux** — détaillé, photos, compteurs, signé par les deux → [[garantie-locative]]
-6. **Assurance** — incendie locataire (obligatoire en Wallonie et Flandre) + RC familiale → [[assurance-habitation]], [[rc-familiale]]
-7. **Entrée** — domicile à la commune, reprise des énergies, domiciliations → [[domicile]], [[energie]], [[domiciliation-ordre-permanent]]
-8. **Pendant** — indexation une fois par an à la demande du bailleur, décompte de charges annuel → [[indexation-loyer]]
-9. **Sortie** — préavis par recommandé, état des lieux de sortie, libération de la garantie
 
 ## Ce que le bailleur peut et ne peut pas
 

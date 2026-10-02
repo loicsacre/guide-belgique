@@ -7,6 +7,7 @@ nature: stable
 scope: []
 status: publie
 tags: [rendement, risque, liquidité, placement, triangle]
+organisme: "FSMA (protection des investisseurs)"
 short: "Tout placement se juge sur trois critères qu'on ne peut pas maximiser en même temps : ce qu'il rapporte, ce qu'on peut y perdre, et la rapidité avec laquelle on peut récupérer son argent."
 aliases: [triangle des placements, profil de risque, volatilité, horizon de placement, liquidité]
 prerequisites: [taux-interet, epargne-de-precaution]

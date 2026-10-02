@@ -1,0 +1,57 @@
+---
+title: Lire une offre de crédit hypothécaire
+kind: document
+description: "La fiche d'information standardisée européenne (ESIS) qu'une banque remet avant la signature, annotée : montant, taux, TAEG, mensualité, assurances, frais, coût total."
+notions: [credit-hypothecaire, taeg, taux-fixe-variable, mensualite-amortissement, quotite-emprunt, assurance-solde-restant-du, assurance-habitation, hypotheque, cout-reel-achat, contrats-consommation]
+sidebar:
+  order: 4
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Toute banque doit remettre une **ESIS** (fiche européenne standardisée) avant que tu signes. Elle a toujours la même structure : c'est ce qui permet de comparer deux offres. Exemple fictif pour l'achat du fil rouge du guide.
+
+<Paper title="FICHE D'INFORMATION STANDARDISÉE EUROPÉENNE (ESIS)" sub="Banque Fictive SA · Offre n° 2026-00042 · Valable jusqu'au 30.04.2026 · Emprunteurs : A. et B. Exemple">
+  <Row section k="1. Caractéristiques principales du prêt" />
+  <Row n="1" k="Montant du crédit" v="200 000,00 €" f="credit-hypothecaire" />
+  <Row n="2" k="Quotité (valeur du bien expertisée : 250 000 €)" v="80 %" f="quotite-emprunt" />
+  <Row n="3" k="Durée" v="25 ans (300 mensualités)" f="mensualite-amortissement" />
+  <Row n="4" k="Type de taux" v="Fixe pendant toute la durée" f="taux-fixe-variable" />
+  <Row n="5" k="Taux débiteur annuel" v="3,00 %" f="taux-fixe-variable" />
+  <Row section k="2. Coût du crédit" />
+  <Row n="6" k="Taux annuel effectif global (TAEG)" v="3,41 %" f="taeg" total />
+  <Row k="Frais de dossier" v="500,00 €" />
+  <Row k="Frais d'expertise" v="250,00 €" />
+  <Row n="7" k="Assurance solde restant dû (2 têtes, 100 %/100 %, prime unique) — condition du taux" v="4 800,00 €" f="assurance-solde-restant-du" />
+  <Row n="8" k="Assurance incendie — à souscrire (libre choix)" v="≈ 350 €/an" f="assurance-habitation" />
+  <Row k="Montant total des intérêts" v="84 460,00 €" />
+  <Row n="9" k="Montant total dû (capital + intérêts + frais)" v="290 010,00 €" f="mensualite-amortissement" total />
+  <Row section k="3. Remboursement" />
+  <Row n="10" k="Mensualité constante" v="948,42 €" f="mensualite-amortissement" />
+  <Row k="Première mensualité : intérêts 500,00 € · capital 448,42 €" v="" />
+  <Row n="11" k="Remboursement anticipé : indemnité de remploi de 3 mois d'intérêts" v="" f="mensualite-amortissement" />
+  <Row section k="4. Sûretés" />
+  <Row n="12" k="Hypothèque en 1er rang : 150 000 € · Mandat hypothécaire : 50 000 €" v="" f="hypotheque" />
+  <Row n="13" k="Frais d'acte de crédit estimés (notaire, droits, inscription)" v="≈ 3 900 €" f="cout-reel-achat" />
+  <Row n="14" k="Délai de réflexion : l'offre vous engage la banque 14 jours ; vous n'êtes lié qu'à la signature" v="" f="contrats-consommation" />
+</Paper>
+
+## Ce que dit chaque ligne
+
+<Legend>
+<li>**Montant** : ce que tu empruntes, hors frais (qui viennent de ton apport). → [[credit-hypothecaire]]</li>
+<li>**Quotité** : 200 000 / 250 000 = 80 %. Sous 80-90 %, les taux sont meilleurs. → [[quotite-emprunt]]</li>
+<li>**Durée** : 20 ans aurait donné ≈ 1 109 €/mois et 66 000 € d'intérêts ; 25 ans allège le mois et alourdit le total. → [[mensualite-amortissement]]</li>
+<li>**Type de taux** : fixe ici ; pour un variable, l'ESIS indique l'indice de référence, la périodicité de révision et le cap. → [[taux-fixe-variable]]</li>
+<li>**Taux débiteur** : sert à calculer les intérêts. Pas le vrai coût.</li>
+<li>**TAEG** : taux débiteur + frais + assurances imposées. **Le seul chiffre comparable** entre deux offres de même montant et durée. → [[taeg]]</li>
+<li>**ASRD** : souvent la condition d'une remise de taux. Compare son prix ailleurs : la remise ne vaut pas toujours la surprime. → [[assurance-solde-restant-du]]</li>
+<li>**Incendie** : exigée, mais tu peux la prendre chez l'assureur de ton choix. → [[assurance-habitation]]</li>
+<li>**Montant total dû** : tout ce que tu paieras sur 25 ans : 290 000 € pour 200 000 € empruntés. → [[mensualite-amortissement]]</li>
+<li>**Mensualité** : constante ; sa composition change (intérêts décroissants, capital croissant). → [[mensualite-amortissement]]</li>
+<li>**Remboursement anticipé** : toujours possible ; indemnité plafonnée à 3 mois d'intérêts sur le montant remboursé.</li>
+<li>**Sûretés** : hypothèque sur 150 000 € + mandat sur 50 000 € : montage courant pour réduire les frais d'acte. → [[hypotheque]]</li>
+<li>**Frais d'acte de crédit** : droit de 1 %, inscription, honoraires, à ajouter aux frais d'achat. → [[cout-reel-achat]]</li>
+<li>**Délai** : la banque est liée par son offre pendant sa durée de validité ; toi, seulement à la signature de l'acte. → [[contrats-consommation]]</li>
+</Legend>

@@ -137,3 +137,12 @@ blocs:
       - { slug: voiture-taxes, title: "Voiture : TMC, taxe de circulation, contrôle technique" }
       - { slug: energie, title: "Énergie : contrat, compteur, facture" }
       - { slug: probleme-administratif, title: "Un problème administratif : à qui s'adresser ?" }
+  - title: Les ponts entre domaines
+    intro: Des mots qui changent de sens d'un domaine à l'autre, et qu'il faut tenir fermement pour relier le tout.
+    notions:
+      - { slug: revenu, title: "Revenu : brut, net, imposable, disponible, cadastral… le même mot, six sens" }
+      - { slug: dette, title: "Dette : la même chose vue par toi, la banque, le fisc et l'entreprise" }
+      - { slug: contrat, title: "Contrat : ce qui lie, du bail au CDI en passant par l'assurance" }
+      - { slug: responsabilite, title: "Responsabilité : civile, contractuelle, pénale, limitée" }
+      - { slug: statut-familial, title: "Statut familial : isolé, cohabitant, chef de ménage selon le système" }
+      - { slug: residence-fiscale, title: "Résidence fiscale et domicile : qui te taxe, et où" }

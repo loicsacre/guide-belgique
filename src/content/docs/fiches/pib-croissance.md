@@ -7,6 +7,7 @@ nature: stable
 scope: []
 status: publie
 tags: [PIB, croissance, récession, économie, macroéconomie]
+organisme: "BNB, Statbel, Bureau du Plan"
 short: "Le PIB mesure la valeur de tout ce qu'un pays produit en un an ; la croissance est sa variation. Il dit la taille de l'économie et son élan, pas le bien-être ni la répartition ; une récession, c'est deux trimestres de baisse."
 aliases: [produit intérieur brut, PIB par habitant, croissance économique, récession, PIB réel, PIB nominal, dette publique, déficit]
 prerequisites: [inflation]

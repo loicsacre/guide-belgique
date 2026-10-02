@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Contrôle de cohérence du guide : métadonnées obligatoires, liens entre notions, fraîcheur.
 // Lancé par `npm run check` et avant chaque build.
-import { loadFiches, loadSituations, loadParcours, knownNotions } from '../src/lib/fiches.mjs';
+import { loadFiches, loadSituations, loadDocuments, loadOutils, loadParcours, knownNotions } from '../src/lib/fiches.mjs';
 import { DOMAIN_KEYS, LEVEL_KEYS, NATURE_KEYS, STATUS_KEYS } from '../src/lib/domains.mjs';
 
 const errors = [];
@@ -50,11 +50,27 @@ for (const s of loadSituations()) {
   const w = `situations/${s.slug}`;
   if (s.data.kind !== 'situation') errors.push(`${w} : kind doit valoir "situation"`);
   checkRefs(w, s.data.notions);
+  for (const e of s.data.etapes ?? []) checkRefs(`${w} (étape ${e.titre})`, e.notions);
+  if (!(s.data.etapes ?? []).length) warnings.push(`${w} : aucune étape (etapes:) définie`);
   checkRefs(`${w} (corps)`, wikiRefs(s.body));
 }
+for (const s of loadDocuments()) {
+  const w = `documents/${s.slug}`;
+  if (s.data.kind !== 'document') errors.push(`${w} : kind doit valoir "document"`);
+  checkRefs(w, s.data.notions);
+  checkRefs(`${w} (corps)`, wikiRefs(s.body));
+  for (const m of s.body.matchAll(/f="([a-z0-9-]+)"/g)) if (!notions.has(m[1])) errors.push(`${w} : notion inconnue "${m[1]}" (attribut f)`);
+}
+for (const s of loadOutils()) {
+  const w = `outils/${s.slug}`;
+  if (s.data.kind !== 'outil') errors.push(`${w} : kind doit valoir "outil"`);
+  checkRefs(w, s.data.notions);
+  checkRefs(`${w} (corps)`, wikiRefs(s.body));
+}
+const docCount = loadDocuments().length, sitCount = loadSituations().length, outilCount = loadOutils().length;
 
 const written = [...seen].filter((s) => fiches.some((f) => f.slug === s)).length;
 for (const m of warnings) console.warn(`⚠️  ${m}`);
 for (const m of errors) console.error(`❌ ${m}`);
-console.log(`\n${fiches.length} fiches · parcours : ${written}/${seen.size} · ${errors.length} erreur(s), ${warnings.length} avertissement(s)`);
+console.log(`\n${fiches.length} fiches · ${sitCount} situations · ${docCount} documents · ${outilCount} outils · parcours : ${written}/${seen.size} · ${errors.length} erreur(s), ${warnings.length} avertissement(s)`);
 process.exit(errors.length ? 1 : 0);

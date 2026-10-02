@@ -1,46 +1,96 @@
 ---
 title: Je veux acheter ma première maison
 kind: situation
-description: "Du budget à la remise des clés : apport, capacité d'emprunt, banque, compromis, notaire, droits d'enregistrement, hypothèque, puis la vie de propriétaire."
+description: 'Du budget à la remise des clés : apport, capacité d''emprunt, banque, compromis, notaire, droits d''enregistrement, hypothèque, puis la vie de propriétaire.'
 notions:
-  - louer-vs-acheter
+- louer-vs-acheter
+- budget
+- epargne-de-precaution
+- quotite-emprunt
+- credit-hypothecaire
+- taux-fixe-variable
+- taeg
+- mensualite-amortissement
+- cout-reel-achat
+- compromis
+- peb
+- notaire-acte-authentique
+- droits-enregistrement
+- hypotheque
+- assurance-solde-restant-du
+- assurance-habitation
+- revenu-cadastral
+- precompte-immobilier
+- copropriete
+- formes-de-couple
+- droits-reels
+sidebar:
+  order: 5
+etapes:
+- titre: Fixer le budget
+  quand: Mois −6
+  texte: Combien par mois sans étouffer, en gardant une réserve ? Horizon d'au moins 7 ans ?
+  notions:
   - budget
   - epargne-de-precaution
+  - louer-vs-acheter
+- titre: Calculer capacité d'emprunt et apport
+  quand: Mois −6
+  texte: Revenus × ⅓ ≈ mensualité maximale ; apport = 10 % du prix + tous les frais.
+  notions:
   - quotite-emprunt
+- titre: Comparer les banques
+  quand: Mois −5
+  texte: Deux ou trois simulations ou un courtier ; accord de principe.
+  notions:
   - credit-hypothecaire
   - taux-fixe-variable
   - taeg
   - mensualite-amortissement
+- titre: Chercher et évaluer
+  quand: Mois −4 à −2
+  texte: Prix + frais régionaux = coût réel. Lis le PEB, le RC, les PV de copropriété.
+  notions:
   - cout-reel-achat
-  - compromis
   - peb
+  - revenu-cadastral
+  - copropriete
+- titre: Faire une offre
+  quand: Jour 0
+  texte: Écrite, limitée dans le temps, avec condition suspensive d'obtention du crédit.
+  notions:
+  - compromis
+- titre: Signer le compromis
+  quand: Semaine 2-4
+  texte: C'est déjà la vente. Acompte chez le notaire. 4 mois pour l'acte.
+  notions:
+  - compromis
+  - notaire-acte-authentique
+- titre: Finaliser le crédit
+  quand: Semaine 4-10
+  texte: 'Offre ESIS, assurance solde restant dû, assurance incendie : compare-les hors banque.'
+  notions:
+  - credit-hypothecaire
+  - assurance-solde-restant-du
+  - assurance-habitation
+- titre: Passer l'acte
+  quand: Mois 4
+  texte: Vente + crédit + hypothèque chez le notaire, paiement des droits et des frais.
+  notions:
   - notaire-acte-authentique
   - droits-enregistrement
   - hypotheque
-  - assurance-solde-restant-du
-  - assurance-habitation
-  - revenu-cadastral
+- titre: Vivre en propriétaire
+  quand: Ensuite
+  texte: Précompte immobilier annuel, charges, entretien (≈ 1 %/an), fonds de réserve.
+  notions:
   - precompte-immobilier
   - copropriete
-  - formes-de-couple
-  - droits-reels
-sidebar:
-  order: 2
+  - indexation-loyer
+  - patrimoine-net
 ---
 
 La décision la plus chère de ta vie se prend en quelques semaines, dans un vocabulaire que personne ne t'a appris. Voici l'ordre des choses.
-
-## Le fil
-
-1. **Budget** — combien par mois sans étouffer, en gardant une réserve ? → [[budget]], [[epargne-de-precaution]]
-2. **Capacité** — revenus × ⅓ ≈ mensualité maximale ; apport = 10 % du prix + tous les frais → [[quotite-emprunt]]
-3. **Banques** — deux ou trois simulations ou un courtier, accord de principe → [[credit-hypothecaire]], [[taux-fixe-variable]], [[taeg]]
-4. **Recherche** — prix + frais régionaux = coût réel ; lis le PEB et le revenu cadastral → [[cout-reel-achat]], [[peb]], [[revenu-cadastral]]
-5. **Offre** — écrite, limitée dans le temps, **avec** condition suspensive d'obtention du crédit
-6. **Compromis** — c'est déjà la vente ; acompte chez le notaire ; 4 mois jusqu'à l'acte → [[compromis]]
-7. **Crédit** — offre ESIS, assurance solde restant dû, assurance incendie → [[assurance-solde-restant-du]], [[assurance-habitation]]
-8. **Acte** — chez le notaire : vente + crédit + hypothèque, paiement des droits → [[notaire-acte-authentique]], [[droits-enregistrement]], [[hypotheque]]
-9. **Propriétaire** — précompte immobilier, charges, entretien, copropriété → [[precompte-immobilier]], [[copropriete]]
 
 ## L'exemple fil rouge (fictif, Wallonie)
 

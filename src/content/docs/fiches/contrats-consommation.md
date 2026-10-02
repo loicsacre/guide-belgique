@@ -8,6 +8,7 @@ valid_for: "garantie légale 2 ans, rétractation 14 jours (droit européen en v
 scope: [federal]
 status: publie
 tags: [consommation, garantie, rétractation, résiliation, médiation]
+organisme: "SPF Économie, Service de médiation pour le consommateur"
 short: "En tant que consommateur, tu bénéficies de protections d'ordre public : garantie légale de deux ans sur les biens, 14 jours pour renoncer à un achat à distance, limites aux clauses abusives, résiliation facilitée des abonnements, et un médiateur gratuit en cas de litige."
 aliases: [garantie légale, garantie commerciale, droit de rétractation, clauses abusives, résiliation, reconduction tacite, Service de médiation pour le consommateur, Code de droit économique, vice caché, mise en demeure]
 prerequisites: [budget]

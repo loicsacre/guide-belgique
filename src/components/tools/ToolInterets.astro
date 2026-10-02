@@ -1,0 +1,33 @@
+---
+// Intérêts composés : capital initial + versements mensuels, comparaison de rendements.
+---
+<div class="tool not-content">
+  <label>Capital de départ (€) <input type="number" id="i-cap" value="1000" step="100" /></label>
+  <label>Versement mensuel (€) <input type="number" id="i-mens" value="100" step="10" /></label>
+  <label>Rendement annuel moyen (%) <input type="number" id="i-taux" value="6" step="0.5" min="0" max="20" /></label>
+  <label>Durée (années) <input type="number" id="i-duree" value="30" step="1" min="1" max="60" /></label>
+  <label>Inflation annuelle (%) pour la valeur réelle <input type="number" id="i-infl" value="2" step="0.5" min="0" max="15" /></label>
+  <div class="tool-out">
+    <div>Capital final : <span class="big" id="i-final">—</span></div>
+    <div id="i-detail" style="font-size:var(--sl-text-sm);margin-top:.4rem"></div>
+    <div class="tool-bar" style="margin-top:.5rem"><span id="i-bar-v" style="background:var(--sl-color-gray-3)"></span><span id="i-bar-g" style="background:var(--sl-color-green)"></span></div>
+    <div style="font-size:var(--sl-text-xs)">■ versé · <span style="color:var(--sl-color-green)">■</span> gagné par les intérêts</div>
+  </div>
+  <details style="margin-top:.75rem"><summary>Comparer les rendements et les durées</summary>
+    <table><thead><tr><th>Rendement</th><th>10 ans</th><th>20 ans</th><th>30 ans</th><th>40 ans</th></tr></thead><tbody id="i-table"></tbody></table>
+  </details>
+</div>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const eur = (n: number) => n.toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  function fv(c: number, m: number, t: number, y: number) { const r = t / 100 / 12, n = y * 12; if (r === 0) return c + m * n; return c * Math.pow(1 + r, n) + m * ((Math.pow(1 + r, n) - 1) / r); }
+  function calc() {
+    const c = +$('i-cap').value || 0, m = +$('i-mens').value || 0, t = +$('i-taux').value || 0, y = +$('i-duree').value || 1, inf = +$('i-infl').value || 0;
+    const f = fv(c, m, t, y), verse = c + m * y * 12, gain = f - verse, reel = f / Math.pow(1 + inf / 100, y);
+    $('i-final').textContent = eur(f);
+    $('i-detail').innerHTML = `Versé ${eur(verse)} · gagné ${eur(gain)} · en pouvoir d'achat d'aujourd'hui (${inf} % d'inflation) : <strong>${eur(reel)}</strong> · règle de 72 : le capital double tous les ${t > 0 ? Math.round(72 / t) : '∞'} ans`;
+    $('i-bar-v').style.width = (verse / Math.max(f, 1)) * 100 + '%'; $('i-bar-g').style.width = (Math.max(gain, 0) / Math.max(f, 1)) * 100 + '%';
+    $('i-table').innerHTML = [0, 2, 4, 6, 8].map((r) => `<tr${r === t ? ' style="font-weight:700"' : ''}><td>${r} %</td>${[10, 20, 30, 40].map((d) => `<td>${eur(fv(c, m, r, d))}</td>`).join('')}</tr>`).join('');
+  }
+  ['i-cap','i-mens','i-taux','i-duree','i-infl'].forEach((id) => $(id).addEventListener('input', calc)); calc();
+</script>

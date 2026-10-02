@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [assurance solde restant dû, ASRD, assurance-vie, décès, crédit hypothécaire]
+organisme: "Assureur, banque"
 short: "L'assurance solde restant dû rembourse le capital encore dû sur ton crédit si tu décèdes : le survivant garde la maison sans la dette. Les assurances-vie (branche 21, 23) sont des produits d'épargne ou de prévoyance aux noms trompeurs."
 aliases: [ASRD, assurance décès, assurance-vie, branche 21, branche 23, prime unique, quotité assurée, bénéficiaire, revenu garanti]
 prerequisites: [credit-hypothecaire, assurance-principes]

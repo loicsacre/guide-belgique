@@ -8,6 +8,7 @@ valid_for: "formule légale ; conditions PEB régionales (2022→)"
 scope: [wallonie, bruxelles, flandre]
 status: publie
 tags: [indexation, loyer, charges, provisions, décompte]
+organisme: "Statbel, Région"
 short: "Le bailleur peut adapter le loyer une fois par an à l'indice santé, selon une formule légale et sous conditions (bail écrit, PEB) ; les charges s'ajoutent au loyer, en forfait ou en provisions avec décompte annuel."
 aliases: [indexation du loyer, indice santé, charges locatives, provisions pour charges, décompte de charges, forfait de charges]
 prerequisites: [bail, indexation]

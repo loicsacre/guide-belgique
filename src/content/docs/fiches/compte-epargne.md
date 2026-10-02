@@ -8,6 +8,7 @@ valid_for: "exonération 1 020 € d'intérêts (exercice 2026)"
 scope: [federal]
 status: publie
 tags: [épargne, compte d'épargne, taux de base, prime de fidélité, exonération]
+organisme: "Ta banque, SPF Finances (exonération)"
 short: "Le compte d'épargne « réglementé » belge offre des intérêts exonérés de précompte jusqu'à un plafond annuel, en deux morceaux : un taux de base et une prime de fidélité acquise après 12 mois."
 aliases: [livret d'épargne, compte d'épargne, prime de fidélité, taux de base, épargne réglementée, compte à terme]
 prerequisites: [taux-interet, compte-a-vue]

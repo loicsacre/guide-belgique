@@ -6,6 +6,7 @@ level: essentiel
 nature: mixte
 valid_for: "exercice d'imposition 2026"
 scope: [federal]
+organisme: "SPF Finances"
 short: "Le document officiel qui te communique le calcul définitif de ton impôt et le solde : à payer, à rembourser, ou zéro."
 aliases: [AER, avertissement extrait de rôle, aanslagbiljet]
 prerequisites: [ipp, declaration-fiscale]

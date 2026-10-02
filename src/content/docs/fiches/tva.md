@@ -8,6 +8,7 @@ valid_for: "taux 21/12/6 % ; franchise 25 000 € (2026)"
 scope: [federal]
 status: publie
 tags: [TVA, taxe sur la valeur ajoutée, assujetti, déclaration TVA, taux]
+organisme: "SPF Finances"
 short: "La taxe sur la valeur ajoutée est payée par le consommateur final, mais collectée par chaque entreprise de la chaîne, qui reverse à l'État la différence entre la TVA facturée à ses clients et la TVA payée à ses fournisseurs."
 aliases: [taxe sur la valeur ajoutée, assujetti, TVA déductible, TVA due, déclaration TVA, listing clients, franchise de la taxe, numéro de TVA, HTVA, TVAC, intracommunautaire]
 prerequisites: [impot-taxe-cotisation]
@@ -27,6 +28,10 @@ sidebar:
 ## En langage simple
 
 Sur un ticket de caisse, tu vois « TVA 21 % » : c'est toi, consommateur, qui la paies. Mais ce n'est pas le magasin qui la garde : il la **collecte** pour l'État. Et lui-même a payé de la TVA à ses fournisseurs, qu'il **récupère**. Chacun ne verse que la TVA sur la **valeur qu'il a ajoutée**. Pour une entreprise, la TVA est donc normalement **neutre** ; pour toi, c'est un impôt sur la consommation.
+
+## Pourquoi ça existe
+
+Taxer la consommation plutôt que le revenu permet de prélever de manière indolore, à chaque achat, auprès de tous, y compris ceux qui échappent à l'impôt sur le revenu. Le mécanisme de **déduction en cascade** évite de taxer plusieurs fois la même valeur et rend la fraude plus difficile : chaque entreprise a intérêt à exiger une facture de son fournisseur.
 
 ## La chaîne
 

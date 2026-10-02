@@ -8,8 +8,9 @@ valid_for: "règles 2026 (voiture, restaurant, bureau à domicile)"
 scope: [federal]
 status: publie
 tags: [frais professionnels, déductibilité, charges, amortissement, voiture]
+organisme: "SPF Finances"
 short: "Pour un indépendant, les frais professionnels réduisent le revenu imposable (et les cotisations sociales) : seuls les frais liés à l'activité, justifiés par des pièces, sont déductibles, souvent partiellement (voiture, restaurant, usage mixte)."
-aliases: [charges déductibles, frais réels, déductibilité, quote-part professionnelle, frais mixtes, amortissement, note de frais]
+aliases: [charges déductibles, frais réels, déductibilité, quote-part professionnelle, frais mixtes, note de frais]
 prerequisites: [independant, revenu-imposable]
 related: [tva, cotisations-independant, amortissement-comptable, deduction-reduction-credit, voiture-de-societe]
 last_verified: 2026-10-02

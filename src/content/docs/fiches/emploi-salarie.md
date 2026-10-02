@@ -5,6 +5,7 @@ domain: travail
 level: essentiel
 nature: stable
 scope: [federal]
+organisme: "SPF Emploi"
 short: "Tu fournis un travail sous l'autorité d'un employeur en échange d'un salaire ; autour de ce salaire, l'employeur et toi financez la sécurité sociale et l'impôt."
 aliases: [salarié, travailleur salarié, employé, ouvrier]
 prerequisites: [qui-fait-quoi]

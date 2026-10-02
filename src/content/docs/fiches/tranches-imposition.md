@@ -6,6 +6,7 @@ level: essentiel
 nature: mixte
 valid_for: "exercice d'imposition 2026 (revenus 2025)"
 scope: [federal]
+organisme: "SPF Finances"
 short: "Ton revenu imposable est découpé en tranches taxées de plus en plus fort (25 % à 50 %) : seule la partie qui dépasse un seuil est taxée au taux supérieur."
 aliases: [barème progressif, taux marginal, taux moyen, impôt progressif]
 prerequisites: [revenu-imposable]

@@ -8,6 +8,7 @@ valid_for: "ISoc 25 % / 20 % PME, rémunération minimale 45 000 € (2026)"
 scope: [federal]
 status: publie
 tags: [SRL, société, personne physique, dirigeant, dividendes, responsabilité limitée]
+organisme: "Notaire, comptable, SPF Finances"
 short: "En personne physique, tout ton bénéfice est taxé à l'IPP (jusqu'à 50 %) ; en société, le bénéfice est taxé à l'ISoc (20-25 %) et tu te verses une rémunération et des dividendes. La société coûte plus cher à faire tourner et ne devient intéressante qu'à partir d'un certain niveau de bénéfice laissé dans l'entreprise."
 aliases: [SRL, société à responsabilité limitée, SA, SC, entreprise individuelle, personne morale, dirigeant d'entreprise, rémunération de dirigeant, dividende, réserve de liquidation, VVPR-bis, compte courant]
 prerequisites: [independant, impot-des-societes, tranches-imposition]

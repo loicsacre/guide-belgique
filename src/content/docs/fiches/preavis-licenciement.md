@@ -8,6 +8,7 @@ valid_for: "règles depuis le statut unique (2014), durées indicatives"
 scope: [federal]
 status: publie
 tags: [préavis, licenciement, démission, C4, outplacement]
+organisme: "SPF Emploi"
 short: "Mettre fin à un CDI exige un préavis dont la durée dépend de l'ancienneté et de qui rompt ; à défaut de prester le préavis, une indemnité équivalente est due. Le C4 ouvre ensuite le droit au chômage."
 aliases: [préavis, C4, indemnité de rupture, licenciement, démission, outplacement, motif grave, rupture de commun accord]
 prerequisites: [contrat-de-travail]

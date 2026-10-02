@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [TAEG, coût du crédit, comparaison, frais]
+organisme: "SPF Économie"
 short: "Le taux annuel effectif global exprime le coût total d'un crédit (intérêts + frais de dossier + assurances obligatoires) en un seul pourcentage annuel : c'est le seul chiffre qui permet de comparer deux offres."
 aliases: [taux annuel effectif global, JKP, coût total du crédit, taux débiteur, taux nominal]
 prerequisites: [credit, taux-interet]
@@ -26,6 +27,10 @@ sidebar:
 ## En langage simple
 
 Un crédit « à 2,9 % » peut coûter plus cher qu'un crédit « à 3,1 % » si le premier ajoute des frais de dossier et une assurance obligatoire. Le **TAEG** remet tout dans un seul chiffre, calculé selon une formule légale identique pour toutes les banques. La loi oblige à l'afficher dans toute publicité et toute offre.
+
+## Pourquoi ça existe
+
+Avant le TAEG, chaque prêteur affichait un taux calculé à sa manière, en cachant les frais ailleurs : comparer était impossible. L'Europe a imposé une **formule unique et obligatoire** pour que le consommateur compare des choses comparables et que la concurrence joue sur le vrai prix.
 
 ## Ce qu'il contient
 

@@ -8,6 +8,7 @@ valid_for: "facturation électronique B2B obligatoire depuis le 1er janvier 2026
 scope: [federal]
 status: publie
 tags: [facture, mentions obligatoires, Peppol, facturation électronique, délai de paiement]
+organisme: "SPF Finances, SPF Économie"
 short: "Une facture est le document légal qui constate une vente entre professionnels (obligatoire) ou vers un particulier (sur demande), avec des mentions imposées ; depuis 2026, entre entreprises belges, elle doit être électronique structurée (Peppol)."
 aliases: [facture, note de crédit, mentions obligatoires, e-facturation, Peppol, délai de paiement, mise en demeure, acompte, devis]
 prerequisites: [tva]

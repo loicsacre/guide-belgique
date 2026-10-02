@@ -7,6 +7,7 @@ nature: stable
 scope: [federal, communal]
 status: publie
 tags: [commune, domicile, registre national, administration]
+organisme: "Commune (service population)"
 short: "Ton domicile légal est l'adresse inscrite au registre national via ta commune ; elle détermine quelle commune te taxe, où tu votes, et où l'administration t'écrit."
 aliases: [domiciliation, résidence principale, registre national, numéro de registre national, changement d'adresse, composition de ménage]
 prerequisites: [qui-fait-quoi]

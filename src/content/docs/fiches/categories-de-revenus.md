@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [revenus, catégories, déclaration, cadres]
+organisme: "SPF Finances"
 short: "Le code fiscal belge range tout revenu dans une des quatre catégories, chacune avec ses règles de calcul et son cadre dans la déclaration : professionnels (salaire, pension), immobiliers (biens possédés), mobiliers (intérêts, dividendes) et divers."
 aliases: [revenus professionnels, revenus immobiliers, revenus mobiliers, revenus divers, cadres de la déclaration, globalisation]
 prerequisites: [revenu-imposable]

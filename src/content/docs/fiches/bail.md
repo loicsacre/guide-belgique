@@ -8,6 +8,7 @@ valid_for: "règles régionales en vigueur (décrets 2018-2019)"
 scope: [wallonie, bruxelles, flandre]
 status: publie
 tags: [bail, location, locataire, bailleur, préavis, enregistrement]
+organisme: "Région (logement), juge de paix"
 short: "Le contrat de location de ton logement principal, régi par un décret régional : durée (9 ans par défaut, courte durée possible), préavis, enregistrement obligatoire par le bailleur, obligations d'entretien partagées."
 aliases: [contrat de bail, bail 3-6-9, bail de courte durée, bailleur, locataire, enregistrement du bail, préavis locataire, colocation, kot]
 prerequisites: [louer-vs-acheter]
@@ -27,6 +28,10 @@ sidebar:
 ## En langage simple
 
 Depuis 2018-2019, le bail d'habitation est **régional** : Wallonie, Bruxelles et Flandre ont chacune leur décret. Les grands principes sont proches, les détails diffèrent (durées de préavis, indexation, garantie). Vérifie toujours la règle de **ta Région**.
+
+## Pourquoi ça existe
+
+Le logement n'est pas un bien comme un autre : perdre son toit est plus grave que perdre un abonnement. Le droit du bail **rééquilibre** une relation où le propriétaire a le pouvoir : durée longue, préavis encadrés, garantie plafonnée, enregistrement obligatoire. Il est régional depuis 2014 parce que le logement est une compétence des Régions.
 
 ## Les durées
 

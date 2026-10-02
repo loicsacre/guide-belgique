@@ -7,6 +7,7 @@ nature: stable
 scope: []
 status: publie
 tags: [chiffre d'affaires, marge, bénéfice, compte de résultats, charges]
+organisme: "Comptable"
 short: "Le chiffre d'affaires est ce qu'une entreprise vend ; après les charges, il reste le bénéfice (ou la perte). La marge mesure ce qui reste à chaque étape. Un gros chiffre d'affaires ne dit rien de la rentabilité."
 aliases: [chiffre d'affaires, CA, charges, coûts fixes, coûts variables, marge brute, marge nette, EBITDA, résultat, bénéfice, perte, compte de résultats, rentabilité, seuil de rentabilité]
 prerequisites: [budget]

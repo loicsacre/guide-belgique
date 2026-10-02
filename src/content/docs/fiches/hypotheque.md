@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [hypothèque, garantie, caution, mandat hypothécaire, mainlevée]
+organisme: "Notaire, Bureau Sécurité juridique"
 short: "L'hypothèque est le droit, pour la banque, de faire vendre ton bien si tu ne rembourses plus ; elle est inscrite par le notaire et coûte des frais. Mandat hypothécaire, caution et gage sont d'autres garanties possibles."
 aliases: [inscription hypothécaire, mandat hypothécaire, mainlevée, caution, garant, gage, saisie, Bureau Sécurité juridique]
 prerequisites: [credit-hypothecaire]

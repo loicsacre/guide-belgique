@@ -8,6 +8,7 @@ valid_for: "TAEG maximaux publiés par le SPF Économie (révisés deux fois par
 scope: [federal]
 status: publie
 tags: [crédit à la consommation, prêt à tempérament, carte de crédit, surendettement, Centrale des crédits]
+organisme: "SPF Économie, BNB (Centrale des crédits)"
 short: "Les crédits pour financer des biens de consommation (voiture, meubles, travaux) ou de la trésorerie (carte, ouverture de crédit) : plus chers qu'un crédit hypothécaire, encadrés par des TAEG maximaux, et enregistrés à la Centrale des crédits de la BNB."
 aliases: [prêt à tempérament, prêt personnel, ouverture de crédit, crédit revolving, achat à tempérament, leasing, surendettement, médiation de dettes, règlement collectif de dettes, Centrale des crédits aux particuliers]
 prerequisites: [credit, taeg]

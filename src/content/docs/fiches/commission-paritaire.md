@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [CP, CCT, barème, secteur, syndicat]
+organisme: "SPF Emploi (CCT)"
 short: "Chaque employeur relève d'un secteur, la commission paritaire, où syndicats et employeurs négocient des conventions collectives (CCT) : barèmes minimums, primes, 13e mois, indexation, congés supplémentaires."
 aliases: [CP, CP 200, CCT, convention collective de travail, barème, concertation sociale]
 prerequisites: [contrat-de-travail]

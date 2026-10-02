@@ -8,6 +8,7 @@ valid_for: "achats à partir du 1er janvier 2025 (Wallonie 3 %), 2026 (Flandre 2
 scope: [wallonie, bruxelles, flandre]
 status: publie
 tags: [droits d'enregistrement, impôt régional, achat immobilier, habitation unique]
+organisme: "Région (via le notaire)"
 short: "L'impôt régional payé à l'achat d'un bien immobilier existant, calculé sur le prix : taux ordinaire de 12 à 12,5 %, fortement réduit pour l'habitation propre et unique (3 % en Wallonie, 2 % en Flandre, abattement de 200 000 € à Bruxelles)."
 aliases: [droits de mutation, registratierechten, taux réduit, abattement, habitation propre et unique, frais d'enregistrement]
 prerequisites: [cout-reel-achat, qui-fait-quoi]
@@ -30,6 +31,10 @@ sidebar:
 ## En langage simple
 
 Quand un bien change de propriétaire, la Région prélève un pourcentage du prix. C'est l'essentiel des « frais de notaire ». Depuis 2014, chaque Région fixe ses taux ; depuis 2025, les trois favorisent fortement l'achat de **sa propre et unique habitation**, au détriment des anciens avantages fiscaux sur le crédit.
+
+## Pourquoi ça existe
+
+À l'origine, l'enregistrement d'un acte dans un registre public lui donnait une date certaine et le rendait opposable à tous ; l'État facturait ce service. Le droit est devenu un **impôt sur les transactions** immobilières, l'une des principales recettes des Régions. Les taux réduits récents traduisent un choix politique : favoriser l'accès à la propriété du logement unique.
 
 ## Les taux
 

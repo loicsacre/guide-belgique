@@ -8,6 +8,7 @@ valid_for: "principes ; réforme 2025-2026 (limitation dans le temps) à suivre"
 scope: [federal, wallonie, bruxelles, flandre]
 status: relecture
 tags: [chômage, ONEM, allocations, Forem, Actiris, VDAB]
+organisme: "ONEM, syndicat ou CAPAC, Forem / Actiris / VDAB"
 short: "Une assurance de la sécurité sociale qui remplace une partie de ton salaire si tu perds ton emploi involontairement, à condition d'avoir assez travaillé et de rester disponible ; l'ONEM décide, le syndicat ou la CAPAC paie, la Région t'accompagne."
 aliases: [allocations de chômage, ONEM, CAPAC, chômage temporaire, allocations d'insertion, dégressivité, chômage volontaire]
 prerequisites: [securite-sociale, preavis-licenciement]

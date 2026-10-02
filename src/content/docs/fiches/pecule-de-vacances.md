@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [congés, pécule de vacances, double pécule, vacances annuelles]
+organisme: "Employeur (employés), ONVA (ouvriers)"
 short: "En Belgique, tes congés payés et le double pécule (≈ 92 % d'un mois brut, payé en mai-juin) sont calculés sur ton travail de l'année précédente : la première année d'emploi, tu as peu de droits."
 aliases: [double pécule, simple pécule, vacances annuelles, congés légaux, vacances jeunes, pécule de sortie, ONVA]
 prerequisites: [salaire-brut, emploi-salarie]

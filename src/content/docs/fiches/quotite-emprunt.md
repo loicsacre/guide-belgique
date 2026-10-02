@@ -8,6 +8,7 @@ valid_for: "recommandations BNB en vigueur (quotité ≤ 90 %)"
 scope: [federal]
 status: publie
 tags: [quotité, apport, capacité d'emprunt, LTV]
+organisme: "Banque, BNB"
 short: "La quotité est la part du prix du bien que tu empruntes (emprunt ÷ valeur) ; l'apport personnel couvre le reste plus tous les frais ; la capacité d'emprunt est ce que tes revenus permettent de rembourser chaque mois."
 aliases: [quotité, LTV, loan-to-value, apport personnel, fonds propres, capacité d'emprunt, taux d'endettement, reste à vivre]
 prerequisites: [credit-hypothecaire, budget]

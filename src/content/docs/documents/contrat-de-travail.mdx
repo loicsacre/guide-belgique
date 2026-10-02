@@ -1,0 +1,44 @@
+---
+title: Lire un contrat de travail
+kind: document
+description: "Un CDI d'employé, annoté clause par clause : parties, fonction, durée, horaire, rémunération, avantages, préavis, clauses particulières."
+notions: [contrat-de-travail, commission-paritaire, salaire-brut, avantages-extralegaux, pecule-de-vacances, treizieme-mois, indexation, preavis-licenciement, emploi-salarie, voiture-de-societe]
+sidebar:
+  order: 9
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Un contrat d'employé à durée indéterminée, fictif, avec les clauses qu'on retrouve presque toujours.
+
+<Paper title="CONTRAT DE TRAVAIL D'EMPLOYÉ — Durée indéterminée" sub="Entre Atelier Fictif SRL (BE 0999.999.999, CP 200) et M. Dupont-Exemple">
+  <Row n="1" k="Art. 1 — Engagement à partir du 01.02.2026, pour une durée indéterminée, en qualité d'employée" v="" f="contrat-de-travail" />
+  <Row n="2" k="Art. 2 — Fonction : développeuse mobile · Lieu : Liège, télétravail 2 jours/semaine selon la politique d'entreprise" v="" f="emploi-salarie" />
+  <Row n="3" k="Art. 3 — Régime : temps plein, 38 h/semaine, horaire selon le règlement de travail" v="" f="contrat-de-travail" />
+  <Row n="4" k="Art. 4 — Rémunération mensuelle brute, barème CP 200 classe C respecté" v="3 500,00 €" f="salaire-brut" />
+  <Row n="5" k="Art. 5 — Indexation et prime de fin d'année selon les CCT de la CP 200" v="" f="indexation" />
+  <Row n="6" k="Art. 6 — Avantages : chèques-repas 8 € (part personnelle 1,09 €), écochèques, assurance groupe (3 % patronal), assurance hospitalisation, indemnité de télétravail forfaitaire" v="" f="avantages-extralegaux" />
+  <Row n="7" k="Art. 7 — Voiture de société avec carte de recharge, usage privé autorisé, ATN à charge de la travailleuse (car policy en annexe)" v="" f="voiture-de-societe" />
+  <Row n="8" k="Art. 8 — Vacances annuelles selon la loi ; 2 jours extralégaux après 1 an" v="" f="pecule-de-vacances" />
+  <Row n="9" k="Art. 9 — Fin du contrat : préavis selon la loi du 26 décembre 2013 (statut unique)" v="" f="preavis-licenciement" />
+  <Row n="10" k="Art. 10 — Confidentialité, propriété intellectuelle des développements, pas de clause de non-concurrence" v="" f="contrat-de-travail" />
+  <Row n="11" k="Art. 11 — Clause d'écolage : formation certifiante de 4 000 € remboursable dégressivement en cas de démission dans les 2 ans" v="" f="preavis-licenciement" />
+  <Row k="Fait en deux exemplaires à Liège, le 15.01.2026 · Annexes : règlement de travail, car policy, politique de télétravail" v="" />
+</Paper>
+
+## Ce que dit chaque clause
+
+<Legend>
+<li>**CDI** : la forme normale ; pas de période d'essai depuis 2014, les préavis courts du début en tiennent lieu. → [[contrat-de-travail]]</li>
+<li>**Fonction et lieu** : changer unilatéralement un élément essentiel (fonction, lieu, rémunération) peut constituer une rupture. → [[emploi-salarie]]</li>
+<li>**Régime** : 38 h est la durée légale de référence ; le règlement de travail fixe les horaires. → [[contrat-de-travail]]</li>
+<li>**Rémunération** : le brut, à comparer au barème de la CP (plancher). Le net sera ≈ 70 %. → [[salaire-brut]]</li>
+<li>**Indexation et 13e mois** : ils ne sont pas « offerts » par l'employeur : la CP 200 les impose (index en janvier, prime de fin d'année sous conditions). → [[indexation]]</li>
+<li>**Avantages** : à convertir en valeur annuelle nette pour comparer deux offres ; 3 % d'assurance groupe = ≈ 1 260 €/an de pension complémentaire. → [[avantages-extralegaux]]</li>
+<li>**Voiture** : l'ATN sera ajouté à ta base imposable chaque mois ; la car policy fixe franchise et restrictions. → [[voiture-de-societe]]</li>
+<li>**Congés** : 20 jours légaux acquis sur l'année précédente ; les jours extralégaux sont un plus réel. → [[pecule-de-vacances]]</li>
+<li>**Préavis** : renvoi à la loi : 1 à 13 semaines si tu démissionnes, croissant sans plafond si tu es licenciée. → [[preavis-licenciement]]</li>
+<li>**Clauses particulières** : une clause de non-concurrence n'est valable qu'au-dessus d'un certain salaire et avec indemnité ; son absence est une bonne nouvelle. → [[contrat-de-travail]]</li>
+<li>**Écolage** : légale sous conditions (formation spécifique > 80 h, salaire minimum, dégressivité) ; à lire avant de démissionner. → [[preavis-licenciement]]</li>
+</Legend>

@@ -8,6 +8,7 @@ valid_for: "pratiques bancaires 2026 (quotité, durée)"
 scope: [federal, wallonie, bruxelles, flandre]
 status: publie
 tags: [crédit hypothécaire, prêt logement, banque, immobilier]
+organisme: "Banque, BNB, notaire"
 short: "Le crédit à long terme pour acheter, construire ou rénover un logement, garanti par une hypothèque sur le bien ; son coût dépend du taux, de la durée, de la quotité empruntée et des assurances liées."
 aliases: [prêt hypothécaire, prêt logement, emprunt hypothécaire, crédit logement, offre de crédit, ESIS]
 prerequisites: [credit, taeg, mensualite-amortissement]
@@ -27,6 +28,10 @@ sidebar:
 ## En langage simple
 
 C'est le plus gros crédit de la vie de la plupart des gens, et le moins cher en taux, parce que la banque a une garantie solide : si tu ne paies plus, elle peut faire vendre le bien ([[hypotheque]]). Tout le reste (apport, durée, assurances) découle de ce rapport de force.
+
+## Pourquoi ça existe
+
+Peu de gens peuvent payer un logement comptant ; sans crédit long et bon marché, seuls les héritiers seraient propriétaires. L'hypothèque rend ce crédit **peu risqué pour la banque** (elle peut faire vendre le bien), donc bon marché et long pour toi. C'est la pièce qui rend la propriété accessible à une classe moyenne.
 
 ## Le parcours
 

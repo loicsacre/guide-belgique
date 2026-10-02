@@ -7,6 +7,7 @@ nature: stable
 scope: []
 status: publie
 tags: [inflation, pouvoir d'achat, indice des prix, économie]
+organisme: "Statbel, BNB, BCE"
 short: "L'inflation est la hausse générale des prix : avec le même montant, tu achètes moins qu'avant. En Belgique, salaires et allocations sont indexés pour compenser, mais pas ton épargne."
 aliases: [hausse des prix, indice des prix à la consommation, déflation, pouvoir d'achat, taux réel]
 prerequisites: [budget]

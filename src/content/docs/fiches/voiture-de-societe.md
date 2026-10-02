@@ -8,6 +8,7 @@ valid_for: "règles 2026 (verdissement fiscal en cours)"
 scope: [federal]
 status: publie
 tags: [voiture de société, ATN, carte carburant, mobilité]
+organisme: "SPF Finances, ONSS"
 short: "Une voiture mise à disposition par l'employeur, utilisable à titre privé ; tu es imposé sur un avantage forfaitaire (ATN) calculé d'après la valeur catalogue, le CO₂ et l'âge du véhicule, tandis que l'employeur paie une cotisation de solidarité."
 aliases: [ATN voiture, carte carburant, cotisation CO2, budget mobilité, leasing]
 prerequisites: [avantages-extralegaux]

@@ -1,0 +1,55 @@
+---
+title: Lire un avertissement-extrait de rôle
+kind: document
+description: "Le décompte final de l'IPP, annoté : revenus, barème, quotité exemptée, réductions, additionnels, précomptes, solde."
+notions: [avertissement-extrait-de-role, ipp, annee-revenus-exercice, revenu-imposable, tranches-imposition, quotite-exemptee, deduction-reduction-credit, centimes-additionnels, precompte-professionnel, cotisations-sociales, probleme-administratif]
+sidebar:
+  order: 2
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Un AER réel compte plusieurs pages de codes. Voici sa **structure essentielle**, avec les chiffres du fil rouge du guide (isolé, salarié, 42 000 € de rémunération imposable, épargne-pension au maximum). Document fictif.
+
+<Paper title="AVERTISSEMENT-EXTRAIT DE RÔLE — Impôt des personnes physiques" sub="Exercice d'imposition 2026 · Revenus de l'année 2025 · Article 123456789 · Commune : Liège (additionnel 8,5 %)">
+  <Row n="1" k="Exercice d'imposition / période imposable" v="2026 / 01.01.2025 – 31.12.2025" f="annee-revenus-exercice" />
+  <Row section k="Détermination du revenu imposable" />
+  <Row n="2" k="Rémunérations (code 1250)" v="42 000,00" f="categories-de-revenus" />
+  <Row n="3" k="Frais professionnels forfaitaires" v="− 5 930,00" f="revenu-imposable" />
+  <Row k="Revenu imposable globalement" v="36 070,00" total />
+  <Row section k="Calcul de l'impôt" />
+  <Row n="4" k="Impôt de base selon le barème" v="12 343,50" f="tranches-imposition" />
+  <Row n="5" k="Réduction pour quotité exemptée (10 910 € × 25 %)" v="− 2 727,50" f="quotite-exemptee" />
+  <Row k="Impôt à répartir" v="9 616,00" />
+  <Row n="6" k="Réduction d'impôt épargne-pension (1 050 € × 30 %)" v="− 315,00" f="deduction-reduction-credit" />
+  <Row k="Impôt État + impôt régional" v="9 301,00" />
+  <Row n="7" k="Taxe communale additionnelle 8,5 %" v="+ 790,59" f="centimes-additionnels" />
+  <Row k="Impôt total" v="10 091,59" total />
+  <Row section k="Imputations" />
+  <Row n="8" k="Précompte professionnel retenu (code 1286)" v="− 10 650,00" f="precompte-professionnel" />
+  <Row n="9" k="Cotisation spéciale de sécurité sociale due" v="+ 360,00" f="cotisations-sociales" />
+  <Row k="Cotisation spéciale déjà retenue" v="− 360,00" />
+  <Row n="10" k="SOLDE : à vous rembourser" v="558,41" f="avertissement-extrait-de-role" total />
+  <Row n="11" k="Remboursement sur BE00 0000 0000 0000 dans les 2 mois · Réclamation possible dans l'année" v="" f="probleme-administratif" />
+</Paper>
+
+## Ce que dit chaque ligne
+
+<Legend>
+<li>**Exercice d'imposition 2026** = revenus 2025. Tous les montants (quotité, tranches, plafonds) sont ceux de cet exercice. → [[annee-revenus-exercice]]</li>
+<li>**Rémunérations** : le total de la fiche 281.10 (brut − ONSS, ATN compris). → [[categories-de-revenus]]</li>
+<li>**Frais forfaitaires** : 30 % plafonnés à 5 930 € ; des frais réels supérieurs auraient pu être déclarés. → [[revenu-imposable]]</li>
+<li>**Barème** : 25 % jusqu'à 16 320 €, 40 % jusqu'à 28 800 €, 45 % jusqu'à 49 840 €. → [[tranches-imposition]]</li>
+<li>**Quotité exemptée** : la part de revenu non taxée, convertie en réduction d'impôt au taux de la première tranche. Majorée avec des enfants à charge. → [[quotite-exemptee]]</li>
+<li>**Réductions** : chaque dépense fiscale apparaît sur sa ligne ; vérifie qu'aucune attestation n'a été oubliée. → [[deduction-reduction-credit]]</li>
+<li>**Additionnel communal** : un pourcentage de l'impôt, selon la commune au 1er janvier 2026. Le précompte retenu par l'employeur suppose un taux moyen : une commune au-dessus crée un petit supplément. → [[centimes-additionnels]]</li>
+<li>**Précompte imputé** : tout ce que l'employeur a retenu en 2025. C'est l'avance qu'on compare à l'impôt total. → [[precompte-professionnel]]</li>
+<li>**Cotisation spéciale de sécurité sociale** : calculée définitivement ici selon le revenu du ménage, et comparée aux retenues mensuelles. → [[cotisations-sociales]]</li>
+<li>**Solde** : impôt total − précomptes. Négatif = remboursement (ton argent avancé en trop) ; positif = supplément à payer dans les 2 mois. → [[avertissement-extrait-de-role]]</li>
+<li>**Délais** : paiement ou remboursement à 2 mois ; réclamation motivée dans l'année (délai indiqué sur le document). → [[probleme-administratif]]</li>
+</Legend>
+
+:::note[Chiffres]
+ONSS, barème, quotité, forfait de frais et réduction épargne-pension sont les valeurs de l'exercice 2026. Le précompte retenu (10 650 €) et l'additionnel communal sont illustratifs. Dans la réalité, l'impôt est aussi scindé entre part fédérale et part régionale, ce qui ajoute des lignes sans changer le total.
+:::

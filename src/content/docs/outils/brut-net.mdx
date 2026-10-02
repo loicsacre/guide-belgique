@@ -1,0 +1,20 @@
+---
+title: Comprendre le passage du brut au net
+kind: outil
+description: "Un calcul pédagogique du brut annuel au net : ONSS, frais forfaitaires, barème par tranches, quotité exemptée, additionnel communal. Pour comprendre le mécanisme, pas pour prédire ta fiche de paie."
+notions: [salaire-brut, cotisations-sociales, revenu-imposable, tranches-imposition, quotite-exemptee, centimes-additionnels, personne-a-charge, salaire-net, precompte-professionnel, cout-employeur]
+sidebar:
+  order: 6
+---
+import Tool from '../../../components/tools/ToolBrutNet.astro';
+
+Cet outil refait **à la main** le calcul que ta fiche de paie et ton AER font pour toi, avec les vrais paramètres de l'exercice 2026 mais sans les raffinements (bonus à l'emploi, cotisation spéciale, réductions). Il montre **où va chaque euro** de brut.
+
+<Tool />
+
+## Ce qu'il faut voir
+
+- Ajoute un **enfant à charge** : seule la quotité exemptée bouge, et l'impôt baisse d'environ 500 € par an pour le premier.
+- Passe de 3 500 à 4 500 € brut : le net ne monte pas de 1 000 € mais de ≈ 500 €, parce que l'euro supplémentaire est taxé au **taux marginal** (45 % + additionnel) après ONSS. Voir [[tranches-imposition]].
+- La **barre** montre la répartition : environ 13 % pour la sécurité sociale, 20 à 30 % pour l'impôt, le reste pour toi. L'employeur paie en plus ≈ 25 % de part patronale invisible ici : voir [[cout-employeur]].
+- Pour une simulation **réelle** de précompte mensuel, utilise le simulateur de ton secrétariat social ou de ton syndicat.

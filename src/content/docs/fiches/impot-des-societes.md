@@ -8,6 +8,7 @@ valid_for: "taux 25 %, 20 % PME sur 100 000 € (2026)"
 scope: [federal]
 status: publie
 tags: [ISoc, impôt des sociétés, bénéfice imposable, versements anticipés]
+organisme: "SPF Finances (Biztax)"
 short: "L'impôt sur le bénéfice des sociétés : 25 %, ou 20 % sur la première tranche de 100 000 € pour les PME qui remplissent les conditions ; calculé sur le résultat comptable corrigé fiscalement, payé par versements anticipés sous peine de majoration."
 aliases: [ISoc, impôt des sociétés, vennootschapsbelasting, versements anticipés, dépenses non admises, DNA, taux réduit PME, déclaration ISoc, Biztax]
 prerequisites: [personne-physique-vs-societe, chiffre-affaires-marge-benefice]

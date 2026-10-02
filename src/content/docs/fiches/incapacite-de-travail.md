@@ -8,6 +8,7 @@ valid_for: "principes ; pourcentages indicatifs 2026"
 scope: [federal]
 status: relecture
 tags: [maladie, salaire garanti, mutualité, invalidité, certificat médical]
+organisme: "Mutualité, INAMI"
 short: "Malade, tu touches d'abord ton salaire garanti par l'employeur (un mois pour un employé), puis des indemnités de ta mutualité (≈ 60 % du brut plafonné) ; après un an, on parle d'invalidité."
 aliases: [salaire garanti, certificat médical, indemnités de maladie, invalidité, incapacité primaire, médecin-conseil, reprise progressive]
 prerequisites: [mutualite, emploi-salarie]

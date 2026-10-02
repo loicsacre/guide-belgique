@@ -8,6 +8,7 @@ valid_for: "plafonds 2026 (chèques-repas 10 €)"
 scope: [federal]
 status: publie
 tags: [avantages, chèques-repas, écochèques, assurance groupe, ATN]
+organisme: "ONSS, SPF Finances"
 short: "Tout ce que ton employeur te donne en plus du salaire en argent : chèques-repas, écochèques, assurance groupe, hospitalisation, voiture, GSM, télétravail… Chacun a son propre traitement social et fiscal."
 aliases: [avantages en nature, ATN, avantage de toute nature, chèques-repas, écochèques, assurance groupe, package, plan cafétéria]
 prerequisites: [salaire-brut, salaire-net]

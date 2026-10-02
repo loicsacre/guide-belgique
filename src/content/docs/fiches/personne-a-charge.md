@@ -8,6 +8,7 @@ valid_for: "principes ; plafonds de ressources indexés chaque année"
 scope: [federal]
 status: publie
 tags: [enfants à charge, quotité exemptée, ménage, fiscalité familiale]
+organisme: "SPF Finances"
 short: "Un enfant ou un proche qui vit sous ton toit au 1er janvier et dispose de peu de ressources propres : chaque personne à charge augmente ta quotité exemptée d'impôt et réduit ton précompte."
 aliases: [enfant à charge, personnes à charge, coparentalité fiscale, garde alternée, ascendant à charge, parent isolé]
 prerequisites: [quotite-exemptee]

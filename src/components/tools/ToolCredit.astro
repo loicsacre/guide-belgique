@@ -1,0 +1,41 @@
+---
+// Mensualité, coût total et tableau d'amortissement (annuités constantes).
+---
+<div class="tool not-content" id="tool-credit">
+  <label>Capital emprunté (€) <input type="number" id="c-cap" value="200000" min="1000" step="1000" /></label>
+  <label>Taux annuel (%) <input type="number" id="c-taux" value="3" min="0" max="20" step="0.05" /></label>
+  <label>Durée (années) <input type="number" id="c-duree" value="25" min="1" max="40" step="1" /></label>
+  <div class="tool-out">
+    <div>Mensualité : <span class="big" id="c-mens">—</span></div>
+    <div>Intérêts totaux : <strong id="c-int">—</strong> · Total remboursé : <strong id="c-tot">—</strong></div>
+    <div style="margin-top:.5rem">Part des intérêts dans ce que tu paies :</div>
+    <div class="tool-bar" title="capital vs intérêts"><span id="c-bar-cap" style="background:var(--sl-color-accent)"></span><span id="c-bar-int" style="background:var(--sl-color-orange)"></span></div>
+    <div style="font-size:var(--sl-text-xs)">■ capital · <span style="color:var(--sl-color-orange)">■</span> intérêts</div>
+  </div>
+  <details style="margin-top:.75rem"><summary>Tableau d'amortissement (annuel)</summary>
+    <table><thead><tr><th>Année</th><th>Intérêts</th><th>Capital</th><th>Restant dû</th></tr></thead><tbody id="c-table"></tbody></table>
+  </details>
+  <details style="margin-top:.5rem"><summary>Comparer les durées</summary>
+    <table><thead><tr><th>Durée</th><th>Mensualité</th><th>Intérêts totaux</th></tr></thead><tbody id="c-durees"></tbody></table>
+  </details>
+</div>
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const eur = (n: number) => n.toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  const eur2 = (n: number) => n.toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  function mens(P: number, t: number, n: number) { const r = t / 100 / 12; return r === 0 ? P / n : (P * r) / (1 - Math.pow(1 + r, -n)); }
+  function calc() {
+    const P = +$('c-cap').value, t = +$('c-taux').value, y = +$('c-duree').value, n = y * 12;
+    if (!(P > 0 && n > 0)) return;
+    const m = mens(P, t, n), tot = m * n, int = tot - P;
+    $('c-mens').textContent = eur2(m); $('c-int').textContent = eur(int); $('c-tot').textContent = eur(tot);
+    $('c-bar-cap').style.width = (P / tot) * 100 + '%'; $('c-bar-int').style.width = (int / tot) * 100 + '%';
+    let bal = P, rows = '';
+    const r = t / 100 / 12;
+    for (let a = 1; a <= y; a++) { let i = 0, c = 0; for (let k = 0; k < 12; k++) { const ii = bal * r; const cc = m - ii; i += ii; c += cc; bal -= cc; } rows += `<tr><td>${a}</td><td>${eur(i)}</td><td>${eur(c)}</td><td>${eur(Math.max(0, bal))}</td></tr>`; }
+    $('c-table').innerHTML = rows;
+    $('c-durees').innerHTML = [10, 15, 20, 25, 30].map((d) => { const mm = mens(P, t, d * 12); return `<tr${d === y ? ' style="font-weight:700"' : ''}><td>${d} ans</td><td>${eur2(mm)}</td><td>${eur(mm * d * 12 - P)}</td></tr>`; }).join('');
+  }
+  ['c-cap', 'c-taux', 'c-duree'].forEach((id) => $(id).addEventListener('input', calc));
+  calc();
+</script>

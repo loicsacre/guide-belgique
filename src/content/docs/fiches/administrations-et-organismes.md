@@ -7,6 +7,7 @@ nature: stable
 scope: [federal, wallonie, bruxelles, flandre]
 status: publie
 tags: [institutions, administration, sigles]
+organisme: "SPF, ONSS, INAMI, ONEM, SFP, Régions"
 short: "Derrière chaque sigle (SPF, ONSS, INAMI, ONEM, SFP…) se cache un organisme avec une mission précise : savoir lequel fait quoi évite de frapper à la mauvaise porte."
 aliases: [SPF, SPF Finances, SPF Emploi, INAMI, ONEM, SFP, Service fédéral des Pensions, Forem, Actiris, VDAB, CPAS]
 prerequisites: [qui-fait-quoi]

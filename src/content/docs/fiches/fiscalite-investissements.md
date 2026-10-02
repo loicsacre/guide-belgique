@@ -8,6 +8,7 @@ valid_for: "règles 2026 (TOB, précompte 30 %, taxe comptes-titres, taxe sur le
 scope: [federal]
 status: relecture
 tags: [fiscalité, TOB, précompte mobilier, plus-values, comptes-titres, taxe Reynders]
+organisme: "SPF Finances, ta banque"
 short: "Investir en Belgique déclenche plusieurs prélèvements distincts : la TOB à chaque transaction, le précompte mobilier de 30 % sur dividendes et intérêts, la taxe sur les comptes-titres au-delà d'un million, et depuis 2026 une taxe sur les plus-values financières avec une exonération annuelle."
 aliases: [TOB, taxe boursière, taxe sur les comptes-titres, taxe Reynders, taxe sur les plus-values, plus-value financière, compte étranger, PCC]
 prerequisites: [precompte-mobilier, actions-obligations-etf]

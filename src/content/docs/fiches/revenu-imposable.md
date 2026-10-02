@@ -6,6 +6,7 @@ level: essentiel
 nature: mixte
 valid_for: "exercice d'imposition 2026 (revenus 2025)"
 scope: [federal]
+organisme: "SPF Finances"
 short: "La part de tes revenus sur laquelle l'impôt est réellement calculé : ce qui reste après les cotisations sociales et les frais professionnels."
 aliases: [base imposable, revenu net imposable, frais professionnels forfaitaires, forfait de frais, frais réels]
 prerequisites: [salaire-brut, cotisations-sociales]

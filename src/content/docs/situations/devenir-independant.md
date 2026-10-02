@@ -1,42 +1,90 @@
 ---
 title: Je deviens indépendant
 kind: situation
-description: "De l'inscription à la BCE aux premières régularisations : statut, cotisations, TVA, facturation, frais, comptabilité, impôts, et le choix personne physique ou société."
+description: 'De l''inscription à la BCE aux premières régularisations : statut, cotisations, TVA, facturation, frais, comptabilité, impôts, et le choix personne physique ou société.'
 notions:
+- independant
+- bce-numero-entreprise
+- tva
+- facturation
+- cotisations-independant
+- frais-professionnels
+- amortissement-comptable
+- tresorerie-cash-flow
+- chiffre-affaires-marge-benefice
+- revenu-imposable
+- tranches-imposition
+- personne-physique-vs-societe
+- impot-des-societes
+- mutualite
+- incapacite-de-travail
+- assurance-principes
+- epargne-pension
+- pension
+- epargne-de-precaution
+sidebar:
+  order: 9
+etapes:
+- titre: Choisir la forme et préparer
+  quand: Mois −3
+  texte: Personne physique pour commencer ; comptable ; réserve de 6 à 12 mois.
+  notions:
+  - personne-physique-vs-societe
+  - epargne-de-precaution
+- titre: S'inscrire
+  quand: Semaine 0
+  texte: Guichet d'entreprise → numéro BCE → activation TVA (ou franchise < 25 000 €).
+  notions:
   - independant
   - bce-numero-entreprise
   - tva
-  - facturation
+- titre: S'affilier
+  quand: Semaine 0
+  texte: 'Caisse d''assurances sociales (cotisations provisoires : adapte-les à ton revenu réel !) ; mutualité comme indépendant.'
+  notions:
   - cotisations-independant
+  - mutualite
+- titre: Facturer
+  quand: Dès le 1er client
+  texte: Mentions obligatoires, Peppol en B2B, délais de paiement, relances.
+  notions:
+  - facturation
+  - tva
+- titre: Provisionner chaque mois
+  quand: Chaque mois
+  texte: TVA (pas à toi), cotisations (≈ 20,5 %), impôt (≈ 25-30 % du net) sur un compte séparé.
+  notions:
+  - tresorerie-cash-flow
+- titre: Déclarer chaque trimestre
+  quand: Chaque trimestre
+  texte: Déclaration TVA, cotisation sociale, versement anticipé d'impôt.
+  notions:
+  - tva
+  - cotisations-independant
+- titre: Déduire correctement
+  quand: Toute l'année
+  texte: Frais liés, justifiés, souvent partiels ; investissements amortis.
+  notions:
   - frais-professionnels
   - amortissement-comptable
-  - tresorerie-cash-flow
-  - chiffre-affaires-marge-benefice
-  - revenu-imposable
-  - tranches-imposition
-  - personne-physique-vs-societe
-  - impot-des-societes
-  - mutualite
-  - incapacite-de-travail
+- titre: Se protéger
+  quand: Première année
+  texte: 'Revenu garanti, RC pro, PLCI, hospitalisation : personne ne le fait pour toi.'
+  notions:
   - assurance-principes
+  - incapacite-de-travail
   - epargne-pension
   - pension
-  - epargne-de-precaution
-sidebar:
-  order: 5
+- titre: Clôturer l'année
+  quand: Année N+1
+  texte: Comptes, déclaration IPP partie 2 ; régularisation des cotisations trois ans plus tard.
+  notions:
+  - revenu-imposable
+  - tranches-imposition
+  - chiffre-affaires-marge-benefice
 ---
 
 Devenir indépendant, c'est reprendre à ton compte tout ce que l'employeur faisait pour toi : déclarer, cotiser, provisionner, t'assurer. La première année se joue sur la **trésorerie** et la **discipline administrative**, pas sur le chiffre d'affaires.
-
-## Le fil
-
-1. **Avant** — activité, forme (personne physique ou société), comptable, compte pro, réserve de 6 mois → [[personne-physique-vs-societe]], [[epargne-de-precaution]]
-2. **Inscription** — guichet d'entreprise → numéro BCE → activation TVA → caisse d'assurances sociales → mutualité → [[independant]], [[bce-numero-entreprise]]
-3. **Facturer** — mentions obligatoires, Peppol en B2B, délais, relances → [[facturation]], [[tva]]
-4. **Chaque mois** — mettre de côté la TVA (21 %), les cotisations (≈ 20,5 %) et l'impôt (≈ 25-30 % du net) → [[tresorerie-cash-flow]]
-5. **Chaque trimestre** — déclaration TVA, cotisation sociale, versement anticipé d'impôt
-6. **Chaque année** — comptes, déclaration IPP (partie 2) ou ISoc, régularisation des cotisations trois ans plus tard → [[cotisations-independant]], [[frais-professionnels]]
-7. **Protection** — revenu garanti, RC pro, PLCI, hospitalisation → [[assurance-principes]], [[epargne-pension]]
 
 ## L'argent : où va chaque euro facturé (exemple fictif, personne physique)
 

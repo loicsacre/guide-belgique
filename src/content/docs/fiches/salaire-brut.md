@@ -5,6 +5,7 @@ domain: travail
 level: essentiel
 nature: stable
 scope: [federal]
+organisme: "Employeur, secrétariat social"
 short: "La rémunération avant les retenues sociales et fiscales : c'est le chiffre du contrat et des offres d'emploi, pas ce que tu reçois."
 aliases: [brut, rémunération brute, salaire mensuel brut]
 prerequisites: [emploi-salarie]
@@ -35,6 +36,10 @@ SALAIRE BRUT
           ▼
      SALAIRE NET
 ```
+
+## Pourquoi ça existe
+
+Le brut existe parce que la loi veut un montant **de référence** commun à tous : c'est sur lui que se calculent les cotisations, le précompte, les barèmes sectoriels, l'indexation, le préavis et la pension. Le net, lui, varie d'une personne à l'autre selon sa situation ; il ne peut pas servir d'étalon.
 
 ## Brut ≠ coût employeur ≠ net
 

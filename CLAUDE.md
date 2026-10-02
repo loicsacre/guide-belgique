@@ -31,12 +31,27 @@ Un trentenaire résidant en Belgique, intelligent mais non spécialiste, qui par
 
 ```
 src/content/docs/
-  index.mdx               accueil
+  index.mdx               accueil : six portes d'entrée
   fiches/<slug>.md        une notion = une fiche (URL /fiches/<slug>/)
-  situations/<slug>.md    une situation de vie = une checklist de notions
-src/data/parcours.yaml    parcours niveau 1 : ordre pédagogique + notions planifiées
+  situations/<slug>.md    une chaîne de vie : étapes chronologiques (frontmatter `etapes:`) + notions
+  documents/<slug>.mdx    un document fictif annoté (composants Paper / Row / Legend)
+  outils/<slug>.mdx       un calculateur pédagogique (composant dans src/components/tools/)
+src/pages/systeme.astro   « Le grand système » : carte SVG des domaines et des flux
+src/pages/parcours.astro  parcours, glossaire.astro
+src/data/parcours.yaml    tous les blocs et notions planifiées (14 blocs, dont « ponts »)
 templates/fiche.md        modèle de fiche
 ```
+
+### Six portes d'entrée (architecture pédagogique)
+
+| Le lecteur dit | Il va vers |
+| --- | --- |
+| « Je pars de zéro » | `/parcours/` |
+| « Je rencontre ce terme » | `/glossaire/` et la recherche |
+| « Je vis cette situation » | `situations/` (étapes datées, notions par étape) |
+| « Je veux comprendre le système » | `/systeme/` |
+| « Je dois lire ce document » | `documents/` (fictif, numéros cliquables) |
+| « Je veux calculer » | `outils/` (toujours avec l'avertissement « pédagogique ») |
 
 - Les fiches sont **à plat** dans `fiches/` (le domaine est une métadonnée) : les liens ne cassent jamais quand on reclasse.
 - La sidebar est générée depuis le frontmatter (`domain`, `sidebar.order`).
@@ -54,6 +69,8 @@ templates/fiche.md        modèle de fiche
 | `scope` | `federal`, `wallonie`, `bruxelles`, `flandre`, `communal`. |
 | `aliases` | Sigles, synonymes, termes NL — alimentent le glossaire et la recherche. |
 | `prerequisites`, `related` | Slugs. Une notion planifiée mais non rédigée s'affiche « à rédiger ». |
+| `organisme` | Qui s'en occupe (SPF Finances, ONSS, Région, ta banque…) : affiché en badge. |
+| `status`, `tags` | `publie` / `relecture` / `brouillon` ; mots-clés libres. |
 | `sources` | Au moins une source officielle `{ title, url, org }`. |
 | `last_verified`, `valid_for` | Date de vérification, période de validité des règles datées. |
 
@@ -63,7 +80,21 @@ Dans le texte : `[[slug]]` ou `[[slug|libellé]]` (dans un tableau : `[[slug\|li
 
 ### Corps d'une fiche
 
-Sections habituelles (adapter si une section n'apporte rien) : *En langage simple* → *Comment ça marche* (flux) → *Exemple concret* → *Ce que ça change pour toi* → *À ne pas confondre*. Qui paie / qui reçoit / quand en tableau quand c'est pertinent.
+Sections habituelles (adapter si une section n'apporte rien) : *En langage simple* → *Pourquoi ça existe* → *Comment ça marche* (flux) → *Exemple concret* → *Ce que ça change pour toi* → *À ne pas confondre*. Qui paie / qui reçoit / quand en tableau quand c'est pertinent.
+
+Sont **générés automatiquement** en pied de fiche, ne pas les écrire à la main : « Voir aussi » (`related`), « Pour aller plus loin » (fiches dont celle-ci est prérequis), « Cette notion est aussi citée par », « Dans la vraie vie » (situations, documents et outils qui citent le slug), sources, navigation ← → du parcours.
+
+### Situations (chaînes de vie)
+
+Frontmatter `etapes:` : liste de `{ titre, quand, texte, notions: [slugs] }` dans l'ordre chronologique. Le corps Markdown ne contient que l'intro, les tableaux de pièges et les repères ; la timeline et la liste des notions sont rendues automatiquement.
+
+### Documents annotés
+
+Fichier `.mdx` important `Paper`, `Row`, `Legend`. Chaque `<Row n="3" k="libellé" v="valeur" f="slug" />` crée un numéro cliquable vers la fiche ; la `<Legend>` reprend les numéros dans l'ordre avec `[[slug]]`. **Jamais de données réelles** : noms, numéros, IBAN, montants inventés et signalés comme tels.
+
+### Doublons et rôles voisins
+
+Quand deux fiches se touchent, chacune garde un rôle précis : `cotisations-sociales` (le prélèvement) vs `onss` (l'organisme) ; `credit` (le mécanisme) vs `credit-consommation` (les formes et leurs pièges) vs `credit-hypothecaire` (le prêt logement) ; `taux-interet` (le prix de l'argent) vs `taux-fixe-variable` (le choix contractuel) ; `pension` (1er pilier) vs `epargne-pension` (2e et 3e) ; `formes-de-couple` (statuts civils) vs `statut-familial` (définitions par système) vs `domicile` (l'inscription). Avant de créer une fiche, chercher dans le glossaire et les alias.
 
 ## Comment répondre aux demandes
 
@@ -73,7 +104,8 @@ Sections habituelles (adapter si une section n'apporte rien) : *En langage simpl
 | « Ajoute ceci au guide » | Rechercher et vérifier, puis créer la fiche (`npm run new -- <slug> <domaine>`) ou compléter l'existante. Ajouter les slugs révélés dans `parcours.yaml` ou dans `related`. Mettre à jour les fiches liées si nécessaire. |
 | « Montre-moi le guide » | Résumer la structure : domaines, fiches rédigées, progression du parcours. |
 | « Qu'est-ce que je devrais apprendre ensuite ? » | Partir de `parcours.yaml` et des prérequis des fiches existantes : proposer les 3 à 5 notions non rédigées les plus utiles. |
-| « Vérifie le guide » | `npm run check`, puis revérifier les fiches signalées comme anciennes. |
+| « Vérifie le guide » | `npm run check`, puis revérifier les fiches signalées comme anciennes ou en `relecture`. |
+| « Ajoute une situation / un document / un outil » | Respecter le format de la section correspondante ; déclarer toutes les notions mobilisées pour alimenter « Dans la vraie vie ». |
 
 Une question qui touche plusieurs domaines → montrer les connexions (ex. « j'achète une maison » → immobilier, crédit, notaire, droits d'enregistrement, assurances, fiscalité, budget, patrimoine).
 

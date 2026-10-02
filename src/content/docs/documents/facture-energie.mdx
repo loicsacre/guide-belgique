@@ -1,0 +1,54 @@
+---
+title: Lire une facture d'énergie
+kind: document
+description: "Un décompte annuel d'électricité et de gaz, annoté : énergie, réseau, taxes, TVA, acomptes et régularisation."
+notions: [energie, tva, impot-taxe-cotisation, domiciliation-ordre-permanent, budget, indexation-loyer, peb, contrats-consommation]
+sidebar:
+  order: 3
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Le document le plus mal compris du foyer : trois acteurs, deux énergies, douze acomptes et une régularisation. Décompte annuel fictif d'un appartement wallon (3 000 kWh d'électricité, 10 000 kWh de gaz).
+
+<Paper title="DÉCOMPTE ANNUEL — Électricité & gaz" sub="Fournisseur : Énergie Fictive SA · Client 00123456 · Période du 01.03.2025 au 28.02.2026 · EAN 54144…">
+  <Row section k="Électricité — 3 012 kWh (relevé compteur communicant)" />
+  <Row n="1" k="Énergie : 3 012 kWh × 0,118 €/kWh (contrat variable, indexé)" v="355,42" f="energie" />
+  <Row n="2" k="Redevance fixe fournisseur" v="45,00" f="energie" />
+  <Row n="3" k="Tarifs de réseau (distribution ORES + transport Elia)" v="312,60" f="energie" />
+  <Row n="4" k="Cotisations, accises, surcharges" v="98,30" f="impot-taxe-cotisation" />
+  <Row k="Sous-total électricité HTVA" v="811,32" />
+  <Row section k="Gaz — 10 240 kWh" />
+  <Row k="Énergie : 10 240 kWh × 0,041 €/kWh" v="419,84" />
+  <Row k="Redevance fixe" v="40,00" />
+  <Row k="Tarifs de réseau" v="286,70" />
+  <Row k="Cotisations et accises" v="61,40" />
+  <Row k="Sous-total gaz HTVA" v="807,94" />
+  <Row section k="Total" />
+  <Row n="5" k="TVA 6 %" v="97,16" f="tva" />
+  <Row k="TOTAL TVAC de la période" v="1 716,42" total />
+  <Row n="6" k="Acomptes déjà payés : 12 × 125,00 €" v="− 1 500,00" f="domiciliation-ordre-permanent" />
+  <Row n="7" k="RÉGULARISATION À PAYER" v="216,42" f="budget" total />
+  <Row n="8" k="Nouvel acompte mensuel proposé" v="145,00" f="budget" />
+  <Row n="9" k="Comparez votre contrat : CWaPE / CREG · Changer de fournisseur : préavis 1 mois, gratuit" v="" f="contrats-consommation" />
+</Paper>
+
+## Ce que dit chaque ligne
+
+<Legend>
+<li>**Énergie** : la seule partie que ton fournisseur fixe et que tu peux mettre en concurrence. Variable = indexée sur les marchés chaque mois ou trimestre ; fixe = bloquée. → [[energie]]</li>
+<li>**Redevance fixe** : l'abonnement, dû même sans consommation. Pèse lourd pour un petit consommateur.</li>
+<li>**Tarifs de réseau** : le gestionnaire de distribution (ORES, RESA, Sibelga, Fluvius…) et le transporteur (Elia, Fluxys). **Identiques quel que soit le fournisseur**, approuvés par le régulateur régional. Souvent 30 à 40 % de la facture. → [[energie]]</li>
+<li>**Cotisations et accises** : impôts et contributions fédérales et régionales (fonds énergie, cotisation fédérale, accises depuis 2023). → [[impot-taxe-cotisation]]</li>
+<li>**TVA 6 %** : taux réduit pour les particuliers depuis 2023 (au lieu de 21 %), compensé par des accises. → [[tva]]</li>
+<li>**Acomptes** : des provisions mensuelles estimées. Trop bas = régularisation douloureuse ; trop haut = prêt gratuit au fournisseur. Payés par domiciliation. → [[domiciliation-ordre-permanent]]</li>
+<li>**Régularisation** : la différence entre le réel et les acomptes. À prévoir dans le budget comme une dépense annuelle. → [[budget]]</li>
+<li>**Nouvel acompte** : recalculé sur la consommation constatée ; tu peux demander à l'ajuster. → [[budget]]</li>
+<li>**Comparer** : les comparateurs officiels (CWaPE, Brugel, VREG, CREG) ; changement à tout moment sans frais. → [[contrats-consommation]]</li>
+</Legend>
+
+## Pour aller plus loin
+
+- Locataire : ces coûts s'ajoutent au loyer et aux charges : [[indexation-loyer]].
+- Le [[peb]] du logement explique une bonne part des 10 000 kWh de gaz : l'isolation est le seul levier durable.

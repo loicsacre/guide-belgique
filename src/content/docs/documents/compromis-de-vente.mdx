@@ -1,0 +1,49 @@
+---
+title: Lire un compromis de vente
+kind: document
+description: "Les clauses d'un compromis, annotées : parties, bien, prix, acompte, conditions suspensives, documents obligatoires, délais, répartition des frais."
+notions: [compromis, notaire-acte-authentique, droits-enregistrement, credit-hypothecaire, peb, revenu-cadastral, precompte-immobilier, copropriete, droits-reels, cout-reel-achat]
+sidebar:
+  order: 6
+---
+import Paper from '../../../components/Paper.astro';
+import Row from '../../../components/Row.astro';
+import Legend from '../../../components/Legend.astro';
+
+Le compromis est un contrat, pas un formulaire : il est rédigé en articles. Voici les articles qui comptent, dans un compromis fictif pour un appartement.
+
+<Paper title="COMPROMIS DE VENTE — Sous seing privé" sub="Entre les vendeurs C. et D. Exemple et les acquéreurs A. et B. Exemple · Appartement 2e étage, rue Fictive 12, 4000 Liège">
+  <Row n="1" k="Art. 1 — Désignation du bien : lot 5 de la résidence « Les Tilleuls », 85 m², cave n° 5, 92/1000e des parties communes" v="" f="copropriete" />
+  <Row n="2" k="Art. 2 — Revenu cadastral non indexé" v="890 €" f="revenu-cadastral" />
+  <Row n="3" k="Art. 3 — Prix de vente" v="250 000,00 €" f="cout-reel-achat" />
+  <Row n="4" k="Art. 4 — Acompte de 10 % versé à la signature sur le compte de tiers du notaire" v="25 000,00 €" f="notaire-acte-authentique" />
+  <Row n="5" k="Art. 5 — Condition suspensive : obtention d'un crédit de 200 000 € à un taux max. de 3,8 % sur 25 ans, dans les 6 semaines ; à défaut, le compromis est nul sans indemnité" v="" f="credit-hypothecaire" />
+  <Row n="6" k="Art. 6 — Acte authentique au plus tard 4 mois après la signature, chez le notaire de l'acquéreur ; entrée en jouissance à l'acte" v="" f="droits-enregistrement" />
+  <Row n="7" k="Art. 7 — Documents annexés : certificat PEB (classe D, 280 kWh/m².an), contrôle électrique conforme, renseignements urbanistiques, attestation du sol, dossier d'intervention ultérieure" v="" f="peb" />
+  <Row n="8" k="Art. 8 — Copropriété : acte de base, règlement, PV des 3 dernières AG, état des fonds (réserve 18 400 €), travaux votés : néant" v="" f="copropriete" />
+  <Row n="9" k="Art. 9 — Servitudes : passage pour l'entretien de la cour commune ; vendu dans l'état, sans garantie des vices apparents" v="" f="droits-reels" />
+  <Row n="10" k="Art. 10 — Précompte immobilier et charges de l'année en cours répartis au prorata à la date de l'acte" v="" f="precompte-immobilier" />
+  <Row n="11" k="Art. 11 — Frais d'acte et droits d'enregistrement à charge de l'acquéreur ; frais de mainlevée à charge des vendeurs" v="" f="droits-enregistrement" />
+  <Row n="12" k="Art. 12 — Indemnité forfaitaire de 10 % en cas de défaillance d'une partie hors conditions suspensives" v="25 000,00 €" f="compromis" />
+</Paper>
+
+## Ce que dit chaque article
+
+<Legend>
+<li>**Désignation** : les quotités (92/1000e) fixent ta part des charges communes et ton poids de vote en AG. → [[copropriete]]</li>
+<li>**Revenu cadastral** : il annonce ton précompte immobilier ; 890 € non indexé ≈ 1 900 € indexé. → [[revenu-cadastral]]</li>
+<li>**Prix** : hors frais. Compte 6 à 15 % en plus selon la Région et ton éligibilité au taux réduit. → [[cout-reel-achat]]</li>
+<li>**Acompte** : toujours chez le notaire, jamais au vendeur. Il te revient si une condition suspensive échoue. → [[notaire-acte-authentique]]</li>
+<li>**Condition suspensive de crédit** : la clause qui te protège. Sans elle, refus de la banque = 25 000 € d'indemnité. Précise montant, taux max et délai. → [[credit-hypothecaire]]</li>
+<li>**Délai de 4 mois** : c'est le délai légal de paiement des droits d'enregistrement ; au-delà, amendes. → [[droits-enregistrement]]</li>
+<li>**Documents obligatoires** : le vendeur doit les fournir ; un PEB D signifie des travaux énergétiques à moyen terme et conditionne l'indexation si tu loues. → [[peb]]</li>
+<li>**Copropriété** : lis les PV ; un fonds de réserve à 18 400 € pour un immeuble de 12 lots est modeste. → [[copropriete]]</li>
+<li>**Servitudes et état** : « vendu dans l'état » = pas de recours pour un défaut visible ; les vices cachés restent couverts. → [[droits-reels]]</li>
+<li>**Prorata** : si l'acte est le 1er juillet, tu rembourses au vendeur la moitié du précompte de l'année. → [[precompte-immobilier]]</li>
+<li>**Frais** : les tiens (droits, acte d'achat, acte de crédit) et les leurs (mainlevée de leur hypothèque). → [[droits-enregistrement]]</li>
+<li>**Indemnité** : 10 % du prix si tu renonces sans motif prévu ; et le vendeur peut aussi exiger la vente forcée. → [[compromis]]</li>
+</Legend>
+
+:::caution
+Fais relire le compromis par **ton** notaire avant de signer : c'est gratuit et c'est le dernier moment où tout est négociable.
+:::

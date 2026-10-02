@@ -8,6 +8,7 @@ valid_for: "plafonds régionaux en vigueur (2 ou 3 mois)"
 scope: [wallonie, bruxelles, flandre]
 status: publie
 tags: [garantie locative, caution, état des lieux, compte bloqué, e-DEPO]
+organisme: "Région, banque, juge de paix"
 short: "La somme (2 ou 3 mois de loyer selon la Région) que tu bloques sur un compte à ton nom pour couvrir d'éventuels dégâts ou impayés ; elle t'est rendue à la sortie, avec intérêts, sur base de l'état des lieux de sortie."
 aliases: [caution locative, compte bloqué, e-DEPO, garantie bancaire, état des lieux d'entrée, état des lieux de sortie, libération de la garantie]
 prerequisites: [bail]

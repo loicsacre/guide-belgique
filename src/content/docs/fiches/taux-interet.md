@@ -7,8 +7,9 @@ nature: stable
 scope: []
 status: publie
 tags: [intérêt, taux, épargne, crédit]
+organisme: "BCE, banques"
 short: "Le prix de l'argent dans le temps, exprimé en pourcentage par an : ce que la banque te verse pour ton épargne, ou ce qu'elle te facture pour un crédit."
-aliases: [intérêt, taux nominal, taux de base, prime de fidélité, taux annuel]
+aliases: [intérêt, taux nominal, taux annuel]
 prerequisites: [inflation]
 related: [credit, taeg, taux-fixe-variable, compte-epargne, interets-composes, banque-centrale]
 last_verified: 2026-10-02

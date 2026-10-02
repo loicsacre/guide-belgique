@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [BCE, numéro d'entreprise, guichet d'entreprise, unité d'établissement]
+organisme: "SPF Économie (BCE)"
 short: "La Banque-Carrefour des Entreprises est le registre public de toutes les entreprises belges ; le numéro d'entreprise (BE 0xxx.xxx.xxx) y est attribué à l'inscription via un guichet d'entreprise et sert d'identifiant unique, y compris comme numéro de TVA."
 aliases: [Banque-Carrefour des Entreprises, numéro d'entreprise, numéro de TVA, guichet d'entreprise, unité d'établissement, codes NACE, Moniteur belge, comptes annuels]
 prerequisites: [independant]

@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [taux fixe, taux variable, crédit hypothécaire, révision]
+organisme: "Banque"
 short: "À taux fixe, ta mensualité ne bouge pas pendant toute la durée ; à taux variable, elle est révisée périodiquement selon un indice de référence, à la hausse comme à la baisse, dans des limites légales (cap)."
 aliases: [taux variable, taux fixe, cap, révision du taux, accordéon, indice de référence]
 prerequisites: [credit, taux-interet]

@@ -7,6 +7,7 @@ nature: stable
 scope: [federal]
 status: publie
 tags: [actions, obligations, ETF, fonds, bourse, compte-titres]
+organisme: "FSMA, ta banque ou ton courtier"
 short: "Une action est une part de propriété d'une entreprise, une obligation un prêt que tu lui fais (ou à un État), un fonds un panier géré de ces titres, et un ETF un fonds coté qui réplique un indice à frais réduits : les briques de base de tout portefeuille."
 aliases: [action, obligation, ETF, tracker, fonds d'investissement, sicav, indice, bourse, compte-titres, courtier, dividende, coupon, bon d'État]
 prerequisites: [rendement-risque-liquidite, interets-composes]
