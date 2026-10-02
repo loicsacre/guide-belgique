@@ -2,7 +2,7 @@
 // Contrôle de cohérence du guide : métadonnées obligatoires, liens entre notions, fraîcheur.
 // Lancé par `npm run check` et avant chaque build.
 import { loadFiches, loadSituations, loadParcours, knownNotions } from '../src/lib/fiches.mjs';
-import { DOMAIN_KEYS, LEVEL_KEYS, NATURE_KEYS } from '../src/lib/domains.mjs';
+import { DOMAIN_KEYS, LEVEL_KEYS, NATURE_KEYS, STATUS_KEYS } from '../src/lib/domains.mjs';
 
 const errors = [];
 const warnings = [];
@@ -32,6 +32,9 @@ for (const f of fiches) {
   if (d.level && !LEVEL_KEYS.includes(d.level)) errors.push(`${w} : niveau "${d.level}" inconnu`);
   if (d.nature && !NATURE_KEYS.includes(d.nature)) errors.push(`${w} : nature "${d.nature}" inconnue`);
   if (!d.sources?.length) errors.push(`${w} : au moins une source officielle est requise`);
+  if (d.status && !STATUS_KEYS.includes(d.status)) errors.push(`${w} : statut "${d.status}" inconnu`);
+  if (d.tags && !Array.isArray(d.tags)) errors.push(`${w} : tags doit être une liste`);
+  if (d.status && d.status !== 'publie') warnings.push(`${w} : statut ${d.status}`);
   if (d.nature !== 'stable' && !d.valid_for) warnings.push(`${w} : "valid_for" conseillé pour une règle datée`);
   if (!seen.has(f.slug)) warnings.push(`${w} : absente de parcours.yaml (normal hors niveau 1)`);
   checkRefs(w, d.prerequisites);
@@ -53,5 +56,5 @@ for (const s of loadSituations()) {
 const written = [...seen].filter((s) => fiches.some((f) => f.slug === s)).length;
 for (const m of warnings) console.warn(`⚠️  ${m}`);
 for (const m of errors) console.error(`❌ ${m}`);
-console.log(`\n${fiches.length} fiches · niveau 1 : ${written}/${seen.size} · ${errors.length} erreur(s), ${warnings.length} avertissement(s)`);
+console.log(`\n${fiches.length} fiches · parcours : ${written}/${seen.size} · ${errors.length} erreur(s), ${warnings.length} avertissement(s)`);
 process.exit(errors.length ? 1 : 0);

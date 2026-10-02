@@ -1,8 +1,10 @@
 ---
 title: "__TITLE__"
 kind: fiche
-domain: __DOMAIN__            # systeme | travail | securite-sociale | fiscalite | argent | credit | immobilier | investissement | comptabilite | entreprise | assurances | famille | quotidien
-level: essentiel              # essentiel | utile | approfondissement
+domain: __DOMAIN__            # systeme | travail | securite-sociale | fiscalite | argent | banque | credit | immobilier | investissement | comptabilite | entreprise | assurances | famille | quotidien
+status: publie                # publie | relecture | brouillon
+tags: []                      # mots-clés libres (recherche, regroupements)
+level: essentiel              # essentiel (1 Fondations) | utile (2 Compréhension) | approfondissement (3) | expert (4)
 nature: stable                # stable | mixte | regle-datee
 scope: [federal]              # federal | wallonie | bruxelles | flandre | communal
 short: "Définition en une phrase, compréhensible sans prérequis."

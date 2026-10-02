@@ -1,15 +1,18 @@
-# Parcours niveau 1 — ordre pédagogique : chaque notion prépare la suivante.
+# Parcours d'apprentissage — ordre pédagogique : chaque notion prépare la suivante.
 # Une notion listée ici sans fiche apparaît "à rédiger" (glossaire, parcours, wiki-links).
 # Le slug doit correspondre au nom du fichier src/content/docs/fiches/<slug>.md
+# Les blocs A→F forment le niveau 1 (fondations). Les suivants élargissent domaine par domaine.
 blocs:
   - title: Comprendre la Belgique
     intro: Qui décide de quoi, et à qui s'adresser.
     notions:
       - { slug: qui-fait-quoi, title: Qui fait quoi en Belgique ? }
+      - { slug: administrations-et-organismes, title: "Administrations et organismes publics (SPF, ONSS, INAMI, ONEM…)" }
       - { slug: securite-sociale, title: Sécurité sociale }
       - { slug: onss, title: ONSS }
-      - { slug: domicile, title: Domicile et registre national }
-      - { slug: identite-numerique, title: "Identité numérique (eID, itsme, MyMinfin)" }
+      - { slug: domicile, title: Domicile, résidence et registre national }
+      - { slug: identite-numerique, title: "Identité numérique (eID, itsme, MyMinfin, eBox)" }
+      - { slug: mutualite, title: Mutualité et assurance soins de santé }
   - title: Ton travail
     intro: "À la fin du bloc : comprendre chaque étape entre le brut annoncé et le net reçu."
     notions:
@@ -17,20 +20,28 @@ blocs:
       - { slug: contrat-de-travail, title: Contrat de travail }
       - { slug: commission-paritaire, title: Commission paritaire et CCT }
       - { slug: salaire-brut, title: Salaire brut }
+      - { slug: cout-employeur, title: Coût employeur et cotisations patronales }
       - { slug: cotisations-sociales, title: Cotisations sociales }
       - { slug: precompte-professionnel, title: Précompte professionnel }
       - { slug: salaire-net, title: Salaire net }
       - { slug: fiche-de-paie, title: Fiche de paie }
       - { slug: avantages-extralegaux, title: Avantages extralégaux }
-      - { slug: pecule-de-vacances, title: Pécule de vacances }
-      - { slug: treizieme-mois, title: 13e mois (prime de fin d'année) }
+      - { slug: voiture-de-societe, title: Voiture de société et ATN }
+      - { slug: pecule-de-vacances, title: Pécule de vacances et congés }
+      - { slug: treizieme-mois, title: 13e mois (prime de fin d'année) et bonus }
       - { slug: indexation, title: Indexation des salaires }
+      - { slug: preavis-licenciement, title: Préavis, démission et licenciement }
+      - { slug: chomage, title: Chômage }
+      - { slug: incapacite-de-travail, title: Maladie et incapacité de travail }
+      - { slug: pension, title: Pension légale et complémentaire }
   - title: Tes impôts
     intro: De l'avance retenue chaque mois au décompte final.
     notions:
-      - { slug: impot-taxe-cotisation, title: "Impôt, taxe, cotisation : quelle différence ?" }
+      - { slug: impot-taxe-cotisation, title: "Impôt, taxe, cotisation, redevance : quelle différence ?" }
       - { slug: ipp, title: Impôt des personnes physiques (IPP) }
+      - { slug: annee-revenus-exercice, title: Année des revenus et exercice d'imposition }
       - { slug: revenu-imposable, title: Revenu imposable }
+      - { slug: categories-de-revenus, title: "Les quatre catégories de revenus (professionnels, immobiliers, mobiliers, divers)" }
       - { slug: tranches-imposition, title: Tranches d'imposition et taux marginal }
       - { slug: quotite-exemptee, title: Quotité exemptée d'impôt }
       - { slug: personne-a-charge, title: Personne à charge }
@@ -38,33 +49,91 @@ blocs:
       - { slug: centimes-additionnels, title: Additionnels communaux et régionaux }
       - { slug: declaration-fiscale, title: Déclaration fiscale }
       - { slug: avertissement-extrait-de-role, title: Avertissement-extrait de rôle (AER) }
+      - { slug: precompte-mobilier, title: Précompte mobilier }
   - title: Ton argent
     intro: Revenus, dépenses, réserve et patrimoine.
     notions:
       - { slug: budget, title: Budget personnel }
-      - { slug: compte-a-vue, title: Compte à vue }
-      - { slug: compte-epargne, title: Compte d'épargne réglementé }
       - { slug: epargne-de-precaution, title: Épargne de précaution }
       - { slug: inflation, title: Inflation et pouvoir d'achat }
+      - { slug: taux-interet, title: Taux d'intérêt }
       - { slug: patrimoine-net, title: "Patrimoine net : actifs − dettes" }
+      - { slug: rendement-risque-liquidite, title: "Rendement, risque, liquidité" }
+  - title: Banque et paiements
+    notions:
+      - { slug: compte-a-vue, title: Compte à vue, cartes et paiements }
+      - { slug: compte-epargne, title: Compte d'épargne réglementé }
+      - { slug: domiciliation-ordre-permanent, title: Domiciliation et ordre permanent }
+      - { slug: garantie-des-depots, title: Garantie des dépôts }
+      - { slug: fraude-phishing, title: Fraude, phishing et sécurité bancaire }
   - title: Le crédit
     notions:
       - { slug: credit, title: "Crédit : capital, intérêts, durée" }
-      - { slug: taux-interet, title: Taux d'intérêt fixe et variable }
+      - { slug: taux-fixe-variable, title: Taux fixe et taux variable }
       - { slug: taeg, title: TAEG }
       - { slug: mensualite-amortissement, title: Mensualité et tableau d'amortissement }
       - { slug: credit-hypothecaire, title: Crédit hypothécaire }
-      - { slug: quotite-emprunt, title: Quotité d'emprunt et apport personnel }
-      - { slug: hypotheque, title: Hypothèque }
+      - { slug: quotite-emprunt, title: Quotité d'emprunt, apport personnel et capacité d'emprunt }
+      - { slug: hypotheque, title: Hypothèque, garanties et caution }
+      - { slug: credit-consommation, title: Crédit à la consommation et endettement }
   - title: L'immobilier
     notions:
       - { slug: louer-vs-acheter, title: Louer ou acheter ? }
       - { slug: bail, title: Bail de résidence principale }
-      - { slug: garantie-locative, title: Garantie locative }
+      - { slug: garantie-locative, title: Garantie locative et état des lieux }
+      - { slug: indexation-loyer, title: Indexation du loyer et charges locatives }
       - { slug: cout-reel-achat, title: "Prix d'achat vs coût réel d'acquisition" }
       - { slug: compromis, title: Compromis de vente }
       - { slug: notaire-acte-authentique, title: Notaire et acte authentique }
       - { slug: droits-enregistrement, title: Droits d'enregistrement }
       - { slug: revenu-cadastral, title: Revenu cadastral }
       - { slug: precompte-immobilier, title: Précompte immobilier }
-      - { slug: peb, title: Certificat PEB }
+      - { slug: copropriete, title: Copropriété et syndic }
+      - { slug: peb, title: Certificat PEB et rénovation énergétique }
+      - { slug: droits-reels, title: "Pleine propriété, usufruit, nue-propriété, indivision" }
+  - title: Épargner et investir
+    notions:
+      - { slug: interets-composes, title: Intérêts composés }
+      - { slug: actions-obligations-etf, title: "Actions, obligations, fonds et ETF" }
+      - { slug: diversification, title: Diversification et horizon de placement }
+      - { slug: fiscalite-investissements, title: Fiscalité des investissements }
+      - { slug: epargne-pension, title: Épargne-pension et pension complémentaire }
+  - title: Les assurances
+    notions:
+      - { slug: assurance-principes, title: "Assurance : prime, franchise, sinistre, exclusion" }
+      - { slug: rc-familiale, title: Responsabilité civile et RC familiale }
+      - { slug: assurance-habitation, title: Assurance habitation (incendie) }
+      - { slug: assurance-auto, title: Assurance auto (RC, omnium) }
+      - { slug: assurance-hospitalisation, title: Assurance hospitalisation }
+      - { slug: assurance-solde-restant-du, title: Assurance solde restant dû et assurance-vie }
+  - title: Famille et patrimoine
+    notions:
+      - { slug: formes-de-couple, title: "Mariage, cohabitation légale, cohabitation de fait" }
+      - { slug: regime-matrimonial, title: Régime matrimonial et séparation }
+      - { slug: succession, title: "Succession : héritiers, réserve, testament" }
+      - { slug: droits-de-succession, title: Droits de succession }
+      - { slug: donation, title: Donation et droits de donation }
+  - title: Indépendant et entreprise
+    notions:
+      - { slug: independant, title: Devenir indépendant }
+      - { slug: cotisations-independant, title: Cotisations sociales de l'indépendant }
+      - { slug: tva, title: TVA }
+      - { slug: facturation, title: Facture et facturation }
+      - { slug: frais-professionnels, title: Frais professionnels et déductibilité }
+      - { slug: personne-physique-vs-societe, title: Personne physique ou société (SRL) ? }
+      - { slug: impot-des-societes, title: Impôt des sociétés (ISoc) }
+      - { slug: bce-numero-entreprise, title: BCE et numéro d'entreprise }
+  - title: Économie et comptabilité pour non-spécialistes
+    notions:
+      - { slug: actif-passif-bilan, title: "Actif, passif, capitaux propres : le bilan" }
+      - { slug: chiffre-affaires-marge-benefice, title: "Chiffre d'affaires, charges, marge, bénéfice" }
+      - { slug: tresorerie-cash-flow, title: Trésorerie et cash-flow }
+      - { slug: amortissement-comptable, title: Amortissement comptable }
+      - { slug: pib-croissance, title: PIB et croissance }
+      - { slug: banque-centrale, title: Banque centrale et politique monétaire }
+  - title: Vie pratique
+    notions:
+      - { slug: contrats-consommation, title: "Contrats, garantie légale et droit de rétractation" }
+      - { slug: voiture-taxes, title: "Voiture : TMC, taxe de circulation, contrôle technique" }
+      - { slug: energie, title: "Énergie : contrat, compteur, facture" }
+      - { slug: probleme-administratif, title: "Un problème administratif : à qui s'adresser ?" }

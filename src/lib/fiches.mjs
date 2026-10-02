@@ -59,7 +59,7 @@ export function buildSidebar() {
       label: 'Commencer',
       items: [
         { label: 'Accueil', link: '/' },
-        { label: 'Parcours — niveau 1', link: '/parcours/' },
+        { label: 'Parcours', link: '/parcours/' },
         { label: 'Glossaire', link: '/glossaire/' },
       ],
     },

@@ -3,17 +3,21 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import NotionLink from '../components/NotionLink.astro';
 import Progress from '../components/Progress.astro';
 import { getIndex } from '../lib/notions';
+import { LEVELS } from '../lib/domains.mjs';
 const { fiches, parcours } = await getIndex();
 ---
-<StarlightPage frontmatter={{ title: 'Parcours — niveau 1', description: 'Les notions essentielles, dans un ordre où chacune prépare la suivante.' }}>
-  <p>Chaque bloc s'appuie sur le précédent. Les notions en italique grisé ne sont pas encore rédigées.</p>
+<StarlightPage frontmatter={{ title: 'Parcours', description: 'Toutes les notions du guide dans un ordre où chacune prépare la suivante.' }}>
+  <p>Chaque bloc s'appuie sur le précédent : les six premiers forment le socle, les suivants élargissent domaine par domaine. Les notions en italique grisé ne sont pas encore rédigées.</p>
+  <ul class="legend">
+    {Object.values(LEVELS).map((l) => <li><strong>{l.emoji} {l.label}</strong> — {l.hint}</li>)}
+  </ul>
   <Progress />
   {parcours.blocs.map((b, i) => (
     <>
-      <h2>{String.fromCharCode(65 + i)} — {b.title}</h2>
+      <h2>{i + 1}. {b.title}</h2>
       {b.intro && <p>{b.intro}</p>}
       <ol class="checklist">
-        {b.notions.map((n) => <li class={fiches.has(n.slug) ? 'done' : ''}><NotionLink slug={n.slug} title={fiches.get(n.slug)?.data.title ?? n.title} written={fiches.has(n.slug)} /></li>)}
+        {b.notions.map((n) => <li class={fiches.has(n.slug) ? 'done' : ''}><NotionLink slug={n.slug} title={fiches.get(n.slug)?.data.title ?? n.title} written={fiches.has(n.slug)} />{fiches.get(n.slug)?.data.level && <span class="badge small">{LEVELS[fiches.get(n.slug)!.data.level as keyof typeof LEVELS].emoji}</span>}</li>)}
       </ol>
     </>
   ))}

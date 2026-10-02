@@ -3,7 +3,7 @@
 import Default from '@astrojs/starlight/components/MarkdownContent.astro';
 import NotionLink from './NotionLink.astro';
 import { getIndex, slugOf, fmtDate } from '../lib/notions';
-import { LEVELS, NATURES, SCOPES, domainOf } from '../lib/domains.mjs';
+import { LEVELS, NATURES, SCOPES, STATUSES, domainOf } from '../lib/domains.mjs';
 
 const { entry } = Astro.locals.starlightRoute;
 const d = entry.data;
@@ -17,13 +17,16 @@ if (isFiche || isSituation) {
   const link = (s: string) => ({ slug: s, title: titleOf(s), written: fiches.has(s) });
   const order = parcours.blocs.flatMap((b) => b.notions.map((n) => n.slug)).filter((s) => fiches.has(s));
   const i = order.indexOf(slug);
-  const backlinks = [...fiches.entries()]
-    .filter(([s, e]) => s !== slug && (e.data.prerequisites.includes(slug) || e.data.related.includes(slug)))
-    .map(([s]) => link(s));
+  // "Pour aller plus loin" : les fiches qui déclarent celle-ci comme prérequis.
+  const advanced = [...fiches.entries()].filter(([s, e]) => s !== slug && !d.related.includes(s) && e.data.prerequisites.includes(slug)).map(([s]) => link(s));
+  // Autres fiches qui pointent vers celle-ci sans être déjà listées.
+  const listed = new Set([slug, ...d.related, ...advanced.map((n) => n.slug)]);
+  const backlinks = [...fiches.entries()].filter(([s, e]) => !listed.has(s) && e.data.related.includes(slug)).map(([s]) => link(s));
   ctx = {
     prerequisites: d.prerequisites.map(link),
     related: d.related.map(link),
     notions: d.notions.map(link),
+    advanced,
     backlinks,
     prev: i > 0 ? link(order[i - 1]) : null,
     next: i >= 0 && i < order.length - 1 ? link(order[i + 1]) : null,
@@ -38,7 +41,8 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
   {isFiche && (
     <div class="fiche-meta not-content">
       <div class="fiche-badges">
-        {level && <span class={`badge level-${d.level}`}>{level.emoji} {level.label}</span>}
+        {level && <span class={`badge level-${d.level}`} title={level.hint}>{level.emoji} {level.label}</span>}
+        {d.status !== 'publie' && <span class="badge status">{STATUSES[d.status as keyof typeof STATUSES].label}</span>}
         {domain && <span class="badge">{domain.emoji} {domain.label}</span>}
         {nature && <span class={`badge nature-${d.nature}`} title={nature.hint}>{nature.label}</span>}
         {d.scope.map((s) => <span class="badge scope">{SCOPES[s as keyof typeof SCOPES]}</span>)}
@@ -71,8 +75,11 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
       {ctx.related.length > 0 && (
         <section><h3>Voir aussi</h3><p>{ctx.related.map((n: any, k: number) => <>{k > 0 && ' · '}<NotionLink {...n} /></>)}</p></section>
       )}
+      {ctx.advanced.length > 0 && (
+        <section><h3>Pour aller plus loin</h3><p>{ctx.advanced.map((n: any, k: number) => <>{k > 0 && ' · '}<NotionLink {...n} /></>)}</p></section>
+      )}
       {ctx.backlinks.length > 0 && (
-        <section><h3>Cette notion est utilisée par</h3><p>{ctx.backlinks.map((n: any, k: number) => <>{k > 0 && ' · '}<NotionLink {...n} /></>)}</p></section>
+        <section><h3>Cette notion est aussi citée par</h3><p>{ctx.backlinks.map((n: any, k: number) => <>{k > 0 && ' · '}<NotionLink {...n} /></>)}</p></section>
       )}
       {d.sources.length > 0 && (
         <section>

@@ -28,3 +28,5 @@
 .glossary-letters { display: flex; flex-wrap: wrap; gap: 0.6rem; font-weight: 600; }
 .glossary dt { font-weight: 600; margin-top: 0.75rem; }
 .glossary dd { margin-left: 0; color: var(--sl-color-gray-2); }
+.badge.status { border-color: var(--sl-color-red); color: var(--sl-color-red-high); }
+.legend { font-size: var(--sl-text-sm); }
