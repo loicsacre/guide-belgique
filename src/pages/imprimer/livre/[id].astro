@@ -22,7 +22,7 @@ const chap = await Promise.all(
 );
 const fiches = await Promise.all(annexes.map(async (e) => ({ e, slug: slugOf(e), Content: (await render(e)).Content })));
 const sources = new Map<string, { title: string; url: string; org?: string }>();
-for (const e of [...chapitres, ...annexes]) for (const s of e.data.sources) sources.set(s.url, s);
+for (const e of [...chapitres, ...annexes]) for (const s of e.data.sources ?? []) sources.set(s.url, s);
 const today = new Date();
 const withQuiz = chap.filter((c) => c.quiz);
 ---
@@ -65,14 +65,14 @@ const withQuiz = chap.filter((c) => c.quiz);
         <div class="print-qr"><Fragment set:html={qr} />En ligne</div>
       </header>
       <Content />
-      {e.data.etapes.length > 0 && (
+      {(e.data.etapes?.length ?? 0) > 0 && (
         <div class="bloc keep">
           <h2>Le fil en bref</h2>
-          <table class="fil"><tbody>{e.data.etapes.map((x) => <tr><td>{x.quand}</td><td>{x.titre}</td><td set:html={h(x.texte ?? '')} /></tr>)}</tbody></table>
+          <table class="fil"><tbody>{(e.data.etapes ?? []).map((x) => <tr><td>{x.quand}</td><td>{x.titre}</td><td set:html={h(x.texte ?? '')} /></tr>)}</tbody></table>
         </div>
       )}
       {e.data.memo && <div class="bloc"><h2>Le mémo</h2><Memo data={e.data} /></div>}
-      {e.data.checklist.length > 0 && <div class="bloc"><h2>La checklist</h2><Checklist data={e.data} /></div>}
+      {(e.data.checklist?.length ?? 0) > 0 && <div class="bloc"><h2>La checklist</h2><Checklist data={e.data} /></div>}
       {quiz && <div class="bloc"><h2>Teste-toi</h2><p class="print-lede">Réponses en fin de livre.</p><Quiz slug={slug} mode="papier" heading={false} /></div>}
       <div class="notes-page"><h2>Mes notes — {e.data.title}</h2><div class="notes-lines"></div></div>
     </section>

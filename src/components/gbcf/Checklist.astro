@@ -7,7 +7,7 @@ const h = await inlineRenderer();
 ---
 {(data.checklist?.length ?? 0) > 0 && (
   <div class="gb-checklist">
-    {data.checklist.map((p: any) => (
+    {(data.checklist ?? []).map((p: any) => (
       <section>
         <h4>{p.phase}{p.quand && <small>{p.quand}</small>}</h4>
         <ul>{p.items.map((i: string) => <li set:html={h(i)} />)}</ul>
