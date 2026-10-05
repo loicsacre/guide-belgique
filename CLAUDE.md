@@ -122,9 +122,19 @@ La porte principale est le **chapitre** : l'accueil et la sidebar s'organisent p
 
 Dans le texte : `[[slug]]` ou `[[slug|libellé]]` (dans un tableau : `[[slug\|libellé]]`). Un slug inconnu (ni fiche, ni `parcours.yaml`) fait échouer le build.
 
-### Corps d'une fiche
+### Corps d'une fiche : un article qu'on lit d'une traite
 
-Sections habituelles (adapter si une section n'apporte rien) : *En langage simple* → *Pourquoi ça existe* → *Comment ça marche* (flux) → *Exemple concret* → *Ce que ça change pour toi* → *À ne pas confondre*. Qui paie / qui reçoit / quand en tableau quand c'est pertinent.
+Une fiche se lit **sans effort**, comme un bon article : on comprend en lisant, sans devoir reconstituer le raisonnement. Modèle : `fiches/avertissement-extrait-de-role.md`.
+
+- **Suivre les questions que le lecteur se pose, dans l'ordre.** Pas un gabarit fixe : les intertitres sont ces questions ou leurs réponses (« Pourquoi il y a un décompte », « Pourquoi le chiffre n'est presque jamais zéro », « Lire un AER, de haut en bas », « Ce que tu dois faire »…). Commencer par le mécanisme et sa raison d'être, finir par le pratique.
+- **De la prose qui relie.** Des paragraphes courts avec les mots de liaison (« donc », « mais », « résultat : »). Les puces servent aux listes de cas ou d'étapes, et chaque puce est une phrase complète qui explique. Pas de suite de tableaux et de puces sans phrase entre eux.
+- **Répondre à la vraie question.** Celle qui amène le lecteur sur la page (« pourquoi je dois encore payer ? »), pas seulement la définition.
+- **Chaque terme expliqué là où il apparaît**, en une incise (« la communication structurée, ce numéro entre +++ qui… »), même s'il a sa fiche. Le lien vient en plus, pas à la place.
+- **Un exemple chiffré qu'on suit**, cohérent avec les exemples fil rouge (voir `MEMORY.md`), marqué fictif.
+- **Tableaux** seulement pour comparer ou pour lire un document ligne par ligne ; schémas `text` seulement s'ils éclairent un flux que la prose rend difficile.
+- Terminer par « À ne pas confondre » (en prose si possible) et « Nature des chiffres de cette page ».
+
+Les anciennes fiches suivent encore le gabarit *En langage simple → Pourquoi ça existe → Comment ça marche → Exemple → Ce que ça change pour toi → À ne pas confondre*, souvent trop découpé : les réécrire progressivement sur le nouveau modèle, chapitre par chapitre, sans perdre d'information.
 
 Les termes connus (titres courts et alias des fiches) sont **liés automatiquement** à leur première occurrence dans une page, avec la définition courte en infobulle (`src/lib/remark-autolink.mjs`, liste de mots exclus `STOP`). Un `[[slug]]` explicite reste prioritaire. Cela ne dispense pas d'expliquer un terme dans le contexte : le lien sert à approfondir.
 

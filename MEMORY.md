@@ -41,6 +41,7 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 | 2026-10-05 | Retrait de l'effet formation : plus de barre de progression ni de cases ⬜/✅, « À comprendre d'abord » → « Utile à connaître », badges secondaires en pied de fiche, « Ce que tu dois retenir » → « En bref » (3 points), mémo/checklist/imprimables repliés en fin de situation | Ces éléments donnaient l'impression d'un cursus. |
 | 2026-10-05 | Quiz **par chapitre** (`src/data/quiz/<id-chapitre>.yaml`), replié en bas de la page du chapitre ; plus de quiz sur les pages | Un quiz par page faisait e-learning. |
 | 2026-10-05 | Les livres sont construits par chapitres (`livres.yaml` : ids de chapitres) : présentation, fiches, situations, quiz en fin de volume | Même logique que le site. |
+| 2026-10-05 | Les fiches s'écrivent comme des articles qu'on lit d'une traite (questions du lecteur dans l'ordre, prose qui relie, termes expliqués en incise, un exemple suivi) ; modèle : `avertissement-extrait-de-role` | Lolo : les fiches découpées en tableaux et puces se lisent mal, il veut « comprendre en lisant sans devoir réfléchir ». |
 | 2026-10-05 | Une mise en situation se suffit à elle-même : pas de limite de longueur, répétitions avec les fiches acceptées ; seuls les détails qui ne servent pas l'histoire vont dans les fiches (déplacer, jamais supprimer) | Lolo : « l'idée est de bien tout comprendre, quitte à se répéter, car je ne lis pas dans l'ordre ». Remplace la règle des 5 à 8 minutes posée le même jour. |
 
 ## État actuel
@@ -63,6 +64,7 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 
 ## Prochaines étapes
 
+- **Réécrire les fiches au format article**, chapitre par chapitre (modèle : `avertissement-extrait-de-role`). Commencer par les chapitres Impôts et Travail, les plus consultés.
 - Les autres mises en situation **n'ont pas à être raccourcies**. À faire au cas par cas seulement : vérifier que chaque passage sert l'histoire, et créer ou enrichir les fiches quand une situation est la seule à porter une notion (comme c'était le cas pour la société).
 - **Quiz de chapitre** pour Travail et salaire, puis Les impôts (8 à 12 questions chacun).
 - Écrire de vraies présentations de chapitre plus riches si nécessaire (aujourd'hui un paragraphe chacun) et vérifier l'ordre de lecture de chaque chapitre.
@@ -93,6 +95,7 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 - EPUB : `export.mjs` nettoie le HTML (blocs expressive-code → `<pre>`, `align` → style, liens internes → fichiers du livre). Valider avec `epubcheck` (pip) après un changement de rendu.
 
 ## Journal des sessions
+- **2026-10-05 (suite)** — Fiche AER réécrite au format article (et délai de réclamation corrigé : un an, pas six mois) ; règle d'écriture des fiches dans `CLAUDE.md`.
 - **2026-10-05** — Mission « un manuel, pas une formation » : analyse du site, chapitres, retrait de l'effet formation, réécriture de `creer-societe` + 4 fiches, quiz de chapitre, livres par chapitre, mise à jour VVPR-bis / réserve de liquidation.
 - **2026-10-02 (tard)** — Mission « Maison & travaux » (scope complet) : 22 fiches, 2 récits, 3 documents, 2 outils, carte /maison/, intégration accueil/système/fiches liées. Build vérifié (175 pages, captures OK, pas d'erreur console). Non commité : `npm run deploy` à lancer par Lolo.
 
