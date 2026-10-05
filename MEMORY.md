@@ -91,6 +91,7 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 - Ne pas copier `node_modules` d'une machine à l'autre (binaires natifs) : `npm install` sur chaque PC. **Jamais de `npm install` via `device_bash`** : la VM est Linux, elle remplace les binaires macOS du dossier et casse `npm run dev` sur le Mac (arrivé le 2026-10-02).
 - Un seul fichier au schéma invalide (ex. `scope: [belgique]` avant son ajout) vide toute la collection : Starlight répond alors « slug … does not exist » sur la première page de la sidebar. Lancer `npm run build`, qui affiche la vraie erreur.
 - `npm run export` cherche Chromium : celui de Playwright (`npx playwright-core install chromium`), sinon Google Chrome installé, sinon `CHROME_PATH`. En session cloud : `CHROME_PATH=/opt/pw-browsers/chromium-*/chrome-linux/chrome`.
+- Après une modification d'un plugin remark (`src/lib/remark-*.mjs`), Astro peut resservir l'ancien rendu depuis son cache : `rm -rf node_modules/.astro .astro` puis relancer `npm run dev` ou `npm run build`.
 - Quiz YAML : mettre entre apostrophes une question ou explication qui contient « : ».
 - EPUB : `export.mjs` nettoie le HTML (blocs expressive-code → `<pre>`, `align` → style, liens internes → fichiers du livre). Valider avec `epubcheck` (pip) après un changement de rendu.
 

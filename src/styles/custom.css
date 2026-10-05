@@ -123,3 +123,9 @@ a.autolink:hover { color: var(--sl-color-text-accent); text-decoration-style: so
 .home-chapitres { margin-top: 1rem; }
 .home-chapitres small { display: block; margin-top: 0.35rem; font-size: var(--sl-text-xs); color: var(--sl-color-gray-4); }
 .som-chap h2 a { color: inherit; }
+
+/* Note « Les chiffres de cette page » (remark-chiffres) : discrète, en fin de texte */
+.sl-markdown-content .chiffres-note { margin-top: 2.5rem; padding-top: 0.75rem; border-top: 1px solid var(--sl-color-hairline); font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); }
+.sl-markdown-content .chiffres-note p { margin: 0.3rem 0; }
+.sl-markdown-content .chiffres-note .chiffres-head { font-size: var(--sl-text-xs); }
+.sl-markdown-content .chiffres-note strong { color: var(--sl-color-gray-2); }

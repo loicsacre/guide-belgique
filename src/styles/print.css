@@ -84,3 +84,5 @@ body.print-a5 { max-width: 148mm; font-size: 10pt; line-height: 1.5; }
 .chap-opener { height: auto; min-height: 150mm; justify-content: flex-start; padding-top: 25mm; }
 .chap-chain { font-size: 0.85em; color: var(--gb-accent); border-left: 3px solid var(--gb-accent); padding-left: 0.6rem; margin-top: 1rem; }
 .chap-qr { margin-top: 1.5rem; }
+.print .chiffres-note { margin-top: 1rem; padding-top: 0.4rem; border-top: 1px solid #ccc; font-size: 0.85em; color: #555; }
+.print .chiffres-note p { margin: 0.2rem 0; }

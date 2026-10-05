@@ -1,17 +1,9 @@
-// La section « Nature des chiffres de cette page » (43 pages) : on la renomme en clair et on y ajoute
-// la légende des pastilles, pour qu'elle se comprenne sans connaître la convention du guide.
+// La section « Nature des chiffres de cette page » devient une petite note discrète en fin de page :
+// un titre court, la légende des pastilles sur une ligne, puis le texte propre à la page.
+// Ce n'est plus un intertitre (il sort aussi du sommaire « Sur cette page »).
 import { visit } from 'unist-util-visit';
 
 const TITRE = 'Nature des chiffres de cette page';
-const LEGENDE = [
-  'Les chiffres du guide ne sont pas tous du même genre, et une pastille le signale : ',
-  { strong: '🔴 une règle officielle' },
-  ' (loi, taux, délai), valable pour la période indiquée et qui peut changer d’une année à l’autre ; ',
-  { strong: '🟠 un repère' },
-  ', un ordre de grandeur courant mais pas une règle ; ',
-  { strong: '🔵 un exemple inventé' },
-  ' pour illustrer le mécanisme.',
-];
 
 export default function remarkChiffres() {
   return (tree) => {
@@ -19,13 +11,21 @@ export default function remarkChiffres() {
       if (node.depth !== 2 || !parent) return;
       const text = node.children.map((c) => c.value ?? '').join('').trim();
       if (text !== TITRE) return;
-      node.children = [{ type: 'text', value: 'À propos des chiffres de cette page' }];
-      const para = {
+      // Le contenu de la section : tout jusqu'au prochain intertitre de même niveau.
+      let end = index + 1;
+      while (end < parent.children.length && !(parent.children[end].type === 'heading' && parent.children[end].depth <= 2)) end++;
+      const body = parent.children.slice(index + 1, end);
+      const head = {
         type: 'paragraph',
-        children: LEGENDE.map((x) => (typeof x === 'string' ? { type: 'text', value: x } : { type: 'strong', children: [{ type: 'text', value: x.strong }] })),
+        data: { hProperties: { className: ['chiffres-head'] } },
+        children: [
+          { type: 'strong', children: [{ type: 'text', value: 'Les chiffres de cette page' }] },
+          { type: 'text', value: ' — 🔴 règle officielle, qui peut changer d’une année à l’autre · 🟠 repère courant, pas une règle · 🔵 exemple inventé' },
+        ],
       };
-      parent.children.splice(index + 1, 0, para);
-      return index + 2;
+      const aside = { type: 'chiffres', data: { hName: 'aside', hProperties: { className: ['chiffres-note'] } }, children: [head, ...body] };
+      parent.children.splice(index, end - index, aside);
+      return index + 1;
     });
   };
 }
