@@ -61,8 +61,6 @@ for (const s of loadSituations()) {
   for (const e of s.data.etapes ?? []) checkRefs(`${w} (étape ${e.titre})`, e.notions);
   if (!(s.data.etapes ?? []).length) warnings.push(`${w} : aucune étape (etapes:) définie`);
   if (![...loadParcours().blocs].some((b) => (b.situations ?? []).includes(s.slug))) warnings.push(`${w} : rattachée à aucun chapitre (situations: dans parcours.yaml)`);
-  const words = s.body.split(/\s+/).filter(Boolean).length;
-  if (words > 1600) warnings.push(`${w} : ${words} mots (≈ ${Math.round(words / 200)} min) — une mise en situation vise 5 à 8 minutes ; déplacer les détails vers les fiches`);
   checkRefs(`${w} (corps)`, wikiRefs(s.body));
 }
 for (const s of loadDocuments()) {

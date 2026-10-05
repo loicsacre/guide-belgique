@@ -27,7 +27,7 @@ Règles qui en découlent :
 
 - **Complet n'est pas surchargé.** Mieux vaut vingt fiches bien séparées qu'une page qui couvre vingt sujets. La richesse vient du réseau, pas de la longueur d'une page.
 - **Une information au bon endroit.** Pour chaque paragraphe : est-il nécessaire pour comprendre *cette* page ? Sinon, il va dans la fiche concernée et la page garde un lien. **Ne jamais supprimer de la richesse : la déplacer.**
-- **Une mise en situation n'est pas exhaustive.** Elle se lit en 5 à 8 minutes (`npm run check` avertit au-delà de 1 600 mots), introduit les notions au moment où le personnage les rencontre, en une ou deux phrases, puis renvoie à la fiche (« → Comprendre l'ISoc »). Les détails techniques (VVPR-bis, conditions fiscales, calendriers) vivent dans les fiches.
+- **Une mise en situation se suffit à elle-même.** On ne lit pas le guide dans l'ordre : une situation réexplique tout ce qu'il faut pour comprendre l'histoire, **quitte à répéter une fiche**. Pas de limite de longueur ; le critère est que chaque passage serve à comprendre ce qui arrive au personnage. Elle introduit les notions au moment où il les rencontre, les explique assez pour suivre, puis renvoie à la fiche pour aller plus loin (« → Comprendre l'ISoc »). Ce qui ne sert pas l'histoire (règles de détail, exceptions, régimes particuliers, calendriers complets) vit dans les fiches.
 - **Une fiche se lit à trois niveaux** : « En une phrase » (`short`), quelques paragraphes pour comprendre, puis les liens pour explorer.
 - **Pas d'effet formation** : pas de progression ni de cases à cocher, pas de score mis en avant, pas de quiz par page, pas de longues listes « à retenir », pas de gros mémo au milieu de la lecture. Le mémo, la checklist et les versions imprimables sont repliés en fin de page.
 - **Ne pas ajouter de fonctionnalité qui n'améliore pas la lecture.** Priorité : qualité du contenu, clarté, organisation, lisibilité, liens, mises en situation ; les fonctionnalités ensuite.
@@ -132,7 +132,7 @@ Sont **générés automatiquement** en pied de fiche, ne pas les écrire à la m
 
 ### Mises en situation
 
-Le corps Markdown est le **récit** (voir principe 0), avec un personnage, en 5 à 8 minutes : la situation concrète → pourquoi la question se pose → ce que ça change globalement → les notions rencontrées, chacune introduite brièvement avec un lien « → Comprendre … » → une courte conclusion (ce que le personnage décide) → « En bref » (3 points) → « Nature des chiffres de cette page ». Les notions citées en `[[slug]]` dans le récit sont annoncées en tête de page (« Les notions que tu vas croiser »).
+Le corps Markdown est le **récit** (voir principe 0), avec un personnage, aussi long que nécessaire pour bien comprendre : la situation concrète → pourquoi la question se pose → ce que ça change globalement → les notions rencontrées, chacune introduite brièvement avec un lien « → Comprendre … » → une courte conclusion (ce que le personnage décide) → « En bref » (3 points) → « Nature des chiffres de cette page ». Les notions citées en `[[slug]]` dans le récit sont annoncées en tête de page (« Les notions que tu vas croiser »).
 
 Frontmatter `etapes:` : liste de `{ titre, quand, texte, notions: [slugs] }`, repliée en fin de page (« Le fil de l'histoire »). Chaque situation est rattachée à au moins un chapitre (`situations:` dans `parcours.yaml`) et a ses propres `sources` et `last_verified`.
 
