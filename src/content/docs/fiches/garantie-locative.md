@@ -63,6 +63,19 @@ Prenons un exemple **fictif** : un loyer de 800 € hors charges. Sur un compte 
 
 Sans accord, le bailleur **ne peut pas** se servir seul. Mais toi non plus : tu ne peux pas récupérer l'argent sans son accord ou celui du juge. En Flandre, il y a une protection en plus : si le bailleur n'agit pas en justice dans l'année, la garantie te revient entièrement.
 
+Tout le parcours de la garantie tient en trois temps :
+
+```text
+ENTRÉE   garantie bloquée + état des lieux d'entrée détaillé,
+         signé par les deux
+PENDANT  les intérêts s'accumulent sur le compte (à ton profit)
+SORTIE   état des lieux de sortie, comparé à celui d'entrée
+         → accord écrit des deux parties (ou décision du juge
+           de paix) pour libérer
+         → la banque te rend la garantie + intérêts,
+           moins les éventuels dégâts imputés
+```
+
 ## Pourquoi l'état des lieux compte autant
 
 C'est l'état des lieux qui décide, au bout du compte, de ce que tu récupères. Quelques règles à connaître :

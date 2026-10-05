@@ -49,6 +49,18 @@ Une dette qui finance quelque chose de **durable ou de productif** (un logement 
 
 Une dette qui finance de la **consommation** (une carte de crédit, un découvert, des vacances à crédit) est à éviter. Le séjour est terminé, l'argent est dépensé, mais la dette, elle, reste à rembourser, avec des intérêts souvent élevés. → [[credit-consommation]]
 
+La règle, résumée :
+
+```text
+Dette qui finance un actif         crédit hypothécaire, études,
+durable ou productif               outil de travail
+  → acceptable si la mensualité tient dans le budget
+
+Dette qui finance de la            carte de crédit, découvert,
+consommation                       vacances à crédit
+  → à éviter : l'achat a disparu, la dette reste
+```
+
 ## Ce que peut faire celui à qui tu dois
 
 Quand une dette n'est pas payée, le créancier ne dispose pas des mêmes armes selon qui il est. Le tableau compare les cas les plus courants.

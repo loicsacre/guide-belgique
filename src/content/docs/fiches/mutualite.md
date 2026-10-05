@@ -35,6 +35,16 @@ C'est toi qui la choisis. Il en existe plusieurs familles (chrétienne, socialis
 
 Prenons un exemple **fictif**, avec des chiffres indicatifs. Tu consultes ton médecin, qui te demande 30 € d'honoraires. L'assurance obligatoire, via ta mutualité, en prend en charge la plus grande partie, environ 26 €. Il te reste environ 4 € : c'est le **ticket modérateur**, la part qui reste à ta charge. Son nom dit sa raison d'être : laisser une petite part au patient pour « modérer » la consommation de soins.
 
+Les 30 € se partagent donc en deux parts :
+
+```text
+Tu consultes un médecin : honoraires 30 €
+   │
+   ├── part remboursée par l'assurance obligatoire   ≈ 26 €
+   │   (via ta mutualité)
+   └── ta part : le TICKET MODÉRATEUR                ≈  4 €
+```
+
 Ce montant n'est pas fixe. Le ticket modérateur dépend du soin, de ton statut et du fait que tu aies ou non un dossier médical global chez ton généraliste, c'est-à-dire que tu l'aies désigné comme médecin de référence.
 
 Selon l'endroit où tu es soigné, tu avances ou non l'argent. En principe, tu paies le prestataire puis ta mutualité te rembourse. Mais avec le **tiers payant**, la mutualité paie directement le prestataire, et tu n'avances que le ticket modérateur. C'est la règle à la pharmacie et à l'hôpital, et c'est souvent le cas chez le généraliste.

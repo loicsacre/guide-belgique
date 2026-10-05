@@ -60,6 +60,20 @@ Suivons un exemple **fictif** : un salarié qui gagne 3 500 € brut par mois et
 
 S'il retirait son argent avant 60 ans, il subirait une pénalité de 33 %. L'épargne-pension n'est donc pas une épargne de précaution : c'est de l'argent auquel on ne touche pas. → [[epargne-de-precaution]]
 
+Toute la vie du contrat, en raccourci :
+
+```text
+Tu verses 1 050 € par an (87,50 €/mois)
+  → réduction d'impôt de 315 € sur l'AER suivant
+  → le capital grandit (fonds : actions et obligations ;
+    assurance : taux garanti)
+  → à 60 ans : taxe anticipative de 8 % sur le capital
+    (fonds : calculée sur un rendement fictif)
+  → de 60 à 64 ans : versements toujours avec réduction,
+    sans nouvelle taxe
+  ✗ retrait avant 60 ans : pénalité de 33 %
+```
+
 ## Un fonds ou une assurance ?
 
 L'épargne-pension se fait sous deux formes, qui donnent le même avantage fiscal mais pas le même rapport entre risque et rendement.

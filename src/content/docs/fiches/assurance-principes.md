@@ -66,6 +66,17 @@ Toutes les assurances de particuliers se rangent dans trois familles, selon ce q
 2. **Les assurances de dommages** jouent quand ce sont tes biens qui sont abîmés : l'assurance incendie du logement, l'omnium pour ta voiture, l'assurance vol. → [[assurance-habitation]]
 3. **Les assurances de personnes** protègent ta santé, ta vie ou tes revenus : l'assurance hospitalisation, l'assurance solde restant dû d'un crédit, l'assurance revenu garanti. → [[assurance-hospitalisation]] · [[assurance-solde-restant-du]]
 
+Pour savoir dans quelle famille ranger un contrat, demande-toi ce qu'il protège :
+
+```text
+RESPONSABILITÉ → tu as causé un dommage à autrui
+                 RC familiale, RC auto, RC professionnelle
+DOMMAGES       → tes biens sont abîmés
+                 incendie, omnium, vol
+PERSONNES      → ta santé, ta vie, tes revenus
+                 hospitalisation, solde restant dû, revenu garanti
+```
+
 ## Les règles du jeu en Belgique
 
 **Peu d'assurances sont obligatoires.** La RC auto l'est, tout comme l'assurance incendie du locataire (dans les trois Régions, à Bruxelles pour les baux conclus ou renouvelés depuis novembre 2024), et la RC pour certaines professions. Tout le reste est facultatif, mais souvent **exigé** par quelqu'un : la banque qui te prête pour acheter, le bailleur qui te loue un logement.

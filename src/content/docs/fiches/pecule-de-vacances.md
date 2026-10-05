@@ -60,6 +60,13 @@ Pour un **employé**, tout passe par l'employeur, sur la base de ton salaire du 
 
 Le décalage d'un an a une conséquence directe : l'année où tu commences à travailler, tu construis des droits, mais tu n'en as pas encore. La première année, tu as donc peu ou pas de congés légaux. Ce n'est qu'à partir de l'année suivante que tu prends les congés acquis.
 
+Le décalage, vu sur deux années :
+
+```text
+Année N   : tu commences à travailler → tu construis des droits
+Année N+1 : tu prends les congés acquis en N
+```
+
 Il existe plusieurs solutions pour ne pas passer un an sans vacances.
 
 - **Les vacances jeunes** sont réservées aux jeunes diplômés de moins de 25 ans qui commencent à travailler.

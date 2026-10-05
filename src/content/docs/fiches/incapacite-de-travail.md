@@ -53,6 +53,21 @@ Voici le parcours d'un salarié qui tombe malade, dans l'ordre.
 
 Ces pourcentages sont des ordres de grandeur, et ils s'appliquent à un salaire plafonné : au-delà d'un certain montant, le surplus n'est pas pris en compte.
 
+Sur une ligne du temps, les deux payeurs se passent le relais ainsi :
+
+```text
+Jour 1       tu préviens l'employeur immédiatement,
+             certificat médical dans le délai du règlement
+             de travail (souvent 48 h)
+Jours 1-30   SALAIRE GARANTI : l'employeur paie
+             (100 % pour un employé, dégressif pour un ouvrier)
+Jour 31 →    INDEMNITÉS DE LA MUTUALITÉ : ≈ 60 % du brut
+             plafonné (incapacité primaire)
+Après 1 an   INVALIDITÉ, reconnue par l'INAMI : taux selon
+             la situation familiale (≈ 65 % chef de ménage,
+             55 % isolé, 40 % cohabitant)
+```
+
 Prenons un exemple **fictif** : un employé à 3 500 € brut tombe malade pendant trois mois. Le premier mois, son employeur lui verse son salaire normal. Les deux mois suivants, sa mutualité lui verse environ 60 % de son brut, soit autour de 2 100 € par mois, et moins si son salaire dépasse le plafond. La différence avec son salaire habituel est nette, et elle se creuserait encore s'il restait malade plus d'un an et vivait avec quelqu'un qui n'est pas à sa charge.
 
 ## Ce que tu dois faire

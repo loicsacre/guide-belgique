@@ -39,6 +39,12 @@ Quand une seule personne réunit les trois, on parle de **pleine propriété**. 
 
 Le découpage le plus courant est celui-ci : la pleine propriété égale l'**usufruit** (user et percevoir les fruits) plus la **nue-propriété** (disposer, ce qu'on appelle aussi « le fond »).
 
+```text
+PLEINE PROPRIÉTÉ  =  USUFRUIT          +  NUE-PROPRIÉTÉ
+                     user + percevoir     disposer
+                     les fruits           (« le fond »)
+```
+
 ## Usufruit et nue-propriété : qui peut quoi
 
 L'**usufruitier** profite du bien, pour toute sa vie ou pour une durée fixée. Le **nu-propriétaire** en garde le fond, et attend. Leurs droits et leurs obligations se répondent.

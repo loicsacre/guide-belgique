@@ -30,6 +30,36 @@ Résultat : deux choses qui semblent proches peuvent dépendre de deux niveaux d
 
 D'où le réflexe qui traverse tout ce guide : face à une règle, la première question est « qui est compétent ? ».
 
+Voici les étages, que la suite de la page parcourt un par un :
+
+```text
+           🇪🇺 Union européenne
+        (cadre : TVA, marché unique, normes…)
+                       │
+               🇧🇪 État fédéral
+   impôt sur les revenus · sécurité sociale
+   droit du travail · justice · défense
+   police fédérale
+                       │
+        ┌──────────────┴──────────────┐
+  3 Régions                    3 Communautés
+  (le territoire)              (les personnes)
+  Wallonie · Bruxelles         française · flamande
+  · Flandre                    · germanophone
+  logement · urbanisme         enseignement · culture
+  énergie · environnement      médias
+  emploi (Forem/Actiris/VDAB)  matières « personnalisables »
+  droits d'enregistrement,     (aide aux personnes,
+  succession,                  une partie de la santé…)
+  précompte immobilier
+                       │
+                   Provinces
+                       │
+                   Communes
+  population & domicile · état civil
+  taxes communales · CPAS · police locale
+```
+
 ## Les étages du pouvoir, du plus large au plus proche
 
 **Tout en haut, l'Union européenne.** Elle ne gère pas ton dossier, mais elle fixe le cadre que la Belgique doit respecter : la TVA, le marché unique, de nombreuses normes.

@@ -47,6 +47,22 @@ Obtenir un crédit hypothécaire suit presque toujours les mêmes étapes, et el
 6. **Tu signes l'acte de crédit chez le notaire**, en même temps que l'acte d'achat. C'est ce jour-là que l'hypothèque est constituée. → [[notaire-acte-authentique]]
 7. **Tu rembourses**, par mensualités, pendant 10 à 30 ans.
 
+Le parcours entier, en un coup d'œil :
+
+```text
+1. Budget et capacité   combien je peux rembourser par mois ?
+2. Simulations          plusieurs banques ou un courtier,
+                        parfois un accord de principe
+3. Compromis signé      condition suspensive d'obtention
+                        du crédit (souvent 4 à 6 semaines)
+4. Dossier              fiches de paie, AER, extraits de compte,
+                        compromis, PEB, expertise éventuelle
+5. OFFRE DE CRÉDIT      ESIS, le document standardisé européen :
+                        taux, TAEG, mensualité, assurances, frais
+6. Acte de crédit       chez le notaire, avec l'acte d'achat
+7. Remboursement        mensualités pendant 10 à 30 ans
+```
+
 Tu peux voir une offre complète annotée dans le document [Lire une offre de crédit hypothécaire](../../documents/offre-de-credit/).
 
 ## Ce que la banque regarde avant de dire oui

@@ -65,6 +65,18 @@ Si tu as donné tes codes ou validé un paiement suspect, chaque minute compte. 
 3. **Puis porte plainte à la police.** C'est nécessaire pour obtenir un remboursement.
 4. **Et signale la fraude** à suspect@safeonweb.be, l'adresse de Safeonweb, le service du Centre pour la cybersécurité Belgique (CCB) qui recense les tentatives.
 
+L'ordre à garder en tête, du plus urgent au moins urgent :
+
+```text
+Immédiatement  Card Stop : 078 170 170 (cartes, app, itsme)
+               → blocage
+Puis           ta banque (numéro officiel) : contestation,
+               demande de rappel des fonds
+Puis           plainte à la police (nécessaire pour un
+               remboursement)
+Et             signale à suspect@safeonweb.be
+```
+
 Reste la question du remboursement. La banque doit te **rembourser** une opération que tu n'as pas autorisée, sauf si tu as été **gravement négligent**. Le problème, c'est qu'avoir communiqué tes codes est souvent considéré comme une négligence grave. Mais tout n'est pas perdu : les banques belges ont mis en place des remboursements partiels pour le phishing dans certains cas. Argumente, en expliquant précisément comment tu as été trompé.
 
 :::caution[Dépend de ta situation]

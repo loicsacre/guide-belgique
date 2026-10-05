@@ -46,6 +46,21 @@ Une facture contient toujours les mêmes informations, qu'on retrouve d'ailleurs
 - **Les mentions particulières** quand elles s'appliquent, par exemple « autoliquidation » (le client paie la TVA lui-même, pour une vente à un assujetti d'un autre pays européen), « régime de la franchise » (tu ne factures pas de TVA parce que ton activité est petite) ou « TVA 6 % — habitation de plus de 10 ans ».
 - **Les conditions de paiement** : l'échéance et les intérêts de retard.
 
+La même liste, prête à cocher :
+
+```text
+□ Date et numéro séquentiel (sans trou)
+□ Ton nom ou ta dénomination, adresse, numéro d'entreprise
+  BE 0xxx.xxx.xxx (+ « TVA » si assujetti), compte bancaire
+□ Nom, adresse, numéro de TVA du client (s'il est assujetti)
+□ Date de la livraison ou prestation, si elle est différente
+□ Description, quantité, prix unitaire HTVA
+□ Base par taux de TVA, taux, montant de TVA, total TVAC
+□ Mentions particulières : « autoliquidation », « régime de
+  la franchise », « TVA 6 % — habitation de plus de 10 ans »…
+□ Conditions de paiement (échéance, intérêts de retard)
+```
+
 Pour voir tout cela sur une vraie mise en page, lis le document annoté [Lire une facture](../../documents/facture/).
 
 ## Les règles du jeu

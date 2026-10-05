@@ -42,6 +42,23 @@ Une fiche de paie paraît compliquée, mais elle se lit de haut en bas, comme un
 3. **Les retenues.** D'abord les cotisations sociales personnelles (ONSS), ce qui donne le montant **imposable** ; puis, sur ce montant, le précompte professionnel et la cotisation spéciale de sécurité sociale.
 4. **Le net.** On ajoute les éléments non imposables (des remboursements de frais), on retire les autres retenues, et on obtient le **net à payer**.
 
+Vus d'en haut, les quatre blocs forment une cascade : chaque bloc part du résultat du précédent.
+
+```text
+┌ 1. QUI / QUAND ─────────────────────────────────────────┐
+│ employeur, numéro de matricule, période, commission     │
+│ paritaire, jours/heures prestés, régime de travail      │
+├ 2. BRUT ────────────────────────────────────────────────┤
+│ salaire de base, heures sup, primes, avantages en nature│
+├ 3. RETENUES ────────────────────────────────────────────┤
+│ ONSS personnel → IMPOSABLE → précompte professionnel,   │
+│ cotisation spéciale de sécurité sociale                 │
+├ 4. NET ─────────────────────────────────────────────────┤
+│ ± éléments non imposables (frais), − autres retenues    │
+│ = NET À PAYER                                           │
+└─────────────────────────────────────────────────────────┘
+```
+
 ## Une fiche type, ligne par ligne
 
 Voici une fiche de paie **fictive**, pour un brut de 3 500 € avec une voiture de société. Seuls le taux ONSS de 13,07 % et la part personnelle de 1,09 € par chèque-repas sont réels ; les autres montants sont inventés pour l'exemple.

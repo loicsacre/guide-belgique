@@ -54,6 +54,19 @@ Prenons un exemple **fictif** : la BCE relève son taux directeur de 0,5 %. Voic
 
 Il y a aussi des effets secondaires. L'euro se renforce face aux autres monnaies, et les actions comme l'immobilier subissent une pression à la baisse.
 
+Toute la chaîne d'un coup d'œil, effets secondaires compris :
+
+```text
+BCE relève son taux directeur de 0,5 % (exemple fictif)
+  → les banques empruntent plus cher
+  → taux des nouveaux crédits hypothécaires ↑ (en quelques semaines)
+  → taux des comptes d'épargne ↑ (plus lentement)
+  → crédits à taux variable révisés à la hausse
+  → ménages et entreprises empruntent et dépensent moins
+  → la demande ralentit, les prix montent moins vite
+  → à côté : l'euro se renforce, actions et immobilier sous pression
+```
+
 ## Ce que ça a donné récemment
 
 Cette chaîne n'est pas théorique : on l'a vue à l'œuvre en 2022-2023. En un peu plus d'un an, de juillet 2022 à septembre 2023, la BCE a fait passer son taux de dépôt de −0,5 % à 4 %, en dix hausses successives. Les crédits hypothécaires sont passés d'environ 1,5 % à plus de 3,5 %, le volume d'achats immobiliers a chuté, et les comptes d'épargne ont (un peu) remonté.

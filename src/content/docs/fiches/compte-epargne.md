@@ -41,6 +41,16 @@ La **prime de fidélité** ne s'acquiert que si l'argent reste sur le compte **1
 
 Les banques affichent souvent les deux séparément, par exemple « 0,75 % + 1,25 % », et c'est leur somme qui fait le rendement total.
 
+Comment les deux morceaux s'additionnent :
+
+```text
+  Taux de base        acquis jour par jour,
+                      peut changer à tout moment
++ Prime de fidélité   acquise seulement si l'argent reste
+                      12 MOIS d'affilée, versée ensuite
+= Rendement total     (souvent affiché « 0,75 % + 1,25 % »)
+```
+
 Un exemple **fictif** avec ces taux : tu déposes 10 000 €. Sur un an, le taux de base te rapporte 75 €. Si l'argent reste douze mois complets, la prime de fidélité ajoute 125 €. Mais si tu retires ces 10 000 € après 11 mois, tu gardes le taux de base de ces 11 mois et tu **perds la prime** sur ce montant. De même, changer de banque pour un « meilleur taux » te fait repartir de zéro pour la fidélité : le compteur des 12 mois recommence chez la nouvelle banque.
 
 ## Ce que le fisc prend sur les intérêts

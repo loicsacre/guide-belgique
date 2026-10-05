@@ -49,6 +49,21 @@ Le parcours suit presque toujours le même ordre.
 5. **L'acte authentique est signé** chez le notaire, au plus tard 4 mois après le compromis. Ce délai n'est pas un hasard : c'est celui dont on dispose pour payer les [[droits-enregistrement|droits d'enregistrement]], l'impôt régional sur l'achat.
 6. **Tu reçois les clés**, tu paies le solde du prix, et la propriété t'est transférée.
 
+Le même parcours, d'un seul tenant :
+
+```text
+Visite
+  → OFFRE D'ACHAT écrite (prix, délai de validité, conditions)
+    ← déjà contraignante si elle est acceptée !
+  → acceptation du vendeur
+  → COMPROMIS (2 à 4 semaines plus tard),
+    acompte de 5 à 10 % sur le compte du notaire
+  → levée des conditions suspensives (crédit : 4 à 6 semaines)
+  → ACTE AUTHENTIQUE chez le notaire, au plus tard 4 mois
+    après le compromis (délai des droits d'enregistrement)
+  → remise des clés, paiement du solde, transfert de propriété
+```
+
 Prenons un exemple **fictif** : un appartement à 250 000 €. L'acompte versé au compromis tourne autour de 12 500 à 25 000 €. Le reste du prix, financé en grande partie par ton crédit hypothécaire, est payé le jour de l'acte. → [[credit-hypothecaire]]
 
 ## Ce qu'un bon compromis contient

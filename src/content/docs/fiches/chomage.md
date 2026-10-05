@@ -56,6 +56,19 @@ Le chômage fait intervenir plusieurs organismes, ce qui déroute souvent. Chacu
 
 Retiens la logique : l'ONEM décide, l'organisme de paiement paie, la Région accompagne. → [[administrations-et-organismes]]
 
+Le circuit complet, en une vue :
+
+```text
+Tu perds ton emploi (C4)
+  → inscription comme demandeur d'emploi :
+    Forem (Wallonie) / Actiris (Bruxelles) / VDAB (Flandre)
+  → demande d'allocations via un ORGANISME DE PAIEMENT :
+    syndicat (CSC, FGTB, CGSLB) ou CAPAC (public, gratuit)
+  → l'ONEM (fédéral) vérifie tes droits et décide
+  → l'organisme de paiement verse l'allocation chaque mois
+  → la Région t'accompagne et contrôle ta recherche d'emploi
+```
+
 ## Les conditions pour y avoir droit
 
 Quatre conditions reviennent, et chacune répond à la logique d'une assurance.

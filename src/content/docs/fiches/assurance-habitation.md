@@ -57,6 +57,21 @@ Un contrat d'assurance habitation comprend un socle de **garanties de base**, qu
 
 À côté, tu peux ajouter des **options** : le vol, la protection juridique (qui paie tes frais d'avocat en cas de litige), la piscine, les panneaux solaires, les pertes indirectes et l'assistance.
 
+Le contrat se lit donc en deux étages, un socle imposé et des options au choix :
+
+```text
+GARANTIES DE BASE (liées par la loi, toujours ensemble)
+  incendie, explosion, foudre
+  tempête, grêle, pression de la neige
+  dégâts des eaux, bris de vitrage
+  catastrophes naturelles (inondation, tremblement de terre)
+  heurt de véhicule, vandalisme
+  responsabilité civile « bâtiment »
+OPTIONS (au choix)
+  vol, protection juridique, piscine, panneaux solaires,
+  pertes indirectes, assistance
+```
+
 Les **catastrophes naturelles** sont obligatoirement incluses depuis 2006. Après les inondations de 2021, les plafonds d'intervention des assureurs ont été relevés, et un filet de l'État prend le relais au-delà.
 
 ## Bien fixer la valeur assurée

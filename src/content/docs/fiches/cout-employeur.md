@@ -40,6 +40,20 @@ Le coût employeur s'empile en plusieurs étages, du plus visible au plus discre
 4. **Les avantages**, comme les chèques-repas, l'assurance groupe (une pension complémentaire payée par l'employeur), la voiture de société ou l'assurance hospitalisation. → [[avantages-extralegaux]]
 5. **Les frais obligatoires liés à ton emploi** : l'assurance accidents du travail, la médecine du travail, le secrétariat social qui calcule les fiches de paie.
 
+Toute la pile, en une formule :
+
+```text
+COÛT EMPLOYEUR
+  = salaire brut
+  + cotisations patronales ONSS
+      (≈ 25 % du brut dans le privé, après réductions)
+  + double pécule de vacances, 13e mois, primes
+  + avantages (chèques-repas, assurance groupe,
+      voiture, hospitalisation…)
+  + assurance accidents du travail, médecine du travail,
+      secrétariat social
+```
+
 Le taux de cotisations patronales n'est pas le même partout. Il varie selon le secteur, la taille de l'entreprise et les réductions auxquelles elle a droit, par exemple pour ses premiers engagements ou pour les bas salaires.
 
 ## Un exemple qu'on suit

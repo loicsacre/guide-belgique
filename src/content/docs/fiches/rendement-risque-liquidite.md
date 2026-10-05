@@ -27,6 +27,17 @@ Quand quelqu'un te promet un placement à la fois **sûr, disponible et très re
 
 On les juge en effet sur trois critères. Ce qu'ils rapportent, c'est le **rendement**. Ce qu'on peut y perdre, c'est le **risque** (ou, vu de l'autre côté, la sécurité). Et la rapidité avec laquelle on récupère son argent, c'est la **liquidité**. On représente souvent ces trois critères comme les trois coins d'un triangle, parce qu'on ne peut pas tirer sur les trois à la fois : en améliorer un dégrade au moins un autre.
 
+Le triangle, avec la sécurité (l'envers du risque) dans un coin :
+
+```text
+                RENDEMENT
+                   /\
+                  /  \
+                 /    \
+                /      \
+     SÉCURITÉ  /________\  LIQUIDITÉ
+```
+
 Pourquoi ? Parce que si un placement était à la fois très rentable, sans risque et disponible à tout moment, tout le monde voudrait l'acheter, son prix monterait, et son rendement baisserait jusqu'à redevenir ordinaire. Le rendement élevé est donc la récompense qu'on reçoit pour accepter un risque, ou pour immobiliser son argent.
 
 ## Ce que mesure chaque critère

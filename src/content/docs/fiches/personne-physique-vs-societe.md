@@ -45,6 +45,22 @@ En **société**, tu crées une **personne morale**, c'est-à-dire une personne 
 
 L'intérêt de la société tient tout entier dans cette architecture : l'argent qui **reste** dans la société n'est taxé qu'à 20 ou 25 %, au lieu de monter dans les tranches de l'IPP.
 
+Les deux circuits, l'un à côté de l'autre :
+
+```text
+PERSONNE PHYSIQUE               SOCIÉTÉ (SRL)
+CA − frais = bénéfice           CA − frais − TA RÉMUNÉRATION
+                                  = bénéfice de la société
+  − cotisations (20,5 %)          − ISoc (20 % jusqu'à 100 000 €,
+                                    25 % au-delà)
+  − IPP progressif                = bénéfice après impôt
+    (jusqu'à 50 % + commune)        → réserves ou DIVIDENDES
+  = ce qui te reste                   (précompte mobilier 30 %,
+                                      ou régimes réduits)
+                                Ta rémunération : cotisations
+                                + IPP comme un indépendant
+```
+
 ## Les deux formes côte à côte
 
 Au-delà de l'impôt, les deux formes diffèrent sur à peu près tout.

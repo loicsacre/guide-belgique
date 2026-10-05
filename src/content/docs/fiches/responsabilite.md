@@ -38,7 +38,14 @@ Pour que tu doives réparer, trois éléments doivent être réunis.
 - **Un dommage**, qui peut être corporel (une blessure), matériel (un objet cassé) ou moral (une souffrance, un préjudice d'image).
 - **Un lien causal**, c'est-à-dire que le dommage découle bien de cette faute.
 
-Faute, plus dommage, plus lien causal : tu dois réparer intégralement. C'est le principe posé par le Code civil, longtemps connu sous le nom d'« article 1382 ».
+Faute, plus dommage, plus lien causal : tu dois réparer intégralement. C'est le principe posé par le Code civil, longtemps connu sous le nom d'« article 1382 ». Sous forme d'addition :
+
+```text
+FAUTE (ou fait d'une chose, d'un animal, d'un enfant)
+   +  DOMMAGE (corporel, matériel, moral)
+   +  LIEN CAUSAL
+   =  OBLIGATION DE RÉPARER INTÉGRALEMENT
+```
 
 Mais tu peux aussi être responsable **sans avoir commis de faute toi-même**. Tu réponds des dommages causés par tes enfants mineurs, par tes animaux et par les choses que tu as sous ta garde. De la même façon, l'employeur répond des dommages causés par ses travailleurs.
 

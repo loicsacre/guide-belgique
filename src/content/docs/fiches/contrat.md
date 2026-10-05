@@ -73,6 +73,20 @@ Un contrat ne s'arrête pas n'importe comment. Il y a six façons d'en sortir, e
 - **Le commun accord** : les parties décident ensemble d'y mettre fin. C'est toujours possible, et mieux vaut le faire par écrit.
 - **La force majeure** : un événement imprévisible et irrésistible empêche d'exécuter le contrat. Il libère la partie concernée, sans qu'elle soit en faute.
 
+Les six sorties, côte à côte :
+
+```text
+Terme          expire à la date prévue (CDD, bail de courte durée)
+Résiliation    une partie y met fin selon les règles (préavis,
+               forme) : bail, travail, assurance, abonnement
+Résolution     anéanti pour faute grave de l'autre, par le juge
+               ou après mise en demeure
+Nullité        n'a jamais valablement existé (consentement
+               vicié, objet illicite)
+Commun accord  toujours possible, mieux vaut par écrit
+Force majeure  imprévisible et irrésistible : libère sans faute
+```
+
 ## Ce que ça change pour toi
 
 **Lis avant de cliquer.** Les conditions générales, ce long texte qu'on accepte sans le lire, font partie du contrat dès lors que tu as pu en prendre connaissance. Seules les clauses **abusives**, celles qui créent un déséquilibre manifeste à ton détriment, sont nulles ; toutes les autres t'engagent. → [[contrats-consommation]]

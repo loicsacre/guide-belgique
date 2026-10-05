@@ -41,6 +41,17 @@ Le mécanisme ressemble au [[precompte-professionnel|précompte professionnel]] 
 
 Prenons un exemple **fictif** : une société belge attribue un dividende brut de 100 € à un actionnaire. Le jour du versement, elle retient 30 € de précompte mobilier et les verse au SPF Finances. Les 70 € restants arrivent sur le compte de l'actionnaire. Il n'a rien à déclarer, sauf s'il veut récupérer une exonération que la banque n'a pas appliquée (on y revient plus bas).
 
+Le trajet des 100 €, du brut à ton compte :
+
+```text
+Dividende brut 100 €
+  − précompte mobilier 30 €   → retenu à la source, versé
+                                au SPF Finances
+  = 70 € sur ton compte
+  → rien à déclarer (sauf si tu veux récupérer une exonération
+    non appliquée)
+```
+
 Les rôles sont donc bien répartis. C'est la banque ou la société belge qui verse le revenu qui calcule et retient l'impôt, à chaque versement. C'est toi qui le paies, puisqu'il est pris sur ton revenu. Et c'est le SPF Finances qui le reçoit.
 
 Autre conséquence utile à connaître : le précompte mobilier est l'une des rares retenues qui **ne passent pas par le barème progressif**, ce système de tranches où le taux monte avec le revenu (de 25 à 50 %). Un dividende ou des intérêts ne font donc pas monter ton salaire dans des tranches plus chères : ils sont taxés à part, à leur propre taux. → [[tranches-imposition]]

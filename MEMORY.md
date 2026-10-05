@@ -105,6 +105,7 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 - EPUB : `export.mjs` nettoie le HTML (blocs expressive-code → `<pre>`, `align` → style, liens internes → fichiers du livre). Valider avec `epubcheck` (pip) après un changement de rendu.
 
 ## Journal des sessions
+- **2026-10-05 (schémas)** — Les schémas `text` supprimés par la réécriture article remis dans 79 fiches (chiffres alignés sur les textes vérifiés) ; règle « ne jamais supprimer un schéma » dans `CLAUDE.md`. Page de chapitre : bouton « Commencer la lecture » vers la première fiche, chapitre suivant en lien secondaire.
 - **2026-10-05 (vérification)** — ~40 faits revérifiés sur sources (5 agents) : primes wallonnes → Rénopack/Rénoprêt, TOB inversée, chèques-repas 10 €, préavis 2026, réforme chômage, incapacité, succession/donations, garantie locative, assurances, divers ; chomage, incapacite-de-travail et voiture-taxes repassées en `publie`. Points restants ci-dessus.
 - **2026-10-05 (fin)** — Les 135 autres fiches réécrites au format article (agents par chapitre) ; points douteux relevés ci-dessus ; légende des chiffres en note discrète avec lien vers l'accueil.
 - **2026-10-05 (suite)** — Fiche AER réécrite au format article (et délai de réclamation corrigé : un an, pas six mois) ; règle d'écriture des fiches dans `CLAUDE.md`.

@@ -44,6 +44,22 @@ La retenue à la source règle ces trois problèmes. Elle **lisse** la charge su
 
 Le vocabulaire du fisc suit ces deux temps : l'année où tu gagnes l'argent est l'« année des revenus », l'année où l'impôt est calculé est l'« exercice d'imposition ». Les revenus 2025 sont donc taxés lors de l'exercice d'imposition 2026. → [[annee-revenus-exercice]]
 
+Les deux temps, mis bout à bout :
+
+```text
+PENDANT L'ANNÉE (année des revenus)
+  salaire imposable
+     → l'employeur retient le précompte
+     → il le verse au SPF Finances
+     → tu reçois le net
+
+L'ANNÉE SUIVANTE (exercice d'imposition)
+  déclaration fiscale
+     → calcul de l'IPP réellement dû
+     → − précompte déjà payé
+     → solde : remboursement OU supplément
+```
+
 ## Comment ton employeur calcule la retenue
 
 Il n'invente rien : il applique des **barèmes** officiels, des tables qui donnent le précompte à retenir selon trois éléments.

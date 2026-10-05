@@ -49,7 +49,12 @@ En clair : toi, tu paies de l'impôt sur l'ATN, mais pas de cotisations sociales
 
 ## Comment l'ATN est calculé
 
-Le principe tient en une ligne : l'ATN annuel est égal à la **valeur catalogue** de la voiture (son prix neuf officiel), multipliée par un **coefficient d'âge** et par un **pourcentage lié au CO₂**. Il ne peut pas descendre sous un minimum légal, indexé chaque année.
+Le principe tient en une ligne : l'ATN annuel est égal à la **valeur catalogue** de la voiture (son prix neuf officiel), multipliée par un **coefficient d'âge** et par un **pourcentage lié au CO₂**. Il ne peut pas descendre sous un minimum légal, indexé chaque année. En formule :
+
+```text
+ATN annuel = valeur catalogue × coefficient d'âge × pourcentage CO₂
+             (minimum légal indexé chaque année)
+```
 
 Chaque facteur se lit simplement.
 

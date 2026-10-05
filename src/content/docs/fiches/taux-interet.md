@@ -35,6 +35,16 @@ Quand tu mets de l'argent sur un compte d'épargne, c'est toi qui prêtes à la 
 
 La différence entre les deux, ici 2 points, est la **marge** de la banque : c'est en grande partie ainsi qu'elle gagne sa vie, en prêtant plus cher l'argent qu'on lui confie.
 
+Les deux sens du même prix :
+
+```text
+Tu prêtes à la banque (épargne)
+   → elle te paie un taux créditeur (ex. 1,5 %)
+La banque te prête (crédit)
+   → tu lui paies un taux débiteur (ex. 3,5 %)
+La différence (2 points) est sa marge.
+```
+
 ## Ce qui fait monter ou baisser un taux
 
 Un taux n'est pas fixé au hasard. Quatre éléments pèsent sur lui.

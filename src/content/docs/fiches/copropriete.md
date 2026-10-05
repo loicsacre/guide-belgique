@@ -52,6 +52,24 @@ Le **syndic** exécute ces décisions. Il peut être un professionnel ou un copr
 
 Le **conseil de copropriété** contrôle le travail du syndic. Il est obligatoire dans les immeubles d'au moins 20 lots. Enfin, un **commissaire aux comptes** vérifie les comptes de l'ACP.
 
+Qui fait quoi, en un coup d'œil :
+
+```text
+ASSEMBLÉE GÉNÉRALE (au moins 1×/an)          DÉCIDE
+  budget, travaux, choix du syndic, règlement
+  votes pondérés par les quotités
+  majorité absolue, 2/3 ou 4/5 selon l'enjeu
+        │ mandate
+        ▼
+SYNDIC (professionnel ou bénévole)           EXÉCUTE
+  gestion courante, comptes, convocations,
+  travaux votés, recouvrement
+        ▲ contrôlent
+        │
+CONSEIL DE COPROPRIÉTÉ (obligatoire ≥ 20 lots)
+COMMISSAIRE AUX COMPTES (vérifie les comptes)
+```
+
 ## Comment se paient les charges
 
 Les dépenses de l'immeuble sont financées par deux caisses différentes, qu'il ne faut pas confondre.

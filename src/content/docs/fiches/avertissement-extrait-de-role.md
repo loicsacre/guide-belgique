@@ -32,6 +32,21 @@ Chaque mois, ton employeur retient une partie de ton salaire et l'envoie au fisc
 
 Le vrai calcul vient plus tard. L'année suivante, tu remplis ta [[declaration-fiscale|déclaration d'impôt]], ou tu valides celle que le SPF Finances a préremplie. Le fisc additionne alors tous tes revenus de l'année, applique le barème, retire ce qui te revient en réductions, ajoute la taxe de ta commune… puis compare le résultat à tout ce qui a déjà été retenu sur tes salaires. Le document qui t'annonce ce résultat, c'est l'**avertissement-extrait de rôle**, qu'on appelle presque toujours l'**AER**.
 
+Le chemin, de ta fiche de paie jusqu'au décompte :
+
+```text
+salaire ─► précompte professionnel (avance)
+                   │
+           déclaration fiscale
+                   │
+     calcul de l'IPP par le SPF Finances
+                   │
+       AVERTISSEMENT-EXTRAIT DE RÔLE
+         ┌─────────┼─────────┐
+         ▼         ▼         ▼
+     à payer      0 €     remboursé
+```
+
 Le nom fait peur, mais il est simple à décoder. Le « rôle », c'est la liste officielle des impôts que l'administration a établis ; l'« extrait », c'est ta ligne dans cette liste ; l'« avertissement », c'est le fait de te la communiquer. Bref : c'est la facture finale (ou le remboursement) de ton impôt sur les revenus.
 
 Une précision qui évite bien des confusions : l'AER qui arrive en 2026 porte sur les revenus que tu as gagnés en 2025. Le fisc parle de l'« exercice d'imposition 2026 » pour les « revenus 2025 ». → [[annee-revenus-exercice]]

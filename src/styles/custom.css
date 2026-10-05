@@ -92,7 +92,11 @@ a.autolink:hover { color: var(--sl-color-text-accent); text-decoration-style: so
 .chap-cards span { font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); }
 .chap-quiz details { border: 1px solid var(--sl-color-gray-5); border-radius: 0.5rem; padding: 0.6rem 1rem; }
 .chap-quiz summary { cursor: pointer; font-weight: 600; }
-.chap-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--sl-color-hairline); font-weight: 600; }
+.chap-nav { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--sl-color-hairline); font-weight: 600; }
+.chap-nav > span:first-child { font-size: var(--sl-text-sm); }
+.chap-nav > span:last-child { display: flex; flex-direction: column; align-items: flex-end; gap: 0.4rem; text-align: right; }
+.chap-start { display: inline-block; padding: 0.45rem 0.9rem; border-radius: 0.5rem; background: var(--sl-color-accent); color: var(--sl-color-black) !important; text-decoration: none; }
+.chap-next { font-size: var(--sl-text-sm); font-weight: 500; color: var(--sl-color-gray-3); }
 .som-chap h2 a { text-decoration: none; }
 .som-list { font-size: var(--sl-text-sm); line-height: 1.8; }
 .som-list .sep { color: var(--sl-color-gray-4); }

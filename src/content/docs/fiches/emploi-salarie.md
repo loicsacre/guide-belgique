@@ -40,6 +40,21 @@ Suivons l'argent depuis le départ, c'est-à-dire depuis la caisse de ton employ
 4. **Il retient aussi le précompte professionnel**, une avance sur ton impôt, qu'il envoie au SPF Finances. → [[precompte-professionnel]]
 5. **Ce qui reste est ton salaire net**, versé sur ton compte bancaire. → [[salaire-net]]
 
+Le même trajet, dessiné :
+
+```text
+EMPLOYEUR
+   │
+   ├── cotisations patronales ───────► ONSS (sécurité sociale)
+   │
+   └── salaire brut
+          │
+          ├── cotisations personnelles ► ONSS (sécurité sociale)
+          ├── précompte professionnel ─► SPF Finances
+          │                              (avance d'impôt)
+          └── salaire net ─────────────► ton compte bancaire
+```
+
 Résultat : pour un même emploi, il existe **trois montants**. Le **coût total employeur** (ton brut, plus les cotisations patronales, plus les avantages) est le chiffre que voit ton employeur. Le **brut** est celui de ton contrat et des offres d'emploi. Le **net** est celui que tu vois sur ton compte. Quand deux personnes parlent de « salaire » sans préciser lequel, elles ne parlent souvent pas de la même chose.
 
 ## Un exemple pour fixer les idées

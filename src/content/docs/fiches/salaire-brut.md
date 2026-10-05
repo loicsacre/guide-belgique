@@ -33,6 +33,19 @@ Le brut est un point de départ. Pour arriver au **salaire net**, ce qui tombe r
 
 Viennent ensuite d'autres éléments, en plus ou en moins : un avantage, une retenue pour les chèques-repas, un remboursement de frais. Ce qui reste, c'est le net. → [[salaire-net]]
 
+Le chemin du brut au net, en résumé :
+
+```text
+SALAIRE BRUT
+   │
+   ├── − cotisations sociales personnelles
+   ├── − précompte professionnel
+   └── ± autres éléments (avantages, retenues, remboursements)
+          │
+          ▼
+     SALAIRE NET
+```
+
 Prenons l'exemple **fictif** d'un employé à 3 500 € brut. Ses cotisations personnelles valent 13,07 % du brut, soit 457,45 €. Il reste 3 042,55 €, et c'est sur ce montant que se calcule le précompte. → [[fiche-de-paie]]
 
 ## Pourquoi on parle en brut plutôt qu'en net
@@ -50,6 +63,14 @@ Le brut se trouve au milieu de deux autres chiffres, et il est utile de les situ
 Au-dessus, il y a le **coût total employeur**. C'est ce que ton emploi coûte vraiment à l'entreprise : ton brut, plus les cotisations patronales que l'employeur paie en plus et que tu ne vois pas, plus les avantages. → [[cout-employeur]]
 
 En dessous, il y a le **net**, ce qui arrive sur ton compte après les retenues. Le brut, entre les deux, est le chiffre qu'on négocie.
+
+```text
+   coût total employeur   ← brut + cotisations patronales + avantages
+          ▲
+     salaire brut         ← ce qui est négocié
+          ▼
+     salaire net          ← ce qui arrive sur ton compte
+```
 
 ## Pourquoi on ne touche pas 12 fois son brut
 

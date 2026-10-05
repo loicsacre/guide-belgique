@@ -41,6 +41,17 @@ La quotité, c'est le montant emprunté divisé par la valeur du bien. Attention
 
 Prenons un exemple **fictif** : un bien de 250 000 €. Si tu empruntes 200 000 €, ta quotité est de 80 %. Si tu empruntes la totalité, 250 000 €, elle est de 100 %. Une quotité de 100 % reste rare : les banques la réservent surtout à de jeunes primo-acquéreurs (des personnes qui achètent leur premier logement), et la font payer par un taux plus élevé.
 
+Le calcul, sur ce même bien :
+
+```text
+Quotité = montant emprunté ÷ valeur du bien
+          (valeur estimée par la banque, pas forcément le prix payé)
+
+Bien 250 000 €, emprunt 200 000 €  → quotité 80 %
+Bien 250 000 €, emprunt 250 000 €  → quotité 100 %
+          (rare, taux plus élevé, surtout jeunes primo-acquéreurs)
+```
+
 :::note[Règle datée — recommandations BNB en vigueur]
 La Banque nationale de Belgique (BNB) recommande aux banques de ne pas dépasser **90 %** de quotité pour une résidence principale, avec une marge pour une partie des primo-acquéreurs, et moins pour un bien d'investissement.
 :::

@@ -37,6 +37,23 @@ Dans les dettes, on trouve le crédit hypothécaire, compté pour son **capital 
 
 On fait ensuite le total de chaque colonne. Total des actifs moins total des dettes : voilà ton patrimoine net. C'est exactement la logique du bilan d'une entreprise, qui met face à face ce qu'elle possède et la façon dont c'est financé. → [[actif-passif-bilan]]
 
+Les deux colonnes, face à face :
+
+```text
+ACTIFS (ce que tu possèdes)     DETTES / PASSIF (ce que tu dois)
+  compte à vue                    crédit hypothécaire
+  épargne, placements               (capital restant dû)
+  épargne-pension,                crédit auto, crédit à la
+    assurance groupe                consommation
+  logement (valeur de marché)     solde de carte de crédit,
+  voiture (valeur de revente)       découvert
+                                  dettes fiscales, prêts familiaux
+  ───────────────────             ───────────────────
+  TOTAL ACTIFS          −         TOTAL DETTES
+
+                  =  PATRIMOINE NET
+```
+
 ## Un exemple pour voir ce qu'un achat change
 
 Prenons une situation **fictive** : quelqu'un qui a acheté un appartement il y a quelques années.

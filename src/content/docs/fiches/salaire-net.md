@@ -42,6 +42,23 @@ Le calcul se fait toujours dans le même ordre, et chaque étape sert de base à
 
 L'ordre compte : l'impôt est calculé après les cotisations sociales, pas sur le brut. C'est pour cela que le précompte paraît moins lourd qu'on ne l'imagine en pourcentage du brut.
 
+Les quatre étapes, empilées :
+
+```text
+  SALAIRE BRUT
+  − cotisations sociales personnelles (13,07 %)
+  ──────────────────────────────────────────────
+  = REVENU IMPOSABLE
+  − précompte professionnel
+  − cotisation spéciale de sécurité sociale
+  ──────────────────────────────────────────────
+  = NET « fiscal »
+  ± autres lignes (part personnelle chèques-repas,
+    remboursement de frais, avantages en nature…)
+  ──────────────────────────────────────────────
+  = NET À PAYER
+```
+
 ## Un exemple, ligne par ligne
 
 Prenons un employé isolé, sans enfant, avec un brut de 3 500 €. Le taux des cotisations est réel ; les autres montants sont **fictifs**, parce qu'ils dépendent des barèmes de l'année et des avantages prévus.

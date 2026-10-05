@@ -66,6 +66,18 @@ Deux endroits sont en revanche à éviter.
 - **Pas en actions ni en ETF.** Un ETF est un fonds coté qui suit tout un marché. Leur valeur monte et descend, et elle peut être basse précisément le jour où tu as besoin de l'argent. → [[actions-obligations-etf]]
 - **Pas sur le compte à vue.** C'est ton compte courant, celui de la carte de paiement : l'argent y est trop facile à dépenser, et la réserve fond sans que tu le décides.
 
+Le tri, en un coup d'œil :
+
+```text
+Critères : disponible en 1 ou 2 jours · sans risque de perte
+           · séparée du compte courant
+  → compte d'épargne réglementé (intérêts exonérés de précompte
+    jusqu'au plafond, garanti jusqu'à 100 000 €)
+  ✗ pas en actions ni en ETF (la valeur peut être basse le jour
+    où tu en as besoin)
+  ✗ pas sur le compte à vue (trop facile à dépenser)
+```
+
 ## Comment la construire
 
 Une réserve ne se constitue pas d'un coup. Elle se construit par habitude.

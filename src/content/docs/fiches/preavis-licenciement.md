@@ -72,6 +72,21 @@ Le préavis presté n'est pas la seule manière de mettre fin à un contrat. Voi
 - **Le commun accord.** Toi et ton employeur convenez ensemble des conditions de départ. C'est souple, mais attention aux conséquences sur le chômage (voir plus bas).
 - **La fin d'un CDD.** Un contrat à durée déterminée s'éteint de lui-même à la date prévue, sans préavis. Le rompre avant cette date oblige à payer une indemnité.
 
+Les cinq sorties, côte à côte :
+
+```text
+Préavis presté      → tu travailles encore X semaines,
+                      payé normalement
+Indemnité de rupture→ tu pars tout de suite, tu reçois X semaines
+                      de rémunération (avantages compris)
+Motif grave         → rupture immédiate sans préavis ni indemnité
+                      (faute grave, à prouver, procédure stricte)
+Commun accord       → vous convenez ensemble des conditions
+                      (attention au chômage : voir plus bas)
+Fin de CDD          → le contrat s'éteint à la date prévue ;
+                      rupture anticipée = indemnité
+```
+
 Un préavis se notifie toujours **par écrit**. Si c'est toi qui démissionnes, tu l'envoies par recommandé ; si c'est l'employeur, il passe par un recommandé ou par un huissier. Le préavis commence à courir le **lundi suivant** la notification.
 
 Prenons un exemple **fictif** : un employé à 3 500 € brut, entré dans l'entreprise après 2014, avec cinq ans d'ancienneté. S'il est licencié, son préavis est de 18 semaines, soit un peu plus de quatre mois. Soit il les preste en continuant à travailler, soit son employeur le libère tout de suite et lui verse l'équivalent de 18 semaines de rémunération, avantages compris. S'il démissionne, il ne doit prester que 9 semaines.

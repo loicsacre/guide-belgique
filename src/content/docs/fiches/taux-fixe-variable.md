@@ -58,6 +58,16 @@ Prenons un exemple **fictif** : tu empruntes 250 000 € sur 25 ans, et la banqu
 - **À taux fixe de 3,5 %**, tu paies 1 252 € par mois, pour toujours. Au total, tu auras payé 125 500 € d'intérêts.
 - **À taux variable de 3 % avec un cap de +2**, tu commences à 1 186 € par mois, soit 66 € de moins. Si les taux montent et que ton taux atteint son plafond de 5 % après révision, ta mensualité passe à environ 1 460 €. Si au contraire ils descendent jusqu'au plancher de 1 %, elle tombe vers 940 €.
 
+Les deux formules, l'une sous l'autre :
+
+```text
+Fixe 3,5 %          → 1 252 €/mois pour toujours
+                      intérêts totaux : 125 500 €
+Variable 3 % cap +2 → 1 186 €/mois au départ
+                      pire cas (5 %) après révision : ≈ 1 460 €/mois
+                      meilleur cas (1 %) : ≈ 940 €/mois
+```
+
 Laquelle sera la moins chère au bout de 25 ans ? Personne ne le sait d'avance, parce que personne ne connaît les taux de demain. La vraie question est donc ailleurs : **est-ce que tu supportes le pire cas ?** Si 1 460 € par mois mettraient ton budget à genoux, le variable est un risque que tu ne peux pas prendre, même s'il démarre moins cher.
 
 ## Ce que ça change pour toi

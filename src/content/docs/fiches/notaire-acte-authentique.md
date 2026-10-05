@@ -39,6 +39,25 @@ Le travail du notaire commence bien avant la signature et continue bien après.
 
 **Après l'acte**, il paie les [[droits-enregistrement|droits d'enregistrement]] à la Région, fait transcrire la vente et inscrire l'[[hypotheque]], le droit que la banque prend sur ton logement en garantie du crédit. Il remet ensuite le prix au vendeur, après avoir réglé ses dettes éventuelles, par exemple un crédit en cours sur le bien. Enfin, il t'envoie ton titre de propriété, ce qui prend quelques mois.
 
+Les trois temps, résumés :
+
+```text
+AVANT L'ACTE   recherches : propriété, hypothèques, urbanisme,
+               cadastre, sol, dettes du vendeur
+               relecture/rédaction du compromis, conseil
+               (gratuit à ce stade)
+À L'ACTE       lecture, explication, signature de l'acte
+               de vente ET de l'acte de crédit
+               réception du prix et des frais sur son compte
+               de tiers
+APRÈS L'ACTE   paiement des droits d'enregistrement à la Région
+               transcription de la vente, inscription
+               de l'hypothèque
+               remise du prix au vendeur après apurement de
+               ses dettes (crédit en cours)
+               envoi de ton titre de propriété (quelques mois)
+```
+
 ## Ce qu'il coûte, et à qui va l'argent
 
 On parle de « frais de notaire », mais l'essentiel de l'argent ne va pas au notaire. La facture a trois composantes.

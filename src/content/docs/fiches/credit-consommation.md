@@ -71,6 +71,19 @@ Les difficultés suivent souvent le même enchaînement, et il vaut mieux le con
 3. **Le prêteur fait ensuite récupérer la dette** par un huissier, et une saisie sur salaire est possible.
 4. **Si tu ne peux plus faire face**, deux portes existent. La **médiation de dettes** est gratuite : un service du CPAS ou un service agréé négocie avec tes créanciers un plan de remboursement. Le **règlement collectif de dettes** est une procédure judiciaire : le tribunal fixe un plan sur plusieurs années. → [[dette]]
 
+L'enchaînement, en un coup d'œil :
+
+```text
+Retard de paiement
+  → frais et intérêts de retard
+  → après 3 mensualités impayées : fichage à la Centrale
+  → récupération par huissier, saisie sur salaire possible
+  → si tu ne peux plus faire face :
+       MÉDIATION DE DETTES (CPAS, service agréé, gratuite)
+       ou RÈGLEMENT COLLECTIF DE DETTES
+       (procédure judiciaire, plan sur plusieurs années)
+```
+
 Plus tu réagis tôt, plus il reste de solutions. Contacter ton prêteur dès le premier retard vaut toujours mieux que d'attendre le courrier de l'huissier.
 
 ## Ce que ça change pour toi

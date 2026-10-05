@@ -43,6 +43,19 @@ La loi range la famille du défunt en quatre **ordres**, et c'est le premier ord
 
 À côté de ces ordres, le **conjoint survivant** hérite toujours, en même temps que l'ordre appelé. Le **cohabitant légal**, lui, ne reçoit que l'usufruit du logement familial. Et le **cohabitant de fait** ne reçoit rien. → [[formes-de-couple]]
 
+Les quatre ordres et le conjoint, sur une seule vue :
+
+```text
+1er ordre  les ENFANTS (et leurs descendants) → à parts égales
+2e ordre   parents + frères et sœurs
+3e ordre   grands-parents et autres ascendants
+4e ordre   oncles, tantes, cousins (jusqu'au 4e degré)
+
+ + le CONJOINT SURVIVANT, toujours, avec l'ordre appelé
+ Cohabitant légal : usufruit du logement familial seulement
+ Cohabitant de fait : rien
+```
+
 ## Le conjoint garde l'usage, les enfants le fond
 
 Pour comprendre ce que reçoit chacun, il faut deux mots. L'**usufruit**, c'est le droit d'utiliser un bien et d'en toucher les revenus. La **nue-propriété**, c'est le fond du bien, sans pouvoir l'utiliser. Les deux réunis font la pleine propriété. → [[droits-reels]]

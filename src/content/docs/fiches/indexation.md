@@ -40,6 +40,16 @@ De cet indice, on retire le tabac, l'alcool et les carburants (essence, diesel).
 
 Enfin, pour éviter qu'un mois exceptionnel ne déclenche tout, on fait la moyenne des quatre derniers mois de l'indice santé. Résultat : l'**indice santé lissé**. C'est lui qui déclenche les indexations.
 
+Les trois étapes, de l'indice de départ à celui qui compte :
+
+```text
+Indice des prix à la consommation (Statbel)
+  − tabac, alcool, carburants (essence, diesel)
+  = INDICE SANTÉ
+  → moyenne des 4 derniers mois = INDICE SANTÉ LISSÉ
+  → c'est cet indice qui déclenche les indexations
+```
+
 ## Deux façons d'indexer
 
 Tout le monde n'est pas indexé au même moment ni de la même manière. Il existe deux grandes familles de mécanismes.

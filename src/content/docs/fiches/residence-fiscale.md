@@ -29,6 +29,18 @@ Quand on parle d'impôt, « où tu habites » ne sert pas qu'à envoyer le courr
 2. **La Région.** Ta **localisation régionale** fixe les règles immobilières et successorales, certaines réductions d'impôt et la part régionale de l'IPP.
 3. **La commune.** Ton **domicile au 1er janvier** fixe l'additionnel communal, ce pourcentage de ton impôt que prélève ta commune, ainsi que les taxes communales.
 
+Les trois niveaux, du plus large au plus proche :
+
+```text
+PAYS     résidence fiscale
+         → l'État belge taxe tous tes revenus mondiaux (IPP)
+RÉGION   localisation régionale
+         → règles immobilières et successorales,
+           réductions régionales, part régionale de l'IPP
+COMMUNE  domicile au 1er janvier
+         → additionnel communal, taxes communales
+```
+
 Les trois niveaux partent de la même question : **où est ton foyer, où vis-tu réellement ?** L'adresse à laquelle tu es inscrit à la commune sert de point de départ. Mais ce n'est qu'une **présomption** : le fisc la tient pour vraie tant qu'on ne lui prouve pas le contraire, et la réalité de ta vie peut la renverser. → [[domicile]]
 
 ## Résident ou non-résident

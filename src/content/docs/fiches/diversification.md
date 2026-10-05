@@ -54,6 +54,16 @@ La question à te poser n'est pas « est-ce que j'aime le risque ? », mais « *
 - **Entre 3 et 8 ans**, une part d'actions de 20 à 50 % est raisonnable, le reste en placements plus stables.
 - **Au-delà de 10 ans**, par exemple pour ta pension, la part d'actions peut aller de 60 à 100 %, selon ta capacité à supporter les baisses sans paniquer.
 
+En résumé :
+
+```text
+Besoin de l'argent dans…    Part d'actions raisonnable
+moins de 3 ans              0 %  → compte d'épargne, compte à terme
+3 à 8 ans                   20 à 50 %
+plus de 10 ans (pension)    60 à 100 %, selon ta tolérance
+                            aux baisses
+```
+
 Pourquoi le temps change-t-il tout ? Parce que le risque des actions dépend de la **durée**. Sur une seule année, un portefeuille d'actions mondiales diversifié a déjà perdu jusqu'à 40 %. Mais depuis un siècle, sur toute période de 15 ans, il a presque toujours terminé en positif, malgré les krachs en cours de route. Celui qui doit vendre l'année du krach subit la perte ; celui qui peut attendre la voit, le plus souvent, effacée.
 
 ## Investir régulièrement plutôt que d'un coup

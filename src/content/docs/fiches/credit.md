@@ -33,6 +33,10 @@ La somme que tu reçois s'appelle le **capital**. Tout le reste du contrat sert 
 
 Le coût total d'un crédit dépend de trois leviers, et de trois seulement : le **montant** emprunté (le capital), le **taux** d'intérêt et la **durée**.
 
+```text
+MONTANT (capital)  ×  TAUX  ×  DURÉE   →   COÛT TOTAL
+```
+
 Les deux premiers se comprennent tout seuls. Emprunter plus, ou emprunter à un taux plus élevé, augmente à la fois ce que tu paies chaque mois et ce que tu paies au total.
 
 La durée, elle, joue dans deux sens opposés. Si tu étales le remboursement sur plus d'années, chaque **mensualité** (le montant que tu verses chaque mois) baisse : le crédit paraît plus confortable. Mais tu paies des intérêts plus longtemps, donc le coût total **augmente**. C'est le piège classique : allonger la durée rend un crédit « abordable » chaque mois, et beaucoup plus cher à la fin.

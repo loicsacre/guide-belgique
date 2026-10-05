@@ -79,6 +79,18 @@ En Belgique, chaque niveau de pouvoir a ses propres impôts, ce qui explique que
 - **Les provinces** ajoutent des additionnels au précompte immobilier, c'est-à-dire un pourcentage en plus de l'impôt régional.
 - **Les communes** ajoutent des additionnels à l'IPP et au précompte immobilier, et perçoivent leurs propres taxes communales (déchets, seconde résidence…). → [[centimes-additionnels]]
 
+Du sommet à la base, les niveaux de pouvoir et ce que chacun prélève :
+
+```text
+Fédéral    IPP, ISoc, TVA, accises, précompte mobilier,
+           cotisations sociales
+Régions    précompte immobilier, droits d'enregistrement,
+           succession, donation, taxe de circulation, TMC
+Provinces  additionnels au précompte immobilier
+Communes   additionnels à l'IPP et au précompte immobilier,
+           taxes communales (déchets, seconde résidence…)
+```
+
 ## À ne pas confondre
 
 Un **précompte** n'est pas un impôt de plus. C'est soit une **avance** sur un impôt (le précompte professionnel sur ton salaire, le précompte mobilier sur tes placements), soit le nom historique d'un impôt régional, le précompte immobilier.

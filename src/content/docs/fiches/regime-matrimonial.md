@@ -57,6 +57,23 @@ Ce régime vise des situations précises : un **indépendant** dont l'activité 
 
 Mais il a un revers. Reprenons Alice et Bob, cette fois en séparation de biens. Si Bob a réduit son temps de travail pour s'occuper des enfants, il a moins gagné, donc moins épargné, donc il possède moins. Au divorce, chacun repart avec ce qu'il a payé : Bob peut se retrouver presque sans patrimoine. C'est pour éviter cela qu'on ajoute de plus en plus une **clause de participation aux acquêts** : à la fin du mariage, on partage une partie de l'enrichissement de chacun. Une autre solution est la **société d'acquêts**, une petite communauté qu'on crée à l'intérieur de la séparation de biens.
 
+Alice et Bob dans les deux régimes, côte à côte :
+
+```text
+Régime légal (Alice 4 000 €, Bob 2 000 €)
+  Les deux salaires tombent dans la communauté.
+  Divorce → 50/50 sur tout ce qui a été accumulé
+            pendant le mariage (épargne, maison, voiture)
+  Héritage reçu par Alice → reste à Alice
+            (mais ses revenus éventuels sont communs)
+
+Séparation de biens
+  Chacun garde ce qu'il a payé.
+  Celui qui a réduit son temps de travail pour les
+  enfants peut se retrouver sans patrimoine
+  → d'où la clause de participation aux acquêts
+```
+
 ## La communauté universelle
 
 À l'opposé, la **communauté universelle** met tout en commun, y compris les biens d'avant le mariage, les héritages et les dettes. Elle est surtout utilisée par des couples âgés sans enfants d'une autre union, qui veulent que le survivant garde tout.

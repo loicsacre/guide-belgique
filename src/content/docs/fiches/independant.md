@@ -45,6 +45,24 @@ Le parcours de départ tient en quelques démarches, qu'on fait en général dan
 6. **Ouvrir un compte bancaire professionnel séparé.** C'est conseillé en personne physique, et obligatoire pour une société.
 7. **T'entourer.** Un comptable est fortement conseillé. Pense aussi aux assurances : la **RC professionnelle** (responsabilité civile, qui couvre les dommages que tu causes à un client) et le **revenu garanti** (qui te verse un revenu si tu tombes malade longtemps).
 
+Le parcours de démarrage, en raccourci :
+
+```text
+1. Choisir la forme : personne physique (simple, rapide)
+   ou société (voir personne-physique-vs-societe)
+2. GUICHET D'ENTREPRISE agréé → inscription à la BCE,
+   numéro d'entreprise (≈ 100 €)
+3. Activation du numéro de TVA (sauf exemptions :
+   franchise < 25 000 €, professions exonérées)
+4. Affiliation à une CAISSE D'ASSURANCES SOCIALES
+   (Liantis, Xerius, UCM, Partena…) : cotisations trimestrielles
+5. Affiliation à une mutualité comme indépendant
+6. Compte bancaire professionnel séparé
+   (conseillé, obligatoire pour une société)
+7. Comptable (fortement conseillé), assurances
+   (RC pro, revenu garanti)
+```
+
 Reste une question préalable : as-tu le droit d'exercer ton activité ? Les **connaissances de gestion de base**, une attestation longtemps exigée pour s'installer, ne sont plus demandées en Flandre ni à Bruxelles. La Wallonie les a supprimées également, sauf pour certaines professions réglementées. Vérifie donc les règles d'**accès à la profession** pour ton activité.
 
 ## À titre principal ou à titre complémentaire ?

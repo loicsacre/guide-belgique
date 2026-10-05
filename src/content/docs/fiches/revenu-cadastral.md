@@ -46,6 +46,22 @@ Le RC tel qu'il est inscrit au cadastre est dit **non indexé**. Chaque année, 
 - **L'impôt sur les revenus immobiliers.** Dans ta déclaration d'impôt, ta résidence principale est exonérée. Mais si tu loues un bien à un particulier, tu es imposé sur le RC indexé multiplié par 1,40, et non sur le loyer que tu touches réellement. → [[categories-de-revenus]]
 - **Divers seuils.** Le RC sert aussi à définir une « habitation modeste », qui ouvre des réductions de précompte immobilier, ou certaines réductions de droits.
 
+D'un seul RC indexé partent donc trois usages :
+
+```text
+RC (non indexé) × coefficient de l'année = RC INDEXÉ
+                                              │
+         ┌────────────────────┬───────────────┴─────┐
+         ▼                    ▼                     ▼
+  PRÉCOMPTE           REVENUS IMMOBILIERS     SEUILS DIVERS
+  IMMOBILIER          À L'IPP                 (habitation
+  (impôt régional     bien loué à un          modeste,
+  annuel sur le       particulier :           réductions
+  RC indexé)          RC indexé × 1,40        de droits…)
+                      résidence principale :
+                      exonérée
+```
+
 ## Un exemple pour suivre le fil
 
 Prenons une maison **fictive** en Wallonie, avec un RC non indexé de 900 €. Une fois indexé, il vaut environ 1 950 €. Sur cette base, après le taux régional et les additionnels de la province et de la commune, son propriétaire paie un précompte immobilier de l'ordre de 660 € par an (le calcul complet est dans la fiche [[precompte-immobilier]]).

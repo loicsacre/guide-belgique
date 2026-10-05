@@ -64,6 +64,27 @@ Les deux parts sont versées au même endroit : l'**ONSS**, l'Office national de
 - **les accidents du travail** ;
 - **les vacances**, et encore d'autres branches.
 
+Le trajet complet, du brut jusqu'aux branches :
+
+```text
+                         salaire brut
+                               │
+          ┌────────────────────┴────────────────────┐
+          ▼                                         ▼
+   part personnelle                           part patronale
+   13,07 % du brut                         ≈ un quart du brut
+ (retenue sur ton brut)                 (payée en plus du brut)
+          │                                         │
+          └────────────────────┬────────────────────┘
+                               ▼  versées par l'employeur
+                              ONSS  perçoit et répartit
+                               │
+    ┌──────────┬──────────┬────┴─────┬──────────┬──────────┐
+    ▼          ▼          ▼          ▼          ▼          ▼
+ pension     soins     maladie    chômage   accidents  vacances,
+           de santé  invalidité            du travail   autres…
+```
+
 → [[onss]] · [[pension]] · [[chomage]] · [[incapacite-de-travail]]
 
 ## Un exemple ligne par ligne

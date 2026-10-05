@@ -26,6 +26,7 @@ const isHome = (e: any) => { const mine = overlap(e, c); return mine > 0 && chap
 const docs = documents.filter(isHome);
 const tools = outils.filter(isHome);
 const quiz = getQuiz(c.id);
+const first = written[0];
 const chain = (c.fil ?? '').split('→').map((x) => x.trim()).filter(Boolean);
 ---
 <StarlightPage frontmatter={{ title: `${c.emoji ?? ''} ${c.title}`.trim(), description: c.intro }}>
@@ -80,6 +81,9 @@ const chain = (c.fil ?? '').split('→').map((x) => x.trim()).filter(Boolean);
 
   <nav class="chap-nav not-content" aria-label="Chapitres">
     <span>{prev && <a href={chapitreHref(prev.id)}>← {prev.emoji} {prev.title}</a>}</span>
-    <span>{next && <a href={chapitreHref(next.id)}>{next.emoji} {next.title} →</a>}</span>
+    <span>
+      {first && <a class="chap-start" href={hrefOf(first.e!)}>Commencer la lecture : {first.e!.data.title} →</a>}
+      {next && <a class="chap-next" href={chapitreHref(next.id)}>Chapitre suivant : {next.emoji} {next.title} →</a>}
+    </span>
   </nav>
 </StarlightPage>

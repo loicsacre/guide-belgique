@@ -57,6 +57,20 @@ Au départ, le PEB était surtout une information pour l'acheteur ou le locatair
 
 **L'obligation de rénover.** C'est la tendance de fond : les Régions fixent progressivement des niveaux minimaux à atteindre.
 
+Une seule lettre, cinq conséquences :
+
+```text
+Classe PEB
+  ├─ PRIX : écart de 10 à 20 % entre un A et un F sur le marché
+  ├─ LOYER : indexation gelée ou limitée pour les mauvaises
+  │          classes (voir indexation-loyer)
+  ├─ DROITS D'ENREGISTREMENT : réduction supplémentaire si tu
+  │          t'engages à rénover (Bruxelles, Flandre)
+  ├─ CRÉDIT : taux « verts » plus bas, plan de rénovation
+  │          exigé chez certaines banques
+  └─ OBLIGATION DE RÉNOVER : niveaux minimaux fixés par Région
+```
+
 :::note[Règle datée — obligations régionales]
 - **Flandre** : depuis 2023, l'acheteur d'un logement classé **E ou F** doit le rénover au minimum jusqu'en **D dans les 5 ans**. Le seuil se durcira progressivement, vers A d'ici 2050.
 - **Wallonie** : l'objectif est un label A en moyenne en 2050. Une obligation de rénovation progressive à l'achat a été annoncée puis reportée : vérifie le calendrier en vigueur.

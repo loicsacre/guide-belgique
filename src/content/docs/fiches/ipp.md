@@ -39,6 +39,13 @@ L'IPP sert aussi d'outil à l'État pour **encourager certains comportements**. 
 
 Comme l'impôt se calcule une fois l'année finie, il porte toujours sur l'année précédente. Tes revenus 2025 sont déclarés en 2026, et l'impôt correspondant est appelé l'« exercice d'imposition 2026 ». Les documents officiels parlent presque toujours de l'**exercice d'imposition**, l'année où l'impôt est établi, et non de l'année où tu as gagné l'argent. → [[annee-revenus-exercice]]
 
+Le décalage d'un an, en une ligne :
+
+```text
+Revenus 2025  ──►  déclarés en 2026  ──►  « exercice d'imposition 2026 »
+(année des revenus)                       (année où l'impôt est établi)
+```
+
 ## Comment le fisc arrive à ton impôt
 
 Le calcul suit toujours le même chemin, du revenu au solde.
@@ -49,6 +56,25 @@ Le calcul suit toujours le même chemin, du revenu au solde.
 4. **Il retire les réductions d'impôt** auxquelles tu as droit (épargne-pension, dons…). On obtient l'**impôt fédéral**. → [[deduction-reduction-credit]]
 5. **Il ajoute les additionnels**, un pourcentage prélevé par ta commune (et une part régionale). On obtient l'**IPP total**. → [[centimes-additionnels]]
 6. **Il retire les précomptes déjà payés.** Ce qui reste est le **solde**, à payer ou à rembourser.
+
+Toute la cascade d'un seul coup d'œil, du premier euro gagné au solde :
+
+```text
+revenus professionnels (salaire, chômage, pension…)
++ revenus immobiliers (biens que tu possèdes)
++ revenus mobiliers (intérêts, dividendes — souvent déjà « libérés »)
++ revenus divers
+= revenu imposable globalement
+   │
+   ▼ barème progressif par tranches (25 % → 50 %)
+   − quotité exemptée (première tranche non imposée)
+   − réductions d'impôt
+   = impôt fédéral
+   + additionnels communaux (et régionaux)
+   = IPP total
+   − précomptes déjà payés
+   = SOLDE (à payer ou à rembourser)
+```
 
 :::note[Règle datée]
 Le barème comporte des tranches imposées à **25 %, 40 %, 45 % et 50 %**. Les montants des tranches et de la [[quotite-exemptee]] sont **indexés chaque année** : le détail de l'exercice 2026 est dans [[tranches-imposition]].

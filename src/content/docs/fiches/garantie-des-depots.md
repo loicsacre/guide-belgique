@@ -65,6 +65,15 @@ L'assurance-vie **branche 21**, elle, est une épargne à taux garanti vendue pa
 
 Tu n'as presque rien à faire. Une fois la faillite déclarée, le Fonds de garantie rembourse **automatiquement** les clients, dans un délai légal de **7 jours ouvrables** en principe. L'argent est versé sur un compte que tu désignes, dans une autre banque.
 
+Le chemin de ton argent, de la faillite à ton nouveau compte :
+
+```text
+Faillite déclarée
+  → le Fonds de garantie (SPF Finances) rembourse automatiquement
+  → délai légal : 7 jours ouvrables en principe
+  → sur un compte que tu désignes dans une autre banque
+```
+
 ## Ce que ça change pour toi
 
 Si ton épargne dépasse 100 000 €, **répartis-la** entre plusieurs banques, en vérifiant qu'elles ont bien des licences différentes et pas seulement des noms différents.

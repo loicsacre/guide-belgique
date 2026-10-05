@@ -45,6 +45,19 @@ Les revenus **professionnels**, **immobiliers** et certains revenus **divers** s
 
 Les revenus **mobiliers** et certains revenus **divers**, eux, sont taxés **à part**, à un taux fixe (30 %, 33 %, 16,5 %… selon le revenu) : c'est la **taxation distincte**. Ils ne s'ajoutent pas au reste. Il existe une exception : si la globalisation est plus avantageuse pour toi, le fisc l'applique, mais c'est rare.
 
+Les deux traitements, côte à côte :
+
+```text
+Revenus professionnels + immobiliers (+ certains divers)
+  → additionnés = revenu imposable globalement
+  → barème de 25 % à 50 %
+
+Revenus mobiliers, certains revenus divers
+  → taxés à part, à un taux fixe (30 %, 33 %, 16,5 %…) :
+    « taxation distincte »
+  → sauf si la globalisation est plus avantageuse (rare)
+```
+
 C'est pourquoi un dividende ne « monte » pas tes tranches : il reste dans son tiroir, à 30 %. Prenons un exemple **fictif** : le salarié du guide, dont la dernière tranche atteinte est taxée à 45 %, reçoit 1 000 € de dividendes. Ils sont taxés à 30 %, soit 300 €, retenus à la source. S'ils avaient été ajoutés à son salaire, ils auraient été taxés à 45 %, soit 450 €.
 
 ## Ce que ça change pour toi

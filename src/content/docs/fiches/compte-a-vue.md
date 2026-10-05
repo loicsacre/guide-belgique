@@ -60,6 +60,20 @@ En dehors des cartes, l'argent sort de ton compte de plusieurs manières.
 - **L'ordre permanent** fait l'inverse : c'est toi qui envoies un montant fixe chaque mois, pour ton épargne ou ton loyer. → [[domiciliation-ordre-permanent]]
 - **Le paiement mobile** (Payconiq/Bancontact, Apple Pay, Google Pay) n'est pas un compte de plus : il s'appuie sur ta carte ou ton compte.
 
+En résumé, qui fait bouger l'argent dans chaque cas :
+
+```text
+Virement SEPA       gratuit, 1 jour ouvrable
+                    (instantané : quelques secondes, même prix)
+Communication       +++123/4567/89012+++ : indispensable pour
+structurée          impôts, factures, loyers
+Domiciliation       le créancier prélève (énergie, télécom)
+Ordre permanent     tu envoies un montant fixe chaque mois
+                    (épargne, loyer)
+Paiement mobile     Payconiq/Bancontact, Apple/Google Pay :
+                    adossé à ta carte ou ton compte
+```
+
 ## Ce que ça coûte vraiment
 
 Les **frais de compte** vont de la gratuité à environ 5 € par mois selon la banque et la formule. Mais le prix affiché ne dit pas tout : regarde aussi les frais cachés, comme les retraits d'argent hors du réseau de ta banque et surtout les paiements hors zone euro, sur lesquels la banque prend souvent 2 à 3 % de frais de change.

@@ -36,6 +36,21 @@ Le circuit suit trois gestes de l'employeur, puis un geste de l'ONSS.
 3. **Le paiement des cotisations**, personnelles et patronales.
 4. **La répartition.** L'ONSS transfère l'argent aux branches de la sécurité sociale : le SFP (Service fédéral des Pensions), l'INAMI (soins de santé et indemnités de maladie), l'ONEM (chômage) et les autres. Ce sont elles qui, le moment venu, transforment ces cotisations en droits pour toi.
 
+Le circuit, de l'employeur jusqu'à tes droits :
+
+```text
+EMPLOYEUR
+  ├─ Dimona : « j'engage X à partir du … »  (déclaration immédiate)
+  ├─ DmfA   : chaque trimestre, salaires + prestations
+  │           de chaque travailleur
+  └─ paiement des cotisations (personnelles + patronales)
+                      │
+                    ONSS
+                      │  répartition
+        ┌─────────────┼───────────────┐
+      SFP           INAMI           ONEM …    → tes droits
+```
+
 Résumé en une ligne : c'est l'employeur qui déclare ; c'est toi (par la part retenue) et l'employeur (par la part patronale) qui payez ; c'est l'ONSS qui reçoit, puis les branches ; et le tout se fait mensuellement pour les paiements, trimestriellement pour les déclarations détaillées.
 
 ## Un exemple sur une fiche de paie

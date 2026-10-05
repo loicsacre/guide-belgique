@@ -49,6 +49,23 @@ Tout passe par un collecteur central, l'[[onss|ONSS]] (l'Office national de séc
 - **Les accidents du travail** et **les maladies professionnelles** sont gérés par Fedris.
 - **Les vacances annuelles des ouvriers** passent par l'ONVA, l'Office national des vacances annuelles.
 
+Le circuit complet, de la cotisation à la branche :
+
+```text
+   COTISATIONS (travailleurs + employeurs)
+   + financement de l'État
+                    │
+                  ONSS
+                    │
+   ├── pensions ............................ SFP
+   ├── soins de santé ...................... INAMI
+   ├── indemnités maladie/invalidité ....... INAMI
+   ├── chômage ............................. ONEM
+   ├── accidents du travail ................ Fedris
+   ├── maladies professionnelles ........... Fedris
+   └── vacances annuelles (ouvriers) ....... ONVA
+```
+
 Les **allocations familiales** faisaient autrefois partie de cet ensemble. Elles sont aujourd'hui gérées par les entités fédérées (Régions et Communautés). → [[qui-fait-quoi]]
 
 Toutes ces institutions échangent leurs données par la **Banque-Carrefour de la sécurité sociale**. C'est pourquoi ta mutualité sait qui est ton employeur sans que tu le lui dises.

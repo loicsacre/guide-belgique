@@ -38,6 +38,18 @@ On imagine souvent que tout est écrit dans le contrat qu'on signe. En réalité
 5. **Le règlement de travail**, le document interne de l'entreprise, précise les horaires et les règles de fonctionnement.
 6. **Ton contrat**, enfin, règle ta situation individuelle.
 
+La pile, du sommet jusqu'à toi :
+
+```text
+Loi (fédérale)                    ← minimums absolus
+ └─ CCT du Conseil national du travail
+     └─ CCT de ta commission paritaire ← barèmes, primes, 13e mois
+         └─ CCT d'entreprise
+             └─ règlement de travail   ← horaires, règles internes
+                 └─ TON CONTRAT        ← jamais moins favorable
+                                         que ce qui précède
+```
+
 Résultat : ton contrat ne peut jamais être moins favorable que ce qui le précède. Et les textes supérieurs priment parfois sur ce qui y est écrit. Si ton contrat prévoit un salaire inférieur au barème de ton secteur, c'est le barème qui s'applique.
 
 ## Les différents types de contrat

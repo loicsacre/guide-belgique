@@ -59,6 +59,20 @@ Le bail répartit les obligations entre les deux parties.
 
 **Le locataire** paie le loyer et les charges. Il entretient le logement « en bon père de famille », c'est-à-dire avec le soin raisonnable qu'on attend de n'importe qui, et assume les petites réparations et l'entretien courant. Il assure sa responsabilité locative, celle qu'il porte si un incendie ou un dégât des eaux part de chez lui. Et il respecte la destination du bien : pas de sous-location sans l'accord du bailleur, par exemple.
 
+Les deux colonnes, face à face :
+
+```text
+BAILLEUR                          LOCATAIRE
+logement conforme aux normes      payer le loyer et les charges
+(salubrité, PEB, électricité)     entretenir « en bon père de famille »
+grosses réparations               petites réparations,
+(toit, chaudière)                 entretien courant
+ENREGISTRER le bail               assurer sa responsabilité
+(gratuit, dans les 2 mois)        locative (incendie)
+état des lieux d'entrée           respecter la destination
+contradictoire                    (pas de sous-location sans accord)
+```
+
 L'enregistrement n'est pas un détail. Si un bail de 9 ans **n'est pas enregistré**, le locataire peut partir **sans préavis ni indemnité**. C'est une sanction pour le bailleur qui n'a pas fait sa part.
 
 ## Ce qui change d'une Région à l'autre

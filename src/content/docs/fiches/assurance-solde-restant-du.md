@@ -43,6 +43,17 @@ La question centrale, c'est la **quotité assurée** : la part du crédit qui se
 - **100 % sur chacun.** Au décès de l'un, tout le crédit est remboursé. C'est la protection maximale, mais la prime est plus élevée, puisque l'assureur couvre deux fois le montant total.
 - **Une répartition asymétrique.** On assure davantage celui des deux dont le revenu est indispensable au ménage, par exemple 70 % sur l'un et 30 % sur l'autre.
 
+Les trois formules, vues du côté de ce qui se passe au premier décès :
+
+```text
+Quotité : part du crédit remboursée au décès de chaque emprunteur
+  50 % / 50 %   → la moitié est remboursée,
+                  le survivant paie l'autre moitié
+  100 % / 100 % → tout est remboursé (prime plus élevée)
+  asymétrique   → davantage sur celui dont le revenu est
+                  indispensable (ex. 70 % / 30 %)
+```
+
 Prenons l'exemple **fictif** du fil rouge : un crédit de 200 000 € à 3 % sur 25 ans, soit une mensualité d'environ 948 €. Supposons qu'au moment du décès, il reste 150 000 € à rembourser. Avec une quotité de 50 % sur chacun, l'assurance verse 75 000 € à la banque, et le survivant continue avec une mensualité d'environ 474 €, la moitié. Avec 100 %, l'assurance verse les 150 000 €, et il n'y a plus rien à payer.
 
 ## Payer en une fois ou chaque mois

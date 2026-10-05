@@ -37,6 +37,16 @@ Résultat : chaque impôt est lié à deux années, et l'administration leur don
 2. **En 2026**, tu déclares, l'impôt est calculé et le décompte final, l'[[avertissement-extrait-de-role|avertissement-extrait de rôle]] (AER), arrive. C'est l'exercice d'imposition 2026.
 3. **En 2027**, au plus tard le 30 juin, l'AER doit avoir été établi.
 
+Les deux étiquettes, posées sur la ligne du temps :
+
+```text
+2025  tu travailles, le précompte     → ANNÉE DES REVENUS 2025
+      est retenu
+2026  tu déclares, l'impôt est        → EXERCICE D'IMPOSITION 2026
+      calculé, l'AER arrive
+2027  au plus tard le 30 juin, l'AER doit avoir été établi
+```
+
 ## Pourquoi c'est un piège
 
 Le problème, c'est que presque tous les documents officiels parlent en exercice d'imposition, alors que toi, tu penses spontanément à l'année où tu as gagné l'argent. Trois situations reviennent souvent.

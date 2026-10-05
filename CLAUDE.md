@@ -131,7 +131,8 @@ Une fiche se lit **sans effort**, comme un bon article : on comprend en lisant, 
 - **Répondre à la vraie question.** Celle qui amène le lecteur sur la page (« pourquoi je dois encore payer ? »), pas seulement la définition.
 - **Chaque terme expliqué là où il apparaît**, en une incise (« la communication structurée, ce numéro entre +++ qui… »), même s'il a sa fiche. Le lien vient en plus, pas à la place.
 - **Un exemple chiffré qu'on suit**, cohérent avec les exemples fil rouge (voir `MEMORY.md`), marqué fictif.
-- **Tableaux** seulement pour comparer ou pour lire un document ligne par ligne ; schémas `text` seulement s'ils éclairent un flux que la prose rend difficile.
+- **Tableaux** seulement pour comparer ou pour lire un document ligne par ligne.
+- **Schémas `text`** bienvenus pour montrer un flux ou une hiérarchie d'un coup d'œil (qui paie qui, étages du pouvoir, étapes) : annoncés par une phrase, placés après le passage qu'ils résument, 72 caractères de large au plus. Lolo les aime : **ne jamais en supprimer** lors d'une réécriture.
 - Terminer par « À ne pas confondre » (en prose si possible) et « Nature des chiffres de cette page ». Cette section devient automatiquement une petite note en fin de page, avec un lien vers l'explication des pastilles sur l'accueil (`src/lib/remark-chiffres.mjs`) : y écrire **des phrases** qui citent les chiffres (« 🔴 les délais (… ) sont des règles officielles… »), pas une liste de mots-clés.
 
 Les anciennes fiches suivent encore le gabarit *En langage simple → Pourquoi ça existe → Comment ça marche → Exemple → Ce que ça change pour toi → À ne pas confondre*, souvent trop découpé : les réécrire progressivement sur le nouveau modèle, chapitre par chapitre, sans perdre d'information.

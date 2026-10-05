@@ -79,6 +79,16 @@ Prenons l'exemple **fictif** qui sert de fil rouge au guide : un salarié avec 3
 - **S'ils donnent droit à une réduction de 30 %**, son impôt baisse de **300 €**, et ce serait exactement pareil s'il gagnait beaucoup plus ou beaucoup moins.
 - **Si son impôt dû n'était que de 100 €**, la même réduction de 30 % ne lui ferait gagner que **100 €** : l'impôt tombe à zéro et les 200 € restants sont perdus. Seul un crédit d'impôt les lui aurait versés.
 
+Les trois cas, côte à côte :
+
+```text
+Déduction de 1 000 €            → impôt − 450 € (1 000 × 45 %)
+Réduction de 30 % sur 1 000 €   → impôt − 300 € (quel que soit
+                                                 le revenu)
+Même réduction, impôt dû 100 €  → impôt − 100 € seulement
+                                  (200 € perdus, sauf crédit d'impôt)
+```
+
 ## Fédéral ou régional ?
 
 Tous ces avantages ne viennent pas du même niveau de pouvoir. Depuis 2014, les **Régions** gèrent ceux qui sont liés au **logement** (bonus logement, chèque habitat wallon, woonbonus flamand, abattement bruxellois) et aux **titres-services**. Les avantages pour l'épargne-pension, les dons et la garde d'enfants restent **fédéraux**. C'est ta Région au 1er janvier de l'exercice d'imposition, c'est-à-dire de l'année qui suit celle des revenus, qui détermine lesquels s'appliquent à toi. → [[centimes-additionnels]]

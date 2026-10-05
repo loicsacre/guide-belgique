@@ -51,6 +51,21 @@ Quand tu déménages, c'est toi qui fais le premier pas, et c'est la commune qui
 3. **La commune t'inscrit** et met à jour ta carte d'identité, dont la puce contient ton adresse.
 4. **Le Registre national propage l'information** à la plupart des administrations, sans que tu doives les prévenir une à une.
 
+Le circuit, en un coup d'œil :
+
+```text
+Tu déménages
+  → tu le déclares à la NOUVELLE commune (en ligne ou au
+    guichet), dans les 8 jours ouvrables
+  → un agent de quartier (police locale) vérifie que tu
+    habites bien là
+  → la commune t'inscrit et met à jour ta carte d'identité
+    (la puce)
+  → le Registre national propage l'info à la plupart des
+    administrations
+  → toi, tu préviens banque, employeur, assureurs, abonnements
+```
+
 Mais « la plupart » ne veut pas dire « tous ». Le Registre national ne prévient pas tout le monde : tu dois toi-même informer ta banque, ton employeur, tes assureurs et tes abonnements.
 
 ## Quand domicile et situation réelle se compliquent

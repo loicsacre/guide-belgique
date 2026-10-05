@@ -79,6 +79,19 @@ Une fois les clés en poche, d'autres factures arrivent, que le locataire ne voi
 
 À tout cela s'ajoutent bien sûr la mensualité du crédit et l'assurance solde restant dû, qui rembourse le crédit si l'emprunteur décède. → [[assurance-solde-restant-du]]
 
+La facture annuelle, en un coup d'œil :
+
+```text
+Chaque année
+  précompte immobilier       ≈ 800 à 1 500 €
+                             (selon revenu cadastral et commune)
+  assurance habitation       ≈ 300 à 600 €
+  entretien (1 % de la valeur, règle du pouce)   ≈ 2 500 €
+  charges de copropriété     ≈ 100 à 250 €/mois
+  (appartement)              dont fonds de réserve
+  + mensualité du crédit et assurance solde restant dû
+```
+
 ## Ce que ça change pour toi
 
 Pour estimer ton budget, compte le **prix multiplié par 1,06 à 1,15**, selon ta Région et selon que tu as droit ou non aux taux réduits, **plus** les frais de crédit.

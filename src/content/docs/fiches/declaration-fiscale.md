@@ -38,6 +38,22 @@ Tout part de ton salaire, et le calcul final arrive plus d'un an après. Voici l
 3. **En été**, tu vérifies, tu complètes, tu signes et tu envoies.
 4. **Ensuite**, le SPF Finances calcule ton impôt et t'envoie le résultat : l'[[avertissement-extrait-de-role|avertissement-extrait de rôle]] (AER), le décompte qui te dit si tu dois payer un supplément ou si on te rembourse.
 
+Le même enchaînement, sur une ligne du temps :
+
+```text
+Année des revenus    Tu travailles, le précompte est retenu.
+        │            Ton employeur établit ta fiche 281.10.
+        ▼
+Printemps suivant    Déclaration ouverte dans MyMinfin
+        │            (Tax-on-web), en grande partie préremplie.
+        ▼
+Été                  Tu vérifies, complètes, signes et envoies.
+        │
+        ▼
+Ensuite              Le SPF Finances calcule ton impôt
+                     ⇒ avertissement-extrait de rôle (AER).
+```
+
 Les revenus de 2025 se déclarent donc en 2026, pour ce que le fisc appelle l'« exercice d'imposition 2026 ». → [[annee-revenus-exercice]]
 
 ## Trois façons de déclarer

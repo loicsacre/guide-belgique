@@ -58,6 +58,13 @@ Et le moment où tu commences pèse encore plus lourd. À montant mensuel égal,
 
 Il existe une astuce simple pour sentir la puissance des intérêts composés : divise 72 par le taux annuel, et tu obtiens à peu près le nombre d'années qu'il faut pour **doubler** ton capital.
 
+```text
+Années pour doubler ≈ 72 ÷ taux annuel
+  à 2 % → 36 ans      à 6 % → 12 ans      à 9 % → 8 ans
+```
+
+Concrètement :
+
 - **À 2 %**, il faut environ 36 ans pour doubler.
 - **À 6 %**, il en faut environ 12.
 - **À 9 %**, environ 8.

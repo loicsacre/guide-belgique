@@ -42,6 +42,20 @@ On décrit souvent la pension belge comme un édifice à trois piliers, plus un 
 - **Le 3e pilier, l'épargne personnelle.** C'est toi qui l'alimentes, avec l'**épargne-pension** ou l'**épargne à long terme**, et l'État t'encourage par un avantage fiscal. → [[epargne-pension]]
 - **Le « 4e pilier »**, enfin, désigne tout le reste : l'immobilier, les placements libres, tout ce que tu construis sans cadre fiscal particulier.
 
+L'édifice, étage par étage :
+
+```text
+1er pilier   PENSION LÉGALE         payée par l'État (SFP),
+                                    financée par les cotisations
+                                    d'aujourd'hui (répartition)
+2e pilier    PENSION COMPLÉMENTAIRE via l'employeur ou le secteur
+                                    (assurance groupe, fonds de
+                                    pension)
+3e pilier    ÉPARGNE PERSONNELLE    épargne-pension, épargne à long
+                                    terme, avec avantage fiscal
+(4e pilier)  tout le reste          immobilier, placements libres
+```
+
 ## À quel âge
 
 :::note[Règle datée — âge légal 66 ans (2025-2029), 67 ans dès 2030]
@@ -56,7 +70,8 @@ Pour un salarié, la pension légale se construit année après année. Chaque a
 
 ```text
 Pour chaque année de carrière :
-  salaire brut de l'année (plafonné, réévalué) × 60 % (isolé) ou 75 % (taux ménage) ÷ 45
+  salaire brut de l'année (plafonné, réévalué)
+  × 60 % (isolé) ou 75 % (taux ménage) ÷ 45
 Somme de toutes les années (max. 45) = pension brute annuelle
 ```
 

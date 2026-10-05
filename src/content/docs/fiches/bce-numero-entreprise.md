@@ -50,6 +50,18 @@ La consultation est publique et gratuite, en ligne, via **BCE Public Search**. C
 
 **À la fin**, un indépendant demande sa radiation via le guichet. Une société, elle, doit être dissoute puis liquidée, c'est-à-dire qu'on vend ce qu'elle possède et qu'on règle ses dettes avant de la faire disparaître.
 
+Les trois moments de la vie d'une entreprise dans la BCE :
+
+```text
+INSCRIPTION    guichet d'entreprise agréé (personne physique)
+               ou après l'acte notarié (société)
+               → numéro BE 0xxx.xxx.xxx, puis TVA au SPF Finances
+MODIFICATIONS  nouvelle activité, déménagement, nouveau gérant
+               → à déclarer (guichet ou Moniteur belge)
+CESSATION      radiation via le guichet (indépendant)
+               dissolution puis liquidation (société)
+```
+
 ## Ce que ça change pour toi
 
 Si tu es indépendant, ton numéro d'entreprise **doit figurer** sur tes factures, ton site et tes courriers. → [[facturation]]

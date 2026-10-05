@@ -51,6 +51,18 @@ Du brut jusqu'au montant qui passe dans le barème, le calcul se fait en quatre 
 3. On retire les **frais professionnels**, au forfait ou au réel. On obtient le **revenu net imposable**.
 4. On ajoute les **autres revenus imposables** que tu aurais, par exemple des revenus immobiliers ou divers. On obtient le **revenu imposable globalement**, celui qui passe dans le barème par tranches. → [[categories-de-revenus]]
 
+Les quatre temps, d'un seul regard :
+
+```text
+salaire brut annuel (+ avantages en nature)
+  − cotisations sociales personnelles
+  = rémunération brute imposable
+  − frais professionnels (forfait OU frais réels)
+  = REVENU NET IMPOSABLE
+  + autres revenus imposables (immobiliers, divers…)
+  = revenu imposable globalement ──► barème par tranches
+```
+
 ## Les frais professionnels : forfait ou frais réels ?
 
 Pour les frais professionnels, tu as le choix entre deux méthodes, et tu peux changer chaque année.

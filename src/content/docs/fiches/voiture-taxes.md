@@ -76,6 +76,22 @@ Si tu achètes ou vends une occasion, un autre document entre en jeu : le **Car-
 
 Enfin, certaines villes ont des **zones de basses émissions** (LEZ, pour *low emission zones*) : Bruxelles, Anvers et Gand y interdisent les véhicules anciens. Vérifie que ta voiture pourra entrer là où tu vas.
 
+Le parcours d'obligations, en récapitulatif :
+
+```text
+Immatriculation (DIV)  via l'assureur en général : plaque
+                       européenne, certificat d'immatriculation
+Assurance RC           obligatoire avant de rouler
+Contrôle technique     dès 4 ans, puis annuel (W, Bxl)
+                       ou tous les deux ans (Fl, depuis 09/2026) ;
+                       contrôle « vente » avant revente
+                       (plus en Fl dès 2027, sauf import)
+Car-Pass               obligatoire à la vente d'occasion :
+                       historique kilométrique officiel
+LEZ                    zones de basses émissions (Bruxelles,
+                       Anvers, Gand) interdites aux véhicules anciens
+```
+
 ## Combien coûte vraiment une voiture : un exemple
 
 Prenons un exemple **fictif** : une citadine à essence achetée 20 000 €, gardée 6 ans, qui roule 15 000 km par an. On répartit tout sur une année.

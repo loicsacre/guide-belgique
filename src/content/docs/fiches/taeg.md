@@ -47,6 +47,16 @@ Le TAEG additionne tout ce que tu dois payer **pour obtenir le crédit**, puis l
 - **les assurances imposées** pour obtenir le crédit, ou pour obtenir ce taux-là ;
 - **les autres frais obligatoires** liés au crédit.
 
+Sous forme d'addition :
+
+```text
+TAEG  =  taux débiteur (les intérêts)
+       + frais de dossier, d'expertise
+       + assurances imposées pour obtenir le crédit (ou le taux)
+       + autres frais obligatoires
+       exprimés en % par an sur toute la durée
+```
+
 En revanche, il ne contient pas les frais que tu paierais de toute façon, avec ou sans cette banque : les frais de notaire pour l'hypothèque, les droits d'enregistrement (l'impôt régional sur l'achat). Il ne contient pas non plus les assurances facultatives, celles que tu prends si tu veux.
 
 ## Lire une offre, ligne par ligne

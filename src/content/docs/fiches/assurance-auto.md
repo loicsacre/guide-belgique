@@ -76,6 +76,18 @@ Dans le stress d'un accident, l'ordre des étapes compte.
 3. **Déclare l'accident à ton assureur** dans les 8 jours.
 4. **Laisse les assureurs s'arranger.** Grâce à la convention RDR, un accord entre assureurs, le tien t'indemnise rapidement si tu n'es pas en tort, puis se fait rembourser par celui de l'autre conducteur.
 
+Les quatre étapes, en raccourci :
+
+```text
+1. Sécuriser, soigner, appeler les secours
+   (police obligatoire s'il y a des blessés)
+2. Constat amiable signé par les deux, ou constat électronique
+   (app Crashform) : croquis, croix cochées
+3. Déclarer l'accident à ton assureur dans les 8 jours
+4. Convention RDR entre assureurs : le tien t'indemnise vite
+   si tu n'es pas en tort
+```
+
 Ne signe rien que tu ne comprends pas. Un constat n'est pas un aveu de responsabilité : il sert à établir les faits, à partir desquels les assureurs détermineront qui est en tort.
 
 ## Ce que tu dois savoir au quotidien

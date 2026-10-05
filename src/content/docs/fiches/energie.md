@@ -41,6 +41,19 @@ Ta facture d'électricité ou de gaz arrive au nom d'une seule entreprise, mais 
 
 **L'État et les Régions** prélèvent enfin des cotisations, des accises (des taxes spéciales sur l'énergie) et la TVA à 6 %. Cela représente environ 20 à 30 % de la facture.
 
+Les trois parts de la facture, en un coup d'œil :
+
+```text
+FOURNISSEUR (Engie, Luminus,          ← tu le choisis,
+TotalEnergies, Mega, Eneco…)            c'est lui qui facture
+   vend l'énergie : ≈ 30 à 45 % de la facture
+GESTIONNAIRE DE RÉSEAU (ORES, RESA,   ← imposé selon ta commune
+Sibelga, Fluvius…)
+   transport, distribution, compteur, dépannage : ≈ 30 à 40 %
+ÉTAT et RÉGIONS
+   cotisations, accises, TVA 6 % : ≈ 20 à 30 %
+```
+
 Pourquoi ce découpage ? Le marché de l'énergie est **libéralisé** : plusieurs fournisseurs sont en concurrence pour te vendre l'énergie, mais ils passent tous par le même réseau, qui reste un monopole. Des **régulateurs** surveillent l'ensemble : la CREG au niveau fédéral, et la CWaPE (Wallonie), Brugel (Bruxelles) et la VREG (Flandre) dans les Régions. Ils contrôlent les prix et publient un **comparateur officiel** des offres.
 
 ## Ce que tu paies, ligne par ligne

@@ -57,6 +57,16 @@ Ensuite, tu passes un **ordre d'achat**, qui est exécuté sur une bourse, comme
 
 Les titres achetés sont détenus pour toi, à ton nom. Ils ne font donc pas partie de la faillite de la banque si elle tombe : ils te restent, même s'ils ne sont pas couverts par la garantie des dépôts, qui protège l'argent sur tes comptes. → [[garantie-des-depots]]
 
+Le parcours d'un achat en bourse, de ton compte jusqu'au titre :
+
+```text
+Compte-titres (banque ou courtier en ligne)
+  → ordre d'achat sur une bourse (Euronext Bruxelles, Amsterdam…)
+  → frais de transaction + taxe sur les opérations de bourse (TOB)
+  → titres détenus à ton nom : hors faillite de la banque,
+    mais pas couverts par la garantie des dépôts
+```
+
 Un **fonds** classique se souscrit autrement : directement auprès de la banque, pas en bourse, et souvent avec des **droits d'entrée**, des frais prélevés au moment où tu entres dans le fonds.
 
 ## Les deux chiffres qui comptent sur trente ans

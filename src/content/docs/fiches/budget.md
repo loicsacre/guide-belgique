@@ -44,6 +44,19 @@ Du côté des **dépenses**, on met tout : logement, alimentation, transport, as
 
 Ce qui reste, c'est ton **reste disponible**. C'est lui qui finance l'épargne, l'investissement et les projets. S'il est négatif, ou s'il n'existe que sur le papier, aucun de ces projets n'est réaliste.
 
+Tout le budget tient dans cette soustraction :
+
+```text
+REVENUS NETS
+  salaire net · 13e mois · pécule · allocations · loyers perçus
+        −
+DÉPENSES
+  logement · alimentation · transport · assurances · abonnements
+  impôts (supplément AER, précompte immobilier) · crédits · loisirs
+        =
+RESTE DISPONIBLE ──► épargne · investissement · projets
+```
+
 ## Les quatre types de dépenses
 
 Toutes les dépenses ne se traitent pas de la même façon. On peut les ranger en quatre familles.

@@ -73,6 +73,22 @@ Une donation n'est pas forcément un cadeau sec. On peut y attacher des conditio
 - **La clause d'exclusion.** Le bien donné reste propre à l'enfant et n'entre pas dans la communauté qu'il forme avec son conjoint. → [[regime-matrimonial]]
 - **L'avance d'hoirie ou le hors part.** En **avance d'hoirie**, la donation est une avance sur l'héritage futur de l'enfant : on en tiendra compte au décès pour que les enfants soient traités à égalité. **Hors part**, c'est un avantage définitif que l'enfant garde en plus de sa part.
 
+Les cinq clauses, en un coup d'œil :
+
+```text
+Réserve d'usufruit    le parent donne la nue-propriété, garde
+                      l'usage et les revenus (loyers) jusqu'à
+                      son décès
+Retour conventionnel  si l'enfant décède avant le parent, le bien
+                      revient au parent sans droits
+Charge ou rente       le bénéficiaire verse une rente au donateur
+                      ou l'héberge
+Clause d'exclusion    le bien reste propre à l'enfant, hors de la
+                      communauté avec son conjoint
+Avance d'hoirie       avance sur l'héritage (égalité entre enfants)
+  ou hors part        avantage définitif, en plus de sa part
+```
+
 ## Ce que ça change pour toi
 
 :::caution[Dépend de ta situation]

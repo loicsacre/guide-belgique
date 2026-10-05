@@ -34,6 +34,17 @@ L'impôt sur tes revenus, l'[[ipp]] (impôt des personnes physiques), est un imp
 
 Le tout forme l'IPP total qui apparaît sur ton [[avertissement-extrait-de-role|avertissement-extrait de rôle]] (AER), le décompte final de ton impôt que le fisc t'envoie chaque année.
 
+Comment les trois niveaux s'empilent sur ton AER :
+
+```text
+Impôt État (fédéral, après réductions)
+  ├─ part régionale : la Région en reçoit une fraction
+  │  et peut la moduler (réductions propres)
+  └─ + taxe communale additionnelle : un % de l'impôt,
+       fixé par ta commune
+  = IPP total sur ton AER
+```
+
 Bonne nouvelle : tu n'as aucune démarche à faire. Le SPF Finances calcule tout, te le réclame en une fois, puis reverse leur part aux communes et aux Régions.
 
 ## La taxe communale : un pourcentage de ton impôt

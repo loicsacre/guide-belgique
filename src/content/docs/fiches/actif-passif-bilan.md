@@ -43,6 +43,23 @@ Le passif, lui aussi, a deux blocs : ce qui appartient aux associés, et ce qui 
 - **Les capitaux propres** (on dit aussi *fonds propres*) regroupent le capital apporté par les associés, les **réserves**, c'est-à-dire les bénéfices des années passées que la société a gardés au lieu de les distribuer, et le résultat de l'année.
 - **Les dettes** se divisent selon leur échéance : à long terme, surtout les emprunts bancaires ; à court terme, les fournisseurs à payer et les dettes fiscales et sociales (TVA, impôt, cotisations).
 
+Mises côte à côte, les deux colonnes donnent la charpente de tout bilan :
+
+```text
+ACTIF (emplois : où est l'argent)  PASSIF (ressources : d'où il vient)
+Immobilisations                    Capitaux propres
+  bâtiments, machines,               capital apporté par les associés
+  véhicules, logiciels               réserves (bénéfices gardés)
+  participations                     résultat de l'année
+Actifs circulants                  Dettes
+  stocks                             long terme : emprunts bancaires
+  créances clients                   court terme : fournisseurs,
+  (factures non payées)              dettes fiscales et sociales
+  trésorerie (banque, caisse)
+─────────────────────────────      ─────────────────────────────
+TOTAL ACTIF               =        TOTAL PASSIF
+```
+
 ## Pourquoi les deux colonnes sont toujours égales
 
 Ce n'est pas une coïncidence, c'est la construction même du bilan. Chaque euro qui entre dans l'entreprise vient de quelque part : un associé, une banque, un fournisseur qui attend d'être payé, un bénéfice. Et il est forcément quelque part : en caisse, dans une machine, chez un client qui doit encore payer. Chaque euro est donc compté deux fois, une fois de chaque côté.

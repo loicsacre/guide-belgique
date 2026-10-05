@@ -88,6 +88,26 @@ Si les appels commerciaux t'agacent, tu peux inscrire ton numéro sur la liste *
 
 La méthode monte en puissance, une étape après l'autre.
 
+L'escalade, en un coup d'œil :
+
+```text
+1. Réclamation écrite au vendeur
+   e-mail, puis recommandé = MISE EN DEMEURE (avec un délai)
+         │  pas de solution
+         ▼
+2. SERVICE DE MÉDIATION POUR LE CONSOMMATEUR (gratuit)
+   ou médiateur du secteur : énergie, télécom, poste,
+   banques (Ombudsfin), assurances, voyages
+   achat dans un autre pays de l'UE : Centre européen
+   des consommateurs
+         │  toujours bloqué
+         ▼
+3. JUSTICE DE PAIX (petits litiges, avocat pas obligatoire)
+
+Pratique illégale ? Signale-la au SPF Économie
+(pointdecontact.belgique.be)
+```
+
 1. **Réclame par écrit au vendeur.** Commence par un e-mail. Sans réponse, envoie un recommandé qui fixe un délai : c'est une **mise en demeure**, la lettre officielle par laquelle tu exiges qu'il exécute ses obligations avant une date précise.
 2. **Pas de solution ? Passe par un médiateur, gratuit.** Le **Service de médiation pour le consommateur** traite les litiges de consommation en général. Certains secteurs ont leur propre médiateur : énergie, télécom, poste, banques (Ombudsfin), assurances, voyages.
 3. **Achat dans un autre pays de l'Union ?** Le **Centre européen des consommateurs** t'aide gratuitement pour les achats transfrontaliers. L'ancienne plateforme européenne de règlement des litiges en ligne (ODR), qu'on trouve encore citée dans des conditions générales, a fermé le 20 juillet 2025.

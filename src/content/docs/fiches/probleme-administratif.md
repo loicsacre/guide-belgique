@@ -34,7 +34,20 @@ Résultat : le plus grand risque n'est pas l'erreur de l'administration. C'est d
 
 ## La méthode, en quatre temps
 
-Quel que soit le problème, la démarche est la même.
+Quel que soit le problème, la démarche est la même. En un coup d'œil :
+
+```text
+1. QUI ?      L'organisme émetteur (en-tête, numéro de dossier)
+2. QUAND ?    Le DÉLAI de recours et la forme
+              (lettre, recommandé, formulaire en ligne)
+3. ÉCRIS      Réclamation motivée, datée, pièces jointes ;
+              garde une trace (recommandé, accusé, eBox)
+4. ESCALADE   Pas de réponse ou refus
+              → MÉDIATEUR compétent (gratuit)
+              → tribunal en dernier recours
+```
+
+Dans le détail :
 
 1. **Qui a pris la décision ?** Repère l'organisme qui t'écrit : son nom en en-tête, ton numéro de dossier. C'est à lui que tu t'adresses, et c'est lui qui détermine le délai et le médiateur compétent. → [[administrations-et-organismes]]
 2. **Avant quand, et sous quelle forme ?** Cherche le **délai de recours**, le temps dont tu disposes pour contester, et la forme demandée (lettre, recommandé, formulaire en ligne).
