@@ -140,14 +140,11 @@ Un rendement **garanti** supérieur à celui des bons d'État ; une plateforme a
 
 **Tu veux de l'immobilier.** Louer un bien est un investissement concentré, illiquide, avec du travail ; les fonds immobiliers cotés (SIR) en sont la version liquide. Voir [[rendement-risque-liquidite]].
 
-## Ce que tu dois retenir
+## En bref
 
 1. L'épargne qui dort perd du pouvoir d'achat ; le temps est le principal moteur du rendement.
 2. D'abord la réserve de 3 à 6 mois et le remboursement des dettes chères.
-3. Épargne-pension si tu paies de l'impôt : 30 % rendus.
-4. Argent à moins de 5 ans : sécurité ; à plus de 15 ans : actions acceptables.
-5. Pour un débutant : un ETF mondial de capitalisation, frais bas, intermédiaire belge, versements réguliers.
-6. Rendement garanti élevé = fraude.
+3. Argent à moins de 5 ans : sécurité ; à plus de 15 ans : actions acceptables.
 
 ## Nature des chiffres de cette page
 

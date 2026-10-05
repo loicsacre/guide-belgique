@@ -2,58 +2,50 @@
 // La bibliothèque : tout ce qui se lit hors du site. Livres (PDF A5 + EPUB), fiches pratiques (A4), mémos, quiz.
 // Les fichiers sont produits par `npm run export` ; sans eux (en local), les liens mènent aux pages d'impression.
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
-import { getLivres, resolveLivre, practicalEntries, downloads, getQuiz } from '../lib/gbcf';
+import { getLivres, resolveLivre, practicalEntries, downloads } from '../lib/gbcf';
 import { slugOf, hrefOf } from '../lib/notions';
-import { SAVOIRS } from '../lib/domains.mjs';
 
 const B = import.meta.env.BASE_URL.replace(/\/$/, '');
 const livres = await Promise.all(getLivres().map(async (l) => ({ l, ...(await resolveLivre(l)) })));
 const pratiques = await practicalEntries();
 ---
 <StarlightPage frontmatter={{ title: 'Bibliothèque', description: 'Le guide à emporter : petits livres, fiches pratiques à imprimer, mémos et quiz.' }}>
-  <p>Le site est le manuel interactif. Ici, le même contenu se lit autrement : un livre sur une liseuse, une fiche dans un classeur, un mémo sur le frigo, un cahier annoté sur une tablette à stylet. Tout est généré depuis les mêmes textes : une correction sur le site se retrouve partout.</p>
+  <p>Le site est le manuel. Ici, le même contenu se lit autrement : un livre sur une liseuse, une fiche dans un classeur, un mémo sur le frigo, un cahier annoté sur une tablette à stylet. Tout est généré depuis les mêmes textes : une correction sur le site se retrouve partout.</p>
 
   <h2 id="livres">📚 Les petits livres</h2>
-  <p>Des chapitres-récits, leurs mémos, checklists et quiz, puis toutes les fiches qu'ils mobilisent. Le PDF est au format A5, avec des pages de notes : il s'imprime en livret et s'annote bien sur une tablette à stylet (reMarkable, Boox…). L'EPUB se lit sur Kobo, Kindle (via Send to Kindle) ou Apple Books.</p>
-  {livres.map(({ l, chapitres, annexes }) => (
+  <p>Un livre reprend un ou plusieurs chapitres du manuel : la vue d'ensemble, les fiches dans l'ordre de lecture, les mises en situation, puis un quiz facultatif en fin de livre. Le PDF est au format A5, avec des pages de notes : il s'imprime en livret et s'annote bien sur une tablette à stylet (reMarkable, Boox…). L'EPUB se lit sur Kobo, Kindle (via Send to Kindle) ou Apple Books.</p>
+  {livres.map(({ l, chapitres, extra }) => (
     <section class="gb-livre" id={`livre-${l.id}`} style={l.couleur ? `--gb-cover:${l.couleur}` : ''}>
       <h3>{l.titre}</h3>
       {l.sous_titre && <p class="gb-hint">{l.sous_titre}</p>}
-      <p>{chapitres.length} situation{chapitres.length > 1 ? 's' : ''} : {chapitres.map((c, k) => <>{k > 0 && ' · '}<a href={hrefOf(c)}>{c.data.title}</a></>)} · {annexes.length} fiches.</p>
+      <p>{chapitres.map((x, k) => <>{k > 0 && ' · '}<a href={`${B}/chapitres/${x.c.id}/`}>{x.c.title}</a> ({x.fiches.length} fiches, {x.situations.length} mise{x.situations.length > 1 ? 's' : ''} en situation)</>)}{extra.length > 0 && <> · {extra.length} fiches voisines</>}.</p>
       <p class="gb-formats">
-        <a href={`${B}/${downloads.livreEpub(l.id)}`}>📖 EPUB</a>
-        <a href={`${B}/${downloads.livrePdf(l.id)}`} data-fallback={`${B}/imprimer/livre/${l.id}/`}>📓 PDF A5 (cahier)</a>
-        <a href={`${B}/imprimer/livre/${l.id}/`}>🌐 Version imprimable</a>
+        <a href={`${B}/${downloads.livreEpub(l.id)}`}>EPUB</a>
+        <a href={`${B}/${downloads.livrePdf(l.id)}`} data-fallback={`${B}/imprimer/livre/${l.id}/`}>PDF A5 (cahier)</a>
+        <a href={`${B}/imprimer/livre/${l.id}/`}>Version imprimable</a>
       </p>
     </section>
   ))}
 
   <h2 id="fiches">🗂️ Les fiches pratiques</h2>
-  <p>Une à trois pages A4 par situation : l'essentiel, la checklist à cocher, qui fait quoi, les chiffres et leur nature, les mots à connaître, une place pour tes notes. Le QR code renvoie au récit complet.</p>
+  <p>Une à trois pages A4 par mise en situation, à glisser dans un classeur : l'essentiel, les étapes pratiques, qui fait quoi, les chiffres et leur nature, les mots à connaître, une place pour tes notes. Le QR code renvoie à la version en ligne. Les autres situations recevront la leur au fil du temps.</p>
   <p class="gb-formats"><a href={`${B}/${downloads.fiches}`} data-fallback={`${B}/imprimer/fiches/`}>🖨️ Toutes les fiches (PDF A4)</a></p>
   <table>
-    <thead><tr><th>Fiche</th><th>Mémo · 1 page</th><th>Fiche · A4</th><th>Quiz</th></tr></thead>
+    <thead><tr><th>Mise en situation</th><th>Mémo · 1 page</th><th>Fiche · A4</th></tr></thead>
     <tbody>
       {pratiques.map((e, i) => {
         const s = slugOf(e);
-        const q = getQuiz(s);
         return (
           <tr>
             <td>{String(i + 1).padStart(2, '0')} · <a href={hrefOf(e)}>{e.data.title}</a></td>
             <td>{e.data.memo ? <a href={`${B}/${downloads.memo(s)}`} data-fallback={`${B}/imprimer/memo/${s}/`}>PDF</a> : '—'}</td>
             <td><a href={`${B}/${downloads.fiche(s)}`} data-fallback={`${B}/imprimer/fiche/${s}/`}>PDF</a></td>
-            <td>{q ? <a href={`${hrefOf(e)}#quiz`}>{q.questions.length} questions</a> : '—'}</td>
           </tr>
         );
       })}
     </tbody>
   </table>
 
-  <h2 id="savoirs">Cinq façons de savoir</h2>
-  <p>Chaque contenu du guide répond à une de ces questions ; les quiz les mélangent.</p>
-  <ul>
-    {Object.values(SAVOIRS).map((s) => <li>{s.emoji} <strong>{s.label}</strong> — {s.hint}</li>)}
-  </ul>
 </StarlightPage>
 
 <script>

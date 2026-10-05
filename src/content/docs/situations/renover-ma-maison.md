@@ -152,16 +152,11 @@ Ensuite, les dossiers de primes en ligne, un par travail : devis, facture détai
 
 L'hiver suivant, tes relevés mensuels parlent : 🔵 22 000 kWh de gaz l'an dernier, 🔵 15 500 cette année, à météo comparable, et plus de buée au réveil. Le PEB théorique est passé à D ; ta facture a baissé de 🔵 650 €. Les primes sont arrivées au mois 10 et ont soldé le prêt bancaire. Le compte « maison » reçoit toujours ses 250 € par mois ([[entretien-maison]]), et le bouquet 2 (murs extérieurs, châssis nord) a maintenant une date : dans deux ans, quand l'épargne et le prochain Rénopack le permettront, avec un architecte cette fois, parce que la façade à rue est à l'alignement.
 
-## Ce que tu dois retenir
+## En bref
 
-- Le rapport d'audit donne l'**ordre** ; à toi d'écrire le **plan** en six étapes et de poser à chaque entrepreneur la question « qu'est-ce que votre travail empêche de faire après ? ».
-- Un **courriel à l'urbanisme** avant tout chantier extérieur ; la réponse écrite se garde.
-- Budget **TVAC 6 %**, **réserve** de 10 à 15 %, et un **calendrier de trésorerie** : les primes sont calculées avant mais encaissées après.
-- Prêt régional à **0 %** et crédit hypothécaire coûtent moins qu'un prêt rénovation ; intégrer les travaux à l'achat est la version la moins chère.
-- **Trois devis sur le même cahier des charges**, entreprises vérifiées (BCE, dettes, décennale, références), acompte limité, jamais de cash.
-- **Avenants écrits avant exécution**, photos avant fermeture, paiements sur constat.
-- **Pas de solde sans PV de réception** ; documents techniques réunis pour les primes.
-- Mesure l'hiver suivant : c'est la seule preuve que les travaux ont fait ce qu'ils promettaient.
+1. Le rapport d'audit donne l'**ordre** ; à toi d'écrire le **plan** en six étapes et de poser à chaque entrepreneur la question « qu'est-ce que votre travail empêche de faire après ? ».
+2. Budget **TVAC 6 %**, **réserve** de 10 à 15 %, et un **calendrier de trésorerie** : les primes sont calculées avant mais encaissées après.
+3. **Trois devis sur le même cahier des charges**, entreprises vérifiées (BCE, dettes, décennale, références), acompte limité, jamais de cash.
 
 ## Nature des chiffres de cette page
 

@@ -1,56 +1,61 @@
 ---
 title: La vie adulte en Belgique
-description: Comprendre le système belge — travail, impôts, argent, logement — sans devoir être expert.
+description: Un manuel moderne pour comprendre comment fonctionne la Belgique et les mots qu'on y rencontre tous les jours.
 template: splash
 hero:
-  tagline: Comprendre le système sans devoir être expert. Un manuel personnel, vivant, où chaque mot entendu devient une fiche reliée aux autres.
+  tagline: Un manuel pour comprendre comment fonctionne la Belgique, et enfin savoir ce que veulent dire ONSS, IPP, AER, CP 200 ou revenu cadastral. On l'ouvre par curiosité, on lit un chapitre ou une seule fiche, on suit les liens.
   actions:
-    - text: 🚀 Commencer le parcours
-      link: parcours/
+    - text: Ouvrir le sommaire
+      link: sommaire/
       icon: right-arrow
-    - text: 📚 Glossaire
+    - text: Glossaire
       link: glossaire/
       variant: minimal
 ---
 
 import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
-import Progress from '../../components/Progress.astro';
+import Chapitres from '../../components/Chapitres.astro';
 
-<Progress />
+## Les chapitres
 
-## Sept portes d'entrée
+Chaque chapitre rassemble une famille de notions, explique comment elles s'emboîtent et propose un ordre de lecture. Rien n'est obligatoire : ouvre celui qui t'intrigue.
 
-<CardGrid>
-  <LinkCard title="🟢 Je pars de zéro" description="Le parcours : 14 blocs, chaque notion prépare la suivante." href="parcours/" />
-  <LinkCard title="🔎 Je rencontre un terme" description="Le glossaire, ou la recherche (Ctrl K) : « précompte », « quotité », « CP 200 »…" href="glossaire/" />
-  <LinkCard title="🧭 Je vis cette situation" description="Premier emploi, premier appartement, achat, enfant, séparation, décès, indépendant…" href="situations/premier-emploi/" />
-  <LinkCard title="🗺️ Je veux comprendre le système" description="La carte : comment travail, sécu, impôts, banque, crédit, logement, famille et retraite se tiennent." href="systeme/" />
-  <LinkCard title="📄 Je dois lire un document" description="Fiche de paie, AER, facture d'énergie, offre de crédit, compromis, extrait de compte… annotés." href="documents/fiche-de-paie/" />
-  <LinkCard title="🧮 Je veux calculer" description="Crédit, budget, patrimoine net, intérêts composés, réserve, brut → net, budget rénovation." href="outils/credit/" />
-  <LinkCard title="🔧 Je dois comprendre ma maison" description="Électricité, eau, chauffage, toit, isolation, ventilation : la maison comme un système, puis dans quel ordre la rénover." href="maison/" />
-</CardGrid>
+<Chapitres />
 
-## Les questions qui reviennent
+## Tu as dix minutes ?
 
 <CardGrid>
   <LinkCard title="Pourquoi mon net est si loin de mon brut ?" href="fiches/salaire-net/" />
-  <LinkCard title="Où vont mes cotisations sociales ?" href="fiches/securite-sociale/" />
+  <LinkCard title="L'ONSS, c'est quoi exactement ?" href="fiches/onss/" />
   <LinkCard title="Pourquoi je dois encore payer après ma déclaration ?" href="fiches/avertissement-extrait-de-role/" />
-  <LinkCard title="Quels frais en plus du prix d'une maison ?" href="fiches/cout-reel-achat/" />
   <LinkCard title="Qui est compétent : fédéral, Région, commune ?" href="fiches/qui-fait-quoi/" />
+  <LinkCard title="Quels frais en plus du prix d'une maison ?" href="fiches/cout-reel-achat/" />
   <LinkCard title="Que change le fait de vivre à deux ?" href="fiches/statut-familial/" />
-  <LinkCard title="Je viens d'acheter : je dois comprendre quoi ?" href="situations/comprendre-ma-maison/" />
-  <LinkCard title="Dans quel ordre rénover ?" href="fiches/ordre-des-travaux/" />
+</CardGrid>
+
+## Voir les notions en action
+
+Les **mises en situation** racontent une histoire (un premier salaire, un achat, une société qu'on crée) et montrent plusieurs notions qui fonctionnent ensemble. Elles se lisent en quelques minutes et renvoient aux fiches pour les détails.
+
+<CardGrid>
+  <LinkCard title="Je commence mon premier vrai travail" href="situations/premier-emploi/" />
+  <LinkCard title="J'achète un logement" href="situations/acheter-un-logement/" />
+  <LinkCard title="Je crée une société" href="situations/creer-societe/" />
+  <LinkCard title="Je viens d'acheter : comprendre ma maison" href="situations/comprendre-ma-maison/" />
+</CardGrid>
+
+## Autres façons d'entrer
+
+<CardGrid>
+  <LinkCard title="🗺️ Le grand système" description="Une carte : comment travail, sécurité sociale, impôts, banque, logement et famille se tiennent." href="systeme/" />
+  <LinkCard title="🔎 Le glossaire" description="Tous les termes, sigles et synonymes. Ou la recherche (Ctrl K)." href="glossaire/" />
+  <LinkCard title="📄 Lire un document" description="Fiche de paie, AER, facture d'énergie, offre de crédit, compromis… annotés, numéro par numéro." href="documents/fiche-de-paie/" />
+  <LinkCard title="🧮 Calculer" description="Crédit, budget, brut → net, intérêts composés, rénovation : des outils pour voir un mécanisme bouger." href="outils/credit/" />
 </CardGrid>
 
 ## Comment lire une fiche
 
-<CardGrid>
-  <Card title="Niveau" icon="star">🟢 1 Fondations · 🟡 2 Compréhension · 🔵 3 Approfondissement · 🟣 4 Expert. Commence au niveau 1 sans prérequis.</Card>
-  <Card title="Nature de l'information" icon="information">**Concept stable** (vieillit bien) vs **règle datée** (montants, taux, dates — à revérifier).</Card>
-  <Card title="Portée" icon="seti:world">Fédéral, Wallonie, Bruxelles, Flandre : une règle régionale n'est jamais présentée comme belge.</Card>
-  <Card title="Liens" icon="random">Prérequis en haut, « voir aussi » et « utilisé par » en bas : le guide est un réseau, pas un dictionnaire.</Card>
-</CardGrid>
+Chaque fiche se lit à trois niveaux. **En une phrase** en tête, si tu veux juste savoir de quoi il s'agit. Quelques paragraphes ensuite, pour vraiment comprendre. Et en pied de page, les notions voisines, pour continuer à explorer. Les chiffres disent toujours leur nature : 🔴 règle légale et datée, 🟠 repère pratique, 🔵 exemple inventé. Une règle régionale n'est jamais présentée comme belge.
 
 :::note
 Ce guide explique des mécanismes généraux. Ce n'est pas un conseil fiscal, juridique ou financier personnalisé.

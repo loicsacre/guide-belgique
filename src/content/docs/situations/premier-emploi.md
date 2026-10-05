@@ -169,14 +169,11 @@ Pourquoi un écart ? Parce que le précompte mensuel est une approximation : il 
 
 **Tu as deux enfants à charge.** Précompte mensuel plus bas (dès que l'employeur le sait), quotité exemptée majorée sur l'AER, réduction de précompte immobilier si tu es locataire. Voir [[personne-a-charge]].
 
-## Ce que tu dois retenir
+## En bref
 
 1. Brut ≠ net : 13,07 % de cotisations (ta protection sociale), puis le précompte (une avance d'impôt). Il reste ≈ 70 %.
 2. Ta commission paritaire fixe ton plancher de salaire, ton indexation et souvent ton 13e mois : trouve son numéro.
-3. Déclare ta situation familiale à l'employeur : elle change le précompte dès le mois suivant.
-4. Les avantages extralégaux valent de l'argent net, mais pas de droits sociaux.
-5. Le double pécule et le 13e mois sont taxés plus fort et arrivent une fois par an : ne les comptez pas dans le mensuel.
-6. L'AER, un an plus tard, règle la différence entre l'avance retenue et l'impôt réel.
+3. L'AER, un an plus tard, règle la différence entre l'avance retenue et l'impôt réel.
 
 ## Nature des chiffres de cette page
 

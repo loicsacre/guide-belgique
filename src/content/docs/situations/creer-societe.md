@@ -1,60 +1,50 @@
 ---
 title: Je crée une société
 kind: situation
-description: 'Du calcul d''opportunité à la première assemblée générale : plan financier, notaire, fonds propres, rémunération de dirigeant, ISoc, dividendes et obligations annuelles.'
+description: 'Sophie est indépendante et son comptable lui parle de créer une SRL. Ce que cela changerait vraiment pour elle, et pourquoi la bonne question n''est pas celle qu''elle croit.'
 etapes:
-- titre: Vérifier que ça vaut le coup
+- titre: Se poser la bonne question
   quand: Mois −3
-  texte: Bénéfice durable > 60-80 000 € dont tu n'as pas besoin pour vivre ; simulation par un comptable incluant les frais de structure.
+  texte: Pas « vais-je payer moins d'impôt ? » mais « de combien ai-je besoin pour vivre ? ». Simulation sur trois ans par le comptable, frais de structure compris.
   notions:
   - personne-physique-vs-societe
-  - impot-des-societes
-  - cotisations-independant
-- titre: Préparer le plan financier
+  - tranches-imposition
+- titre: Préparer la société
   quand: Mois −2
-  texte: 'Obligatoire pour une SRL : prévisions sur 2 ans, fonds propres suffisants (plus de capital minimum, mais responsabilité des fondateurs si insuffisants). Les apports en argent sont versés sur un compte bloqué au nom de la société en formation ; la banque remet une attestation au notaire.'
+  texte: Plan financier sur deux ans, fonds propres suffisants, apports en argent versés sur un compte bloqué au nom de la société en formation.
   notions:
+  - srl
   - tresorerie-cash-flow
   - actif-passif-bilan
-  - chiffre-affaires-marge-benefice
-- titre: Passer l'acte chez le notaire
+- titre: Signer chez le notaire
   quand: Jour 0
-  texte: Statuts, apports, nomination de l'administrateur ; publication au Moniteur ; inscription BCE et TVA.
+  texte: Statuts, apports, nomination de l'administrateur ; publication au Moniteur, numéro BCE et TVA, registre UBO dans le mois.
   notions:
   - notaire-acte-authentique
-  - regime-matrimonial
-- titre: Ouvrir les circuits
-  quand: Semaine 1
-  texte: Le compte bloqué devient le compte de la société ; registre UBO dans le mois ; logiciel de facturation Peppol, assurances (RC, revenu garanti du dirigeant).
-  notions:
   - bce-numero-entreprise
-  - compte-a-vue
-  - facturation
-- titre: Fixer ta rémunération
+  - regime-matrimonial
+- titre: Fixer sa rémunération
   quand: Mois 1
-  texte: Rémunération de dirigeant (cotisations + IPP comme un indépendant) ; ≥ 45 000 € pour le taux ISoc réduit ; avantages (voiture, GSM) imposés en ATN.
+  texte: Au moins 45 000 € par an pour le taux réduit d'ISoc ; cotisations d'indépendante et IPP dessus ; avantages éventuels imposés en ATN.
   notions:
+  - remuneration-dirigeant
   - cotisations-independant
-  - personne-physique-vs-societe
-  - avantages-extralegaux
-- titre: Tenir la comptabilité
+- titre: Séparer les deux argents
   quand: Toute l'année
-  texte: Comptabilité en partie double, factures d'achat au nom de la société, DNA, TVA périodique.
+  texte: La société paie ses frais, verse la rémunération ; tout prélèvement privé est un emprunt à la société.
   notions:
-  - amortissement-comptable
-  - frais-professionnels
+  - compte-courant-associe
   - tva
-- titre: Payer l'impôt par anticipation
+- titre: Payer l'impôt de la société
   quand: Chaque trimestre
-  texte: Versements anticipés trimestriels, sinon majoration (sauf les 3 premiers exercices).
+  texte: Versements anticipés d'ISoc, sinon majoration (sauf les trois premiers exercices d'une petite société).
   notions:
   - impot-des-societes
-- titre: Clôturer l'exercice
+- titre: Clôturer et décider
   quand: Année +1
-  texte: 'Comptes annuels approuvés en AG (6 mois), déposés à la BNB (7 mois), déclaration ISoc ; décider : réserves ou dividendes (30 %, 15 % VVPR-bis, 5 % via réserve de liquidation).'
+  texte: Comptes approuvés en AG et déposés à la BNB, déclaration ISoc ; garder le bénéfice en réserve ou verser des dividendes.
   notions:
-  - actif-passif-bilan
-  - impot-des-societes
+  - dividendes
   - precompte-mobilier
 savoir: faire
 memo:
@@ -187,88 +177,63 @@ sources:
 - title: SPF Finances — Registre UBO
   url: https://finances.belgium.be/fr/E-services/Registre-UBO
   org: SPF Finances
+- title: "Loi-programme du 28 mai 2026 : VVPRbis, réserve de liquidation"
+  url: https://blog.oeccbb.be/fr/article/decodage-du-volet-fiscal-de-la-loi-programme-du-28-mai-2026-vvprbis-reserve-de-liquidation-droits-dauteur-et-comptes-titres/31392
+  org: OECCBB
 - title: Notaire.be — Créer une société
   url: https://www.notaire.be/
   org: Fednot
-last_verified: '2026-10-02'
+last_verified: '2026-10-05'
 ---
-Troisième année d'indépendante : 110 000 € de chiffre d'affaires, 90 000 € de bénéfice, et un avertissement-extrait de rôle qui pique. Ton comptable prononce le mot : « société ». Cette histoire raconte ce que ça change vraiment, ce que ça coûte, et pourquoi la bonne question n'est pas « est-ce que je paie moins d'impôt ? » mais « de combien ai-je besoin pour vivre ? ».
 
-Cas fictif : consultante en personne physique, 90 000 € de bénéfice, isolée, qui vit confortablement avec 3 500 € nets par mois.
+Sophie est consultante indépendante depuis trois ans. Son activité marche bien : 110 000 € de chiffre d'affaires, 90 000 € de bénéfice une fois ses frais payés. Elle vit seule, confortablement, avec 3 500 € nets par mois, et met le reste de côté. Puis arrive l'avertissement-extrait de rôle de l'année, et le montant lui coupe le souffle. Au rendez-vous suivant, son comptable prononce le mot : « Et si vous passiez en société ? »
 
-## 1. Pourquoi l'impôt pique, et ce que la société change
+Sophie se demande ce que cela changerait réellement pour elle. C'est ce qu'on va suivre, sans entrer dans tous les détails : chaque notion importante a sa fiche, pour qui veut approfondir.
 
-En **personne physique**, tes 90 000 € de bénéfice sont **ton** revenu : après les cotisations sociales (≈ 18 000 €), le reste passe dans le barème progressif de l'impôt des personnes physiques, où les derniers euros sont taxés à 50 % plus l'additionnel communal. Résultat : environ 28 000 € d'impôt, et il te reste ≈ 44 000 €, soit 3 650 € par mois. Tu n'en dépenses que 3 500 ; le reste s'accumule sur un compte d'épargne après avoir été taxé au taux le plus fort. Voir [[tranches-imposition]].
+## Pourquoi l'impôt pique
 
-Une **société** (SRL, société à responsabilité limitée) est une **personne distincte** de toi. Elle encaisse les 110 000 €, paie ses frais, te verse une **rémunération** (tu redeviens une sorte de salariée de ta propre société, avec cotisations d'indépendante et IPP sur cette rémunération), et ce qui reste est **son** bénéfice, taxé à l'**impôt des sociétés** : 25 %, ou **20 %** sur les premiers 100 000 € pour une petite société qui remplit des conditions. Cet argent reste dans la société : il n'est pas à toi tant que tu ne le sors pas. Voir [[personne-physique-vs-societe]] et [[impot-des-societes]].
+Aujourd'hui, Sophie exerce **en personne physique** : son entreprise et elle ne font qu'un. Ses 90 000 € de bénéfice sont donc **son** revenu. Après les [[cotisations-independant|cotisations sociales]], le reste passe dans le barème de l'[[ipp|impôt des personnes physiques]], qui monte par tranches jusqu'à 50 % (plus la taxe communale). Ce sont ses derniers euros, ceux qu'elle épargne, qui sont taxés le plus lourdement.
 
-Le gain vient donc d'une chose précise : **laisser dans la société l'argent dont tu n'as pas besoin**, taxé à 20 % au lieu de 50 %. Si tu as besoin de tout pour vivre, il n'y a pas de gain, seulement des frais.
+Le comptable résume : « Vous payez le taux maximum sur de l'argent dont vous n'avez pas besoin pour vivre. » C'est exactement le cas où une société peut aider. → [[tranches-imposition|Comprendre les tranches et le taux marginal]]
 
-## 2. Le calcul honnête (fictif, simplifié)
+## Ce que la société changerait
 
-| | Personne physique | SRL avec rémunération de 45 000 € |
-| --- | ---: | ---: |
-| Bénéfice avant rémunération | 90 000 € | 90 000 € |
-| Ta rémunération | — | − 45 000 € |
-| Frais de structure (comptable, dépôt des comptes, assurances, frais bancaires) | 2 000 € | − 5 000 € |
-| Cotisations sociales (sur ton revenu) | − 18 000 € | − 9 200 € (sur 45 000 €) |
-| IPP + additionnels (sur ton revenu) | − 28 000 € | − 11 000 € (sur 45 000 − cotisations) |
-| ISoc 20 % (sur 90 000 − 45 000 − 5 000) | — | − 8 000 € |
-| **Ce qui te reste personnellement** | **≈ 44 000 €** | **≈ 24 800 €** |
-| Ce qui reste **dans la société** | — | ≈ 32 000 € |
-| Total | 44 000 € | 56 800 € |
+Une société, le plus souvent une **SRL**, est une **personne distincte** de Sophie. Elle aurait son propre compte, son propre bénéfice et son propre impôt, l'**impôt des sociétés** (ISoc), qui n'est pas progressif : 25 %, ou 20 % sur les premiers 100 000 € pour une petite société qui remplit les conditions.
 
-La société « gagne » 12 800 € par an, mais 32 000 € sont **enfermés** dans l'entreprise. Pour les sortir un jour : en **dividende** (30 % de précompte mobilier, ou 15 % sous le régime VVPR-bis pour une SRL récente, ou 5 % via la **réserve de liquidation** après cinq ans d'attente), en rémunération supplémentaire (retour au barème), ou à la liquidation de la société. Chaque sortie rogne l'écart. Voir [[precompte-mobilier]].
+L'argent ferait alors deux étapes. La société encaisserait les factures, paierait ses frais et verserait à Sophie une **rémunération de dirigeante**, sur laquelle elle paierait cotisations et IPP comme aujourd'hui. Ce qui resterait serait le bénéfice **de la société**, taxé à l'ISoc, et il resterait dans la société.
 
-:::tip[Repère, pas une règle]
-Le seuil qu'on cite, « à partir de 60 à 80 000 € de bénéfice durable », est celui où l'écart dépasse clairement les frais de structure **à condition de laisser une part significative dans la société**. Fais simuler tes chiffres par le comptable, trois années d'affilée, pas une.
-:::
+D'où l'idée centrale, que le comptable répète deux fois : **le gain vient uniquement de ce qu'on laisse dans la société**. Si Sophie avait besoin de tout son bénéfice pour vivre, la société ne lui ferait rien gagner ; elle ajouterait seulement des frais.
 
-## 3. Les conditions du taux réduit
+Le comptable fait un calcul rapide. Avec une rémunération de 45 000 € par an, Sophie garderait environ 12 800 € de plus par an au total. Mais près de 32 000 € resteraient **dans la société**. Pour les toucher un jour, elle devrait les sortir, et chaque sortie est taxée à nouveau. → [[personne-physique-vs-societe|Le calcul complet, personne physique ou société]]
 
-Le **20 %** n'est pas automatique. Il faut être une **petite société** (moins de 50 travailleurs, 11,25 M€ de chiffre d'affaires, 6 M€ de bilan), ne pas être détenue à plus de 50 % par d'autres sociétés, et surtout verser à au moins un dirigeant une **rémunération d'au moins 45 000 €** (ou égale au bénéfice imposable si celui-ci est inférieur). C'est pour ça que la rémunération de l'exemple est de 45 000 € : en dessous, toute la société passe à 25 %. Et cette rémunération fixe aussi ta pension légale et ta protection sociale : la minimiser « pour optimiser » se paie à 67 ans. Voir [[impot-des-societes]] et [[pension]].
+Pourquoi 45 000 € ? Parce que le taux réduit de 20 % exige que la société verse au moins ce montant à un dirigeant. Ce chiffre fixe aussi les cotisations de Sophie, donc sa future pension. → [[remuneration-dirigeant|Comprendre la rémunération de dirigeant]] · [[impot-des-societes|Comprendre l'ISoc]]
 
-## 4. Créer : le notaire, le plan financier, les fonds propres
+## Ce qu'il faudrait pour la créer
 
-Une SRL se constitue par **acte notarié** (≈ 1 200 à 2 500 € avec la publication et l'inscription, selon que les statuts sont standard ou sur mesure). Il n'y a plus de capital minimum, mais la loi exige des **fonds propres suffisants** pour l'activité prévue, justifiés par un **plan financier** sur deux ans que ton comptable prépare : prévisions de ventes, de charges, de trésorerie. Ce n'est pas une formalité : si la société fait faillite dans les trois ans avec des fonds propres manifestement insuffisants au départ, les fondateurs peuvent être tenus personnellement responsables. Voir [[notaire-acte-authentique]], [[tresorerie-cash-flow]], [[actif-passif-bilan]].
+Sophie imaginait un capital à bloquer. Ce n'est plus le cas depuis 2019 : il n'y a plus de capital minimum. En revanche, la société doit démarrer avec des **fonds propres suffisants**, et son comptable doit le démontrer dans un **plan financier** sur deux ans. L'argent qu'elle apporte est versé avant la signature sur un compte bloqué, puis tout se signe chez le notaire, qui publie les statuts et obtient le numéro d'entreprise.
 
-Avant la signature, l'argent que tu apportes est versé sur un **compte bloqué** ouvert au nom de la « société en formation » : la banque délivre une attestation que le notaire joint à l'acte, et le compte ne se débloque qu'une fois la société née. Le notaire publie ensuite les statuts au Moniteur belge et inscrit la société à la **BCE** : nouveau numéro d'entreprise, nouvelle TVA. Dans le mois qui suit, l'organe d'administration (toi) inscrit les **bénéficiaires effectifs** de la société au **registre UBO** via MyMinfin : qui la possède et la contrôle réellement. Ton activité de personne physique est **apportée** ou cédée à la société ; tes contrats et factures changent d'émetteur. Voir [[bce-numero-entreprise]].
+Compter en tout de l'ordre de 1 200 à 2 500 € pour la création, puis quelques milliers d'euros chaque année pour le comptable et le dépôt des comptes. → [[srl|Comprendre la SRL, de la création à la vie annuelle]]
 
-Si tu es mariée sous le régime légal, les parts de la société sont communes même si tu es seule associée : un **contrat de mariage** ou une clause spécifique se discute. Voir [[regime-matrimonial]].
+## Ce qui changerait au quotidien
 
-## 5. La règle qui change tout : l'argent de la société n'est pas le tien
+C'est la partie que le comptable prend le plus au sérieux. « Le jour où la société existe, son argent n'est plus le vôtre. » Si Sophie paie un jour sa cuisine avec le compte de la société, elle ne se « paie » pas : elle **emprunte** à sa société, avec des intérêts réels ou fictifs, et un risque de requalification. Trois comptes, trois logiques : la société paie ses frais, elle verse la rémunération, Sophie vit sur son compte privé. → [[compte-courant-associe|Comprendre le compte courant d'associé]]
 
-C'est l'erreur de toutes les premières années. Tu as 40 000 € sur le compte de la société et tu veux une cuisine : si tu paies la cuisine avec ce compte, tu as emprunté à ta société. Ça s'appelle un **compte courant débiteur** : la société doit te facturer des intérêts (sinon le fisc en calcule de fictifs, taxés chez toi comme un avantage), et le fisc peut requalifier le tout en rémunération ou en dividende déguisé. À l'inverse, l'argent que tu prêtes à la société (compte courant créditeur) peut te rapporter des intérêts, dans des limites.
+Le reste est surtout du rythme : une comptabilité plus lourde, l'impôt de la société payé par avances trimestrielles, des comptes annuels approuvés chaque année et déposés à la Banque nationale, où ils deviennent **publics**.
 
-Trois comptes, trois logiques : la société paie ses frais ; elle te verse ta rémunération chaque mois sur ton compte privé ; tu vis sur ton compte privé. Voir [[personne-physique-vs-societe]].
+Et le bénéfice gardé dans la société ? Il pourra être distribué plus tard sous forme de **dividendes**, avec un précompte de 30 % en principe, ou à des taux réduits pour les petites sociétés qui ont attendu. Ces régimes ont changé plusieurs fois en 2025 et 2026 : c'est typiquement le genre de règle qu'on vérifie le jour où l'on décide. → [[dividendes|Comprendre les dividendes]]
 
-## 6. Ce que tu peux « mettre dans la société », et à quel point
+## Ce que Sophie décide
 
-Ta rémunération peut être complétée par des **avantages** : une voiture de société (déductible selon le CO₂, imposée chez toi comme un avantage de toute nature), un GSM, une assurance groupe (EIP, engagement individuel de pension) déductible à 100 % dans la limite de la règle des 80 %, des chèques-repas. Mais la société connaît aussi les **dépenses non admises** : part non déductible de la voiture, 31 % des notes de restaurant, amendes… qui remontent dans sa base imposable. Voir [[voiture-de-societe]], [[avantages-extralegaux]], [[frais-professionnels]].
+Sophie ne signe rien ce jour-là. Elle demande au comptable une simulation sur **trois ans**, pas une seule : une société ne se ferme pas en un claquement de doigts, et si son bénéfice retombait à 50 000 €, elle lui coûterait plus qu'elle ne rapporte. Elle note aussi deux questions pour le notaire : la responsabilité limitée protège-t-elle vraiment sa maison si la banque lui demande une caution personnelle (réponse : non, pas pour cette dette-là) ; et que deviendraient les parts de la société si elle se mariait un jour sans contrat (réponse : leur valeur entrerait en principe dans la communauté, sauf contrat de mariage). → [[regime-matrimonial]]
 
-## 7. Le calendrier d'une société
+En sortant, elle a compris l'essentiel : la société n'est pas une astuce fiscale, c'est une **deuxième personne** avec laquelle elle partagerait sa vie professionnelle. Elle est avantageuse quand Sophie gagne plus qu'elle ne dépense, et seulement pour cette différence.
 
-- **Chaque mois** : rémunération, comptabilité en partie double (tenue par le comptable sur base de tes pièces, toutes au nom de la société).
-- **Chaque trimestre** : déclaration TVA ; **versements anticipés** d'impôt des sociétés (10 avril, 10 juillet, 10 octobre, 20 décembre), sinon majoration, sauf les trois premiers exercices d'une petite société. Voir [[tva]].
-- **Après la clôture** (souvent le 31 décembre) : comptes annuels approuvés par l'assemblée générale dans les 6 mois, déposés à la Banque nationale dans les 7 mois (ils deviennent **publics**), déclaration ISoc via Biztax. Puis décision : réserves ou dividende. Voir [[actif-passif-bilan]].
+## En bref
 
-## Et si… ?
-
-**Tu veux t'associer.** La SRL est faite pour ça : parts, droits de vote, pacte d'associés. Le notaire et un avocat valent leur prix ici.
-
-**Tu veux protéger ta maison.** La responsabilité limitée protège ton patrimoine privé des dettes de la société, mais pas d'une **caution personnelle** que la banque te demandera presque toujours pour un crédit, ni d'une faute grave de gestion. En personne physique, la déclaration d'insaisissabilité du logement chez le notaire existe aussi.
-
-**Ton bénéfice retombe à 50 000 €.** La société coûte alors plus qu'elle ne rapporte. On ne la ferme pas en un jour (liquidation, frais, taxation des réserves) : d'où l'importance de regarder trois ans.
-
-## Ce que tu dois retenir
-
-1. La société gagne quand tu laisses du bénéfice dedans, taxé à 20-25 % au lieu de 50 %. Si tu as besoin de tout, elle ne gagne rien.
-2. Taux réduit de 20 % : petite société et rémunération de dirigeant ≥ 45 000 €.
-3. Chaque euro sorti est taxé une seconde fois (dividende 30 %, 15 % VVPR-bis, 5 % réserve de liquidation après 5 ans).
-4. Acte notarié, plan financier, fonds propres suffisants : responsabilité des fondateurs en cas de faillite précoce.
-5. L'argent de la société n'est pas le tien : compte courant, intérêts fictifs, requalification.
-6. Versements anticipés, comptes annuels publics, 3 000 à 6 000 € de structure par an.
+1. La société gagne quand on laisse du bénéfice dedans, taxé à 20-25 % au lieu de 50 % ; si on a besoin de tout, elle ne rapporte rien.
+2. Le taux réduit d'ISoc suppose une rémunération de dirigeant d'au moins 45 000 €, et chaque euro sorti plus tard est taxé une seconde fois.
+3. L'argent de la société n'est pas le tien : rémunération, dividende ou dette envers la société, il n'y a pas d'autre chemin.
 
 ## Nature des chiffres de cette page
 
-🔴 **Règles légales, datées (2026)** : taux ISoc, conditions du taux réduit, rémunération de 45 000 €, précompte sur dividendes, VVPR-bis, réserve de liquidation, dates des versements anticipés, délais de dépôt des comptes. 🟠 **Repères** : seuil de 60-80 000 €, frais de structure. 🔵 **Exemple fictif et simplifié** : bénéfice de 90 000 €, calculs d'IPP et de cotisations arrondis.
+🔴 **Règles légales, datées (2026)** : taux de l'ISoc, condition des 45 000 €, précompte de 30 % sur les dividendes, absence de capital minimum. 🟠 **Repères** : coût de création, frais annuels. 🔵 **Exemple fictif et arrondi** : les revenus de Sophie et le calcul de son comptable.

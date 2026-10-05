@@ -1,0 +1,16 @@
+---
+// Les chapitres du manuel, en cartes (accueil).
+import { getIndex, chapitreHref } from '../lib/notions';
+const { chapitres, fiches } = await getIndex();
+---
+<ul class="chap-cards home-chapitres not-content">
+  {chapitres.map((c) => (
+    <li>
+      <a href={chapitreHref(c.id)}>
+        <strong>{c.emoji} {c.title}</strong>
+        <span>{c.intro}</span>
+        <small>{c.notions.filter((n) => fiches.has(n.slug)).length} fiches</small>
+      </a>
+    </li>
+  ))}
+</ul>

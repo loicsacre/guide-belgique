@@ -81,3 +81,6 @@ body.print-a5 { max-width: 148mm; font-size: 10pt; line-height: 1.5; }
 
 .print .sl-anchor-link { display: none; }
 .toc ol, .toc ul { margin: 0; }
+.chap-opener { height: auto; min-height: 150mm; justify-content: flex-start; padding-top: 25mm; }
+.chap-chain { font-size: 0.85em; color: var(--gb-accent); border-left: 3px solid var(--gb-accent); padding-left: 0.6rem; margin-top: 1rem; }
+.chap-qr { margin-top: 1.5rem; }

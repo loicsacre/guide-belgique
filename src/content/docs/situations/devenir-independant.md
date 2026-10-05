@@ -192,14 +192,11 @@ Ton comptable établit tes comptes ; tu déclares ton bénéfice dans la **parti
 
 **Tes revenus explosent.** À partir de 80 000 € de bénéfice durable, fais simuler une société sur tes chiffres réels, frais de structure compris.
 
-## Ce que tu dois retenir
+## En bref
 
 1. Chiffre d'affaires ≠ revenu : frais, cotisations (≈ 20,5 %), impôt progressif. Il reste ≈ 45 % d'une facture.
 2. La TVA encaissée n'est pas à toi : compte séparé.
 3. Adapte tes cotisations provisoires dès la première année : la régularisation à trois ans est le piège numéro un.
-4. Versements anticipés d'impôt, sinon majoration (sauf débuts).
-5. Les frais sont déductibles sous conditions et souvent partiellement ; un investissement s'amortit.
-6. Achète toi-même ce que l'employeur te donnait : revenu garanti, RC pro, PLCI, réserve.
 
 ## Nature des chiffres de cette page
 

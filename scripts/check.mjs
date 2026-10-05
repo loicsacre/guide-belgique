@@ -11,6 +11,13 @@ const fiches = loadFiches();
 const MAX_AGE_DAYS = { 'regle-datee': 365, mixte: 365, stable: 3 * 365 };
 
 const seen = new Set();
+const chapIds = new Set();
+const sitSlugsAll = new Set(loadSituations().map((x) => x.slug));
+for (const b of loadParcours().blocs) {
+  if (!b.id || chapIds.has(b.id)) errors.push(`parcours.yaml : chapitre "${b.title}" sans id ou id en double`);
+  chapIds.add(b.id);
+  for (const s of b.situations ?? []) if (!sitSlugsAll.has(s)) errors.push(`parcours.yaml (${b.id}) : situation "${s}" inconnue`);
+}
 for (const b of loadParcours().blocs)
   for (const n of b.notions) {
     if (seen.has(n.slug)) errors.push(`parcours.yaml : slug en double "${n.slug}"`);
@@ -53,6 +60,9 @@ for (const s of loadSituations()) {
   checkRefs(w, s.data.notions);
   for (const e of s.data.etapes ?? []) checkRefs(`${w} (étape ${e.titre})`, e.notions);
   if (!(s.data.etapes ?? []).length) warnings.push(`${w} : aucune étape (etapes:) définie`);
+  if (![...loadParcours().blocs].some((b) => (b.situations ?? []).includes(s.slug))) warnings.push(`${w} : rattachée à aucun chapitre (situations: dans parcours.yaml)`);
+  const words = s.body.split(/\s+/).filter(Boolean).length;
+  if (words > 1600) warnings.push(`${w} : ${words} mots (≈ ${Math.round(words / 200)} min) — une mise en situation vise 5 à 8 minutes ; déplacer les détails vers les fiches`);
   checkRefs(`${w} (corps)`, wikiRefs(s.body));
 }
 for (const s of loadDocuments()) {
@@ -87,7 +97,8 @@ const QTYPES = ['qcm', 'vrai-faux', 'ordre', 'nombre'];
 let qCount = 0;
 for (const q of loadAllQuiz()) {
   const w = `quiz/${q.slug}`;
-  if (!contentSlugs.has(q.slug)) errors.push(`${w} : aucun contenu nommé "${q.slug}"`);
+  if (!chapIds.has(q.slug) && !contentSlugs.has(q.slug)) errors.push(`${w} : aucun chapitre ni contenu nommé "${q.slug}"`);
+  if (!chapIds.has(q.slug)) warnings.push(`${w} : quiz attaché à une page ; les quiz vont plutôt au niveau du chapitre (src/data/quiz/<id-chapitre>.yaml)`);
   const ids = new Set();
   for (const x of q.questions ?? []) {
     qCount++;
@@ -106,7 +117,7 @@ for (const q of loadAllQuiz()) {
 }
 const sitSlugs = new Set(loadSituations().map((x) => x.slug));
 for (const l of loadLivres()) {
-  for (const ch of l.chapitres ?? []) if (!sitSlugs.has(ch)) errors.push(`livres.yaml (${l.id}) : situation "${ch}" inconnue`);
+  for (const ch of l.chapitres ?? []) if (!chapIds.has(ch)) errors.push(`livres.yaml (${l.id}) : chapitre "${ch}" inconnu (ids de parcours.yaml)`);
   for (const f of l.fiches ?? []) if (!fiches.some((x) => x.slug === f)) errors.push(`livres.yaml (${l.id}) : fiche "${f}" inconnue`);
 }
 

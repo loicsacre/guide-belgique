@@ -1,7 +1,44 @@
-# Quiz de la situation « Je crée une société » (src/content/docs/situations/creer-societe.md).
-# Format : voir CONTENT_MODEL.md, section Quiz.
-titre: As-tu compris comment fonctionne une société ?
+# Quiz facultatif du chapitre « Indépendant et société » (id : entreprise, src/data/parcours.yaml).
+# Il mélange les notions du chapitre. Format : voir CONTENT_MODEL.md, section Quiz.
+titre: Indépendant et société, qu'as-tu retenu ?
 questions:
+  - id: ca-revenu
+    type: qcm
+    savoir: comprendre
+    question: Une indépendante facture 60 000 € hors TVA sur l'année. Que représente ce montant ?
+    choix:
+      - Son revenu, sur lequel elle paiera l'impôt
+      - Son chiffre d'affaires, dont il faut encore retirer les frais, les cotisations sociales et l'impôt
+      - Son bénéfice net, déjà taxé
+      - Le montant de sa pension future
+    reponse: 1
+    explication: 'Ce qu''on facture, c''est le chiffre d''affaires. On en retire les frais professionnels pour obtenir le bénéfice, puis les cotisations sociales, puis l''impôt. Ce qui reste disponible est nettement plus bas que le montant facturé.'
+    notions: [independant, chiffre-affaires-marge-benefice]
+
+  - id: tva-a-qui
+    type: vrai-faux
+    savoir: comprendre
+    question: '« La TVA que je facture à mes clients fait partie de mes revenus. »'
+    reponse: false
+    explication: 'Faux. L''indépendant collecte la TVA pour l''État : il l''ajoute à ses factures, déduit celle qu''il a payée sur ses achats, et reverse la différence lors de sa déclaration. C''est pourquoi on conseille de la garder sur un compte séparé.'
+    notions: [tva]
+
+  - id: cotisations-provisoires
+    type: vrai-faux
+    savoir: comprendre
+    question: '« Les cotisations sociales de ma première année d''indépendant sont calculées sur mes revenus réels de cette année-là. »'
+    reponse: false
+    explication: 'Faux. Au début, la caisse d''assurances sociales réclame des cotisations provisoires, faute de connaître tes revenus. Elles sont régularisées plus tard, quand l''administration fiscale communique le revenu réel. Si l''activité marche bien, la régularisation peut être lourde : d''où l''intérêt d''adapter tes provisoires dès que possible.'
+    notions: [cotisations-independant]
+
+  - id: amortissement-ordinateur
+    type: vrai-faux
+    savoir: calculer
+    question: '« Un ordinateur acheté pour l''activité se déduit en entier l''année de l''achat. »'
+    reponse: false
+    explication: 'Faux en général. Un bien qu''on utilise plusieurs années est amorti : son coût est réparti sur sa durée d''utilisation, et seule une part est déduite chaque année.'
+    notions: [frais-professionnels, amortissement-comptable]
+
   - id: ca-benefice
     type: qcm
     savoir: calculer
@@ -56,13 +93,6 @@ questions:
     explication: 'Les premiers 100 000 € de bénéfice d''une petite société sont taxés à 20 % si les conditions sont remplies. 40 000 × 20 % = 8 000 €. Sans le taux réduit, ce serait 25 %, soit 10 000 €.'
     notions: [impot-des-societes]
 
-  - id: taux-reduit-auto
-    type: vrai-faux
-    savoir: comprendre
-    question: '« Toute SRL paie automatiquement 20 % d''impôt sur ses premiers 100 000 € de bénéfice. »'
-    reponse: false
-    explication: 'Le taux réduit a des conditions. La société doit être petite, ne pas être détenue à plus de 50 % par d''autres sociétés, et verser à au moins un dirigeant une rémunération d''au moins 45 000 € (ou égale au bénéfice si celui-ci est plus bas). Sinon, tout le bénéfice est taxé à 25 %.'
-    notions: [impot-des-societes]
 
   - id: cuisine
     type: qcm
@@ -75,7 +105,7 @@ questions:
       - La société a payé un dividende exonéré
     reponse: 1
     explication: 'L''argent de la société n''est pas le tien. Tu lui dois maintenant 40 000 € (un compte courant débiteur). Elle doit te facturer des intérêts, sinon le fisc calcule des intérêts fictifs taxés chez toi comme un avantage, et il peut requalifier le tout en rémunération ou en dividende. La bonne voie, c''est de te verser une rémunération ou un dividende.'
-    notions: [personne-physique-vs-societe]
+    notions: [compte-courant-associe]
 
   - id: dividende-net
     type: nombre
@@ -84,8 +114,8 @@ questions:
     reponse: 7000
     unite: €
     tolerance: 0
-    explication: 'Le précompte mobilier normal est de 30 %. La société le retient et le verse à l''État, c''est un impôt définitif. 10 000 − 3 000 = 7 000 €. Il existe des taux réduits (VVPR-bis, réserve de liquidation) sous conditions.'
-    notions: [precompte-mobilier]
+    explication: 'Le précompte mobilier normal est de 30 %. La société le retient et le verse à l''État, c''est un impôt définitif. 10 000 − 3 000 = 7 000 €. Les petites sociétés ont accès à des taux réduits sous conditions (VVPR-bis, réserve de liquidation).'
+    notions: [dividendes, precompte-mobilier]
 
   - id: comptes-publics
     type: vrai-faux

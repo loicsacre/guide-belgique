@@ -1,12 +1,11 @@
-# Les petits livres : un livre = une suite de chapitres (situations) + les fiches qu'ils mobilisent.
-# Rendus en PDF A5 (cahier, reMarkable) et en EPUB par `npm run export`. Voir CONTENT_MODEL.md.
+# Les petits livres : un livre = un ou plusieurs chapitres du manuel (ids de src/data/parcours.yaml).
+# Pour chaque chapitre : sa présentation, ses fiches dans l'ordre de lecture, ses mises en situation,
+# puis son quiz facultatif en fin de livre. Rendus en PDF A5 (cahier) et EPUB par `npm run export`.
 livres:
   - id: entreprise
-    titre: Créer son entreprise
-    sous_titre: De l'indépendant à la société, comprendre ce qu'on signe et ce qu'on paie
+    titre: Indépendant et société
+    sous_titre: Comprendre le statut d'indépendant, la société, et ce que chacun change
     couleur: '#2f6f5e'
-    chapitres:
-      - devenir-independant
-      - creer-societe
-    # Fiches ajoutées en annexe en plus de celles que les chapitres mobilisent (facultatif).
-    fiches: []
+    chapitres: [entreprise]
+    # Fiches d'autres chapitres à ajouter en fin de livre (facultatif).
+    fiches: [chiffre-affaires-marge-benefice, tresorerie-cash-flow, actif-passif-bilan, amortissement-comptable]

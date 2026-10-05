@@ -228,14 +228,11 @@ Et si tu as acheté une maison plutôt qu'un appartement, le vrai travail commen
 
 **Le bien est neuf.** Pas de droits d'enregistrement sur la construction, mais la **TVA à 21 %** : sur un prix affiché « hors TVA », l'écart est considérable. Voir [[cout-reel-achat]].
 
-## Ce que tu dois retenir
+## En bref
 
 1. Une mensualité = intérêts (perdus) + capital (épargné). Comparer un loyer à une mensualité n'a pas de sens.
 2. Le prix affiché n'est pas le prix payé : compte 6 à 15 % de frais d'entrée selon la Région et ton éligibilité, non finançables.
 3. L'achat rapporte avec le **temps** ; revendre tôt coûte toujours. Les « 7 ans » sont un repère, pas une règle.
-4. Une offre acceptée est une vente : condition suspensive de crédit, toujours.
-5. Compare les crédits sur le TAEG, les assurances séparément, et simule le pire cas d'un taux variable.
-6. Après l'achat, garde une réserve : être propriétaire coûte ≈ 450 €/mois de plus que la mensualité dans l'exemple.
 
 ## Nature des chiffres de cette page
 

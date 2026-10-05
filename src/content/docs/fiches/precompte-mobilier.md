@@ -13,7 +13,7 @@ short: "L'impôt de 30 % retenu à la source sur tes intérêts et dividendes ; 
 aliases: [PM, roerende voorheffing, précompte libératoire, taxation des dividendes, taxation des intérêts]
 prerequisites: [impot-taxe-cotisation, categories-de-revenus]
 related: [compte-epargne, fiscalite-investissements, actions-obligations-etf, precompte-professionnel, declaration-fiscale]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: Comment sont taxés les intérêts ?
     url: https://www.wikifin.be/fr/impots-emploi-et-revenus/declaration-dimpots/vos-revenus-mobiliers/comment-sont-taxes-les-interets
@@ -50,7 +50,8 @@ Dividende brut 100 €
 | Intérêts d'un **[[compte-epargne\|compte d'épargne réglementé]]** | Exonérés jusqu'à **1 020 €** par personne et par an ; au-delà, **15 %** |
 | **Dividendes** d'actions | Première tranche d'environ **860 €** par personne exonérée, mais la banque retient quand même : à **récupérer via la déclaration** |
 | Intérêts d'un compte non réglementé, obligations, comptes à terme | 30 % |
-| Dividendes d'actions de PME nouvellement émises (VVPR-bis) | 15 % sous conditions |
+| Dividendes de parts de petites sociétés émises contre un apport en argent (VVPR-bis) | 18 % sous conditions, pour les dividendes attribués dès le 1er juillet 2026 (15 % avant) |
+| Réserve de liquidation distribuée après trois ans | 9,8 % (après une cotisation de 10 % payée par la société), pour les réserves récentes |
 | Revenus perçus via un **courtier étranger** | Pas de précompte retenu : **tu dois les déclarer** (cadre VII) et ils seront taxés à 30 % via l'AER |
 :::
 

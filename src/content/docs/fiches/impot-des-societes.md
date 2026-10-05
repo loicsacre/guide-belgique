@@ -11,9 +11,9 @@ tags: [ISoc, impôt des sociétés, bénéfice imposable, versements anticipés]
 organisme: "SPF Finances (Biztax)"
 short: "L'impôt sur le bénéfice des sociétés : 25 %, ou 20 % sur la première tranche de 100 000 € pour les PME qui remplissent les conditions ; calculé sur le résultat comptable corrigé fiscalement, payé par versements anticipés sous peine de majoration."
 aliases: [ISoc, impôt des sociétés, vennootschapsbelasting, versements anticipés, dépenses non admises, DNA, taux réduit PME, déclaration ISoc, Biztax]
-prerequisites: [personne-physique-vs-societe, chiffre-affaires-marge-benefice]
-related: [tva, precompte-mobilier, ipp, actif-passif-bilan]
-last_verified: 2026-10-02
+prerequisites: [srl, chiffre-affaires-marge-benefice]
+related: [srl, remuneration-dirigeant, dividendes, tva, precompte-mobilier, ipp, actif-passif-bilan]
+last_verified: 2026-10-05
 sources:
   - title: Taux réduit à l'impôt des sociétés
     url: https://blog.degandpartners.com/fr/article/tout-savoir-sur-le-taux-reduit-a-limpot-des-societes-en-belgique-en-2024/23294
@@ -41,7 +41,7 @@ Résultat comptable (produits − charges)
 ```
 
 :::note[Règle datée — 2026]
-Conditions du **taux réduit de 20 %** : être une **petite société** (ne pas dépasser plus d'un des seuils : 50 travailleurs, 11,25 M€ de CA, 6 M€ de bilan), verser à au moins un dirigeant une **rémunération ≥ 45 000 €** (ou égale au résultat imposable si inférieur), ne pas être détenue à plus de 50 % par d'autres sociétés, ne pas être une société financière.
+Conditions du **taux réduit de 20 %** : être une **petite société** (ne pas dépasser plus d'un des seuils : 50 travailleurs, 11,25 M€ de CA, 6 M€ de bilan), verser à au moins un dirigeant une **[[remuneration-dirigeant|rémunération]] ≥ 45 000 €** (ou égale au résultat imposable si inférieur), ne pas être détenue à plus de 50 % par d'autres sociétés, ne pas être une société financière.
 :::
 
 ## Le calendrier
@@ -56,10 +56,11 @@ Conditions du **taux réduit de 20 %** : être une **petite société** (ne pas 
 
 ## Exemple (fictif)
 
-SRL, bénéfice comptable 80 000 € après une rémunération de dirigeant de 45 000 € ; DNA 4 000 € → base 84 000 € → ISoc 20 % = **16 800 €**. Bénéfice net 63 200 € : laissé en réserve, ou distribué en dividende (précompte mobilier 30 %, 15 % sous VVPR-bis, ou 5 % via réserve de liquidation après 5 ans).
+SRL, bénéfice comptable 80 000 € après une rémunération de dirigeant de 45 000 € ; DNA 4 000 € → base 84 000 € → ISoc 20 % = **16 800 €**. Bénéfice net 63 200 € : laissé en réserve, ou distribué en [[dividendes|dividende]] (précompte mobilier de 30 %, ou régimes réduits VVPR-bis et réserve de liquidation).
 
 ## Ce que ça change pour toi
 
 - L'ISoc n'est que la **première couche** : sortir l'argent de la société coûte une seconde taxation (précompte mobilier sur les dividendes, IPP + cotisations sur la rémunération). Compare le **coût total** personne physique vs société.
-- Le taux réduit se perd facilement (rémunération insuffisante une année) : surveille la condition des 45 000 €.
+- Le taux réduit se perd facilement (rémunération insuffisante une année) : surveille la condition des 45 000 €. Pourquoi ce montant compte aussi pour toi : [[remuneration-dirigeant]].
+- Les **versements anticipés** ne sont pas une formalité : sans eux, la majoration s'ajoute à l'impôt. Les trois premiers exercices d'une petite société nouvelle en sont dispensés, ce qui laisse le temps de prendre le rythme.
 - Les **DNA** réduisent l'intérêt de « tout passer en société » : une voiture thermique ou des notes de restaurant restent largement taxées.

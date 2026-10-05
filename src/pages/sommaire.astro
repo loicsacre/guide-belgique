@@ -1,0 +1,22 @@
+---
+// Le sommaire du manuel : tous les chapitres et leurs fiches. Une table des matières, pas un parcours à valider.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import NotionLink from '../components/NotionLink.astro';
+import { getIndex, chapitreHref, hrefOf, slugOf } from '../lib/notions';
+const { fiches, chapitres, situations } = await getIndex();
+---
+<StarlightPage frontmatter={{ title: 'Sommaire', description: 'Tous les chapitres du manuel et leurs fiches.' }}>
+  <p>Le manuel est rangé en chapitres. Chacun s'ouvre sur une vue d'ensemble, puis propose ses fiches dans un ordre de lecture possible. Tu peux commencer n'importe où, lire un chapitre en entier ou sauter d'une notion à l'autre au fil des liens.</p>
+  {chapitres.map((c) => (
+    <section class="som-chap">
+      <h2 id={c.id}><a href={chapitreHref(c.id)}>{c.emoji} {c.title}</a></h2>
+      {c.intro && <p class="chap-intro">{c.intro}</p>}
+      <p class="som-list">
+        {c.notions.map((n, k) => <>{k > 0 && <span class="sep"> · </span>}<NotionLink slug={n.slug} title={fiches.get(n.slug)?.data.title ?? n.title} written={fiches.has(n.slug)} /></>)}
+      </p>
+      {(c.situations ?? []).length > 0 && (
+        <p class="som-sit">En situation : {(c.situations ?? []).map((s, k) => { const e = situations.find((x) => slugOf(x) === s); return e ? <>{k > 0 && ' · '}<a href={hrefOf(e)}>{e.data.title}</a></> : null; })}</p>
+      )}
+    </section>
+  ))}
+</StarlightPage>

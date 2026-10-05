@@ -1,0 +1,85 @@
+---
+// Un chapitre du manuel : une vue d'ensemble, les fiches dans un ordre de lecture possible,
+// les mises en situation qui les appliquent, puis (facultatif, tout en bas) le quiz du chapitre.
+// Rien n'est obligatoire : on lit ce qu'on veut, dans l'ordre qu'on veut.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import NotionLink from '../../components/NotionLink.astro';
+import Quiz from '../../components/gbcf/Quiz.astro';
+import { getIndex, hrefOf, slugOf, chapitreHref, readingTime, type Chapitre } from '../../lib/notions';
+import { getQuiz } from '../../lib/gbcf';
+import { LEVELS } from '../../lib/domains.mjs';
+
+export async function getStaticPaths() {
+  const { chapitres } = await getIndex();
+  return chapitres.map((c, i) => ({ params: { id: c.id }, props: { c, prev: chapitres[i - 1] ?? null, next: chapitres[i + 1] ?? null } }));
+}
+const { c, prev, next } = Astro.props as { c: Chapitre; prev: Chapitre | null; next: Chapitre | null };
+const { fiches, situations, documents, outils, notionsOf } = await getIndex();
+const notions = c.notions.map((n) => ({ ...n, e: fiches.get(n.slug) }));
+const written = notions.filter((n) => n.e);
+const minutes = written.reduce((t, n) => t + readingTime(n.e!.body), 0);
+const sits = (c.situations ?? []).map((s) => situations.find((e) => slugOf(e) === s)).filter(Boolean);
+// Un document ou un outil est proposé dans le chapitre avec lequel il partage le plus de notions.
+const { chapitres } = await getIndex();
+const overlap = (e: any, ch: Chapitre) => { const set = new Set(ch.notions.map((n) => n.slug)); return [...notionsOf(e)].filter((s) => set.has(s)).length; };
+const isHome = (e: any) => { const mine = overlap(e, c); return mine > 0 && chapitres.every((other) => overlap(e, other) <= mine); };
+const docs = documents.filter(isHome);
+const tools = outils.filter(isHome);
+const quiz = getQuiz(c.id);
+const chain = (c.fil ?? '').split('→').map((x) => x.trim()).filter(Boolean);
+---
+<StarlightPage frontmatter={{ title: `${c.emoji ?? ''} ${c.title}`.trim(), description: c.intro }}>
+  {c.intro && <p class="chap-intro">{c.intro}</p>}
+  {c.presentation && <p>{c.presentation}</p>}
+  {chain.length > 1 && (
+    <p class="chap-fil not-content" aria-label="Comment les notions s'enchaînent">
+      {chain.map((x, i) => <>{i > 0 && <span class="arrow"> → </span>}<span>{x}</span></>)}
+    </p>
+  )}
+
+  <h2 id="fiches">Les notions du chapitre</h2>
+  <p class="chap-hint">Dans un ordre de lecture possible, environ {minutes} minutes en tout. Chaque fiche se lit seule : commence par celle qui t'intrigue.</p>
+  <ol class="chap-list">
+    {notions.map((n) => (
+      <li>
+        <NotionLink slug={n.slug} title={n.e?.data.title ?? n.title} written={!!n.e} />
+        {n.e && <span class="chap-meta">{readingTime(n.e.body)} min{n.e.data.level && ` · ${LEVELS[n.e.data.level as keyof typeof LEVELS].short}`}</span>}
+        {n.e?.data.short && <p>{n.e.data.short}</p>}
+      </li>
+    ))}
+  </ol>
+
+  {sits.length > 0 && (
+    <>
+      <h2 id="situations">Voir ces notions en action</h2>
+      <p class="chap-hint">Des histoires où plusieurs notions du chapitre se rencontrent.</p>
+      <ul class="chap-cards not-content">
+        {sits.map((e: any) => <li><a href={hrefOf(e)}><strong>{e.data.title}</strong><span>{e.data.description}</span></a></li>)}
+      </ul>
+    </>
+  )}
+
+  {(docs.length > 0 || tools.length > 0) && (
+    <>
+      <h2 id="explorer">Pour explorer</h2>
+      {docs.length > 0 && <p><strong>Documents annotés :</strong> {docs.map((e, k) => <>{k > 0 && ' · '}<a href={hrefOf(e)}>{e.data.title}</a></>)}</p>}
+      {tools.length > 0 && <p><strong>Calculer :</strong> {tools.map((e, k) => <>{k > 0 && ' · '}<a href={hrefOf(e)}>{e.data.title}</a></>)}</p>}
+    </>
+  )}
+
+  {quiz && (
+    <section class="chap-quiz">
+      <h2 id="quiz">Envie de vérifier ?</h2>
+      <p class="chap-hint">Un quiz facultatif qui mélange les notions du chapitre. Rien n'est enregistré, et chaque réponse est suivie de son explication.</p>
+      <details>
+        <summary>Ouvrir le quiz ({quiz.questions.length} questions)</summary>
+        <Quiz slug={c.id} heading={false} />
+      </details>
+    </section>
+  )}
+
+  <nav class="chap-nav not-content" aria-label="Chapitres">
+    <span>{prev && <a href={chapitreHref(prev.id)}>← {prev.emoji} {prev.title}</a>}</span>
+    <span>{next && <a href={chapitreHref(next.id)}>{next.emoji} {next.title} →</a>}</span>
+  </nav>
+</StarlightPage>

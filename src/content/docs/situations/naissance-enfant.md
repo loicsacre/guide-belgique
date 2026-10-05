@@ -144,14 +144,11 @@ L'enfant est désormais **héritier réservataire** : quoi qu'il arrive, il a dr
 
 **Vous vous séparez plus tard.** Hébergement, contribution alimentaire, et fiscalement : coparentalité (avantage partagé) ou déduction des pensions alimentaires, pas les deux. Voir [On se sépare](../separation/).
 
-## Ce que tu dois retenir
+## En bref
 
 1. Non mariés : reconnaissance de l'enfant par le père, idéalement avant la naissance.
 2. Congés payés par la mutualité, pas par l'employeur ; congé de naissance de 20 jours pour le co-parent.
 3. Allocations familiales : régionales, via une caisse, à demander pendant la grossesse.
-4. Enfant à charge : préviens l'employeur (précompte) et vérifie la déclaration ; un seul parent non marié peut le déclarer.
-5. Hospitalisation dans les 3 mois ; assurance décès à envisager.
-6. L'enfant est héritier réservataire : testament ou statut de couple pour protéger le partenaire.
 
 ## Nature des chiffres de cette page
 

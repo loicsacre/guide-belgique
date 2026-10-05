@@ -61,15 +61,25 @@ export function shuffled<T>(list: T[], seed: string): T[] {
 export type Livre = { id: string; titre: string; sous_titre?: string; couleur?: string; chapitres: string[]; fiches?: string[] };
 export const getLivres = () => loadLivres() as Livre[];
 
-/** Un livre résolu : ses chapitres (situations) et les fiches mobilisées, dans l'ordre du parcours. */
+/**
+ * Un livre résolu : ses chapitres du manuel (src/data/parcours.yaml), chacun avec ses fiches rédigées dans
+ * l'ordre de lecture, ses mises en situation et son quiz éventuel. Comme le site : la connaissance d'abord,
+ * l'application ensuite, le quiz en option à la fin.
+ */
 export async function resolveLivre(livre: Livre) {
-  const { situations, fiches, parcours, notionsOf } = await getIndex();
-  const chapitres = livre.chapitres.map((s) => situations.find((e) => slugOf(e) === s)!).filter(Boolean);
-  const wanted = new Set<string>([...(livre.fiches ?? []), ...chapitres.flatMap((c) => [...notionsOf(c), ...wikiSlugs(c)])]);
-  const order = parcours.blocs.flatMap((b) => b.notions.map((n) => n.slug));
-  const rank = (s: string) => (order.indexOf(s) + 1 || 9999);
-  const annexes = [...wanted].filter((s) => fiches.has(s)).sort((a, b) => rank(a) - rank(b)).map((s) => fiches.get(s)!);
-  return { chapitres, annexes };
+  const { chapitres: all, fiches, situations } = await getIndex();
+  const chapitres = livre.chapitres
+    .map((id) => all.find((c) => c.id === id)!)
+    .filter(Boolean)
+    .map((c) => ({
+      c,
+      fiches: c.notions.filter((n) => fiches.has(n.slug)).map((n) => fiches.get(n.slug)!),
+      situations: (c.situations ?? []).map((s) => situations.find((e) => slugOf(e) === s)!).filter(Boolean),
+      quiz: getQuiz(c.id),
+    }));
+  const inBook = new Set(chapitres.flatMap((x) => x.fiches.map((e) => slugOf(e))));
+  const extra = (livre.fiches ?? []).filter((s) => fiches.has(s) && !inBook.has(s)).map((s) => fiches.get(s)!);
+  return { chapitres, extra };
 }
 
 const wikiSlugs = (e: Entry) => [...(e.body ?? '').matchAll(/\[\[([a-z0-9-]+)/g)].map((m) => m[1]);

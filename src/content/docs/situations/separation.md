@@ -142,14 +142,11 @@ Pour des **mariés ou cohabitants légaux** : l'année de la séparation de fait
 
 **Il y a violence.** Le juge de paix ou le tribunal de la famille peut attribuer le logement en urgence ; la police et les services d'aide passent avant toute question d'argent.
 
-## Ce que tu dois retenir
+## En bref
 
 1. Le cadre (mariage, cohabitation légale, de fait) décide de ce qui se partage : tout, le logement, ou rien.
 2. Le crédit commun te lie jusqu'à la désolidarisation par la banque ; le rachat de part coûte un droit de partage de 1 % (2,5 % en Flandre).
-3. Change de domicile tout de suite : impôts, allocations et courrier en dépendent.
-4. Pour l'enfant : hébergement + contribution proportionnelle aux revenus ; fiscalement, coparentalité **ou** déduction des pensions, pas les deux.
-5. Compte commun fermé, assurances scindées, bénéficiaires et testament mis à jour.
-6. Médiateur avant tribunal.
+3. Pour l'enfant : hébergement + contribution proportionnelle aux revenus ; fiscalement, coparentalité **ou** déduction des pensions, pas les deux.
 
 ## Nature des chiffres de cette page
 

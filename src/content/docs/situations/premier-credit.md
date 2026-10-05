@@ -121,14 +121,11 @@ Un mois difficile ? **Préviens avant** le premier impayé : les prêteurs accep
 
 **C'est pour des travaux de rénovation énergétique.** Regarde d'abord les **prêts à 0 %** régionaux (Rénoprêt, prêt vert, Mijn VerbouwLening) : voir [[peb]].
 
-## Ce que tu dois retenir
+## En bref
 
 1. Un crédit conso se justifie pour une dépense prévue, utile, et plus durable que le crédit.
 2. Prêt à tempérament : oui. Ouverture de crédit et carte à remboursement partiel : le crédit le plus cher qui existe.
 3. Compare sur le TAEG, à montant et durée égaux ; le taux affiché ne dit rien.
-4. 14 jours de rétractation ; le crédit est enregistré à la Centrale et pèse sur ton futur crédit hypothécaire.
-5. Rembourser par anticipation est toujours possible et rentable au début.
-6. Au premier retard, préviens ; la médiation de dettes est gratuite.
 
 ## Nature des chiffres de cette page
 

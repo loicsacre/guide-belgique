@@ -14,7 +14,7 @@ const sv = (k?: string) => (k ? SAVOIRS[k as keyof typeof SAVOIRS] : null);
 {quiz && mode === 'web' && (
   <section class="gb-quiz not-content" data-quiz={slug}>
     {heading && <h2 id="quiz">Teste-toi</h2>}
-    {quiz.titre && <p class="gb-quiz-intro">{quiz.titre} {quiz.questions.length} questions, l'explication s'affiche après chaque réponse.</p>}
+    {quiz.titre && <p class="gb-quiz-intro">{quiz.titre}</p>}
     <ol class="gb-q-list">
       {quiz.questions.map((q) => (
         <li class="gb-q" data-type={q.type} data-answer={q.type === 'ordre' ? JSON.stringify(q.ordre) : JSON.stringify(q.reponse)} data-tol={q.tolerance ?? 0}>
@@ -74,12 +74,12 @@ const sv = (k?: string) => (k ? SAVOIRS[k as keyof typeof SAVOIRS] : null);
       q.classList.add(good ? 'is-ok' : 'is-ko');
       const ex = q.querySelector<HTMLElement>('.gb-expl')!;
       ex.hidden = false;
-      ex.querySelector('.gb-verdict')!.textContent = good ? '✅ Bien vu.' : '❌ Pas tout à fait.';
+      ex.querySelector('.gb-verdict')!.textContent = good ? 'Bien vu.' : 'Pas tout à fait.';
       q.querySelectorAll<HTMLButtonElement | HTMLInputElement>('button, input').forEach((b) => (b.disabled = true));
       if (done === qs.length) {
         const s = root.querySelector<HTMLElement>('.gb-score')!;
         s.hidden = false;
-        s.textContent = `Score : ${ok} / ${qs.length}. ${ok === qs.length ? 'Tout juste.' : 'Relis les explications des questions ratées, puis les fiches liées.'}`;
+        s.textContent = `${ok} bonne${ok > 1 ? 's' : ''} réponse${ok > 1 ? 's' : ''} sur ${qs.length}. Les explications et les fiches liées restent là si tu veux y revenir.`;
       }
     };
     for (const q of qs) {

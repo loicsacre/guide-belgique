@@ -1,13 +1,14 @@
 ---
-// Surcharge Starlight : enveloppe le contenu des fiches et situations avec leurs métadonnées.
+// Surcharge Starlight : ce qui entoure le texte d'une fiche, d'une mise en situation, d'un document ou d'un outil.
+// Principe : le texte d'abord. En tête, juste de quoi se situer ; tout le reste (liens, sources, mémo,
+// versions imprimables) vient après la lecture, et ce qui est secondaire est replié.
 import Default from '@astrojs/starlight/components/MarkdownContent.astro';
 import NotionLink from './NotionLink.astro';
-import Formats from './gbcf/Formats.astro';
 import Memo from './gbcf/Memo.astro';
 import Checklist from './gbcf/Checklist.astro';
-import Quiz from './gbcf/Quiz.astro';
-import { getIndex, slugOf, hrefOf, fmtDate } from '../lib/notions';
-import { LEVELS, NATURES, SCOPES, STATUSES, domainOf } from '../lib/domains.mjs';
+import { getIndex, slugOf, hrefOf, fmtDate, chapitreHref, readingTime } from '../lib/notions';
+import { downloads } from '../lib/gbcf';
+import { LEVELS, NATURES, SCOPES, STATUSES } from '../lib/domains.mjs';
 
 const { entry } = Astro.locals.starlightRoute;
 const d = entry.data;
@@ -16,58 +17,73 @@ const isSituation = d.kind === 'situation';
 const isDocument = d.kind === 'document';
 const isOutil = d.kind === 'outil';
 const slug = slugOf(entry);
+const B = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 let ctx: any = null;
 if (isFiche || isSituation || isDocument || isOutil) {
-  const { fiches, parcours, titleOf, usedBy, notionsOf } = await getIndex();
+  const { fiches, chapitres, voisins, titleOf, usedBy, notionsOf } = await getIndex();
   const link = (s: string) => ({ slug: s, title: titleOf(s), written: fiches.has(s) });
-  const order = parcours.blocs.flatMap((b) => b.notions.map((n) => n.slug)).filter((s) => fiches.has(s));
-  const i = order.indexOf(slug);
-  // "Pour aller plus loin" : les fiches qui déclarent celle-ci comme prérequis.
+  // « Pour aller plus loin » : les fiches qui s'appuient sur celle-ci.
   const advanced = [...fiches.entries()].filter(([s, e]) => s !== slug && !d.related.includes(s) && e.data.prerequisites.includes(slug)).map(([s]) => link(s));
   // Autres fiches qui pointent vers celle-ci sans être déjà listées.
   const listed = new Set([slug, ...d.related, ...advanced.map((n) => n.slug)]);
   const backlinks = [...fiches.entries()].filter(([s, e]) => !listed.has(s) && e.data.related.includes(slug)).map(([s]) => link(s));
   const uses = usedBy(slug);
-  const allNotions = [...notionsOf(entry)].map(link);
+  // Notions rencontrées : d'abord dans l'ordre du texte, puis celles des étapes et du frontmatter.
+  const inBody = [...(entry.body ?? '').matchAll(/\[\[([a-z0-9-]+)/g)].map((m) => m[1]);
+  // (pour une mise en situation : celles que l'histoire introduit vraiment, pas toute la liste des étapes)
+  const pool = isSituation && inBody.length >= 3 ? inBody : [...inBody, ...notionsOf(entry)];
+  const rencontrees = [...new Set(pool)].filter((s) => fiches.has(s) && s !== slug).map(link);
+  const v = isFiche ? voisins(slug) : null;
   ctx = {
     prerequisites: d.prerequisites.map(link),
     related: d.related.map(link),
-    notions: allNotions,
+    rencontrees,
     etapes: d.etapes.map((e) => ({ ...e, notions: e.notions.map(link) })),
     situations: uses.situations.map((e) => ({ title: e.data.title, href: hrefOf(e) })),
     documents: uses.documents.map((e) => ({ title: e.data.title, href: hrefOf(e) })),
     outils: uses.outils.map((e) => ({ title: e.data.title, href: hrefOf(e) })),
     advanced,
     backlinks,
-    prev: i > 0 ? link(order[i - 1]) : null,
-    next: i >= 0 && i < order.length - 1 ? link(order[i + 1]) : null,
+    chapitre: v?.chapitre ?? null,
+    prev: v?.prev ? link(v.prev) : null,
+    next: v?.next ? link(v.next) : null,
+    nextChapitre: v?.nextChapitre ?? null,
+    // Chapitres que cette mise en situation illustre.
+    chapitresSit: isSituation ? chapitres.filter((c) => (c.situations ?? []).includes(slug)) : [],
   };
 }
-const domain = d.domain ? domainOf(d.domain) : null;
 const level = d.level ? LEVELS[d.level as keyof typeof LEVELS] : null;
 const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
+const minutes = readingTime(entry.body ?? '');
+const hasKeep = !!d.memo || (d.checklist?.length ?? 0) > 0;
 ---
 
 <Default>
   {isFiche && (
     <div class="fiche-meta not-content">
-      <div class="fiche-badges">
-        {level && <span class={`badge level-${d.level}`} title={level.hint}>{level.emoji} {level.label}</span>}
+      <p class="fiche-context">
+        {ctx.chapitre && <a href={chapitreHref(ctx.chapitre.id)}>{ctx.chapitre.emoji} {ctx.chapitre.title}</a>}
+        {level && <span title={level.hint}>{level.short}</span>}
+        {d.organisme && <span title="Qui s'en occupe">{d.organisme}</span>}
+        <span>{minutes} min de lecture</span>
         {d.status !== 'publie' && <span class="badge status">{STATUSES[d.status as keyof typeof STATUSES].label}</span>}
-        {domain && <span class="badge">{domain.emoji} {domain.label}</span>}
-        {nature && <span class={`badge nature-${d.nature}`} title={nature.hint}>{nature.label}</span>}
-        {d.scope.map((s) => <span class="badge scope">{SCOPES[s as keyof typeof SCOPES]}</span>)}
-        {d.organisme && <span class="badge organisme" title="Organisme compétent">🏛️ {d.organisme}</span>}
-        {d.last_verified && <span class="badge verified">Vérifié : {fmtDate(d.last_verified)}</span>}
-        {d.valid_for && <span class="badge verified">Valable pour : {d.valid_for}</span>}
-      </div>
+      </p>
       {d.short && <p class="fiche-short"><strong>En une phrase —</strong> {d.short}</p>}
       {ctx.prerequisites.length > 0 && (
         <p class="fiche-prereq">
-          <strong>À comprendre d'abord :</strong>{' '}
+          Utile à connaître :{' '}
           {ctx.prerequisites.map((n: any, k: number) => <>{k > 0 && ' · '}<NotionLink {...n} /></>)}
         </p>
+      )}
+    </div>
+  )}
+
+  {isSituation && (
+    <div class="sit-intro not-content">
+      <p class="sit-kicker">Mise en situation · {minutes} min de lecture{ctx.chapitresSit.length > 0 && <> · chapitre {ctx.chapitresSit.map((c: any, k: number) => <>{k > 0 && ', '}<a href={chapitreHref(c.id)}>{c.title}</a></>)}</>}</p>
+      {ctx.rencontrees.length > 0 && (
+        <p class="sit-notions"><span>Les notions que tu vas croiser :</span> {ctx.rencontrees.map((n: any, k: number) => <>{k > 0 && ' · '}<NotionLink {...n} /></>)}</p>
       )}
     </div>
   )}
@@ -79,14 +95,11 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
     </div>
   )}
 
-  {(isSituation || isFiche || isDocument || isOutil) && <Formats slug={slug} data={d} />}
-
   <slot />
 
   {isSituation && ctx.etapes.length > 0 && (
-    <>
-      <h2 id="etapes">Le fil en bref</h2>
-      <p class="not-content" style="font-size:var(--sl-text-sm);color:var(--sl-color-gray-3)">Le récit ci-dessus, résumé étape par étape, avec les notions à approfondir.</p>
+    <details class="sit-fold">
+      <summary>Le fil de l'histoire, étape par étape</summary>
       <ol class="timeline not-content">
         {ctx.etapes.map((e: any, k: number) => (
           <li>
@@ -96,33 +109,24 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
           </li>
         ))}
       </ol>
-    </>
+    </details>
   )}
 
-  {(d.checklist?.length ?? 0) > 0 && (
-    <>
-      <h2 id="checklist">Ta checklist</h2>
-      <Checklist data={d} />
-    </>
+  {hasKeep && (
+    <details class="sit-fold">
+      <summary>À garder sous la main : mémo, étapes pratiques, versions imprimables</summary>
+      <p class="gb-print-links not-content">
+        {d.memo && <a href={`${B}/${downloads.memo(slug)}`} data-fallback={`${B}/imprimer/memo/${slug}/`}>Mémo d'une page (PDF)</a>}
+        <a href={`${B}/${downloads.fiche(slug)}`} data-fallback={`${B}/imprimer/fiche/${slug}/`}>Fiche pratique A4 (PDF)</a>
+        <a href={`${B}/bibliotheque/`}>Bibliothèque</a>
+      </p>
+      {d.memo && <Memo data={d} />}
+      {(d.checklist?.length ?? 0) > 0 && <><h3>Les étapes pratiques</h3><Checklist data={d} /></>}
+    </details>
   )}
 
-  {d.memo && (
-    <>
-      <h2 id="memo">Le mémo</h2>
-      <p class="not-content gb-hint">Tout ce qui précède, sur une page. Aussi en PDF via « Lire autrement » en haut de page.</p>
-      <Memo data={d} />
-    </>
-  )}
-
-  <Quiz slug={slug} />
-
-  {(isSituation || isDocument || isOutil) && ctx.notions.length > 0 && (
-    <>
-      <h2 id="notions">Les notions mobilisées</h2>
-      <ul class="checklist">
-        {ctx.notions.map((n: any) => <li class={n.written ? 'done' : ''}><NotionLink {...n} /></li>)}
-      </ul>
-    </>
+  {(isDocument || isOutil) && ctx.rencontrees.length > 0 && (
+    <p class="sit-notions not-content"><span>Les notions de cette page :</span> {ctx.rencontrees.map((n: any, k: number) => <>{k > 0 && ' · '}<NotionLink {...n} /></>)}</p>
   )}
 
   {!isFiche && (d.sources?.length ?? 0) > 0 && (
@@ -130,7 +134,7 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
       <section>
         <h3>Sources</h3>
         <ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener">{s.title}</a>{s.org && <> — {s.org}</>}</li>)}</ul>
-        {d.last_verified && <p style="font-size:var(--sl-text-xs);color:var(--sl-color-gray-3)">Vérifié : {fmtDate(d.last_verified)}{d.valid_for && <> · valable pour : {d.valid_for}</>}</p>}
+        {d.last_verified && <p class="fiche-about">Vérifié : {fmtDate(d.last_verified)}{d.valid_for && <> · valable pour : {d.valid_for}</>}</p>}
       </section>
     </footer>
   )}
@@ -149,7 +153,7 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
       {(ctx.situations.length > 0 || ctx.documents.length > 0 || ctx.outils.length > 0) && (
         <section class="dans-la-vraie-vie">
           <h3>Dans la vraie vie</h3>
-          {ctx.situations.length > 0 && <p><strong>Situations :</strong> {ctx.situations.map((x: any, k: number) => <>{k > 0 && ' · '}<a href={x.href}>{x.title}</a></>)}</p>}
+          {ctx.situations.length > 0 && <p><strong>Mises en situation :</strong> {ctx.situations.map((x: any, k: number) => <>{k > 0 && ' · '}<a href={x.href}>{x.title}</a></>)}</p>}
           {ctx.documents.length > 0 && <p><strong>Tu verras cette notion sur :</strong> {ctx.documents.map((x: any, k: number) => <>{k > 0 && ' · '}<a href={x.href}>{x.title}</a></>)}</p>}
           {ctx.outils.length > 0 && <p><strong>Calculer :</strong> {ctx.outils.map((x: any, k: number) => <>{k > 0 && ' · '}<a href={x.href}>{x.title}</a></>)}</p>}
         </section>
@@ -160,12 +164,26 @@ const nature = d.nature ? NATURES[d.nature as keyof typeof NATURES] : null;
           <ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener">{s.title}</a>{s.org && <> — {s.org}</>}</li>)}</ul>
         </section>
       )}
-      {(ctx.prev || ctx.next) && (
-        <nav class="parcours-nav" aria-label="Parcours">
-          <span>{ctx.prev && <>← <NotionLink {...ctx.prev} /></>}</span>
-          <span>{ctx.next && <><NotionLink {...ctx.next} /> →</>}</span>
+      <p class="fiche-about">
+        {nature && <span title={nature.hint}>{nature.label}</span>}
+        {d.scope.length > 0 && <span>{d.scope.map((s) => SCOPES[s as keyof typeof SCOPES]).join(', ')}</span>}
+        {d.last_verified && <span>Vérifié : {fmtDate(d.last_verified)}</span>}
+        {d.valid_for && <span>Valable pour : {d.valid_for}</span>}
+      </p>
+      {ctx.chapitre && (
+        <nav class="parcours-nav" aria-label="Lire la suite">
+          <span>{ctx.prev ? <>← <NotionLink {...ctx.prev} /></> : <a href={chapitreHref(ctx.chapitre.id)}>← Vue d'ensemble du chapitre</a>}</span>
+          <span class="parcours-chap"><a href={chapitreHref(ctx.chapitre.id)}>{ctx.chapitre.emoji} {ctx.chapitre.title}</a></span>
+          <span>{ctx.next ? <><NotionLink {...ctx.next} /> →</> : ctx.nextChapitre && <a href={chapitreHref(ctx.nextChapitre.id)}>Chapitre suivant : {ctx.nextChapitre.title} →</a>}</span>
         </nav>
       )}
     </footer>
   )}
 </Default>
+
+<script>
+  // Les PDF n'existent qu'après `npm run export` (CI) : en local, on retombe sur la page d'impression.
+  for (const a of document.querySelectorAll<HTMLAnchorElement>('a[data-fallback]')) {
+    fetch(a.href, { method: 'HEAD' }).then((r) => { if (!r.ok) a.href = a.dataset.fallback!; }).catch(() => (a.href = a.dataset.fallback!));
+  }
+</script>

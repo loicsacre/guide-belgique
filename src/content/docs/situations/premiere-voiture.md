@@ -130,14 +130,11 @@ Ton employeur propose une voiture de société. Tu ne paies ni achat, ni assuran
 
 Ou le **budget mobilité** : renoncer à la voiture de société contre un budget à dépenser en transports, vélo, logement proche du travail, ou en cash taxé favorablement.
 
-## Ce que tu dois retenir
+## En bref
 
 1. Une voiture coûte ≈ 400 à 600 € par mois tout compris ; le crédit n'en est qu'une partie.
 2. Cash si possible ; sinon prêt à tempérament comparé sur le TAEG, plus court que la durée de garde.
-3. Occasion : Car-Pass obligatoire, contrôle technique vente, garantie légale d'un an chez un professionnel.
-4. RC obligatoire, omnium selon la valeur, conducteur protégé ; compare, surtout jeune.
-5. TMC une fois et taxe de circulation chaque année : régionales, simulateur avant achat.
-6. Si ton employeur en propose une, la voiture de société est souvent imbattable, à l'usage près.
+3. RC obligatoire, omnium selon la valeur, conducteur protégé ; compare, surtout jeune.
 
 ## Nature des chiffres de cette page
 

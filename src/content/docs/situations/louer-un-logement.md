@@ -158,14 +158,11 @@ Tu envoies ton préavis par **recommandé** ; il commence le premier jour du moi
 
 **Tu veux acheter dans deux ans.** Préfère un bail de courte durée ou négocie : sur un bail de 9 ans, partir la deuxième année coûte 2 mois d'indemnité.
 
-## Ce que tu dois retenir
+## En bref
 
 1. Le coût du logement, c'est loyer + charges + énergie + assurance : ≈ 1 100 € pour 800 € de loyer.
 2. Le bail de 9 ans est la norme ; tu peux toujours partir avec 3 mois de préavis.
-3. Garantie : 2 mois (3 en Flandre), sur un compte bloqué à ton nom, jamais en liquide.
-4. L'état des lieux d'entrée détaillé est ta meilleure protection ; sans lui, le propriétaire ne peut rien te réclamer.
-5. Assurance incendie locataire obligatoire (Wallonie, Flandre), libre de choix.
-6. L'indexation est encadrée (formule, écrit, PEB) ; les charges se justifient chaque année.
+3. L'état des lieux d'entrée détaillé est ta meilleure protection ; sans lui, le propriétaire ne peut rien te réclamer.
 
 ## Nature des chiffres de cette page
 

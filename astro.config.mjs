@@ -14,6 +14,7 @@ const REPO = process.env.REPO ?? 'https://github.com/loicsacre/guide-belgique';
 export default defineConfig({
   site: SITE,
   base: BASE,
+  redirects: { '/parcours': `${BASE}/sommaire/` }, // l'ancien « parcours » est devenu le sommaire
   markdown: { processor: unified({ remarkPlugins: [[remarkWikilinks, { base: BASE }], [remarkAutolink, { base: BASE }]] }) },
   integrations: [
     starlight({

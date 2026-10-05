@@ -114,13 +114,11 @@ En janvier, le brut montera sans négociation : c'est l'**indexation**, l'adapta
 
 Et une habitude : archive chaque fiche. Elles prouvent ta carrière pour la [[pension]], tes revenus pour un crédit, tes droits en cas de litige.
 
-## Ce que tu dois retenir
+## En bref
 
 1. Quatre blocs : qui/quand, brut, retenues, net.
 2. Deux prélèvements, dans l'ordre : cotisations sociales (13,07 %, ta protection), puis précompte (une avance d'impôt).
 3. Un ATN est ajouté pour l'impôt puis retiré du net : tu paies l'impôt sur l'avantage, pas l'avantage.
-4. Les remboursements de frais et les chèques-repas sont nets ; c'est pour ça qu'on te les propose.
-5. Le net d'un mois de prime est plus bas que « brut × 70 % ».
 
 ## Nature des chiffres de cette page
 

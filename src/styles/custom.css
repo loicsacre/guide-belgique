@@ -74,3 +74,52 @@ a.autolink:hover { color: var(--sl-color-text-accent); text-decoration-style: so
 /* Encadré « nature de l'information » */
 .sl-markdown-content .starlight-aside--tip .starlight-aside__title::before { content: ''; }
 .repere { border-left: 4px solid var(--sl-color-orange); background: var(--sl-color-orange-low); padding: .6rem .9rem; border-radius: .3rem; font-size: var(--sl-text-sm); }
+
+/* Chapitres et sommaire */
+.chap-intro { font-size: var(--sl-text-lg); color: var(--sl-color-gray-2); }
+.chap-hint { font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); }
+.chap-fil { font-size: var(--sl-text-sm); line-height: 1.9; padding: 0.6rem 0.9rem; border-left: 3px solid var(--sl-color-accent); background: var(--sl-color-gray-6); border-radius: 0 0.3rem 0.3rem 0; margin: 1.2rem 0; }
+.chap-fil .arrow { color: var(--sl-color-accent); font-weight: 700; }
+.chap-list { padding-left: 1.4rem; }
+.chap-list > li { margin: 0.9rem 0; }
+.chap-list > li > p { margin: 0.15rem 0 0; font-size: var(--sl-text-sm); color: var(--sl-color-gray-2); }
+.chap-list > li > a { font-weight: 600; }
+.chap-meta { font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); margin-left: 0.5rem; }
+.chap-cards { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.75rem; }
+.chap-cards a { display: block; height: 100%; padding: 0.8rem 1rem; border: 1px solid var(--sl-color-gray-5); border-radius: 0.5rem; text-decoration: none; color: var(--sl-color-text); }
+.chap-cards a:hover { border-color: var(--sl-color-accent); }
+.chap-cards strong { display: block; margin-bottom: 0.25rem; }
+.chap-cards span { font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); }
+.chap-quiz details { border: 1px solid var(--sl-color-gray-5); border-radius: 0.5rem; padding: 0.6rem 1rem; }
+.chap-quiz summary { cursor: pointer; font-weight: 600; }
+.chap-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--sl-color-hairline); font-weight: 600; }
+.som-chap h2 a { text-decoration: none; }
+.som-list { font-size: var(--sl-text-sm); line-height: 1.8; }
+.som-list .sep { color: var(--sl-color-gray-4); }
+.som-sit { font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); }
+
+/* Fiche : contexte discret en tête, détails en pied */
+.fiche-context { display: flex; flex-wrap: wrap; gap: 0.2rem 0.9rem; font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); margin: 0 0 0.75rem; }
+.fiche-context a { color: var(--sl-color-gray-2); font-weight: 600; text-decoration: none; }
+.fiche-context a:hover { text-decoration: underline; }
+.fiche-context > * + *::before { content: '·'; margin-right: 0.9rem; color: var(--sl-color-gray-4); }
+.fiche-context .badge::before { content: none; }
+.fiche-prereq { font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); }
+.fiche-about { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); margin-top: 1rem; }
+.parcours-nav { align-items: baseline; font-size: var(--sl-text-sm); }
+.parcours-chap { font-weight: 400; font-size: var(--sl-text-xs); text-align: center; }
+.parcours-nav > span:last-child { text-align: right; }
+
+/* Mise en situation : de quoi on parle, puis l'histoire ; le reste est replié */
+.sit-intro { margin-bottom: 1.5rem; }
+.sit-kicker { font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 0.4rem; }
+.sit-kicker a { color: inherit; }
+.sit-notions { font-size: var(--sl-text-sm); line-height: 1.8; margin: 0; }
+.sit-notions > span:first-child { color: var(--sl-color-gray-3); }
+.sit-fold { margin-top: 1.5rem; border: 1px solid var(--sl-color-gray-5); border-radius: 0.5rem; padding: 0.5rem 1rem; }
+.sit-fold > summary { cursor: pointer; font-weight: 600; font-size: var(--sl-text-sm); }
+.sit-fold[open] > summary { margin-bottom: 0.75rem; }
+.gb-print-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; font-size: var(--sl-text-sm); }
+.home-chapitres { margin-top: 1rem; }
+.home-chapitres small { display: block; margin-top: 0.35rem; font-size: var(--sl-text-xs); color: var(--sl-color-gray-4); }
+.som-chap h2 a { color: inherit; }

@@ -156,15 +156,11 @@ La maison cesse d'être une suite de surprises le jour où elle devient une rout
 - Le **carnet** : une farde (ou un dossier) par système, avec PV, attestations, factures, fiches techniques, photos des murs avant fermeture. Elle vaut de l'argent le jour du sinistre, de la prime et de la vente.
 - La **provision** : les gestionnaires immobiliers comptent 🟠 1 à 2 % de la valeur de reconstruction par an pour l'entretien et le renouvellement. Tu mets 🔵 250 € par mois sur un compte « maison », distinct de ton épargne de précaution. L'outil [budget annuel de ma maison](../../outils/budget-maison/) additionne précompte immobilier, assurance, énergie, eau, entretien et provision : ton vrai coût mensuel de logement, celui que la mensualité du crédit ne montrait pas ([[cout-reel-achat]]).
 
-## Ce que tu dois retenir
+## En bref
 
-- Une maison est un **ensemble de systèmes** qui suivent tous la chaîne réseau → compteur → installation → appareils → facture ; la question « avant ou après le compteur ? » décide qui appeler et qui paie.
-- Les **trois documents** de la vente (PEB, contrôle électrique, entretien chaudière) sont ta première feuille de route ; le contrôle électrique négatif a un délai de **18 mois**.
-- **Sécuriser** (détecteurs, chaudière, différentiels, assurance, gouttières) passe avant embellir.
-- Un hiver de **relevés et d'observation** vaut mieux que des devis précipités ; la condensation se traite par la ventilation, pas par l'injection.
-- Le **diagnostic** puis l'**audit logement** donnent l'ordre : toit et sécurité → enveloppe → ventilation → production de chaleur ; la pompe à chaleur vient en dernier.
-- Le budget se construit **TVAC 6 %**, avec une réserve, en sachant que les **primes arrivent après** et dépendent des revenus.
-- Calendrier, carnet, provision mensuelle : c'est ce qui transforme une maison en budget.
+1. Une maison est un **ensemble de systèmes** qui suivent tous la chaîne réseau → compteur → installation → appareils → facture ; la question « avant ou après le compteur ? » décide qui appeler et qui paie.
+2. **Sécuriser** (détecteurs, chaudière, différentiels, assurance, gouttières) passe avant embellir.
+3. Le **diagnostic** puis l'**audit logement** donnent l'ordre : toit et sécurité → enveloppe → ventilation → production de chaleur ; la pompe à chaleur vient en dernier.
 
 ## Nature des chiffres de cette page
 

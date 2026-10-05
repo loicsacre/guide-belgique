@@ -2,7 +2,7 @@
 
 *Guide Belgique Content Format* : une convention interne, pas un nouveau format de fichier. Le contenu reste en Markdown + YAML ; ce qui change, c'est la **structure** qu'on exige de lui.
 
-> Tout contenu du guide doit pouvoir être lu comme une page web, une fiche imprimable, un chapitre de livre et un module d'apprentissage.
+> Le même contenu peut se lire sur le site, sur papier, sur une liseuse. Le site reste un **manuel** (voir `CLAUDE.md`, « un manuel, pas une formation ») : ces formats sont des façons de l'emporter, jamais des étapes à franchir.
 
 ```text
                  sources (Markdown + frontmatter + src/data/*.yaml)
@@ -11,7 +11,7 @@
           ┌──────────────┬─────────┴───────┬───────────────────┐
           ↓              ↓                 ↓                   ↓
      site web       /imprimer/memo    /imprimer/fiche    /imprimer/livre
-   (+ quiz web)          │                 │             │             │
+   (+ quiz de chapitre)  │                 │             │             │
                          ↓                 ↓             ↓             ↓
                     PDF A4 1 page    PDF A4 1-3 p.   PDF A5 cahier   EPUB 3
                                      (+ classeur)    (reMarkable)    (Kobo, Kindle…)
@@ -21,7 +21,7 @@ Rien n'est rédigé deux fois : `npm run export` (Chromium pour les PDF, `script
 
 ## Cinq formes de savoir
 
-Chaque type de contenu répond par défaut à une question. Les quiz mélangent les cinq.
+Une grille d'écriture, utile surtout pour varier les questions d'un quiz. Elle n'est pas affichée comme un parcours.
 
 | Savoir | Question | Type de contenu | Exemple |
 | --- | --- | --- | --- |
@@ -35,7 +35,7 @@ Le champ facultatif `savoir:` d'un contenu ou d'une question de quiz précise la
 
 ## Les blocs structurés (frontmatter)
 
-Ils s'ajoutent aux champs existants (voir `CLAUDE.md`). Tous sont facultatifs : un contenu qui n'en a pas reste une page web normale.
+Ils s'ajoutent aux champs existants (voir `CLAUDE.md`). Tous sont facultatifs : un contenu qui n'en a pas reste une page web normale. Sur le web, le mémo et la checklist sont **repliés en fin de page** (« À garder sous la main ») : ils servent surtout aux versions imprimables, pas à la lecture.
 
 Dans les textes courts des blocs, on peut écrire `[[slug]]`, `[[slug|libellé]]` et `**gras**`, rien d'autre.
 
@@ -80,12 +80,12 @@ checklist:
 
 Le mémo et la checklist **se rédigent** : ils ne se déduisent pas du récit. Le chemin peut reprendre les titres des `etapes`, les idées reprennent souvent « Ce que tu dois retenir », mais en plus court.
 
-## Les quiz — `src/data/quiz/<slug>.yaml`
+## Les quiz — `src/data/quiz/<id-du-chapitre>.yaml`
 
-Un fichier par contenu, du même nom que la page (`creer-societe.yaml` pour `situations/creer-societe.md`). Le quiz s'affiche en bas de la page web (interactif, explication après chaque réponse), en fin de chapitre dans les livres, et les corrigés en fin de livre.
+**Un quiz par chapitre**, jamais par fiche ni par situation : un fichier nommé d'après l'`id` du chapitre dans `parcours.yaml` (`entreprise.yaml` pour « Indépendant et société »). Il mélange les notions du chapitre et sa ou ses mises en situation. Sur le web, il est replié tout en bas de la page du chapitre (« Envie de vérifier ? ») : facultatif, rien n'est enregistré, l'explication suit chaque réponse. Dans les livres, il vient en fin de volume avec ses corrigés.
 
 ```yaml
-titre: As-tu compris comment fonctionne une société ?
+titre: Indépendant et société, qu'as-tu retenu ?
 questions:
   - id: ca-benefice          # unique dans le fichier
     type: qcm                # qcm | vrai-faux | ordre | nombre
@@ -122,19 +122,19 @@ Règles de rédaction :
 
 ## Les petits livres — `src/data/livres.yaml`
 
-Un livre = une suite de situations (les chapitres), plus toutes les fiches qu'elles mobilisent (déduites des `notions`, des `etapes` et des `[[liens]]`, rangées dans l'ordre du parcours).
+Un livre = un ou plusieurs **chapitres du manuel**, dans le même ordre que le site : la vue d'ensemble du chapitre, ses fiches dans l'ordre de lecture, puis ses mises en situation et une page « Mes notes ». En fin de livre : les quiz facultatifs des chapitres, leurs corrigés, les sources.
 
 ```yaml
 livres:
   - id: entreprise
-    titre: Créer son entreprise
-    sous_titre: De l'indépendant à la société…
+    titre: Indépendant et société
+    sous_titre: Comprendre le statut d'indépendant, la société…
     couleur: '#2f6f5e'
-    chapitres: [devenir-independant, creer-societe]
-    fiches: []          # fiches en plus, facultatif
+    chapitres: [entreprise]                       # ids de parcours.yaml
+    fiches: [chiffre-affaires-marge-benefice]     # fiches d'autres chapitres, en complément (facultatif)
 ```
 
-Chaque chapitre contient : le récit, le fil en bref, le mémo, la checklist, le quiz (questions), une page « Mes notes ». Les outils et documents annotés restent en ligne : le QR code de chaque chapitre y renvoie.
+Les outils et documents annotés restent en ligne : les QR codes y renvoient.
 
 ## Où ça se trouve
 
@@ -142,14 +142,14 @@ Chaque chapitre contient : le récit, le fil en bref, le mémo, la checklist, le
 | --- | --- |
 | Schéma (validation au build) | `src/content.config.ts` (`memo`, `checklist`, `savoir`) |
 | Contrôles (`npm run check`) | `scripts/check.mjs` : idées ≤ 3, nature des chiffres, slugs, structure des quiz, chapitres des livres |
-| Rendu partagé | `src/components/gbcf/` : `Memo`, `Checklist`, `Quiz`, `FichePratique`, `Formats` |
+| Rendu partagé | `src/components/gbcf/` : `Memo`, `Checklist`, `Quiz`, `FichePratique` |
 | Pages papier | `src/pages/imprimer/` : `memo/[slug]`, `fiche/[slug]`, `fiches` (classeur), `livre/[id]` |
 | Export PDF + EPUB | `scripts/export.mjs` → `dist/telechargements/` |
 | Bibliothèque (téléchargements) | `src/pages/bibliotheque.astro` |
 
-## Ajouter le format à un contenu existant
+## Ajouter ces formats
 
-1. Ajouter `memo:` et `checklist:` dans le frontmatter.
-2. Créer `src/data/quiz/<slug>.yaml` (6 à 10 questions).
-3. Si la situation a sa place dans un livre, l'ajouter dans `src/data/livres.yaml`.
+1. Pour une mise en situation qui mérite une fiche pratique imprimable : ajouter `memo:` et `checklist:` dans son frontmatter. Ce n'est pas obligatoire.
+2. Pour un chapitre : créer `src/data/quiz/<id>.yaml` (8 à 12 questions qui mélangent ses notions).
+3. Pour un livre : ajouter le chapitre dans `src/data/livres.yaml`.
 4. `npm run check`, puis `npm run build && npm run export` et regarder les PDF : mémo sur 1 page, fiche sur 3 pages au plus.

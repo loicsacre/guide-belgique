@@ -151,14 +151,11 @@ C'est souvent le moment où ta mère réfléchit à sa propre transmission : don
 
 **Vous ne vous entendez pas sur la maison.** « Nul n'est tenu de rester en indivision » : le partage judiciaire existe, long et coûteux ; la médiation ou une vente amiable valent mieux.
 
-## Ce que tu dois retenir
+## En bref
 
 1. Les comptes (même communs) se bloquent ; le conjoint peut retirer jusqu'à 5 000 €.
 2. Avant tout acte d'héritier : accepter, sous bénéfice d'inventaire, ou renoncer.
-3. Mariés sans contrat : la moitié est déjà au survivant ; sur l'autre, usufruit au conjoint, nue-propriété aux enfants.
-4. Déclaration de succession dans les 4 mois, à la Région du domicile du défunt ; donations récentes réintégrées.
-5. Logement familial exonéré pour le conjoint ; enfants taxés de 3 à 30 % sur leur part.
-6. Assurances-vie et capitaux décès : versés hors succession civile, souvent taxés quand même.
+3. Déclaration de succession dans les 4 mois, à la Région du domicile du défunt ; donations récentes réintégrées.
 
 ## Nature des chiffres de cette page
 

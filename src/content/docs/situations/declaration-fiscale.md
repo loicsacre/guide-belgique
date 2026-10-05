@@ -165,14 +165,11 @@ Si tu dois payer : **deux mois** à partir de l'envoi, avec la communication str
 
 **Tu as changé d'emploi ou été au chômage temporaire.** Plusieurs fiches 281, des précomptes calculés séparément : écart dans un sens ou l'autre.
 
-## Ce que tu dois retenir
+## En bref
 
 1. Revenus 2025 = exercice 2026 : lis toujours l'étiquette d'un montant fiscal.
 2. Le précompte est une avance ; l'AER règle la différence avec l'impôt réel.
-3. Vérifie même une proposition simplifiée : situation familiale, personnes à charge, réductions.
-4. Le barème est progressif par tranches ; la quotité exemptée et les réductions viennent après.
-5. Ta commune prend un pourcentage de ton impôt ; ta situation familiale au 1er janvier fixe ton régime.
-6. Deux mois pour payer, un an pour réclamer, et ton numéro de compte dans MyMinfin.
+3. Le barème est progressif par tranches ; la quotité exemptée et les réductions viennent après.
 
 ## Nature des chiffres de cette page
 

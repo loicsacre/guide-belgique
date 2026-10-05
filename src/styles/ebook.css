@@ -46,3 +46,4 @@ aside svg { display: none; }
 .gb-quiz-paper > ol > li { margin-bottom: 0.8em; }
 .gb-corrige li { margin-bottom: 0.5em; }
 .fil td:first-child { white-space: nowrap; color: #666; }
+.chap-chain { color: #2f6f5e; border-left: 3px solid #2f6f5e; padding-left: 0.5em; font-size: 0.9em; }

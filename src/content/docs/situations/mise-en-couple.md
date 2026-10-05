@@ -139,13 +139,11 @@ Voir [[droits-reels]], [[quotite-emprunt]], [[assurance-solde-restant-du]], et l
 
 **Vous êtes de nationalités différentes ou vivez à l'étranger.** Les règles de succession et de régime matrimonial dépendent de la résidence : notaire.
 
-## Ce que tu dois retenir
+## En bref
 
 1. Même adresse = « cohabitants » pour la sécurité sociale (allocations plus basses), « isolés » pour le fisc : chaque système a sa définition.
 2. Sans papier, le partenaire n'hérite de rien et n'est protégé ni dans le logement ni en cas de rupture.
-3. Cohabitation légale : logement protégé, déclaration commune, tarif successoral ; pas de pension de survie, pas d'héritage complet.
-4. Mariage : héritage, pension de survie, régime matrimonial (communauté par défaut).
-5. Acheter à deux sans être mariés exige une convention, une clause pour le survivant et une assurance croisée.
+3. La cohabitation légale protège le logement et rapproche fiscalement ; seul le mariage ouvre l'héritage complet et la pension de survie, avec un régime matrimonial (communauté par défaut).
 
 ## Nature des chiffres de cette page
 

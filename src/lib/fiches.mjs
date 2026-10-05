@@ -63,12 +63,35 @@ const byOrder = (a, b) =>
   (a.data.sidebar?.order ?? 999) - (b.data.sidebar?.order ?? 999) ||
   String(a.data.title).localeCompare(String(b.data.title), 'fr');
 
-/** Sidebar générée depuis le frontmatter : un groupe par domaine qui contient au moins une fiche. */
+/** Les chapitres du manuel (src/data/parcours.yaml), dans l'ordre du sommaire. */
+export const loadChapitres = () => loadParcours().blocs;
+
+/** Le chapitre auquel appartient une fiche (le premier qui la liste), ou null. */
+export function chapitreOf(slug) {
+  return loadChapitres().find((c) => c.notions.some((n) => n.slug === slug)) ?? null;
+}
+
+/**
+ * Sidebar : le manuel se lit par chapitres. Chaque chapitre (replié tant qu'on n'y est pas) commence par sa
+ * vue d'ensemble, puis ses fiches dans l'ordre de lecture. Viennent ensuite les mises en situation,
+ * les documents et les outils. Une fiche absente de parcours.yaml reste accessible via son domaine.
+ */
 export function buildSidebar() {
   const fiches = loadFiches().filter((f) => !f.data.draft);
-  const groups = DOMAINS.map((d) => ({
-    label: `${d.emoji} ${d.label}`,
-    items: fiches.filter((f) => f.data.domain === d.key).sort(byOrder).map((f) => ({ slug: f.id })),
+  const bySlug = new Map(fiches.map((f) => [f.slug, f]));
+  const chapitres = loadChapitres().map((c) => ({
+    label: `${c.emoji ?? ''} ${c.title}`.trim(),
+    collapsed: true,
+    items: [
+      { label: "Vue d'ensemble", link: `/chapitres/${c.id}/`, attrs: { class: 'sb-overview' } },
+      ...c.notions.filter((n) => bySlug.has(n.slug)).map((n) => ({ slug: bySlug.get(n.slug).id })),
+    ],
+  }));
+  const placed = new Set(loadChapitres().flatMap((c) => c.notions.map((n) => n.slug)));
+  const orphans = DOMAINS.map((d) => ({
+    label: `${d.emoji} ${d.label} (hors chapitre)`,
+    collapsed: true,
+    items: fiches.filter((f) => f.data.domain === d.key && !placed.has(f.slug)).sort(byOrder).map((f) => ({ slug: f.id })),
   })).filter((g) => g.items.length);
 
   const situations = loadSituations().sort(byOrder).map((s) => ({ slug: s.id }));
@@ -77,19 +100,20 @@ export function buildSidebar() {
 
   return [
     {
-      label: 'Commencer',
+      label: 'Le manuel',
       items: [
         { label: 'Accueil', link: '/' },
-        { label: 'Parcours — je pars de zéro', link: '/parcours/' },
+        { label: 'Sommaire', link: '/sommaire/' },
+        { label: 'Glossaire', link: '/glossaire/' },
         { label: 'Le grand système', link: '/systeme/' },
         { label: 'Ma maison, le système', link: '/maison/' },
-        { label: 'Glossaire', link: '/glossaire/' },
-        { label: 'Bibliothèque — livres et fiches', link: '/bibliotheque/' },
       ],
     },
-    ...(situations.length ? [{ label: '🧭 Chaînes de vie', items: situations }] : []),
-    ...(documents.length ? [{ label: '📄 Lire un document', items: documents }] : []),
-    ...(outils.length ? [{ label: '🧮 Outils pédagogiques', items: outils }] : []),
-    ...groups,
+    { label: 'Chapitres', items: chapitres },
+    ...orphans,
+    ...(situations.length ? [{ label: '🧭 Mises en situation', collapsed: true, items: situations }] : []),
+    ...(documents.length ? [{ label: '📄 Lire un document', collapsed: true, items: documents }] : []),
+    ...(outils.length ? [{ label: '🧮 Outils pédagogiques', collapsed: true, items: outils }] : []),
+    { label: 'À emporter', collapsed: true, items: [{ label: 'Bibliothèque (PDF, EPUB)', link: '/bibliotheque/' }] },
   ];
 }
