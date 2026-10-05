@@ -132,7 +132,7 @@ Une fiche se lit **sans effort**, comme un bon article : on comprend en lisant, 
 - **Chaque terme expliqué là où il apparaît**, en une incise (« la communication structurée, ce numéro entre +++ qui… »), même s'il a sa fiche. Le lien vient en plus, pas à la place.
 - **Un exemple chiffré qu'on suit**, cohérent avec les exemples fil rouge (voir `MEMORY.md`), marqué fictif.
 - **Tableaux** seulement pour comparer ou pour lire un document ligne par ligne ; schémas `text` seulement s'ils éclairent un flux que la prose rend difficile.
-- Terminer par « À ne pas confondre » (en prose si possible) et « Nature des chiffres de cette page ».
+- Terminer par « À ne pas confondre » (en prose si possible) et « Nature des chiffres de cette page ». Cette section est affichée « À propos des chiffres de cette page », avec la légende des pastilles ajoutée automatiquement (`src/lib/remark-chiffres.mjs`) : y écrire **des phrases** qui citent les chiffres (« 🔴 les délais (… ) sont des règles officielles… »), pas une liste de mots-clés.
 
 Les anciennes fiches suivent encore le gabarit *En langage simple → Pourquoi ça existe → Comment ça marche → Exemple → Ce que ça change pour toi → À ne pas confondre*, souvent trop découpé : les réécrire progressivement sur le nouveau modèle, chapitre par chapitre, sans perdre d'information.
 

@@ -93,4 +93,4 @@ L'AER dont parle cette fiche est celui de l'**impôt des personnes physiques**, 
 
 ## Nature des chiffres de cette page
 
-🔴 Règles légales datées : délais d'établissement, de paiement et de réclamation. 🔵 Exemple fictif : le salarié à 42 000 €, avec un taux communal de 7 % et un précompte de 9 900 € inventés pour l'illustration.
+Ici, 🔴 les délais (30 juin 2027 pour établir l'impôt, deux mois pour payer, un an pour réclamer) sont des règles officielles, valables pour les revenus 2025. 🔵 Le salarié à 42 000 €, le taux communal de 7 % et le précompte de 9 900 € sont inventés pour l'exemple.
