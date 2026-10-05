@@ -21,6 +21,12 @@ sources:
   - title: SPF Finances — Particuliers
     url: https://finances.belgium.be/fr/particuliers
     org: SPF Finances
+  - title: L'exonération du précompte mobilier de A à Z
+    url: https://www.belfius.be/retail/fr/moments-cles/impots/fiscalite-quotidien/investissements/infos-generales/dividende/index.aspx
+    org: Belfius
+  - title: Exonération du précompte mobilier sur les dividendes
+    url: https://www.kbc.be/particuliers/fr/informations-legales/documentation-investissements/exoneration-dividendes.html
+    org: KBC
 sidebar:
   order: 11
 ---
@@ -47,7 +53,7 @@ Le taux de 30 % est la règle, mais plusieurs revenus suivent un régime différ
 | Revenu | Régime |
 | --- | --- |
 | Intérêts d'un **[[compte-epargne\|compte d'épargne réglementé]]** | Exonérés jusqu'à **1 020 €** par personne et par an ; au-delà, **15 %** |
-| **Dividendes** d'actions | Première tranche d'environ **860 €** par personne exonérée, mais la banque retient quand même : à **récupérer via la déclaration** |
+| **Dividendes** d'actions | Les **833 premiers euros** par personne sont exonérés (revenus 2025), mais la banque retient quand même : à **récupérer via la déclaration** |
 | Intérêts d'un compte non réglementé, obligations, comptes à terme | 30 % |
 | Dividendes de parts de petites sociétés émises contre un apport en argent (VVPR-bis) | 18 % sous conditions, pour les dividendes attribués dès le 1er juillet 2026 (15 % avant) |
 | Réserve de liquidation distribuée après trois ans | 9,8 % (après une cotisation de 10 % payée par la société), pour les réserves récentes |
@@ -62,7 +68,7 @@ Quant au **courtier étranger**, c'est une plateforme d'investissement établie 
 
 **Compare les placements en net.** Un compte à terme qui rapporte 2 % brut ne te rapporte en réalité que 1,4 % une fois le précompte de 30 % retenu. Un compte d'épargne réglementé à 2 % te rapporte bien 2 % net, tant que tes intérêts restent sous le plafond d'exonération.
 
-**Si tu as des actions à dividendes, réclame l'exonération.** La banque retient 30 % sur tous tes dividendes, même sur la première tranche qui devrait être exonérée. Pour récupérer cet argent, il faut le demander dans ta déclaration : jusqu'à environ 258 € par personne (30 % de 860 €).
+**Si tu as des actions à dividendes, réclame l'exonération.** La banque retient 30 % sur tous tes dividendes, même sur la première tranche qui devrait être exonérée. Pour récupérer cet argent, il faut le demander dans ta déclaration : jusqu'à 249,90 € par personne (30 % de 833 €, revenus 2025).
 
 ## À ne pas confondre
 
@@ -70,4 +76,4 @@ Le précompte mobilier n'est qu'un des prélèvements qui touchent tes placement
 
 ## Nature des chiffres de cette page
 
-🔴 Le taux de 30 %, l'exonération de 1 020 € et le taux de 15 % pour l'épargne réglementée, l'exonération d'environ 860 € de dividendes (soit environ 258 € à récupérer), le VVPR-bis à 18 % (15 % avant le 1er juillet 2026) et la réserve de liquidation à 10 % puis 9,8 % après trois ans sont des règles officielles datées. 🔵 Le dividende de 100 € et le placement à 2 % sont des exemples fictifs.
+🔴 Le taux de 30 %, l'exonération de 1 020 € et le taux de 15 % pour l'épargne réglementée, l'exonération de 833 € de dividendes pour les revenus 2025 (soit 249,90 € à récupérer au plus), le VVPR-bis à 18 % (15 % avant le 1er juillet 2026) et la réserve de liquidation à 10 % puis 9,8 % après trois ans sont des règles officielles datées. 🔵 Le dividende de 100 € et le placement à 2 % sont des exemples fictifs.

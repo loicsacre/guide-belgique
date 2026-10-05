@@ -95,7 +95,10 @@ sources:
 - title: 'Déclaration 2026 : dates limites (communiqué)'
   url: https://news.belgium.be/fr/node/44231/pdf
   org: SPF Finances
-last_verified: '2026-10-02'
+- title: "Le chèque-repas de 10 euros : six questions pour les employeurs"
+  url: https://www.partena-professional.be/fr/node/22442
+  org: Partena Professional
+last_verified: 2026-10-05
 ---
 Tu as signé. Le contrat dit « 3 500 € brut ». Tu as fait le calcul dans ta tête : 3 500 € par mois, c'est bien. Fin du premier mois, 2 440 € arrivent sur ton compte. Où sont passés les 1 060 € ? Cette histoire répond à cette question, puis à celle qui suit un an plus tard : pourquoi le SPF Finances t'envoie-t-il encore un décompte ?
 
@@ -117,7 +120,7 @@ Le **brut** est le chiffre de référence : celui du contrat, des barèmes, des 
 
 Il reste 3 042,55 €. C'est ta **rémunération imposable** : la base sur laquelle l'État calcule ton impôt.
 
-**Deuxième prélèvement : le précompte professionnel.** L'impôt sur tes revenus se calcule une fois par an, sur toute l'année. Plutôt que de te réclamer 8 000 € d'un coup l'année suivante, l'État fait retenir une **avance** chaque mois par ton employeur : c'est le précompte professionnel. Son montant vient de barèmes officiels qui tiennent compte de ton revenu et de ta situation familiale, d'où l'importance de la déclarer : avec deux enfants à charge, la retenue mensuelle baisse de plusieurs dizaines d'euros. Ici, environ 600 €. Voir [[precompte-professionnel]].
+**Deuxième prélèvement : le précompte professionnel.** L'impôt sur tes revenus se calcule une fois par an, sur toute l'année. Plutôt que de te réclamer 8 000 € d'un coup l'année suivante, l'État fait retenir une **avance** chaque mois par ton employeur : c'est le précompte professionnel. Son montant vient de barèmes officiels qui tiennent compte de ton revenu et de ta situation familiale, d'où l'importance de la déclarer : avec deux enfants à charge, la retenue mensuelle baisse de plusieurs dizaines d'euros. Ici, environ 550 €. Voir [[precompte-professionnel]].
 
 Quelques petites lignes encore (une cotisation spéciale de sécurité sociale de quelques dizaines d'euros, ta part des chèques-repas), et le **net** arrive : ≈ 2 440 €. Soit environ 70 % du brut. Voir [[salaire-net]].
 
@@ -125,16 +128,17 @@ Quelques petites lignes encore (une cotisation spéciale de sécurité sociale d
 3 500,00 €   brut
 −  457,45 €  cotisations sociales (13,07 %)        → sécurité sociale
 = 3 042,55 € imposable
-−  600,00 €  précompte professionnel (avance d'impôt)  → SPF Finances
-−    2,55 €  cotisation spéciale, chèques-repas…
-= 2 440,00 € net sur ton compte
+−  550,00 €  précompte professionnel (avance d'impôt)  → SPF Finances
+−   30,00 €  cotisation spéciale de sécurité sociale
+−   22,89 €  ta part des chèques-repas (21 jours × 1,09 €)
+= 2 439,66 € net sur ton compte (≈ 2 440 €)
 ```
 
 Tout cela est écrit, ligne par ligne, sur ta **fiche de paie**, que l'employeur doit te remettre à chaque paie. La première fois, elle fait peur ; un exemple entièrement annoté est dans [Lire une fiche de paie](../../documents/fiche-de-paie/), et la lecture guidée dans [[fiche-de-paie]]. Garde-les toutes : elles serviront pour un crédit, un litige, ta pension.
 
 ## 3. Ce que tu reçois en plus du salaire
 
-Ton contrat mentionne des **chèques-repas** (un chèque de 8 € par jour presté, dont tu paies 1,09 €), une **assurance groupe** (l'employeur verse 3 % de ton brut sur un contrat de pension complémentaire à ton nom), une **assurance hospitalisation**, une indemnité de télétravail. Pourquoi tout ça plutôt que du salaire ? Parce qu'un euro de brut en plus te laisse à peine 45 centimes après cotisations et impôt, alors que ces **avantages extralégaux** sont exonérés, en tout ou en partie, dans des limites fixées par la loi. Pour comparer deux offres, convertis-les en valeur annuelle : 8 € × 220 jours = 1 760 € de chèques-repas ; 3 % de 42 000 € = 1 260 € de pension complémentaire. Voir [[avantages-extralegaux]].
+Ton contrat mentionne des **chèques-repas** (un chèque de 10 € par jour presté, le maximum légal depuis 2026, dont tu paies 1,09 € et l'employeur 8,91 €), une **assurance groupe** (l'employeur verse 3 % de ton brut sur un contrat de pension complémentaire à ton nom), une **assurance hospitalisation**, une indemnité de télétravail. Pourquoi tout ça plutôt que du salaire ? Parce qu'un euro de brut en plus te laisse à peine 45 centimes après cotisations et impôt, alors que ces **avantages extralégaux** sont exonérés, en tout ou en partie, dans des limites fixées par la loi. Pour comparer deux offres, convertis-les en valeur annuelle : 10 € × 220 jours = 2 200 € de chèques-repas, dont 1 960 € offerts par l'employeur ; 3 % de ton brut annuel (12 × 3 500 € = 42 000 €) = 1 260 € de pension complémentaire. Voir [[avantages-extralegaux]].
 
 Un piège à connaître : les avantages ne génèrent pas de cotisations, donc pas de droits à la pension légale ni au chômage. Un package « beaucoup d'avantages, peu de brut » est un arbitrage.
 
@@ -177,4 +181,4 @@ Pourquoi un écart ? Parce que le précompte mensuel est une approximation : il 
 
 ## Nature des chiffres de cette page
 
-🔴 **Règles légales, datées** : 13,07 % de cotisation personnelle ; barème IPP et quotité exemptée de l'exercice d'imposition 2026 ; délais de déclaration 2026 ; plafond des chèques-repas (10 € depuis 2026). 🟠 **Repères** : ≈ 25 % de cotisations patronales, ≈ 70 % de net, ≈ 92 % pour le double pécule. 🔵 **Exemple fictif** : brut de 3 500 €, précompte de 600 €, avantages.
+🔴 **Règles légales, datées** : 13,07 % de cotisation personnelle ; barème IPP et quotité exemptée de l'exercice d'imposition 2026 ; délais de déclaration 2026 ; plafond des chèques-repas (10 € depuis 2026, dont 1,09 € au moins à ta charge et 8,91 € au plus pour l'employeur). 🟠 **Repères** : ≈ 25 % de cotisations patronales, ≈ 70 % de net, ≈ 92 % pour le double pécule. 🔵 **Exemple fictif** : brut de 3 500 €, précompte de 550 €, cotisation spéciale de 30 €, 21 jours prestés, avantages.

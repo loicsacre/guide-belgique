@@ -72,26 +72,21 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 0bis. **Maison au format GBCF** : `memo`, `checklist` et quiz pour `comprendre-ma-maison` et `renover-ma-maison`, puis un livre « Comprendre sa maison » dans `livres.yaml`.
 
 1. Repasser les 5 fiches `relecture` avec les sources officielles primaires (ONEM, SPF Finances, Régions).
-2. Maison : à l'usage, vérifier le régime permanent des primes wallonnes dès octobre 2026 (montants dans `primes-renovation`, `isolation-maison`, `chassis-vitrage`, `pompe-a-chaleur`, `ToolRenovation.astro`) ; idées de suite : fiches « J'ai un problème » (panne de chauffage, fuite, disjoncteur qui saute), gaz (odeur, Cerga), sécurité incendie, piscine/annexe, mitoyenneté et voisinage, achat sur plan / loi Breyne détaillée.
+2. Maison : compléter les montants Rénopack/Rénoprêt dès leur publication ; idées de suite : fiches « J'ai un problème » (panne de chauffage, fuite, disjoncteur qui saute), gaz (odeur, Cerga), sécurité incendie, piscine/annexe, mitoyenneté et voisinage, achat sur plan / loi Breyne détaillée.
 3. Lacunes identifiées (à ajouter dans `parcours.yaml` puis rédiger) : allocations familiales régionales ; congés thématiques (parental, crédit-temps) ; travail étudiant et flexi-jobs ; télétravail et frais propres ; pension de survie et GRAPA ; allocations de chômage : montants ; aide sociale / CPAS / revenu d'intégration ; crédit auto et leasing privé ; achat sur plan (loi Breyne, TVA) ; seconde résidence et location (fiscalité du bailleur) ; assurance revenu garanti ; protection juridique ; divorce et contributions alimentaires (détail) ; ASBL ; comptabilité simplifiée de l'indépendant ; dette publique et budget de l'État ; télécom et abonnements ; mobilité (budget mobilité, vélo) ; permis d'urbanisme.
 4. Idée en attente : décortiquer une vraie fiche de paie anonymisée de Lolo.
 5. Idée en attente : page « carte des connaissances » (graphe des prérequis), page par niveau, page par tag.
 6. Idée : script `npm run check:links` à lancer depuis le Mac (le proxy de la session cloud bloque node fetch).
 
-## Points à vérifier (relevés lors de la réécriture du 2026-10-05, non corrigés faute de source)
+## Points à vérifier (restants après la passe de vérification du 2026-10-05)
 
-- **Primes wallonnes** : le régime « jusqu'au 30/09/2026 » est terminé ; montants à mettre à jour (primes-renovation, isolation-maison, chassis-vitrage, pompe-a-chaleur, ToolRenovation).
-- **TOB des ETF** (fiscalite-investissements) : 1,32 % / 0,12 % probablement inversés selon l'enregistrement en Belgique.
-- **Chèques-repas** : 10 € dans avantages-extralegaux, encore 8 € dans premier-emploi, premiere-fiche-de-paie, documents/contrat-de-travail.
-- **Fil rouge du salaire** : net de 3 500 € brut ≈ 2 340 € (salaire-net) vs ≈ 2 440 € (fiche-de-paie, revenu) ; 42 000 € tantôt brut annuel, tantôt rémunération imposable.
-- **Préavis** : colonne « démission » du tableau peut-être décalée d'une ligne (preavis-licenciement).
-- **Chômage** : conditions d'accès et allocations d'insertion après la réforme 2025-2026 (fiche déjà en relecture).
-- **Année du mariage** : imposition séparée l'année du mariage, à préciser dans statut-familial et annee-revenus-exercice.
-- **Succession** : Région compétente = domicile fiscal le plus long sur 5 ans (fiche) vs « dernier domicile » (situation deces-proche).
-- **Donations** : taux wallons pour les autres personnes, fourchette 3-27/30 % en ligne directe.
-- **Garantie locative Bruxelles** : 2 ou 3 mois pour la garantie bancaire et CPAS.
-- **Assurances** : suppléments d'honoraires en chambre commune, délai de continuation individuelle hospitalisation, droit à l'oubli, avantage fiscal protection juridique.
-- **Divers** : virement instantané désormais non facturable (UE 2025), plateforme ODR fermée (2025), tarif capacitaire flamand depuis 2023, retenue 30bis non applicable aux particuliers (choisir-entrepreneur), contrôle électrique à la vente (electricite-maison), seuil coût employeur « 1,5 à 2 fois le net » (cout-employeur).
+- **Rénopack / Rénoprêt (Wallonie, depuis le 01/10/2026)** : modalités détaillées pas encore publiées ; montants à revoir dès publication (primes-renovation, ToolRenovation…).
+- **Fil rouge maison** : isolation des murs de Noé 18 000 € (pompe-a-chaleur) vs 22 000 € (isolation-maison) ; base VMC double flux 680 € vs 400 € (ancien régime).
+- **Fil rouge salaire** : précompte de l'exemple 650 € (precompte-professionnel) vs 550 € ailleurs ; net annuel ≈ 30 000 € vs ≈ 29 300 €.
+- **Situation declaration-fiscale** : précompte 10 650 € et additionnels 8,5 % vs fil rouge 9 900 € et 7 %.
+- **acheter-un-logement** : précompte immobilier de 600-900 € pour un RC de 890 € probablement trop bas.
+- **Contrôle électrique à la vente** : règle confirmée par une source professionnelle (Certinergie), pas officielle.
+- Sites officiels bloqués depuis la session cloud (fin.belgium.be, economie.fgov.be, logement.wallonie.be, onem.be) : plusieurs règles reposent sur des sources professionnelles sérieuses ; à recouper depuis le Mac.
 
 ## Pièges connus
 
@@ -110,6 +105,7 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 - EPUB : `export.mjs` nettoie le HTML (blocs expressive-code → `<pre>`, `align` → style, liens internes → fichiers du livre). Valider avec `epubcheck` (pip) après un changement de rendu.
 
 ## Journal des sessions
+- **2026-10-05 (vérification)** — ~40 faits revérifiés sur sources (5 agents) : primes wallonnes → Rénopack/Rénoprêt, TOB inversée, chèques-repas 10 €, préavis 2026, réforme chômage, incapacité, succession/donations, garantie locative, assurances, divers ; chomage, incapacite-de-travail et voiture-taxes repassées en `publie`. Points restants ci-dessus.
 - **2026-10-05 (fin)** — Les 135 autres fiches réécrites au format article (agents par chapitre) ; points douteux relevés ci-dessus ; légende des chiffres en note discrète avec lien vers l'accueil.
 - **2026-10-05 (suite)** — Fiche AER réécrite au format article (et délai de réclamation corrigé : un an, pas six mois) ; règle d'écriture des fiches dans `CLAUDE.md`.
 - **2026-10-05** — Mission « un manuel, pas une formation » : analyse du site, chapitres, retrait de l'effet formation, réécriture de `creer-societe` + 4 fiches, quiz de chapitre, livres par chapitre, mise à jour VVPR-bis / réserve de liquidation.

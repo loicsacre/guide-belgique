@@ -4,7 +4,7 @@ kind: fiche
 domain: fiscalite
 level: essentiel
 nature: mixte
-valid_for: "principes ; plafonds de ressources indexés chaque année"
+valid_for: "plafonds de ressources des revenus 2025 (exercice 2026), indexés chaque année"
 scope: [federal]
 status: publie
 tags: [enfants à charge, quotité exemptée, ménage, fiscalité familiale]
@@ -13,7 +13,7 @@ short: "Un enfant ou un proche qui vit sous ton toit au 1er janvier et dispose d
 aliases: [enfant à charge, personnes à charge, coparentalité fiscale, garde alternée, ascendant à charge, parent isolé]
 prerequisites: [quotite-exemptee]
 related: [precompte-professionnel, declaration-fiscale, domicile, formes-de-couple, deduction-reduction-credit, statut-familial]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: SPF Finances — Particuliers
     url: https://finances.belgium.be/fr/particuliers
@@ -21,6 +21,12 @@ sources:
   - title: Plafonds fiscaux — exercice d'imposition 2026
     url: https://assets.contenthub.wolterskluwer.com/api/public/content/3084229-plafonds-fiscaux-3a47085543
     org: Wolters Kluwer
+  - title: "Déclaration IPP 2026 : quels sont les impacts sur les enfants à charge ?"
+    url: https://blog.forumforthefuture.be/fr/article/declaration-ipp-2026-quels-sont-les-impacts-sur-les-enfants-a-charge-/31366
+    org: Forum for the Future
+  - title: Quelles sont les conditions pour être fiscalement à charge ?
+    url: https://www.securex.be/fr/lex4you/employeur/themes/remunerer/etat-civil-et-personnes-a-charge/quelles-sont-les-conditions-pour-etre-fiscalement-a-charge
+    org: Securex
 sidebar:
   order: 8
 ---
@@ -38,7 +44,7 @@ On pense d'abord aux enfants, et ce sont eux le cas le plus courant, y compris l
 Pour que ça marche, trois conditions doivent être réunies, toutes en même temps.
 
 - **La personne fait partie de ton ménage au 1er janvier de l'exercice d'imposition**, c'est-à-dire au 1er janvier de l'année qui suit celle des revenus (le 1er janvier 2026 pour les revenus 2025). Faire partie du ménage veut dire vivre habituellement avec toi : un enfant qui loge en kot pendant ses études reste dans ton ménage. → [[domicile]]
-- **Ses ressources nettes restent sous un plafond.** Ce plafond annuel est indexé chaque année ; il tourne autour de 4 000 € nets, et il est plus élevé pour l'enfant d'un parent isolé. Les jobs étudiants et les pensions alimentaires qu'elle reçoit ne comptent que partiellement, grâce à des franchises (des montants qu'on ne prend pas en compte).
+- **Ses ressources nettes restent sous un plafond.** Pour un **enfant**, ce plafond est de **12 000 € nets** pour les revenus 2025 (exercice d'imposition 2026), le même quelle que soit la situation familiale des parents : une réforme l'a fortement relevé et unifié à partir des revenus 2025, alors qu'il était auparavant bien plus bas et variait selon que le parent était isolé ou non. Pour une **autre personne** à charge, un parent âgé ou un frère par exemple, il reste bien plus bas : 4 100 € nets. Ces montants sont indexés chaque année. Les jobs étudiants et les pensions alimentaires qu'elle reçoit ne comptent que partiellement, grâce à des franchises (des montants qu'on ne prend pas en compte).
 - **Elle n'est ni payée par toi comme travailleur, ni ton conjoint ou cohabitant légal.** Ton partenaire n'est jamais « à charge » : il relève d'un autre régime, le quotient conjugal, qui transfère une partie du revenu du conjoint qui gagne le plus vers l'autre. → [[formes-de-couple]]
 
 ## Ce que ça rapporte
@@ -76,4 +82,4 @@ Les **allocations familiales**, que tu reçois chaque mois pour tes enfants, son
 
 ## Nature des chiffres de cette page
 
-🔴 La quotité de base de 10 910 €, le supplément de 5 110 € pour deux enfants, la date du 1er janvier et l'âge de 3 ans sont des règles officielles pour les revenus 2025 ; le plafond de ressources d'environ 4 000 € nets est lui aussi une règle officielle, indexée chaque année, donnée ici en arrondi. 🔵 Le calcul de 1 277,50 € d'impôt en moins pour deux enfants est une illustration.
+🔴 La quotité de base de 10 910 €, le supplément de 5 110 € pour deux enfants, la date du 1er janvier et l'âge de 3 ans sont des règles officielles pour les revenus 2025 ; les plafonds de ressources nettes (12 000 € pour un enfant, 4 100 € pour une autre personne) sont eux aussi des règles officielles pour les revenus 2025, indexées chaque année. 🔵 Le calcul de 1 277,50 € d'impôt en moins pour deux enfants est une illustration.

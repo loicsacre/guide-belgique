@@ -13,8 +13,14 @@ short: "Ta facture d'énergie additionne le prix de l'énergie (ton fournisseur,
 aliases: [facture d'énergie, acompte, décompte annuel, fournisseur d'énergie, gestionnaire de réseau, ORES, RESA, Sibelga, Fluvius, compteur communicant, tarif social, CREG, CWaPE, Brugel, VREG, contrat fixe, contrat variable]
 prerequisites: [budget, domiciliation-ordre-permanent]
 related: [peb, indexation-loyer, contrats-consommation, inflation, maison-systemes, chauffage-maison, panneaux-solaires, electricite-maison, isolation-maison, primes-renovation]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: Wat betekent de invoering van het capaciteitstarief vanaf 2023 voor jou?
+    url: https://www.test-aankoop.be/woning-energie/gas-elektriciteit-mazout-pellets/nieuws/wat-betekent-de-invoering-van-het-capaciteitstarief-vanaf-2023-voor-jou
+    org: Test-Aankoop
+  - title: Les dernières actualités sur le tarif social en Belgique
+    url: https://callmepower.be/fr/energie/guides/tarifs/tarif-social
+    org: Callmepower
   - title: CREG — Régulateur fédéral de l'énergie
     url: https://www.creg.be/fr
     org: CREG
@@ -45,7 +51,7 @@ Une facture d'énergie se lit dans cet ordre.
 | --- | --- |
 | **Prix de l'énergie** (€/kWh) | Ce que te vend le fournisseur. **Fixe** s'il est bloqué pendant 1 à 3 ans, **variable** s'il est indexé chaque mois ou chaque trimestre sur les prix des marchés. |
 | Redevance fixe | L'abonnement annuel du fournisseur, dû même si tu consommes peu. |
-| **Tarifs de réseau** | Ce que facture le gestionnaire de réseau. Identiques quel que soit ton fournisseur. En Flandre, ils comprennent depuis 2024 un **tarif capacitaire**, calculé sur ton pic de puissance. |
+| **Tarifs de réseau** | Ce que facture le gestionnaire de réseau. Identiques quel que soit ton fournisseur. En Flandre, ils comprennent depuis le 1er janvier 2023 un **tarif capacitaire**, calculé sur ton pic de puissance. |
 | Taxes, cotisations, accises | Les prélèvements fédéraux et régionaux. |
 | TVA | **6 %** pour les particuliers, depuis 2023. |
 
@@ -82,7 +88,7 @@ Le certificat [[peb]], qui note la performance énergétique d'un logement, esti
 
 **Quand tu déménages**, fais un relevé contradictoire avec l'ancien ou le nouvel occupant, c'est-à-dire un relevé des index noté et signé par les deux. Le document prévu pour cela est le **formulaire de reprise des énergies**. Sans lui, tu risques de payer la consommation de quelqu'un d'autre.
 
-**Le tarif social** est un prix plafonné, accordé automatiquement à certaines catégories de personnes (par exemple les bénéficiaires de l'intervention majorée, dite BIM, ou du revenu d'intégration).
+**Le tarif social** est un prix plafonné, accordé automatiquement aux ménages dont un membre reçoit certaines aides : le revenu d'intégration du CPAS, une allocation de personne handicapée, la garantie de revenus aux personnes âgées (GRAPA), entre autres. Être bénéficiaire de l'intervention majorée (BIM) ne suffit plus à lui seul : cette extension temporaire a pris fin le 30 juin 2023. Une réforme fédérale est en discussion, mais les règles de 2023 restent celles qui s'appliquent tant qu'elle n'est pas votée.
 
 **En cas de difficultés de paiement**, demande d'abord un plan de paiement à ton fournisseur. Les Régions prévoient ensuite des protections, comme un **fournisseur de dernier ressort** (qui reprend le client que les autres ne servent plus) ou un **compteur à budget** (qui fonctionne en prépaiement). Surtout, ne laisse pas une mise en demeure sans réponse.
 
@@ -104,4 +110,4 @@ Le **fournisseur** te vend l'énergie et t'envoie la facture ; le **gestionnaire
 
 ## Nature des chiffres de cette page
 
-🔴 La TVA à 6 % pour les particuliers depuis 2023, le changement de fournisseur gratuit avec un mois de préavis et le tarif capacitaire flamand sont des règles officielles, régionales pour ce qui touche au réseau. 🟠 La répartition de la facture (30 à 45 %, 30 à 40 %, 20 à 30 %), les consommations types et le budget de 150 à 350 € par mois sont des ordres de grandeur. 🔵 L'appartement wallon et son décompte de 1 716,42 € sont fictifs.
+🔴 La TVA à 6 % pour les particuliers depuis 2023, le changement de fournisseur gratuit avec un mois de préavis, le tarif capacitaire flamand (depuis 2023) et les catégories qui ont droit au tarif social (sans les BIM depuis juillet 2023) sont des règles officielles, régionales pour ce qui touche au réseau. 🟠 La répartition de la facture (30 à 45 %, 30 à 40 %, 20 à 30 %), les consommations types et le budget de 150 à 350 € par mois sont des ordres de grandeur. 🔵 L'appartement wallon et son décompte de 1 716,42 € sont fictifs.

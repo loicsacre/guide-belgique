@@ -4,16 +4,16 @@ kind: fiche
 domain: securite-sociale
 level: utile
 nature: mixte
-valid_for: "principes ; réforme 2025-2026 (limitation dans le temps) à suivre"
+valid_for: "règles en vigueur depuis le 1er mars 2026 (réforme de la loi du 18 juillet 2025)"
 scope: [federal, wallonie, bruxelles, flandre]
-status: relecture
+status: publie
 tags: [chômage, ONEM, allocations, Forem, Actiris, VDAB]
 organisme: "ONEM, syndicat ou CAPAC, Forem / Actiris / VDAB"
 short: "Une assurance de la sécurité sociale qui remplace une partie de ton salaire si tu perds ton emploi involontairement, à condition d'avoir assez travaillé et de rester disponible ; l'ONEM décide, le syndicat ou la CAPAC paie, la Région t'accompagne."
 aliases: [allocations de chômage, ONEM, CAPAC, chômage temporaire, allocations d'insertion, dégressivité, chômage volontaire]
 prerequisites: [securite-sociale, preavis-licenciement]
 related: [cotisations-sociales, administrations-et-organismes, domicile, incapacite-de-travail, pension, independant]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: ONEM — Chômage
     url: https://www.onem.be/fr
@@ -21,6 +21,18 @@ sources:
   - title: Portail de la sécurité sociale — citoyens
     url: https://www.socialsecurity.be/citizen/fr
     org: Sécurité sociale belge
+  - title: Nouvelle réglementation chômage en vigueur depuis le 1er mars 2026
+    url: https://www.onem.be/actualites/2026/03/02/nouvelle-reglementation-chomage-en-vigueur-depuis-le-1er-mars-2026
+    org: ONEM
+  - title: Le point sur la réforme de l'assurance chômage en Belgique
+    url: https://s3.eusc-de-east-1.amazonaws.eu/unedic-eks-prod-cms/2026/05/07/le-point-sur-la-reforme-de-l-assurance-chomage-en-belgique_uid_69fca488ed5b8.pdf
+    org: Unédic
+  - title: "Loi-programme : synthèse (volet chômage)"
+    url: https://www.claeysengels.be/sites/default/files/2025-08/newsletter_-_loi-programme_0.pdf
+    org: Claeys & Engels
+  - title: "Limitation dans le temps des allocations de chômage : qui sera exclu et quand ?"
+    url: https://www.rtbf.be/article/limitation-dans-le-temps-des-allocations-de-chomage-qui-sera-exclu-et-quand-11623311
+    org: RTBF
 sidebar:
   order: 4
 ---
@@ -48,7 +60,7 @@ Retiens la logique : l'ONEM décide, l'organisme de paiement paie, la Région ac
 
 Quatre conditions reviennent, et chacune répond à la logique d'une assurance.
 
-- **Avoir assez travaillé.** Il faut un certain nombre de jours de travail salarié sur une période de référence. Par exemple, 312 jours sur les 21 mois qui précèdent ta demande si tu as moins de 36 ans. C'est la contrepartie des cotisations : on n'assure que ceux qui ont contribué.
+- **Avoir assez travaillé.** Depuis le 1er mars 2026, il faut **312 jours de travail**, soit environ un an à temps plein, au cours des **36 mois** qui précèdent ta demande, quel que soit ton âge. C'est la contrepartie des cotisations : on n'assure que ceux qui ont contribué.
 - **Avoir perdu ton emploi involontairement.** Si tu démissionnes, ou si tu romps ton contrat de commun accord sans motif légitime, l'ONEM peut t'exclure temporairement : on parle de chômage volontaire.
 - **Rester disponible.** Tu dois être inscrit comme demandeur d'emploi, chercher activement du travail et accepter les emplois « convenables », c'est-à-dire adaptés à ta formation, à ton expérience et à ta situation.
 - **Ne pas avoir de revenu de travail.** Tu dois déclarer tout travail, même ponctuel ; le cumul avec une allocation est limité.
@@ -63,8 +75,8 @@ Le montant dépend aussi de ta **situation familiale**. L'ONEM distingue le chef
 
 Enfin, les allocations de chômage sont **imposables**. Un précompte, c'est-à-dire une avance sur l'impôt, est retenu au moment du paiement, comme sur un salaire.
 
-:::caution[Règles en mouvement]
-Une réforme limite la durée des allocations de chômage dans le temps (en principe deux ans, avec des exceptions) à partir de 2025-2026. Vérifie les règles en vigueur et les mesures transitoires auprès de l'ONEM ou de ton organisme de paiement.
+:::note[Règle datée — depuis le 1er mars 2026]
+Les allocations de chômage sont désormais **limitées dans le temps**. Tu as droit à une première période de **12 mois**. Elle peut être prolongée d'un mois par tranche de 104 jours de travail (environ quatre mois) que tu as accumulés en plus, jusqu'à **12 mois supplémentaires** : au total, **24 mois au maximum**. Il faut donc environ cinq ans de travail pour atteindre ce maximum. Des exceptions existent, notamment pour les personnes de 55 ans et plus qui ont une très longue carrière (31 ans en 2026, un seuil qui monte jusqu'à 35 ans en 2030). Les personnes qui étaient déjà au chômage avant la réforme perdent leur droit par vagues, de janvier 2026 à 2027, selon la durée de leur chômage. Ton organisme de paiement te dit où tu en es.
 :::
 
 ## Les cas particuliers que tu peux rencontrer
@@ -72,7 +84,7 @@ Une réforme limite la durée des allocations de chômage dans le temps (en prin
 Le mot « chômage » recouvre aussi des situations où tu n'as pas perdu ton emploi, ou où tu n'as pas encore travaillé.
 
 - **Le chômage temporaire.** Ton contrat continue, mais ton entreprise manque de travail, pour une raison économique, un cas de force majeure ou des intempéries. Tu restes salarié, et l'ONEM paie les jours où tu n'as pas travaillé.
-- **Les allocations d'insertion.** Elles concernent les jeunes qui sortent des études et n'ont pas encore assez travaillé. Elles sont accordées après un stage d'insertion, une période de recherche d'emploi, sous conditions d'âge et de diplôme, et elles sont limitées dans le temps.
+- **Les allocations d'insertion.** Elles concernent les jeunes qui sortent des études et n'ont pas encore assez travaillé. Elles sont accordées après un stage d'insertion, une période de recherche d'emploi, à condition d'avoir moins de 25 ans au moment de la demande et d'avoir réussi certaines études. Depuis la réforme de 2026, elles sont limitées à **un an** au maximum.
 - **La reprise d'un travail à temps partiel.** Si tu acceptes un temps partiel pour sortir du chômage, une **allocation de garantie de revenus** peut compléter ton salaire.
 - **Les indépendants.** Ils n'ont pas droit au chômage. Il existe pour eux un **droit passerelle**, une aide prévue en cas de cessation forcée de leur activité. → [[independant]]
 
@@ -90,4 +102,4 @@ L'**ONEM** et le **Forem**, Actiris ou le VDAB ne font pas le même travail : le
 
 ## Nature des chiffres de cette page
 
-🔴 La condition de 312 jours de travail sur 21 mois avant 36 ans et la limitation des allocations à deux ans en principe sont des règles officielles, mais en mouvement : la réforme de 2025-2026 change les règles, à vérifier auprès de l'ONEM.
+🔴 La condition de 312 jours de travail sur 36 mois, la durée de 12 mois prolongeable jusqu'à 24 mois au maximum (un mois par tranche de 104 jours de travail), l'exception à partir de 55 ans avec 31 ans de carrière en 2026, et les allocations d'insertion limitées à un an et demandées avant 25 ans sont des règles officielles en vigueur depuis le 1er mars 2026.

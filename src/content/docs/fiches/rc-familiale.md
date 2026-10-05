@@ -12,11 +12,17 @@ short: "Tu es responsable des dommages que toi, tes enfants, tes animaux ou tes 
 aliases: [RC familiale, assurance familiale, responsabilité civile vie privée, protection juridique, article 1382, défense en justice]
 prerequisites: [assurance-principes]
 related: [assurance-habitation, assurance-auto, formes-de-couple, responsabilite]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: Wikifin — Assurer
     url: https://www.wikifin.be/fr/budget-payer-emprunter-et-assurer
     org: Wikifin (FSMA)
+  - title: Suppression de la réduction d'impôt pour l'assurance protection juridique
+    url: https://www.test-achats.be/argent/assurance/news/suppression-reduction-impot-assurance-protection-juridique
+    org: Test-Achats
+  - title: "Loi-programme, accord de Pâques : focus sur les aspects IPP"
+    url: https://blog.degandpartners.com/fr/article/loi-programme-accord-de-paques-focus-sur-les-aspects-ipp/26943
+    org: Degand & Partners
 sidebar:
   order: 2
 ---
@@ -63,7 +69,7 @@ Côté chiffres, la loi impose des plafonds minimaux de plusieurs millions d'eur
 
 On te la proposera souvent dans le même contrat, mais elle fait l'inverse. La RC familiale paie quand **tu** causes un dommage. La **protection juridique**, elle, paie **tes** frais d'avocat et d'expertise quand tu es **victime** ou en conflit : avec un voisin, un vendeur, ou même ton employeur selon la formule. Elle peut aussi avancer les sommes nécessaires.
 
-Une formule « étendue », qui donne droit à un avantage fiscal, existe depuis 2019.
+De 2019 à 2024, une formule « étendue », répondant à des conditions légales, donnait droit à une réduction d'impôt de 40 % de la prime (plafonnée). Cet avantage fiscal a été **supprimé** à partir de l'exercice d'imposition 2026, c'est-à-dire pour les primes payées en 2025 : en 2026, une protection juridique ne réduit plus ton impôt.
 
 ## Ce qu'il faut vérifier
 
@@ -77,4 +83,4 @@ La **RC familiale** couvre les dommages que tu causes aux autres ; la **protecti
 
 ## Nature des chiffres de cette page
 
-🔴 L'existence de plafonds légaux minimaux de plusieurs millions d'euros et de la formule fiscale depuis 2019 sont des règles officielles. 🟠 Le prix de 60 à 120 € par an, la franchise de 150 à 300 € et les centaines de milliers d'euros d'un accident grave sont des repères. 🔵 Les lunettes à 200 € et les 20 000 € de frais médicaux sont des exemples fictifs.
+🔴 L'existence de plafonds légaux minimaux de plusieurs millions d'euros et la suppression, à partir de l'exercice d'imposition 2026, de la réduction d'impôt de 40 % pour la protection juridique (qui existait depuis 2019) sont des règles officielles. 🟠 Le prix de 60 à 120 € par an, la franchise de 150 à 300 € et les centaines de milliers d'euros d'un accident grave sont des repères. 🔵 Les lunettes à 200 € et les 20 000 € de frais médicaux sont des exemples fictifs.

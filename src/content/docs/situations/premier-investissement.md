@@ -55,6 +55,9 @@ notions: []
 sidebar:
   order: 14
 sources:
+- title: "Taxe sur les opérations de bourse : taux et plafonds"
+  url: https://www.test-achats.be/invest/fiscalite-et-droits/taxation/dossiers/taxe-de-bourse/taxe-operation-bourse
+  org: Test-Achats
 - title: Wikifin — Comment investir et répartir les risques
   url: https://www.wikifin.be/fr/epargner-et-investir/comment-investir-et-repartition-des-risques/quel-montant-investir
   org: Wikifin (FSMA)
@@ -67,7 +70,7 @@ sources:
 - title: Comment sont taxés les intérêts ?
   url: https://www.wikifin.be/fr/impots-emploi-et-revenus/declaration-dimpots/vos-revenus-mobiliers/comment-sont-taxes-les-interets
   org: Wikifin (FSMA)
-last_verified: '2026-10-02'
+last_verified: 2026-10-05
 ---
 Tu as 12 000 € sur ton compte d'épargne à 1,5 %. Ton collègue parle d'ETF, ton cousin de crypto, ta banque d'un « fonds équilibré ». Tu as l'impression de perdre de l'argent en ne faisant rien, et peur d'en perdre en faisant quelque chose. Cette histoire remet les étapes dans l'ordre, parce que l'ordre compte plus que le produit.
 
@@ -116,7 +119,7 @@ Ta banque te proposera plutôt son fonds maison « équilibré » : regarde la l
 
 ## 6. Comment on achète, et ce que ça coûte en impôts
 
-Tu ouvres un **compte-titres** chez ta banque ou un courtier en ligne belge, tu passes un ordre d'achat sur une bourse européenne. À chaque transaction, une **taxe sur les opérations de bourse** (TOB) est prélevée : 0,12 % ou 1,32 % selon le type d'ETF (les ETF de capitalisation non enregistrés en Belgique sont au taux élevé). Les dividendes, s'il y en a, subissent 30 % de **précompte mobilier** ; un ETF de **capitalisation** les réinvestit sans les distribuer, donc sans précompte. Et depuis 2026, une **taxe sur les plus-values** de 10 % s'applique aux gains réalisés à la vente, avec une exonération annuelle de l'ordre de 10 000 € : pour un petit portefeuille, souvent sans effet. Voir [[fiscalite-investissements]] et [[precompte-mobilier]].
+Tu ouvres un **compte-titres** chez ta banque ou un courtier en ligne belge, tu passes un ordre d'achat sur une bourse européenne. À chaque transaction, une **taxe sur les opérations de bourse** (TOB) est prélevée : 0,12 % pour la plupart des ETF, mais 1,32 % pour un ETF de capitalisation enregistré en Belgique (inscrit auprès de la FSMA pour être vendu ici) ; un ETF de capitalisation domicilié ailleurs dans l'Europe économique, en Irlande par exemple, et non enregistré en Belgique reste à 0,12 %. Les dividendes, s'il y en a, subissent 30 % de **précompte mobilier** ; un ETF de **capitalisation** les réinvestit sans les distribuer, donc sans précompte. Et depuis 2026, une **taxe sur les plus-values** de 10 % s'applique aux gains réalisés à la vente, avec une exonération annuelle de l'ordre de 10 000 € : pour un petit portefeuille, souvent sans effet. Voir [[fiscalite-investissements]] et [[precompte-mobilier]].
 
 Un intermédiaire **belge** retient tout cela à la source : rien ou presque à déclarer. Un courtier étranger, moins cher, te laisse la TOB et la déclaration à faire toi-même, plus la déclaration du compte à la BNB.
 

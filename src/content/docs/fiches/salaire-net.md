@@ -10,7 +10,7 @@ short: "Ce qui reste de ta rémunération après les retenues sociales et fiscal
 aliases: [net, net à payer, rémunération nette]
 prerequisites: [salaire-brut, cotisations-sociales, precompte-professionnel]
 related: [fiche-de-paie, avantages-extralegaux, tranches-imposition, statut-familial, pecule-de-vacances, treizieme-mois, budget]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: La fiche de paie ou le décompte de paie
     url: https://www.securex.be/fr/lex4you/employeur/themes/obligations-de-l-employeur/documents-sociaux-et-fiscaux/la-fiche-de-paie-ou-le-decompte-de-paie
@@ -18,6 +18,9 @@ sources:
   - title: Salaire brut / net
     url: https://www.lacsc.be/vos-droits/travailler-dans-le-secteur-prive/salaire/salaire-brut-net
     org: CSC
+  - title: "Le chèque-repas de 10 euros : six questions pour les employeurs"
+    url: https://www.partena-professional.be/fr/node/22442
+    org: Partena Professional
 sidebar:
   order: 3
 ---
@@ -48,12 +51,12 @@ Prenons un employé isolé, sans enfant, avec un brut de 3 500 €. Le taux des 
 | Brut | 3 500,00 € | |
 | − ONSS personnel | − 457,45 € | 13,07 % : taux réel |
 | = Imposable | 3 042,55 € | |
-| − Précompte professionnel | − 650,00 € | **fictif**, dépend des barèmes de l'année |
+| − Précompte professionnel | − 550,00 € | **fictif**, dépend des barèmes de l'année |
 | − Cotisation spéciale sécu | − 30,00 € | **fictif** |
-| − Part personnelle chèques-repas | − 20,00 € | **fictif** |
-| **= Net à payer** | **≈ 2 340 €** | |
+| − Part personnelle chèques-repas | − 22,89 € | 21 jours × 1,09 € : part minimale réelle, jours **fictifs** |
+| **= Net à payer** | **2 439,66 € (≈ 2 440 €)** | |
 
-Retiens l'ordre de grandeur : dans cet exemple, environ **deux tiers** du brut arrivent sur le compte. Mais ce ratio n'est pas fixe. Il baisse quand le salaire monte, parce que l'impôt belge est progressif : chaque euro supplémentaire tombe dans une tranche taxée plus fort. → [[tranches-imposition]]
+Retiens l'ordre de grandeur : dans cet exemple, environ **70 %** du brut arrivent sur le compte. Mais ce ratio n'est pas fixe. Il baisse quand le salaire monte, parce que l'impôt belge est progressif : chaque euro supplémentaire tombe dans une tranche taxée plus fort. → [[tranches-imposition]]
 
 Pour refaire ce calcul avec tes propres chiffres, l'outil [brut → net](../../outils/brut-net/) montre où va chaque euro.
 
@@ -82,4 +85,4 @@ Le **net mensuel**, c'est ce que tu reçois ce mois-ci. Le **revenu disponible a
 
 ## Nature des chiffres de cette page
 
-🔴 Le taux de 13,07 % de cotisations sociales personnelles est une règle officielle. 🟠 Les « deux tiers » du brut qui arrivent sur le compte sont un ordre de grandeur, valable pour cet exemple. 🔵 Le brut de 3 500 €, le précompte de 650 €, la cotisation spéciale de 30 € et la part de chèques-repas de 20 € sont fictifs.
+🔴 Le taux de 13,07 % de cotisations sociales personnelles est une règle officielle. 🟠 Les quelque 70 % du brut qui arrivent sur le compte sont un ordre de grandeur, valable pour cet exemple. 🔵 Le brut de 3 500 €, le précompte de 550 €, le net de 2 439,66 €, la cotisation spéciale de 30 € et les 21 jours prestés sont fictifs ; la part personnelle de 1,09 € par chèque-repas est une règle officielle.

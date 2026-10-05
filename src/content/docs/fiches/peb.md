@@ -67,7 +67,7 @@ Au départ, le PEB était surtout une information pour l'acheteur ou le locatair
 
 Améliorer la classe d'un logement coûte cher, mais plusieurs aides existent. Elles se combinent souvent entre elles. → [[primes-renovation]]
 
-- **Les primes régionales** financent l'isolation, le changement de chaudière, la pompe à chaleur ou l'audit. Leur montant dépend de tes revenus. En Wallonie, ce sont les primes Habitation, accordées après un audit logement. À Bruxelles, ce sont les primes Rénolution. En Flandre, c'est Mijn VerbouwPremie. → [[audit-logement]]
+- **Les primes régionales** financent l'isolation, le changement de chaudière, la pompe à chaleur ou l'audit. Leur montant dépend de tes revenus. En Wallonie, les primes Habitation ont pris fin le 30 septembre 2026 : depuis le 1er octobre 2026, l'aide passe par le Rénopack, un prêt à 0 % dont une partie n'est pas à rembourser, accordé après un audit logement si les travaux font gagner au logement une classe PEB. À Bruxelles, ce sont les primes Rénolution. En Flandre, c'est Mijn VerbouwPremie. → [[audit-logement]]
 - **La TVA à 6 %** au lieu de 21 % s'applique aux travaux de rénovation d'un logement de plus de 10 ans. → [[tva]]
 - **Les prêts à 0 % ou à taux réduit**, comme le Rénoprêt, le prêt vert ou Mijn VerbouwLening, sont accessibles selon la Région et tes revenus.
 - **Le crédit hypothécaire existant** peut parfois être réutilisé pour financer les travaux, grâce à l'hypothèque déjà inscrite sur le bien. → [[hypotheque]]

@@ -46,7 +46,7 @@ etapes:
   - garantie-locative
 - titre: S'assurer
   quand: Avant l'entrée
-  texte: Incendie locataire (obligatoire en Wallonie et Flandre) + RC familiale.
+  texte: Incendie locataire (obligatoire dans les trois Régions pour un bail récent) + RC familiale.
   notions:
   - assurance-habitation
   - rc-familiale
@@ -70,6 +70,12 @@ etapes:
   - bail
   - garantie-locative
 sources:
+- title: "Modification de la législation sur les baux en novembre 2024"
+  url: https://be.brussels/fr/logement/modification-de-la-legislation-sur-les-baux-en-novembre-2024
+  org: be.brussels
+- title: "Garantie locative (Région de Bruxelles-Capitale)"
+  url: https://be.brussels/fr/logement/location/bail-dhabitation/garantie-locative
+  org: be.brussels
 - title: Garantie locative en Belgique — particularités par Région
   url: https://www.test-achats.be/maison-energie/location/dossier/garantie-locative
   org: Test Achats
@@ -82,7 +88,7 @@ sources:
 - title: Wikifin — Louer un appartement ou une maison
   url: https://www.wikifin.be/fr/moments-de-vie/habiter/louer-un-appartement-ou-une-maison
   org: Wikifin (FSMA)
-last_verified: '2026-10-02'
+last_verified: 2026-10-05
 ---
 Tu as trouvé un appartement à 800 € par mois. Le propriétaire te demande « trois mois de garantie en liquide, un bail d'un an, et l'assurance, c'est chez mon assureur ». Trois phrases, trois erreurs ou presque. Cette histoire te fait traverser une location du budget à l'état des lieux de sortie, en expliquant à chaque fois ce que la loi prévoit, ce qui dépend de ta Région et ce qui n'est qu'une habitude.
 
@@ -114,7 +120,7 @@ Durées de préavis, indemnités, conditions d'indexation et plafond de garantie
 
 « Trois mois en liquide » : non, deux fois.
 
-Le montant d'abord. En Wallonie et à Bruxelles, la garantie sur un compte bloqué est plafonnée à **2 mois de loyer** hors charges (3 mois en Flandre, ou si tu passes par une garantie bancaire ou le CPAS). Ici : 1 600 €.
+Le montant d'abord. En Wallonie et à Bruxelles, la garantie sur un compte bloqué est plafonnée à **2 mois de loyer** hors charges. En Flandre, c'est 3 mois ; en Wallonie aussi, mais seulement si tu passes par une garantie bancaire que tu rembourses par mensualités ou par le CPAS. À Bruxelles, le plafond reste de 2 mois quelle que soit la forme, pour les baux signés depuis le 1er novembre 2024. Ici : 1 600 €.
 
 La forme ensuite. Il est **interdit** de la réclamer en liquide ou de la verser sur le compte du propriétaire. Elle va sur un **compte bloqué à ton nom** dans ta banque (les intérêts sont pour toi), ou à la Caisse des dépôts (e-DEPO). Ni toi ni lui ne pouvez y toucher seuls : il faut l'accord écrit des deux, ou une décision du juge de paix. Si tu n'as pas la somme, le CPAS ou le Fonds du logement peuvent la garantir ou l'avancer. Voir [[garantie-locative]].
 
@@ -128,7 +134,7 @@ L'**usure normale** (une peinture qui ternit en 9 ans) n'est jamais à ta charge
 
 « C'est chez mon assureur » : il peut t'imposer **d'être assuré**, pas **chez qui**.
 
-L'**assurance incendie du locataire** couvre ta responsabilité envers le propriétaire : si un feu ou un dégât des eaux part de chez toi, tu dois en principe reconstruire ce que tu as abîmé, et ça peut être l'immeuble entier. Elle est **obligatoire** par décret en Wallonie et en Flandre, exigée par presque tous les baux à Bruxelles. Elle couvre aussi ton contenu si tu le demandes. 150 à 250 € par an pour un appartement. Voir [[assurance-habitation]].
+L'**assurance incendie du locataire** couvre ta responsabilité envers le propriétaire : si un feu ou un dégât des eaux part de chez toi, tu dois en principe reconstruire ce que tu as abîmé, et ça peut être l'immeuble entier. Elle est **obligatoire** dans les trois Régions pour un bail récent : en Wallonie pour les baux signés depuis le 1er septembre 2018, en Flandre depuis le 1er janvier 2019, et à Bruxelles pour les baux conclus ou renouvelés depuis le 1er novembre 2024 (avant, elle n'y était exigée que si le bail le prévoyait). Elle couvre aussi ton contenu si tu le demandes. 150 à 250 € par an pour un appartement. Voir [[assurance-habitation]].
 
 Ajoute une **RC familiale** (60 à 120 € par an) : elle paie les dommages que toi, tes enfants ou ton chien causez aux autres, dans la rue comme chez le voisin. Voir [[rc-familiale]].
 

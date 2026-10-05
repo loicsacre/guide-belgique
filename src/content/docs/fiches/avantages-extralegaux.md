@@ -13,7 +13,7 @@ short: "Tout ce que ton employeur te donne en plus du salaire en argent : chèqu
 aliases: [avantages en nature, ATN, avantage de toute nature, chèques-repas, écochèques, assurance groupe, package, plan cafétéria]
 prerequisites: [salaire-brut, salaire-net]
 related: [voiture-de-societe, cout-employeur, fiche-de-paie, assurance-hospitalisation, epargne-pension, tranches-imposition, pension, chomage]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: Montant maximum du chèque-repas
     url: https://www.bobex.be/fr-be/cheques-repas/montant-cheque-repas/
@@ -21,6 +21,9 @@ sources:
   - title: Quelles cotisations ?
     url: https://www.socialsecurity.be/site_fr/employer/infos/employers_nsso/which-contributions.htm
     org: ONSS
+  - title: "Le chèque-repas de 10 euros : six questions pour les employeurs"
+    url: https://www.partena-professional.be/fr/node/22442
+    org: Partena Professional
 sidebar:
   order: 6
 ---
@@ -53,7 +56,7 @@ Chaque avantage a ses propres règles. Le tableau donne la règle générale ; l
 Quelques mots du tableau méritent une explication. L'**assurance groupe** est un contrat de pension complémentaire que l'employeur alimente à ton nom : tu ne touches l'argent qu'à la retraite, avec une fiscalité plus douce qu'un salaire. Le **bonus CCT 90** tire son nom d'une convention collective de travail (un accord entre employeurs et syndicats) : c'est une prime versée à tout un groupe de travailleurs quand des objectifs collectifs sont atteints. Les **warrants** sont des options sur des titres financiers, utilisées comme forme de rémunération. Un **plan cafétéria**, enfin, te laisse choisir toi-même, dans un budget donné, entre plusieurs avantages.
 
 :::note[Règle datée — 2026]
-Valeur maximale d'un chèque-repas : **10 €** par jour presté depuis le 1er janvier 2026 (8 € en 2025), avec une part personnelle d'au moins 1,09 €.
+Valeur maximale d'un chèque-repas : **10 €** par jour presté depuis le 1er janvier 2026 (8 € en 2025), avec une part personnelle d'au moins 1,09 €, donc une part de l'employeur d'au plus 8,91 € (6,91 € en 2025). Ce maximum n'est pas une hausse automatique : c'est l'employeur ou le secteur qui décide de passer à 10 €.
 :::
 
 ## Ce que ça représente, en chiffres

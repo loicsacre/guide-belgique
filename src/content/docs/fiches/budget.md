@@ -10,7 +10,7 @@ short: "Une vue d'ensemble de tes revenus et de toutes tes dépenses — mensuel
 aliases: [gestion de budget, budget mensuel]
 prerequisites: [salaire-net]
 related: [epargne-de-precaution, patrimoine-net, compte-epargne, credit]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: Qu'est-ce qu'un budget ?
     url: https://www.wikifin.be/fr/budget-payer-emprunter-et-assurer/budget-et-gestion-de-budget/quest-ce-quun-budget
@@ -57,9 +57,9 @@ Si tu ne comptes que la première famille, ton budget te donne une **fausse impr
 
 ## Un exemple pour voir l'écart
 
-Prenons un exemple **fictif**. Tu gagnes 3 500 € brut, soit environ 2 340 € net par mois. Ton loyer est de 900 €, et tes autres dépenses mensuelles (courses, transport, abonnements, loisirs) font 1 000 €. À première vue, il te reste 440 € chaque mois.
+Prenons un exemple **fictif**. Tu gagnes 3 500 € brut, soit environ 2 440 € net par mois. Ton loyer est de 900 €, et tes autres dépenses mensuelles (courses, transport, abonnements, loisirs) font 1 000 €. À première vue, il te reste 540 € chaque mois.
 
-Ajoute maintenant les deux provisions de l'exemple ci-dessus : 50 € pour l'assurance et 335 € pour la future voiture. Il ne reste plus que 55 €. C'est ce chiffre-là qui est ton vrai reste disponible, pas les 440 € que montrait ton compte. Et la machine à laver qui lâche n'est toujours pas comptée : elle doit sortir de ta réserve, pas de ce reste.
+Ajoute maintenant les deux provisions de l'exemple ci-dessus : 50 € pour l'assurance et 335 € pour la future voiture. Il ne reste plus que 155 €. C'est ce chiffre-là qui est ton vrai reste disponible, pas les 540 € que montrait ton compte. Et la machine à laver qui lâche n'est toujours pas comptée : elle doit sortir de ta réserve, pas de ce reste.
 
 Pour refaire ce calcul avec tes propres chiffres, l'outil [Faire son budget mensuel](../../outils/budget/) convertit tes dépenses annuelles en provisions.
 
@@ -97,4 +97,4 @@ Le budget mesure un **flux** : ce qui entre et sort de ton compte sur une pério
 
 ## Nature des chiffres de cette page
 
-🟠 La réserve de 3 à 6 mois de salaire net est un repère cité par Wikifin, pas une règle. 🔵 Le salaire de 3 500 € brut (≈ 2 340 € net), le loyer de 900 €, les 1 000 € de dépenses courantes, l'assurance de 600 € par an, la voiture de 8 000 € et la machine à laver de 500 € sont des exemples fictifs.
+🟠 La réserve de 3 à 6 mois de salaire net est un repère cité par Wikifin, pas une règle. 🔵 Le salaire de 3 500 € brut (≈ 2 440 € net), le loyer de 900 €, les 1 000 € de dépenses courantes, l'assurance de 600 € par an, la voiture de 8 000 € et la machine à laver de 500 € sont des exemples fictifs.

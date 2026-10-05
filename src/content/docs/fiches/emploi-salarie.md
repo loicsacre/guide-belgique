@@ -10,7 +10,7 @@ short: "Tu fournis un travail sous l'autorité d'un employeur en échange d'un s
 aliases: [salarié, travailleur salarié, employé, ouvrier]
 prerequisites: [qui-fait-quoi]
 related: [contrat-de-travail, commission-paritaire, salaire-brut, cotisations-sociales, indexation, cout-employeur, salaire-net, independant]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: SPF Emploi, Travail et Concertation sociale
     url: https://emploi.belgique.be/fr
@@ -44,7 +44,7 @@ Résultat : pour un même emploi, il existe **trois montants**. Le **coût total
 
 ## Un exemple pour fixer les idées
 
-Prenons un employé **fictif** payé 3 500 € brut par mois. Sur ce brut, 13,07 % partent en cotisations personnelles, soit 457,45 €. Le précompte professionnel est ensuite retenu sur ce qui reste ; il dépend de la situation familiale. Pour un isolé sans enfant, il arrive environ deux tiers du brut sur le compte, soit autour de 2 340 € par mois. → [[salaire-net]]
+Prenons un employé **fictif** payé 3 500 € brut par mois. Sur ce brut, 13,07 % partent en cotisations personnelles, soit 457,45 €. Le précompte professionnel est ensuite retenu sur ce qui reste ; il dépend de la situation familiale. Pour un isolé sans enfant, il arrive environ 70 % du brut sur le compte, soit autour de 2 440 € par mois. → [[salaire-net]]
 
 Côté employeur, le même poste coûte bien plus que 3 500 € : avec les cotisations patronales, le treizième mois, le double pécule de vacances (la prime versée avant les congés) et quelques avantages, on arrive à environ 63 400 € par an. Ton net annuel, lui, tourne autour de 30 000 €. Entre ce que paie l'employeur et ce que tu touches, le rapport est donc d'environ un à deux.
 
@@ -78,4 +78,4 @@ La distinction entre **salarié et indépendant** est plus profonde. Le salarié
 
 ## Nature des chiffres de cette page
 
-🔴 Le taux de cotisations personnelles de 13,07 % est une règle officielle en vigueur en 2026. 🔵 Le salaire de 3 500 € brut, le net d'environ 2 340 € par mois, le coût employeur d'environ 63 400 € et le net annuel d'environ 30 000 € sont un exemple fictif, repris des fiches [[salaire-net]] et [[cout-employeur]] ; 🟠 la proportion des « deux tiers du brut » est un ordre de grandeur, qui baisse quand le salaire monte.
+🔴 Le taux de cotisations personnelles de 13,07 % est une règle officielle en vigueur en 2026. 🔵 Le salaire de 3 500 € brut, le net d'environ 2 440 € par mois, le coût employeur d'environ 63 400 € et le net annuel d'environ 30 000 € sont un exemple fictif, repris des fiches [[salaire-net]] et [[cout-employeur]] ; 🟠 la proportion d'environ 70 % du brut est un ordre de grandeur, qui baisse quand le salaire monte.

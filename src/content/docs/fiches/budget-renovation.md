@@ -4,7 +4,7 @@ kind: fiche
 domain: maison
 level: utile
 nature: mixte
-valid_for: "TVA 6 % rénovation (logement > 10 ans), prêts régionaux 0 % et primes 2026"
+valid_for: "TVA 6 % rénovation (logement > 10 ans), prêts régionaux 0 % et primes 2026 (Wallonie : Rénopack depuis le 01/10/2026, primes Habitation jusqu'au 30/09/2026)"
 scope: [belgique]
 status: publie
 tags: [budget, rénovation, coût, TVA 6 %, imprévus, financement, prêt rénovation, Rénopack]
@@ -13,8 +13,11 @@ short: "Un budget de rénovation se construit par poste à partir de repères au
 aliases: [budget rénovation, coût des travaux, financer des travaux, prêt rénovation, Rénopack, Rénoprêt, prêt vert, imprévus]
 prerequisites: [ordre-des-travaux, budget]
 related: [primes-renovation, devis-travaux, credit-hypothecaire, credit-consommation, tva, cout-reel-achat, audit-logement, choisir-entrepreneur]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Rénovation énergétique : les grandes lignes du futur régime de soutien sont connues"
+    url: https://www.wallonie.be/fr/actualites/renovation-energetique-les-grandes-lignes-du-futur-regime-de-soutien-sont-connues
+    org: Wallonie
   - title: "SPF Finances — TVA à 6 % pour les travaux de rénovation"
     url: https://finances.belgium.be/fr/particuliers/habitation/renovation
     org: SPF Finances
@@ -79,8 +82,8 @@ L'économie représente 🟠 environ 12 % du coût total. C'est l'aide la plus i
 L'argent d'une rénovation vient presque toujours de plusieurs sources, et chacune a son coût et son calendrier.
 
 - **Tes fonds propres** sont disponibles tout de suite. Ils te coûtent seulement le rendement que tu perds en les dépensant. Garde ton [[epargne-de-precaution]] intacte.
-- **Les [[primes-renovation|primes régionales]]** sont gratuites, mais elles arrivent **après** les travaux et les factures, en 🟠 deux à six mois. Il faut donc **avancer** l'argent.
-- **Les prêts régionaux à 0 %** (Rénopack et Rénoprêt en Wallonie, prêt vert à Bruxelles, Mijn VerbouwLening en Flandre) sont versés avant les travaux, à 🔴 0 % sous conditions de revenus et de type de travaux. Leurs montants sont plafonnés, et ils sont souvent couplés à l'audit.
+- **Les [[primes-renovation|primes régionales]]** sont gratuites, mais elles arrivent **après** les travaux et les factures, en 🟠 deux à six mois. Il faut donc **avancer** l'argent. En Wallonie, depuis le 1er octobre 2026, il n'y a plus de primes classiques : l'aide prend la forme d'une partie du Rénopack qui n'est pas à rembourser (🔴 50, 40 ou 15 % selon tes revenus).
+- **Les prêts régionaux à 0 %** (Rénopack et Rénoprêt en Wallonie, prêt vert à Bruxelles, Mijn VerbouwLening en Flandre) sont versés avant les travaux, à 🔴 0 % sous conditions de revenus et de type de travaux. Leurs montants sont plafonnés (en Wallonie, 🔴 75 000 € pour une maison), et ils sont souvent couplés à l'audit.
 - **Le crédit hypothécaire**, avec les travaux inclus dès l'achat ou par une reprise de l'encours (le capital déjà remboursé qu'on réemprunte), est versé par tranches sur factures, au taux hypothécaire. Si tu achètes, c'est le moins cher. → [[credit-hypothecaire]] · [[quotite-emprunt]]
 - **Le prêt rénovation bancaire**, un crédit à tempérament affecté aux travaux, est versé avant le chantier à un taux de 🟠 3 à 6 %. Il est plus simple et plus court, mais plus cher. → [[credit-consommation]]
 - **Les paiements échelonnés à l'entrepreneur** suivent le rythme du chantier, sans coût supplémentaire. L'acompte reste limité à 🟠 10 à 30 % au maximum, et le solde ne se paie jamais avant la [[reception-travaux|réception]] des travaux.
@@ -97,7 +100,7 @@ Noé (exemple **fictif**) budgète son premier bouquet de travaux. Le toit avec 
 
 Pour le financer, il prend 15 000 € dans son épargne, en gardant 8 000 € de côté pour les coups durs. Il obtient un Rénopack à 0 % de 🔵 20 000 € sur quinze ans, soit 111 € par mois. Le reste passe par un prêt rénovation de 6 000 €.
 
-Côté primes, Noé est en catégorie de revenus R2 (coefficient ×4). Il attend 🔵 5 250 € pour le toit, 1 280 € pour l'électricité et 1 000 € pour la ventilation, soit environ 7 500 €. Quand elles arriveront, elles serviront à rembourser le prêt rénovation par anticipation.
+Côté primes, Noé a introduit son dossier avant le 30 septembre 2026, sous l'ancien régime wallon des primes Habitation, en catégorie de revenus R2 (coefficient ×4). Il attend 🔵 5 250 € pour le toit (la prime calculée, 110 m² × 20 € × 4 = 8 800 €, est plafonnée à 70 % de la part « isolation » de la facture) et 1 280 € pour l'électricité (320 € × 4). La ventilation simple de ses pièces humides n'avait pas de prime propre dans ce barème, qui ne visait que la ventilation double flux : zéro euro de ce côté. Soit environ 🔵 6 500 €. Quand elles arriveront, elles serviront à rembourser le prêt rénovation par anticipation.
 
 Et les imprévus servent bel et bien : au décapage du toit, il découvre une réparation de charpente de 🔵 2 300 €.
 
@@ -119,4 +122,4 @@ Enfin, la **TVA à 6 %** sur la rénovation d'un logement de plus de dix ans n'e
 
 ## Nature des chiffres de cette page
 
-🔴 Le taux de TVA réduit de 6 % et ses conditions viennent du Code TVA (arrêté royal n° 20, rubrique XXXVIII) ; les prêts régionaux à 0 % suivent les règlements de la SWCS, du Fonds du Logement et du Vlaams Woningfonds en vigueur en 2026. 🟠 Les prix au m² du tableau, les dépassements de 20 à 30 %, les délais de versement des primes, les taux de 3 à 6 % et les acomptes de 10 à 30 % sont des repères de marché. 🔵 Le budget de Noé est inventé ; ses primes sont calculées selon la mécanique wallonne « montant de base × coefficient de revenus, plafonné à 70 % du coût ».
+🔴 Le taux de TVA réduit de 6 % et ses conditions viennent du Code TVA (arrêté royal n° 20, rubrique XXXVIII) ; les prêts régionaux à 0 % suivent les règlements de la SWCS, du Fonds du Logement et du Vlaams Woningfonds en vigueur en 2026 ; les parts du Rénopack à ne pas rembourser (50, 40, 15 %) et son plafond de 75 000 € sont ceux du régime wallon en vigueur depuis le 1er octobre 2026. 🟠 Les prix au m² du tableau, les dépassements de 20 à 30 %, les délais de versement des primes, les taux de 3 à 6 % et les acomptes de 10 à 30 % sont des repères de marché. 🔵 Le budget de Noé est inventé ; ses primes sont calculées selon la mécanique de l'ancien régime wallon des primes Habitation (clos le 30 septembre 2026) : « montant de base × coefficient de revenus, plafonné à 70 % du coût » en catégorie R2.

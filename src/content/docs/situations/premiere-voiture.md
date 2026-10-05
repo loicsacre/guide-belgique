@@ -50,6 +50,12 @@ notions: []
 sidebar:
   order: 13
 sources:
+- title: 'Vlaanderen.be — Nouvelles règles de la technische keuring à partir du 1er septembre 2026 (FAQ)'
+  url: https://www.vlaanderen.be/mobiliteit-en-openbare-werken/auto-en-motor/technische-keuring-van-voertuigen/nieuwe-regels-voor-de-technische-keuring-vanaf-1-september-2026/veelgestelde-vragen-over-de-nieuwe-regels-voor-de-technische-keuring
+  org: Vlaanderen.be
+- title: 'Gouvernement wallon — Réforme de la fiscalité automobile (10 avril 2025)'
+  url: https://www.wallonie.be/fr/acteurs-et-institutions/wallonie/gouvernement-de-wallonie/communiques-presse/2025-04-10
+  org: Gouvernement wallon
 - title: SPF Mobilité — DIV, immatriculation
   url: https://mobilit.belgium.be/fr
   org: SPF Mobilité et Transports
@@ -62,7 +68,7 @@ sources:
 - title: SPF Économie — Garantie légale, Car-Pass
   url: https://economie.fgov.be/fr
   org: SPF Économie
-last_verified: '2026-10-02'
+last_verified: '2026-10-05'
 ---
 Une citadine de trois ans à 15 000 €. Tu as fait le tour du budget : « 250 € de crédit par mois, ça passe ». Cette histoire montre pourquoi une voiture coûte en réalité deux fois ce que coûte son crédit, qui prélève quoi (et pourquoi ta Région a son mot à dire), et ce qu'il faut vérifier avant de signer.
 
@@ -95,7 +101,7 @@ Le **leasing privé** (location longue durée avec option d'achat) ressemble à 
 En Belgique, trois documents protègent l'acheteur d'une voiture d'occasion :
 
 - le **Car-Pass** : un certificat officiel, obligatoire à toute vente, qui retrace l'historique kilométrique du véhicule à chaque passage en entretien ou au contrôle technique ; sans Car-Pass, la vente peut être annulée ;
-- le **contrôle technique « vente »** : un véhicule de plus de 4 ans doit passer un contrôle spécifique avant la vente entre particuliers (certificat de moins de 2 mois) ;
+- le **contrôle technique « vente »** : un véhicule de plus de 4 ans doit passer un contrôle spécifique avant la vente entre particuliers (certificat de moins de 2 mois) ; en Flandre, cette obligation disparaît le 1er janvier 2027 pour les voitures vendues en Belgique ;
 - le **certificat de conformité** et l'historique d'entretien.
 
 Chez un **professionnel**, tu bénéficies de la **garantie légale** : un an minimum pour une occasion (le vendeur ne peut pas la réduire davantage), deux ans par défaut. Entre particuliers, pas de garantie légale, seulement la garantie des **vices cachés**, difficile à faire valoir. Voir [[contrats-consommation]].
@@ -113,14 +119,14 @@ Le prix dépend de toi (âge, ancienneté de permis, sinistres passés : le **bo
 L'assureur introduit en général la demande d'**immatriculation** à la **DIV** (fédérale) : tu reçois la plaque et le certificat d'immatriculation. Puis arrive la **taxe de mise en circulation** (TMC) : un impôt **régional**, payé **une fois**, à chaque fois qu'une voiture est immatriculée à ton nom (neuve ou d'occasion). Sa formule dépend de ta Région : en Wallonie depuis 2023, puissance, âge, émissions de CO₂ et masse ; en Flandre, émissions et norme Euro ; à Bruxelles, puissance et âge. Pour une citadine de 3 ans : quelques dizaines à quelques centaines d'euros ; pour un gros SUV neuf : plusieurs milliers. Les Régions ont un simulateur ; utilise-le **avant** d'acheter. Voir [[voiture-taxes]] et [[qui-fait-quoi]].
 
 :::caution[Règle régionale, datée]
-TMC et taxe de circulation dépendent de la Région de ton domicile et de la motorisation ; les électriques sont exonérées ou au minimum selon la Région. Les formules changent régulièrement (réforme wallonne 2023, verdissement flamand).
+TMC et taxe de circulation dépendent de la Région de ton domicile et de la motorisation ; les électriques sont moins taxées (en Flandre, celles immatriculées depuis 2026 ne sont plus exonérées). Les formules changent régulièrement (nouvelle TMC wallonne depuis le 1er juillet 2025).
 :::
 
 ## 6. Chaque année : taxe de circulation, contrôle, zones
 
 La **taxe de circulation** arrive chaque année de l'administration fiscale régionale : basée sur la puissance fiscale (cylindrée), avec des suppléments pour les diesels anciens ou les gros émetteurs selon la Région. 250 € pour notre citadine.
 
-À partir de 4 ans, le **contrôle technique** est annuel (ou tous les deux ans sous conditions en Flandre) : 50 à 60 €, et des réparations si la voiture est recalée.
+À partir de 4 ans, le **contrôle technique** est annuel en Wallonie et à Bruxelles (tous les deux ans en Flandre depuis le 1er septembre 2026) : 50 à 60 €, et des réparations si la voiture est recalée.
 
 Et les **zones de basses émissions** (LEZ) : Bruxelles, Anvers, Gand interdisent progressivement les véhicules anciens (diesel Euro 5 puis essence ancienne) ; vérifie que ta voiture pourra entrer là où tu vas, pour les années à venir.
 

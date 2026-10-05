@@ -12,8 +12,14 @@ short: "Le compte courant où arrivent ton salaire et d'où partent tes paiement
 aliases: [compte courant, compte bancaire, IBAN, BIC, carte de débit, carte de crédit, Bancontact, Maestro, Visa, virement instantané, découvert, service bancaire de base]
 prerequisites: [budget]
 related: [compte-epargne, domiciliation-ordre-permanent, garantie-des-depots, fraude-phishing, credit-consommation]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Le virement instantané : rapide, gratuit et vraiment fiable ?"
+    url: https://www.test-achats.be/argent/comptes-a-vue/news/virement-instantane
+    org: Test-Achats
+  - title: Suppression de Maestro sur les cartes bancaires
+    url: https://www.test-achats.be/argent/cartes-de-credit/news/supression-maestro-carte-bancaire
+    org: Test-Achats
   - title: Wikifin — Comptes et paiements
     url: https://www.wikifin.be/fr/budget-payer-emprunter-et-assurer
     org: Wikifin (FSMA)
@@ -31,7 +37,7 @@ Parce qu'il ne rapporte rien, le compte à vue n'est pas l'endroit où garder un
 
 ## Deux cartes, deux argents différents
 
-À ton compte s'attache presque toujours une **carte de débit** : Bancontact, Maestro ou Visa Debit. Quand tu paies avec, c'est **ton** argent qui sort, immédiatement. Si le compte est vide, le paiement est refusé, sauf si ta banque t'a accordé un découvert autorisé. Elle est comprise dans le prix du compte et c'est la carte du quotidien.
+À ton compte s'attache presque toujours une **carte de débit**. En Belgique, elle porte en général deux logos : **Bancontact**, le réseau belge, et **Debit Mastercard** ou **Visa Debit**, qui la font fonctionner à l'étranger et en ligne. Ces deux réseaux remplacent progressivement **Maestro**, que Mastercard abandonne : les cartes émises depuis juillet 2023 ne l'ont plus, et les dernières cartes Maestro disparaissent à leur expiration. Quand tu paies avec, c'est **ton** argent qui sort, immédiatement. Si le compte est vide, le paiement est refusé, sauf si ta banque t'a accordé un découvert autorisé. Elle est comprise dans le prix du compte et c'est la carte du quotidien.
 
 La **carte de crédit** (Visa, Mastercard) fonctionne autrement : elle paie avec **l'argent de la banque**. Tes achats du mois sont regroupés, puis prélevés sur ton compte le mois suivant. Le paiement passe donc même si ton compte est vide à ce moment-là : tu rembourseras plus tard. Elle coûte une cotisation annuelle, et elle sert surtout pour les voyages, les réservations (hôtel, voiture de location), certains achats en ligne, et pour les assurances qui y sont souvent incluses.
 
@@ -48,7 +54,7 @@ Le piège est dans la dernière ligne du coût. Si tu rembourses le total chaque
 
 En dehors des cartes, l'argent sort de ton compte de plusieurs manières.
 
-- **Le virement SEPA** est gratuit et arrive en un jour ouvrable. Sa version **instantanée** arrive en quelques secondes, et elle est parfois payante.
+- **Le virement SEPA** est gratuit et arrive en un jour ouvrable. Sa version **instantanée** arrive en quelques secondes. Depuis le 9 janvier 2025, un règlement européen interdit à la banque de la facturer plus cher qu'un virement classique.
 - **La communication structurée** accompagne un virement : c'est ce numéro entre `+++`, du type `+++123/4567/89012+++`, qui permet au destinataire de relier automatiquement ton paiement à ta facture. Elle est indispensable pour les impôts, les factures et souvent les loyers.
 - **La domiciliation** autorise un créancier, par exemple ton fournisseur d'énergie ou de télécom, à prélever lui-même ce qu'il te facture.
 - **L'ordre permanent** fait l'inverse : c'est toi qui envoies un montant fixe chaque mois, pour ton épargne ou ton loyer. → [[domiciliation-ordre-permanent]]
@@ -74,4 +80,4 @@ Une banque te proposera plusieurs « comptes » qui n'ont pas le même rôle. Le
 
 ## Nature des chiffres de cette page
 
-🟠 Les frais de compte (de la gratuité à environ 5 € par mois) et les frais de change de 2 à 3 % hors zone euro sont des repères de pratique bancaire, qui varient selon les banques. 🔵 Le week-end à 200 € et ses 4 à 6 € de frais sont un exemple fictif.
+🔴 L'interdiction de facturer le virement instantané plus cher qu'un virement classique (depuis le 9 janvier 2025) est une règle européenne. 🟠 Les frais de compte (de la gratuité à environ 5 € par mois) et les frais de change de 2 à 3 % hors zone euro sont des repères de pratique bancaire, qui varient selon les banques. 🔵 Le week-end à 200 € et ses 4 à 6 € de frais sont un exemple fictif.

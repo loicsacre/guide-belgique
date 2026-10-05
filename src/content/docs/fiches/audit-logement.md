@@ -4,17 +4,20 @@ kind: fiche
 domain: maison
 level: utile
 nature: regle-datee
-valid_for: "Wallonie : audit Logement obligatoire pour les primes Habitation (régime jusqu'au 30/09/2026, puis régime permanent) ; Bruxelles Rénolution ; Flandre : EPC-labelpremie sans audit"
+valid_for: "Wallonie : audit Logement de moins d'un an obligatoire pour le Rénopack / Rénoprêt depuis le 01/10/2026 (primes Habitation jusqu'au 30/09/2026) ; Bruxelles Rénolution ; Flandre : EPC-labelpremie sans audit"
 scope: [wallonie, bruxelles, flandre]
 status: publie
 tags: [audit logement, auditeur agréé, primes, feuille de route, bouquets de travaux, rénovation énergétique]
 organisme: "SPW Énergie, Bruxelles Environnement, VEKA"
-short: "En Wallonie, l'audit Logement est un rapport établi par un auditeur agréé qui analyse la maison (enveloppe, chauffage, salubrité, sécurité) et classe les travaux en bouquets ordonnés. Il est obligatoire pour la plupart des primes Habitation, valable huit ans, et c'est le meilleur plan de rénovation qu'on puisse acheter."
+short: "En Wallonie, l'audit Logement est un rapport établi par un auditeur agréé qui analyse la maison (enveloppe, chauffage, salubrité, sécurité) et classe les travaux en bouquets ordonnés. Depuis le 1er octobre 2026, il est obligatoire pour toute aide régionale à la rénovation (Rénopack, Rénoprêt) et doit dater de moins d'un an ; c'est aussi le meilleur plan de rénovation qu'on puisse acheter."
 aliases: [audit logement, auditeur logement, auditeur agréé, bouquets de travaux, rapport d'audit, feuille de route rénovation]
 prerequisites: [diagnostic-maison]
 related: [primes-renovation, ordre-des-travaux, budget-renovation, peb, isolation-maison, chauffage-maison, humidite-maison]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Rénovation énergétique : les grandes lignes du futur régime de soutien sont connues"
+    url: https://www.wallonie.be/fr/actualites/renovation-energetique-les-grandes-lignes-du-futur-regime-de-soutien-sont-connues
+    org: Wallonie
   - title: "SPW Énergie — L'audit Logement"
     url: https://energie.wallonie.be/
     org: SPW Énergie
@@ -35,7 +38,7 @@ sidebar:
 
 L'audit logement, c'est un professionnel agréé par la Région qui passe une demi-journée dans ta maison. Il mesure tout, encode la maison dans un logiciel officiel, puis te remet un rapport qui répond à trois questions : où tu perds de la chaleur, quels sont les problèmes de salubrité et de sécurité, et **dans quel ordre** faire les travaux.
 
-Cet ordre est présenté en **bouquets**, c'est-à-dire en groupes de travaux à réaliser ensemble, chacun avec l'économie d'énergie qu'il doit apporter. En Wallonie, ce rapport est le passage obligé pour toucher la plupart des [[primes-renovation|primes]].
+Cet ordre est présenté en **bouquets**, c'est-à-dire en groupes de travaux à réaliser ensemble, chacun avec l'économie d'énergie qu'il doit apporter. En Wallonie, ce rapport est le passage obligé pour toucher les [[primes-renovation|aides à la rénovation]].
 
 ## Pourquoi les Régions l'exigent
 
@@ -43,16 +46,16 @@ Les Régions ont constaté que les primes « à la pièce », un peu pour les ch
 
 L'audit impose donc une logique d'ensemble et un ordre : on ne subventionne la pompe à chaleur que si l'enveloppe (toit, murs, fenêtres, sol) suit. C'est l'[[ordre-des-travaux]] rendu obligatoire par le financement.
 
-## En Wallonie : l'audit Logement, ticket d'entrée des primes
+## En Wallonie : l'audit Logement, ticket d'entrée des aides
 
-Tu choisis un **auditeur agréé** dans la liste publiée sur le portail énergie de la Région. Compte 🟠 600 à 1 200 € selon la taille de la maison. Une **prime à l'audit** en rembourse une partie : sa base est de 🔴 110 €, multipliée jusqu'à six fois selon tes revenus.
+Tu choisis un **auditeur agréé** dans la liste publiée sur le portail énergie de la Région. Compte 🟠 600 à 1 200 € selon la taille de la maison. Le rapport classe les travaux en bouquets numérotés, à réaliser **dans l'ordre** : tu peux en faire plusieurs à la fois, mais pas en sauter un. Le premier bouquet contient généralement le toit, la salubrité et la sécurité.
 
-Le rapport est **valable huit ans**. Il classe les travaux en bouquets numérotés que tu dois réaliser **dans l'ordre** : tu peux en faire plusieurs à la fois, mais pas en sauter un. Le premier bouquet contient généralement le toit, la salubrité et la sécurité.
+Depuis le **1er octobre 2026**, l'audit est obligatoire pour toute aide régionale à la rénovation, qui passe désormais par un prêt à 0 % : le Rénopack ou le Rénoprêt. Le rapport doit avoir été 🔴 **réalisé ou actualisé moins d'un an** avant la demande, et son coût peut être financé dans le prêt. L'audit sert aussi à prouver le **saut de classe PEB** que les travaux doivent apporter (de G ou F vers D au moins, de E vers C au moins). Pour les ménages aux revenus les plus modestes (catégorie C1), le prêteur peut estimer ce label sans audit récent. → [[primes-renovation]]
 
-Les primes se demandent **après** chaque bouquet, sur présentation des factures, dans le délai fixé par l'arrêté du Gouvernement wallon. Certaines petites primes peuvent être demandées **sans** audit, par exemple la toiture seule sous conditions, l'électricité ou l'audit lui-même. Au-delà, l'audit est le ticket d'entrée.
+Sous l'ancien régime des **primes Habitation**, clos le 30 septembre 2026, le rapport était valable huit ans, une **prime à l'audit** en remboursait une partie (base de 🔴 76 €, multipliée jusqu'à six fois selon les revenus), et les primes se demandaient après chaque bouquet, sur factures. Les dossiers introduits avant cette date restent traités selon ces règles.
 
-:::note[Règle datée — Wallonie, 2026]
-Le régime actuel s'applique aux audits et travaux jusqu'au 30 septembre 2026. Un régime permanent lui succède au 1er octobre 2026 : vérifie la version en vigueur à la date de ta demande.
+:::note[Règle datée — Wallonie, depuis le 1er octobre 2026]
+L'audit de moins d'un an, le saut de classe PEB et le financement par Rénopack ou Rénoprêt sont ceux annoncés par le Gouvernement wallon pour le régime entré en vigueur le 1er octobre 2026. Les modalités pratiques se précisent dans les arrêtés : vérifie la version en vigueur à la date de ta demande.
 :::
 
 ## Ce que contient le rapport
@@ -83,11 +86,11 @@ L'auditeur de Noé (exemple **fictif**) lui remet un rapport de 🔵 48 pages, e
 
 Côté consommation théorique, la maison passe de 🔵 310 kWh/m².an (classe E) à 190 (D) après le bouquet 1, puis à 95 (B) après le bouquet 3.
 
-Noé est en catégorie de revenus R2, ce qui multiplie les primes par quatre. Il voit que les primes du bouquet 1 couvrent 🔵 près de la moitié de son coût, et que le bouquet 3 n'a de sens qu'après le 2. Son [[budget-renovation|budget]] sur cinq ans s'écrit presque tout seul.
+Noé a introduit son dossier sous l'ancien régime des primes Habitation, en catégorie de revenus R2, ce qui multipliait les primes par quatre. Il voit que le bouquet 3 n'a de sens qu'après le 2. Pour la suite, l'audit soulève une question nouvelle : depuis le 1er octobre 2026, l'aide wallonne vise les logements classés E, F ou G et exige un saut de classe. Une fois sa maison passée en D grâce au bouquet 1, Noé devra vérifier s'il a encore droit à un Rénopack pour les bouquets 2 et 3, ou s'il les financera autrement. Son [[budget-renovation|budget]] sur cinq ans s'écrit presque tout seul.
 
 ## Ce que tu dois faire
 
-En Wallonie, **ne commence aucun travail primable avant l'audit** : les factures antérieures au rapport ne sont pas éligibles.
+En Wallonie, **ne commence aucun travail avant l'audit et l'accord sur le financement** : les aides se décident sur le rapport et le devis global, avant les travaux.
 
 Choisis un auditeur **indépendant** des entreprises qui feront les travaux, et demande-lui un exemple de rapport. Quand tu reçois le tien, lis la partie salubrité et sécurité avant celle sur l'énergie : un toit qui fuit ou un tableau sans différentiel passe avant tout.
 
@@ -103,4 +106,4 @@ Enfin, la **prime à l'audit** rembourse le rapport, tandis que les **primes tra
 
 ## Nature des chiffres de cette page
 
-🔴 L'obligation d'audit, sa validité de huit ans, l'ordre des bouquets, la base de 110 € de la prime audit (jusqu'à ×6) et les dates du régime (30 septembre et 1er octobre 2026) viennent des arrêtés du Gouvernement wallon en vigueur en 2026 ; l'obligation flamande de passer en D dans les cinq ans relève de la réglementation flamande (VEKA). 🟠 Le prix d'un audit (600 à 1 200 €) est un repère de marché. 🔵 Le rapport de Noé, ses 48 pages et ses consommations sont inventés pour l'exemple.
+🔴 L'obligation d'un audit de moins d'un an et le saut de classe PEB (régime en vigueur depuis le 1er octobre 2026), l'ordre des bouquets, ainsi que la validité de huit ans et la base de 76 € de la prime audit (jusqu'à ×6, régime des primes Habitation clos le 30 septembre 2026) viennent des décisions du Gouvernement wallon ; l'obligation flamande de passer en D dans les cinq ans relève de la réglementation flamande (VEKA). 🟠 Le prix d'un audit (600 à 1 200 €) est un repère de marché. 🔵 Le rapport de Noé, ses 48 pages et ses consommations sont inventés pour l'exemple.

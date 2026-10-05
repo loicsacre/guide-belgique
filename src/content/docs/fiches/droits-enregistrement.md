@@ -13,8 +13,14 @@ short: "L'impôt régional payé à l'achat d'un bien immobilier existant, calcu
 aliases: [droits de mutation, registratierechten, taux réduit, abattement, habitation propre et unique, frais d'enregistrement]
 prerequisites: [cout-reel-achat, qui-fait-quoi]
 related: [notaire-acte-authentique, tva, precompte-immobilier, deduction-reduction-credit, hypotheque]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Restitution des droits d'enregistrement en cas de revente dans les deux ans : l'arbitrage région par région"
+    url: https://blog.oeccbb.be/fr/article/restitution-des-droits-denregistrement-en-cas-de-revente-dans-les-deux-ans-larbitrage-region-par-region/32166
+    org: OECCBB
+  - title: "Les frais liés au crédit hypothécaire"
+    url: https://www.notaire.be/immobilier/acheter-et-vendre-un-bien-immobilier/les-frais-lies-lachat/les-frais-lies-au-credit-hypothecaire
+    org: Fednot
   - title: Réduction des droits d'enregistrement, de succession et de donation
     url: https://www.wallonie.be/fr/actualites/reduction-des-droits-denregistrement-de-succession-et-de-donation
     org: Wallonie.be
@@ -81,8 +87,8 @@ Ces frais ne se financent pas par le crédit : ils font partie de ton apport per
 Le taux de base ne dit pas tout. Plusieurs situations font bouger le montant, dans un sens ou dans l'autre.
 
 - **Un logement neuf** n'est pas soumis aux droits d'enregistrement mais à la [[tva]] à 21 %, sur la construction. → [[cout-reel-achat]]
-- **Une hypothèque**, la garantie que la banque prend sur ton bien pour son prêt, entraîne des droits distincts : 1 % calculé sur le montant du crédit. → [[hypotheque]]
-- **Une revente rapide** peut te faire récupérer une partie de la mise : en Wallonie et à Bruxelles, si tu revends dans les 2 ans, 36 % des droits payés te sont restitués.
+- **Une hypothèque**, la garantie que la banque prend sur ton bien pour son prêt, entraîne des droits distincts : 1 % calculé sur le montant garanti par l'hypothèque (le capital du crédit plus les « accessoires », souvent 10 % en plus), auxquels s'ajoutent un droit d'hypothèque de 0,3 % sur la même base et une petite rétribution fixe. → [[hypotheque]]
+- **Une revente rapide** peut te faire récupérer une partie de la mise : si tu revends dans les 2 ans de l'achat, une partie des droits t'est restituée : 60 % en Wallonie et en Flandre, 36 % à Bruxelles. Mais seulement si tu avais payé le taux ordinaire (12,5 % ou 12 %), et à condition de le demander, dans l'acte de revente ou dans les 2 ans qui suivent. Pour un achat au taux réduit de l'habitation propre et unique, la revente rapide fait au contraire perdre ce taux.
 - **Si tu perds les conditions du taux réduit**, parce que tu ne t'y domicilies pas à temps ou que tu revends trop tôt, la Région te réclame la différence (des droits complémentaires), parfois avec une amende.
 - **En couple**, si l'un des deux possède déjà un bien, le taux réduit peut ne s'appliquer qu'à la part de l'autre.
 
@@ -104,4 +110,4 @@ Les droits d'enregistrement se paient **une seule fois**, à l'achat. Le [[preco
 
 ## Nature des chiffres de cette page
 
-🔴 Les taux (12 à 12,5 % ordinaires, 3 % en Wallonie, 2 % puis 3 % en Flandre), l'abattement bruxellois de 200 000 € pour un bien jusqu'à 600 000 €, les conditions de 3 et 5 ans, le délai de 4 mois, la restitution de 36 % et les droits de 1 % sur l'hypothèque sont des règles régionales officielles, valables en 2026. 🟠 L'écart d'environ 9 % du prix est un ordre de grandeur. 🔵 Le bien à 300 000 € est un exemple fictif.
+🔴 Les taux (12 à 12,5 % ordinaires, 3 % en Wallonie, 2 % puis 3 % en Flandre), l'abattement bruxellois de 200 000 € pour un bien jusqu'à 600 000 €, les conditions de 3 et 5 ans, le délai de 4 mois, la restitution de 60 % (Wallonie, Flandre) ou 36 % (Bruxelles) des droits payés au taux ordinaire et les droits de 1 % et 0,3 % sur l'hypothèque sont des règles régionales officielles, valables en 2026. 🟠 L'écart d'environ 9 % du prix est un ordre de grandeur. 🔵 Le bien à 300 000 € est un exemple fictif.

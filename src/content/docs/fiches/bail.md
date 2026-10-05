@@ -13,8 +13,11 @@ short: "Le contrat de location de ton logement principal, régi par un décret r
 aliases: [contrat de bail, bail 3-6-9, bail de courte durée, bailleur, locataire, enregistrement du bail, préavis locataire, colocation, kot]
 prerequisites: [louer-vs-acheter]
 related: [garantie-locative, indexation-loyer, assurance-habitation, peb, domicile]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Modification de la législation sur les baux en novembre 2024"
+    url: https://be.brussels/fr/logement/modification-de-la-legislation-sur-les-baux-en-novembre-2024
+    org: be.brussels
   - title: Wallonie — Logement, bail d'habitation
     url: https://logement.wallonie.be/
     org: SPW Logement
@@ -73,7 +76,7 @@ Quelques réflexes te protègent pendant toute la location.
 
 1. **Exige un état des lieux d'entrée détaillé**, avec photos. Sans lui, tu es présumé avoir reçu le bien dans l'état où tu le rends. → [[garantie-locative]]
 2. **Vérifie que le bail est enregistré.** MyMinfin, l'espace en ligne du SPF Finances, te le montre.
-3. **Souscris une assurance incendie locataire.** Elle est obligatoire en Wallonie et en Flandre, et presque tous les baux l'exigent ailleurs. → [[assurance-habitation]]
+3. **Souscris une assurance incendie locataire.** Elle est obligatoire dans les trois Régions : en Wallonie depuis 2018, en Flandre depuis 2019 et à Bruxelles pour les baux conclus ou renouvelés depuis le 1er novembre 2024. → [[assurance-habitation]]
 4. **Inscris-toi à la commune** : c'est là qu'est fixé ton [[domicile]], ton adresse officielle.
 5. **Envoie ton préavis par recommandé**, en gardant en tête qu'il court à partir du 1er du mois suivant.
 

@@ -13,7 +13,7 @@ short: "La pension légale (1er pilier) est calculée sur toute ta carrière sal
 aliases: [retraite, pension légale, piliers de pension, MyPension, SFP, pension anticipée, âge légal de la pension, carrière complète]
 prerequisites: [securite-sociale, cotisations-sociales]
 related: [epargne-pension, avantages-extralegaux, onss, indexation, chomage, incapacite-de-travail, independant]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: Service fédéral des Pensions
     url: https://www.sfpd.fgov.be/fr
@@ -64,7 +64,7 @@ Trois mots de cette formule méritent une explication. Le salaire est **plafonn�
 
 Le chiffre 45 n'est pas là par hasard : une **carrière complète** compte 45 années. Chaque année est donc comptée pour 1/45 de ta pension, et chaque année manquante te retire 1/45. On prend toutes tes années de carrière, et pas seulement les meilleures, avec un maximum de 45.
 
-Prenons un exemple **fictif** et très simplifié : un salarié isolé gagne 3 500 € brut par mois, soit 42 000 € par an, pendant toute sa carrière (en valeur réévaluée, et sous le plafond). Chaque année lui rapporte 42 000 € × 60 % ÷ 45 = 560 € de pension annuelle. Après 45 ans de carrière, il a droit à 45 × 560 € = 25 200 € brut par an, soit 2 100 € brut par mois. Au taux ménage de 75 %, ce serait 31 500 € par an. S'il n'a que 40 années de carrière, sa pension isolé tombe à 40 × 560 € = 22 400 € par an.
+Prenons un exemple **fictif** et très simplifié : un salarié isolé gagne un salaire **brut annuel** de 42 000 € (12 × 3 500 €, sans compter le 13e mois ni le pécule, pour simplifier) pendant toute sa carrière (en valeur réévaluée, et sous le plafond). Chaque année lui rapporte 42 000 € × 60 % ÷ 45 = 560 € de pension annuelle. Après 45 ans de carrière, il a droit à 45 × 560 € = 25 200 € brut par an, soit 2 100 € brut par mois. Au taux ménage de 75 %, ce serait 31 500 € par an. S'il n'a que 40 années de carrière, sa pension isolé tombe à 40 × 560 € = 22 400 € par an.
 
 ## Ce qui compte, et ce qui s'ajoute ou se retire
 
@@ -87,4 +87,4 @@ La **pension légale** est le 1er pilier, versé par le SFP. L'**assurance group
 
 ## Nature des chiffres de cette page
 
-🔴 L'âge légal de 66 ans (67 ans dès 2030), la pension anticipée à 63 ans avec 42 ans de carrière (60 ans avec 44, 61 ans avec 43), les taux de 60 % et 75 % et la carrière complète de 45 ans sont des règles officielles, que les réformes en cours peuvent modifier. 🔵 Le salarié à 3 500 € brut par mois et ses 25 200 € de pension annuelle sont un exemple fictif et simplifié.
+🔴 L'âge légal de 66 ans (67 ans dès 2030), la pension anticipée à 63 ans avec 42 ans de carrière (60 ans avec 44, 61 ans avec 43), les taux de 60 % et 75 % et la carrière complète de 45 ans sont des règles officielles, que les réformes en cours peuvent modifier. 🔵 Le salarié à 42 000 € brut par an (3 500 € par mois) et ses 25 200 € de pension annuelle sont un exemple fictif et simplifié.

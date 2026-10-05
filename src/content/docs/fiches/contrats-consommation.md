@@ -13,8 +13,11 @@ short: "En tant que consommateur, tu bénéficies de protections d'ordre public 
 aliases: [garantie légale, garantie commerciale, droit de rétractation, clauses abusives, résiliation, reconduction tacite, Service de médiation pour le consommateur, Code de droit économique, vice caché, mise en demeure]
 prerequisites: [budget]
 related: [facturation, fraude-phishing, energie, assurance-principes, contrat, probleme-administratif]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Règlement (UE) 2024/3228 abrogeant le règlement (UE) n° 524/2013 (fin de la plateforme ODR)"
+    url: https://eur-lex.europa.eu/eli/reg/2024/3228/oj/eng
+    org: EUR-Lex
   - title: SPF Économie — Protection du consommateur
     url: https://economie.fgov.be/fr
     org: SPF Économie
@@ -87,7 +90,7 @@ La méthode monte en puissance, une étape après l'autre.
 
 1. **Réclame par écrit au vendeur.** Commence par un e-mail. Sans réponse, envoie un recommandé qui fixe un délai : c'est une **mise en demeure**, la lettre officielle par laquelle tu exiges qu'il exécute ses obligations avant une date précise.
 2. **Pas de solution ? Passe par un médiateur, gratuit.** Le **Service de médiation pour le consommateur** traite les litiges de consommation en général. Certains secteurs ont leur propre médiateur : énergie, télécom, poste, banques (Ombudsfin), assurances, voyages.
-3. **Achat dans un autre pays de l'Union ?** La **plateforme européenne ODR** (règlement des litiges en ligne) et le **Centre européen des consommateurs** t'aident pour les achats transfrontaliers.
+3. **Achat dans un autre pays de l'Union ?** Le **Centre européen des consommateurs** t'aide gratuitement pour les achats transfrontaliers. L'ancienne plateforme européenne de règlement des litiges en ligne (ODR), qu'on trouve encore citée dans des conditions générales, a fermé le 20 juillet 2025.
 4. **En dernier recours, la justice de paix.** C'est le tribunal des petits litiges du quotidien, où l'avocat n'est pas obligatoire.
 
 Si tu tombes sur une pratique illégale (un prix trompeur, une clause abusive), tu peux la **signaler** au SPF Économie, sur pointdecontact.belgique.be. → [[probleme-administratif]]

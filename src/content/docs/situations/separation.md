@@ -11,7 +11,7 @@ etapes:
   - regime-matrimonial
 - titre: Décider du logement
   quand: Premiers mois
-  texte: 'Locataires : qui reste sur le bail, préavis. Propriétaires : rachat de la part (droit de partage 1 % / 2,5 %), vente, ou indivision provisoire ; la banque doit libérer celui qui part du crédit (désolidarisation).'
+  texte: 'Locataires : qui reste sur le bail, préavis. Propriétaires : rachat de la part (droit de partage 1 %, 2,5 % en Flandre hors couple marié ou cohabitant légal), vente, ou indivision provisoire ; la banque doit libérer celui qui part du crédit (désolidarisation).'
   notions:
   - bail
   - droits-reels
@@ -61,6 +61,12 @@ notions: []
 sidebar:
   order: 10
 sources:
+- title: "Qu'advient-il de la maison familiale en cas de séparation du couple ?"
+  url: https://www.notaire.be/actualites/quadvient-il-de-la-maison-familiale-en-cas-de-separation-du-couple
+  org: Fednot
+- title: "Divorce pour désunion irrémédiable : conditions"
+  url: https://justice.belgium.be/fr/themes_et_dossiers/personnes_et_familles/divorce/pour_desunion_irremediable/conditions
+  org: SPF Justice
 - title: SPF Justice — Divorce et séparation
   url: https://justice.belgium.be/fr
   org: SPF Justice
@@ -70,7 +76,7 @@ sources:
 - title: SPF Finances — Particuliers (coparentalité, pensions alimentaires)
   url: https://finances.belgium.be/fr/particuliers
   org: SPF Finances
-last_verified: '2026-10-02'
+last_verified: 2026-10-05
 ---
 Ça ne marche plus. Au-delà du reste, une séparation est une suite de décisions administratives et financières, et l'ordre dans lequel on les prend détermine si l'un des deux reste engagé pour l'autre pendant des années. Cette histoire suit un couple avec un enfant et un appartement acheté ensemble, dans les deux cas qui changent tout : mariés, ou non.
 
@@ -78,7 +84,7 @@ Cas fictif : Alice et Bob, un enfant de 4 ans, appartement acheté à deux (cré
 
 ## 1. Quel cadre ? Tout en découle
 
-**S'ils sont mariés**, il y aura un **divorce** : par consentement mutuel (vous rédigez ensemble une convention complète : biens, enfants, pensions ; rapide, moins cher) ou pour désunion irrémédiable (après 6 mois ou un an de séparation de fait, ou immédiatement sur demande conjointe). Puis la **liquidation du régime matrimonial** : sans contrat, tout ce qui a été acquis pendant le mariage est commun, à partager 50/50 ; avec une séparation de biens, chacun reprend ce qu'il prouve avoir payé. Voir [[regime-matrimonial]].
+**S'ils sont mariés**, il y aura un **divorce** : par consentement mutuel (vous rédigez ensemble une convention complète : biens, enfants, pensions ; rapide, moins cher) ou pour désunion irrémédiable : dès que l'on peut prouver que la vie commune est devenue impossible (lettres, témoins…), ou sans preuve après plus de 6 mois de séparation de fait si la demande est faite à deux, ou plus d'un an si un seul époux la demande ; si ce délai n'est pas encore atteint, il faut revenir une seconde fois devant le tribunal pour confirmer. Puis la **liquidation du régime matrimonial** : sans contrat, tout ce qui a été acquis pendant le mariage est commun, à partager 50/50 ; avec une séparation de biens, chacun reprend ce qu'il prouve avoir payé. Voir [[regime-matrimonial]].
 
 **S'ils sont cohabitants légaux**, l'un des deux (ou les deux) fait une déclaration à la commune : c'est fini. Pas de divorce, pas de partage légal : chacun garde ce qui est à son nom, et l'indivision (l'appartement) se règle à part.
 
@@ -89,7 +95,7 @@ Cas fictif : Alice et Bob, un enfant de 4 ans, appartement acheté à deux (cré
 L'appartement est en **indivision** (ou commun, si mariés sous le régime légal). Trois issues :
 
 1. **Vendre** et partager le prix après remboursement du capital restant dû, selon les quotes-parts, en tenant compte des apports de chacun s'ils sont prouvés (convention d'indivision, acte, extraits de compte). Voir [[droits-reels]].
-2. **L'un rachète la part de l'autre.** Il paie la moitié de la valeur nette (valeur du bien − capital restant dû), et un **droit de partage** sur la valeur du bien : 1 % en Wallonie et à Bruxelles, 2,5 % en Flandre, au lieu des droits d'enregistrement pleins. Le notaire rédige l'acte.
+2. **L'un rachète la part de l'autre.** Il paie la moitié de la valeur nette (valeur du bien − capital restant dû), et un **droit de partage** sur la valeur du bien : 1 % en Wallonie et à Bruxelles, quel que soit le couple. En Flandre, 1 % aussi pour des époux ou cohabitants légaux qui partagent le logement familial (sous conditions), mais 2,5 % pour des cohabitants de fait. C'est bien moins que les droits d'enregistrement pleins. Le notaire rédige l'acte.
 3. **Rester en indivision** un temps (jusqu'à la fin de l'école de l'enfant, par exemple) : possible par convention, mais « nul n'est tenu de rester en indivision » : chacun peut demander la sortie à tout moment.
 
 Et le **crédit** : vous êtes co-emprunteurs **solidaires**. Celui qui part reste tenu de la totalité tant que la banque ne l'a pas libéré. Si Alice rachète la part de Bob, il faut une **désolidarisation** : la banque vérifie qu'Alice peut porter seule la mensualité (règle du tiers des revenus), puis signe un avenant. Sans ça, si Alice ne paie plus dans cinq ans, la banque viendra chez Bob. Voir [[credit-hypothecaire]] et [[hypotheque]].
@@ -145,7 +151,7 @@ Pour des **mariés ou cohabitants légaux** : l'année de la séparation de fait
 ## En bref
 
 1. Le cadre (mariage, cohabitation légale, de fait) décide de ce qui se partage : tout, le logement, ou rien.
-2. Le crédit commun te lie jusqu'à la désolidarisation par la banque ; le rachat de part coûte un droit de partage de 1 % (2,5 % en Flandre).
+2. Le crédit commun te lie jusqu'à la désolidarisation par la banque ; le rachat de part coûte un droit de partage de 1 % (2,5 % en Flandre pour des cohabitants de fait).
 3. Pour l'enfant : hébergement + contribution proportionnelle aux revenus ; fiscalement, coparentalité **ou** déduction des pensions, pas les deux.
 
 ## Nature des chiffres de cette page

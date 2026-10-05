@@ -12,14 +12,23 @@ short: "Trois statuts de couple, trois niveaux de protection : le mariage protè
 aliases: [cohabitation légale, cohabitation de fait, mariage, concubinage, déclaration de cohabitation, pension de survie, logement familial]
 prerequisites: [domicile]
 related: [regime-matrimonial, succession, droits-de-succession, personne-a-charge, droits-reels, ipp, statut-familial]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Calcul et tarifs des droits de succession en Wallonie"
+    url: https://www.notaire.be/heritage/taux-impot-succession/droits-de-succession-wallonie
+    org: Fednot
+  - title: "Calcul et tarifs des droits de succession à Bruxelles"
+    url: https://www.notaire.be/heritage/taux-impot-succession/droits-de-succession-bruxelles
+    org: Fednot
   - title: Notaire.be — Couple
     url: https://www.notaire.be/
     org: Fednot
   - title: Portail officiel de la Belgique — Famille
     url: https://www.belgium.be/fr
     org: belgium.be
+  - title: Les conséquences fiscales du mariage et de la cohabitation en Belgique
+    url: https://www.test-achats.be/argent/impots/dossier/le-mariage-et-ses-consequences-fiscales-1
+    org: Test-Achats
 sidebar:
   order: 1
 ---
@@ -52,7 +61,7 @@ C'est là que l'écart est le plus brutal.
 
 **Le conjoint marié reçoit l'usufruit de toute la succession** s'il y a des enfants, et une part en pleine propriété s'il n'y en a pas. → [[succession]]
 
-L'impôt suit la même hiérarchie. Les mariés et les cohabitants légaux bénéficient du tarif réduit des [[droits-de-succession]], l'impôt régional sur ce qu'on hérite. Le cohabitant de fait, lui, est en principe taxé comme un étranger à la famille, avec les taux les plus lourds. Il y a des exceptions : en Flandre, il est assimilé au partenaire après un an de ménage commun, et la Wallonie et Bruxelles prévoient aussi des aménagements sous conditions pour certains cas.
+L'impôt suit la même hiérarchie. Les mariés et les cohabitants légaux bénéficient du tarif réduit des [[droits-de-succession]], l'impôt régional sur ce qu'on hérite. Le cohabitant de fait, lui, est en principe taxé comme un étranger à la famille, avec les taux les plus lourds. Il y a des exceptions, qui dépendent de la Région où vivait le défunt. À Bruxelles et en Flandre, le cohabitant de fait paie le même tarif qu'un époux s'il vivait avec le défunt au jour du décès et formait avec lui un ménage commun depuis au moins un an sans interruption. En Wallonie, rien de tel : il reste taxé au tarif « entre étrangers », jusqu'à 80 %.
 
 Enfin, seul le mariage ouvre le droit à une **pension de survie**, une pension versée au conjoint survivant à partir de la carrière du défunt (sous conditions). Le cohabitant légal n'y a pas droit, le cohabitant de fait non plus. → [[pension]]
 
@@ -68,7 +77,7 @@ Enfin, seul le mariage ouvre le droit à une **pension de survie**, une pension 
 
 ## Et pour l'impôt et les allocations ?
 
-Ici, cohabitation légale et mariage se rejoignent. Les deux partenaires remplissent une **déclaration fiscale commune** et ont droit au **quotient conjugal**, un mécanisme qui transfère fictivement une partie du revenu de celui qui gagne le plus vers l'autre, pour le faire taxer dans des tranches moins chères. Résultat : c'est en général avantageux si vos revenus sont inégaux, et neutre s'ils sont proches. Les cohabitants de fait font chacun leur déclaration, comme deux isolés. → [[ipp]]
+Ici, cohabitation légale et mariage se rejoignent. À partir de l'année qui suit le mariage ou la déclaration de cohabitation légale, les deux partenaires remplissent une **déclaration fiscale commune** et ont droit au **quotient conjugal** ; l'année même du mariage ou de la déclaration, chacun déclare encore séparément, comme un isolé. Le quotient conjugal est un mécanisme qui transfère fictivement une partie du revenu de celui qui gagne le plus vers l'autre, pour le faire taxer dans des tranches moins chères. Résultat : c'est en général avantageux si vos revenus sont inégaux, et neutre s'ils sont proches. Les cohabitants de fait font chacun leur déclaration, comme deux isolés. → [[ipp]]
 
 Pour les allocations sociales (chômage, revenu d'intégration du CPAS), le statut civil ne compte presque pas : ce qui compte, c'est le fait de vivre avec quelqu'un qui a des revenus. Les trois statuts mènent donc au même résultat, le statut de « cohabitant », avec un taux réduit. → [[statut-familial]]
 
@@ -79,7 +88,7 @@ Pour les allocations sociales (chômage, revenu d'intégration du CPAS), le stat
 | Pour commencer | Aucune formalité | Déclaration à la commune | Célébration à la commune |
 | Pour finir | Déménager | Déclaration, même d'un seul | Divorce |
 | Héritage sans testament | Rien | Usufruit du logement et de ses meubles | Usufruit de toute la succession |
-| Tarif réduit des droits de succession | Non, sauf aménagements régionaux | Oui | Oui |
+| Tarif réduit des droits de succession | Bruxelles et Flandre : oui après un an de ménage commun ; Wallonie : non | Oui | Oui |
 | Logement familial protégé | Non | Oui | Oui |
 | Pension de survie | Non | Non | Oui, sous conditions |
 | Dettes du ménage | Chacun les siennes | Solidarité | Solidarité |
@@ -106,4 +115,4 @@ Cette fiche parle du statut **civil** du couple, celui qui décide de l'héritag
 
 ## Nature des chiffres de cette page
 
-🔴 Le délai d'un an de ménage commun qui ouvre au cohabitant de fait le tarif réduit en Flandre est une règle régionale. 🟠 La dizaine de minutes pour faire une déclaration de cohabitation légale est un repère pratique.
+🔴 Le délai d'un an de ménage commun qui ouvre au cohabitant de fait le tarif réduit à Bruxelles et en Flandre (pas en Wallonie) est une règle régionale. 🟠 La dizaine de minutes pour faire une déclaration de cohabitation légale est un repère pratique.

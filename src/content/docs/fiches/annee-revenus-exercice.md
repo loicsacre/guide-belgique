@@ -12,11 +12,17 @@ short: "Les revenus d'une année N sont déclarés et imposés en N+1 : N est l'
 aliases: [exercice d'imposition, année des revenus, période imposable, calendrier fiscal]
 prerequisites: [ipp]
 related: [declaration-fiscale, avertissement-extrait-de-role, precompte-professionnel, tranches-imposition, quotite-exemptee, statut-familial]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: SPF Finances — Particuliers
     url: https://finances.belgium.be/fr/particuliers
     org: SPF Finances
+  - title: Votre situation familiale
+    url: https://www.wikifin.be/fr/impots-emploi-et-revenus/declaration-dimpots/votre-situation-familiale/votre-situation-familiale
+    org: Wikifin (FSMA)
+  - title: Les conséquences fiscales du mariage et de la cohabitation en Belgique
+    url: https://www.test-achats.be/argent/impots/dossier/le-mariage-et-ses-consequences-fiscales-1
+    org: Test-Achats
 sidebar:
   order: 2
 ---
@@ -56,7 +62,7 @@ Voici comment s'enchaînent les étapes pour des revenus d'une année N.
 
 ## Ce que ça change pour toi
 
-**Ta situation au 1er janvier de l'exercice compte pour toute l'année écoulée.** C'est ta situation au 1er janvier de l'exercice, donc au 1er janvier N+1, qui fixe ton état civil fiscal (isolé, marié, cohabitant légal) et tes personnes à charge pour les revenus de l'année N. → [[statut-familial]]
+**Ta situation au 1er janvier de l'exercice compte pour toute l'année écoulée.** C'est ta situation de famille au 1er janvier de l'exercice, donc au 1er janvier N+1, qui fixe tes personnes à charge pour les revenus de l'année N. Le couple a sa propre règle : l'année N du mariage ou de la cohabitation légale, chacun déclare encore séparément, et la déclaration commune commence avec les revenus de l'année N+1. L'année du divorce ou de la fin de la cohabitation légale, chacun déclare aussi séparément. → [[statut-familial]]
 
 **Les délais se comptent à partir de l'impôt établi.** Les délais de **contrôle**, pendant lesquels le fisc peut revenir sur ton impôt, sont en principe de 3 ans, et plus longs en cas de fraude ; ils se comptent à partir de l'exercice d'imposition. Le délai de **réclamation**, pour contester ton impôt, est d'un an à partir de l'envoi de l'AER. → [[avertissement-extrait-de-role]]
 
@@ -66,4 +72,4 @@ L'**année des revenus** est celle où tu as gagné l'argent ; l'**exercice d'im
 
 ## Nature des chiffres de cette page
 
-🔴 Le 30 juin de la deuxième année pour établir l'impôt, les deux mois pour payer, le délai de contrôle de 3 ans en principe et le délai de réclamation d'un an sont des règles officielles. 🟠 Les mois du calendrier (fiche 281.10 en février-mars, Tax-on-web en mai, délais en juin-juillet, AER d'août à juin) sont des repères qui se vérifient chaque année.
+🔴 Le 30 juin de la deuxième année pour établir l'impôt, les deux mois pour payer, le délai de contrôle de 3 ans en principe et le délai de réclamation d'un an sont des règles officielles, comme la date du 1er janvier de l'exercice pour les personnes à charge et l'imposition séparée l'année du mariage ou de la cohabitation légale. 🟠 Les mois du calendrier (fiche 281.10 en février-mars, Tax-on-web en mai, délais en juin-juillet, AER d'août à juin) sont des repères qui se vérifient chaque année.

@@ -13,7 +13,7 @@ short: "Le 3e pilier : tu verses chaque année sur un fonds ou une assurance d'�
 aliases: [épargne-pension, fonds d'épargne-pension, assurance épargne-pension, épargne à long terme, assurance groupe, fonds de pension, 2e pilier, 3e pilier, taxe anticipative, branche 21, branche 23]
 prerequisites: [pension, deduction-reduction-credit]
 related: [interets-composes, actions-obligations-etf, avantages-extralegaux, fiscalite-investissements, cotisations-independant]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: Plafonds fiscaux — exercice d'imposition 2026
     url: https://assets.contenthub.wolterskluwer.com/api/public/content/3084229-plafonds-fiscaux-3a47085543
@@ -73,7 +73,7 @@ La **branche 21** désigne les assurances-vie à rendement garanti. La **partici
 
 ## Un cousin : l'épargne à long terme
 
-L'**épargne à long terme** fonctionne sur le même principe, avec la même réduction de 30 %, mais avec un plafond séparé, d'environ 2 500 €. Elle passe souvent par une assurance-vie.
+L'**épargne à long terme** fonctionne sur le même principe, avec la même réduction de 30 %, mais avec un plafond séparé : au plus 2 450 € pour les revenus 2025 (exercice d'imposition 2026), et moins si tes revenus professionnels sont modestes, car le plafond dépend aussi de ce que tu gagnes. Elle passe souvent par une assurance-vie.
 
 Elle est surtout utile quand le « panier » fiscal du logement est vide : ce panier, c'est l'enveloppe d'avantages fiscaux qu'elle partage avec ton logement, et si rien ne l'utilise déjà, l'épargne à long terme permet d'en profiter.
 
@@ -103,4 +103,4 @@ La **pension légale** est le 1er pilier, versée par l'État. L'**assurance gro
 
 ## Nature des chiffres de cette page
 
-🔴 Les plafonds de 1 050 € et 1 350 €, les réductions de 30 % et 25 %, la taxe anticipative de 8 % à 60 ans, les versements jusqu'à 64 ans, la pénalité de 33 %, le rendement minimum de 1,75 % et le plafond d'environ 2 500 € de l'épargne à long terme sont des règles officielles, valables pour les revenus 2025. 🟠 La taxation de 10 à 20 % du 2e pilier et les frais de 1 à 1,3 % des fonds sont des ordres de grandeur. 🔵 Le salarié à 3 500 € brut et le versement de 1 200 € sont des exemples fictifs.
+🔴 Les plafonds de 1 050 € et 1 350 €, les réductions de 30 % et 25 %, la taxe anticipative de 8 % à 60 ans, les versements jusqu'à 64 ans, la pénalité de 33 %, le rendement minimum de 1,75 % et le plafond de 2 450 € de l'épargne à long terme sont des règles officielles, valables pour les revenus 2025. 🟠 La taxation de 10 à 20 % du 2e pilier et les frais de 1 à 1,3 % des fonds sont des ordres de grandeur. 🔵 Le salarié à 3 500 € brut et le versement de 1 200 € sont des exemples fictifs.

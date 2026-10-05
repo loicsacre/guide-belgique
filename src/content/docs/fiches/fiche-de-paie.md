@@ -10,7 +10,7 @@ short: "Le décompte que ton employeur te remet à chaque paie : il montre ligne
 aliases: [décompte de paie, fiche de salaire, bulletin de paie, loonbrief]
 prerequisites: [salaire-brut, cotisations-sociales, precompte-professionnel, salaire-net]
 related: [avantages-extralegaux, commission-paritaire, pecule-de-vacances, declaration-fiscale]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: La fiche de paie ou le décompte de paie
     url: https://www.securex.be/fr/lex4you/employeur/themes/obligations-de-l-employeur/documents-sociaux-et-fiscaux/la-fiche-de-paie-ou-le-decompte-de-paie
@@ -18,6 +18,9 @@ sources:
   - title: Loi du 12 avril 1965 concernant la protection de la rémunération
     url: https://bosa.belgium.be/sites/default/files/documents/19650412_wet_loi_bescherming_loon_protection_remuneration.pdf
     org: BOSA
+  - title: "Le chèque-repas de 10 euros : six questions pour les employeurs"
+    url: https://www.partena-professional.be/fr/node/22442
+    org: Partena Professional
 sidebar:
   order: 4
 ---
@@ -41,7 +44,7 @@ Une fiche de paie paraît compliquée, mais elle se lit de haut en bas, comme un
 
 ## Une fiche type, ligne par ligne
 
-Voici une fiche de paie **fictive**, pour un brut de 3 500 € avec une voiture de société. Seul le taux ONSS de 13,07 % est réel ; les autres montants sont inventés pour l'exemple.
+Voici une fiche de paie **fictive**, pour un brut de 3 500 € avec une voiture de société. Seuls le taux ONSS de 13,07 % et la part personnelle de 1,09 € par chèque-repas sont réels ; les autres montants sont inventés pour l'exemple.
 
 | Ligne | Montant | Ce que ça veut dire |
 | --- | ---: | --- |
@@ -54,8 +57,8 @@ Voici une fiche de paie **fictive**, pour un brut de 3 500 € avec une voiture 
 | Cotisation spéciale de sécurité sociale | − 30,00 | Régularisée sur l'AER. |
 | Neutralisation ATN | − 150,00 | On retire l'avantage, puisqu'il n'a jamais été payé. |
 | Indemnité forfaitaire de télétravail | + 150,00 | Remboursement de frais : **ni ONSS, ni impôt**. |
-| Chèques-repas, part personnelle | − 20,00 | Ta contribution aux chèques-repas. |
-| **Net à payer** | **2 442,55** | Ce qui arrive sur ton compte. |
+| Chèques-repas, part personnelle | − 22,89 | Ta contribution : 1,09 € par chèque, 21 jours prestés ; l'employeur paie le reste (8,91 € pour un chèque de 10 €). |
+| **Net à payer** | **2 439,66** | Ce qui arrive sur ton compte. |
 
 Deux lignes déroutent toujours. L'**ATN**, l'avantage de toute nature, est la valeur forfaitaire que le fisc attribue à l'usage privé de ta voiture de société. Il est ajouté pour calculer l'impôt, puis retiré plus bas (la « neutralisation »), parce que tu ne l'as jamais reçu en argent. Résultat : tu paies un peu plus de précompte, mais tu as la voiture. → [[voiture-de-societe]] · [[avantages-extralegaux]]
 
@@ -82,4 +85,4 @@ La **fiche de paie** est mensuelle : l'employeur l'établit pour toi. La **fiche
 
 ## Nature des chiffres de cette page
 
-🔴 Le taux de 13,07 % de cotisation ONSS personnelle et la liste des mentions obligatoires sont des règles officielles. 🔵 Le brut de 3 500 €, l'ATN de 150 €, le précompte de 700 €, la cotisation spéciale de 30 €, l'indemnité de télétravail de 150 €, la part de chèques-repas de 20 € et le net de 2 442,55 € sont fictifs.
+🔴 Le taux de 13,07 % de cotisation ONSS personnelle et la liste des mentions obligatoires sont des règles officielles. 🔵 Le brut de 3 500 €, l'ATN de 150 €, le précompte de 700 €, la cotisation spéciale de 30 €, l'indemnité de télétravail de 150 €, les 21 jours prestés et le net de 2 439,66 € sont fictifs ; la part personnelle de 1,09 € par chèque-repas (sur une valeur maximale de 10 € en 2026) est une règle officielle.

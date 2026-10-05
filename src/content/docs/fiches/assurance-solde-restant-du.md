@@ -12,11 +12,17 @@ short: "L'assurance solde restant dû rembourse le capital encore dû sur ton cr
 aliases: [ASRD, assurance décès, assurance-vie, branche 21, branche 23, prime unique, quotité assurée, bénéficiaire, revenu garanti]
 prerequisites: [credit-hypothecaire, assurance-principes]
 related: [taeg, succession, droits-de-succession, epargne-pension, incapacite-de-travail, garantie-des-depots]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: Wikifin — Logement et emprunt hypothécaire
     url: https://www.wikifin.be/fr/logement-et-emprunt-hypothecaire
     org: Wikifin (FSMA)
+  - title: "Le droit à l'oubli : nouveautés pour les assurances solde restant dû"
+    url: https://www.notaire.be/actualites/le-droit-loubli-nouveautes-pour-les-assurances-solde-restant-du
+    org: Notaire.be
+  - title: Droit à l'oubli — assurances décès
+    url: https://www.pv.be/documents/d/pv/droit-a-l-oubli-assurances-deces-p-v
+    org: P&V Assurances
 sidebar:
   order: 6
 ---
@@ -54,7 +60,7 @@ Le prix dépend de ton âge, du fait que tu fumes ou non (le **tabac** pèse lou
 
 **La banque lie souvent son taux à l'ASRD.** Elle te propose un taux d'intérêt plus bas si tu prends l'assurance chez elle. Compare quand même le prix de la même assurance ailleurs : l'écart peut dépasser ce que tu gagnes sur le taux. Le **TAEG**, le pourcentage qui réunit intérêts et frais obligatoires d'un crédit, intègre cette assurance quand elle conditionne le taux. → [[taeg]]
 
-**Une ancienne maladie ne te ferme pas toutes les portes.** Le **droit à l'oubli** interdit à l'assureur de tenir compte d'une maladie grave, comme un cancer, une fois un certain délai écoulé après la fin du traitement : 8 ans en général, moins pour certains cancers, et 5 ans pour les moins de 21 ans. Et si l'on te refuse l'assurance ou qu'on t'impose une surprime excessive, un **mécanisme de solidarité** peut t'aider.
+**Une ancienne maladie ne te ferme pas toutes les portes.** Le **droit à l'oubli** interdit à l'assureur de tenir compte d'une maladie grave, comme un cancer, une fois un certain délai écoulé après la fin du traitement réussi, sans rechute : **5 ans** depuis le 1er janvier 2025 (c'était 8 ans auparavant), voire moins pour certains cancers et certaines maladies chroniques repris dans une grille de référence. Et si l'on te refuse l'assurance ou qu'on t'impose une surprime excessive, un **mécanisme de solidarité** peut t'aider.
 
 **L'assurance a des effets sur la succession.** Comme le capital versé éteint le crédit, la dette ne pèse plus sur la succession du défunt, c'est-à-dire sur l'ensemble de ce qu'il laisse à ses héritiers. Mais selon le montage, il peut y avoir des droits de succession sur une partie du capital. Tout dépend de qui est **preneur** (celui qui signe et paie le contrat), **assuré** (celui dont le décès déclenche le paiement) et **bénéficiaire** (celui qui reçoit l'argent). → [[succession]] · [[droits-de-succession]]
 
@@ -83,4 +89,4 @@ L'**ASRD** rembourse ton crédit si tu décèdes. Le **revenu garanti** couvre u
 
 ## Nature des chiffres de cette page
 
-🔴 Le droit à l'oubli (8 ans, 5 ans avant 21 ans), la taxe de 2 % sur les primes, le précompte en cas de retrait avant 8 ans et la garantie de 100 000 € sont des règles officielles. 🟠 Les primes payées pendant les deux tiers de la durée et le prix de quelques dizaines d'euros par mois pour 100 000 € à 30 ans sont des repères. 🔵 Le crédit de 200 000 € à 3 % sur 25 ans (≈ 948 € par mois), les 150 000 € restant dus, les 75 000 € remboursés, la mensualité de 474 € et la répartition 70/30 sont des exemples fictifs.
+🔴 Le droit à l'oubli (5 ans depuis le 1er janvier 2025), la taxe de 2 % sur les primes, le précompte en cas de retrait avant 8 ans et la garantie de 100 000 € sont des règles officielles. 🟠 Les primes payées pendant les deux tiers de la durée et le prix de quelques dizaines d'euros par mois pour 100 000 € à 30 ans sont des repères. 🔵 Le crédit de 200 000 € à 3 % sur 25 ans (≈ 948 € par mois), les 150 000 € restant dus, les 75 000 € remboursés, la mensualité de 474 € et la répartition 70/30 sont des exemples fictifs.

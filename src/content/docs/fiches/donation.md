@@ -4,17 +4,23 @@ kind: fiche
 domain: famille
 level: utile
 nature: regle-datee
-valid_for: "tarifs 2026 ; délai de rappel 5 ans en Wallonie, 3 ans ailleurs"
+valid_for: "tarifs 2026 ; délai de rappel de 5 ans dans les trois Régions pour les dons faits depuis 2026"
 scope: [wallonie, bruxelles, flandre]
 status: publie
 tags: [donation, don manuel, don bancaire, droits de donation, planification]
 organisme: "Notaire, Région"
-short: "Donner de son vivant, c'est transmettre à un taux fixe et bas (3 à 7 % pour les biens meubles, barème progressif plus doux pour l'immobilier) au lieu des droits de succession ; un don non enregistré est gratuit mais réintégré dans la succession si le donateur décède dans les 3 ans (5 en Wallonie)."
+short: "Donner de son vivant, c'est transmettre à un taux fixe et bas (3 à 7 % pour les biens meubles, barème progressif plus doux pour l'immobilier) au lieu des droits de succession ; un don non enregistré est gratuit mais réintégré dans la succession si le donateur décède dans les 5 ans."
 aliases: [don manuel, don bancaire, donation enregistrée, droits de donation, donation immobilière, donation avec réserve d'usufruit, pacte adjoint, avance d'hoirie]
 prerequisites: [succession, droits-de-succession]
 related: [droits-reels, quotite-emprunt, notaire-acte-authentique, regime-matrimonial]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Planification patrimoniale : les évolutions à partir du 1er janvier 2026"
+    url: https://blog.forumforthefuture.be/fr/article/planification-patrimoniale-quelles-surprises-sous-le-sapin-comment-se-preparer-aux-evolutions-annoncees-a-partir-du-1er-janvier-2026-/29477
+    org: Forum for the Future
+  - title: "Comment réduire les droits de succession en Belgique ?"
+    url: https://www.test-achats.be/famille-prive/heritage/dossier/limiter-les-droits-de-succession-en-toute-legalite
+    org: Test Achats
   - title: Notaire.be — Donner
     url: https://www.notaire.be/
     org: Fednot
@@ -37,15 +43,15 @@ C'est aussi, très concrètement, la source la plus fréquente de l'**apport** d
 
 Pour les **biens meubles** (de l'argent, des titres, une voiture…), tu as le choix entre deux voies. Elles ne diffèrent que par une chose : est-ce que tu paies maintenant un petit impôt pour être tranquille, ou est-ce que tu ne paies rien et prends un risque ?
 
-**Le don manuel ou bancaire, sans enregistrement.** Le parent fait un virement à l'enfant, avec une communication neutre. Pour pouvoir prouver plus tard qu'il s'agit d'une donation, et à quelles conditions, on l'accompagne d'un **pacte adjoint** : un échange de lettres recommandées entre donateur et bénéficiaire qui décrit le don. Coût : **0 %**. Le risque : si le donateur décède dans les **3 ans** (en Flandre et à Bruxelles) ou dans les **5 ans** (en Wallonie, depuis 2022), le don est réintégré dans sa succession et taxé aux droits de succession, comme s'il n'avait jamais eu lieu.
+**Le don manuel ou bancaire, sans enregistrement.** Le parent fait un virement à l'enfant, avec une communication neutre. Pour pouvoir prouver plus tard qu'il s'agit d'une donation, et à quelles conditions, on l'accompagne d'un **pacte adjoint** : un échange de lettres recommandées entre donateur et bénéficiaire qui décrit le don. Coût : **0 %**. Le risque : si le donateur décède dans les **5 ans**, le don est réintégré dans sa succession et taxé aux droits de succession, comme s'il n'avait jamais eu lieu. Ce délai de 5 ans vaut en Wallonie depuis 2022, en Flandre pour les dons faits depuis 2025 et à Bruxelles pour les dons faits depuis le 1er janvier 2026 ; un don plus ancien garde le délai de 3 ans qui s'appliquait quand il a été fait.
 
-**La donation enregistrée.** On fait enregistrer le pacte adjoint auprès de l'administration, ou on passe par un acte notarié, qui est de toute façon enregistré. On paie alors des **droits de donation** : **3 %** en ligne directe et entre partenaires (3,3 % en Wallonie), **7 %** pour les autres (5,5 % en Wallonie). En échange, plus aucun risque : la donation est définitive, quelle que soit la date du décès du donateur.
+**La donation enregistrée.** On fait enregistrer le pacte adjoint auprès de l'administration, ou on passe par un acte notarié, qui est de toute façon enregistré. On paie alors des **droits de donation** : **3 %** en ligne directe et entre partenaires (3,3 % en Wallonie), **7 %** pour toutes les autres personnes (5,5 % en Wallonie). En échange, plus aucun risque : la donation est définitive, quelle que soit la date du décès du donateur.
 
 | | Don non enregistré | Donation enregistrée |
 | --- | --- | --- |
 | Comment | Virement + pacte adjoint | Enregistrement du pacte adjoint ou acte notarié |
 | Ce que ça coûte | 0 % | 3 % en ligne directe et entre partenaires (3,3 % en W), 7 % pour les autres (5,5 % en W) |
-| Le risque | Réintégré dans la succession si décès dans les 3 ans (5 ans en W) | Aucun |
+| Le risque | Réintégré dans la succession si décès dans les 5 ans (3 ans pour un don plus ancien fait à Bruxelles avant 2026 ou en Flandre avant 2025) | Aucun |
 
 Un détour a longtemps été populaire : faire signer la donation devant un notaire néerlandais, ce qu'on appelait la « route du fromage », pour éviter l'enregistrement en Belgique. Depuis fin 2020, une donation notariée faite à l'étranger doit elle aussi être enregistrée en Belgique.
 
@@ -53,7 +59,7 @@ Un détour a longtemps été populaire : faire signer la donation devant un nota
 
 Pour une maison, un appartement ou un terrain, il n'y a qu'une voie : l'**acte notarié**. → [[notaire-acte-authentique]]
 
-Les droits de donation immobiliers ne sont pas à taux fixe : ils sont **progressifs par tranches**, comme les droits de succession, mais plus doux. Un tarif préférentiel s'applique en ligne directe et entre partenaires, de 3 % à 27 % selon les Régions et les tranches.
+Les droits de donation immobiliers ne sont pas à taux fixe : ils sont **progressifs par tranches**, comme les droits de succession, mais plus doux. Un tarif préférentiel s'applique en ligne directe et entre partenaires (époux et cohabitants légaux) : 3 % jusqu'à 150 000 €, puis 9 %, 18 % et 27 % au-delà de 450 000 €. Pour les autres personnes, les tranches vont de 10 % à 40 %. En 2026, ces barèmes sont les mêmes dans les trois Régions ; la Wallonie a annoncé une baisse pour 2028.
 
 Une règle d'étalement compte beaucoup. Les donations immobilières faites sur **3 ans** sont additionnées pour appliquer les tranches. Une fois ce délai écoulé, une nouvelle donation « remet les compteurs à zéro » et repart dans les tranches basses. C'est pourquoi on étale souvent une grosse transmission en plusieurs donations espacées.
 
@@ -82,4 +88,4 @@ Le **don non enregistré** n'est pas illégal ni caché : c'est une donation par
 
 ## Nature des chiffres de cette page
 
-🔴 Les droits de donation sur les biens meubles (3 % en ligne directe et entre partenaires, 7 % pour les autres, 3,3 % et 5,5 % en Wallonie), la fourchette de 3 % à 27 % pour l'immobilier, le délai de rappel de 3 ans (5 ans en Wallonie depuis 2022), l'étalement sur 3 ans pour l'immobilier et l'obligation d'enregistrer les donations faites à l'étranger depuis fin 2020 sont des règles régionales valables en 2026. Les taux de 30 % et de 55 à 80 % pour les successions viennent de la fiche [[droits-de-succession]].
+🔴 Les droits de donation sur les biens meubles (3 % en ligne directe et entre partenaires, 7 % pour les autres, 3,3 % et 5,5 % en Wallonie), les tranches de 3 % à 27 % pour l'immobilier en ligne directe (10 % à 40 % pour les autres), le délai de rappel de 5 ans (Wallonie depuis 2022, Flandre depuis 2025, Bruxelles depuis 2026), l'étalement sur 3 ans pour l'immobilier et l'obligation d'enregistrer les donations faites à l'étranger depuis fin 2020 sont des règles régionales valables en 2026. Les taux de 30 % et de 55 à 80 % pour les successions viennent de la fiche [[droits-de-succession]].

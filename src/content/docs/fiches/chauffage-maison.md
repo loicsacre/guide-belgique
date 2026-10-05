@@ -87,7 +87,7 @@ Bien régler ton chauffage fait plus pour la facture que n'importe quel gadget.
 
 Dans la maison de 1972 que Noé (exemple **fictif**) vient d'acheter, la chaudière gaz atmosphérique date de 1998. Elle fonctionne, mais le certificat PEB la classe « non condensation, rendement médiocre », et son dernier entretien remonte à 2021, donc hors du délai wallon de 3 ans.
 
-Il la fait d'abord entretenir, pour 140 €, afin de passer l'hiver en sécurité. Puis il compare : une chaudière à condensation coûte 4 500 € posée, une pompe à chaleur 14 000 € avant primes. Comme il doit d'abord isoler le toit, il choisit la chaudière à condensation maintenant, dimensionnée pour la maison **après** isolation. Il réserve la pompe à chaleur pour dans dix ans, quand les radiateurs seront remplacés. → [[ordre-des-travaux]]
+Il la fait d'abord entretenir, pour 140 €, afin de passer l'hiver en sécurité. Puis il compare : une chaudière à condensation coûte 4 500 € posée, une pompe à chaleur 14 000 € avant primes. Comme il doit d'abord isoler le toit puis les murs, il garde la vieille chaudière, entretenue, et réserve la pompe à chaleur pour la fin de son plan, une fois les murs isolés. Si la chaudière lâche avant, il prendra une chaudière à condensation dimensionnée pour la maison **après** isolation. → [[ordre-des-travaux]]
 
 ## Ce que ça change pour toi
 

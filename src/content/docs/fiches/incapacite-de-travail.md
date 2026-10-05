@@ -6,14 +6,14 @@ level: utile
 nature: mixte
 valid_for: "principes ; pourcentages indicatifs 2026"
 scope: [federal]
-status: relecture
+status: publie
 tags: [maladie, salaire garanti, mutualité, invalidité, certificat médical]
 organisme: "Mutualité, INAMI"
 short: "Malade, tu touches d'abord ton salaire garanti par l'employeur (un mois pour un employé), puis des indemnités de ta mutualité (≈ 60 % du brut plafonné) ; après un an, on parle d'invalidité."
 aliases: [salaire garanti, certificat médical, indemnités de maladie, invalidité, incapacité primaire, médecin-conseil, reprise progressive]
 prerequisites: [mutualite, emploi-salarie]
 related: [securite-sociale, assurance-hospitalisation, chomage, fiche-de-paie, pension, independant]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: INAMI — Incapacité de travail
     url: https://www.inami.fgov.be/fr
@@ -21,6 +21,15 @@ sources:
   - title: SPF Emploi — Incapacité de travail
     url: https://emploi.belgique.be/fr
     org: SPF Emploi, Travail et Concertation sociale
+  - title: "Incapacité de travail pour cause de maladie ou d'accident : 3 nouvelles mesures"
+    url: https://blog.forumforthefuture.be/fr/article/incapacite-de-travail-pour-cause-de-maladie-ou-daccident-3-nouvelles-mesures/17080
+    org: Forum for the Future
+  - title: "Travail et maladie : depuis le 1er janvier 2026, tout ça c'est fini"
+    url: https://www.ucm.be/actualites/travail-et-maladie-depuis-le-1er-janvier-2026-tout-ca-cest-fini
+    org: UCM
+  - title: "Certificat médical : durcissement des règles dès 2026"
+    url: https://www.securex.be/fr/lex4you/employeur/actualites/certificat-medical-durcissement-des-regles-des-2026
+    org: Securex
 sidebar:
   order: 5
 ---
@@ -58,7 +67,7 @@ Les démarches sont simples, mais les délais sont courts : mieux vaut ne pas le
 ## Les situations qui changent la règle
 
 :::caution[Dépend de ta situation]
-- **Un seul jour d'absence.** Depuis 2024, tu n'as pas besoin de certificat pour un jour d'absence, trois fois par an. Les PME de moins de 50 travailleurs peuvent toutefois y déroger.
+- **Un seul jour d'absence.** Depuis fin 2022, tu peux être dispensé de certificat pour une absence d'un seul jour ; depuis le 1er janvier 2026, c'est **deux fois par année civile** (c'était trois auparavant). Tu dois quand même prévenir ton employeur tout de suite. Une entreprise qui occupe **moins de 50 travailleurs** au 1er janvier peut toutefois écarter cette dispense dans son règlement de travail, et exiger un certificat dès le premier jour.
 - **Une rechute.** Si tu retombes malade dans les 14 jours qui suivent ta reprise, cela ne rouvre pas une nouvelle période de salaire garanti.
 - **Les indépendants.** Ils ont leur propre régime : un délai de carence d'une semaine, pendant lequel rien n'est versé, puis une indemnité forfaitaire. → [[independant]]
 - **Un accident du travail**, ou sur le chemin du travail. Ce n'est pas la mutualité qui intervient, mais l'assureur accidents du travail de ton employeur.
@@ -78,4 +87,4 @@ Le **salaire garanti** et les **indemnités** ne viennent pas du même payeur : 
 
 ## Nature des chiffres de cette page
 
-🔴 Les 30 jours de salaire garanti, le passage en invalidité après un an, la dispense de certificat pour un jour d'absence trois fois par an, la règle des 14 jours pour une rechute et la carence d'une semaine des indépendants sont des règles officielles. 🟠 Les 60 % d'indemnités, les taux d'invalidité de 65 %, 55 % et 40 %, et le délai de 48 heures pour le certificat sont des ordres de grandeur ou des pratiques courantes, à vérifier auprès de ta mutualité et dans ton règlement de travail. 🔵 L'employé à 3 500 € brut et ses 2 100 € d'indemnités sont un exemple fictif.
+🔴 Les 30 jours de salaire garanti, le passage en invalidité après un an, la dispense de certificat pour un jour d'absence deux fois par an depuis 2026 (sauf si une entreprise de moins de 50 travailleurs l'écarte), la règle des 14 jours pour une rechute et la carence d'une semaine des indépendants sont des règles officielles. 🟠 Les 60 % d'indemnités, les taux d'invalidité de 65 %, 55 % et 40 %, et le délai de 48 heures pour le certificat sont des ordres de grandeur ou des pratiques courantes, à vérifier auprès de ta mutualité et dans ton règlement de travail. 🔵 L'employé à 3 500 € brut et ses 2 100 € d'indemnités sont un exemple fictif.

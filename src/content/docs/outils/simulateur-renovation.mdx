@@ -1,20 +1,21 @@
 ---
 title: Simuler un budget de rénovation
 kind: outil
-description: "Postes de travaux, TVA 6 % ou 21 %, réserve d'imprévus, primes wallonnes (base × coefficient de revenus, plafond), prêt à 0 % et crédit : ce qu'il faut avancer et ce qu'il reste après primes."
+description: "Postes de travaux, TVA 6 % ou 21 %, réserve d'imprévus, aide wallonne (Rénopack depuis octobre 2026, ou anciennes primes Habitation), prêt à 0 % et crédit : ce qu'il faut avancer et ce qu'il reste après aide."
 notions: [budget-renovation, primes-renovation, ordre-des-travaux, tva, audit-logement, isolation-maison, chassis-vitrage, pompe-a-chaleur, credit-consommation]
 sidebar:
   order: 8
 ---
 import Tool from '../../../components/tools/ToolRenovation.astro';
 
-Trois choses que ce simulateur rend visibles : la **TVA à 6 %** pèse plus que n'importe quelle prime ; les **primes dépendent des revenus** (du simple au sextuple) et sont **plafonnées** à une part de la facture ; et elles arrivent **après** les travaux, donc il faut tout avancer. Les montants de base encodés sont ceux du régime wallon 🔴 en vigueur jusqu'au 30 septembre 2026 ; vérifie-les à la date de ta demande.
+Trois choses que ce simulateur rend visibles : la **TVA à 6 %** pèse souvent plus que l'aide régionale ; l'**aide dépend des revenus** et elle est **plafonnée** ; et les primes classiques arrivent **après** les travaux, donc il faut tout avancer. En Wallonie, deux régimes sont encodés 🔴 : le **Rénopack**, en vigueur depuis le 1er octobre 2026 (un prêt à 0 % dont 50, 40 ou 15 % ne sont pas à rembourser selon ta catégorie de revenus), et les **primes Habitation**, pour les dossiers introduits jusqu'au 30 septembre 2026. Vérifie les montants à la date de ta demande.
 
 <Tool />
 
 ## Repères
 
 - **Réserve 10 à 15 %** : les dépassements de 20 à 30 % sont la norme en rénovation ([[budget-renovation]]).
-- **Prime = base × coefficient, plafonnée à 70 % (R1–R4) ou 50 % (R5)** de la facture TVAC du poste ([[primes-renovation]]) ; l'[[audit-logement]] est le préalable en Wallonie.
-- **Ordre** : un bouquet complet à la fois ; les primes du premier financent le second ([[ordre-des-travaux]]).
+- **Rénopack** (depuis le 01/10/2026) : prêt à 0 % jusqu'à 75 000 € pour une maison, dont une part n'est pas à rembourser (C1 50 %, C2 40 %, C3 15 %, C4 aucune), à condition d'un saut de classe PEB et d'un [[audit-logement]] de moins d'un an ([[primes-renovation]]).
+- **Anciennes primes Habitation** (dossiers jusqu'au 30/09/2026) : base × coefficient, plafonnée à 70 % (R1–R2) ou 50 % (R3–R4) de la facture TVAC du poste.
+- **Ordre** : un bouquet complet à la fois ([[ordre-des-travaux]]).
 - Un devis annoté pour nourrir les postes : [Lire un devis](../../documents/devis-renovation/) ; le récit complet : [Je rénove ma maison](../../situations/renover-ma-maison/).

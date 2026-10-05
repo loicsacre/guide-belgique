@@ -68,6 +68,12 @@ etapes:
   - ipp
   - personne-a-charge
 sources:
+- title: "Calcul et tarifs des droits de succession en Wallonie"
+  url: https://www.notaire.be/heritage/taux-impot-succession/droits-de-succession-wallonie
+  org: Fednot
+- title: "Calcul et tarifs des droits de succession à Bruxelles"
+  url: https://www.notaire.be/heritage/taux-impot-succession/droits-de-succession-bruxelles
+  org: Fednot
 - title: Notaire.be — Couple, achat à deux, succession
   url: https://www.notaire.be/
   org: Fednot
@@ -77,7 +83,10 @@ sources:
 - title: Comment sont calculés les droits de succession en Belgique ?
   url: https://www.test-achats.be/famille-prive/heritage/dossier/calcul-droits-de-succession-belgique
   org: Test Achats
-last_verified: '2026-10-02'
+- title: Les conséquences fiscales du mariage et de la cohabitation en Belgique
+  url: https://www.test-achats.be/argent/impots/dossier/le-mariage-et-ses-consequences-fiscales-1
+  org: Test-Achats
+last_verified: 2026-10-05
 ---
 Vous emménagez ensemble. Vous n'avez rien signé, et c'est très bien comme ça : vous vous aimez, vous partagez un loyer, la vie continue. Cette histoire raconte ce qui change quand même, tout de suite et sans que personne vous l'ait dit, puis ce qui changerait si vous signiez l'un des deux papiers possibles.
 
@@ -107,7 +116,7 @@ Côté assurances, un seul contrat suffit désormais pour le ménage : une **RC 
 
 Trois situations où la « cohabitation de fait » ne vous protège **pas du tout**, même après vingt ans :
 
-**Si Bob meurt.** Alice n'hérite de rien : ni du compte, ni de la voiture, ni de sa part du logement s'ils l'avaient acheté. Tout va aux enfants de Bob, ou à ses parents. Si Bob avait fait un testament en sa faveur, Alice recevrait au mieux la moitié (l'autre moitié est réservée aux enfants) et paierait des droits de succession au tarif « étranger » : jusqu'à 80 % en Wallonie et à Bruxelles (sauf aménagements régionaux pour les cohabitants de fait sous conditions ; la Flandre les assimile après un an de vie commune). Voir [[succession]] et [[droits-de-succession]].
+**Si Bob meurt.** Alice n'hérite de rien : ni du compte, ni de la voiture, ni de sa part du logement s'ils l'avaient acheté. Tout va aux enfants de Bob, ou à ses parents. Si Bob avait fait un testament en sa faveur, Alice recevrait au mieux la moitié (l'autre moitié est réservée aux enfants) et, en Wallonie, paierait des droits de succession au tarif « entre étrangers », jusqu'à 80 %. À Bruxelles et en Flandre, elle paierait le tarif des époux, à condition d'avoir formé avec Bob un ménage commun pendant au moins un an sans interruption avant le décès. Voir [[succession]] et [[droits-de-succession]].
 
 **Si vous vous séparez.** Rien à partager par la loi : chacun reprend ce qui est à son nom. Celui qui a réduit son temps de travail pour les enfants ou payé les travaux chez l'autre n'a aucun recours automatique.
 
@@ -115,7 +124,7 @@ Trois situations où la « cohabitation de fait » ne vous protège **pas du tou
 
 ## 4. Les deux papiers possibles
 
-**La cohabitation légale.** Une déclaration commune à la commune, dix minutes, gratuite. Elle apporte : la **protection du logement familial** (le partenaire propriétaire ne peut ni le vendre ni le mettre dehors sans l'accord de l'autre), une **déclaration fiscale commune** (souvent avantageuse quand les revenus sont inégaux, grâce au quotient conjugal), le **tarif successoral** des partenaires et, sans testament, l'usufruit du logement familial et de ses meubles. Elle n'apporte **pas** : la pension de survie, un héritage au-delà de ce logement, une protection en cas de rupture. Et elle se termine par simple déclaration de l'un des deux, sans l'accord de l'autre. Voir [[formes-de-couple]].
+**La cohabitation légale.** Une déclaration commune à la commune, dix minutes, gratuite. Elle apporte : la **protection du logement familial** (le partenaire propriétaire ne peut ni le vendre ni le mettre dehors sans l'accord de l'autre), une **déclaration fiscale commune**, souvent avantageuse quand les revenus sont inégaux grâce au quotient conjugal (elle commence l'année qui suit : l'année de la déclaration, chacun déclare encore séparément), le **tarif successoral** des partenaires et, sans testament, l'usufruit du logement familial et de ses meubles. Elle n'apporte **pas** : la pension de survie, un héritage au-delà de ce logement, une protection en cas de rupture. Et elle se termine par simple déclaration de l'un des deux, sans l'accord de l'autre. Voir [[formes-de-couple]].
 
 **Le mariage.** Tout ce qui précède, plus : un héritage complet pour le survivant (l'usufruit de toute la succession, la pleine propriété s'il n'y a pas d'enfants), la **pension de survie**, le devoir de secours, et un **régime matrimonial** : sans contrat, tout ce qui est gagné ou acheté pendant le mariage est commun, à 50/50, même si un seul travaille. Un contrat de mariage (chez le notaire, quelques centaines d'euros) permet de choisir autrement, par exemple une séparation de biens avec une clause de participation aux acquêts. Voir [[regime-matrimonial]].
 
@@ -147,4 +156,4 @@ Voir [[droits-reels]], [[quotite-emprunt]], [[assurance-solde-restant-du]], et l
 
 ## Nature des chiffres de cette page
 
-🔴 **Règles légales** : effets civils des trois statuts, réserve des enfants, tarifs successoraux régionaux (2026), régime légal. 🟠 **Repères** : écart de taux d'allocation, avantage du quotient conjugal. 🔵 **Exemple fictif** : revenus d'Alice et Bob, apports.
+🔴 **Règles légales** : effets civils des trois statuts, déclaration commune à partir de l'année qui suit le mariage ou la cohabitation légale, réserve des enfants, tarifs successoraux régionaux (2026), régime légal. 🟠 **Repères** : écart de taux d'allocation, avantage du quotient conjugal. 🔵 **Exemple fictif** : revenus d'Alice et Bob, apports.

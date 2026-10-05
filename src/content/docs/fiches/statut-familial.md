@@ -12,7 +12,7 @@ short: "Le même couple est « isolés » pour le fisc, « cohabitants » pour l
 aliases: [composition de ménage, isolé, cohabitant, chef de ménage, taux cohabitant, quotient conjugal, ménage de fait, personne seule]
 prerequisites: [domicile, formes-de-couple]
 related: [chomage, incapacite-de-travail, ipp, personne-a-charge, pension, precompte-professionnel, mutualite, annee-revenus-exercice]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: ONEM — Situation familiale
     url: https://www.onem.be/fr
@@ -20,6 +20,15 @@ sources:
   - title: SPF Finances — Particuliers
     url: https://finances.belgium.be/fr/particuliers
     org: SPF Finances
+  - title: Votre situation familiale
+    url: https://www.wikifin.be/fr/impots-emploi-et-revenus/declaration-dimpots/votre-situation-familiale/votre-situation-familiale
+    org: Wikifin (FSMA)
+  - title: Les conséquences fiscales du mariage et de la cohabitation en Belgique
+    url: https://www.test-achats.be/argent/impots/dossier/le-mariage-et-ses-consequences-fiscales-1
+    org: Test-Achats
+  - title: La 1re déclaration fiscale après votre séparation
+    url: https://www.belfius.be/retail/fr/moments-cles/impots/fiscalite-quotidien/famille/separation-divorce/Premiere-declaration-fiscale/index.aspx
+    org: Belfius
 sidebar:
   order: 5
 ---
@@ -54,7 +63,7 @@ Le contraste est frappant. Pour le fisc, Alice est seule. Pour la sécurité soc
 
 ## Si Alice et Bob signent une cohabitation légale, ou se marient
 
-La **cohabitation légale** est une déclaration faite à la commune, qui donne au couple un statut juridique sans mariage. Pour Alice et Bob, elle change surtout la fiscalité : ils remplissent une déclaration commune, ce qui est souvent avantageux quand leurs revenus sont inégaux. En revanche, rien ne change à l'ONEM ni à la mutualité, qui les considéraient déjà comme cohabitants. → [[formes-de-couple]]
+La **cohabitation légale** est une déclaration faite à la commune, qui donne au couple un statut juridique sans mariage. Pour Alice et Bob, elle change surtout la fiscalité : dès l'année qui suit leur déclaration (l'année même, chacun déclare encore séparément), ils remplissent une déclaration commune, ce qui est souvent avantageux quand leurs revenus sont inégaux. En revanche, rien ne change à l'ONEM ni à la mutualité, qui les considéraient déjà comme cohabitants. → [[formes-de-couple]]
 
 Le **mariage** ajoute encore deux effets : la possibilité d'une pension au taux ménage, et la pension de survie, versée au conjoint qui reste après un décès.
 
@@ -76,7 +85,7 @@ Attention au piège : « isolé » n'a pas le même sens pour le fisc et pour la
 
 **Une colocation** forme un ménage pour la commune. Pour l'ONEM, en revanche, des colocataires peuvent être considérés comme cohabitants ou non, selon la façon dont ils partagent les charges. En cas de doute, demande une décision à ton organisme de paiement plutôt que de deviner.
 
-**Pour l'impôt, une date compte** : c'est ta situation civile au 1er janvier de l'exercice d'imposition qui fixe ton régime fiscal pour toute l'année de revenus qui vient de s'écouler. → [[annee-revenus-exercice]]
+**Pour l'impôt, deux règles de date se croisent.** Tes **personnes à charge** et ta situation de famille s'apprécient au 1er janvier de l'exercice d'imposition, c'est-à-dire au 1er janvier qui suit l'année des revenus : un enfant né le 20 décembre 2025 est à ta charge pour toute l'année 2025. Le **couple fiscal**, lui, suit une règle à part : l'année du mariage ou de la déclaration de cohabitation légale, chacun remplit encore sa propre déclaration, comme un isolé ; la déclaration commune ne commence que l'année suivante. Même logique à la fin : l'année du divorce ou de la fin de la cohabitation légale, chacun déclare séparément, alors qu'après une séparation de fait le couple déclare encore ensemble pour l'année de la séparation, et séparément à partir de l'année qui suit. → [[annee-revenus-exercice]]
 
 **Après une séparation**, change ton domicile rapidement. Tant que vous restez inscrits à la même adresse, la commune, et donc les autres systèmes, continuent de vous voir comme un seul ménage. → [[domicile]]
 
@@ -90,4 +99,4 @@ Trois fiches se partagent ce sujet. Les [[formes-de-couple]] décrivent les stat
 
 ## Nature des chiffres de cette page
 
-🔴 Le quotient conjugal de 30 % (plafonné), le taux ménage de pension de 75 % et la règle du 1er janvier de l'exercice sont des règles officielles. 🟠 Les taux d'invalidité d'environ 40 %, 55 % et 65 % sont des ordres de grandeur, à vérifier auprès de ta mutualité. 🔵 Alice et Bob sont un exemple fictif.
+🔴 Le quotient conjugal de 30 % (plafonné), le taux ménage de pension de 75 %, la règle du 1er janvier de l'exercice pour les personnes à charge et l'imposition séparée l'année du mariage, de la cohabitation légale ou du divorce sont des règles officielles. 🟠 Les taux d'invalidité d'environ 40 %, 55 % et 65 % sont des ordres de grandeur, à vérifier auprès de ta mutualité. 🔵 Alice et Bob sont un exemple fictif.

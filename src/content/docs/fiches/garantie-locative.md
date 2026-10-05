@@ -13,8 +13,11 @@ short: "La somme (2 ou 3 mois de loyer selon la Région) que tu bloques sur un c
 aliases: [caution locative, compte bloqué, e-DEPO, garantie bancaire, état des lieux d'entrée, état des lieux de sortie, libération de la garantie]
 prerequisites: [bail]
 related: [compte-epargne, assurance-habitation, indexation-loyer]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Garantie locative (Région de Bruxelles-Capitale)"
+    url: https://be.brussels/fr/logement/location/bail-dhabitation/garantie-locative
+    org: be.brussels
   - title: Garantie locative en Belgique — particularités par Région
     url: https://www.test-achats.be/maison-energie/location/dossier/garantie-locative
     org: Test Achats
@@ -46,7 +49,7 @@ Le montant de la garantie est plafonné par chaque Région. Il se calcule sur le
 | Garantie via le CPAS | 3 mois | 2 mois | 3 mois |
 :::
 
-Le **compte bloqué** est la forme la plus courante : ta banque ouvre un compte à ton nom, tu y verses la somme, et elle reste bloquée jusqu'à la fin du bail. L'**e-DEPO** est la même idée, mais l'argent va à la Caisse des dépôts, qui dépend du SPF Finances. Avec une **garantie bancaire**, c'est la banque qui se porte garante et tu lui rembourses la somme progressivement. Enfin, le **CPAS**, le centre public d'action sociale de ta commune, peut se porter garant si tu n'as pas les moyens. En Wallonie, la garantie peut aussi être constituée par mensualités.
+Le **compte bloqué** est la forme la plus courante : ta banque ouvre un compte à ton nom, tu y verses la somme, et elle reste bloquée jusqu'à la fin du bail. L'**e-DEPO** est la même idée, mais l'argent va à la Caisse des dépôts, qui dépend du SPF Finances. Avec une **garantie bancaire**, c'est la banque qui se porte garante et tu lui rembourses la somme progressivement. Enfin, le **CPAS**, le centre public d'action sociale de ta commune, peut se porter garant si tu n'as pas les moyens. En Wallonie, la garantie peut aussi être constituée par mensualités. À Bruxelles, pour les baux conclus ou renouvelés depuis le 1er novembre 2024, le plafond est de 2 mois de loyer quelle que soit la forme, y compris la garantie bancaire remboursée par mensualités (en 3 ans au plus) ou celle du CPAS.
 
 Prenons un exemple **fictif** : un loyer de 800 € hors charges. Sur un compte bloqué, la garantie maximale est de 1 600 € en Wallonie ou à Bruxelles, et de 2 400 € en Flandre.
 

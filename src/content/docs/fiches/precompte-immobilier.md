@@ -13,8 +13,14 @@ short: "L'impôt annuel que paie tout propriétaire (ou usufruitier) sur son bie
 aliases: [PrI, onroerende voorheffing, impôt foncier, taxe foncière, additionnels provinciaux, réduction précompte immobilier]
 prerequisites: [revenu-cadastral, impot-taxe-cotisation]
 related: [precompte-professionnel, centimes-additionnels, cout-reel-achat, droits-reels, personne-a-charge]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Précompte immobilier en Belgique : à combien s'élève cette taxe ?"
+    url: https://www.simulationpret.be/articles/precompte-immobilier
+    org: Simulationpret.be
+  - title: "Précompte immobilier 2026 : taux et centimes additionnels (Région de Bruxelles-Capitale)"
+    url: https://admin.be.brussels/sites/default/files/2026-03/PRI_OV_2026_1.pdf
+    org: Bruxelles Fiscalité
   - title: Précompte immobilier en Wallonie
     url: https://www.wallonie.be/sites/default/files/2021-10/precompte_immobilier.pdf
     org: SPW
@@ -47,12 +53,12 @@ Tout part du [[revenu-cadastral]] (RC), ce loyer annuel théorique que le fisc a
 RC indexé
   × taux régional de base      (Wallonie 1,25 % · Bruxelles 1,25 % · Flandre 3,97 %)
   = précompte de base
-  × (1 + centimes additionnels provinciaux + communaux)   ← souvent × 3 à × 5
+  × (1 + centimes additionnels ÷ 100)   ← 100 centimes = une fois la base
   − réductions éventuelles
   = précompte immobilier à payer
 ```
 
-On cite souvent un multiplicateur de 3 à 5. Mais il dépend beaucoup de la Région et de la commune : dans l'exemple wallon ci-dessous, où le taux de base est bas, il est bien plus élevé.
+Le mot « centimes » trompe : 100 centimes additionnels ne valent pas un euro, mais **une fois le montant de base**. Une commune qui vote 3 000 centimes ajoute donc 30 fois le précompte de base. Comme les communes en votent des milliers, le multiplicateur est bien plus élevé qu'on ne l'imagine. À Bruxelles en 2026, l'agglomération ajoute 989 centimes et les communes de 2 700 (Woluwe-Saint-Pierre) à 4 191 (Schaerbeek) : le montant de base est multiplié par 38 à 53 environ. En Wallonie, où le taux de base est aussi de 1,25 %, la province et la commune ajoutent ensemble, selon l'endroit, de l'ordre de 2 500 à plus de 4 500 centimes. En Flandre, le taux de base est trois fois plus élevé (3,97 %), et les additionnels sont donc plus bas : de l'ordre de 750 à 1 500 centimes, soit un multiplicateur d'environ 8 à 16. Au bout du compte, quelle que soit la Région, le précompte représente, selon la commune, d'un tiers aux deux tiers environ du RC indexé.
 
 ## Un exemple en Wallonie
 
@@ -60,7 +66,7 @@ Prenons une maison **fictive** avec un RC non indexé de 900 €.
 
 1. Une fois indexé, le RC vaut environ 1 950 €.
 2. Le taux régional wallon de 1,25 % donne un précompte de base d'environ 24,4 €.
-3. La province et la commune ajoutent ensemble environ 2 600 centimes additionnels, c'est-à-dire 26 fois le montant de base. On multiplie donc par 27 (la base elle-même plus ses 26 fois).
+3. La province et la commune ajoutent ensemble environ 2 600 centimes additionnels (une commune aux additionnels plutôt bas), c'est-à-dire 26 fois le montant de base. On multiplie donc par 27 (la base elle-même plus ses 26 fois).
 4. Résultat : un précompte d'environ **660 €** par an.
 
 La même maison, avec le même RC, peut coûter 500 € ou 900 € dans une autre commune : tout dépend des additionnels votés localement.
@@ -104,4 +110,4 @@ Malgré son nom, le précompte immobilier n'a rien à voir avec le [[precompte-p
 
 ## Nature des chiffres de cette page
 
-🔴 Les taux de base régionaux (1,25 % en Wallonie et à Bruxelles, 3,97 % en Flandre), la date du 1er janvier, le délai de paiement de 2 mois et les conditions des réductions (2 enfants, 745 €, −25 %, 180 jours) sont des règles officielles, valables en 2026 ; les additionnels varient d'une commune à l'autre. 🟠 Le multiplicateur « × 3 à × 5 » est un ordre de grandeur. 🔵 La maison au RC de 900 €, ses 2 600 centimes additionnels et son précompte d'environ 660 € sont un exemple fictif.
+🔴 Les taux de base régionaux (1,25 % en Wallonie et à Bruxelles, 3,97 % en Flandre), la date du 1er janvier, le délai de paiement de 2 mois et les conditions des réductions (2 enfants, 745 €, −25 %, 180 jours) sont des règles officielles, valables en 2026 ; les additionnels varient d'une commune à l'autre. 🔴 Les centimes bruxellois de 2026 (989 pour l'agglomération, 2 700 à 4 191 pour les communes) sont des taux officiels. 🟠 Les fourchettes de centimes en Wallonie (2 500 à plus de 4 500) et en Flandre (750 à 1 500), les multiplicateurs qui en découlent et la part d'un tiers aux deux tiers du RC indexé sont des ordres de grandeur. 🔵 La maison au RC de 900 €, ses 2 600 centimes additionnels et son précompte d'environ 660 € sont un exemple fictif.

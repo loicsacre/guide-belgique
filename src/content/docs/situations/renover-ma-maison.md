@@ -51,6 +51,12 @@ notions: []
 sidebar:
   order: 16
 sources:
+- title: 'Rénovation énergétique : les grandes lignes du futur régime de soutien sont connues'
+  url: https://www.wallonie.be/fr/actualites/renovation-energetique-les-grandes-lignes-du-futur-regime-de-soutien-sont-connues
+  org: Wallonie
+- title: 'ONSS — Avis aux entrepreneurs et commettants (article 30bis)'
+  url: https://www.securex.be/getattachment/d48fd558-b552-4733-b6c1-6c7a3b7437ae/Avis_aux_entrepreneurs_et_commettants_F.pdf?AddNoIndexHeader=False
+  org: ONSS (document hébergé par Securex)
 - title: 'Certinergie — Guide des primes Habitation en Wallonie'
   url: https://www.certinergie.be/fr/audit-logement-wallonie/guide-primes-habitation-wallonie
   org: Certinergie
@@ -66,11 +72,11 @@ sources:
 - title: 'SWCS — Rénopack et Rénoprêt'
   url: https://www.swcs.be/
   org: Société wallonne du crédit social
-last_verified: '2026-10-02'
+last_verified: '2026-10-05'
 ---
 Tu as le rapport d'audit sur la table et 🔵 48 pages qui disent, en substance : « tout est à faire, mais pas dans n'importe quel ordre ». Cette histoire prend la suite de [Je viens d'acheter ma première maison](../comprendre-ma-maison/) et raconte le premier bouquet de travaux de bout en bout : le plan, l'urbanisme, l'argent, les entreprises, le chantier, la réception. Elle est écrite pour la Wallonie, où les primes passent par l'audit ; à Bruxelles et en Flandre, les étapes sont les mêmes, les guichets changent.
 
-Cas fictif : la maison de 1972 de l'histoire précédente. Bouquet 1 de l'audit : toiture complète avec isolation, mise en conformité électrique, ventilation des pièces humides. Ménage en catégorie de revenus R2 (coefficient ×4).
+Cas fictif : la maison de 1972 de l'histoire précédente. Bouquet 1 de l'audit : toiture complète avec isolation, mise en conformité électrique, ventilation des pièces humides. Ménage en catégorie de revenus R2 (coefficient ×4) de l'ancien régime wallon des primes Habitation, sous lequel le dossier a été introduit, avant sa fin le 30 septembre 2026.
 
 ## 1. Le point de départ : ce que dit l'audit, et ce qu'il ne dit pas
 
@@ -112,24 +118,26 @@ Tu pars des repères de la fiche [[budget-renovation]] pour cadrer, et tu les re
 
 ### Les primes, calculées avant, encaissées après
 
-Avec le [simulateur de budget rénovation](../../outils/simulateur-renovation/), tu appliques la mécanique wallonne : **montant de base × coefficient de revenus, plafonné à 70 % de la facture** ([[primes-renovation]]).
+Avec le [simulateur de budget rénovation](../../outils/simulateur-renovation/), tu appliques la mécanique des primes Habitation wallonnes : **montant de base × coefficient de revenus, plafonné à 70 % de la facture** en catégorie R2 ([[primes-renovation]]).
 
 - Toiture : 110 m² × 20 € × 4 = 8 800 €, plafond 70 % de la part « isolation » de la facture (🔵 7 500 €) → **5 250 €**.
 - Électricité : 320 € × 4 = **1 280 €**.
-- Ventilation : montant de base × 4 → 🔵 **1 000 €**.
-- Audit : 110 € × 4 = **440 €**.
+- Ventilation : des extracteurs et des grilles ne sont pas une ventilation double flux, seule primée dans ce barème → **0 €**.
+- Audit : 76 € × 4 = **304 €**.
 
-Soit 🔵 **7 970 €**, qui arriveront 🟠 deux à six mois **après** l'introduction du dossier, lui-même introduit **après** les factures. Tu ne peux donc pas compter dessus pour payer le couvreur.
+Soit 🔵 **6 834 €**, qui arriveront 🟠 deux à six mois **après** l'introduction du dossier, lui-même introduit **après** les factures. Tu ne peux donc pas compter dessus pour payer le couvreur.
+
+Si tu lançais le même bouquet aujourd'hui, la logique serait différente. Depuis le 1er octobre 2026, la Wallonie ne verse plus de primes par travail : elle finance le projet par un **Rénopack**, un prêt à 0 % dont une partie n'est pas à rembourser (🔴 50, 40 ou 15 % selon tes revenus), sur un devis global, et seulement si les travaux font gagner au logement une classe PEB (de E vers C au moins, par exemple).
 
 ### Le montage
 
-Le calendrier de trésorerie, mois par mois, montre le trou : les gros paiements tombent entre le mois 4 et le mois 7, les primes au mois 10. D'où : 🔵 15 000 € d'épargne (en gardant 8 000 € de [[epargne-de-precaution]] intacts), un **Rénopack** à 0 % de la SWCS de 🔵 20 000 € sur 15 ans (111 €/mois), et un prêt rénovation bancaire de 🔵 9 500 € sur 5 ans que les primes rembourseront par anticipation dès leur arrivée. Si tu avais su tout cela au moment de l'achat, les travaux seraient entrés dans le [[credit-hypothecaire]], moins cher et plus long ; c'est la leçon que tu notes pour la prochaine fois ([[cout-reel-achat]]).
+Le calendrier de trésorerie, mois par mois, montre le trou : les gros paiements tombent entre le mois 4 et le mois 7, les primes au mois 10. D'où : 🔵 15 000 € d'épargne (en gardant 8 000 € de [[epargne-de-precaution]] intacts), un **Rénopack** à 0 % de la SWCS de 🔵 20 000 € sur 15 ans (111 €/mois), et un prêt rénovation bancaire de 🔵 9 500 € sur 5 ans que les primes rembourseront en grande partie, par anticipation, dès leur arrivée. Si tu avais su tout cela au moment de l'achat, les travaux seraient entrés dans le [[credit-hypothecaire]], moins cher et plus long ; c'est la leçon que tu notes pour la prochaine fois ([[cout-reel-achat]]).
 
 ## 5. Choisir les entreprises
 
 Tu écris un **cahier des charges** d'une page par métier (surfaces, R exigé, désamiantage par entreprise agréée, échafaudage inclus, évacuation incluse, fenêtre de toit, démarches de prime incluses) et tu le fais chiffrer par trois entreprises à chaque fois. Les devis reviennent incomparables : l'un oublie l'échafaudage, l'autre prévoit 18 cm au lieu de 22, le troisième « laisse l'évacuation au client ». Tu les remets dans le même tableau, poste par poste ([[devis-travaux]], [Lire un devis](../../documents/devis-renovation/)), et le « moins cher » remonte au-dessus de la médiane.
 
-Pour chaque entreprise retenue, vingt minutes de vérification ([[choisir-entrepreneur]]) : numéro d'entreprise **actif** avec le bon code d'activité à la Banque-Carrefour ([[bce-numero-entreprise]]), absence de **dettes** sociales et fiscales sur le service de retenue (sinon tu devrais retenir une partie du paiement toi-même), **attestations** de RC et de **décennale** (obligatoire pour le gros œuvre du toit), une **référence** visitée à deux rues de chez toi. Le couvreur le moins cher saute : société de huit mois, gérant d'une entreprise faillie l'an dernier, dette ONSS.
+Pour chaque entreprise retenue, vingt minutes de vérification ([[choisir-entrepreneur]]) : numéro d'entreprise **actif** avec le bon code d'activité à la Banque-Carrefour ([[bce-numero-entreprise]]), absence de **dettes** sociales et fiscales sur le service de retenue (un particulier qui rénove son logement n'a rien à retenir, mais une entreprise endettée risque de ne pas finir le chantier), **attestations** de RC et de **décennale** (obligatoire pour le gros œuvre du toit), une **référence** visitée à deux rues de chez toi. Le couvreur le moins cher saute : société de huit mois, gérant d'une entreprise faillie l'an dernier, dette ONSS.
 
 Les conditions que tu négocies : acompte **15 %** à la commande (au lieu de 30), tranches sur états d'avancement constatés ensemble, solde **15 jours après réception**, retenue de 5 % jusqu'à levée des réserves. Tout par virement, contre facture. Le devis signé est ton contrat ([[contrat]]).
 
@@ -150,7 +158,7 @@ Ensuite, les dossiers de primes en ligne, un par travail : devis, facture détai
 
 ## 8. Mesurer, et préparer la suite
 
-L'hiver suivant, tes relevés mensuels parlent : 🔵 22 000 kWh de gaz l'an dernier, 🔵 15 500 cette année, à météo comparable, et plus de buée au réveil. Le PEB théorique est passé à D ; ta facture a baissé de 🔵 650 €. Les primes sont arrivées au mois 10 et ont soldé le prêt bancaire. Le compte « maison » reçoit toujours ses 250 € par mois ([[entretien-maison]]), et le bouquet 2 (murs extérieurs, châssis nord) a maintenant une date : dans deux ans, quand l'épargne et le prochain Rénopack le permettront, avec un architecte cette fois, parce que la façade à rue est à l'alignement.
+L'hiver suivant, tes relevés mensuels parlent : 🔵 22 000 kWh de gaz l'an dernier, 🔵 15 500 cette année, à météo comparable, et plus de buée au réveil. Le PEB théorique est passé à D ; ta facture a baissé de 🔵 650 €. Les primes sont arrivées au mois 10 et ont remboursé l'essentiel du prêt bancaire. Le compte « maison » reçoit toujours ses 250 € par mois ([[entretien-maison]]), et le bouquet 2 (murs extérieurs, châssis nord) a maintenant une date : dans deux ans, avec un architecte cette fois, parce que la façade à rue est à l'alignement. Reste à le financer : ta maison, désormais en D, n'est plus dans la cible du nouveau Rénopack, réservé aux logements classés E, F ou G ; tu vérifieras auprès de la SWCS si une dérogation est possible ; sinon, l'épargne fera le travail.
 
 ## En bref
 
@@ -160,6 +168,6 @@ L'hiver suivant, tes relevés mensuels parlent : 🔵 22 000 kWh de gaz l'an der
 
 ## Nature des chiffres de cette page
 
-- 🔴 TVA 6 %, mécanique et montants de base des primes Habitation wallonnes (régime en vigueur jusqu'au 30 septembre 2026), décennale obligatoire, dispenses de permis : règles légales datées.
+- 🔴 TVA 6 %, mécanique et montants de base des primes Habitation wallonnes (régime clos le 30 septembre 2026), parts non remboursables du Rénopack et saut de classe PEB (régime en vigueur depuis le 1er octobre 2026), décennale obligatoire, dispenses de permis : règles légales datées.
 - 🟠 Délais de versement des primes, niveaux d'acompte et de retenue : usages.
 - 🔵 Tous les devis, primes, consommations et montages financiers de cette page sont inventés ; ils illustrent la mécanique, pas des tarifs.

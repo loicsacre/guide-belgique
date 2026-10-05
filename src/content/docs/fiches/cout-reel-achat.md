@@ -13,8 +13,14 @@ short: "Le prix affiché n'est jamais ce que tu paies : il faut ajouter droits d
 aliases: [frais de notaire, frais d'acquisition, frais d'achat, coût total, charges du propriétaire]
 prerequisites: [louer-vs-acheter, credit-hypothecaire]
 related: [droits-enregistrement, notaire-acte-authentique, hypotheque, quotite-emprunt, precompte-immobilier, assurance-habitation, diagnostic-maison, budget-renovation, entretien-maison]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Les frais liés au crédit hypothécaire"
+    url: https://www.notaire.be/immobilier/acheter-et-vendre-un-bien-immobilier/les-frais-lies-lachat/les-frais-lies-au-credit-hypothecaire
+    org: Fednot
+  - title: "Achat immobilier : droits d'enregistrement ou TVA ?"
+    url: https://www.notaire.be/actualites/achat-immobilier-droits-denregistrement-ou-tva
+    org: Fednot
   - title: Droits d'enregistrement à l'achat d'un logement en Belgique
     url: https://www.test-achats.be/argent/impots/dossier/droit-d-enregistrement
     org: Test Achats
@@ -52,7 +58,7 @@ Lis-le de haut en bas. Les **droits d'enregistrement** sont la plus grosse ligne
 
 Viennent ensuite les **honoraires du notaire**, fixés par un barème légal dégressif (le pourcentage baisse quand le prix monte), et les **frais d'acte** : recherches administratives, TVA sur les honoraires. → [[notaire-acte-authentique]]
 
-Le **crédit** a ses propres frais, parce qu'il passe lui aussi par un acte notarié. La banque exige une [[hypotheque]], un droit sur ton logement qui lui permet de le faire vendre si tu ne rembourses plus. Il faut payer un droit d'enregistrement de 1 % sur cette hypothèque, son inscription dans le registre public et les honoraires du notaire. S'y ajoutent les frais de dossier de la banque et l'expertise du bien.
+Le **crédit** a ses propres frais, parce qu'il passe lui aussi par un acte notarié. La banque exige une [[hypotheque]], un droit sur ton logement qui lui permet de le faire vendre si tu ne rembourses plus. Il faut payer un droit d'enregistrement de 1 % sur le montant garanti par cette hypothèque (le capital plus des « accessoires », souvent 10 %), un droit de 0,3 % pour son inscription dans le registre public et les honoraires du notaire. S'y ajoutent les frais de dossier de la banque et l'expertise du bien.
 
 :::caution[Dépend de ta situation]
 Ces taux réduits valent pour l'**habitation propre et unique**, quand tu achètes ton seul logement pour y vivre et que tu remplis les conditions de ta Région. Sinon, les droits sont de 12,5 % (Wallonie, Bruxelles) ou 12 % (Flandre) : environ **23 000 €** de plus sur cet exemple. Les calculateurs de notaire.be donnent le chiffre exact.
@@ -60,7 +66,7 @@ Ces taux réduits valent pour l'**habitation propre et unique**, quand tu achèt
 
 ## Et si le logement est neuf ?
 
-Un logement **neuf**, ou vendu dans les 2 ans de sa première occupation, ne paie pas de droits d'enregistrement sur la construction. À la place, il paie la **TVA à 21 %**, comme n'importe quel bien neuf. Le terrain, lui, reste soumis aux droits d'enregistrement s'il est vendu séparément. Un taux réduit de TVA de 6 % existe pour la démolition-reconstruction, sous conditions. → [[tva]]
+Un logement **neuf** ne paie pas de droits d'enregistrement sur la construction. À la place, il paie la **TVA à 21 %**, comme n'importe quel bien neuf. Pour la TVA, un bâtiment reste « neuf » jusqu'au 31 décembre de la deuxième année qui suit celle de sa première occupation : occupé pour la première fois en janvier 2025, il l'est encore jusqu'au 31 décembre 2027. Le terrain suit la TVA s'il est vendu en même temps que le bâtiment, au même acheteur et sous le régime TVA ; sinon, il reste soumis aux droits d'enregistrement. Un taux réduit de TVA de 6 % existe pour la démolition-reconstruction, sous conditions. → [[tva]]
 
 ## Ce qui revient chaque année
 
@@ -87,4 +93,4 @@ Les **frais de notaire** ne sont pas la rémunération du notaire : celle-ci, le
 
 ## Nature des chiffres de cette page
 
-🔴 Les droits d'enregistrement (3 % en Wallonie, 2 % en Flandre puis 3 % en 2027, abattement de 200 000 € à Bruxelles, taux ordinaires de 12 et 12,5 %), le droit de 1 % sur l'hypothèque et la TVA de 21 % ou 6 % sont des règles officielles. 🟠 Les 80 à 90 % d'impôts dans les frais, le coefficient de 1,06 à 1,15, les 1 % d'entretien et les fourchettes de coûts annuels sont des repères. 🔵 L'appartement de 250 000 €, le crédit de 200 000 € et tous les montants du tableau sont un exemple fictif.
+🔴 Les droits d'enregistrement (3 % en Wallonie, 2 % en Flandre puis 3 % en 2027, abattement de 200 000 € à Bruxelles, taux ordinaires de 12 et 12,5 %), le droit de 1 % sur l'hypothèque, la TVA de 21 % ou 6 % et le délai jusqu'au 31 décembre de la deuxième année après la première occupation sont des règles officielles. 🟠 Les 80 à 90 % d'impôts dans les frais, le coefficient de 1,06 à 1,15, les 1 % d'entretien et les fourchettes de coûts annuels sont des repères. 🔵 L'appartement de 250 000 €, le crédit de 200 000 € et tous les montants du tableau sont un exemple fictif.

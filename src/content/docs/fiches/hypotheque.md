@@ -12,8 +12,11 @@ short: "L'hypothèque est le droit, pour la banque, de faire vendre ton bien si 
 aliases: [inscription hypothécaire, mandat hypothécaire, mainlevée, caution, garant, gage, saisie, Bureau Sécurité juridique]
 prerequisites: [credit-hypothecaire]
 related: [notaire-acte-authentique, cout-reel-achat, droits-reels, credit-consommation]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Les frais liés au crédit hypothécaire"
+    url: https://www.notaire.be/immobilier/acheter-et-vendre-un-bien-immobilier/les-frais-lies-lachat/les-frais-lies-au-credit-hypothecaire
+    org: Fednot
   - title: Notaire.be — Emprunter
     url: https://www.notaire.be/
     org: Fednot
@@ -45,10 +48,12 @@ Quand tu revends le bien, il faut donc la faire radier. C'est la **mainlevée** 
 Inscrire une hypothèque n'est pas gratuit, et ces frais s'ajoutent au prix d'achat. Voici l'ordre de grandeur pour un emprunt **fictif** de 200 000 €.
 
 ```text
-Droit d'enregistrement sur l'hypothèque (1 %)      2 000 €
-+ droit d'inscription (0,3 %)                         600 €
+Montant garanti : 200 000 € + 10 % d'accessoires = 220 000 €
+Droit d'enregistrement sur l'hypothèque (1 %)      2 200 €
++ droit d'hypothèque, l'inscription (0,3 %)           660 €
++ rétribution du Bureau Sécurité juridique         230 €
 + honoraires du notaire, frais d'acte, recherches   1 500 à 2 000 €
-= frais de crédit                                  environ 4 000 à 5 000 €
+= frais de crédit                                  environ 4 500 à 5 000 €
 ```
 
 Ces frais sont à payer avec ton apport : la banque ne les finance pas. → [[cout-reel-achat]]
@@ -82,4 +87,4 @@ L'**hypothèque** est la garantie ; le [[credit-hypothecaire|crédit hypothécai
 
 ## Nature des chiffres de cette page
 
-🔴 Le droit d'enregistrement de 1 %, le droit d'inscription de 0,3 % et la validité de 30 ans de l'inscription sont des règles officielles. 🟠 Les 1 500 à 2 000 € d'honoraires et de frais d'acte, et le total de 4 000 à 5 000 €, sont des ordres de grandeur. 🔵 L'emprunt de 200 000 € est un exemple fictif.
+🔴 Le droit d'enregistrement de 1 % et le droit d'hypothèque de 0,3 %, calculés sur le montant garanti (capital et accessoires), la rétribution de 230 € ou 985 € selon le montant de l'hypothèque et la validité de 30 ans de l'inscription sont des règles officielles. 🟠 Les accessoires de 10 % du capital, les 1 500 à 2 000 € d'honoraires et de frais d'acte, et le total de 4 500 à 5 000 €, sont des ordres de grandeur. 🔵 L'emprunt de 200 000 € est un exemple fictif.

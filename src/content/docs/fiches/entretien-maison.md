@@ -13,8 +13,17 @@ short: "Une maison coûte chaque année 1 à 2 % de sa valeur en entretien et re
 aliases: [entretien maison, calendrier d'entretien, carnet d'entretien, ramonage, nettoyage des gouttières, détecteur de fumée, provision pour travaux, coût annuel d'une maison]
 prerequisites: [maison-systemes]
 related: [chauffage-maison, toiture-maison, eau-maison, ventilation-maison, electricite-maison, assurance-habitation, budget, epargne-de-precaution, precompte-immobilier, cout-reel-achat]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: Détecteurs de fumée obligatoires à Bruxelles à partir de 2025
+    url: https://be.brussels/fr/logement/detecteurs-de-fumee-obligatoires-bruxelles-partir-de-2025
+    org: be.brussels (Région de Bruxelles-Capitale)
+  - title: Info over de Woningpas
+    url: https://www.vlaanderen.be/bouwen-wonen-en-energie/bouwen-en-verbouwen/info-over-de-woningpas
+    org: Vlaanderen.be
+  - title: "Passeport Bâtiment wallon : à quoi ça sert et comment l'obtenir ?"
+    url: https://www.test-achats.be/maison-energie/achat/dossier/passeport-batiment-wallonie-woningpas-flandre
+    org: Test-Achats
   - title: "SPW Énergie — Entretien des installations de chauffage"
     url: https://energie.wallonie.be/
     org: SPW Énergie
@@ -64,14 +73,14 @@ Le plus simple est de penser par rythme, du plus fréquent au plus rare.
 **Tous les 25 ans**, enfin, l'installation électrique doit être contrôlée. C'est aussi l'horizon où l'on renouvelle les gros éléments, chacun à son rythme : la chaudière vers 15 à 20 ans, les châssis vers 30 à 40 ans, la toiture entre 30 et 100 ans selon le matériau. → [[ordre-des-travaux]]
 
 :::caution[Règle régionale — détecteurs de fumée]
-Les **détecteurs de fumée** sont obligatoires dans tous les logements des trois Régions : au moins un par niveau en Wallonie et en Flandre, par niveau et dans les voies d'évacuation à Bruxelles, avec des modèles certifiés à piles ou à batterie scellée de 10 ans. Ils sont à la charge du propriétaire ; en location, le bailleur les fournit et le locataire les entretient.
+Les **détecteurs de fumée** sont obligatoires dans tous les logements des trois Régions, loués ou non (à Bruxelles, pour les logements occupés par leur propriétaire, depuis le 1er janvier 2025) : au moins un par niveau en Wallonie et en Flandre, par niveau et dans les voies d'évacuation à Bruxelles, avec des modèles certifiés à piles ou à batterie scellée de 10 ans. Ils sont à la charge du propriétaire ; en location, le bailleur les fournit et le locataire les entretient.
 :::
 
 ## Le carnet : garder les preuves
 
 Le carnet d'entretien, c'est un classeur ou un dossier numérique, rangé par système. Tu y mets les plans et schémas, le PV du contrôle électrique, les attestations d'entretien de la chaudière, les factures de travaux avec leurs garanties, les fiches techniques (isolant, châssis, chaudière), tes relevés mensuels de compteurs, les photos prises avant la fermeture des murs, et les contrats (assurance, énergie, entretien).
 
-La Wallonie et la Flandre réfléchissent à un **passeport bâtiment** numérique obligatoire. En attendant, ton carnet te fait gagner du temps à chaque panne, à chaque demande de prime et le jour de la vente.
+Une partie de ce carnet existe déjà en version numérique, gratuite et facultative, si tu es propriétaire. En Flandre, la **Woningpas** (depuis 2018) réunit les données officielles de ton logement : certificat énergétique, attestations, données cadastrales. La Wallonie a lancé fin 2025 son **Passeport Bâtiment**, accessible via ton profil citoyen, encore peu fourni. Bruxelles n'a pas d'équivalent. Aucun des deux ne remplace tes propres papiers : ton carnet te fait gagner du temps à chaque panne, à chaque demande de prime et le jour de la vente.
 
 ## Combien mettre de côté chaque année ?
 

@@ -38,7 +38,7 @@ etapes:
   - formes-de-couple
 - titre: Déposer la déclaration de succession
   quand: Mois 4
-  texte: Dans les 4 mois (décès en Belgique), auprès de l'administration de la Région du dernier domicile du défunt. Les donations récentes y sont réintégrées.
+  texte: Dans les 4 mois (décès en Belgique), auprès de l'administration de la Région où le défunt a eu son domicile fiscal le plus longtemps au cours de ses 5 dernières années. Les donations récentes y sont réintégrées.
   notions:
   - droits-de-succession
   - revenu-cadastral
@@ -59,6 +59,12 @@ notions: []
 sidebar:
   order: 11
 sources:
+- title: "Planification patrimoniale : les évolutions à partir du 1er janvier 2026"
+  url: https://blog.forumforthefuture.be/fr/article/planification-patrimoniale-quelles-surprises-sous-le-sapin-comment-se-preparer-aux-evolutions-annoncees-a-partir-du-1er-janvier-2026-/29477
+  org: Forum for the Future
+- title: "Tout savoir sur la déclaration de succession et la déclaration de mutation par décès"
+  url: https://www.notaire.be/heritage/nouveautes/tout-savoir-sur-la-declaration-de-succession-et-la-declaration-de-mutation-par-deces
+  org: Fednot
 - title: Comment sont calculés les droits de succession en Belgique ?
   url: https://www.test-achats.be/famille-prive/heritage/dossier/calcul-droits-de-succession-belgique
   org: Test Achats
@@ -74,7 +80,7 @@ sources:
 - title: Service fédéral des Pensions — Pension de survie
   url: https://www.sfpd.fgov.be/fr
   org: SFP
-last_verified: '2026-10-02'
+last_verified: 2026-10-05
 ---
 Ton père est décédé. Ta mère est vivante ; vous êtes deux enfants. Dans les semaines qui viennent, au milieu du reste, il y aura des guichets, des délais et de l'argent. Cette histoire les met dans l'ordre, et explique à chaque fois pourquoi les choses se passent ainsi.
 
@@ -116,7 +122,7 @@ Cohabitante légale : ta mère aurait eu l'usufruit du logement familial et de s
 
 ## 5. La déclaration de succession : quatre mois
 
-Les héritiers doivent déposer une **déclaration de succession** auprès de l'administration fiscale de la **Région du dernier domicile** du défunt (ici le SPW Fiscalité), dans les **4 mois** du décès (5 si décès ailleurs en Europe, 6 hors Europe). Elle liste tous les biens à leur valeur au jour du décès, les dettes, les frais funéraires, et aussi les **donations des 5 dernières années** (3 ans à Bruxelles et en Flandre) non enregistrées, qui sont réintégrées. Le notaire la rédige en général. Le retard coûte des intérêts et une amende. Voir [[droits-de-succession]].
+Les héritiers doivent déposer une **déclaration de succession** auprès de l'administration fiscale de la **Région où le défunt a été domicilié le plus longtemps au cours des 5 dernières années** avant son décès, qui n'est pas forcément celle de son dernier domicile (ici le SPW Fiscalité, puisque le couple a toujours vécu en Wallonie), dans les **4 mois** du décès (5 si décès ailleurs en Europe, 6 hors Europe). Elle liste tous les biens à leur valeur au jour du décès, les dettes, les frais funéraires, et aussi les **donations des 5 dernières années** non enregistrées, qui sont réintégrées (délai de 5 ans dans les trois Régions pour les dons récents ; un don ancien fait à Bruxelles avant 2026 ou en Flandre avant 2025 garde l'ancien délai de 3 ans). Le notaire la rédige en général. Le retard coûte des intérêts et une amende. Voir [[droits-de-succession]].
 
 Pour la maison, il faut une **valeur** : une estimation par un expert ou le notaire, ou une « expertise préalable » demandée à l'administration pour éviter une contestation ultérieure.
 
@@ -155,7 +161,7 @@ C'est souvent le moment où ta mère réfléchit à sa propre transmission : don
 
 1. Les comptes (même communs) se bloquent ; le conjoint peut retirer jusqu'à 5 000 €.
 2. Avant tout acte d'héritier : accepter, sous bénéfice d'inventaire, ou renoncer.
-3. Déclaration de succession dans les 4 mois, à la Région du domicile du défunt ; donations récentes réintégrées.
+3. Déclaration de succession dans les 4 mois, à la Région où le défunt a vécu le plus longtemps sur ses 5 dernières années ; donations récentes réintégrées.
 
 ## Nature des chiffres de cette page
 

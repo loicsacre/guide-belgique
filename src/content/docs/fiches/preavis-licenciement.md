@@ -4,7 +4,7 @@ kind: fiche
 domain: travail
 level: utile
 nature: mixte
-valid_for: "règles depuis le statut unique (2014), durées indicatives"
+valid_for: "règles depuis le statut unique (2014), adaptations 2026 pour les nouveaux contrats ; durées indicatives"
 scope: [federal]
 status: publie
 tags: [préavis, licenciement, démission, C4, outplacement]
@@ -13,11 +13,23 @@ short: "Mettre fin à un CDI exige un préavis dont la durée dépend de l'ancie
 aliases: [préavis, C4, indemnité de rupture, licenciement, démission, outplacement, motif grave, rupture de commun accord]
 prerequisites: [contrat-de-travail]
 related: [chomage, pecule-de-vacances, commission-paritaire, treizieme-mois]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: SPF Emploi — Fin du contrat de travail
     url: https://emploi.belgique.be/fr
     org: SPF Emploi, Travail et Concertation sociale
+  - title: "Opzegtermijn (tableaux des délais de préavis)"
+    url: https://www.hetacv.be/je-rechten/werken-in-de-prive-sector/licenciement-et-d%c3%a9mission/opzegtermijn
+    org: ACV-CSC
+  - title: Rupture du contrat de travail 2023
+    url: https://www.randstad.be/s3fs-media/be/public/2023-06/rupture_du_contrat_de_travail_2023.pdf
+    org: Randstad
+  - title: Modernisation du droit du travail à compter du 1er juin 2026
+    url: https://blog.forumforthefuture.be/fr/article/modernisation-du-droit-du-travail-a-compter-du-1er-juin-2026/31533
+    org: Forum for the Future
+  - title: "Délai de préavis pour une ancienneté de moins de 6 mois : 1 semaine"
+    url: https://www.partena-professional.be/fr/delai-de-preavis-pour-une-anciennete-de-moins-de-6-mois-1-semaine
+    org: Partena Professional
 sidebar:
   order: 11
 ---
@@ -37,14 +49,18 @@ Plus tu es depuis longtemps dans l'entreprise, plus le préavis est long. Mais i
 | Ancienneté | Préavis si l'**employeur** licencie | Préavis si **tu** démissionnes |
 | --- | --- | --- |
 | < 3 mois | 1 semaine | 1 semaine |
-| 6 mois | 4 semaines | 2 semaines |
-| 1 an | 7 semaines | 3 semaines |
+| 6 mois | 6 semaines | 3 semaines |
+| 1 an | 8 semaines | 4 semaines |
 | 2 ans | 12 semaines | 6 semaines |
 | 5 ans | 18 semaines | 9 semaines |
-| 10 ans | 33 semaines | 13 semaines (plafond) |
+| 10 ans | 33 semaines | 13 semaines (plafond, atteint dès 8 ans) |
 | 20 ans | 62 semaines | 13 semaines |
 
 Ces durées sont indicatives. Retiens surtout la logique : le préavis de démission est **plafonné à 13 semaines**, quelle que soit ton ancienneté, alors que celui de licenciement continue de croître année après année. Et si tu as acquis de l'ancienneté **avant 2014**, cette partie suit des règles de transition, qui peuvent changer le résultat.
+
+:::note[Règle datée — changements de 2026]
+Deux nouveautés ne valent que pour les contrats **récents**, et ne changent rien pour un contrat qui avait déjà commencé. Pour un contrat dont l'exécution a débuté **à partir du 1er juin 2026**, le préavis de licenciement cesse d'augmenter à **52 semaines**, atteintes après 17 ans d'ancienneté : le chiffre de 62 semaines à 20 ans du tableau ne concerne donc que les contrats plus anciens. Et pour un contrat débuté **à partir du 1er août 2026**, le préavis est d'**une semaine** pendant les six premiers mois d'ancienneté, que ce soit l'employeur ou toi qui mettes fin au contrat.
+:::
 
 ## Les différentes façons de quitter un emploi
 
@@ -86,4 +102,4 @@ Le **préavis** et l'**indemnité de rupture** ne s'additionnent pas : ce sont d
 
 ## Nature des chiffres de cette page
 
-🔴 Les durées de préavis du tableau, le plafond de 13 semaines pour une démission, le seuil de 30 semaines pour l'outplacement et le statut unique de 2014 viennent de la loi ; les durées sont données à titre indicatif et l'ancienneté d'avant 2014 suit des règles de transition. 🔵 L'employé à 3 500 € brut avec cinq ans d'ancienneté est un exemple fictif.
+🔴 Les durées de préavis du tableau, le plafond de 13 semaines pour une démission, le plafond de 52 semaines et le préavis d'une semaine pendant les six premiers mois (pour les contrats débutés depuis juin et août 2026), le seuil de 30 semaines pour l'outplacement et le statut unique de 2014 viennent de la loi ; les durées sont données à titre indicatif et l'ancienneté d'avant 2014 suit des règles de transition. 🔵 L'employé à 3 500 € brut avec cinq ans d'ancienneté est un exemple fictif.

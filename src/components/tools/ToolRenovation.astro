@@ -1,10 +1,11 @@
 ---
-// Budget rénovation : postes, TVA, imprévus, primes wallonnes (base × coefficient, plafond), financement et trésorerie.
+// Budget rénovation : postes, TVA, imprévus, aide wallonne (Rénopack depuis le 01/10/2026, ou primes Habitation jusqu'au 30/09/2026), financement et trésorerie.
 ---
 <div class="tool not-content">
   <strong>Ma situation</strong>
-  <label>Région <select id="r-region"><option value="wal">Wallonie (primes Habitation)</option><option value="bxl">Bruxelles (Rénolution)</option><option value="vla">Flandre (Mijn VerbouwPremie)</option></select></label>
-  <label>Catégorie de revenus (Wallonie : revenu imposable du ménage) <select id="r-cat"><option value="6">R1 ≤ 26 900 € (×6)</option><option value="4" selected>R2 ≤ 38 300 € (×4)</option><option value="3">R3 ≤ 50 600 € (×3)</option><option value="2">R4 ≤ 114 400 € (×2)</option><option value="1">R5 au-delà (×1)</option></select></label>
+  <label>Région et régime <select id="r-region"><option value="renopack" selected>Wallonie — Rénopack / Rénoprêt (depuis le 01/10/2026)</option><option value="wal">Wallonie — primes Habitation (dossiers introduits jusqu'au 30/09/2026)</option><option value="bxl">Bruxelles (Rénolution)</option><option value="vla">Flandre (Mijn VerbouwPremie)</option></select></label>
+  <label>Rénopack : catégorie de revenus (revenu imposable du ménage − 5 000 € par personne à charge) <select id="r-catc"><option value="0.5">C1 ≤ 28 900 € (50 % du prêt non remboursé)</option><option value="0.4" selected>C2 ≤ 41 100 € (40 %)</option><option value="0.15">C3 ≤ 67 100 € (15 %)</option><option value="0">C4 ≤ 122 800 € (Rénoprêt, pas de réduction)</option></select></label>
+  <label>Primes Habitation (ancien régime) : catégorie de revenus <select id="r-cat"><option value="6">R1 ≤ 26 900 € (×6, plafond 70 %)</option><option value="4" selected>R2 ≤ 38 300 € (×4, plafond 70 %)</option><option value="3">R3 ≤ 50 600 € (×3, plafond 50 %)</option><option value="2">R4 ≤ 114 400 € (×2, plafond 50 %)</option></select></label>
   <label>Logement de plus de 10 ans (TVA 6 % au lieu de 21 %) <select id="r-tva"><option value="0.06" selected>Oui — 6 %</option><option value="0.21">Non — 21 %</option></select></label>
   <strong>Les postes (montants HTVA, devis entrepreneur)</strong>
   <label>Toiture : isolation, surface m² <input type="number" id="r-toit-m2" value="110" step="5" /></label>
@@ -21,26 +22,28 @@
   <label>Réserve pour imprévus (%) <input type="number" id="r-imprevus" value="12" step="1" /></label>
   <strong>Financement</strong>
   <label>Épargne mobilisée <input type="number" id="r-epargne" value="15000" step="500" /></label>
-  <label>Prêt régional à 0 % (Rénopack, prêt vert…) <input type="number" id="r-pret0" value="20000" step="500" /></label>
+  <label>Prêt régional à 0 % (Rénopack ≤ 75 000 € pour une maison, prêt vert…) <input type="number" id="r-pret0" value="20000" step="500" /></label>
   <label>Durée du prêt à 0 % (ans) <input type="number" id="r-pret0-ans" value="15" step="1" /></label>
   <label>Taux du crédit bancaire complémentaire (%) <input type="number" id="r-taux" value="4.5" step="0.1" /></label>
   <label>Durée du crédit complémentaire (ans) <input type="number" id="r-duree" value="5" step="1" /></label>
   <div class="tool-out">
     <div>Budget total TVAC, imprévus compris : <span class="big" id="r-total">—</span></div>
     <div id="r-detail" style="font-size:var(--sl-text-sm);margin-top:.4rem"></div>
-    <table style="margin-top:.6rem;width:100%"><thead><tr><th style="text-align:left">Prime (mécanique wallonne)</th><th style="text-align:right">Base × coef.</th><th style="text-align:right">Plafond</th><th style="text-align:right">Prime</th></tr></thead><tbody id="r-primes"></tbody></table>
+    <table style="margin-top:.6rem;width:100%"><thead><tr><th style="text-align:left">Aide wallonne</th><th style="text-align:right">Calcul</th><th style="text-align:right">Plafond</th><th style="text-align:right">Aide</th></tr></thead><tbody id="r-primes"></tbody></table>
     <div id="r-fin" style="font-size:var(--sl-text-sm);margin-top:.6rem"></div>
     <div class="tool-bar" style="margin-top:.5rem"><span id="r-bar-ep" style="background:var(--sl-color-green)"></span><span id="r-bar-prime" style="background:var(--sl-color-orange)"></span><span id="r-bar-p0" style="background:var(--sl-color-blue)"></span><span id="r-bar-cred" style="background:var(--sl-color-gray-3)"></span></div>
-    <div style="font-size:var(--sl-text-xs)"><span style="color:var(--sl-color-green)">■</span> épargne · <span style="color:var(--sl-color-orange)">■</span> primes (après travaux) · <span style="color:var(--sl-color-blue)">■</span> prêt 0 % · ■ crédit bancaire</div>
+    <div style="font-size:var(--sl-text-xs)"><span style="color:var(--sl-color-green)">■</span> épargne · <span style="color:var(--sl-color-orange)">■</span> primes ou part non remboursée du prêt · <span style="color:var(--sl-color-blue)">■</span> prêt 0 % · ■ crédit bancaire</div>
     <div id="r-conseil" style="margin-top:.5rem;font-size:var(--sl-text-sm)"></div>
   </div>
 </div>
 <script>
   const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
   const eur = (n: number) => n.toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
-  const ids = ['r-region','r-cat','r-tva','r-toit-m2','r-toit','r-toit-iso','r-mur-m2','r-mur','r-chassis-m2','r-chassis','r-pac','r-vmc','r-elec','r-autres','r-imprevus','r-epargne','r-pret0','r-pret0-ans','r-taux','r-duree'];
-  // Montants de base wallons (régime Habitation jusqu'au 30/09/2026) — 🔴 à vérifier à la date de la demande.
+  const ids = ['r-region','r-catc','r-cat','r-tva','r-toit-m2','r-toit','r-toit-iso','r-mur-m2','r-mur','r-chassis-m2','r-chassis','r-pac','r-vmc','r-elec','r-autres','r-imprevus','r-epargne','r-pret0','r-pret0-ans','r-taux','r-duree'];
+  // Montants de base wallons du régime des primes Habitation, clos le 30/09/2026 (dossiers introduits avant cette date).
   const BASE = { toit: 20, mur: 8.8, chassis: 26, pac: 600, vmc: 680, elec: 320 };
+  // Rénopack (depuis le 01/10/2026) : prêt à 0 % plafonné à 75 000 € pour une maison, part non remboursée selon la catégorie C1–C4 — 🔴 à vérifier à la date de la demande.
+  const RENOPACK_MAX = 75000;
   function mens(cap: number, taux: number, ans: number) {
     if (cap <= 0 || ans <= 0) return 0;
     const i = taux / 100 / 12, n = ans * 12;
@@ -52,7 +55,8 @@
     const region = $('r-region').value;
     const coef = v['r-cat'];
     const tva = v['r-tva'];
-    const plafond = coef >= 2 ? 0.7 : 0.5;
+    const plafond = coef >= 4 ? 0.7 : 0.5;
+    const reduc = v['r-catc'];
     const postes = [
       { k: 'Toiture (isolation)', ht: v['r-toit'], prim: Math.min(v['r-toit'], v['r-toit-iso']), base: BASE.toit * v['r-toit-m2'] },
       { k: 'Murs (isolation)', ht: v['r-mur'], base: BASE.mur * v['r-mur-m2'] },
@@ -67,7 +71,12 @@
     const total = ttc + imprevus;
     let primes = 0;
     const rows: string[] = [];
-    for (const p of postes) {
+    const pret0 = region === 'renopack' ? Math.min(v['r-pret0'], RENOPACK_MAX) : v['r-pret0'];
+    if (region === 'renopack') {
+      primes = pret0 * reduc;
+      rows.push(`<tr><td>Rénopack : part du prêt à ne pas rembourser</td><td style="text-align:right">${eur(pret0)} × ${Math.round(reduc * 100)} %</td><td style="text-align:right">prêt ≤ ${eur(RENOPACK_MAX)}</td><td style="text-align:right"><strong>${eur(primes)}</strong></td></tr>`);
+    }
+    for (const p of region === 'renopack' ? [] : postes) {
       if (p.ht <= 0) continue;
       const ttcPoste = ((p as any).prim ?? p.ht) * (1 + tva);
       const brut = p.base * coef;
@@ -80,18 +89,20 @@
     $('r-total').textContent = eur(total);
     $('r-detail').innerHTML = `HTVA ${eur(ht)} · TVA ${Math.round(tva * 100)} % ${eur(ttc - ht)} · imprévus ${eur(imprevus)}${tva > 0.1 ? ' · <strong>à 6 %, le même chantier coûterait ' + eur(ht * 1.06 * (1 + v['r-imprevus'] / 100)) + '</strong>' : ''}`;
     const aFinancer = total; // les primes arrivent après : elles ne financent pas le chantier
-    const credit = Math.max(0, aFinancer - v['r-epargne'] - v['r-pret0']);
-    const m0 = mens(v['r-pret0'], 0, v['r-pret0-ans']);
+    const credit = Math.max(0, aFinancer - v['r-epargne'] - pret0);
+    // Rénopack : hypothèse pédagogique, la part non remboursée allège les mensualités du prêt à 0 %.
+    const m0 = mens(region === 'renopack' ? pret0 - primes : pret0, 0, v['r-pret0-ans']);
     const mc = mens(credit, v['r-taux'], v['r-duree']);
     const interets = mc * v['r-duree'] * 12 - credit;
-    $('r-fin').innerHTML = `À avancer avant les primes : <strong>${eur(aFinancer)}</strong> = épargne ${eur(v['r-epargne'])} + prêt 0 % ${eur(v['r-pret0'])} + crédit bancaire <strong>${eur(credit)}</strong>.<br/>Mensualités : prêt 0 % ${eur(m0)}/mois pendant ${v['r-pret0-ans']} ans · crédit ${eur(mc)}/mois pendant ${v['r-duree']} ans (intérêts ${eur(interets)}).<br/>Primes attendues <strong>${eur(primes)}</strong> (${total ? Math.round((primes / total) * 100) : 0} % du budget), versées 2 à 6 mois après les factures : coût net après primes <strong>${eur(total - primes)}</strong>.`;
+    $('r-fin').innerHTML = `À financer pendant le chantier : <strong>${eur(aFinancer)}</strong> = épargne ${eur(v['r-epargne'])} + prêt 0 % ${eur(pret0)} + crédit bancaire <strong>${eur(credit)}</strong>.<br/>Mensualités : prêt 0 % ${eur(m0)}/mois pendant ${v['r-pret0-ans']} ans · crédit ${eur(mc)}/mois pendant ${v['r-duree']} ans (intérêts ${eur(interets)}).<br/>${region === 'renopack' ? `Part du Rénopack à ne pas rembourser <strong>${eur(primes)}</strong> (${total ? Math.round((primes / total) * 100) : 0} % du budget), déduite du prêt au lieu d'être versée après travaux` : `Primes attendues <strong>${eur(primes)}</strong> (${total ? Math.round((primes / total) * 100) : 0} % du budget), versées 2 à 6 mois après les factures`} : coût net après aide <strong>${eur(total - primes)}</strong>.`;
     const t = Math.max(total, 1);
     $('r-bar-ep').style.width = Math.min(100, (v['r-epargne'] / t) * 100) + '%';
     $('r-bar-prime').style.width = Math.min(100, (primes / t) * 100) + '%';
-    $('r-bar-p0').style.width = Math.min(100, (v['r-pret0'] / t) * 100) + '%';
-    $('r-bar-cred').style.width = Math.min(100, (Math.max(0, credit - primes) / t) * 100) + '%';
+    $('r-bar-p0').style.width = Math.min(100, ((region === 'renopack' ? pret0 - primes : pret0) / t) * 100) + '%';
+    $('r-bar-cred').style.width = Math.min(100, ((region === 'renopack' ? credit : Math.max(0, credit - primes)) / t) * 100) + '%';
     let c = '';
-    if (region !== 'wal') c = 'Les primes bruxelloises et flamandes suivent la même logique (base ou pourcentage × catégorie de revenus, plafond) mais avec d\'autres barèmes : utilise le simulateur officiel de ta Région et reporte le montant ici en épargne « différée ».';
+    if (region === 'renopack') c = 'Le Rénopack demande un audit de moins d\'un an, un devis global et un saut de classe PEB (de G ou F vers D au moins, de E vers C au moins). Le calcul ci-dessus suppose que la part non remboursée allège le prêt ; vérifie les modalités exactes auprès de la SWCS ou du Fonds du Logement de Wallonie.';
+    else if (region !== 'wal') c = 'Les primes bruxelloises et flamandes suivent la même logique (base ou pourcentage × catégorie de revenus, plafond) mais avec d\'autres barèmes : utilise le simulateur officiel de ta Région et reporte le montant ici en épargne « différée ».';
     else if (credit > primes * 1.5 && credit > 5000) c = 'Le crédit bancaire dépasse largement les primes à venir : vérifie si un prêt régional à 0 % plus élevé ou l\'intégration des travaux au crédit hypothécaire est possible.';
     else if (primes > 0 && credit <= primes) c = 'Le crédit complémentaire sera remboursé par les primes : montage sain, à condition de garder l\'épargne de précaution intacte.';
     else c = 'Pense au calendrier : les gros paiements tombent au milieu du chantier, les primes après la dernière facture.';

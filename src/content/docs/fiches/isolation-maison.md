@@ -4,7 +4,7 @@ kind: fiche
 domain: maison
 level: essentiel
 nature: mixte
-valid_for: "valeurs U / R exigées par la PEB et les primes 2026 (Wallonie : R ≥ 4,5 toiture, 3,5 murs, 2 sols pour la prime)"
+valid_for: "valeurs U / R exigées par la PEB et les primes 2026 (Wallonie : R ≥ 4,5 toiture, 3,5 murs, 2 sols pour la prime Habitation, régime clos le 30/09/2026 ; Rénopack depuis le 01/10/2026)"
 scope: [belgique]
 status: publie
 tags: [isolation, toiture, murs, sol, valeur U, valeur R, ponts thermiques, étanchéité à l'air, laine, PUR]
@@ -13,8 +13,11 @@ short: "La chaleur s'échappe par le toit, les murs, les fenêtres, le sol et le
 aliases: [isolation, isolant, valeur R, valeur U, coefficient U, pont thermique, étanchéité à l'air, isolation des murs, isolation du sol, isolation par l'extérieur]
 prerequisites: [maison-systemes]
 related: [toiture-maison, chassis-vitrage, ventilation-maison, humidite-maison, chauffage-maison, pompe-a-chaleur, peb, primes-renovation, ordre-des-travaux, audit-logement]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Rénovation énergétique : les grandes lignes du futur régime de soutien sont connues"
+    url: https://www.wallonie.be/fr/actualites/renovation-energetique-les-grandes-lignes-du-futur-regime-de-soutien-sont-connues
+    org: Wallonie
   - title: "SPW Énergie — Isoler son logement"
     url: https://energie.wallonie.be/
     org: SPW Énergie
@@ -55,7 +58,7 @@ La **valeur R** décrit une couche d'isolant d'une épaisseur donnée : c'est sa
 La **valeur U** décrit une paroi complète, toutes couches comprises : c'est l'inverse de la somme des R, et plus elle est basse, mieux c'est. Un mur plein non isolé a un U 🟠 autour de 2 ; après 12 cm d'isolant, il descend vers 0,25.
 
 :::caution[Règle régionale datée]
-Pour obtenir la prime wallonne, l'isolant doit atteindre 🔴 R ≥ 4,5 m²K/W en toiture, R ≥ 3,5 pour les murs et R ≥ 2 pour les sols ; les montants de base sont 20 €/m² (toiture), 8,80 €/m² (murs) et 6 €/m² (sols), multipliés jusqu'à ×6 selon tes revenus, après [[audit-logement]]. Bruxelles et la Flandre ont des seuils proches mais pas identiques. Vérifie la valeur en vigueur avant de signer un devis : c'est l'épaisseur d'isolant qui en découle.
+Pour la prime Habitation wallonne, l'isolant devait atteindre 🔴 R ≥ 4,5 m²K/W en toiture, R ≥ 3,5 pour les murs et R ≥ 2 pour les sols ; les montants de base étaient de 20 €/m² (toiture), 8,80 €/m² (murs) et 6 €/m² (sols), multipliés jusqu'à ×6 selon tes revenus, après [[audit-logement]]. Ce régime a pris fin le 30 septembre 2026. Depuis le 1er octobre 2026, la Wallonie ne paie plus l'isolation au m² : elle finance un projet global par un prêt à 0 % dont une partie n'est pas à rembourser (le Rénopack), à condition que les travaux fassent gagner au logement un saut de classe [[peb]]. → [[primes-renovation]]. Bruxelles et la Flandre ont leurs propres seuils de R, proches mais pas identiques. Vérifie la valeur en vigueur avant de signer un devis : c'est l'épaisseur d'isolant qui en découle.
 :::
 
 ## Par où isoler chaque paroi
@@ -87,15 +90,15 @@ L'air chaud intérieur est humide. S'il traverse l'isolant et rencontre une surf
 
 ## Un exemple : la maison de Noé
 
-Noé fait auditer sa maison de 1972 : murs creux de 5 cm non remplis, toit nu, châssis double vitrage de 1995. Il se situe dans la catégorie de revenus R2, qui multiplie ici la prime de base par 4. L'auditeur chiffre trois travaux.
+Noé fait auditer sa maison de 1972 : murs creux de 5 cm non remplis, toit nu, châssis double vitrage de 1995. Son dossier de primes relève encore de l'ancien régime wallon, où sa catégorie de revenus, R2, multipliait la prime de base par 4. L'auditeur chiffre trois travaux.
 
-| Travail | Coût 🔵 | Gain annuel estimé 🔵 | Prime (R2, ×4) 🔵 |
+| Travail | Coût 🔵 | Gain annuel estimé 🔵 | Prime Habitation (R2, ×4) 🔵 |
 | --- | --- | --- | --- |
 | 110 m² de toit, R = 6 | 7 500 € | 900 € | 110 × 20 × 4 = 8 800 €, plafonnée à 70 % → 5 250 € |
 | 140 m² de murs creux injectés, R ≈ 1,3 | 3 500 € | 500 € | Non éligible (R < 3,5) |
 | 140 m² de murs par l'extérieur, R = 4 | 22 000 € | 1 100 € | 140 × 8,80 × 4 = 4 928 € |
 
-Le toit est une évidence : il le fait tout de suite, et la prime calculée dépasse même le plafond de 70 % de la facture. Les murs sont plus délicats. Remplir le creux coûte peu, mais n'atteint pas le seuil de prime et bloque une future isolation par l'extérieur, plus performante. Il tranche avec le [simulateur de budget rénovation](../../outils/simulateur-renovation/), en fonction du temps qu'il compte encore vivre dans la maison.
+Le toit est une évidence : il le fait tout de suite, et la prime calculée dépasse même le plafond de 70 % de la facture. Les murs sont plus délicats. Remplir le creux coûte peu, mais n'atteint pas le seuil de prime et bloque une future isolation par l'extérieur, plus performante. Il tranche avec le [simulateur de budget rénovation](../../outils/simulateur-renovation/), en fonction du temps qu'il compte encore vivre dans la maison. Et la prime de 4 928 € pour les murs n'existe plus : s'il les isole après le 30 septembre 2026, ce sera dans le cadre d'un Rénopack, qui demande un projet assez ambitieux pour faire changer sa maison de classe PEB.
 
 ## Ce que ça change pour toi
 
@@ -111,4 +114,4 @@ La **valeur R** est une résistance, à maximiser, et s'applique à une couche ;
 
 ## Nature des chiffres de cette page
 
-🔴 Les seuils R (4,5, 3,5 et 2) et les montants de base des primes wallonnes (20 €, 8,80 € et 6 €/m², jusqu'à ×6) sont ceux de la prime Habitation, régime en vigueur jusqu'au 30 septembre 2026 ; un régime permanent lui succède. 🟠 La répartition des pertes, les valeurs λ et U et les coûts au m² sont des repères de marché 2026 et de guides régionaux, variables selon la maison et la région. 🔵 L'audit de Noé et ses montants sont inventés ; la prime calculée illustre la mécanique « base × coefficient, plafond 70 % ».
+🔴 Les seuils R (4,5, 3,5 et 2) et les montants de base des primes wallonnes (20 €, 8,80 € et 6 €/m², jusqu'à ×6) sont ceux de la prime Habitation, régime qui a pris fin le 30 septembre 2026 ; depuis le 1er octobre 2026, la Wallonie aide par le Rénopack, conditionné à un saut de classe PEB. 🟠 La répartition des pertes, les valeurs λ et U et les coûts au m² sont des repères de marché 2026 et de guides régionaux, variables selon la maison et la région. 🔵 L'audit de Noé et ses montants sont inventés ; la prime calculée illustre la mécanique de l'ancien régime, « base × coefficient, plafond 70 % » en catégorie R2.

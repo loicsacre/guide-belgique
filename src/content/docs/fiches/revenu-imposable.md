@@ -11,7 +11,7 @@ short: "La part de tes revenus sur laquelle l'impôt est réellement calculé : 
 aliases: [base imposable, revenu net imposable, frais professionnels forfaitaires, forfait de frais, frais réels]
 prerequisites: [salaire-brut, cotisations-sociales]
 related: [tranches-imposition, quotite-exemptee, ipp, precompte-professionnel, frais-professionnels, categories-de-revenus, deduction-reduction-credit]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
   - title: Plafonds fiscaux — exercice d'imposition 2026
     url: https://assets.contenthub.wolterskluwer.com/api/public/content/3084229-plafonds-fiscaux-3a47085543
@@ -70,7 +70,7 @@ Les frais réels ne valent donc la peine que s'ils **dépassent le forfait**, et
 
 ## Un exemple qu'on suit
 
-Prenons le salarié **fictif** qui sert d'exemple dans tout le guide : une rémunération brute imposable annuelle de 42 000 €, c'est-à-dire déjà sans les cotisations ONSS.
+Prenons le salarié **fictif** qui sert d'exemple dans tout le guide : une rémunération imposable annuelle de 42 000 €, c'est-à-dire ce qui reste de ses salaires de l'année une fois les cotisations ONSS retirées.
 
 Il prend le forfait. En théorie, 30 % de 42 000 € font 12 600 €, mais le forfait est plafonné à 5 930 € : c'est ce montant qui est retiré.
 

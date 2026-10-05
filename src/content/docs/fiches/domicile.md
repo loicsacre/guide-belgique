@@ -12,8 +12,11 @@ short: "Ton domicile légal est l'adresse inscrite au registre national via ta c
 aliases: [domiciliation, résidence principale, registre national, numéro de registre national, changement d'adresse, composition de ménage]
 prerequisites: [qui-fait-quoi]
 related: [identite-numerique, centimes-additionnels, precompte-immobilier, formes-de-couple, personne-a-charge]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Tout savoir sur la déclaration de succession et la déclaration de mutation par décès"
+    url: https://www.notaire.be/heritage/nouveautes/tout-savoir-sur-la-declaration-de-succession-et-la-declaration-de-mutation-par-deces
+    org: Fednot
   - title: Portail officiel de la Belgique — Famille et vie privée
     url: https://www.belgium.be/fr
     org: belgium.be
@@ -33,7 +36,7 @@ Ton domicile n'est pas qu'une question de courrier. Beaucoup de règles se lisen
 
 **Il fixe ta commune fiscale.** La commune où tu es domicilié au 1er janvier de l'exercice d'imposition (l'année qui suit celle où tu as gagné tes revenus) est celle qui ajoute sa taxe à ton impôt sur les revenus, sous forme d'[[centimes-additionnels|additionnels communaux]], un pourcentage calculé sur ton impôt. → [[annee-revenus-exercice]]
 
-**Il fixe ta Région, pour une partie des règles régionales.** Mais attention, pas pour toutes : les [[droits-enregistrement|droits d'enregistrement]] et le [[precompte-immobilier|précompte immobilier]] dépendent de la Région où se trouve le **bien**, pas de ton domicile ; et les [[droits-de-succession|droits de succession]] dépendent du domicile du **défunt** au cours de ses cinq dernières années.
+**Il fixe ta Région, pour une partie des règles régionales.** Mais attention, pas pour toutes : les [[droits-enregistrement|droits d'enregistrement]] et le [[precompte-immobilier|précompte immobilier]] dépendent de la Région où se trouve le **bien**, pas de ton domicile ; et les [[droits-de-succession|droits de succession]] dépendent de la Région où le **défunt** a été domicilié le plus longtemps au cours de ses cinq dernières années (pas forcément son dernier domicile).
 
 **Il détermine ta composition de ménage.** La commune sait qui vit officiellement à la même adresse que toi. Or c'est à partir de là que plusieurs systèmes décident si tu es isolé, cohabitant ou [[personne-a-charge|à charge]] de quelqu'un, avec un impact sur l'impôt, sur le chômage et sur le revenu d'intégration (le revenu minimum versé par le CPAS). → [[statut-familial]]
 

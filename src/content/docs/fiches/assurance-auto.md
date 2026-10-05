@@ -12,8 +12,17 @@ short: "La RC auto est obligatoire : elle indemnise les dommages que tu causes a
 aliases: [RC auto, omnium, mini-omnium, bonus-malus, constat amiable, carte verte, conducteur protégé, assistance, Fonds commun de garantie, usagers faibles]
 prerequisites: [assurance-principes]
 related: [voiture-taxes, voiture-de-societe, rc-familiale, credit-consommation, responsabilite]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Avis C/2025/2 de la Commission des Assurances (report de l'abrogation de l'article 23, carte verte)"
+    url: https://www.fsma.be/sites/default/files/media/files/2025-07/advice_c_2025_2.pdf
+    org: FSMA
+  - title: Wikifin — Constat d'accident
+    url: https://www.wikifin.be/fr/thematiques/assurer/assurance-vehicules/en-pratique/constat-daccident
+    org: Wikifin (FSMA)
+  - title: Carte verte en Belgique
+    url: https://callmepower.be/fr/assurance/auto/carte-verte
+    org: Callmepower
   - title: Wikifin — Assurance auto
     url: https://www.wikifin.be/fr/budget-payer-emprunter-et-assurer
     org: Wikifin (FSMA)
@@ -63,7 +72,7 @@ Un **jeune conducteur** paie souvent une prime double. Une alternative existe : 
 Dans le stress d'un accident, l'ordre des étapes compte.
 
 1. **Sécurise les lieux et soigne les blessés.** Appelle les secours s'il y a des blessés ; la police est alors obligatoire.
-2. **Remplis un constat amiable** avec l'autre conducteur, et signez-le tous les deux. Ce formulaire décrit l'accident par un croquis et des croix à cocher. Il existe aussi en version électronique (app Crashform).
+2. **Remplis un constat amiable** avec l'autre conducteur, et signez-le tous les deux. Ce formulaire décrit l'accident par un croquis et des croix à cocher. Il existe aussi en version électronique, avec l'application **Crashform**, qui envoie le constat signé à ton assureur ou à ton courtier.
 3. **Déclare l'accident à ton assureur** dans les 8 jours.
 4. **Laisse les assureurs s'arranger.** Grâce à la convention RDR, un accord entre assureurs, le tien t'indemnise rapidement si tu n'es pas en tort, puis se fait rembourser par celui de l'autre conducteur.
 
@@ -73,7 +82,7 @@ Ne signe rien que tu ne comprends pas. Un constat n'est pas un aveu de responsab
 
 **Compare chaque année.** Pour une même couverture, les écarts de prime entre assureurs atteignent 30 à 50 %.
 
-**Garde la carte verte dans la voiture.** C'est le certificat d'assurance, qui prouve que ton véhicule est couvert. Elle est désormais blanche, mais le nom est resté.
+**Garde ta carte verte à portée de main.** C'est le certificat d'assurance, qui prouve que ton véhicule est couvert. Elle est désormais blanche, mais le nom est resté. Tu dois pouvoir la montrer lors d'un contrôle, sur papier ou sur ton smartphone (la version numérique est acceptée depuis 2020) ; sans elle, tu risques une amende même si tu es assuré. Sa suppression au profit d'un registre numérique des véhicules assurés est prévue, mais elle a été reportée : en 2026, l'obligation tient toujours.
 
 **Ne roule jamais sans assurance.** Un véhicule non assuré entraîne saisie et amende. Et en cas d'accident, c'est le **Fonds commun de garantie**, un organisme créé pour ce cas précis, qui indemnise les victimes, puis se retourne contre toi pour récupérer tout ce qu'il a payé.
 
@@ -85,4 +94,4 @@ La **RC auto** indemnise les autres, l'**omnium** répare ta voiture, et le **co
 
 ## Nature des chiffres de cette page
 
-🔴 L'obligation de la RC auto et le délai de déclaration de 8 jours sont des règles officielles ou contractuelles courantes. 🟠 Les repères de 3 à 8 ans pour la mini-omnium, la prime souvent double d'un jeune conducteur et les écarts de 30 à 50 % entre assureurs sont des ordres de grandeur, pas des règles.
+🔴 L'obligation de la RC auto, celle de pouvoir présenter la carte verte (papier ou numérique) et le délai de déclaration de 8 jours sont des règles officielles ou contractuelles courantes. 🟠 Les repères de 3 à 8 ans pour la mini-omnium, la prime souvent double d'un jeune conducteur et les écarts de 30 à 50 % entre assureurs sont des ordres de grandeur, pas des règles.

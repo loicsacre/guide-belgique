@@ -12,8 +12,11 @@ short: "La Banque centrale européenne fixe les taux directeurs de la zone euro 
 aliases: [BCE, Banque centrale européenne, BNB, Banque nationale de Belgique, taux directeur, politique monétaire, Euribor, taux OLO, quantitative easing, euro]
 prerequisites: [taux-interet, inflation]
 related: [taux-fixe-variable, compte-epargne, pib-croissance, credit-hypothecaire]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: Key ECB interest rates
+    url: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html
+    org: Banque centrale européenne
   - title: Banque nationale de Belgique
     url: https://www.nbb.be/fr
     org: BNB
@@ -53,7 +56,7 @@ Il y a aussi des effets secondaires. L'euro se renforce face aux autres monnaies
 
 ## Ce que ça a donné récemment
 
-Cette chaîne n'est pas théorique : on l'a vue à l'œuvre en 2022-2023. En un an, la BCE a fait passer son taux directeur de 0 % à 4 %. Les crédits hypothécaires sont passés d'environ 1,5 % à plus de 3,5 %, le volume d'achats immobiliers a chuté, et les comptes d'épargne ont (un peu) remonté.
+Cette chaîne n'est pas théorique : on l'a vue à l'œuvre en 2022-2023. En un peu plus d'un an, de juillet 2022 à septembre 2023, la BCE a fait passer son taux de dépôt de −0,5 % à 4 %, en dix hausses successives. Les crédits hypothécaires sont passés d'environ 1,5 % à plus de 3,5 %, le volume d'achats immobiliers a chuté, et les comptes d'épargne ont (un peu) remonté.
 
 ## Qui fait quoi
 
@@ -89,4 +92,4 @@ Le **taux directeur** n'est pas le taux de ton crédit : c'est le prix de gros d
 
 ## Nature des chiffres de cette page
 
-🔴 L'objectif d'une inflation de 2 % à moyen terme est la cible officielle de la BCE. 🟠 Les taux de 2022-2023 (taux directeur de 0 % à 4 %, crédits hypothécaires d'environ 1,5 % à plus de 3,5 %) sont des ordres de grandeur historiques. 🔵 La hausse de 0,5 % qui ouvre la chaîne de transmission est un exemple fictif.
+🔴 L'objectif d'une inflation de 2 % à moyen terme est la cible officielle de la BCE, et la hausse de son taux de dépôt de −0,5 % à 4 % entre juillet 2022 et septembre 2023 vient de ses décisions publiées. 🟠 Les taux hypothécaires de la même période (d'environ 1,5 % à plus de 3,5 %) sont des ordres de grandeur historiques. 🔵 La hausse de 0,5 % qui ouvre la chaîne de transmission est un exemple fictif.

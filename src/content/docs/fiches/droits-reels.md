@@ -12,8 +12,11 @@ short: "La propriété se découpe : l'usufruitier use du bien et en touche les 
 aliases: [usufruit, nue-propriété, pleine propriété, indivision, démembrement, emphytéose, superficie, servitude, sortie d'indivision]
 prerequisites: [patrimoine-net]
 related: [succession, donation, formes-de-couple, precompte-immobilier, regime-matrimonial]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Qu'advient-il de la maison familiale en cas de séparation du couple ?"
+    url: https://www.notaire.be/actualites/quadvient-il-de-la-maison-familiale-en-cas-de-separation-du-couple
+    org: Fednot
   - title: Notaire.be — Usufruit et nue-propriété
     url: https://www.notaire.be/
     org: Fednot
@@ -67,7 +70,7 @@ Vivre en indivision obéit à quelques règles clés.
 - **Nul n'est tenu de rester en indivision.** Chacun peut demander le partage à tout moment, soit par la vente du bien, soit par le rachat de sa part par les autres, au besoin en passant par le tribunal.
 - **Les décisions importantes exigent l'unanimité**, alors que la gestion courante se décide à la majorité.
 - **Les charges se partagent selon les quotes-parts.** Et celui qui occupe seul le bien peut devoir une indemnité d'occupation aux autres.
-- **La sortie d'indivision**, par exemple quand un partenaire rachète la part de l'autre après une séparation, coûte un **droit de partage** de 1 % en Wallonie et à Bruxelles, ou de 2,5 % en Flandre. C'est beaucoup moins que les droits d'enregistrement pleins d'un achat ordinaire. → [[droits-enregistrement]]
+- **La sortie d'indivision**, par exemple quand un partenaire rachète la part de l'autre après une séparation, coûte un **droit de partage** de 1 % en Wallonie et à Bruxelles. En Flandre, il est de 2,5 %, réduit à 1 % sous conditions quand des époux ou cohabitants légaux se partagent le logement familial. C'est beaucoup moins que les droits d'enregistrement pleins d'un achat ordinaire. → [[droits-enregistrement]]
 
 ## Les autres droits réels, en bref
 
@@ -91,4 +94,4 @@ L'**usufruit** est un droit réel sur le bien : il passe avec lui et s'impose à
 
 ## Nature des chiffres de cette page
 
-🔴 Les droits de partage (1 % en Wallonie et à Bruxelles, 2,5 % en Flandre) et la durée de l'emphytéose (15 à 99 ans) sont des règles légales. 🔵 La famille de l'exemple et l'achat à 50/50 sont fictifs.
+🔴 Les droits de partage (1 % en Wallonie et à Bruxelles, 2,5 % en Flandre ou 1 % pour le logement familial d'époux ou de cohabitants légaux) et la durée de l'emphytéose (15 à 99 ans) sont des règles légales. 🔵 La famille de l'exemple et l'achat à 50/50 sont fictifs.

@@ -75,6 +75,9 @@ etapes:
   - avertissement-extrait-de-role
   - probleme-administratif
 sources:
+- title: L'exonération du précompte mobilier de A à Z
+  url: https://www.belfius.be/retail/fr/moments-cles/impots/fiscalite-quotidien/investissements/infos-generales/dividende/index.aspx
+  org: Belfius
 - title: Plafonds fiscaux — exercice d'imposition 2026
   url: https://assets.contenthub.wolterskluwer.com/api/public/content/3084229-plafonds-fiscaux-3a47085543
   org: Wolters Kluwer
@@ -87,7 +90,10 @@ sources:
 - title: Pourquoi certains travailleurs ont-ils un remboursement et d'autres un supplément ?
   url: https://www.partena-professional.be/fr/node/21401
   org: Partena Professional
-last_verified: '2026-10-02'
+- title: Votre situation familiale
+  url: https://www.wikifin.be/fr/impots-emploi-et-revenus/declaration-dimpots/votre-situation-familiale/votre-situation-familiale
+  org: Wikifin (FSMA)
+last_verified: 2026-10-05
 ---
 Un mail du SPF Finances en mai : « votre déclaration est disponible dans MyMinfin ». Tu ouvres : une suite de cadres numérotés en chiffres romains, des codes à quatre chiffres, et presque tout est déjà rempli. Deux questions : qu'est-ce que je dois vérifier ? Et pourquoi, trois mois plus tard, vais-je recevoir un décompte alors que l'impôt est déjà retenu sur mon salaire chaque mois ?
 
@@ -113,13 +119,13 @@ Si ta situation est simple, tu ne reçois pas une déclaration mais une **propos
 
 Tu te connectes à **MyMinfin** avec itsme ou ta carte d'identité (voir [[identite-numerique]]). Les cadres qui concernent un salarié :
 
-**Cadre II, situation familiale.** Ton état civil au 1er janvier 2026 et tes **personnes à charge** : les enfants (ou parents, frères et sœurs) qui vivent chez toi et ont peu de ressources. Chacune augmente la part de ton revenu qui n'est pas imposée. En couple non marié, un seul des deux peut déclarer l'enfant ; choisissez le plus avantageux. Voir [[personne-a-charge]].
+**Cadre II, situation familiale.** Ton état civil (si tu t'es marié ou as fait une déclaration de cohabitation légale en 2025, chacun déclare encore séparément cette année-là ; la déclaration commune commence l'année suivante) et tes **personnes à charge** au 1er janvier 2026 : les enfants (ou parents, frères et sœurs) qui vivent chez toi et ont peu de ressources. Chacune augmente la part de ton revenu qui n'est pas imposée. En couple non marié, un seul des deux peut déclarer l'enfant ; choisissez le plus avantageux. Voir [[personne-a-charge]].
 
 **Cadre III, revenus immobiliers.** Ta résidence principale : rien à déclarer, elle est exonérée. Un second bien ou un bien loué : son **revenu cadastral**, ce loyer théorique fixé par l'administration. Voir [[revenu-cadastral]].
 
 **Cadre IV, salaires.** Les montants de la 281.10. Une case à connaître : les **frais professionnels**. Par défaut, l'État retire un forfait de ton revenu (30 %, plafonné à 5 930 €) pour tenir compte de ce que ton travail te coûte. Si tes frais réels (longs trajets, matériel non remboursé) dépassent ce forfait, tu peux les déclarer, avec preuves. Voir [[revenu-imposable]].
 
-**Cadre VII, revenus mobiliers.** Tes intérêts et dividendes ont en général déjà été taxés à la source par ta banque belge (le précompte mobilier, 30 %) : rien à déclarer. Deux exceptions : récupérer l'exonération sur une première tranche de dividendes (≈ 860 €), et déclarer ce qu'un courtier étranger n'a pas précompté. Voir [[precompte-mobilier]].
+**Cadre VII, revenus mobiliers.** Tes intérêts et dividendes ont en général déjà été taxés à la source par ta banque belge (le précompte mobilier, 30 %) : rien à déclarer. Deux exceptions : récupérer l'exonération sur une première tranche de dividendes (833 € pour les revenus 2025), et déclarer ce qu'un courtier étranger n'a pas précompté. Voir [[precompte-mobilier]].
 
 **Cadre X, réductions d'impôt.** Épargne-pension (1 050 € versés → 315 € d'impôt en moins), dons (45 %), garde d'enfants, titres-services (régional). Ces dépenses ne réduisent pas ton revenu, elles réduisent **l'impôt** calculé : voir [[deduction-reduction-credit]].
 

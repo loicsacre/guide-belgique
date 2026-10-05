@@ -53,6 +53,9 @@ notions: []
 sidebar:
   order: 15
 sources:
+- title: 'Rénovation énergétique : les grandes lignes du futur régime de soutien sont connues'
+  url: https://www.wallonie.be/fr/actualites/renovation-energetique-les-grandes-lignes-du-futur-regime-de-soutien-sont-connues
+  org: Wallonie
 - title: 'SPW Énergie — Portail de l''énergie en Wallonie'
   url: https://energie.wallonie.be/
   org: SPW Énergie
@@ -65,7 +68,7 @@ sources:
 - title: 'Wikifin — Acheter, construire, rénover une habitation'
   url: https://www.wikifin.be/fr/logement-et-emprunt-hypothecaire/acheter-construire-renover-une-habitation/construire-et-renover-3
   org: Wikifin (FSMA)
-last_verified: '2026-10-02'
+last_verified: '2026-10-05'
 ---
 L'acte est signé, le notaire t'a serré la main, et tu es debout dans un couloir qui sent le vieux papier peint avec un trousseau de clés dont tu ne sais pas ouvrir la moitié. Pendant six mois, tu as appris les droits d'enregistrement, la quotité, le TAEG ([J'achète un logement](../acheter-un-logement/)). Personne ne t'a appris la maison elle-même. Cette histoire raconte la première année : ce qu'il faut comprendre, dans quel ordre, et pourquoi une maison est moins une chose qu'un **ensemble de machines qui vieillissent chacune à leur rythme**.
 
@@ -136,15 +139,15 @@ L'ordre n'est pas arbitraire ; c'est celui de la fiche [[ordre-des-travaux]] : o
 
 Avec le rapport, tu écris le plan sur cinq ans et tu le chiffres avec le [simulateur de budget rénovation](../../outils/simulateur-renovation/). Trois devis par poste, comparés sur le même cahier des charges ([[devis-travaux]], [Lire un devis](../../documents/devis-renovation/)), entreprises vérifiées à la Banque-Carrefour et assurées ([[choisir-entrepreneur]]).
 
-| Bouquet 1 (année 1–2) | Coût TVAC 6 % 🔵 | Prime (catégorie R2, ×4) 🔵 |
+| Bouquet 1 (année 1–2) | Coût TVAC 6 % 🔵 | Prime Habitation (catégorie R2, ×4) 🔵 |
 | --- | ---: | ---: |
 | Toiture + isolation + sous-toiture | 28 100 € | 5 250 € |
 | Électricité complète + recontrôle | 6 500 € | 1 280 € |
-| Ventilation pièces humides | 2 000 € | 1 000 € |
+| Ventilation pièces humides | 2 000 € | — (non primée) |
 | Imprévus 12 % | 4 400 € | — |
-| **Total** | **41 000 €** | **7 530 €** |
+| **Total** | **41 000 €** | **6 530 €** |
 
-Deux mécanismes que tu découvres en route : la **TVA à 6 %** au lieu de 21 % parce que la maison a plus de dix ans (12 % du budget, l'aide la plus importante et la moins visible), et le fait que les **primes arrivent après** les factures : il faut avancer l'argent. D'où le montage : épargne (en gardant la réserve de précaution intacte), **Rénopack** à 0 % de la SWCS, et le reste sur un petit prêt que les primes rembourseront ([[budget-renovation]], [[primes-renovation]]). Le bouquet 2 attendra que les primes du 1 soient encaissées ; le bouquet 3, que les radiateurs puissent fonctionner à basse température.
+Deux mécanismes que tu découvres en route : la **TVA à 6 %** au lieu de 21 % parce que la maison a plus de dix ans (12 % du budget, l'aide la plus importante et la moins visible), et le fait que les **primes arrivent après** les factures : il faut avancer l'argent. D'où le montage : épargne (en gardant la réserve de précaution intacte), **Rénopack** à 0 % de la SWCS, et le reste sur un petit prêt que les primes rembourseront ([[budget-renovation]], [[primes-renovation]]). Ces primes sont celles de l'ancien régime wallon, les primes Habitation : ton dossier a été introduit avant leur fin, le 30 septembre 2026. Depuis le 1er octobre 2026, la Wallonie ne verse plus de primes par travail : elle prête à 0 % et efface une partie du remboursement (50, 40 ou 15 % selon les revenus), pour des projets qui font gagner au logement une classe PEB. Le bouquet 2 attendra que les primes du 1 soient encaissées ; le bouquet 3, que les radiateurs puissent fonctionner à basse température.
 
 Et la chaudière de 1998 ? Elle n'est pas dans le plan avant l'année 5. Si elle lâche avant, tu la remplaces par une condensation **modulante, dimensionnée pour la maison isolée**, pas « à l'identique » ; sinon, tu l'entretiens et tu la laisses finir sa vie.
 
@@ -164,6 +167,6 @@ La maison cesse d'être une suite de surprises le jour où elle devient une rout
 
 ## Nature des chiffres de cette page
 
-- 🔴 Délai de 18 mois après un contrôle électrique négatif (RGIE), fréquence d'entretien des chaudières gaz en Wallonie (3 ans), obligation de détecteurs de fumée, TVA 6 % pour un logement de plus de 10 ans, mécanique des primes Habitation wallonnes (régime jusqu'au 30 septembre 2026) : règles légales datées.
+- 🔴 Délai de 18 mois après un contrôle électrique négatif (RGIE), fréquence d'entretien des chaudières gaz en Wallonie (3 ans), obligation de détecteurs de fumée, TVA 6 % pour un logement de plus de 10 ans, mécanique des primes Habitation wallonnes (régime clos le 30 septembre 2026), parts non remboursables du Rénopack et saut de classe PEB (régime en vigueur depuis le 1er octobre 2026) : règles légales datées.
 - 🟠 Prix d'un entretien, ratio d'entretien annuel, consommation d'une maison isolée : repères.
-- 🔵 La maison, ses consommations, ses devis et ses primes sont inventés pour l'exemple ; les primes sont calculées sur la mécanique « base × coefficient, plafond 70 % ».
+- 🔵 La maison, ses consommations, ses devis et ses primes sont inventés pour l'exemple ; les primes sont calculées sur la mécanique de l'ancien régime wallon, « base × coefficient, plafond 70 % » en catégorie R2.

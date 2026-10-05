@@ -12,8 +12,11 @@ short: "Appelée « incendie » par habitude, elle couvre le bâtiment et/ou son
 aliases: [assurance incendie, assurance habitation, assurance locataire, responsabilité locative, abandon de recours, contenu, vol, catastrophes naturelles, grille d'évaluation]
 prerequisites: [assurance-principes]
 related: [bail, garantie-locative, copropriete, credit-hypothecaire, rc-familiale, energie, entretien-maison, humidite-maison, reception-travaux]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Modification de la législation sur les baux en novembre 2024"
+    url: https://be.brussels/fr/logement/modification-de-la-legislation-sur-les-baux-en-novembre-2024
+    org: be.brussels
   - title: Wikifin — Assurer son logement
     url: https://www.wikifin.be/fr/budget-payer-emprunter-et-assurer
     org: Wikifin (FSMA)
@@ -40,7 +43,7 @@ Selon ta situation, tu n'assures pas les mêmes choses. Le tableau compare les q
 | | Locataire | Propriétaire occupant | Propriétaire bailleur | Copropriétaire |
 | --- | --- | --- | --- | --- |
 | Bâtiment | — | Oui | Oui | Via la **police de l'ACP** (voir [[copropriete]]) |
-| Responsabilité locative (dommages au bâtiment loué) | **Oui, obligatoire** en Wallonie et Flandre, exigée par le bail à Bruxelles | — | — | — |
+| Responsabilité locative (dommages au bâtiment loué) | **Oui, obligatoire** dans les trois Régions (Wallonie depuis 2018, Flandre depuis 2019, Bruxelles pour les baux conclus ou renouvelés depuis novembre 2024) | — | — | — |
 | Contenu (meubles, électro, vêtements) | Recommandé | Recommandé | Si meublé | Oui |
 | Recours des voisins (le feu s'étend) | Inclus | Inclus | Inclus | Inclus |
 
@@ -83,4 +86,4 @@ L'**assurance habitation** couvre ton logement et ta responsabilité envers le b
 
 ## Nature des chiffres de cette page
 
-🔴 L'obligation du locataire en Wallonie et en Flandre et l'inclusion obligatoire des catastrophes naturelles depuis 2006 sont des règles officielles. 🟠 La franchise de 250 à 300 € et les primes de 150 à 300 € (appartement en location) et de 300 à 600 € (maison) par an sont des repères. 🔵 La maison de 300 000 € assurée pour 200 000 € et le dégât de 30 000 € sont un exemple fictif.
+🔴 L'obligation d'assurance du locataire dans les trois Régions (Wallonie depuis 2018, Flandre depuis 2019, Bruxelles depuis novembre 2024) et l'inclusion obligatoire des catastrophes naturelles depuis 2006 sont des règles officielles. 🟠 La franchise de 250 à 300 € et les primes de 150 à 300 € (appartement en location) et de 300 à 600 € (maison) par an sont des repères. 🔵 La maison de 300 000 € assurée pour 200 000 € et le dégât de 30 000 € sont un exemple fictif.

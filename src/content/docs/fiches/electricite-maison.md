@@ -13,8 +13,11 @@ short: "De la rue au grille-pain : compteur, disjoncteur général, différentie
 aliases: [installation électrique, tableau électrique, RGIE, différentiel, disjoncteur, mise à la terre, compteur électrique, compteur communicant]
 prerequisites: [maison-systemes]
 related: [panneaux-solaires, diagnostic-maison, energie, primes-renovation, choisir-entrepreneur]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Certinergie — Réglementation RGIE : contrôle électrique à la vente"
+    url: https://www.certinergie.be/fr/controle-electrique/reglementation-rgie/
+    org: Certinergie
   - title: "SPF Économie — Règlement général sur les installations électriques (RGIE)"
     url: https://economie.fgov.be/fr/themes/energie/sources-denergie/electricite/securite-des-installations/reglement-general-sur-les
     org: SPF Économie
@@ -59,7 +62,7 @@ Sans eux, le contrôleur ne peut pas délivrer un rapport conforme. Ils doivent 
 ## Quand le contrôle est obligatoire
 
 :::note[Règle datée — RGIE (AR du 8 septembre 2019)]
-Le contrôle par un organisme agréé est obligatoire à la mise en service d'une nouvelle installation ou après une modification importante (renforcement, nouveau tableau) ; à la vente d'une habitation dont l'installation date d'avant le 1er octobre 1981, si aucun contrôle valable n'existe ; et tous les 25 ans pour une installation conforme. Si le contrôle à la vente est négatif, l'acheteur a 18 mois après l'acte pour mettre l'installation en ordre et la faire recontrôler.
+Le contrôle par un organisme agréé est obligatoire à la mise en service d'une nouvelle installation ou après une modification importante (renforcement, nouveau tableau) ; à la vente de toute habitation, quel que soit l'âge de l'installation, si le vendeur n'a pas de procès-verbal de contrôle de moins de 25 ans (une installation d'avant le 1er octobre 1981, jamais contrôlée, n'en a par définition aucun) ; et tous les 25 ans pour une installation conforme. Si le contrôle à la vente est négatif, l'acheteur a 18 mois après l'acte pour mettre l'installation en ordre et la faire recontrôler.
 :::
 
 Un contrôle négatif n'empêche donc pas la vente : il transfère le travail à l'acheteur, avec un délai. Le contrôle lui-même coûte de l'ordre de 130 à 200 €.
@@ -102,4 +105,4 @@ Enfin, le **contrôle de conformité** (RGIE, sécurité) et le **certificat PEB
 
 ## Nature des chiffres de cette page
 
-🔴 Les obligations et délais de contrôle (25 ans, 18 mois, installations d'avant le 1er octobre 1981) et les valeurs de résistance de terre (30 Ω, 100 Ω) viennent du RGIE (AR du 8 septembre 2019, SPF Économie). 🟠 Le prix d'un contrôle (130 à 200 €), le test mensuel des différentiels et le branchement courant de 40 A (≈ 9,2 kW) sont des repères pratiques. 🔵 Le devis de Noé (2 800 € et 180 €) est inventé pour l'exemple.
+🔴 Les obligations et délais de contrôle (25 ans, contrôle à la vente sans procès-verbal de moins de 25 ans, 18 mois) et les valeurs de résistance de terre (30 Ω, 100 Ω) viennent du RGIE (AR du 8 septembre 2019, SPF Économie). 🟠 Le prix d'un contrôle (130 à 200 €), le test mensuel des différentiels et le branchement courant de 40 A (≈ 9,2 kW) sont des repères pratiques. 🔵 Le devis de Noé (2 800 € et 180 €) est inventé pour l'exemple.

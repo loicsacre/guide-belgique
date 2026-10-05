@@ -12,8 +12,11 @@ short: "Le toit est le système qui protège tous les autres : couverture étanc
 aliases: [toit, couverture, charpente, sous-toiture, gouttières, tuiles, ardoises, toit plat, EPDM, roofing, faîtage, solin]
 prerequisites: [maison-systemes]
 related: [isolation-maison, humidite-maison, eau-maison, panneaux-solaires, ordre-des-travaux, permis-urbanisme, choisir-entrepreneur, assurance-habitation]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Rénovation énergétique : les grandes lignes du futur régime de soutien sont connues"
+    url: https://www.wallonie.be/fr/actualites/renovation-energetique-les-grandes-lignes-du-futur-regime-de-soutien-sont-connues
+    org: Wallonie
   - title: "SPW Énergie — Isoler la toiture"
     url: https://energie.wallonie.be/
     org: SPW Énergie
@@ -98,7 +101,7 @@ Camille achète une maison de 1958 avec des ardoises artificielles d'origine. L'
 | Isolation 22 cm, R = 6, posée pendant le chantier | 6 000 € |
 | **Total TVAC à 6 %** | **28 100 €** |
 
-Elle apprend qu'isoler plus tard, séparément, lui aurait coûté 🔵 2 000 € de plus, parce que l'échafaudage et le décapage auraient été comptés deux fois. Elle apprend aussi que la prime isolation ne s'obtient que si la valeur R exigée est atteinte. Elle fait donc tout en une fois, et attend que le toit soit terminé pour commander ses panneaux solaires.
+Elle apprend qu'isoler plus tard, séparément, lui aurait coûté 🔵 2 000 € de plus, parce que l'échafaudage et le décapage auraient été comptés deux fois. Elle apprend aussi qu'une aide à l'isolation n'est accordée que si la performance exigée est atteinte : sous l'ancienne prime Habitation wallonne, une valeur R d'au moins 4,5 en toiture ; depuis le 1er octobre 2026, un projet qui fait gagner au logement une classe [[peb]] (→ [[primes-renovation]]). Elle fait donc tout en une fois, et attend que le toit soit terminé pour commander ses panneaux solaires.
 
 ## Ce que ça change pour toi
 
@@ -114,4 +117,4 @@ La **sous-toiture** est une barrière à l'eau, du côté extérieur de l'isolan
 
 ## Nature des chiffres de cette page
 
-🔴 L'obligation de désamiantage par une entreprise agréée et les dispenses de permis sont des règles légales en Wallonie (Code wallon du bien-être au travail, CoDT) ; Bruxelles et la Flandre ont leurs équivalents, avec en Flandre un inventaire amiante obligatoire à la vente. 🟠 Les durées de vie, les prix au m², les 800 à 1 000 litres de pluie par m² et l'horizon de dix ans pour une réparation sont des repères, qui varient fortement avec l'accès, la pente et la zinguerie. 🔵 Le devis de Camille est inventé.
+🔴 L'obligation de désamiantage par une entreprise agréée et les dispenses de permis sont des règles légales en Wallonie (Code wallon du bien-être au travail, CoDT) ; Bruxelles et la Flandre ont leurs équivalents, avec en Flandre un inventaire amiante obligatoire à la vente. Le seuil R ≥ 4,5 de l'ancienne prime Habitation wallonne (régime clos le 30 septembre 2026) et l'exigence d'un saut de classe PEB pour le Rénopack (depuis le 1er octobre 2026) sont des règles régionales. 🟠 Les durées de vie, les prix au m², les 800 à 1 000 litres de pluie par m² et l'horizon de dix ans pour une réparation sont des repères, qui varient fortement avec l'accès, la pente et la zinguerie. 🔵 Le devis de Camille est inventé.

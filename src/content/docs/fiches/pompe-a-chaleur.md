@@ -4,7 +4,7 @@ kind: fiche
 domain: maison
 level: utile
 nature: mixte
-valid_for: "primes régionales 2026 (Wallonie : prime Habitation, régime permanent dès 10/2026)"
+valid_for: "aides régionales 2026 (Wallonie : prime Habitation jusqu'au 30/09/2026, Rénopack depuis le 01/10/2026)"
 scope: [belgique]
 status: publie
 tags: [pompe à chaleur, PAC, air-eau, géothermie, COP, SCOP, électricité, chauffage]
@@ -13,8 +13,11 @@ short: "Une pompe à chaleur déplace de la chaleur (de l'air, du sol ou de l'ea
 aliases: [PAC, pompe à chaleur air-eau, pompe à chaleur air-air, géothermie, COP, SCOP]
 prerequisites: [chauffage-maison, isolation-maison]
 related: [electricite-maison, eau-chaude-sanitaire, panneaux-solaires, primes-renovation, ordre-des-travaux, energie, peb]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Rénovation énergétique : les grandes lignes du futur régime de soutien sont connues"
+    url: https://www.wallonie.be/fr/actualites/renovation-energetique-les-grandes-lignes-du-futur-regime-de-soutien-sont-connues
+    org: Wallonie
   - title: "SPW Énergie — Pompes à chaleur"
     url: https://energie.wallonie.be/
     org: SPW Énergie
@@ -75,15 +78,15 @@ Une PAC ne s'installe pas seule. Quatre points sont à vérifier avant de signer
 
 Une PAC air-eau pour une maison unifamiliale coûte de 10 000 à 18 000 € posée, hors adaptation des radiateurs. C'est un ordre de grandeur de marché, pas un prix fixé.
 
-:::note[Règle datée — primes 2026]
-En Wallonie, la prime Habitation de base pour une pompe à chaleur de chauffage est de 600 € (jusqu'au 30 septembre 2026), multipliée selon ta catégorie de revenus jusqu'à ×6, et plafonnée à 70 % de la facture. Un [[audit-logement]] préalable, réalisé par un auditeur agréé, est obligatoire. Bruxelles (Rénolution) et la Flandre (Mijn VerbouwPremie) ont leurs propres barèmes. La TVA est de 6 % si le logement a plus de 10 ans.
+:::note[Règle datée — aides 2026]
+En Wallonie, la prime Habitation pour une pompe à chaleur de chauffage (600 € de base, multipliés selon la catégorie de revenus jusqu'à ×6, plafonnés à 70 ou 50 % de la facture, après [[audit-logement]]) a pris fin avec ce régime le 30 septembre 2026. Depuis le 1er octobre 2026, une PAC n'est plus primée seule : elle peut faire partie d'un projet global financé par un Rénopack, un prêt à 0 % dont une partie n'est pas à rembourser selon tes revenus, à condition que l'ensemble des travaux fasse gagner au logement une classe PEB et qu'un audit de moins d'un an le prévoie. Bruxelles (Rénolution) et la Flandre (Mijn VerbouwPremie) ont leurs propres barèmes. La TVA est de 6 % si le logement a plus de 10 ans.
 :::
 
 Les montants détaillés et leur date de validité sont dans [[primes-renovation]].
 
 ## Un exemple : PAC tout de suite, ou isoler d'abord ?
 
-La maison de Noé (exemple **fictif**) date de 1972 ; son toit a été isolé l'an dernier, mais pas ses murs. L'installateur calcule 11 kW de déperditions, et constate que les radiateurs d'origine imposeraient de l'eau à 60 °C par −8 °C. Son avis : une PAC hybride maintenant, ou attendre l'isolation des murs.
+La maison de Noé (exemple **fictif**) date de 1972 ; son toit a été isolé l'an dernier, mais pas ses murs, et la vieille chaudière gaz de 1998, entretenue, tient encore. L'installateur calcule 11 kW de déperditions, et constate que les radiateurs d'origine imposeraient de l'eau à 60 °C par −8 °C. Son avis : une PAC hybride maintenant, ou attendre l'isolation des murs.
 
 Noé fait les comptes avec le [simulateur de budget rénovation](../../outils/simulateur-renovation/). Isoler les façades (18 000 €), puis poser une PAC seule de 7 kW avec trois radiateurs remplacés (13 500 €), coûte plus cher au départ qu'une PAC de 11 kW tout de suite. Mais cela divise sa consommation d'électricité par deux chaque hiver, pendant les trente années suivantes. Il isole donc d'abord.
 
@@ -107,4 +110,4 @@ Enfin, la **puissance thermique** (les kW de chaleur fournis) n'est pas la **pui
 
 ## Nature des chiffres de cette page
 
-🔴 Le montant de base de la prime wallonne (600 €, multiplié jusqu'à ×6, plafonné à 70 %), l'obligation d'audit et la TVA à 6 % sont des règles en vigueur en 2026, susceptibles de changer avec le régime permanent wallon à partir du 1er octobre 2026. 🟠 Les prix (10 000 à 18 000 €), les COP (2, 3 à 4, 4 ou plus), le rendement de 0,95 de la chaudière, le bruit de 35 à 50 dB et le rapport de 2,5 à 3 entre prix de l'électricité et du gaz sont des repères de marché et des guides régionaux. 🔵 Les chiffres de la maison de Noé (11 kW, 7 kW, 18 000 €, 13 500 €) sont inventés.
+🔴 Le montant de base de l'ancienne prime wallonne (600 €, multiplié jusqu'à ×6, plafonné à 70 ou 50 %) date du régime des primes Habitation, clos le 30 septembre 2026 ; le Rénopack, son saut de classe PEB et l'audit de moins d'un an relèvent du régime en vigueur depuis le 1er octobre 2026 ; la TVA à 6 % est fédérale. 🟠 Les prix (10 000 à 18 000 €), les COP (2, 3 à 4, 4 ou plus), le rendement de 0,95 de la chaudière, le bruit de 35 à 50 dB et le rapport de 2,5 à 3 entre prix de l'électricité et du gaz sont des repères de marché et des guides régionaux. 🔵 Les chiffres de la maison de Noé (11 kW, 7 kW, 18 000 €, 13 500 €) sont inventés.

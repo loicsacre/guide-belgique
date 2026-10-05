@@ -13,8 +13,20 @@ short: "L'impôt régional prélevé sur ce que chaque héritier reçoit, par tr
 aliases: [successierechten, tarifs successoraux, ligne directe, exonération logement familial, planification successorale]
 prerequisites: [succession, qui-fait-quoi]
 related: [donation, droits-reels, assurance-solde-restant-du, formes-de-couple, domicile, tranches-imposition]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Calcul et tarifs des droits de succession en Wallonie"
+    url: https://www.notaire.be/heritage/taux-impot-succession/droits-de-succession-wallonie
+    org: Fednot
+  - title: "Calcul et tarifs des droits de succession à Bruxelles"
+    url: https://www.notaire.be/heritage/taux-impot-succession/droits-de-succession-bruxelles
+    org: Fednot
+  - title: "Planification patrimoniale : les évolutions à partir du 1er janvier 2026"
+    url: https://blog.forumforthefuture.be/fr/article/planification-patrimoniale-quelles-surprises-sous-le-sapin-comment-se-preparer-aux-evolutions-annoncees-a-partir-du-1er-janvier-2026-/29477
+    org: Forum for the Future
+  - title: "Tout savoir sur la déclaration de succession et la déclaration de mutation par décès"
+    url: https://www.notaire.be/heritage/nouveautes/tout-savoir-sur-la-declaration-de-succession-et-la-declaration-de-mutation-par-deces
+    org: Fednot
   - title: Comment sont calculés les droits de succession en Belgique ?
     url: https://www.test-achats.be/famille-prive/heritage/dossier/calcul-droits-de-succession-belgique
     org: Test Achats
@@ -42,7 +54,7 @@ Trois idées suffisent à comprendre le mécanisme.
 
 ## Les grandes lignes des tarifs
 
-On parle de **ligne directe** pour les héritages entre parents et enfants (et grands-parents et petits-enfants). Le conjoint et le cohabitant légal sont taxés au même tarif. Plus le lien s'éloigne, plus le taux grimpe.
+On parle de **ligne directe** pour les héritages entre parents et enfants (et grands-parents et petits-enfants). Le conjoint et le cohabitant légal sont taxés au même tarif, et à Bruxelles et en Flandre, le cohabitant de fait aussi, après au moins un an de ménage commun avec le défunt. Plus le lien s'éloigne, plus le taux grimpe.
 
 :::note[Règle datée — 2026]
 | Lien avec le défunt | Wallonie | Bruxelles | Flandre |
@@ -50,7 +62,7 @@ On parle de **ligne directe** pour les héritages entre parents et enfants (et g
 | Ligne directe, conjoint, cohabitant légal | 3 % → 30 % (au-delà de 500 000 €) | 3 % → 30 % (au-delà de 500 000 €) | 3 % → 27 % (au-delà de 250 000 €), calcul séparé pour les meubles et les immeubles |
 | Frères et sœurs | 20 % → 65 % | 20 % → 65 % | 25 % → 55 % |
 | Oncles, tantes, neveux | 25 % → 70 % | 35 % → 70 % | 25 % → 55 % |
-| Autres (amis, concubin de fait) | 30 % → 80 % | 40 % → 80 % | 25 % → 55 % |
+| Autres (amis, cohabitant de fait en Wallonie ou depuis moins d'un an) | 30 % → 80 % | 40 % → 80 % | 25 % → 55 % |
 | Logement familial reçu par le conjoint ou le cohabitant légal | Exonéré | Exonéré | Exonéré |
 
 La Wallonie a annoncé une forte baisse au **1er janvier 2028** : ligne directe plafonnée à 15 %, autres lignes de 20 à 40 %.
@@ -68,7 +80,7 @@ Ce n'est ni la Région où se trouvent les biens, ni celle où habitent les hér
 
 La base taxable, c'est tout ce que possédait le défunt (comptes, titres, immeubles, voiture, meubles), **moins** ses dettes et les frais funéraires. Trois règles l'élargissent ou la découpent.
 
-**Les donations récentes sont réintégrées.** Un don que le défunt a fait sans l'enregistrer, par exemple un virement à un enfant, revient dans la succession s'il a eu lieu dans les **3 ans** avant le décès (5 ans en Wallonie). Il est alors taxé comme s'il faisait partie de l'héritage. → [[donation]]
+**Les donations récentes sont réintégrées.** Un don que le défunt a fait sans l'enregistrer, par exemple un virement à un enfant, revient dans la succession s'il a eu lieu dans les **5 ans** avant le décès. Ce délai de 5 ans vaut en Wallonie depuis 2022, en Flandre pour les dons faits depuis 2025 et à Bruxelles pour ceux faits depuis 2026 ; un don plus ancien garde le délai de 3 ans de l'époque. Il est alors taxé comme s'il faisait partie de l'héritage. → [[donation]]
 
 **Les assurances-vie sont taxées comme un legs.** Si tu es bénéficiaire d'une assurance-vie du défunt, le capital que tu reçois entre dans ta part taxable, comme si le défunt te l'avait laissé par testament.
 
@@ -86,7 +98,7 @@ Au décès du second parent, les enfants deviennent pleins propriétaires de ce 
 
 **L'écart entre la ligne directe et les autres explique toute la planification successorale.** C'est parce que les taux s'envolent hors de la famille proche qu'on prépare sa transmission : par des donations de son vivant, à un taux fixe et bas ; par un testament au profit du partenaire ; par une assurance-vie ; ou tout simplement par le mariage. → [[donation]]
 
-**Tu vis en cohabitation de fait ?** Ton partenaire est en principe taxé comme un étranger, avec les taux les plus élevés, sauf aménagements régionaux. Il faut donc penser à deux choses : le testament, pour qu'il hérite, et les droits, pour qu'il ne perde pas l'essentiel en impôt. → [[formes-de-couple]]
+**Tu vis en cohabitation de fait ?** En Wallonie, ton partenaire est taxé comme un étranger, avec les taux les plus élevés. À Bruxelles et en Flandre, il paie le tarif des époux s'il vivait avec toi au jour du décès et formait un ménage commun avec toi depuis au moins un an sans interruption. Il faut donc penser à deux choses : le testament, pour qu'il hérite, et les droits, pour qu'il ne perde pas l'essentiel en impôt. → [[formes-de-couple]]
 
 **La déclaration de succession est due dans les 4 mois** du décès. Le notaire la prépare d'habitude, mais tu peux la faire toi-même pour une succession simple.
 
@@ -96,4 +108,4 @@ Les **droits de succession** taxent ce qu'on reçoit au décès ; les **droits d
 
 ## Nature des chiffres de cette page
 
-🔴 Les taux de 3 % à 30 % en ligne directe (27 % en Flandre), jusqu'à 55 à 80 % pour les autres, les paliers de 500 000 € et 250 000 €, les premières tranches de 12 500 à 50 000 €, l'exonération du logement familial, la période de 5 ans pour fixer la Région, le rappel des dons sur 3 ans (5 en Wallonie), le délai de 4 mois et la réforme wallonne de 2028 sont des règles régionales valables en 2026. 🔵 La succession de 300 000 €, le logement de 200 000 € et les droits de 1 000 à 3 000 € par enfant sont un exemple inventé, en ordre de grandeur.
+🔴 Les taux de 3 % à 30 % en ligne directe (27 % en Flandre), jusqu'à 55 à 80 % pour les autres, les paliers de 500 000 € et 250 000 €, les premières tranches de 12 500 à 50 000 €, l'exonération du logement familial, la période de 5 ans pour fixer la Région, le rappel des dons sur 5 ans (3 ans pour un don ancien fait à Bruxelles avant 2026 ou en Flandre avant 2025), le délai de 4 mois et la réforme wallonne de 2028 sont des règles régionales valables en 2026. 🔵 La succession de 300 000 €, le logement de 200 000 € et les droits de 1 000 à 3 000 € par enfant sont un exemple inventé, en ordre de grandeur.

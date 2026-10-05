@@ -56,7 +56,10 @@ sources:
 - title: Montant maximum du chèque-repas
   url: https://www.bobex.be/fr-be/cheques-repas/montant-cheque-repas/
   org: Bobex
-last_verified: '2026-10-02'
+- title: "Le chèque-repas de 10 euros : six questions pour les employeurs"
+  url: https://www.partena-professional.be/fr/node/22442
+  org: Partena Professional
+last_verified: 2026-10-05
 ---
 Tu ouvres le PDF de ta première fiche de paie. Trente lignes, des codes, deux colonnes de chiffres, et en bas un montant qui n'a rien à voir avec ton contrat. Cette page la lit avec toi, bloc par bloc, en expliquant chaque mécanisme au moment où il apparaît. L'exemple complet, ligne par ligne et cliquable, est dans [Lire une fiche de paie](../../documents/fiche-de-paie/).
 
@@ -94,7 +97,7 @@ Un **avantage de toute nature** (ATN) est une chose que ton employeur te donne a
 
 **Indemnité de télétravail : + 150 €.** Un **remboursement de frais** (ton bureau à la maison), forfaitaire, **sans cotisation ni impôt** dans les limites légales. C'est pour ça que les employeurs aiment ces indemnités : 150 € de frais valent 150 € nets ; 150 € de brut en vaudraient 70.
 
-**Chèques-repas, part personnelle : − 22,89 €.** Un chèque par jour presté (21 × 8 €), dont tu paies 1,09 € et l'employeur le reste ; exonérés dans ces limites.
+**Chèques-repas, part personnelle : − 22,89 €.** Un chèque de 10 € par jour presté (21 chèques), dont tu paies 1,09 € et l'employeur 8,91 € ; 10 € est le maximum légal depuis 2026, et dans ces limites les chèques sont exonérés de cotisations et d'impôt.
 
 **Net à payer : 2 439,66 €.** Ce qui arrive sur ton compte, le 28 du mois.
 

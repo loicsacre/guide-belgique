@@ -4,7 +4,7 @@ kind: fiche
 domain: maison
 level: utile
 nature: mixte
-valid_for: "exigences PEB et prime châssis 2026 (Wallonie : Uw ≤ 1,5 W/m²K, prime de base 26 €/m²)"
+valid_for: "exigences PEB 2026 ; prime châssis wallonne (Uw ≤ 1,5 W/m²K, base 26 €/m²) jusqu'au 30/09/2026, Rénopack depuis le 01/10/2026"
 scope: [belgique]
 status: publie
 tags: [châssis, vitrage, fenêtres, double vitrage, triple vitrage, PVC, bois, aluminium, valeur Uw]
@@ -13,8 +13,11 @@ short: "Une fenêtre, c'est un châssis (le cadre) et un vitrage ; sa performanc
 aliases: [châssis, fenêtres, vitrage, double vitrage, triple vitrage, valeur Uw, valeur Ug, menuiseries extérieures, porte d'entrée]
 prerequisites: [isolation-maison]
 related: [ventilation-maison, humidite-maison, isolation-maison, permis-urbanisme, primes-renovation, ordre-des-travaux, devis-travaux]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Rénovation énergétique : les grandes lignes du futur régime de soutien sont connues"
+    url: https://www.wallonie.be/fr/actualites/renovation-energetique-les-grandes-lignes-du-futur-regime-de-soutien-sont-connues
+    org: Wallonie
   - title: "SPW Énergie — Remplacer ses châssis et vitrages"
     url: https://energie.wallonie.be/
     org: SPW Énergie
@@ -46,7 +49,7 @@ Comme pour l'isolation, la performance se lit dans une valeur U : la quantité d
 
 - **Ug** mesure le vitrage seul : 🟠 5,8 W/m²K pour un simple vitrage, 2,8 à 3 pour un double ancien, 1,0 à 1,1 pour un double HR, 0,5 à 0,7 pour un triple.
 - **Uf** mesure le cadre : 🟠 1,2 à 1,6 pour le PVC et le bois, 1,4 à 2,0 pour l'aluminium à coupure thermique, et 5 à 7 pour l'aluminium ancien sans coupure, dont on sent le cadre glacé.
-- **Uw** mesure la fenêtre entière, et c'est elle que la PEB et les primes regardent. 🔴 La prime wallonne exige Uw ≤ 1,5 W/m²K ; le neuf vise 🟠 ≤ 1,5 (PEB) et souvent ≤ 1,0 en pratique.
+- **Uw** mesure la fenêtre entière, et c'est elle que la PEB et les primes regardent. 🔴 La prime Habitation wallonne, jusqu'à sa fin le 30 septembre 2026, exigeait Uw ≤ 1,5 W/m²K ; le neuf vise 🟠 ≤ 1,5 (PEB) et souvent ≤ 1,0 en pratique.
 
 Résultat : un triple vitrage dans un cadre médiocre donne un Uw moyen. C'est **l'ensemble** qu'il faut comparer, et le devis doit indiquer le Uw de chaque fenêtre. → [[devis-travaux]]
 
@@ -85,7 +88,7 @@ Remplacer des châssis en respectant l'aspect existant est généralement **disp
 
 Lina remplace 🔵 11 fenêtres (22 m²) et une porte d'entrée. Le devis, en PVC double vitrage HR avec un Uw de 1,1 et des grilles d'aération, s'élève à 🔵 9 800 € TVAC à 6 %.
 
-Elle est 🔵 en catégorie de revenus R3, qui multiplie la prime de base par 3. Sa prime wallonne vaut donc 22 m² × 26 € × 3 = 1 716 €. Elle est plafonnée à 70 % du coût, mais on en est loin : elle touche les 1 716 €. L'auditeur estime le gain à 🔵 350 € par an, soit plus de vingt ans pour rentabiliser les travaux sur la seule facture.
+Elle a introduit son dossier avant le 30 septembre 2026, sous l'ancien régime des primes Habitation. Elle est 🔵 en catégorie de revenus R3, qui multiplie la prime de base par 3. Sa prime wallonne vaut donc 22 m² × 26 € × 3 = 1 716 €. Elle est plafonnée à 50 % du coût en R3, mais on en est loin : elle touche les 1 716 €. Depuis le 1er octobre 2026, un remplacement de châssis seul n'est plus primé en Wallonie : il ne peut être aidé que dans un projet global financé par un Rénopack, qui fait gagner au logement une classe [[peb]]. → [[primes-renovation]] L'auditeur estime le gain à 🔵 350 € par an, soit plus de vingt ans pour rentabiliser les travaux sur la seule facture.
 
 Elle les fait quand même. Ses anciens châssis en aluminium sans coupure thermique étaient glacés, bruyants et laissaient passer l'air, et la valeur de revente de la maison en dépend. C'est l'exemple type d'un travail qui se justifie par le **confort**, pas par le temps de retour.
 
@@ -101,4 +104,4 @@ Réserve le triple vitrage aux façades nord et aux maisons déjà très isolée
 
 ## Nature des chiffres de cette page
 
-🔴 Le seuil Uw ≤ 1,5 et le montant de base de 26 €/m² relèvent de la prime Habitation wallonne en vigueur jusqu'au 30 septembre 2026 ; les règles de permis relèvent du CoDT et des règlements communaux. 🟠 Les valeurs U typiques, les rapports « cinq à six fois » ou « deux fois mieux », les durées de vie et les prix sont des repères de marché. 🔵 Le devis, la prime et le gain annuel de Lina sont inventés pour illustrer la mécanique.
+🔴 Le seuil Uw ≤ 1,5, le montant de base de 26 €/m² et le plafond de 50 % en R3 relèvent de la prime Habitation wallonne, régime qui a pris fin le 30 septembre 2026 ; le Rénopack et son saut de classe PEB, du régime en vigueur depuis le 1er octobre 2026 ; les règles de permis relèvent du CoDT et des règlements communaux. 🟠 Les valeurs U typiques, les rapports « cinq à six fois » ou « deux fois mieux », les durées de vie et les prix sont des repères de marché. 🔵 Le devis, la prime et le gain annuel de Lina sont inventés pour illustrer la mécanique.

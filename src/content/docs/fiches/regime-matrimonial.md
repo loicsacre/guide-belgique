@@ -12,8 +12,11 @@ short: "Le régime matrimonial dit à qui appartient quoi dans un couple marié 
 aliases: [communauté réduite aux acquêts, séparation de biens, contrat de mariage, biens propres, biens communs, divorce, pension alimentaire, liquidation-partage]
 prerequisites: [formes-de-couple]
 related: [succession, droits-reels, notaire-acte-authentique, patrimoine-net, personne-a-charge]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Divorce pour désunion irrémédiable : conditions"
+    url: https://justice.belgium.be/fr/themes_et_dossiers/personnes_et_familles/divorce/pour_desunion_irremediable/conditions
+    org: SPF Justice
   - title: Notaire.be — Mariage et contrat de mariage
     url: https://www.notaire.be/
     org: Fednot
@@ -70,7 +73,7 @@ Mais il a un revers. Reprenons Alice et Bob, cette fois en séparation de biens.
 
 ## Quand le couple se sépare
 
-**Le divorce** peut prendre deux formes. Par **consentement mutuel**, les époux rédigent ensemble une convention complète (biens, enfants, pensions) : c'est la voie rapide. Pour **désunion irrémédiable**, le divorce est prononcé après une séparation de fait de 6 mois ou d'un an selon les cas, ou immédiatement sur demande conjointe.
+**Le divorce** peut prendre deux formes. Par **consentement mutuel**, les époux rédigent ensemble une convention complète (biens, enfants, pensions) : c'est la voie rapide. Pour **désunion irrémédiable**, il y a deux chemins. Soit un époux prouve que la vie commune est devenue impossible (lettres, e-mails, témoins…), et le divorce peut être prononcé sans attendre. Soit on s'appuie sur le temps écoulé : plus de **6 mois** de séparation de fait si la demande est faite à deux, plus d'**un an** si un seul époux la demande. Si ce délai n'est pas encore atteint, les époux (ou celui qui demande) doivent revenir une seconde fois devant le tribunal pour confirmer leur volonté.
 
 Vient ensuite la **liquidation-partage** : on applique le régime matrimonial au patrimoine du couple pour savoir qui reçoit quoi. Elle passe par un notaire et peut parfois durer des années quand les ex-époux ne s'entendent pas.
 
@@ -94,4 +97,4 @@ Le régime matrimonial dit ce qui appartient à chacun **de son vivant**. Au dé
 
 ## Nature des chiffres de cette page
 
-🔴 Les délais de séparation de fait de 6 mois ou d'un an avant un divorce pour désunion irrémédiable sont des règles légales. 🟠 Le coût de quelques centaines d'euros pour un contrat de mariage est un ordre de grandeur. 🔵 Les salaires d'Alice (4 000 €) et de Bob (2 000 €) sont inventés pour l'exemple.
+🔴 Les délais de séparation de fait de plus de 6 mois (demande à deux) ou de plus d'un an (demande d'un seul) qui suffisent à prouver la désunion irrémédiable sont des règles légales (article 229 du Code civil). 🟠 Le coût de quelques centaines d'euros pour un contrat de mariage est un ordre de grandeur. 🔵 Les salaires d'Alice (4 000 €) et de Bob (2 000 €) sont inventés pour l'exemple.

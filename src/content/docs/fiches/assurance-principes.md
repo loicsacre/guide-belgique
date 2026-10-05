@@ -12,8 +12,14 @@ short: "Une assurance mutualise un risque : beaucoup paient une petite prime, le
 aliases: [prime, franchise, sinistre, exclusion, plafond, couverture, police d'assurance, courtier, Ombudsman des assurances, résiliation]
 prerequisites: [budget]
 related: [rc-familiale, assurance-habitation, assurance-auto, assurance-hospitalisation, assurance-solde-restant-du, epargne-de-precaution]
-last_verified: 2026-10-02
+last_verified: 2026-10-05
 sources:
+  - title: "Assurances : nouvelles règles depuis le 1er octobre 2024"
+    url: https://sdi.be/2024/10/17/assurances-nouvelles-regles-depuis-le-1er-octobre-2024/
+    org: SDI (fédération des indépendants)
+  - title: "Modification de la législation sur les baux en novembre 2024"
+    url: https://be.brussels/fr/logement/modification-de-la-legislation-sur-les-baux-en-novembre-2024
+    org: be.brussels
   - title: Wikifin — Assurer
     url: https://www.wikifin.be/fr/budget-payer-emprunter-et-assurer
     org: Wikifin (FSMA)
@@ -62,9 +68,9 @@ Toutes les assurances de particuliers se rangent dans trois familles, selon ce q
 
 ## Les règles du jeu en Belgique
 
-**Peu d'assurances sont obligatoires.** La RC auto l'est, tout comme l'assurance incendie du locataire en Wallonie et en Flandre, et la RC pour certaines professions. Tout le reste est facultatif, mais souvent **exigé** par quelqu'un : la banque qui te prête pour acheter, le bailleur qui te loue un logement.
+**Peu d'assurances sont obligatoires.** La RC auto l'est, tout comme l'assurance incendie du locataire (dans les trois Régions, à Bruxelles pour les baux conclus ou renouvelés depuis novembre 2024), et la RC pour certaines professions. Tout le reste est facultatif, mais souvent **exigé** par quelqu'un : la banque qui te prête pour acheter, le bailleur qui te loue un logement.
 
-**Un contrat dure un an et se renouvelle tout seul.** C'est la **reconduction tacite** : sans réaction de ta part, il repart pour un an. Pour y mettre fin, la règle classique est d'envoyer un recommandé **3 mois avant l'échéance**, la date anniversaire du contrat. Ce délai a été raccourci à 2 mois pour certains contrats depuis 2024, et plusieurs assurances de particuliers peuvent désormais être résiliées à tout moment après la première année.
+**Un contrat dure un an et se renouvelle tout seul.** C'est la **reconduction tacite** : sans réaction de ta part, il repart pour un an. Pour les assurances de particuliers hors santé et vie (auto, habitation, RC familiale, notamment), les règles ont changé le 1er octobre 2024 pour les contrats conclus ou reconduits depuis. Pendant la première année, tu peux t'opposer à la reconduction en prévenant l'assureur au moins **2 mois avant l'échéance**, la date anniversaire du contrat (c'était 3 mois auparavant, et ça le reste pour les contrats non concernés). Après la première année, tu peux résilier **à tout moment**, avec un préavis de 2 mois, sans attendre l'échéance. La résiliation peut se faire par recommandé ou, depuis la même date, par voie électronique, et ton nouvel assureur ou ton courtier peut s'en charger pour toi.
 
 **Un sinistre se déclare vite.** En général dans les **8 jours**, et dans les **24 heures** pour un vol. Un retard peut te coûter ton indemnisation : c'est la déchéance vue plus haut.
 
@@ -88,4 +94,4 @@ La **franchise** et le **plafond** encadrent l'indemnité par les deux bouts : l
 
 ## Nature des chiffres de cette page
 
-🔴 Les délais de résiliation (3 mois, 2 mois pour certains contrats depuis 2024) et de déclaration (8 jours, 24 heures pour un vol) sont des règles officielles ou contractuelles courantes ; 🟠 la taxe de 9,25 % incluse dans la prime est un repère fréquent. 🔵 La prime de 320 €, la franchise de 300 €, le dégât de 2 000 €, le plafond de 25 millions, le pot de 10 000 personnes à 10 € par mois et les 500 000 € sont des exemples fictifs.
+🔴 Les délais de résiliation (2 mois avant l'échéance la première année, puis à tout moment avec 2 mois de préavis, depuis le 1er octobre 2024 pour les assurances de particuliers hors santé et vie ; 3 mois pour les autres contrats) et de déclaration (8 jours, 24 heures pour un vol) sont des règles officielles ou contractuelles courantes ; 🟠 la taxe de 9,25 % incluse dans la prime est un repère fréquent. 🔵 La prime de 320 €, la franchise de 300 €, le dégât de 2 000 €, le plafond de 25 millions, le pot de 10 000 personnes à 10 € par mois et les 500 000 € sont des exemples fictifs.
