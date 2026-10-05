@@ -1,11 +1,12 @@
 // La section « Nature des chiffres de cette page » devient une petite note discrète en fin de page :
-// un titre court, la légende des pastilles sur une ligne, puis le texte propre à la page.
+// un titre court avec un lien vers l'explication des pastilles (une seule fois, sur l'accueil), puis le texte de la page.
 // Ce n'est plus un intertitre (il sort aussi du sommaire « Sur cette page »).
 import { visit } from 'unist-util-visit';
 
 const TITRE = 'Nature des chiffres de cette page';
 
-export default function remarkChiffres() {
+export default function remarkChiffres({ base = '' } = {}) {
+  const href = `${base.replace(/\/$/, '')}/#les-chiffres-du-guide`;
   return (tree) => {
     visit(tree, 'heading', (node, index, parent) => {
       if (node.depth !== 2 || !parent) return;
@@ -20,7 +21,8 @@ export default function remarkChiffres() {
         data: { hProperties: { className: ['chiffres-head'] } },
         children: [
           { type: 'strong', children: [{ type: 'text', value: 'Les chiffres de cette page' }] },
-          { type: 'text', value: ' — 🔴 règle officielle, qui peut changer d’une année à l’autre · 🟠 repère courant, pas une règle · 🔵 exemple inventé' },
+          { type: 'text', value: ' · ' },
+          { type: 'link', url: href, children: [{ type: 'text', value: 'que veulent dire 🔴 🟠 🔵 ?' }] },
         ],
       };
       const aside = { type: 'chiffres', data: { hName: 'aside', hProperties: { className: ['chiffres-note'] } }, children: [head, ...body] };

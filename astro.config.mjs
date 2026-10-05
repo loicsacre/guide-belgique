@@ -16,7 +16,7 @@ export default defineConfig({
   site: SITE,
   base: BASE,
   redirects: { '/parcours': `${BASE}/sommaire/` }, // l'ancien « parcours » est devenu le sommaire
-  markdown: { processor: unified({ remarkPlugins: [[remarkWikilinks, { base: BASE }], [remarkAutolink, { base: BASE }], remarkChiffres] }) },
+  markdown: { processor: unified({ remarkPlugins: [[remarkWikilinks, { base: BASE }], [remarkAutolink, { base: BASE }], [remarkChiffres, { base: BASE }]] }) },
   integrations: [
     starlight({
       title: 'La vie adulte en Belgique',
