@@ -21,11 +21,21 @@ sidebar:
   order: 4
 ---
 
-## En langage simple
+## Pourquoi on n'inscrit pas tout l'achat d'un coup
 
-Tu achètes un ordinateur de 1 500 € pour ton activité. Il servira 3 ans. Le mettre entièrement en charge l'année 1 fausserait les comptes : l'année 1 paraîtrait mauvaise, les années 2 et 3 trop belles. On répartit donc : **500 € de charge par an**. L'ordinateur est à l'actif du bilan ([[actif-passif-bilan]]), et chaque année sa **valeur nette comptable** baisse de 500 €.
+Tu achètes un ordinateur de 1 500 € pour ton activité. Il te servira trois ans. Si tu le comptais entièrement comme une dépense de l'année d'achat, tes comptes seraient faussés : l'année 1 paraîtrait mauvaise, et les années 2 et 3 trop belles, alors que tu utilises le même ordinateur pendant les trois.
 
-## Durées usuelles (pratique fiscale belge)
+On répartit donc son coût sur sa durée d'utilisation : **500 € de charge par an** pendant trois ans. Cette charge annuelle s'appelle l'**amortissement** (dans le jargon, une *dotation aux amortissements*). Un bien qu'on amortit ainsi, parce qu'il sert plusieurs années, s'appelle une **immobilisation**.
+
+## Ce qui se passe dans les comptes
+
+L'ordinateur entre à l'actif du bilan, la colonne de ce que l'entreprise possède. Chaque année, sa **valeur nette comptable**, c'est-à-dire son prix d'achat moins les amortissements déjà comptés, baisse de 500 €. Après un an, il vaut 1 000 € dans les comptes ; après deux ans, 500 € ; après trois ans, zéro. → [[actif-passif-bilan]]
+
+Dans le même temps, les 500 € annuels apparaissent comme une charge dans le compte de résultats, ce qui réduit le bénéfice de chaque année. → [[chiffre-affaires-marge-benefice]]
+
+## Sur combien d'années ?
+
+Il n'existe pas une durée unique : elle dépend du type de bien et de sa durée de vie normale. La pratique fiscale belge retient en général les durées suivantes.
 
 | Bien | Durée | Taux annuel |
 | --- | --- | --- |
@@ -34,27 +44,48 @@ Tu achètes un ordinateur de 1 500 € pour ton activité. Il servira 3 ans. Le 
 | Véhicules | 4 à 5 ans | 20 à 25 % |
 | Bâtiments (hors terrain, jamais amorti) | 20 à 33 ans | 3 à 5 % |
 | Logiciels | 3 à 5 ans | |
-| Petit matériel < ≈ 1 000 € | En charge immédiatement | |
+| Petit matériel (moins de ≈ 1 000 €) | En charge immédiatement | |
 
-Méthode **linéaire** (même montant chaque année) par défaut ; le dégressif (plus au début) a été supprimé fiscalement pour les sociétés depuis 2020.
+Deux remarques sur ce tableau. Le terrain n'est jamais amorti, parce qu'il ne s'use pas : quand tu achètes un bâtiment, seule la construction s'amortit. Et le petit matériel bon marché n'est pas étalé du tout : il passe directement en charge l'année de l'achat.
+
+La méthode par défaut est l'amortissement **linéaire** : le même montant chaque année, comme les 500 € de l'ordinateur. Il existe aussi un amortissement **dégressif**, qui déduit davantage les premières années, mais il a été supprimé fiscalement pour les sociétés depuis 2020.
 
 ## Pourquoi c'est important
 
-- **Résultat** : l'amortissement est une **charge sans sortie d'argent** l'année où il est comptabilisé (l'argent est sorti à l'achat). D'où l'écart entre bénéfice et trésorerie : voir [[tresorerie-cash-flow]].
-- **Fiscalité** : pour un indépendant, un investissement se déduit **par morceaux** sur plusieurs années, pas d'un coup. Voir [[frais-professionnels]].
-- **Vérité économique** : une entreprise qui n'investit plus affiche de beaux résultats (plus d'amortissements) tout en s'usant.
+D'abord pour le **résultat**. L'amortissement est une **charge sans sortie d'argent** l'année où il est comptabilisé : l'argent, lui, est sorti en une fois, le jour de l'achat. C'est l'une des grandes raisons pour lesquelles le bénéfice et l'argent sur le compte ne racontent pas la même histoire. → [[tresorerie-cash-flow]]
 
-## Deux « amortissements » sans rapport
+Ensuite pour la **fiscalité**. Pour un indépendant, un investissement se déduit **par morceaux**, sur plusieurs années, et pas d'un coup l'année de l'achat. → [[frais-professionnels]]
+
+Enfin pour la **vérité économique**. Une entreprise qui n'investit plus affiche de beaux résultats, puisqu'elle n'a plus d'amortissements à déduire. Mais en réalité, elle s'use : ses machines vieillissent sans être remplacées.
+
+## Un exemple : l'achat de décembre
+
+Une idée revient souvent en fin d'année : « achète un ordinateur avant le 31 décembre, ça baissera ton impôt ». Ce n'est pas si simple.
+
+Pour une société, l'amortissement se calcule **prorata temporis**, c'est-à-dire au prorata du temps : un ordinateur acheté en décembre n'est amorti que pour un mois la première année. Avec l'ordinateur **fictif** de 1 500 € sur trois ans, cela ne fait qu'une quarantaine d'euros de charge cette année-là, au lieu de 500 €. En personne physique, une année complète est possible sous conditions.
+
+Dans tous les cas, l'achat ne réduit l'impôt de l'année que d'une fraction de son prix. Ne te laisse donc pas tenter par « l'achat de fin d'année pour baisser l'impôt » sans avoir fait le calcul.
+
+:::caution[Dépend de ta situation]
+Les règles exactes (prorata, durées acceptées) dépendent de ton statut, société ou personne physique, et de la nature du bien. Ton comptable fixe le plan d'amortissement.
+:::
+
+## Ce que ça change quand tu lis un bilan
+
+Une **valeur nette comptable** n'est pas une valeur de marché. Une voiture totalement amortie vaut zéro dans les comptes, mais elle peut très bien se revendre 8 000 €. À l'inverse, un bien encore loin d'être amorti peut ne plus rien valoir sur le marché.
+
+## À ne pas confondre : deux « amortissements » sans rapport
+
+Le même mot désigne deux choses très différentes, et on les croise parfois dans la même phrase.
 
 | Amortissement **comptable** | Amortissement d'un **crédit** |
 | --- | --- |
 | Étalement du coût d'un bien dans les comptes | Remboursement progressif du capital emprunté |
 | Une charge, pas un flux d'argent | Un flux d'argent (la part capital de ta mensualité), pas une charge |
-| Voir ci-dessus | Voir [[mensualite-amortissement]] |
+| L'objet de cette fiche | Voir [[mensualite-amortissement]] |
 
-Une voiture à crédit cumule les deux : tu **amortis** son coût sur 5 ans dans les comptes, et tu **amortis** le prêt par tes mensualités.
+Une voiture achetée à crédit cumule les deux. Tu **amortis** son coût sur cinq ans dans les comptes, et tu **amortis** le prêt par tes mensualités, chaque mensualité remboursant une partie du capital en plus des intérêts.
 
-## Ce que ça change pour toi
+## Nature des chiffres de cette page
 
-- Indépendant : un ordinateur acheté en décembre ne réduit presque pas ton impôt de l'année (amortissement prorata temporis pour les sociétés, année complète possible en personne physique sous conditions) : ne te laisse pas tenter par « l'achat de fin d'année pour baisser l'impôt » sans calcul.
-- Lecture d'un bilan : une **valeur nette comptable** n'est pas une valeur de marché (une voiture amortie à zéro peut valoir 8 000 €).
+🔴 La suppression de l'amortissement dégressif pour les sociétés depuis 2020 est une règle fiscale. 🟠 Les durées et taux du tableau (3 ans pour l'informatique, 20 à 33 ans pour les bâtiments…) et le seuil d'environ 1 000 € pour le petit matériel sont des repères de pratique fiscale. 🔵 L'ordinateur à 1 500 € et la voiture amortie revendue 8 000 € sont des exemples fictifs ; les 500 € par an et la quarantaine d'euros en décembre en découlent par calcul.

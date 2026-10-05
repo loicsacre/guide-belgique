@@ -31,17 +31,21 @@ sidebar:
   order: 23
 ---
 
-## En langage simple
+## Trois questions : combien, avec quel argent, et quand
 
-Un budget de rénovation répond à trois questions : **combien** ça coûte (poste par poste), **avec quel argent** on paie (le sien, celui des primes, celui d'un prêt), et **quand** l'argent sort et rentre (les primes arrivent des mois après les factures). Le [simulateur de budget rénovation](../../outils/simulateur-renovation/) de ce guide te fait faire l'exercice ; cette fiche explique ce qu'il y a derrière.
+Un budget de rénovation répond à trois questions. **Combien** ça coûte, poste par poste. **Avec quel argent** tu paies : le tien, celui des primes, celui d'un prêt. Et **quand** l'argent sort et rentre, parce que les primes arrivent des mois après les factures.
 
-## Pourquoi ça existe
+Le [simulateur de budget rénovation](../../outils/simulateur-renovation/) de ce guide te fait faire l'exercice. Cette fiche explique ce qu'il y a derrière.
 
-Le [[budget]] d'un ménage est mensuel et répétitif ; celui d'une rénovation est ponctuel, gros et incertain. Les dépassements de 🟠 20 à 30 % sont la norme, pas l'exception, pour trois raisons : on oublie des postes (évacuation des déchets, échafaudage, finitions), on découvre des problèmes en ouvrant (poutre pourrie, plomb), et on change d'avis en cours de route. Un budget bien construit n'empêche pas les surprises ; il empêche qu'elles arrêtent le chantier.
+## Pourquoi un chantier dépasse presque toujours
 
-## Comment ça marche
+Le [[budget]] d'un ménage est mensuel et répétitif. Celui d'une rénovation est ponctuel, gros et incertain. Les dépassements de 🟠 20 à 30 % y sont la norme, pas l'exception, et pour trois raisons : on oublie des postes (évacuation des déchets, échafaudage, finitions), on découvre des problèmes en ouvrant (une poutre pourrie, des tuyaux en plomb), et on change d'avis en cours de route.
 
-### Estimer poste par poste
+Un budget bien construit n'empêche pas les surprises. Il empêche qu'elles arrêtent le chantier.
+
+## Estimer poste par poste
+
+Avant d'avoir des devis, tu peux cadrer le budget avec des repères. Le tableau ci-dessous donne des fourchettes TVA comprise à 6 % (2026), et surtout ce qu'on oublie à chaque poste, qui fait exploser la facture.
 
 | Poste | Repère 🟠 (TVAC 6 %, 2026) | Ce qu'on oublie |
 | --- | --- | --- |
@@ -60,48 +64,59 @@ Le [[budget]] d'un ménage est mensuel et répétitif ; celui d'une rénovation 
 | Architecte | 🟠 8 à 12 % des travaux ou forfait | Obligatoire si permis avec architecte |
 | Imprévus | **10 à 15 %** du total | Toujours |
 
-Ces fourchettes sont larges parce que l'accès, l'état existant et la région font varier du simple au double. Les [[devis-travaux|devis]] remplacent les repères dès que possible ; les repères servent à **cadrer** avant.
+Ces fourchettes sont larges, parce que l'accès au chantier, l'état existant et la région font varier les prix du simple au double. Elles servent à **cadrer** avant de commencer ; dès que possible, les [[devis-travaux|devis]] les remplacent.
 
-### La TVA : 6 % ou 21 %
+## La TVA à 6 % : l'aide la plus importante, et la plus oubliée
 
-:::caution[Règle fédérale]
-Les travaux de **transformation, rénovation, réparation et entretien** d'un logement privé **de plus de dix ans**, facturés par un entrepreneur (matériaux et pose), bénéficient 🔴 du taux de TVA de **6 %** au lieu de 21 %. Tu signes une attestation (ou l'entrepreneur mentionne la clause sur la facture) confirmant l'âge et l'usage du bâtiment. Hors champ : les matériaux achetés toi-même (21 %), le neuf, la démolition-reconstruction (régime séparé), et certains équipements (chaudière au mazout, panneaux solaires sous conditions d'âge du bâtiment : vérifie). L'économie représente 🟠 12 % du coût total : c'est l'aide la plus importante et la plus oubliée.
-:::
+Les travaux de transformation, de rénovation, de réparation et d'entretien d'un logement privé **de plus de dix ans** bénéficient d'un taux de TVA de 🔴 **6 %** au lieu de 21 %, à condition d'être facturés par un entrepreneur qui fournit et pose. Tu signes une attestation qui confirme l'âge et l'usage du bâtiment, ou l'entrepreneur reprend cette mention sur la facture.
 
-### Financer
+Certaines choses restent à 21 % ou suivent un autre régime. Les matériaux que tu achètes toi-même sont à 21 %. Le neuf n'est pas concerné, et la démolition-reconstruction a son propre régime. Enfin, certains équipements sont exclus ou soumis à conditions, comme la chaudière au mazout ou les panneaux solaires selon l'âge du bâtiment : vérifie au cas par cas.
 
-| Source | Quand l'argent arrive | Coût | Remarques |
-| --- | --- | --- | --- |
-| Fonds propres | Tout de suite | Rendement perdu | Garder l'[[epargne-de-precaution]] intacte |
-| [[primes-renovation|Primes régionales]] | **Après** travaux et factures, 🟠 2 à 6 mois | Gratuit | Il faut **avancer** l'argent |
-| Prêts régionaux à 0 % (Rénopack / Rénoprêt en Wallonie, prêt vert à Bruxelles, Mijn VerbouwLening en Flandre) | Avant travaux | 0 % 🔴 sous conditions de revenus et de travaux | Souvent couplés à l'audit ; montants plafonnés |
-| Crédit hypothécaire (travaux inclus à l'achat, ou reprise d'encours) | Par tranches sur factures | Taux hypothécaire | Le moins cher si tu achètes : voir [[credit-hypothecaire]] et [[quotite-emprunt]] |
-| Prêt rénovation bancaire (crédit à tempérament affecté) | Avant travaux | Taux 🟠 3 à 6 % | Plus simple, plus court, plus cher : [[credit-consommation]] |
-| Paiements échelonnés de l'entrepreneur | Au rythme du chantier | Inclus | Acompte 🟠 10 à 30 % max, jamais le solde avant [[reception-travaux|réception]] |
+L'économie représente 🟠 environ 12 % du coût total. C'est l'aide la plus importante de toute la rénovation, et la plus oubliée. → [[tva]]
 
-### Le calendrier de trésorerie
+## Financer : six sources, qui n'arrivent pas au même moment
 
-Le piège classique : le budget total tient, mais pas la trésorerie. Les primes de 🔵 12 000 € arrivent quatre mois après le paiement de la facture de toit ; si ces 12 000 € étaient prévus pour payer l'électricien, le chantier s'arrête. Construis un tableau **mois par mois** : sorties (acomptes, factures), entrées (prêt, primes), solde. Le simulateur le fait pour toi.
+L'argent d'une rénovation vient presque toujours de plusieurs sources, et chacune a son coût et son calendrier.
 
-## Exemple
+- **Tes fonds propres** sont disponibles tout de suite. Ils te coûtent seulement le rendement que tu perds en les dépensant. Garde ton [[epargne-de-precaution]] intacte.
+- **Les [[primes-renovation|primes régionales]]** sont gratuites, mais elles arrivent **après** les travaux et les factures, en 🟠 deux à six mois. Il faut donc **avancer** l'argent.
+- **Les prêts régionaux à 0 %** (Rénopack et Rénoprêt en Wallonie, prêt vert à Bruxelles, Mijn VerbouwLening en Flandre) sont versés avant les travaux, à 🔴 0 % sous conditions de revenus et de type de travaux. Leurs montants sont plafonnés, et ils sont souvent couplés à l'audit.
+- **Le crédit hypothécaire**, avec les travaux inclus dès l'achat ou par une reprise de l'encours (le capital déjà remboursé qu'on réemprunte), est versé par tranches sur factures, au taux hypothécaire. Si tu achètes, c'est le moins cher. → [[credit-hypothecaire]] · [[quotite-emprunt]]
+- **Le prêt rénovation bancaire**, un crédit à tempérament affecté aux travaux, est versé avant le chantier à un taux de 🟠 3 à 6 %. Il est plus simple et plus court, mais plus cher. → [[credit-consommation]]
+- **Les paiements échelonnés à l'entrepreneur** suivent le rythme du chantier, sans coût supplémentaire. L'acompte reste limité à 🟠 10 à 30 % au maximum, et le solde ne se paie jamais avant la [[reception-travaux|réception]] des travaux.
 
-Noé budgète son bouquet 1 : toit avec isolation 🔵 28 000 €, électricité 🔵 6 500 €, ventilation 🔵 2 000 €, total 36 500 € TVAC 6 %. Imprévus 12 % : 4 400 €. Budget : 🔵 40 900 €. Financement : 15 000 € d'épargne (il garde 8 000 € de précaution), Rénopack à 0 % de 🔵 20 000 € sur 15 ans (111 €/mois), et le reste sur un prêt rénovation de 6 000 €. Primes attendues (R2, ×4) : 🔵 toit 5 250 € + électricité 1 280 € + ventilation 1 000 € ≈ 7 500 €, qui arriveront pour rembourser le prêt rénovation par anticipation. Les imprévus servent : une panne de charpente de 🔵 2 300 € découverte au décapage.
+## Le vrai piège : la trésorerie
 
-## Ce que ça change pour toi
+Le piège classique, c'est un budget total qui tient alors que la trésorerie, l'argent effectivement présent sur ton compte, ne tient pas. Imagine 🔵 12 000 € de primes qui arrivent quatre mois après le paiement de la facture du toit. Si ces 12 000 € devaient servir à payer l'électricien, le chantier s'arrête.
 
-- Chiffre **toujours TVAC** et vérifie le taux sur chaque devis ; 6 % contre 21 %, c'est 12 % du budget.
-- Prévois la **réserve** et ne la dépense pas en options de cuisine.
-- Ne compte jamais une prime comme de l'argent disponible **avant** qu'elle soit sur ton compte.
-- Si tu achètes, intègre les travaux dans le crédit hypothécaire dès le départ : c'est bien moins cher qu'un prêt rénovation deux ans plus tard ([[cout-reel-achat]]).
+Construis donc un tableau **mois par mois** : les sorties (acomptes, factures), les entrées (prêt, primes), et le solde. Le simulateur le fait pour toi.
+
+## Un exemple : le bouquet 1 de Noé
+
+Noé (exemple **fictif**) budgète son premier bouquet de travaux. Le toit avec isolation coûte 🔵 28 000 €, l'électricité 6 500 € et la ventilation 2 000 €, soit 36 500 € TVA à 6 % comprise. Il ajoute 12 % d'imprévus, environ 4 400 €. Son budget est donc de 🔵 40 900 €.
+
+Pour le financer, il prend 15 000 € dans son épargne, en gardant 8 000 € de côté pour les coups durs. Il obtient un Rénopack à 0 % de 🔵 20 000 € sur quinze ans, soit 111 € par mois. Le reste passe par un prêt rénovation de 6 000 €.
+
+Côté primes, Noé est en catégorie de revenus R2 (coefficient ×4). Il attend 🔵 5 250 € pour le toit, 1 280 € pour l'électricité et 1 000 € pour la ventilation, soit environ 7 500 €. Quand elles arriveront, elles serviront à rembourser le prêt rénovation par anticipation.
+
+Et les imprévus servent bel et bien : au décapage du toit, il découvre une réparation de charpente de 🔵 2 300 €.
+
+## Ce que tu dois faire
+
+Chiffre **toujours TVA comprise**, et vérifie le taux sur chaque devis : 6 % contre 21 %, c'est 12 % du budget.
+
+Prévois la **réserve** pour imprévus, et ne la dépense pas en options de cuisine. Ne compte jamais une prime comme de l'argent disponible **avant** qu'elle soit sur ton compte.
+
+Et si tu achètes, intègre les travaux dans le crédit hypothécaire dès le départ : c'est bien moins cher qu'un prêt rénovation deux ans plus tard. → [[cout-reel-achat]]
 
 ## À ne pas confondre
 
-- **Budget** (coût total prévu) et **trésorerie** (ce qu'il y a sur le compte à chaque instant) : le second fait arrêter les chantiers.
-- **Prime** (versée après, non remboursable) et **prêt à 0 %** (versé avant, remboursable).
-- **TVA 6 %** (rénovation d'un logement de plus de 10 ans) et **déduction fiscale** : il n'existe plus de réduction d'impôt fédérale générale pour la rénovation ; les avantages sont régionaux.
+Le **budget** est le coût total prévu ; la **trésorerie**, ce qu'il y a sur le compte à chaque instant. C'est la seconde qui fait arrêter les chantiers.
+
+Une **prime** est versée après les travaux et ne se rembourse pas. Un **prêt à 0 %** est versé avant, et se rembourse.
+
+Enfin, la **TVA à 6 %** sur la rénovation d'un logement de plus de dix ans n'est pas une **déduction fiscale**. Il n'existe plus de réduction d'impôt fédérale générale pour la rénovation : les avantages sont régionaux.
 
 ## Nature des chiffres de cette page
 
-- 🔴 Taux de TVA réduit et ses conditions : Code TVA, arrêté royal n° 20, rubrique XXXVIII ; prêts régionaux : règlements SWCS, Fonds du Logement, Vlaams Woningfonds en vigueur en 2026.
-- 🟠 Prix au m², taux de dépassement, délais de versement : repères de marché.
-- 🔵 Le budget de Noé est inventé ; les primes sont calculées sur la mécanique wallonne « base × coefficient, plafonnée à 70 % ».
+🔴 Le taux de TVA réduit de 6 % et ses conditions viennent du Code TVA (arrêté royal n° 20, rubrique XXXVIII) ; les prêts régionaux à 0 % suivent les règlements de la SWCS, du Fonds du Logement et du Vlaams Woningfonds en vigueur en 2026. 🟠 Les prix au m² du tableau, les dépassements de 20 à 30 %, les délais de versement des primes, les taux de 3 à 6 % et les acomptes de 10 à 30 % sont des repères de marché. 🔵 Le budget de Noé est inventé ; ses primes sont calculées selon la mécanique wallonne « montant de base × coefficient de revenus, plafonné à 70 % du coût ».

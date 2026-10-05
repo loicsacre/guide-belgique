@@ -12,7 +12,7 @@ organisme: "Fournisseur, gestionnaire de réseau, CREG / CWaPE / Brugel / VREG"
 short: "Ta facture d'énergie additionne le prix de l'énergie (ton fournisseur, que tu choisis), les frais de réseau (le gestionnaire, imposé), des taxes et la TVA ; tu paies des acomptes mensuels et un décompte annuel régularise sur base du relevé de compteur."
 aliases: [facture d'énergie, acompte, décompte annuel, fournisseur d'énergie, gestionnaire de réseau, ORES, RESA, Sibelga, Fluvius, compteur communicant, tarif social, CREG, CWaPE, Brugel, VREG, contrat fixe, contrat variable]
 prerequisites: [budget, domiciliation-ordre-permanent]
-related: [peb, indexation-loyer, contrats-consommation, inflation, maison-systemes, chauffage-maison, panneaux-solaires]
+related: [peb, indexation-loyer, contrats-consommation, inflation, maison-systemes, chauffage-maison, panneaux-solaires, electricite-maison, isolation-maison, primes-renovation]
 last_verified: 2026-10-02
 sources:
   - title: CREG — Régulateur fédéral de l'énergie
@@ -25,51 +25,83 @@ sidebar:
   order: 3
 ---
 
-## En langage simple
+## Trois acteurs sur une seule facture
 
-Trois acteurs se partagent ta facture, et tu n'en choisis qu'un :
+Ta facture d'électricité ou de gaz arrive au nom d'une seule entreprise, mais elle paie en réalité trois acteurs différents. Et tu n'en choisis qu'un.
 
-```text
-FOURNISSEUR (Engie, Luminus, TotalEnergies, Mega, Eneco…)   ← tu le choisis, c'est lui qui facture
-   vend l'énergie : ≈ 30 à 45 % de la facture
-GESTIONNAIRE DE RÉSEAU (ORES, RESA, Sibelga, Fluvius…)      ← imposé par ta commune
-   transport, distribution, compteur, dépannage : ≈ 30 à 40 %
-ÉTAT et RÉGIONS                                              ← cotisations, accises, TVA 6 % : ≈ 20 à 30 %
-```
+**Le fournisseur** (Engie, Luminus, TotalEnergies, Mega, Eneco…) est celui que tu choisis et avec qui tu signes ton contrat. Il achète l'énergie et te la revend, et c'est lui qui t'envoie la facture. Sa part pèse environ 30 à 45 % du total.
 
-Le régulateur (CREG au fédéral, CWaPE / Brugel / VREG dans les Régions) surveille les prix et publie un **comparateur officiel**.
+**Le gestionnaire de réseau** (ORES, RESA, Sibelga, Fluvius…) possède les câbles et les conduites qui amènent l'énergie jusque chez toi. Il s'occupe du transport, de la distribution, du compteur et du dépannage. Tu ne le choisis pas : il est imposé selon ta commune. Sa part tourne autour de 30 à 40 %.
 
-## Lire ta facture
+**L'État et les Régions** prélèvent enfin des cotisations, des accises (des taxes spéciales sur l'énergie) et la TVA à 6 %. Cela représente environ 20 à 30 % de la facture.
+
+Pourquoi ce découpage ? Le marché de l'énergie est **libéralisé** : plusieurs fournisseurs sont en concurrence pour te vendre l'énergie, mais ils passent tous par le même réseau, qui reste un monopole. Des **régulateurs** surveillent l'ensemble : la CREG au niveau fédéral, et la CWaPE (Wallonie), Brugel (Bruxelles) et la VREG (Flandre) dans les Régions. Ils contrôlent les prix et publient un **comparateur officiel** des offres.
+
+## Ce que tu paies, ligne par ligne
+
+Une facture d'énergie se lit dans cet ordre.
 
 | Élément | Ce que c'est |
 | --- | --- |
-| **Prix de l'énergie** (€/kWh) | **Fixe** (bloqué 1 à 3 ans) ou **variable** (indexé chaque mois ou trimestre sur les marchés) |
-| Redevance fixe | Abonnement annuel du fournisseur |
-| **Tarifs réseau** | Identiques quel que soit le fournisseur ; comprennent depuis 2024 en Flandre un **tarif capacitaire** (pic de puissance) |
-| Taxes, cotisations, accises | Fédérales et régionales |
-| TVA | **6 %** pour les particuliers (depuis 2023) |
-| **Acompte** | Mensuel, estimé sur ta consommation passée ; ajustable à la hausse ou à la baisse sur demande |
-| **Décompte annuel** | Après relevé du compteur : régularisation (remboursement ou supplément) et nouveau montant d'acompte |
+| **Prix de l'énergie** (€/kWh) | Ce que te vend le fournisseur. **Fixe** s'il est bloqué pendant 1 à 3 ans, **variable** s'il est indexé chaque mois ou chaque trimestre sur les prix des marchés. |
+| Redevance fixe | L'abonnement annuel du fournisseur, dû même si tu consommes peu. |
+| **Tarifs de réseau** | Ce que facture le gestionnaire de réseau. Identiques quel que soit ton fournisseur. En Flandre, ils comprennent depuis 2024 un **tarif capacitaire**, calculé sur ton pic de puissance. |
+| Taxes, cotisations, accises | Les prélèvements fédéraux et régionaux. |
+| TVA | **6 %** pour les particuliers, depuis 2023. |
 
-## Les bons réflexes
+Seule la première ligne change vraiment d'un fournisseur à l'autre. C'est donc sur elle (et sur la redevance fixe) que porte la comparaison des offres.
 
-1. **Compare chaque année** sur le comparateur régional (CWaPE, Brugel, VREG) : tu peux changer de fournisseur **gratuitement à tout moment** avec 1 mois de préavis, sans coupure.
-2. **Relève ton compteur** (ou vérifie les index du compteur communicant) : un acompte trop bas prépare un décompte douloureux ; trop haut, c'est un prêt gratuit au fournisseur.
-3. **Déménagement** : relevé contradictoire avec l'ancien/nouvel occupant (formulaire de reprise des énergies) pour éviter de payer sa consommation.
-4. **Tarif social** : automatique pour certaines catégories (BIM, revenu d'intégration…) ; prix plafonné.
-5. **Difficultés de paiement** : plan de paiement, puis protections régionales (fournisseur de dernier ressort, compteur à budget) ; ne laisse pas une mise en demeure sans réponse.
+Le **kWh**, ou kilowattheure, est l'unité de mesure de ta consommation : c'est l'énergie qu'utilise un appareil de 1 000 watts pendant une heure. Le **tarif capacitaire** flamand, lui, ne regarde pas seulement combien tu consommes, mais à quel point tu tires beaucoup de puissance en même temps (four, plaques et voiture électrique au même moment, par exemple). → [[electricite-maison]]
 
-## Consommation : ordres de grandeur
+## Pourquoi tu paies des acomptes puis un décompte
+
+Tu ne paies pas ta consommation réelle chaque mois. Le fournisseur te demande un **acompte**, un montant mensuel fixe, estimé sur ta consommation passée. Souvent, il est prélevé par domiciliation. → [[domiciliation-ordre-permanent]]
+
+Une fois par an, ton compteur est relevé, ou il envoie lui-même ses index (les chiffres qu'il affiche) s'il est **communicant**. Le fournisseur établit alors le **décompte annuel** : il compare ce que tu as réellement consommé à la somme de tes acomptes. Résultat : soit il te rembourse le trop-payé, soit il te réclame un supplément. Il fixe au passage un nouveau montant d'acompte pour l'année suivante.
+
+Ton acompte n'est pas gravé dans le marbre : tu peux demander à l'ajuster à la hausse ou à la baisse.
+
+Un exemple **fictif**, celui du [décompte annoté](../../documents/facture-energie/) du site : un appartement wallon consomme environ 3 000 kWh d'électricité et 10 000 kWh de gaz sur l'année. Le total, TVA comprise, atteint 1 716,42 €. Il a payé 12 acomptes de 125 €, soit 1 500 €. Il reste donc 216,42 € à payer, et le fournisseur propose de passer l'acompte à 145 € par mois.
+
+## Combien consomme un ménage
+
+Pour savoir si ta facture est « normale », voici des ordres de grandeur.
 
 | Ménage | Électricité | Gaz (chauffage + eau chaude) |
 | --- | --- | --- |
 | 1 personne, appartement | ≈ 1 500 à 2 000 kWh/an | ≈ 8 000 à 12 000 kWh/an |
 | Famille, maison | ≈ 3 500 à 4 500 kWh/an | ≈ 15 000 à 25 000 kWh/an |
 
-Le [[peb]] estime une consommation théorique ; ta facture mesure la réelle, qui dépend aussi de tes habitudes.
+Le certificat [[peb]], qui note la performance énergétique d'un logement, estime une consommation **théorique**. Ta facture mesure la consommation **réelle**, qui dépend aussi de tes habitudes : la température que tu choisis, la durée des douches, le nombre de personnes à la maison.
+
+## Les bons réflexes
+
+**Compare chaque année.** Passe par le comparateur de ton régulateur régional (CWaPE, Brugel, VREG). Tu peux changer de fournisseur **gratuitement, à tout moment**, avec un mois de préavis, et sans coupure : le réseau et le compteur restent les mêmes, seul le vendeur change. → [[contrats-consommation]]
+
+**Relève ton compteur**, ou vérifie les index que transmet ton compteur communicant. Un acompte trop bas prépare un décompte douloureux. Un acompte trop haut, c'est un prêt gratuit que tu fais au fournisseur.
+
+**Quand tu déménages**, fais un relevé contradictoire avec l'ancien ou le nouvel occupant, c'est-à-dire un relevé des index noté et signé par les deux. Le document prévu pour cela est le **formulaire de reprise des énergies**. Sans lui, tu risques de payer la consommation de quelqu'un d'autre.
+
+**Le tarif social** est un prix plafonné, accordé automatiquement à certaines catégories de personnes (par exemple les bénéficiaires de l'intervention majorée, dite BIM, ou du revenu d'intégration).
+
+**En cas de difficultés de paiement**, demande d'abord un plan de paiement à ton fournisseur. Les Régions prévoient ensuite des protections, comme un **fournisseur de dernier ressort** (qui reprend le client que les autres ne servent plus) ou un **compteur à budget** (qui fonctionne en prépaiement). Surtout, ne laisse pas une mise en demeure sans réponse.
 
 ## Ce que ça change pour toi
 
-- L'énergie est un poste de [[budget]] de 150 à 350 €/mois : la **rénovation** (isolation, pompe à chaleur, panneaux) et les primes régionales sont le levier de long terme.
-- Locataire : les charges d'énergie sont distinctes du loyer, souvent en provisions : voir [[indexation-loyer]].
-- Panneaux photovoltaïques : la logique diffère par Région (compteur qui tourne à l'envers en voie de disparition, tarif prosumer, injection rémunérée) : vérifie avant d'investir.
+L'énergie est un poste important de ton [[budget]], de l'ordre de 150 à 350 € par mois. Changer de fournisseur fait gagner sur la part « énergie ». Mais le vrai levier, à long terme, c'est de consommer moins : la **rénovation** (isolation, pompe à chaleur, panneaux solaires) et les primes régionales qui la soutiennent. → [[isolation-maison]] · [[pompe-a-chaleur]] · [[primes-renovation]]
+
+**Si tu es locataire**, l'énergie ne fait pas partie du loyer. Tu la paies à part, directement à ton fournisseur ou sous forme de provisions de charges versées au propriétaire. → [[indexation-loyer]]
+
+**Si tu penses aux panneaux photovoltaïques**, sache que la logique diffère selon la Région : le compteur qui tourne à l'envers est en voie de disparition, il existe un tarif prosumer (une redevance réseau pour ceux qui produisent et consomment), et l'électricité injectée sur le réseau est rémunérée selon des règles propres à chaque Région. Vérifie avant d'investir. → [[panneaux-solaires]]
+
+:::caution[Dépend de ta situation]
+Les tarifs de réseau, les protections en cas de difficulté de paiement et les règles pour les panneaux solaires sont régionaux : vérifie auprès du régulateur de ta Région.
+:::
+
+## À ne pas confondre
+
+Le **fournisseur** te vend l'énergie et t'envoie la facture ; le **gestionnaire de réseau** l'achemine, gère le compteur et assure le dépannage, quel que soit le fournisseur que tu as choisi. De même, l'**acompte** n'est qu'une avance mensuelle estimée, alors que le **décompte annuel** est la facture réelle, calculée sur le relevé du compteur.
+
+## Nature des chiffres de cette page
+
+🔴 La TVA à 6 % pour les particuliers depuis 2023, le changement de fournisseur gratuit avec un mois de préavis et le tarif capacitaire flamand sont des règles officielles, régionales pour ce qui touche au réseau. 🟠 La répartition de la facture (30 à 45 %, 30 à 40 %, 20 à 30 %), les consommations types et le budget de 150 à 350 € par mois sont des ordres de grandeur. 🔵 L'appartement wallon et son décompte de 1 716,42 € sont fictifs.

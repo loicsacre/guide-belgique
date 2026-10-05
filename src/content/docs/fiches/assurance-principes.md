@@ -24,47 +24,68 @@ sidebar:
   order: 1
 ---
 
-## En langage simple
+## Un pot commun contre les gros coups durs
 
-Tu ne peux pas épargner 500 000 € au cas où tu blesserais quelqu'un. Mais 10 000 personnes qui mettent 10 € par mois dans un pot commun peuvent indemniser celle à qui ça arrive. L'assurance, c'est ce pot, géré par une entreprise qui calcule les probabilités.
+Tu ne peux pas mettre de côté 500 000 € au cas où tu blesserais gravement quelqu'un. Mais 10 000 personnes qui versent chacune 10 € par mois dans un pot commun peuvent, ensemble, indemniser celle à qui ça arrive. L'assurance, c'est ce pot. Une entreprise, l'assureur, le gère : elle calcule la probabilité que l'événement arrive, fixe ce que chacun doit verser, et paie ceux qui sont touchés.
 
-La logique : **assure ce que tu ne pourrais pas payer toi-même** (ta responsabilité, ta maison, l'hôpital), pas ce que ta réserve couvre (un smartphone). Voir [[epargne-de-precaution]].
+Ce que tu verses s'appelle la **prime**. L'événement qui déclenche l'indemnisation, un incendie, un dégât des eaux, un accident, s'appelle le **sinistre**. Et le document qui fixe les règles entre toi et l'assureur, c'est le **contrat**, qu'on appelle aussi la **police d'assurance**.
 
-## Pourquoi ça existe
+## Pourquoi ça vaut la peine de payer pour un risque qui n'arrivera peut-être jamais
 
-Certains risques (incendie, accident corporel grave, responsabilité) coûtent plus que ce qu'un ménage peut épargner en une vie. L'assurance **transforme un risque rare et énorme en une dépense petite et certaine** : la prime. La loi en rend certaines obligatoires quand c'est autrui qui subirait le dommage (RC auto).
+Certains risques, comme un incendie, un accident corporel grave ou un dommage que tu causes à quelqu'un, coûtent plus que ce qu'un ménage peut épargner en une vie. L'assurance **transforme un risque rare et énorme en une dépense petite et certaine** : la prime. Tu paies un peu chaque année, et en échange tu n'as plus à craindre la catastrophe qui te ruinerait.
 
-## Le vocabulaire d'un contrat
+D'où la règle de bon sens qui guide tout le reste : **assure ce que tu ne pourrais pas payer toi-même**, comme ta responsabilité envers les autres, ta maison ou un séjour à l'hôpital. En revanche, ce que ta réserve d'argent couvre sans drame, un smartphone par exemple, n'a pas besoin d'assurance. Cette réserve, c'est l'épargne de précaution, quelques mois de dépenses gardés de côté pour les imprévus. → [[epargne-de-precaution]]
 
-| Terme | Sens | Exemple |
-| --- | --- | --- |
-| **Prime** | Ce que tu paies (par an ou par mois) ; comprend des taxes (souvent 9,25 %) | 320 €/an |
-| **Sinistre** | L'événement couvert qui se produit | Dégât des eaux |
-| **Franchise** | La part du dommage qui reste à ta charge | Les premiers 300 € |
-| **Plafond** | Le maximum indemnisé | 25 millions en RC |
-| **Exclusion** | Ce qui n'est jamais couvert | Faute intentionnelle, ivresse, usure |
-| **Déchéance** | Perte du droit à indemnisation pour non-respect d'une obligation | Déclaration tardive |
-| **Valeur à neuf / vétusté** | Base d'indemnisation d'un bien | Un canapé de 10 ans remboursé à neuf ou à sa valeur actuelle |
+Quand c'est quelqu'un d'autre qui subirait le dommage, la loi ne laisse pas le choix : elle rend certaines assurances obligatoires. C'est le cas de la RC auto, qui indemnise les victimes d'un accident de voiture. → [[assurance-auto]]
 
-## Les trois grandes familles
+## Les mots d'un contrat, avec un exemple
 
-```text
-RESPONSABILITÉ  →  tu as causé un dommage à autrui : RC familiale, RC auto, RC pro
-DOMMAGES        →  tes biens sont abîmés : incendie, omnium, vol
-PERSONNES       →  ta santé, ta vie, tes revenus : hospitalisation, solde restant dû, revenu garanti
-```
+Un contrat d'assurance utilise toujours le même petit vocabulaire. Le plus simple est de le suivre sur un exemple **fictif** : tu paies une prime de 320 € par an pour assurer ton logement, et un tuyau fuit chez toi.
 
-## Les règles de jeu belges
+- **La prime**, ce que tu paies, par an ou par mois. Elle comprend des taxes, souvent 9,25 %. Dans l'exemple, 320 € par an.
+- **Le sinistre**, l'événement couvert qui se produit. Ici, le dégât des eaux.
+- **La franchise**, la part du dommage qui reste toujours à ta charge. Si elle est de 300 €, tu paies les premiers 300 € de réparation, et l'assureur le reste.
+- **Le plafond**, le maximum que l'assureur paiera pour un sinistre. En responsabilité civile, il se compte en millions, par exemple 25 millions.
+- **L'exclusion**, ce que le contrat ne couvre jamais, quoi qu'il arrive : la faute intentionnelle, l'ivresse, l'usure normale des choses.
+- **La déchéance**, la perte de ton droit à être indemnisé parce que tu n'as pas respecté une obligation du contrat, par exemple en déclarant le sinistre trop tard.
+- **La valeur à neuf ou la vétusté**, la base sur laquelle on calcule l'indemnité d'un bien abîmé. Un canapé de 10 ans peut t'être remboursé au prix d'un neuf, ou seulement à sa valeur actuelle, réduite par l'âge (la vétusté).
 
-- **Obligatoires** : RC auto ; assurance incendie du locataire (Wallonie, Flandre) ; RC pour certaines professions. Tout le reste est facultatif mais souvent **exigé** (par la banque, le bailleur).
-- **Durée** : un an, **reconduction tacite** ; résiliation par recommandé **3 mois avant l'échéance** (délai raccourci à 2 mois pour certains contrats depuis 2024, et résiliation possible à tout moment après la première année pour plusieurs assurances de particuliers).
-- **Déclaration** : un sinistre se déclare **vite** (8 jours en général, 24 h pour un vol).
-- **Segmentation** : l'assureur peut adapter la prime à ton profil (âge, lieu, historique) mais doit l'expliquer.
-- **Litige** : service des plaintes de l'assureur, puis **Ombudsman des assurances** (gratuit).
+Résultat, si la réparation coûte 2 000 € (montant **fictif**) : l'assureur te verse 1 700 €, et tu supportes les 300 € de franchise. Si la fuite venait d'un tuyau usé que tu n'as jamais entretenu, l'exclusion pour usure pourrait jouer, et c'est là que tout se décide.
 
-## Ce que ça change pour toi
+## Trois grandes familles d'assurances
 
-1. Lis les **exclusions** et la **franchise** avant la prime : une assurance pas chère qui ne paie pas n'est pas une économie.
-2. Un **courtier** indépendant compare plusieurs compagnies ; un agent n'en représente qu'une ; la banque vend les siennes.
-3. Fais le point **chaque année** : déménagement, enfant, vélo électrique, télétravail changent tes risques.
-4. Les assurances « gadget » (téléphone, annulation à chaque achat) coûtent souvent plus qu'elles ne rapportent.
+Toutes les assurances de particuliers se rangent dans trois familles, selon ce qu'elles protègent.
+
+1. **Les assurances de responsabilité** jouent quand tu as causé un dommage à quelqu'un d'autre : la RC familiale dans la vie privée, la RC auto au volant, la RC professionnelle au travail. → [[rc-familiale]]
+2. **Les assurances de dommages** jouent quand ce sont tes biens qui sont abîmés : l'assurance incendie du logement, l'omnium pour ta voiture, l'assurance vol. → [[assurance-habitation]]
+3. **Les assurances de personnes** protègent ta santé, ta vie ou tes revenus : l'assurance hospitalisation, l'assurance solde restant dû d'un crédit, l'assurance revenu garanti. → [[assurance-hospitalisation]] · [[assurance-solde-restant-du]]
+
+## Les règles du jeu en Belgique
+
+**Peu d'assurances sont obligatoires.** La RC auto l'est, tout comme l'assurance incendie du locataire en Wallonie et en Flandre, et la RC pour certaines professions. Tout le reste est facultatif, mais souvent **exigé** par quelqu'un : la banque qui te prête pour acheter, le bailleur qui te loue un logement.
+
+**Un contrat dure un an et se renouvelle tout seul.** C'est la **reconduction tacite** : sans réaction de ta part, il repart pour un an. Pour y mettre fin, la règle classique est d'envoyer un recommandé **3 mois avant l'échéance**, la date anniversaire du contrat. Ce délai a été raccourci à 2 mois pour certains contrats depuis 2024, et plusieurs assurances de particuliers peuvent désormais être résiliées à tout moment après la première année.
+
+**Un sinistre se déclare vite.** En général dans les **8 jours**, et dans les **24 heures** pour un vol. Un retard peut te coûter ton indemnisation : c'est la déchéance vue plus haut.
+
+**Le prix peut dépendre de ton profil.** L'assureur a le droit d'adapter la prime à ton âge, à ton lieu de vie ou à ton historique de sinistres. On appelle cela la **segmentation**. Il doit cependant pouvoir t'expliquer sur quoi elle repose.
+
+**En cas de litige, tu as un recours gratuit.** Adresse-toi d'abord au service des plaintes de ton assureur. Si ça ne règle rien, tu peux saisir l'**Ombudsman des assurances**, un médiateur indépendant, gratuit.
+
+## Ce que tu peux faire pour bien t'assurer
+
+Lis les **exclusions** et la **franchise** avant de regarder la prime. Une assurance pas chère qui ne paie pas le jour où tu en as besoin n'est pas une économie.
+
+Sache aussi à qui tu parles. Un **courtier** indépendant compare les contrats de plusieurs compagnies. Un **agent** n'en représente qu'une. Et la banque vend les assurances de son propre groupe.
+
+Fais le point **chaque année**. Un déménagement, un enfant, un vélo électrique ou le télétravail changent tes risques, et donc les garanties dont tu as besoin.
+
+Enfin, méfie-toi des assurances « gadget », celles qu'on te propose pour ton téléphone ou en annulation à chaque achat. Elles coûtent souvent plus qu'elles ne rapportent, puisqu'elles couvrent justement ce que ton épargne pourrait payer. → [[budget]]
+
+## À ne pas confondre
+
+La **franchise** et le **plafond** encadrent l'indemnité par les deux bouts : la franchise est ce qui reste à ta charge en bas, le plafond est la limite de l'assureur en haut. Une **exclusion** n'a rien à voir avec ces montants : c'est une situation que le contrat ne couvre pas du tout. Et la **déchéance** n'est pas une exclusion non plus : le sinistre était couvert, mais tu as perdu ton droit parce que tu n'as pas respecté une obligation, comme le délai de déclaration.
+
+## Nature des chiffres de cette page
+
+🔴 Les délais de résiliation (3 mois, 2 mois pour certains contrats depuis 2024) et de déclaration (8 jours, 24 heures pour un vol) sont des règles officielles ou contractuelles courantes ; 🟠 la taxe de 9,25 % incluse dans la prime est un repère fréquent. 🔵 La prime de 320 €, la franchise de 300 €, le dégât de 2 000 €, le plafond de 25 millions, le pot de 10 000 personnes à 10 € par mois et les 500 000 € sont des exemples fictifs.

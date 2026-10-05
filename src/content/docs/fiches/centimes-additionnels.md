@@ -12,7 +12,7 @@ organisme: "Commune, Région, SPF Finances"
 short: "Ta commune ajoute un pourcentage (souvent 6 à 8 %) à ton impôt fédéral, et ta Région perçoit une part de l'IPP qu'elle peut moduler : ton impôt final dépend donc aussi d'où tu habites au 1er janvier."
 aliases: [taxe communale additionnelle, centimes additionnels, IPP régional, autonomie fiscale régionale, taxe communale]
 prerequisites: [ipp, domicile]
-related: [avertissement-extrait-de-role, precompte-immobilier, tranches-imposition, qui-fait-quoi]
+related: [avertissement-extrait-de-role, precompte-immobilier, tranches-imposition, qui-fait-quoi, precompte-professionnel, deduction-reduction-credit]
 last_verified: 2026-10-02
 sources:
   - title: SPF Finances — Particuliers
@@ -25,44 +25,49 @@ sidebar:
   order: 10
 ---
 
-## En langage simple
+## Un impôt fédéral, sur lequel d'autres se greffent
 
-L'[[ipp]] est fédéral, mais deux autres niveaux se « greffent » dessus :
+L'impôt sur tes revenus, l'[[ipp]] (impôt des personnes physiques), est un impôt fédéral : c'est l'État fédéral qui fixe le barème et le SPF Finances qui le calcule. Mais deux autres niveaux de pouvoir viennent s'y greffer, et c'est pour ça que ton impôt final dépend aussi de l'endroit où tu habites.
 
-```text
-Impôt État (fédéral, après réductions)
-  ├─ part régionale : la Région reçoit une fraction et peut la moduler (centimes additionnels régionaux, réductions propres)
-  └─ + taxe communale additionnelle : un % de l'impôt, fixé par ta commune
-  = IPP total sur ton AER
-```
+- **Ta Région** reçoit une part de l'impôt et peut la moduler, notamment par des réductions qui lui sont propres.
+- **Ta commune** ajoute un pourcentage calculé sur ton impôt : la **taxe communale additionnelle**, qu'on appelle aussi « centimes additionnels » ou simplement « additionnel communal ».
 
-Tu ne fais aucune démarche : tout est calculé par le SPF Finances et apparaît sur ton [[avertissement-extrait-de-role]], puis reversé aux communes et Régions.
+Le tout forme l'IPP total qui apparaît sur ton [[avertissement-extrait-de-role|avertissement-extrait de rôle]] (AER), le décompte final de ton impôt que le fisc t'envoie chaque année.
 
-## L'additionnel communal
+Bonne nouvelle : tu n'as aucune démarche à faire. Le SPF Finances calcule tout, te le réclame en une fois, puis reverse leur part aux communes et aux Régions.
 
-| Question | Réponse |
-| --- | --- |
-| Qui le fixe ? | Le conseil communal, chaque année |
-| Combien ? | De **0 %** (quelques communes) à **9 %** ; la plupart entre 6 et 8 % |
-| Sur quoi ? | Sur l'impôt (pas sur le revenu) : 7 % d'un impôt de 9 616 € = 673 € |
-| Quelle commune ? | Celle de ton [[domicile]] au **1er janvier de l'exercice** |
+## La taxe communale : un pourcentage de ton impôt
 
-Exemple : voir le calcul complet dans [[tranches-imposition]].
+Chaque année, le **conseil communal** de ta commune vote un taux. La plupart des communes le fixent entre 6 et 8 %. Les extrêmes vont de **0 %**, dans quelques communes, à **9 %**.
 
-## La part régionale
+Le point qui surprend : ce pourcentage s'applique **à l'impôt**, pas au revenu. Une commune à 7 % ne prend pas 7 % de ton salaire, elle ajoute 7 % à l'impôt que tu dois déjà à l'État.
 
-Depuis la 6e réforme de l'État (2014), les Régions ont une **autonomie fiscale** : elles reçoivent une part de l'IPP et peuvent accorder des **réductions propres** (logement, titres-services, rénovation…) ou, en théorie, majorer. En pratique, les différences entre Régions passent surtout par ces réductions.
+Prenons l'exemple **fictif** qui sert de fil rouge au guide : un salarié isolé qui doit 9 616 € d'impôt à l'État pour l'année. Si sa commune applique 7 %, il paie en plus 7 % × 9 616 € = **673 €** de taxe communale. Son impôt total monte donc à environ 10 289 €. Le calcul complet, tranche par tranche, est dans [[tranches-imposition]].
+
+Reste à savoir quelle commune compte. C'est celle de ton [[domicile]], l'adresse où tu es inscrit, au **1er janvier de l'exercice d'imposition**, c'est-à-dire au 1er janvier de l'année qui suit celle des revenus. Si tu as déménagé en cours d'année, c'est donc le taux de ta nouvelle commune qui s'applique à toute l'année écoulée.
+
+## La part de la Région
+
+Depuis la 6e réforme de l'État, en 2014, les Régions ont une **autonomie fiscale** sur l'impôt des personnes physiques. Elles reçoivent une part de l'IPP, et elles peuvent la moduler : accorder leurs **propres réductions d'impôt** (pour le logement, les titres-services, la rénovation…) ou, en théorie, prélever davantage.
+
+En pratique, c'est surtout par ces réductions que l'impôt diffère d'une Région à l'autre. → [[deduction-reduction-credit]] · [[qui-fait-quoi]]
+
+## Pourquoi tu reçois parfois un petit supplément
+
+Chaque mois, ton employeur retient sur ton salaire une avance d'impôt, le [[precompte-professionnel|précompte professionnel]]. Mais il ne connaît pas le taux de ta commune. Il applique donc un additionnel **moyen**, forfaitaire, le même pour tout le monde.
+
+Résultat : si ta commune est au-dessus de cette moyenne, l'avance a été un peu trop faible, et tu peux t'attendre à un petit supplément sur ton AER. Si elle est en dessous, c'est l'inverse.
 
 ## Ce que ça change pour toi
 
-- Déménager peut changer ton impôt de quelques centaines d'euros par an : compare les taux communaux (publiés par le SPF Finances).
-- Le [[precompte-professionnel]] retenu par ton employeur intègre un additionnel **moyen** forfaitaire : si ta commune est au-dessus, attends-toi à un petit supplément sur l'AER.
-- La commune lève aussi des **taxes propres** (déchets, seconde résidence, documents) hors IPP, et des additionnels au [[precompte-immobilier]].
+**Déménager peut changer ton impôt** de quelques centaines d'euros par an. Si tu hésites entre deux communes, compare leurs taux : le SPF Finances les publie.
+
+**Ta commune lève aussi d'autres taxes**, qui ne passent pas par l'IPP : ses **taxes propres** (déchets, seconde résidence, délivrance de documents) et des additionnels sur le [[precompte-immobilier|précompte immobilier]], l'impôt annuel que paient les propriétaires sur leur bien.
 
 ## À ne pas confondre
 
-| Terme | Ce que c'est |
-| --- | --- |
-| Additionnel communal à l'IPP | % de ton impôt sur le revenu, sur l'AER fédéral. |
-| Additionnels au précompte immobilier | Centimes communaux et provinciaux sur l'impôt foncier : autre avertissement, régional. |
-| Taxe communale « déchets » | Facture directe de la commune, sans lien avec l'IPP. |
+On retrouve des « additionnels » à plusieurs endroits, et ce ne sont pas les mêmes. L'**additionnel communal à l'IPP**, dont parle cette fiche, est un pourcentage de ton impôt sur le revenu, qui figure sur l'AER fédéral. Les **additionnels au précompte immobilier** sont des centimes communaux et provinciaux ajoutés à l'impôt sur ton bien : ils arrivent sur un autre avertissement, géré par ta Région. Et la **taxe communale « déchets »** est une facture que la commune t'envoie directement, sans aucun lien avec l'IPP.
+
+## Nature des chiffres de cette page
+
+🔴 La fourchette des taux communaux (de 0 à 9 %, la plupart entre 6 et 8 %), la date du 1er janvier et la réforme de l'État de 2014 sont des règles officielles ; les taux eux-mêmes sont votés chaque année par chaque commune. 🔵 Le salarié qui doit 9 616 € d'impôt, le taux de 7 % de sa commune et les 673 € qui en découlent sont un exemple fictif.

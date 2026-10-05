@@ -31,29 +31,35 @@ sidebar:
   order: 12
 ---
 
-## En langage simple
+## Ce qui se passe quand le soleil tape sur le toit
 
-Un panneau photovoltaïque produit du courant continu quand il reçoit de la lumière. L'**onduleur** le transforme en courant alternatif 230 V identique à celui du réseau et l'injecte dans ton tableau. À cet instant, trois choses peuvent se passer : tes appareils le consomment (**autoconsommation**), le surplus part dans la rue (**injection**), ou, la nuit, tu reprends du réseau comme avant. Le compteur mesure les deux sens séparément.
+Un panneau photovoltaïque produit du courant continu quand il reçoit de la lumière. Mais ta maison fonctionne en courant alternatif. L'**onduleur**, un boîtier placé entre les panneaux et ton tableau électrique, transforme donc ce courant en 230 V alternatif, identique à celui du réseau, et l'envoie dans ton installation.
 
-## Pourquoi ça existe
+À cet instant, trois choses peuvent se passer. Tes appareils consomment ce courant : c'est l'**autoconsommation**. Le surplus part dans la rue, vers le réseau : c'est l'**injection**. Et la nuit, ou quand les panneaux ne suffisent pas, tu reprends du courant au réseau comme avant. Le compteur mesure les deux sens séparément.
 
-Pendant quinze ans, les Régions ont subventionné massivement le photovoltaïque (certificats verts, compteur « qui tourne à l'envers »). Résultat : la Belgique est l'un des pays les plus équipés d'Europe par habitant, mais le réseau sature les midis d'été et les subsides ont été démontés par étapes. Aujourd'hui, l'installation se justifie **par l'autoconsommation** et par le prix élevé de l'électricité achetée, plus que par ce que l'on te paie pour l'injection.
+## Pourquoi les règles ont tant changé
 
-## Comment ça marche
+Pendant quinze ans, les Régions ont subventionné massivement le photovoltaïque, avec des certificats verts (des primes versées selon la production) et un compteur « qui tourne à l'envers ». Résultat : la Belgique est l'un des pays les plus équipés d'Europe par habitant. Mais le réseau sature les midis d'été, et les subsides ont été démontés par étapes.
 
-### Dimensionner
+Aujourd'hui, une installation se justifie donc **par l'autoconsommation** et par le prix élevé de l'électricité achetée, bien plus que par ce qu'on te paie pour l'injection.
 
-La puissance se mesure en **kWc** (kilowatt-crête, puissance dans des conditions idéales). En Belgique, 1 kWc bien orienté produit 🟠 850 à 1 000 kWh par an ; un panneau actuel fait 🟠 400 à 450 Wc et 2 m². Une maison qui consomme 3 500 kWh/an installe typiquement 🟠 4 à 5 kWc (10 à 12 panneaux, 20 à 25 m²). L'orientation sud à 35° est idéale, est-ouest perd 🟠 15 à 20 % mais étale la production sur la journée, ce qui augmente l'autoconsommation. L'ombre d'une cheminée sur un panneau peut faire chuter toute la chaîne : les **optimiseurs** ou micro-onduleurs corrigent ce point.
+## Quelle taille d'installation ?
 
-### Ce que ça coûte et ce que ça rapporte
+La puissance se mesure en **kWc** (kilowatt-crête), la puissance que les panneaux fournissent dans des conditions idéales. En Belgique, 1 kWc bien orienté produit 🟠 850 à 1 000 kWh par an, et un panneau actuel fait 🟠 400 à 450 Wc pour 2 m². Une maison qui consomme 3 500 kWh par an installe typiquement 🟠 4 à 5 kWc, soit 10 à 12 panneaux et 20 à 25 m² de toit.
+
+L'orientation idéale est plein sud, avec une pente de 35°. Une orientation est-ouest perd 🟠 15 à 20 % de production, mais l'étale sur la journée, ce qui augmente l'autoconsommation. Attention aussi à l'ombre : celle d'une cheminée sur un seul panneau peut faire chuter toute la chaîne. Les **optimiseurs** ou micro-onduleurs, qui gèrent chaque panneau séparément, corrigent ce point.
+
+## Ce que ça coûte et ce que ça rapporte
 
 :::tip[Repère pratique, pas une règle]
 Une installation de 4 à 5 kWc coûte 🟠 6 000 à 9 000 € TVAC (6 % si le logement a plus de 10 ans). Sans batterie, un ménage autoconsomme 🟠 30 à 40 % de sa production ; chaque kWh autoconsommé t'évite d'en acheter un à 🟠 0,25 à 0,35 €, chaque kWh injecté est racheté 🟠 0,03 à 0,08 € selon les contrats. Le temps de retour tourne 🟠 autour de 7 à 10 ans selon la Région et tes habitudes.
 :::
 
-Le levier n° 1 est donc de **déplacer tes consommations en journée** : lave-linge, lave-vaisselle, boiler électrique programmé à midi, recharge de voiture. Un [[eau-chaude-sanitaire|boiler]] piloté par le surplus est la « batterie » la moins chère qui existe.
+L'écart entre ces deux prix dit tout : un kWh que tu consommes toi-même vaut plusieurs fois plus qu'un kWh injecté. Le levier n° 1 est donc de **déplacer tes consommations en journée** : lave-linge, lave-vaisselle, boiler électrique programmé à midi, recharge de voiture. Un [[eau-chaude-sanitaire|boiler]] piloté par le surplus est d'ailleurs la « batterie » la moins chère qui existe.
 
-### Les règles régionales (elles changent souvent)
+## Ce que dit ta Région
+
+Les règles qui décident de ce que rapporte l'injection sont régionales, et elles changent souvent.
 
 :::caution[Règle régionale datée]
 - **Wallonie** 🔴 : les installations placées **avant 2024** gardent la compensation (le compteur déduit l'injection de la consommation) jusqu'à fin 2030, mais paient le **tarif prosumer** (une redevance réseau calculée sur la puissance de l'onduleur, ou sur le prélèvement réel avec un compteur communicant). Les installations placées **depuis 2024** n'ont plus de compensation : la consommation est facturée au prix plein, l'injection est rachetée par ton fournisseur au prix de son contrat. Le compteur communicant devient obligatoire.
@@ -63,33 +69,38 @@ Le levier n° 1 est donc de **déplacer tes consommations en journée** : lave-l
 Vérifie sur le site du régulateur de ta Région (CWaPE, VREG, Brugel) la règle du **mois où tu signes**, et fais-la figurer sur le devis.
 :::
 
-### Les formalités
+## Les formalités
 
-L'installateur doit être agréé (RESCert) pour les primes et la plupart des assurances. L'installation doit être **déclarée au gestionnaire de réseau** avant la mise en service, et contrôlée par un organisme agréé RGIE ([[electricite-maison]]). En toiture existante, elle est en général **dispensée de permis** si les panneaux suivent la pente du toit ([[permis-urbanisme]]) ; en zone protégée ou au sol, renseigne-toi. Préviens ton [[assurance-habitation|assureur]] : les panneaux augmentent la valeur assurée.
+Pour les primes et la plupart des assurances, l'installateur doit être agréé RESCert, le label des installateurs en énergies renouvelables. L'installation doit être **déclarée au gestionnaire de réseau** avant la mise en service, et contrôlée par un organisme agréé RGIE, le règlement qui encadre les installations électriques. → [[electricite-maison]]
 
-### La batterie et les autres compléments
+Sur une toiture existante, la pose est en général **dispensée de permis** si les panneaux suivent la pente du toit ; en zone protégée ou pour des panneaux au sol, renseigne-toi. Préviens aussi ton [[assurance-habitation|assureur]] : les panneaux augmentent la valeur assurée. → [[permis-urbanisme]]
 
-Une **batterie domestique** (🟠 5 à 10 kWh, 4 000 à 8 000 €) fait passer l'autoconsommation à 🟠 60 à 70 %, mais son temps de retour dépasse souvent sa durée de vie garantie : elle se justifie surtout avec une [[pompe-a-chaleur]] ou une voiture électrique et un tarif dynamique. L'onduleur dure 🟠 10 à 15 ans (compter un remplacement, 1 000 à 2 000 €) ; les panneaux sont garantis 🟠 25 ans à 80 % de leur puissance.
+## Batterie, onduleur et durée de vie
 
-## Exemple
+Une **batterie domestique** (🟠 5 à 10 kWh, 4 000 à 8 000 €) fait passer l'autoconsommation à 🟠 60 à 70 %. Mais son temps de retour dépasse souvent sa durée de vie garantie. Elle se justifie surtout avec une [[pompe-a-chaleur]] ou une voiture électrique, et un tarif dynamique.
 
-Camille, toit neuf terminé, installe 🔵 4,4 kWc (11 panneaux) pour 7 200 € TVAC en Wallonie en 2026, donc sans compensation. Production attendue : 🔵 4 000 kWh. En déplaçant le boiler et les machines en journée, elle autoconsomme 🔵 40 % : 1 600 kWh × 0,30 € = 480 €/an économisés, plus 2 400 kWh injectés × 0,05 € = 120 €. Gain 🔵 600 €/an, retour en 12 ans ; si le prix de l'électricité monte ou si elle ajoute une voiture électrique chargée le week-end, il raccourcit. Elle découvre aussi que l'onduleur affiche la production en temps réel et que ses enfants attendent le soleil pour lancer le lave-vaisselle.
+Côté usure, l'onduleur dure 🟠 10 à 15 ans : compte un remplacement, à 1 000 à 2 000 €. Les panneaux, eux, sont garantis 🟠 25 ans à 80 % de leur puissance.
+
+## Un exemple : les panneaux de Camille
+
+Camille, dont le toit neuf vient d'être terminé, installe en Wallonie en 2026 🔵 4,4 kWc (11 panneaux) pour 7 200 € TVAC. Son installation date d'après 2024 : elle n'a donc pas de compensation. Elle peut attendre une production de 🔵 4 000 kWh par an.
+
+En déplaçant le boiler et les machines en journée, elle autoconsomme 🔵 40 % de cette production. Les 1 600 kWh qu'elle n'achète plus lui font économiser 1 600 × 0,30 € = 480 € par an. Les 2 400 kWh injectés lui rapportent 2 400 × 0,05 € = 120 €. Au total, elle gagne 🔵 600 € par an, et récupère sa mise en 12 ans. Si le prix de l'électricité monte, ou si elle ajoute une voiture électrique chargée le week-end, ce délai raccourcit.
+
+Elle découvre aussi que l'onduleur affiche la production en temps réel, et que ses enfants attendent le soleil pour lancer le lave-vaisselle.
 
 ## Ce que ça change pour toi
 
-- Décide **après le toit** et **avant la pompe à chaleur** ou la voiture électrique : c'est leur combinaison qui fait la rentabilité ([[ordre-des-travaux]]).
-- Exige sur le devis : puissance en kWc, marque et garantie des panneaux et de l'onduleur, production annuelle estimée, démarches réseau et RGIE incluses, et la **règle de compensation applicable** ([[devis-travaux]]).
-- Programme tes gros consommateurs **en journée** ; sans ce réflexe, la moitié de l'intérêt disparaît.
-- Méfie-toi des promesses de « retour en 4 ans » et des démarchages à domicile ; compare au moins trois offres ([[choisir-entrepreneur]]).
+Décide des panneaux **après le toit** et **avant la pompe à chaleur** ou la voiture électrique : c'est leur combinaison qui fait la rentabilité. → [[ordre-des-travaux]]
+
+Sur le devis, exige la puissance en kWc, la marque et la garantie des panneaux et de l'onduleur, la production annuelle estimée, les démarches réseau et RGIE incluses, et la **règle de compensation applicable**. → [[devis-travaux]]
+
+Ensuite, programme tes gros consommateurs **en journée** : sans ce réflexe, la moitié de l'intérêt disparaît. Et méfie-toi des promesses de « retour en 4 ans » et des démarchages à domicile ; compare au moins trois offres. → [[choisir-entrepreneur]]
 
 ## À ne pas confondre
 
-- **kWc** (puissance installée) et **kWh** (énergie produite ou consommée) : on paie et on économise des kWh.
-- **Autoconsommation** (ce que tu utilises toi-même, la vraie économie) et **autoproduction** (part de ta consommation couverte par tes panneaux).
-- **Photovoltaïque** (électricité) et **solaire thermique** (eau chaude via des capteurs, voir [[eau-chaude-sanitaire]]) : deux technologies, deux usages.
+Le **kWc** mesure la puissance installée, le **kWh** l'énergie produite ou consommée : on paie et on économise des kWh. L'**autoconsommation** est la part de ta production que tu utilises toi-même, la vraie économie ; l'**autoproduction** est la part de ta consommation couverte par tes panneaux. Enfin, le **photovoltaïque** produit de l'électricité, alors que le **solaire thermique** chauffe de l'eau grâce à des capteurs : deux technologies, deux usages. → [[eau-chaude-sanitaire]]
 
 ## Nature des chiffres de cette page
 
-- 🔴 Règles de compensation, tarif prosumer, certificats verts : état des règlementations régionales en 2026, susceptibles de changer d'une année à l'autre ; toujours vérifier auprès du régulateur.
-- 🟠 Productions, prix, taux d'autoconsommation, prix de rachat : repères de marché 2026.
-- 🔵 L'installation de Camille est inventée.
+🔴 Les règles de compensation, le tarif prosumer et les certificats verts décrivent l'état des règlementations régionales en 2026 ; ils peuvent changer d'une année à l'autre, donc vérifie toujours auprès du régulateur. 🟠 Les productions par kWc, les prix des installations et des batteries, les taux d'autoconsommation, les prix d'achat et de rachat du kWh et les durées de vie sont des repères de marché 2026. 🔵 L'installation de Camille et ses chiffres sont inventés.

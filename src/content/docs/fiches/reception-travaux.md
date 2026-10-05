@@ -27,74 +27,79 @@ sidebar:
   order: 28
 ---
 
-## En langage simple
+## « C'est fini » ne veut pas dire « c'est réceptionné »
 
-Quand l'entrepreneur dit « c'est fini », rien n'est fini tant que tu n'as pas **réceptionné**. La réception, c'est une visite ensemble, une liste écrite de ce qui ne va pas (les **réserves**), des signatures et une date. Ce jour-là, trois horloges démarrent : celle du paiement du solde, celle de la **garantie décennale** (dix ans pour les défauts graves), et celle, courte, pendant laquelle tu peux encore signaler les petits défauts. Ce que tu as vu et accepté sans réserve, tu ne pourras plus le reprocher.
+Quand l'entrepreneur dit « c'est fini », rien n'est fini tant que tu n'as pas **réceptionné**. La réception, c'est une visite ensemble, une liste écrite de ce qui ne va pas (les **réserves**), des signatures et une date.
 
-## Pourquoi ça existe
+Ce jour-là, trois horloges démarrent. Celle du paiement du solde. Celle de la **garantie décennale**, dix ans pour les défauts graves. Et celle, courte, pendant laquelle tu peux encore signaler les petits défauts. Ce que tu as vu et accepté sans réserve, en revanche, tu ne pourras plus le reprocher.
 
-Le droit de la construction repose sur une idée simple : l'entrepreneur répond de son ouvrage, mais il faut un moment où l'on fixe l'état des lieux. Le Code civil organise la responsabilité décennale des entrepreneurs et architectes pour les vices qui menacent la **solidité** ou la **stabilité** (articles 1792 et 2270, aujourd'hui repris dans le nouveau Code civil), la jurisprudence a ajouté les **vices cachés véniels** (moins graves) pendant un délai raisonnable après découverte, et la loi de 2017 impose une **assurance** pour la décennale dans le gros œuvre des habitations ([[choisir-entrepreneur]]).
+## Pourquoi un moment aussi formel ?
 
-## Comment ça marche
+Le droit de la construction repose sur une idée simple : l'entrepreneur répond de son ouvrage, mais il faut un moment où l'on fixe l'état des lieux. Sans ce moment, personne ne saurait si une fissure date du chantier ou de l'usage.
 
-### Avant la réception
+Trois couches de règles s'empilent. Le Code civil organise la responsabilité décennale des entrepreneurs et architectes pour les vices qui menacent la **solidité** ou la **stabilité** (articles 1792 et 2270, aujourd'hui repris dans le nouveau Code civil). La jurisprudence, c'est-à-dire les décisions des tribunaux, y a ajouté les **vices cachés véniels**, ces défauts moins graves qu'on peut encore signaler pendant un délai raisonnable après les avoir découverts. Et la loi de 2017 impose une **assurance** pour la décennale dans le gros œuvre des habitations. → [[choisir-entrepreneur]] · [[responsabilite]]
 
-- Relis le **devis et les avenants** : c'est la liste de ce qui doit être livré ([[devis-travaux]]).
-- Rassemble les **preuves de performance** : fiches techniques, attestations (contrôle RGIE, entretien chaudière, réception gaz), schémas, garanties fabricants, certificats des matériaux pour les [[primes-renovation|primes]].
-- Si un architecte suit le chantier, c'est lui qui organise la réception et rédige le PV ; sinon, fais-toi accompagner pour les travaux importants (🟠 200 à 400 € pour un expert indépendant).
+## Préparer la réception
 
-### Le jour J : le procès-verbal
+Commence par relire le **devis et ses avenants** : c'est la liste de ce qui doit t'être livré. → [[devis-travaux]]
 
-La visite se fait **pièce par pièce**, avec le devis en main. Tout ce qui est visible et non conforme va dans le **PV de réception** : défauts d'exécution, finitions manquantes, écarts avec le devis, documents non remis. Trois issues :
+Rassemble ensuite les **preuves de performance** : fiches techniques, attestations (contrôle RGIE de l'électricité, entretien chaudière, réception gaz), schémas, garanties des fabricants, et les certificats des matériaux exigés pour les [[primes-renovation|primes]].
 
-1. **Réception sans réserve** : rare, tout est accepté.
-2. **Réception avec réserves** : la plus courante ; le PV liste les points, fixe un **délai** pour les lever et, idéalement, une **retenue** (🟠 5 à 10 % du solde) jusqu'à la levée. Une seconde visite acte la levée.
-3. **Refus de réception** : si les défauts empêchent l'usage normal ; motivé par écrit.
+Si un architecte suit le chantier, c'est lui qui organise la réception et rédige le procès-verbal. Sinon, pour des travaux importants, fais-toi accompagner : un expert indépendant coûte de l'ordre de 200 à 400 €.
 
-Sans PV écrit, le paiement intégral du solde ou l'occupation sans protestation peut valoir **réception tacite** : les défauts visibles sont alors réputés acceptés. Écris toujours.
+## Le jour J : le procès-verbal
 
-### Réception provisoire et définitive
+La visite se fait **pièce par pièce**, le devis en main. Tout ce qui est visible et non conforme va dans le **PV de réception** (procès-verbal) : défauts d'exécution, finitions manquantes, écarts avec le devis, documents non remis. La visite peut finir de trois façons.
 
-Pour les gros chantiers et dans la **loi Breyne** (construction neuve ou gros travaux vendus « clé sur porte »), il y a deux réceptions : la **provisoire** (fin des travaux, liste des réserves, début de la décennale selon le contrat) et la **définitive**, au moins un an plus tard (après un hiver, les fissures de retrait et les problèmes d'humidité se sont révélés). La loi Breyne impose notamment 🔴 un acompte maximum de 5 % à la signature, des paiements par tranches selon l'avancement, une garantie d'achèvement et un délai d'un an minimum entre les deux réceptions. En rénovation ordinaire, une seule réception est la règle, mais tu peux prévoir au contrat une réception définitive après un an.
+- **La réception sans réserve**, plutôt rare : tout est accepté.
+- **La réception avec réserves**, la plus courante : le PV liste les points, fixe un **délai** pour les lever et, idéalement, une **retenue** de 5 à 10 % du solde gardée jusque-là. Une seconde visite acte ensuite la levée des réserves.
+- **Le refus de réception**, quand les défauts empêchent l'usage normal ; il doit être motivé par écrit.
 
-### Les garanties, dans le temps
+Attention au piège de l'oral. Sans PV écrit, payer tout le solde ou occuper les lieux sans protester peut valoir **réception tacite** : les défauts visibles sont alors réputés acceptés. Donc écris toujours.
 
-| Défaut | Délai | Fondement | Contre qui |
-| --- | --- | --- | --- |
-| Visible à la réception et non réservé | **Aucun** : accepté | Réception | — |
-| Visible, réservé dans le PV | Délai du PV | Contrat | Entrepreneur |
-| **Vice caché véniel** (défaut non apparent, sans atteinte à la solidité : carrelage qui se décolle, infiltration de fenêtre) | Action « à bref délai » après découverte, 🟠 quelques mois ; les contrats limitent souvent la période à 1 ou 2 ans après réception | Jurisprudence, contrat | Entrepreneur |
-| **Vice grave** (solidité, stabilité, étanchéité du gros œuvre) | **10 ans** à partir de la réception (ou de la provisoire si le contrat le dit) 🔴 | Code civil, loi de 2017 | Entrepreneur et architecte, et leurs assureurs décennale |
-| Produit défectueux (chaudière, châssis) | Garantie fabricant + garantie légale de conformité 🔴 2 ans pour le consommateur | Code civil, droit de la consommation | Vendeur / installateur |
+## Une réception ou deux ?
 
-L'**assurance habitation** n'intervient pas pour les malfaçons ; en revanche, une **protection juridique** ([[rc-familiale]]) couvre souvent l'expertise et l'avocat d'un litige de construction.
+Pour les gros chantiers, et dans le cadre de la **loi Breyne** (qui protège l'acheteur d'une construction neuve ou de gros travaux vendus « clé sur porte »), il y a deux réceptions. La **provisoire** a lieu à la fin des travaux : on y dresse la liste des réserves, et selon le contrat elle fait démarrer la décennale. La **définitive** vient au moins un an plus tard, après un hiver, quand les fissures de retrait (dues au séchage des matériaux) et les problèmes d'humidité ont eu le temps de se révéler.
 
-### Si un défaut apparaît
+:::note[Règle légale — loi Breyne du 9 juillet 1971]
+Acompte de 5 % au maximum à la signature, paiements par tranches selon l'avancement, garantie d'achèvement, et un an au minimum entre la réception provisoire et la définitive.
+:::
 
-1. **Écris** à l'entrepreneur (courriel, puis recommandé) avec photos et date de découverte ; demande une visite et une réparation dans un délai.
-2. Sans réaction : **expertise** (amiable, ou via la Commission de conciliation construction si le contrat y renvoie, sinon expert judiciaire).
-3. **Mesures conservatoires** : tu peux faire stopper une fuite en urgence, documente tout ; ne fais pas réparer définitivement par un tiers avant constat, sauf urgence, sinon tu détruis la preuve.
-4. **Assureur décennale** : déclare-lui le sinistre directement si l'entrepreneur a disparu ou est en faillite ; l'attestation remise avant chantier donne son nom.
+En rénovation ordinaire, une seule réception est la règle. Mais rien ne t'empêche de prévoir au contrat une réception définitive après un an.
 
-## Exemple
+## Combien de temps es-tu protégé ?
 
-Réception du toit de Camille, avec un expert. PV : trois tuiles de rive mal fixées, un solin de cheminée à reprendre, l'attestation d'évacuation de l'amiante manquante, le certificat de l'isolant à fournir pour la prime. Retenue 🔵 2 000 € sur le solde de 🔵 8 400 €. Levée des réserves deux semaines plus tard, documents reçus, solde payé. Dix-huit mois après, une tache apparaît au plafond sous la noue : infiltration à la jonction avec le voisin, non visible à la réception. Courriel avec photos, visite, reprise sous huit jours au titre du vice caché ; si l'entrepreneur avait refusé, le PV, les photos datées et l'attestation de décennale auraient été son dossier.
+Tout dépend du défaut, et du moment où il est apparu.
+
+- **Un défaut visible à la réception et non réservé** est considéré comme accepté : tu n'as plus de recours.
+- **Un défaut visible et réservé dans le PV** doit être réparé par l'entrepreneur dans le délai fixé par le PV, en vertu du contrat.
+- **Un vice caché véniel**, défaut non apparent qui ne touche pas la solidité (un carrelage qui se décolle, une infiltration autour d'une fenêtre), se signale à l'entrepreneur « à bref délai » après sa découverte, ce qui veut dire en pratique quelques mois. Ce délai vient de la jurisprudence, et les contrats limitent souvent la période à un ou deux ans après la réception.
+- **Un vice grave**, qui touche la solidité, la stabilité ou l'étanchéité du gros œuvre, engage l'entrepreneur et l'architecte, ainsi que leurs assureurs décennale, pendant **dix ans** à partir de la réception (ou de la provisoire si le contrat le dit), en vertu du Code civil et de la loi de 2017.
+- **Un produit défectueux** (une chaudière, un châssis) relève de la garantie du fabricant et de la garantie légale de conformité, de deux ans pour un consommateur, auprès du vendeur ou de l'installateur.
+
+Une précision qui évite une déception : ton [[assurance-habitation]] n'intervient pas pour les malfaçons. En revanche, une **protection juridique** couvre souvent l'expertise et l'avocat d'un litige de construction. → [[rc-familiale]]
+
+## Si un défaut apparaît
+
+1. **Écris** à l'entrepreneur, par courriel puis par recommandé, avec photos et date de découverte, et demande une visite et une réparation dans un délai précis.
+2. **Sans réaction, fais expertiser** : à l'amiable, via la Commission de conciliation construction si le contrat y renvoie, sinon par un expert judiciaire.
+3. **Prends les mesures conservatoires** nécessaires : tu peux faire stopper une fuite en urgence, en documentant tout. Mais ne fais pas réparer définitivement par un tiers avant le constat, sauf urgence, sinon tu détruis la preuve.
+4. **Contacte l'assureur décennale** directement si l'entrepreneur a disparu ou est en faillite ; l'attestation remise avant le chantier donne son nom.
+
+## Un exemple : le toit de Camille
+
+Camille (exemple **fictif**) réceptionne son toit avec un expert. Le PV relève trois tuiles de rive mal fixées, un solin de cheminée (la bande d'étanchéité entre la cheminée et le toit) à reprendre, l'attestation d'évacuation de l'amiante manquante et le certificat de l'isolant à fournir pour la prime. Elle retient 2 000 € sur le solde de 8 400 €. Deux semaines plus tard, les réserves sont levées, les documents reçus, et elle paie le solde.
+
+Dix-huit mois après, une tache apparaît au plafond sous la noue, ce creux où deux pans de toit se rejoignent : une infiltration à la jonction avec le voisin, invisible à la réception. Camille envoie un courriel avec photos, l'entrepreneur passe et répare sous huit jours, au titre du vice caché. S'il avait refusé, le PV, les photos datées et l'attestation de décennale auraient constitué son dossier.
 
 ## Ce que ça change pour toi
 
-- **Pas de solde sans PV.** Si l'entrepreneur « n'a pas le temps », fais-le toi-même par écrit, envoie-le-lui, et retiens une partie du solde.
-- Photographie tout, avant fermeture des murs et à la réception : c'est la seule preuve de ce qui est derrière le plâtre.
-- Classe ensemble devis, avenants, PV, factures, attestations d'assurance : ce dossier vaut dix ans, et il se transmet à la vente.
-- Prévois dans le contrat, pour les gros travaux, une **réception définitive après un an** et une retenue de garantie.
+**Pas de solde sans PV.** Si l'entrepreneur « n'a pas le temps », rédige-le toi-même par écrit, envoie-le-lui, et retiens une partie du solde. Photographie tout, avant la fermeture des murs et à la réception : c'est la seule preuve de ce qui se trouve derrière le plâtre. Classe ensemble devis, avenants, PV, factures et attestations d'assurance : ce dossier vaut dix ans, et il se transmet à la vente. Enfin, pour les gros travaux, prévois dans le contrat une **réception définitive après un an** et une retenue de garantie.
 
 ## À ne pas confondre
 
-- **Réception** (acceptation des travaux, juridique) et **fin du chantier** (départ des ouvriers, factuel).
-- **Vice caché véniel** (délai court, défaut non structurel) et **vice décennal** (dix ans, solidité ou étanchéité du gros œuvre).
-- **Garantie décennale** (responsabilité légale, toujours) et **assurance décennale** (obligatoire seulement dans le champ de la loi de 2017) : la seconde garantit que la première est solvable.
+La **réception** est un acte juridique, l'acceptation des travaux, alors que la **fin du chantier** n'est qu'un fait, le départ des ouvriers. Le **vice caché véniel** est un défaut non structurel à signaler à bref délai, le **vice décennal** touche la solidité ou l'étanchéité du gros œuvre et se couvre dix ans. Enfin, la **garantie décennale** est une responsabilité légale qui existe toujours, alors que l'**assurance décennale** n'est obligatoire que dans le champ de la loi de 2017 : la seconde garantit que la première sera payée même si l'entrepreneur n'est plus solvable.
 
 ## Nature des chiffres de cette page
 
-- 🔴 Durée décennale, règles de la loi Breyne, garantie légale de conformité : Code civil, loi du 9 juillet 1971 (Breyne), Code de droit économique, loi du 31 mai 2017.
-- 🟠 Retenue de garantie, coût d'un expert, « bref délai » : usages et jurisprudence, variables.
-- 🔵 La réception de Camille est inventée.
+🔴 La durée décennale de dix ans, l'acompte de 5 % et l'année entre les deux réceptions de la loi Breyne, et la garantie légale de conformité de deux ans viennent du Code civil, de la loi du 9 juillet 1971 (Breyne), du Code de droit économique et de la loi du 31 mai 2017. 🟠 La retenue de 5 à 10 %, les 200 à 400 € d'un expert et le « bref délai » de quelques mois sont des usages et une jurisprudence variables. 🔵 La réception de Camille, sa retenue de 2 000 € et son solde de 8 400 € sont inventés.

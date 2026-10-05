@@ -25,61 +25,67 @@ sidebar:
   order: 6
 ---
 
-## En langage simple
+## Trois questions avant d'acheter
 
-Trois questions, trois réponses chiffrées :
+Quand tu prépares l'achat d'un logement à crédit, trois questions se posent, et chacune a sa réponse chiffrée.
 
-1. **Combien la banque accepte-t-elle de prêter par rapport au bien ?** → la quotité.
-2. **Combien dois-je avoir de côté ?** → l'apport.
-3. **Combien puis-je rembourser chaque mois ?** → la capacité d'emprunt.
+1. **Combien la banque accepte-t-elle de prêter par rapport à la valeur du bien ?** C'est la **quotité**.
+2. **Combien dois-tu avoir de côté ?** C'est l'**apport personnel**.
+3. **Combien peux-tu rembourser chaque mois ?** C'est ta **capacité d'emprunt**.
 
-Le montant que tu peux acheter est le **plus petit** des trois.
+Ces trois limites jouent en même temps. Le prix que tu peux te permettre est donc le **plus petit** des trois résultats : il ne sert à rien que tes revenus permettent d'emprunter 300 000 € si tu n'as pas l'apport, et inversement.
 
-## La quotité
+## Combien la banque prête par rapport au bien : la quotité
 
-```text
-Quotité = montant emprunté ÷ valeur du bien (estimée par la banque, pas forcément le prix payé)
+La quotité, c'est le montant emprunté divisé par la valeur du bien. Attention : la valeur dont parle la banque est celle qu'**elle** estime, pas forcément le prix que tu paies. Si tu paies plus cher que ce que la banque juge raisonnable, ta quotité monte.
 
-Bien 250 000 €, emprunt 200 000 €  → quotité 80 %
-Bien 250 000 €, emprunt 250 000 €  → quotité 100 % (rare, taux plus élevé, surtout jeunes primo-acquéreurs)
-```
+Prenons un exemple **fictif** : un bien de 250 000 €. Si tu empruntes 200 000 €, ta quotité est de 80 %. Si tu empruntes la totalité, 250 000 €, elle est de 100 %. Une quotité de 100 % reste rare : les banques la réservent surtout à de jeunes primo-acquéreurs (des personnes qui achètent leur premier logement), et la font payer par un taux plus élevé.
 
-:::note[Règle datée]
-La BNB recommande aux banques de ne pas dépasser **90 %** pour une résidence principale (avec une marge pour une partie des primo-acquéreurs), et moins pour un bien d'investissement. Plus la quotité est basse, meilleur est le taux.
+:::note[Règle datée — recommandations BNB en vigueur]
+La Banque nationale de Belgique (BNB) recommande aux banques de ne pas dépasser **90 %** de quotité pour une résidence principale, avec une marge pour une partie des primo-acquéreurs, et moins pour un bien d'investissement.
 :::
 
-## L'apport
+Pourquoi la quotité compte autant ? Parce qu'elle mesure le risque de la banque. Plus elle est basse, plus la banque est sûre de récupérer son argent en cas de revente forcée, et meilleur est le taux qu'elle te propose.
 
-Même à 100 % de quotité, tu dois payer **les frais** : droits d'enregistrement, notaire, frais de crédit. Voir [[cout-reel-achat]].
+## Combien tu dois avoir de côté : l'apport
 
-| Cas | Apport nécessaire (ordre de grandeur, Wallonie 3 %) |
+Même si la banque te prêtait 100 % du prix, il te faudrait encore de l'argent. Car acheter coûte bien plus que le prix affiché : il faut payer les **droits d'enregistrement** (l'impôt régional sur l'achat), les frais de **notaire** et les **frais du crédit** lui-même. Ces frais ne sont pas financés par la quotité : c'est à toi de les apporter. → [[cout-reel-achat]]
+
+Voici l'ordre de grandeur, pour le même bien **fictif** de 250 000 € en Wallonie, où les droits d'enregistrement sont de 3 % pour une habitation propre et unique.
+
+| Cas | Apport nécessaire (ordre de grandeur) |
 | --- | --- |
-| Bien 250 000 €, quotité 90 % | 25 000 € (10 %) + ≈ 15 000 € de frais = **≈ 40 000 €** |
-| Bien 250 000 €, quotité 100 % | ≈ 15 000 € de frais |
+| Quotité 90 % | 25 000 € (les 10 % non prêtés) + environ 15 000 € de frais = **environ 40 000 €** |
+| Quotité 100 % | Environ 15 000 € de frais |
 
-Sans oublier de **garder** ton [[epargne-de-precaution]] : une maison crée des imprévus.
+Et ce montant n'est pas tout ce que tu dois avoir. Garde aussi ton [[epargne-de-precaution|épargne de précaution]], la réserve pour les coups durs : une maison crée toujours des imprévus.
 
-## La capacité d'emprunt
+## Combien tu peux rembourser : la capacité d'emprunt
+
+La troisième limite vient de tes revenus. Les banques utilisent souvent la « règle du tiers » : la mensualité, tous crédits confondus, ne devrait pas dépasser environ un tiers des revenus nets du ménage. Ce n'est pas une loi, seulement une habitude bancaire, mais elle donne un premier ordre de grandeur. Suivons un exemple **fictif** :
 
 ```text
-Revenus nets du ménage : 4 200 €
-× ≈ 33 % (« règle du tiers » : une habitude bancaire, pas une loi)  = 1 400 € de mensualité maximale (tous crédits confondus)
-→ à 3 % sur 25 ans ≈ 295 000 € empruntables
+Revenus nets du ménage                   4 200 €
+× environ 33 % (règle du tiers)        = 1 400 € de mensualité maximale
+→ à 3 % sur 25 ans                     ≈ 295 000 € empruntables
 ```
 
-La banque vérifie aussi le **reste à vivre** (ce qui reste après la mensualité et les charges fixes) et tes autres crédits (Centrale des crédits).
+La banque ne s'arrête pas là. Elle vérifie aussi ton **reste à vivre**, ce qu'il te reste une fois la mensualité et les charges fixes payées. Et elle consulte la **Centrale des crédits** de la BNB, le fichier où sont enregistrés tous tes crédits en cours : un prêt voiture ou une ouverture de crédit réduisent d'autant la mensualité disponible pour le logement.
 
 ## Ce que ça change pour toi
 
-- Simule ta mensualité au **taux maximal** si variable, et avec les **charges du propriétaire** (précompte immobilier, assurance, entretien, copropriété) qui s'ajoutent.
-- Un apport plus grand = quotité plus basse = taux meilleur **et** moins d'intérêts : l'apport est le levier le plus puissant.
-- Les **donations** des parents (avec un acte, ou un don bancaire déclaré) sont une source d'apport fréquente : voir [[donation]].
-- Ne vide pas tous tes comptes pour l'apport : la banque le remarque aussi.
+**Simule au pire et avec toutes les charges.** Si tu envisages un taux variable, calcule ta mensualité au **taux maximal** prévu par le contrat. Et ajoute les **charges du propriétaire**, qui viennent en plus : [[precompte-immobilier|précompte immobilier]] (l'impôt annuel sur le bien), assurance, entretien, charges de copropriété. → [[taux-fixe-variable]]
+
+**Mise sur l'apport.** Un apport plus grand, c'est une quotité plus basse, donc un meilleur taux **et** moins de capital sur lequel payer des intérêts. C'est le levier le plus puissant que tu aies.
+
+**Pense aux donations.** Une aide des parents est une source d'apport fréquente, par un acte chez le notaire ou par un don bancaire déclaré. → [[donation]]
+
+**Ne vide pas tous tes comptes.** Mettre toute ton épargne dans l'apport te laisse sans réserve, et la banque le remarque aussi.
 
 ## À ne pas confondre
 
-| Terme | Ce que c'est |
-| --- | --- |
-| Quotité (crédit) | Emprunt ÷ valeur du bien. |
-| [[quotite-exemptee\|Quotité exemptée]] (impôt) | Part de revenu non imposée. |
-| Quotités (copropriété) | Part de chaque lot dans les charges communes. |
+Le mot « quotité » sert dans trois domaines différents. La **quotité d'un crédit** est le rapport entre l'emprunt et la valeur du bien. La [[quotite-exemptee|quotité exemptée]], en impôt, est la part de ton revenu qui n'est jamais taxée. Et les **quotités d'une copropriété** sont la part de chaque appartement dans les charges communes de l'immeuble. → [[copropriete]]
+
+## Nature des chiffres de cette page
+
+🔴 La recommandation de la BNB (90 % au plus pour une résidence principale) et les droits d'enregistrement wallons de 3 % sont des règles officielles en vigueur. 🟠 La règle du tiers est une habitude bancaire, et les 15 000 € de frais un ordre de grandeur. 🔵 Le bien de 250 000 €, les emprunts de 200 000 € et 250 000 €, les revenus de 4 200 € et les 295 000 € empruntables sont des exemples fictifs.

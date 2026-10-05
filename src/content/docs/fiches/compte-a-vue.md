@@ -21,43 +21,57 @@ sidebar:
   order: 1
 ---
 
-## En langage simple
+## Le compte où passe tout ton argent
 
-Le compte à vue (« courant ») est ta **caisse** : il reçoit, il paie, il ne rapporte rien (ou presque). Son numéro **IBAN** (BE + 14 chiffres) suffit pour recevoir un virement de n'importe où en Europe ; le BIC identifie la banque mais n'est plus nécessaire en zone SEPA.
+Le compte à vue, qu'on appelle aussi « compte courant », est ta **caisse**. Ton salaire y arrive, ton loyer, tes courses et tes factures en partent. Il reçoit, il paie, et c'est à peu près tout : il ne rapporte rien, ou presque. « À vue » veut dire que l'argent est disponible à tout moment, sans délai ni condition.
 
-## Les deux cartes
+Ce compte a un numéro, l'**IBAN** : en Belgique, les lettres BE suivies de 14 chiffres. Ce numéro suffit pour recevoir un virement de n'importe où en Europe. Tu croiseras aussi le **BIC**, un code qui identifie la banque elle-même ; il n'est plus nécessaire pour les virements dans la zone **SEPA**, l'espace européen des paiements en euros où un virement fonctionne comme un virement national.
 
-| | Carte de **débit** (Bancontact, Maestro, Visa Debit) | Carte de **crédit** (Visa, Mastercard) |
+Parce qu'il ne rapporte rien, le compte à vue n'est pas l'endroit où garder une réserve. Il sert à faire circuler l'argent, pas à le faire dormir. → [[budget]]
+
+## Deux cartes, deux argents différents
+
+À ton compte s'attache presque toujours une **carte de débit** : Bancontact, Maestro ou Visa Debit. Quand tu paies avec, c'est **ton** argent qui sort, immédiatement. Si le compte est vide, le paiement est refusé, sauf si ta banque t'a accordé un découvert autorisé. Elle est comprise dans le prix du compte et c'est la carte du quotidien.
+
+La **carte de crédit** (Visa, Mastercard) fonctionne autrement : elle paie avec **l'argent de la banque**. Tes achats du mois sont regroupés, puis prélevés sur ton compte le mois suivant. Le paiement passe donc même si ton compte est vide à ce moment-là : tu rembourseras plus tard. Elle coûte une cotisation annuelle, et elle sert surtout pour les voyages, les réservations (hôtel, voiture de location), certains achats en ligne, et pour les assurances qui y sont souvent incluses.
+
+| | Carte de **débit** | Carte de **crédit** |
 | --- | --- | --- |
-| Quel argent ? | **Le tien**, débité immédiatement | **Celui de la banque**, regroupé et prélevé le mois suivant |
-| Si le compte est vide ? | Refus (sauf découvert autorisé) | Le paiement passe, tu rembourses plus tard |
-| Coût | Compris dans le compte | Cotisation annuelle ; **intérêts élevés** si tu ne rembourses pas tout à l'échéance (crédit renouvelable) |
-| Usage typique | Quotidien | Voyages, réservations, achats en ligne, assurances incluses |
+| Quel argent ? | Le tien, débité tout de suite | Celui de la banque, prélevé le mois suivant |
+| Compte vide ? | Refus (sauf découvert autorisé) | Le paiement passe |
+| Coût | Compris dans le compte | Cotisation annuelle, intérêts élevés si tu ne rembourses pas tout |
+| Usage typique | Le quotidien | Voyages, réservations, achats en ligne |
 
-Une carte de crédit à remboursement intégral mensuel est un **outil de paiement** ; à remboursement partiel, c'est un [[credit-consommation]] déguisé et cher.
+Le piège est dans la dernière ligne du coût. Si tu rembourses le total chaque mois, la carte de crédit n'est qu'un **outil de paiement**. Mais si tu ne rembourses qu'une partie, le reste devient un crédit renouvelable, c'est-à-dire une réserve d'argent que la banque te prête et que tu reconstitues en remboursant, avec des **intérêts élevés**. C'est alors un [[credit-consommation|crédit à la consommation]] déguisé, et cher.
 
-## Les moyens de paiement
+## Les façons de payer depuis ton compte
 
-```text
-Virement SEPA        gratuit, 1 jour ouvrable (instantané : quelques secondes, parfois payant)
-Communication structurée  +++123/4567/89012+++ : indispensable pour impôts, factures, loyers
-Domiciliation        le créancier prélève (énergie, télécom)        → voir domiciliation-ordre-permanent
-Ordre permanent      tu pousses un montant fixe chaque mois (épargne, loyer)
-Paiement mobile      Payconiq/Bancontact, Apple/Google Pay : adossés à ta carte ou ton compte
-```
+En dehors des cartes, l'argent sort de ton compte de plusieurs manières.
+
+- **Le virement SEPA** est gratuit et arrive en un jour ouvrable. Sa version **instantanée** arrive en quelques secondes, et elle est parfois payante.
+- **La communication structurée** accompagne un virement : c'est ce numéro entre `+++`, du type `+++123/4567/89012+++`, qui permet au destinataire de relier automatiquement ton paiement à ta facture. Elle est indispensable pour les impôts, les factures et souvent les loyers.
+- **La domiciliation** autorise un créancier, par exemple ton fournisseur d'énergie ou de télécom, à prélever lui-même ce qu'il te facture.
+- **L'ordre permanent** fait l'inverse : c'est toi qui envoies un montant fixe chaque mois, pour ton épargne ou ton loyer. → [[domiciliation-ordre-permanent]]
+- **Le paiement mobile** (Payconiq/Bancontact, Apple Pay, Google Pay) n'est pas un compte de plus : il s'appuie sur ta carte ou ton compte.
+
+## Ce que ça coûte vraiment
+
+Les **frais de compte** vont de la gratuité à environ 5 € par mois selon la banque et la formule. Mais le prix affiché ne dit pas tout : regarde aussi les frais cachés, comme les retraits d'argent hors du réseau de ta banque et surtout les paiements hors zone euro, sur lesquels la banque prend souvent 2 à 3 % de frais de change.
+
+Un exemple **fictif** : tu paies 200 € de restaurant et d'hôtel lors d'un week-end hors zone euro. À 2 ou 3 % de frais de change, la banque ajoute 4 à 6 €. Une fois, c'est peu ; sur un long voyage, cela se compare entre banques.
+
+Le **découvert** mérite la même attention. Un découvert non autorisé, c'est-à-dire un compte qui passe sous zéro sans accord préalable, coûte très cher. Et un découvert autorisé n'est pas un service gratuit : c'est un crédit, avec ses intérêts.
 
 ## Ce que ça change pour toi
 
-- Compare les **frais de compte** (gratuit à ~ 5 €/mois) et les frais cachés : retraits hors réseau, paiements hors zone euro (2 à 3 % de change).
-- Un **découvert** non autorisé coûte très cher ; un découvert autorisé reste un crédit.
-- Tout résident a droit à un **service bancaire de base** si une banque refuse de lui ouvrir un compte.
-- Sépare physiquement : compte à vue pour le quotidien, [[compte-epargne]] pour la réserve. Voir aussi [[garantie-des-depots]] et [[fraude-phishing]].
+Si une banque refuse de t'ouvrir un compte, tu n'es pas sans solution : tout résident a droit à un **service bancaire de base**, un compte simple avec les opérations essentielles.
+
+Pour le reste, la règle la plus utile est de séparer physiquement les rôles. Le compte à vue sert au quotidien ; ta réserve va sur un [[compte-epargne|compte d'épargne]], où elle n'est pas sous tes yeux à chaque paiement. Et deux sujets méritent quelques minutes de lecture : ce qui arrive à ton argent si ta banque fait faillite (→ [[garantie-des-depots]]) et comment les fraudeurs s'y prennent pour vider un compte (→ [[fraude-phishing]]).
 
 ## À ne pas confondre
 
-| Terme | Ce que c'est |
-| --- | --- |
-| Compte à vue | Pour payer. |
-| Compte d'épargne | Pour garder, avec intérêts exonérés sous plafond. |
-| Compte-titres | Pour détenir des placements (actions, ETF). |
-| Compte à terme | Argent bloqué un temps donné contre un taux fixe. |
+Une banque te proposera plusieurs « comptes » qui n'ont pas le même rôle. Le **compte à vue** sert à payer. Le **compte d'épargne** sert à garder de l'argent de côté, avec des intérêts exonérés d'impôt jusqu'à un plafond. Le **compte-titres** sert à détenir des placements comme des actions ou des ETF, des fonds qui suivent un indice boursier. Et le **compte à terme** bloque ton argent pendant une durée fixée d'avance, en échange d'un taux fixe. → [[actions-obligations-etf]]
+
+## Nature des chiffres de cette page
+
+🟠 Les frais de compte (de la gratuité à environ 5 € par mois) et les frais de change de 2 à 3 % hors zone euro sont des repères de pratique bancaire, qui varient selon les banques. 🔵 Le week-end à 200 € et ses 4 à 6 € de frais sont un exemple fictif.

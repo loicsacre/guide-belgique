@@ -31,77 +31,108 @@ sidebar:
   order: 24
 ---
 
-## En langage simple
+## Les Régions paient une partie des travaux, mais à leurs conditions
 
-Les Régions veulent que tu isoles et que tu abandonnes les énergies fossiles ; elles paient donc une partie des travaux. Mais pas n'importe comment : il faut un entrepreneur, une facture, des performances minimales (valeur R, Uw, rendement), parfois un audit préalable, et la prime est **proportionnelle à tes revenus**, pas à ton envie. Elle arrive **après** les travaux. Avant de rêver au montant, apprends la mécanique ; elle est la même dans les trois Régions.
+Les Régions veulent que tu isoles ta maison et que tu abandonnes les énergies fossiles. Elles paient donc une partie des travaux. Mais pas n'importe comment : il faut un entrepreneur, une facture, des performances minimales, parfois un audit préalable. Et la prime est **proportionnelle à tes revenus**, pas à ton envie. Elle arrive **après** les travaux.
 
-## Pourquoi ça existe
+Avant de rêver au montant, apprends donc la mécanique. Bonne nouvelle : elle est la même dans les trois Régions. Les montants changent chaque année ; la mécanique, beaucoup moins.
 
-Le parc belge est l'un des plus vieux et des moins performants d'Europe occidentale, et les objectifs climatiques imposent de le rénover massivement d'ici 2050. Le logement étant une compétence régionale depuis 1980 et l'énergie en grande partie aussi, chaque Région a bâti son système, ce qui explique trois noms, trois sites et trois barèmes. Les primes sont aussi un outil social : les coefficients favorisent les ménages modestes, qui vivent le plus souvent dans les passoires.
+## Pourquoi trois systèmes différents
 
-## Comment ça marche
+Le parc de logements belge est l'un des plus vieux et des moins performants d'Europe occidentale, et les objectifs climatiques imposent de le rénover massivement d'ici 2050. Or le logement est une compétence régionale depuis 1980, et l'énergie l'est en grande partie aussi. Chaque Région a donc bâti son propre système : d'où trois noms, trois sites et trois barèmes.
 
-### La mécanique commune
+Les primes sont aussi un outil social. Leurs coefficients favorisent les ménages modestes, qui vivent le plus souvent dans les « passoires » énergétiques.
 
-**Prime = montant de base du travail × coefficient de revenus, plafonnée à un pourcentage de la facture.**
+## La mécanique commune
 
-Les quatre conditions récurrentes : (1) le logement a un âge minimum (🟠 souvent 10 à 15 ans) ; (2) les travaux sont réalisés et facturés par un **entrepreneur** (pas de matériaux seuls, sauf exceptions) ; (3) les **performances minimales** sont prouvées (fiche technique, Uw, R, label de l'appareil, installateur certifié) ; (4) la demande est introduite **dans le délai** après la facture finale, avec les pièces listées.
+Dans les trois Régions, le calcul suit la même formule : **la prime est égale au montant de base prévu pour le travail, multiplié par un coefficient qui dépend de tes revenus, et plafonnée à un pourcentage de la facture.**
 
-### Wallonie : primes Habitation
+Quatre conditions reviennent presque toujours :
 
-:::caution[Règle régionale datée]
-- **Audit logement** préalable obligatoire pour la plupart des primes ([[audit-logement]]) ; travaux réalisés dans l'ordre des bouquets.
-- **Catégories de revenus** 🔴 (revenu imposable globalement du ménage, majoré pour les enfants à charge, cf. [[revenu-imposable]], [[personne-a-charge]]) : R1 ≤ 26 900 € → coefficient **×6** ; R2 ≤ 38 300 € → **×4** ; R3 ≤ 50 600 € → **×3** ; R4 ≤ 114 400 € → **×2** ; R5 au-delà → ×1.
-- **Montants de base** 🔴 (exemples) : isolation toiture 20 €/m², murs 8,80 €/m², sol 6 €/m², châssis 26 €/m², pompe à chaleur chauffage 600 €, chaudière biomasse 720 €, ventilation double flux 680 €, mise en conformité électrique 320 €, audit 110 €.
-- **Plafond** 🔴 : 70 % de la facture TVAC pour les catégories R1 à R4 et 50 % pour R5 (règles du régime en vigueur jusqu'au 30 septembre 2026). Un **régime permanent** entre en vigueur le 1er octobre 2026 : vérifie montants, catégories et plafonds à la date de ta demande.
-- Prêt **Rénopack** (SWCS / Fonds du Logement) à 0 % qui préfinance les travaux et déduit les primes.
+1. **Le logement a un âge minimum**, 🟠 souvent 10 à 15 ans.
+2. **Les travaux sont réalisés et facturés par un entrepreneur.** Des matériaux achetés seuls ne donnent pas droit à la prime, sauf exceptions.
+3. **Les performances minimales sont prouvées** : fiche technique, valeur Uw d'une fenêtre ou R d'un isolant (des mesures de leur efficacité thermique), label de l'appareil, installateur certifié.
+4. **La demande est introduite dans le délai** après la facture finale, avec toutes les pièces demandées.
+
+## En Wallonie : les primes Habitation
+
+En Wallonie, la plupart des primes exigent un [[audit-logement]] préalable, et les travaux doivent suivre l'ordre de ses bouquets (les groupes de travaux qu'il définit).
+
+Le coefficient dépend de ta **catégorie de revenus**, calculée sur le revenu imposable globalement de ton ménage (la base sur laquelle l'impôt est calculé), majoré pour chaque enfant à charge. → [[revenu-imposable]] · [[personne-a-charge]]
+
+| Catégorie | Revenus du ménage 🔴 | Coefficient |
+| --- | --- | --- |
+| R1 | jusqu'à 26 900 € | ×6 |
+| R2 | jusqu'à 38 300 € | ×4 |
+| R3 | jusqu'à 50 600 € | ×3 |
+| R4 | jusqu'à 114 400 € | ×2 |
+| R5 | au-delà | ×1 |
+
+Ce coefficient multiplie un **montant de base** fixé par travail. Quelques exemples 🔴 : 20 €/m² pour l'isolation de toiture, 8,80 €/m² pour les murs, 6 €/m² pour le sol, 26 €/m² pour les châssis, 600 € pour une pompe à chaleur de chauffage, 720 € pour une chaudière biomasse, 680 € pour une ventilation double flux, 320 € pour la mise en conformité électrique et 110 € pour l'audit.
+
+Le résultat est ensuite **plafonné** 🔴 à 70 % de la facture TVA comprise pour les catégories R1 à R4, et à 50 % pour R5.
+
+Pour ne pas avancer tout l'argent, le prêt **Rénopack** (SWCS et Fonds du Logement) préfinance les travaux à 0 % et en déduit les primes.
+
+:::note[Règle datée — Wallonie, 2026]
+Les catégories, montants et plafonds ci-dessus sont ceux du régime en vigueur jusqu'au 30 septembre 2026. Un régime permanent entre en vigueur le 1er octobre 2026 : vérifie montants, catégories et plafonds à la date de ta demande.
 :::
 
-### Bruxelles : Rénolution
+## À Bruxelles : Rénolution
 
-Un guichet unique (urban.brussels / Bruxelles Environnement). Pas d'audit obligatoire, mais une **catégorie de revenus** (I, II, III) qui module les montants, des primes majorées par **bouquet** (par exemple isolation + ventilation), un bonus pour les quartiers prioritaires, et une demande **dans les 12 mois** de la dernière facture. Le **prêt vert** du Fonds du Logement bruxellois (0 à 1 %) complète. Les montants au m² sont en général plus élevés qu'en Wallonie, avec un plafond en pourcentage de la facture.
+Bruxelles passe par un guichet unique, Rénolution (urban.brussels et Bruxelles Environnement). Pas d'audit obligatoire, mais une **catégorie de revenus** (I, II ou III) qui module les montants. Les primes sont majorées quand on réalise un **bouquet**, par exemple isolation et ventilation ensemble, et un bonus s'ajoute dans les quartiers prioritaires.
 
-### Flandre : Mijn VerbouwPremie et Mijn VerbouwLening
+La demande se fait **dans les 12 mois** qui suivent la dernière facture. Les montants au m² sont en général plus élevés qu'en Wallonie, avec eux aussi un plafond en pourcentage de la facture. Le **prêt vert** du Fonds du Logement bruxellois, à un taux de 0 à 1 %, complète le dispositif.
 
-Une prime unique par catégorie de travaux (toit, murs, sol, châssis, chauffage, électricité, sanitaire…), trois **catégories de revenus** qui donnent un pourcentage de la facture (🟠 jusqu'à 50 % pour les revenus les plus bas), demande dans les deux ans de la facture, et un prêt **Mijn VerbouwLening** à 0 % jusqu'à 🔴 60 000 €. S'y ajoute la **rénovation obligatoire** des logements E/F achetés depuis 2023 (passer en D sous cinq ans), avec une prime label si tu dépasses l'objectif.
+## En Flandre : Mijn VerbouwPremie et Mijn VerbouwLening
 
-### Ce qui n'est (plus) subventionné
+La Flandre verse une prime unique par catégorie de travaux : toit, murs, sol, châssis, chauffage, électricité, sanitaire… Trois **catégories de revenus** donnent droit à un pourcentage de la facture, 🟠 jusqu'à 50 % pour les revenus les plus bas. La demande se fait dans les deux ans qui suivent la facture.
 
-Les **panneaux photovoltaïques** ne bénéficient plus de prime à l'installation dans les trois Régions (Bruxelles maintient les certificats verts, voir [[panneaux-solaires]]) ; les **chaudières au gaz** ne sont plus primées, les chaudières **mazout** sont exclues ; les travaux purement esthétiques (cuisine, peinture) ne le sont jamais. La TVA à 6 % ([[budget-renovation]]) reste, elle, fédérale et sans condition de revenus.
+Un prêt **Mijn VerbouwLening** à 0 % peut aller jusqu'à 🔴 60 000 €. Et la Flandre impose une **rénovation obligatoire** aux logements classés E ou F achetés depuis 2023 : ils doivent passer en D dans les cinq ans, avec une prime « label » si tu dépasses l'objectif.
 
-### Cumuls et pièges
+## Ce qui n'est plus subventionné
 
-- Les primes régionales sont **cumulables** avec la TVA 6 %, avec les prêts à 0 %, et souvent avec des primes **communales** ou **provinciales** (petites, mais à demander).
-- Un ménage **copropriétaire** demande via le syndic pour les parties communes ([[copropriete]]).
-- Un **bailleur** peut recevoir des primes, parfois majorées s'il confie le bien à une agence immobilière sociale.
-- La prime dépend des **revenus de l'avant-dernière année** (avertissement-extrait de rôle) : un changement de situation récent ne compte pas encore.
-- Les factures doivent être **au nom du demandeur**, détaillées (m², épaisseurs, références), et payées.
+Les **panneaux photovoltaïques** ne bénéficient plus de prime à l'installation dans aucune des trois Régions ; Bruxelles maintient toutefois les certificats verts. → [[panneaux-solaires]]
 
-## Exemple
+Les **chaudières au gaz** ne sont plus primées, et les chaudières **au mazout** sont exclues. Quant aux travaux purement esthétiques, cuisine ou peinture, ils ne l'ont jamais été.
 
-Camille (catégorie wallonne R3, ×3) isole 95 m² de toit (R = 6) pour 🔵 7 600 € TVAC et change 14 m² de châssis pour 🔵 6 900 €.
+La TVA à 6 % sur la rénovation des logements de plus de dix ans, elle, reste : elle est fédérale et sans condition de revenus. → [[budget-renovation]]
 
-- Toit : 95 × 20 € × 3 = 5 700 €, plafond 70 % × 7 600 = 5 320 € → **5 320 €**.
-- Châssis : 14 × 26 € × 3 = 1 092 €, sous le plafond → **1 092 €**.
-- Prime audit : 110 × 3 = 330 €.
+## Cumuls et pièges
 
-Soit 🔵 6 742 € sur 15 300 € de travaux (44 %). Si elle avait été en R1 (×6), le plafond de 70 % aurait joué sur les deux postes ; en R5 (×1), elle aurait touché 1 900 + 364 €. Le simulateur du guide ([simulateur de budget rénovation](../../outils/simulateur-renovation/)) refait ce calcul avec tes chiffres.
+Les primes régionales sont **cumulables** avec la TVA à 6 %, avec les prêts à 0 %, et souvent avec des primes **communales** ou **provinciales**, petites mais à demander. Quelques situations demandent toutefois de l'attention.
 
-## Ce que ça change pour toi
+- **En copropriété**, c'est le syndic qui demande les primes pour les parties communes. → [[copropriete]]
+- **Un bailleur** peut lui aussi recevoir des primes, parfois majorées s'il confie le bien à une agence immobilière sociale.
+- **Tes revenus de référence** sont ceux de l'avant-dernière année, tels qu'ils figurent sur ton [[avertissement-extrait-de-role|avertissement-extrait de rôle]] : un changement de situation récent ne compte pas encore.
+- **Les factures** doivent être au nom du demandeur, détaillées (m², épaisseurs, références des produits) et payées.
 
-- Détermine ta **catégorie de revenus** avant tout : elle change le montant du simple au sextuple et donc parfois le choix du travail.
-- **Pas de travaux avant le feu vert** : audit en Wallonie, et dans toutes les Régions, factures d'entrepreneur avec les mentions techniques.
-- Mets en place un **dossier par travail** : devis, fiche technique, facture, preuve de paiement, photos ; les demandes se font en ligne.
-- Vérifie **la version en vigueur** le mois de ta demande : cette fiche sera dépassée, la mécanique restera.
+## Un exemple : les primes de Camille
+
+Camille (exemple **fictif**) est en catégorie wallonne R3, donc coefficient ×3. Elle isole 95 m² de toit (R = 6) pour 🔵 7 600 € TVA comprise, et change 14 m² de châssis pour 🔵 6 900 €.
+
+- **Pour le toit**, le calcul donne 95 × 20 € × 3 = 5 700 €. Mais le plafond de 70 % de 7 600 € s'élève à 5 320 €, donc elle touche **5 320 €**.
+- **Pour les châssis**, 14 × 26 € × 3 = 1 092 €, sous le plafond : elle touche **1 092 €**.
+- **Pour l'audit**, la prime vaut 110 € × 3 = **330 €**.
+
+Au total, 🔵 6 742 € de primes sur 15 300 € de travaux, soit 44 %. En R1 (×6), le plafond de 70 % aurait aussi limité le toit, tandis que les châssis seraient passés à 2 184 €, toujours sous leur plafond. En R5 (×1), elle aurait touché 1 900 € pour le toit et 364 € pour les châssis. Le [simulateur de budget rénovation](../../outils/simulateur-renovation/) refait ce calcul avec tes chiffres.
+
+## Ce que tu dois faire
+
+Commence par déterminer ta **catégorie de revenus** : elle fait varier le montant du simple au sextuple, et donc parfois le choix du travail lui-même.
+
+Ne lance **aucun travail avant le feu vert** : l'audit en Wallonie, et partout des factures d'entrepreneur avec les mentions techniques. Ouvre un **dossier par travail** (devis, fiche technique, facture, preuve de paiement, photos), puisque les demandes se font en ligne.
+
+Et vérifie **la version en vigueur** le mois de ta demande : cette fiche finira par être dépassée, la mécanique restera.
 
 ## À ne pas confondre
 
-- **Prime** (versée après, à fonds perdus) et **prêt à 0 %** (à rembourser), souvent proposés ensemble.
-- **Catégorie de revenus** pour les primes (revenu imposable du ménage avec majorations pour enfants) et **tranches d'imposition** ([[tranches-imposition]]) : deux grilles différentes.
-- **Prime régionale** et **réduction d'impôt** : la seconde n'existe plus au fédéral pour la rénovation classique.
+Une **prime** est versée après les travaux, à fonds perdus. Un **prêt à 0 %** se rembourse. Les deux sont souvent proposés ensemble.
+
+La **catégorie de revenus** des primes, calculée sur le revenu imposable du ménage avec des majorations pour enfants, n'a rien à voir avec les [[tranches-imposition|tranches d'imposition]] : ce sont deux grilles différentes.
+
+Enfin, une **prime régionale** n'est pas une **réduction d'impôt** : cette dernière n'existe plus au niveau fédéral pour la rénovation classique.
 
 ## Nature des chiffres de cette page
 
-- 🔴 Catégories, coefficients, montants de base, plafonds : arrêtés wallons du régime en vigueur jusqu'au 30 septembre 2026 ; plafond du prêt flamand : règlementation VEKA 2026. Ces montants sont **indexés ou modifiés chaque année**.
-- 🟠 Âges minimums, pourcentages flamands, délais : repères issus des sites régionaux.
-- 🔵 Le calcul de Camille est inventé pour illustrer la mécanique.
+🔴 Les catégories de revenus (26 900 à 114 400 €), les coefficients (×1 à ×6), les montants de base (20 €/m² pour le toit, 26 €/m² pour les châssis, 110 € pour l'audit…) et les plafonds de 70 % et 50 % viennent des arrêtés wallons du régime en vigueur jusqu'au 30 septembre 2026 ; le plafond de 60 000 € du prêt flamand vient de la réglementation flamande (VEKA) 2026. Ces montants sont indexés ou modifiés chaque année. 🟠 L'âge minimum du logement (10 à 15 ans), le pourcentage flamand de 50 % et les délais de demande sont des repères issus des sites régionaux. 🔵 Le calcul de Camille est inventé pour illustrer la mécanique.

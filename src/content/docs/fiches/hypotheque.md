@@ -24,47 +24,62 @@ sidebar:
   order: 7
 ---
 
-## En langage simple
+## Ce que la banque obtient sur ton bien
 
-Tu restes **propriétaire** de ton bien. Mais tant que le crédit court, la banque a un droit dessus : en cas de défaut, elle peut le faire vendre et se payer en priorité sur le prix. C'est ce droit qui lui permet de te prêter 200 000 € à un taux bas.
+Quand tu achètes un logement à crédit, tu en es **propriétaire** dès la signature chez le notaire. Personne ne te le retire. Mais tant que le crédit court, la banque a un droit sur ce bien : l'**hypothèque**.
 
-## Comment elle se met en place
+Concrètement, si tu cesses de rembourser, la banque peut faire vendre le logement et se payer **en priorité** sur le prix de vente, avant tes autres créanciers. C'est ce droit qui lui permet de te prêter 200 000 € à un taux bas : elle sait qu'elle récupérera son argent, même dans le pire des cas. → [[credit-hypothecaire]]
 
-```text
-Acte de crédit chez le notaire
-  → inscription de l'hypothèque au Bureau Sécurité juridique (ex-conservation des hypothèques)
-  → valable 30 ans (renouvelable), même si le crédit est remboursé plus tôt
-  → à la revente : MAINLEVÉE (acte notarié qui radie l'inscription), à tes frais
-```
+L'hypothèque est ce qu'on appelle une **garantie** : un moyen, pour le prêteur, de se faire payer si l'emprunteur ne paie plus. C'est la plus solide, mais pas la seule, comme on le verra plus bas.
+
+## Comment elle se met en place, et comment elle disparaît
+
+L'hypothèque naît le jour où tu signes l'**acte de crédit** chez le notaire, en général en même temps que l'acte d'achat. Le notaire la fait ensuite **inscrire** au **Bureau Sécurité juridique**, l'administration qui tient le registre des hypothèques (on l'appelait autrefois la conservation des hypothèques). Grâce à cette inscription, tout le monde peut savoir que ton bien est grevé, c'est-à-dire chargé d'une hypothèque.
+
+Cette inscription est valable **30 ans**, renouvelable. Elle reste en place même si tu as fini de rembourser ton crédit plus tôt : elle ne s'efface pas toute seule.
+
+Quand tu revends le bien, il faut donc la faire radier. C'est la **mainlevée** : un acte notarié qui supprime l'inscription, et dont les frais sont à ta charge. → [[notaire-acte-authentique]]
 
 ## Ce que ça coûte
 
-| Poste | Ordre de grandeur sur 200 000 € empruntés |
-| --- | --- |
-| Droit d'enregistrement sur l'hypothèque (1 %) + droit d'inscription (0,3 %) | ≈ 2 600 € |
-| Honoraires du notaire, frais d'acte, recherches | ≈ 1 500 à 2 000 € |
-| **Total frais de crédit** | **≈ 4 000 à 5 000 €** |
+Inscrire une hypothèque n'est pas gratuit, et ces frais s'ajoutent au prix d'achat. Voici l'ordre de grandeur pour un emprunt **fictif** de 200 000 €.
 
-Pour réduire la facture, les banques proposent souvent une combinaison :
+```text
+Droit d'enregistrement sur l'hypothèque (1 %)      2 000 €
++ droit d'inscription (0,3 %)                         600 €
++ honoraires du notaire, frais d'acte, recherches   1 500 à 2 000 €
+= frais de crédit                                  environ 4 000 à 5 000 €
+```
+
+Ces frais sont à payer avec ton apport : la banque ne les finance pas. → [[cout-reel-achat]]
+
+## Les autres garanties possibles
+
+Pour réduire cette facture, les banques proposent souvent de combiner l'hypothèque avec d'autres garanties, moins chères mais moins sûres pour elles.
 
 | Garantie | Principe | Coût | Risque pour la banque |
 | --- | --- | --- | --- |
-| **Hypothèque** | Inscription immédiate | Élevé | Faible |
-| **Mandat hypothécaire** | Tu autorises la banque à inscrire une hypothèque **plus tard** si besoin | Faible (pas de droit de 1 %) | Plus élevé → souvent limité à une partie du crédit |
-| **Caution** | Un tiers (parent) s'engage à payer à ta place | Gratuit, mais engage le garant sur tout son patrimoine | Variable |
-| **Gage sur épargne / assurance groupe** | Un placement est bloqué en garantie | Nul | Faible |
+| **Hypothèque** | Inscription immédiate sur le bien | Élevé | Faible |
+| **Mandat hypothécaire** | Tu autorises la banque à inscrire une hypothèque **plus tard**, si elle en a besoin | Faible (pas de droit de 1 %) | Plus élevé, donc souvent limité à une partie du crédit |
+| **Caution** | Un tiers, souvent un parent, s'engage à payer à ta place | Gratuit, mais le garant engage tout son patrimoine | Variable |
+| **Gage sur épargne ou assurance groupe** | Un placement est bloqué en garantie | Nul | Faible |
+
+Le **mandat hypothécaire** est la formule la plus courante pour alléger les frais : la banque n'inscrit pas tout de suite, donc tu ne paies pas le droit de 1 % sur cette partie. En échange, elle prend un peu plus de risque, et elle limite le mandat à une partie du crédit, le reste étant couvert par une vraie hypothèque. L'**assurance groupe**, citée dans la dernière ligne, est la pension complémentaire que constitue ton employeur. → [[epargne-pension]]
 
 ## Ce que ça change pour toi
 
-- Une hypothèque inscrite **ne te bloque pas** : tu peux vendre (mainlevée au passage) ou louer le bien.
-- Tu peux **réutiliser** une hypothèque existante pour un second crédit (travaux) sans nouveaux droits, dans la limite du montant inscrit : « reprise d'encours ».
-- **Se porter caution** pour un proche n'est jamais une formalité : si l'emprunteur ne paie plus, la banque vient chez toi. La loi impose un écrit manuscrit et une proportionnalité avec tes revenus.
-- Le rang de l'hypothèque compte : le prêteur de premier rang est payé en premier.
+**Une hypothèque ne te bloque pas.** Tu peux vendre ton bien (la mainlevée se fait au passage, chez le notaire) ou le mettre en location.
+
+**Elle peut resservir.** Tu peux réutiliser une hypothèque existante pour un second crédit, par exemple pour des travaux, sans payer de nouveaux droits, dans la limite du montant inscrit. C'est la « **reprise d'encours** ».
+
+**Se porter caution n'est jamais une formalité.** Si l'emprunteur ne paie plus, c'est chez toi que la banque vient réclamer l'argent. Pour protéger les garants, la loi impose un écrit manuscrit et un engagement proportionné à tes revenus.
+
+**Le rang compte.** Un même bien peut porter plusieurs hypothèques. Elles sont classées par **rang**, dans l'ordre de leur inscription : le prêteur de premier rang est payé en premier sur le prix de vente, les suivants se partagent ce qui reste.
 
 ## À ne pas confondre
 
-| Terme | Ce que c'est |
-| --- | --- |
-| Hypothèque | La garantie. |
-| Crédit hypothécaire | Le prêt garanti par elle. |
-| Saisie | L'exécution de la garantie, après défaut et procédure judiciaire. |
+L'**hypothèque** est la garantie ; le [[credit-hypothecaire|crédit hypothécaire]] est le prêt qu'elle garantit. Et la **saisie** est encore autre chose : c'est l'exécution de la garantie, quand la banque fait réellement vendre le bien. Elle n'arrive qu'après un défaut de paiement et une procédure judiciaire, jamais du jour au lendemain. → [[droits-reels]]
+
+## Nature des chiffres de cette page
+
+🔴 Le droit d'enregistrement de 1 %, le droit d'inscription de 0,3 % et la validité de 30 ans de l'inscription sont des règles officielles. 🟠 Les 1 500 à 2 000 € d'honoraires et de frais d'acte, et le total de 4 000 à 5 000 €, sont des ordres de grandeur. 🔵 L'emprunt de 200 000 € est un exemple fictif.

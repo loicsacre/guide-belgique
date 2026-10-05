@@ -25,47 +25,83 @@ sidebar:
   order: 10
 ---
 
-## En langage simple
+## Un impôt annuel sur ce que tu possèdes
 
-Posséder un bien coûte un impôt chaque année, même si tu y habites et même si tu n'as aucun revenu dessus. Il s'appelle « précompte » pour des raisons historiques (il était jadis imputable sur l'IPP), mais aujourd'hui c'est un **impôt régional à part entière**, que tu ne récupères pas. Trois « précomptes » existent, et seul le professionnel est vraiment une avance : voir [[precompte-professionnel]].
+Être propriétaire d'un bien immobilier coûte un impôt chaque année : le **précompte immobilier**. Tu le paies même si tu habites toi-même le bien, et même s'il ne te rapporte rien. Il arrive sous la forme d'un avertissement-extrait de rôle, le document par lequel l'administration t'annonce le montant à payer.
 
-## Pourquoi ça existe
+Son nom prête à confusion. « Précompte » veut dire avance, et c'était vrai autrefois : on pouvait l'imputer sur l'impôt sur les revenus (l'IPP). Ce n'est plus le cas. Aujourd'hui, c'est un **impôt régional à part entière**, que tu ne récupères pas.
 
-Posséder un immeuble, c'est bénéficier d'infrastructures publiques (voirie, égouts, école, pompiers) financées en grande partie localement. Le précompte immobilier est la contribution des propriétaires à ces services : d'où sa structure, un petit taux régional **multiplié** par les additionnels des provinces et surtout des communes, qui en sont les vraies bénéficiaires.
+Il existe trois « précomptes » en Belgique : professionnel (sur le salaire), mobilier (sur les intérêts et dividendes) et immobilier. Seul le professionnel est encore vraiment une avance sur ton impôt final. → [[precompte-professionnel]]
 
-## Le calcul
+## Pourquoi les propriétaires paient
+
+Posséder un immeuble, c'est profiter d'infrastructures publiques : la voirie, les égouts, l'école, les pompiers. Une grande partie de ces services est financée localement. Le précompte immobilier est la contribution des propriétaires à ce financement.
+
+Cela explique sa structure un peu étrange. La Région fixe un petit taux de base, puis la province et surtout la commune ajoutent leurs propres **centimes additionnels**, des pourcentages calculés sur ce montant de base. Ce sont elles les vraies bénéficiaires, et ce sont leurs additionnels qui font l'essentiel de la facture. → [[centimes-additionnels]]
+
+## Comment se calcule le montant
+
+Tout part du [[revenu-cadastral]] (RC), ce loyer annuel théorique que le fisc attribue à chaque bien, fixé sur les valeurs de 1975 puis indexé chaque année. Le calcul suit ensuite quatre étapes.
 
 ```text
 RC indexé
   × taux régional de base      (Wallonie 1,25 % · Bruxelles 1,25 % · Flandre 3,97 %)
   = précompte de base
-  × (1 + centimes additionnels provinciaux + communaux)   ← souvent × 3 à × 5 !
+  × (1 + centimes additionnels provinciaux + communaux)   ← souvent × 3 à × 5
   − réductions éventuelles
-  = PRÉCOMPTE IMMOBILIER À PAYER
+  = précompte immobilier à payer
 ```
 
-Exemple fictif (Wallonie) : RC non indexé 900 € → RC indexé ≈ 1 950 € → base 1,25 % = 24,4 € → avec ≈ 2 600 centimes additionnels provinciaux + communaux (× 27) ≈ **680 €**. Le même RC dans une autre commune peut donner 500 ou 900 €.
+On cite souvent un multiplicateur de 3 à 5. Mais il dépend beaucoup de la Région et de la commune : dans l'exemple wallon ci-dessous, où le taux de base est bas, il est bien plus élevé.
 
-| Qui paie ? | Qui perçoit ? | Quand ? |
-| --- | --- | --- |
-| Le détenteur du droit réel (propriétaire, usufruitier, emphytéote) au **1er janvier** | La Région (qui reverse aux provinces et communes) | Avertissement-extrait de rôle annuel, paiement dans les 2 mois |
+## Un exemple en Wallonie
 
-Le **locataire** ne le paie jamais directement : il est interdit de le lui refacturer dans un bail de résidence principale.
+Prenons une maison **fictive** avec un RC non indexé de 900 €.
 
-## Les réductions
+1. Une fois indexé, le RC vaut environ 1 950 €.
+2. Le taux régional wallon de 1,25 % donne un précompte de base d'environ 24,4 €.
+3. La province et la commune ajoutent ensemble environ 2 600 centimes additionnels, c'est-à-dire 26 fois le montant de base. On multiplie donc par 27 (la base elle-même plus ses 26 fois).
+4. Résultat : un précompte d'environ **660 €** par an.
 
-| Réduction | Principe (Wallonie ; variantes ailleurs) |
-| --- | --- |
-| **Enfants à charge** | À partir de 2 enfants (ou 1 personne handicapée) : réduction forfaitaire par enfant ; valable aussi pour le **locataire**, qui la demande et la déduit de son loyer |
-| **Habitation modeste** | RC non indexé total ≤ 745 € : −25 % |
-| **Handicap** | Réduction pour personne handicapée ou grand invalide |
-| **Improductivité** | Bien inoccupé et improductif involontairement pendant 180 jours : remise proportionnelle (conditions strictes) |
+La même maison, avec le même RC, peut coûter 500 € ou 900 € dans une autre commune : tout dépend des additionnels votés localement.
 
-Les conditions s'apprécient au 1er janvier ; la demande se fait auprès de l'administration fiscale régionale (Wallonie : SPW Fiscalité ; Bruxelles : Bruxelles Fiscalité ; Flandre : Vlabel).
+## Qui paie, et quand
+
+Le précompte est dû par celui qui détient un **droit réel** sur le bien au **1er janvier** de l'année. C'est le plus souvent le propriétaire, mais ce peut être aussi l'usufruitier (celui qui a le droit d'habiter le bien ou d'en toucher les loyers, sans en être plein propriétaire) ou l'emphytéote (celui qui a un droit d'usage très long sur le bien). → [[droits-reels]]
+
+La Région perçoit l'impôt, puis reverse leur part à la province et à la commune. Tu reçois un avertissement-extrait de rôle chaque année, et tu as en principe **2 mois** pour payer.
+
+Le **locataire**, lui, ne le paie jamais directement. Dans un bail de résidence principale, il est même interdit de le lui refacturer. → [[bail]]
+
+## Les réductions possibles
+
+Plusieurs réductions existent. Voici le principe en Wallonie, avec des variantes dans les autres Régions.
+
+- **Enfants à charge.** À partir de 2 enfants à charge (ou d'une personne handicapée), une réduction forfaitaire est accordée par enfant. Particularité : elle vaut aussi pour le **locataire**, qui la demande lui-même et la déduit ensuite de son loyer. → [[personne-a-charge]]
+- **Habitation modeste.** Si le total de tes RC non indexés ne dépasse pas 745 €, le précompte est réduit de 25 %.
+- **Handicap.** Une réduction existe pour une personne handicapée ou un grand invalide.
+- **Improductivité.** Si le bien est resté inoccupé et improductif pendant 180 jours, sans que ce soit ta volonté, tu peux obtenir une remise proportionnelle. Les conditions sont strictes.
+
+Les conditions s'apprécient au 1er janvier. La demande se fait auprès de l'administration fiscale de la Région : SPW Fiscalité en Wallonie, Bruxelles Fiscalité à Bruxelles, Vlabel en Flandre.
+
+:::caution[Dépend de ta situation]
+Les montants des réductions, leurs conditions exactes et la façon de les demander varient d'une Région à l'autre. Vérifie auprès de l'administration régionale du lieu où se trouve le bien.
+:::
 
 ## Ce que ça change pour toi
 
-- Intègre-le dans le budget du propriétaire : voir [[cout-reel-achat]].
-- L'année de l'achat, le compromis prévoit un **prorata** entre vendeur et acheteur, mais l'avertissement arrive au nom du propriétaire au 1er janvier.
-- En **usufruit** / **nue-propriété**, c'est l'usufruitier qui paie. Voir [[droits-reels]].
-- Locataire avec 2 enfants : réclame la réduction, elle est pour toi.
+Si tu achètes, intègre le précompte dans ton budget de propriétaire, au même titre que les assurances et l'entretien. Le RC du bien, indiqué dans le compromis, te permet de l'anticiper. → [[cout-reel-achat]]
+
+L'année de l'achat, le compromis prévoit en général un **prorata** : vendeur et acheteur se partagent le précompte selon la date du transfert. Mais l'avertissement, lui, arrive au nom de celui qui était propriétaire au 1er janvier. Il paie donc l'avertissement, et le prorata rééquilibre les comptes entre vous.
+
+Si la propriété est partagée entre un **usufruitier** et un **nu-propriétaire** (celui qui récupérera la pleine propriété plus tard), c'est l'usufruitier qui paie. → [[droits-reels]]
+
+Et si tu es locataire avec au moins 2 enfants à charge, réclame la réduction : elle est pour toi, pas pour ton propriétaire.
+
+## À ne pas confondre
+
+Malgré son nom, le précompte immobilier n'a rien à voir avec le [[precompte-professionnel]] retenu sur ton salaire : ce dernier est une avance sur ton impôt sur les revenus, alors que le précompte immobilier est un impôt définitif sur ton bien. Il ne faut pas non plus le confondre avec les [[droits-enregistrement|droits d'enregistrement]], payés une seule fois au moment de l'achat. Enfin, les taxes communales distinctes (déchets, par exemple) arrivent par une facture séparée.
+
+## Nature des chiffres de cette page
+
+🔴 Les taux de base régionaux (1,25 % en Wallonie et à Bruxelles, 3,97 % en Flandre), la date du 1er janvier, le délai de paiement de 2 mois et les conditions des réductions (2 enfants, 745 €, −25 %, 180 jours) sont des règles officielles, valables en 2026 ; les additionnels varient d'une commune à l'autre. 🟠 Le multiplicateur « × 3 à × 5 » est un ordre de grandeur. 🔵 La maison au RC de 900 €, ses 2 600 centimes additionnels et son précompte d'environ 660 € sont un exemple fictif.

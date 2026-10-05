@@ -31,7 +31,7 @@ sidebar:
   order: 8
 ---
 
-## En langage simple
+## Une nouvelle personne, au sens juridique
 
 Créer une SRL, c'est faire naître une **nouvelle personne**, au sens juridique. Elle a un nom, un numéro d'entreprise, un compte bancaire, des dettes et un impôt qui sont les **siens**. Toi, tu en es le plus souvent l'**associé** (tu possèdes ses parts) et l'**administrateur** (tu la gères). Ce sont deux casquettes distinctes, et toute la logique d'une société vient de là : ce qui appartient à la société n'est pas à toi tant qu'elle ne te l'a pas versé.
 

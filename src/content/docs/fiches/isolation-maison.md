@@ -28,31 +28,39 @@ sidebar:
   order: 8
 ---
 
-## En langage simple
+## Une baignoire percée
 
-Chauffer une maison, c'est remplir une baignoire percée : la chaudière verse de la chaleur, les parois la laissent fuir. Isoler, c'est boucher les trous. On ne peut jamais les boucher tous, mais l'ordre compte : on commence par le plus gros trou, qui est presque toujours le **toit**, puis les **murs**, les **fenêtres**, le **sol**, et les **fuites d'air** autour de tout cela.
+Chauffer une maison, c'est remplir une baignoire percée : la chaudière verse de la chaleur, les parois la laissent fuir. Isoler, c'est boucher les trous. On ne peut jamais les boucher tous, mais l'ordre compte. On commence par le plus gros trou, qui est presque toujours le **toit**, puis les **murs**, les **fenêtres**, le **sol**, et les **fuites d'air** autour de tout cela.
 
-## Pourquoi ça existe
+## Pourquoi tant de maisons belges sont mal isolées
 
-Jusqu'au choc pétrolier de 1973, on ne isolait pas : l'énergie ne coûtait rien. Les maisons belges d'avant 1980, soit 🟠 plus de la moitié du parc, ont donc des murs pleins ou des creux vides et des toits nus. Les Régions ont fixé des exigences croissantes (PEB) pour le neuf et la rénovation, des [[primes-renovation|primes]] pour l'existant, et la Flandre impose désormais de rénover les logements classés E ou F dans les cinq ans de l'achat. Le [[peb|certificat PEB]] est le thermomètre de tout cela.
+Jusqu'au choc pétrolier de 1973, on n'isolait pas : l'énergie ne coûtait presque rien. Les maisons belges d'avant 1980, soit 🟠 plus de la moitié du parc, ont donc des murs pleins ou des creux vides, et des toits nus.
 
-## Comment ça marche
+Depuis, les Régions ont fixé des exigences croissantes pour le neuf et la rénovation (la PEB, pour performance énergétique des bâtiments), des [[primes-renovation|primes]] pour l'existant, et la Flandre impose désormais de rénover les logements classés E ou F dans les cinq ans de l'achat. Le [[peb|certificat PEB]], qui classe un logement de A à G selon sa consommation, est le thermomètre de tout cela.
 
-### Où part la chaleur
+## Où part la chaleur
 
-Dans une maison non isolée typique, les pertes se répartissent 🟠 ainsi : toit 25 à 30 %, murs 20 à 25 %, fenêtres et portes 10 à 15 %, sol 7 à 10 %, renouvellement d'air et fuites 20 à 25 %. Ces proportions expliquent l'[[ordre-des-travaux]] : à euro investi, le toit rapporte le plus, parce qu'il perd le plus et qu'il est le plus simple à atteindre.
+Dans une maison non isolée typique, les pertes se répartissent 🟠 à peu près ainsi : le toit 25 à 30 %, les murs 20 à 25 %, les fenêtres et portes 10 à 15 %, le sol 7 à 10 %, et le renouvellement d'air et les fuites 20 à 25 %.
 
-### Les deux chiffres à connaître
+Ces proportions expliquent l'[[ordre-des-travaux]] : à euro investi, le toit rapporte le plus, parce que c'est lui qui perd le plus et qu'il est le plus simple à atteindre.
 
-- La **valeur λ (lambda)** décrit un matériau : sa conductivité. Plus elle est basse, plus il isole. Laine minérale 🟠 0,032 à 0,040 W/mK, PUR/PIR 0,022 à 0,028, cellulose 0,038 à 0,040, fibre de bois 0,038 à 0,045.
-- La **valeur R** décrit une couche : R = épaisseur ÷ λ. 18 cm de laine à 0,036 donnent R = 0,18 / 0,036 = 5 m²K/W. **C'est R que les primes et la PEB exigent.**
-- La **valeur U** décrit une paroi complète (inverse de la somme des R) : plus elle est basse, mieux c'est. Un mur plein non isolé a un U 🟠 autour de 2 ; après 12 cm d'isolant, il descend vers 0,25.
+## Les trois chiffres d'un devis d'isolation
+
+Sur un devis ou une fiche technique, trois lettres reviennent, et elles décrivent trois choses différentes.
+
+La **valeur λ (lambda)** décrit un matériau : sa conductivité, c'est-à-dire sa facilité à laisser passer la chaleur. Plus elle est basse, plus le matériau isole. Les ordres de grandeur 🟠 : 0,032 à 0,040 W/mK pour la laine minérale, 0,022 à 0,028 pour le PUR/PIR (les mousses rigides de polyuréthane), 0,038 à 0,040 pour la cellulose, 0,038 à 0,045 pour la fibre de bois.
+
+La **valeur R** décrit une couche d'isolant d'une épaisseur donnée : c'est sa résistance thermique, et elle se calcule simplement, R = épaisseur ÷ λ. Par exemple, 18 cm de laine à 0,036 donnent R = 0,18 / 0,036 = 5 m²K/W. **C'est R que les primes et la PEB exigent**, donc c'est le chiffre à chercher.
+
+La **valeur U** décrit une paroi complète, toutes couches comprises : c'est l'inverse de la somme des R, et plus elle est basse, mieux c'est. Un mur plein non isolé a un U 🟠 autour de 2 ; après 12 cm d'isolant, il descend vers 0,25.
 
 :::caution[Règle régionale datée]
 Pour obtenir la prime wallonne, l'isolant doit atteindre 🔴 R ≥ 4,5 m²K/W en toiture, R ≥ 3,5 pour les murs et R ≥ 2 pour les sols ; les montants de base sont 20 €/m² (toiture), 8,80 €/m² (murs) et 6 €/m² (sols), multipliés jusqu'à ×6 selon tes revenus, après [[audit-logement]]. Bruxelles et la Flandre ont des seuils proches mais pas identiques. Vérifie la valeur en vigueur avant de signer un devis : c'est l'épaisseur d'isolant qui en découle.
 :::
 
-### Par où isoler chaque paroi
+## Par où isoler chaque paroi
+
+Chaque paroi a ses techniques, avec des coûts et des pièges très différents. Le tableau compare les options courantes.
 
 | Paroi | Technique | Repère de coût 🟠 | Points d'attention |
 | --- | --- | --- | --- |
@@ -65,19 +73,21 @@ Pour obtenir la prime wallonne, l'isolant doit atteindre 🔴 R ≥ 4,5 m²K/W e
 | Sol sur cave | Panneaux collés sous le plancher | 30 à 60 €/m² | Facile si la cave est accessible |
 | Sol sur terre-plein | Lors d'une réfection de chape | 80 à 150 €/m² | À combiner avec un plancher chauffant |
 
-### Les ponts thermiques et l'étanchéité à l'air
+Deux termes du tableau méritent une explication. La **coulisse**, c'est le vide d'air entre les deux murs d'un mur creux ; on peut le remplir, mais sa largeur limite la performance. L'**ETICS** est un isolant collé sur la façade puis recouvert d'un enduit, alors que le **bardage** est un revêtement (bois, panneaux) fixé devant l'isolant.
 
-Un **pont thermique** est un endroit où l'isolation s'interrompt : le pourtour d'une fenêtre, la dalle de balcon, la jonction mur-toit. La chaleur s'y précipite, la paroi y est froide, et c'est là que la condensation et les moisissures apparaissent ([[humidite-maison]]). Une bonne isolation est **continue** : c'est l'argument principal de l'isolation par l'extérieur.
+## Les points faibles : ponts thermiques et fuites d'air
 
-L'**étanchéité à l'air** est le cinquième trou de la baignoire : chaque fente autour d'un châssis, chaque passage de câble non rebouché laisse passer de l'air chaud. Un test d'infiltrométrie (blower door, 🟠 300 à 600 €) la mesure. Et dès qu'on la soigne, la [[ventilation-maison|ventilation]] devient obligatoire, sans quoi la maison étouffe.
+Un **pont thermique** est un endroit où l'isolation s'interrompt : le pourtour d'une fenêtre, la dalle de balcon, la jonction entre mur et toit. La chaleur s'y précipite, la paroi y reste froide, et c'est là que la condensation et les moisissures apparaissent. Une bonne isolation est donc **continue**, et c'est l'argument principal de l'isolation par l'extérieur. → [[humidite-maison]]
 
-### Le pare-vapeur, la membrane qu'on oublie
+L'**étanchéité à l'air** est le cinquième trou de la baignoire. Chaque fente autour d'un châssis, chaque passage de câble non rebouché laisse filer de l'air chaud. Un test d'infiltrométrie, aussi appelé blower door (🟠 300 à 600 €), la mesure en mettant la maison en dépression. Mais attention : dès qu'on la soigne, la [[ventilation-maison|ventilation]] devient obligatoire, sans quoi la maison étouffe.
 
-L'air chaud intérieur est humide ; s'il traverse l'isolant et rencontre une surface froide, il condense dedans et l'isolant pourrit. Le **pare-vapeur** (ou freine-vapeur), posé **côté chaud** (intérieur) et parfaitement scotché, empêche cela. Son absence ou ses trous sont la première cause d'isolation de toiture ratée.
+## Le pare-vapeur, la membrane qu'on oublie
 
-## Exemple
+L'air chaud intérieur est humide. S'il traverse l'isolant et rencontre une surface froide, il condense dedans, et l'isolant pourrit. Le **pare-vapeur** (ou freine-vapeur), une membrane posée **côté chaud**, donc à l'intérieur, et parfaitement scotchée, empêche cela. Son absence ou ses trous sont la première cause d'isolation de toiture ratée.
 
-Noé fait auditer sa maison de 1972 (murs creux de 5 cm non remplis, toit nu, châssis double vitrage de 1995). L'auditeur chiffre :
+## Un exemple : la maison de Noé
+
+Noé fait auditer sa maison de 1972 : murs creux de 5 cm non remplis, toit nu, châssis double vitrage de 1995. Il se situe dans la catégorie de revenus R2, qui multiplie ici la prime de base par 4. L'auditeur chiffre trois travaux.
 
 | Travail | Coût 🔵 | Gain annuel estimé 🔵 | Prime (R2, ×4) 🔵 |
 | --- | --- | --- | --- |
@@ -85,23 +95,20 @@ Noé fait auditer sa maison de 1972 (murs creux de 5 cm non remplis, toit nu, ch
 | 140 m² de murs creux injectés, R ≈ 1,3 | 3 500 € | 500 € | Non éligible (R < 3,5) |
 | 140 m² de murs par l'extérieur, R = 4 | 22 000 € | 1 100 € | 140 × 8,80 × 4 = 4 928 € |
 
-Il fait le toit tout de suite. Pour les murs, le remplissage du creux coûte peu mais n'atteint pas le seuil de prime et bloque une future isolation extérieure plus performante ; il tranche avec le [simulateur de budget rénovation](../../outils/simulateur-renovation/) et son horizon de vie dans la maison.
+Le toit est une évidence : il le fait tout de suite, et la prime calculée dépasse même le plafond de 70 % de la facture. Les murs sont plus délicats. Remplir le creux coûte peu, mais n'atteint pas le seuil de prime et bloque une future isolation par l'extérieur, plus performante. Il tranche avec le [simulateur de budget rénovation](../../outils/simulateur-renovation/), en fonction du temps qu'il compte encore vivre dans la maison.
 
 ## Ce que ça change pour toi
 
-- Demande toujours la **valeur R** (pas seulement l'épaisseur) sur le devis, avec la fiche technique de l'isolant.
-- L'ordre : **toit → murs → sol et châssis → production de chaleur**, parce que la puissance de chauffage à installer dépend de ce qui reste à perdre.
-- Toute isolation **par l'intérieur** ou de toiture habitée exige un pare-vapeur continu et une réflexion sur la ventilation ; méfie-toi d'un devis qui n'en parle pas.
-- Une isolation réduit la facture, mais aussi la **sensation de paroi froide** : à 19 °C dans une maison isolée, on a plus chaud qu'à 21 °C dans une passoire.
+Sur chaque devis, demande la **valeur R**, pas seulement l'épaisseur, avec la fiche technique de l'isolant. Respecte l'ordre **toit → murs → sol et châssis → production de chaleur**, parce que la puissance de chauffage à installer dépend de ce qui reste à perdre.
+
+Toute isolation **par l'intérieur** ou de toiture habitée exige un pare-vapeur continu et une réflexion sur la ventilation : méfie-toi d'un devis qui n'en parle pas.
+
+Enfin, l'isolation ne réduit pas que la facture. Elle supprime aussi la **sensation de paroi froide** : à 19 °C dans une maison isolée, on a plus chaud qu'à 21 °C dans une passoire.
 
 ## À ne pas confondre
 
-- **Valeur R** (résistance, à maximiser, s'applique à une couche) et **valeur U** (transmission, à minimiser, s'applique à la paroi).
-- **Pare-vapeur** (côté intérieur, bloque l'humidité de l'air) et **sous-toiture** (côté extérieur, bloque la pluie et laisse respirer).
-- **Isolation thermique** et **isolation acoustique** : les matériaux lourds isolent du bruit, les matériaux légers et fibreux de la chaleur ; un seul produit fait rarement bien les deux.
+La **valeur R** est une résistance, à maximiser, et s'applique à une couche ; la **valeur U** est une transmission, à minimiser, et s'applique à toute la paroi. Le **pare-vapeur** se pose côté intérieur et bloque l'humidité de l'air, alors que la **sous-toiture** se pose côté extérieur, bloque la pluie et laisse respirer. Enfin, **isolation thermique** et **isolation acoustique** ne se confondent pas : les matériaux lourds isolent du bruit, les matériaux légers et fibreux de la chaleur, et un seul produit fait rarement bien les deux.
 
 ## Nature des chiffres de cette page
 
-- 🔴 Seuils R et montants de base des primes wallonnes : prime Habitation, régime en vigueur jusqu'au 30 septembre 2026 ; un régime permanent lui succède.
-- 🟠 Répartition des pertes, valeurs λ, coûts au m² : repères de marché 2026 et guides régionaux, variables selon la maison et la région.
-- 🔵 L'audit de Noé et ses montants sont inventés pour l'exemple ; la prime calculée illustre la mécanique « base × coefficient, plafond 70 % ».
+🔴 Les seuils R (4,5, 3,5 et 2) et les montants de base des primes wallonnes (20 €, 8,80 € et 6 €/m², jusqu'à ×6) sont ceux de la prime Habitation, régime en vigueur jusqu'au 30 septembre 2026 ; un régime permanent lui succède. 🟠 La répartition des pertes, les valeurs λ et U et les coûts au m² sont des repères de marché 2026 et de guides régionaux, variables selon la maison et la région. 🔵 L'audit de Noé et ses montants sont inventés ; la prime calculée illustre la mécanique « base × coefficient, plafond 70 % ».

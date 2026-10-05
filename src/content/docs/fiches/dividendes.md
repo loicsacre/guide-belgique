@@ -28,7 +28,7 @@ sidebar:
   order: 11
 ---
 
-## En langage simple
+## La part du bénéfice qui sort de la société
 
 Une société qui fait du bénéfice paie d'abord **son** impôt, l'[[impot-des-societes|ISoc]]. Ce qui reste lui appartient. Les associés peuvent alors décider, en assemblée générale, de s'en verser une partie : c'est le **dividende**. Il rémunère le fait de **posséder** des parts, pas le travail fourni (le travail, lui, est payé par la [[remuneration-dirigeant|rémunération de dirigeant]]).
 

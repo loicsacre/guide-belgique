@@ -56,14 +56,16 @@ Un AER contient des dizaines de codes, mais tu n'as besoin que de suivre le fil.
 
 | Ce que tu lis | Exemple | Ce que ça veut dire |
 | --- | ---: | --- |
-| Revenus imposables | 42 000 € | Ce que le fisc a retenu de ta déclaration, après les déductions. |
-| Impôt (État fédéral) | 9 616 € | Le résultat du barème, une fois retirée la part de revenu qui n'est jamais taxée (la quotité exemptée) et les réductions. |
+| Rémunérations imposables | 42 000 € | Ce que tes employeurs ont déclaré (sur ta fiche 281.10), cotisations sociales déjà retirées. |
+| Frais professionnels (forfait) | − 5 930 € | La part que le fisc retire d'office pour tes frais liés au travail, sauf si tu prouves des frais réels plus élevés. |
+| Revenu net imposable | 36 070 € | La base sur laquelle le barème est appliqué. |
+| Impôt (État fédéral) | 9 616 € | Le résultat du barème, une fois retirée la part de revenu qui n'est jamais taxée (la quotité exemptée). Ici, aucune réduction d'impôt. |
 | Taxe communale (ici 7 %) | 673 € | Le pourcentage de ta commune, calculé sur l'impôt, pas sur le revenu. |
 | **Impôt total** | **10 289 €** | Ce que tu devais vraiment pour l'année. |
 | Précomptes déjà retenus | − 9 900 € | La somme de ce que tes employeurs ont retenu, mois après mois. |
 | **Solde** | **389 € à payer** | La différence. Elle aurait pu être négative : on t'aurait alors remboursé. |
 
-Si tu ne retiens qu'une ligne, c'est la dernière : le solde, avec sa date d'échéance. Et si tu en retiens deux, regarde aussi les revenus imposables, pour vérifier que le fisc est parti des bons chiffres. → [[quotite-exemptee]] · [[revenu-imposable]]
+Si tu ne retiens qu'une ligne, c'est la dernière : le solde, avec sa date d'échéance. Et si tu en retiens deux, regarde aussi les rémunérations imposables, pour vérifier que le fisc est parti des bons chiffres. → [[frais-professionnels]] · [[quotite-exemptee]] · [[revenu-imposable]]
 
 ## Quand il arrive, et ce que tu dois faire
 
@@ -93,4 +95,4 @@ L'AER dont parle cette fiche est celui de l'**impôt des personnes physiques**, 
 
 ## Nature des chiffres de cette page
 
-Ici, 🔴 les délais (30 juin 2027 pour établir l'impôt, deux mois pour payer, un an pour réclamer) sont des règles officielles, valables pour les revenus 2025. 🔵 Le salarié à 42 000 €, le taux communal de 7 % et le précompte de 9 900 € sont inventés pour l'exemple.
+Ici, 🔴 les délais (30 juin 2027 pour établir l'impôt, deux mois pour payer, un an pour réclamer) et le plafond du forfait de frais professionnels (5 930 €) sont des règles officielles, valables pour les revenus 2025. 🔵 Le salarié à 42 000 €, le taux communal de 7 % et le précompte de 9 900 € sont inventés pour l'exemple.

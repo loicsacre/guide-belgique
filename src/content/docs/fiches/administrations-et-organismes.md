@@ -24,11 +24,17 @@ sidebar:
   order: 2
 ---
 
-## En langage simple
+## Pourquoi il y a autant de sigles
 
-Un **SPF** (Service public fédéral) est l'équivalent d'un ministère : il applique une politique fédérale. À côté, des **organismes d'intérêt public** gèrent la sécurité sociale, chacun une branche. Et les Régions ont leurs propres services. Le réflexe : identifier l'organisme avant de chercher le formulaire.
+SPF, ONSS, INAMI, ONEM, SFP… Les courriers officiels belges ressemblent parfois à une soupe de lettres. Mais derrière chaque sigle se cache un organisme avec une mission précise, et une fois qu'on a compris la logique, on s'y retrouve vite.
+
+Il y a trois grandes familles. D'abord les **SPF**, les services publics fédéraux : chacun est l'équivalent d'un ministère et applique une politique fédérale (les finances, l'emploi…). Ensuite, des **organismes d'intérêt public**, des institutions publiques autonomes qui gèrent chacune une branche de la [[securite-sociale|sécurité sociale]] : l'une perçoit les cotisations, une autre s'occupe des soins de santé, une autre du chômage, une autre des pensions. Enfin, les **Régions et les communes** ont leurs propres services, pour les matières qui leur reviennent. → [[qui-fait-quoi]]
+
+Le bon réflexe découle de là : **identifier l'organisme avant de chercher le formulaire**. Sinon, tu risques de frapper à la mauvaise porte et de perdre des semaines.
 
 ## Les principaux, par ce qu'ils font pour toi
+
+Le tableau ci-dessous les range selon ce que tu viens leur demander, avec le niveau de pouvoir dont ils dépendent.
 
 | Tu as affaire à… | Pour… | Niveau |
 | --- | --- | --- |
@@ -44,21 +50,30 @@ Un **SPF** (Service public fédéral) est l'équivalent d'un ministère : il app
 | **Commune** | [[domicile]], carte d'identité, permis d'urbanisme, taxes communales | Communal |
 | **CPAS** | Aide sociale, revenu d'intégration, médiation de dettes | Communal |
 
-## Comment ils se parlent
+Quelques lignes se comprennent mieux avec un mot d'explication. Le **cadastre**, géré par le SPF Finances, est l'inventaire des biens immobiliers et de leurs propriétaires. La **CAPAC** est la caisse publique qui paie les allocations de chômage aux personnes qui ne passent pas par un syndicat. Le **CPAS**, le centre public d'action sociale de ta commune, verse le revenu d'intégration, ce revenu minimum accordé à qui n'a pas d'autres ressources. Et les trois administrations fiscales régionales (le SPW en Wallonie, Bruxelles Fiscalité, la Vlaamse Belastingdienst en Flandre) perçoivent les impôts liés à l'immobilier et aux successions.
 
-Beaucoup de données circulent déjà entre eux (Banque-Carrefour de la sécurité sociale, Registre national). C'est pourquoi ta [[declaration-fiscale]] est préremplie et que ta mutualité connaît ton employeur. Mais ils ne se parlent pas tous : un changement d'adresse se fait à la commune, pas chez l'ONSS.
+## Plusieurs organismes pour un seul événement de ta vie
+
+Ce qui déroute, c'est qu'un même événement fait souvent intervenir plusieurs organismes, chacun pour sa part.
+
+Prenons un cas : tu perds ton emploi. Ton employeur a déclaré ton travail et versé les cotisations à l'**ONSS**. C'est l'**ONEM** qui décide si tu as droit au chômage, mais il ne te paie pas lui-même : l'argent arrive par ton syndicat ou par la CAPAC. Pendant ce temps, c'est le **Forem**, **Actiris** ou le **VDAB**, selon ta Région, qui t'accompagne dans ta recherche et te propose des formations. Trois niveaux d'organismes pour une seule situation, et chacun ne répond qu'à sa partie de la question.
+
+Même logique pour la santé : l'**INAMI** fixe les règles et finance, mais c'est ta **mutualité** qui te rembourse. Un indépendant, lui, a affaire à l'**INASTI**, qui joue pour lui le rôle de l'ONSS, au travers d'une caisse d'assurances sociales.
+
+## Comment ils se parlent entre eux
+
+Bonne nouvelle : beaucoup de données circulent déjà d'un organisme à l'autre. Deux grands carrefours s'en chargent. La **Banque-Carrefour de la sécurité sociale** relie les institutions de la sécurité sociale. Le **Registre national** centralise les données d'identité et d'adresse de chaque habitant. C'est grâce à eux que ta [[declaration-fiscale|déclaration d'impôt]] arrive préremplie et que ta mutualité connaît ton employeur sans que tu le lui dises.
+
+Mais ils ne se parlent pas tous, et pas pour tout. Un changement d'adresse, par exemple, se déclare à la commune, pas chez l'ONSS : c'est la commune qui alimente le Registre national. → [[domicile]]
 
 ## Ce que ça change pour toi
 
-- La plupart ont un **portail « My… »** (MyMinfin, MyPension, MySocialSecurity, My eBox) accessible avec l'[[identite-numerique]].
-- Avant d'appeler, regarde le document que tu as reçu : l'organisme émetteur y est toujours indiqué, avec un numéro de dossier.
-- Un **syndicat** ou une **mutualité** est souvent le guichet le plus accessible pour une première question (chômage, maladie).
+La plupart de ces organismes ont un **portail en ligne « My… »** : MyMinfin pour les impôts, MyPension pour la pension, MySocialSecurity pour tes droits sociaux, My eBox pour ton courrier officiel. Tu y accèdes avec ton [[identite-numerique|identité numérique]], c'est-à-dire ta carte d'identité électronique ou l'application itsme.
+
+Avant d'appeler qui que ce soit, regarde le document que tu as reçu. L'organisme qui l'a émis y est toujours indiqué, avec un numéro de dossier : c'est lui qu'il faut contacter, en citant ce numéro.
+
+Et pour une première question sur le chômage ou la maladie, le guichet le plus accessible est souvent ton **syndicat** ou ta **mutualité**, qui connaissent ces démarches par cœur. → [[probleme-administratif]]
 
 ## À ne pas confondre
 
-| Terme | Ce que c'est |
-| --- | --- |
-| ONSS | Collecte les cotisations des salariés. |
-| INASTI | Même rôle pour les indépendants. |
-| INAMI | Finance les soins de santé ; ne te rembourse pas directement : c'est la mutualité. |
-| ONEM | Décide du droit au chômage ; le paiement passe par le syndicat ou la CAPAC. |
+Quatre organismes se ressemblent et se confondent souvent. L'**ONSS** collecte les cotisations des salariés ; l'**INASTI** joue le même rôle pour les indépendants. L'**INAMI** finance les soins de santé, mais ne te rembourse jamais directement : c'est ta mutualité qui le fait. Et l'**ONEM** décide de ton droit au chômage, sans te payer lui-même : le paiement passe par ton syndicat ou par la CAPAC.

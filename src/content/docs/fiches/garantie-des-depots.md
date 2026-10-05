@@ -25,32 +25,57 @@ sidebar:
   order: 4
 ---
 
-## En langage simple
+## Que devient ton argent si ta banque fait faillite ?
 
-Depuis la crise de 2008, toute l'Union européenne protège l'épargne des particuliers : en cas de faillite d'une banque, un fonds public rembourse. Ce n'est pas théorique : la garantie a joué en Belgique (Kaupthing, Optima).
+Quand tu déposes de l'argent sur un compte, tu le prêtes en réalité à ta banque, qui s'en sert pour accorder des crédits. Si elle fait faillite, ton argent fait partie de ce qu'elle doit à ses créanciers, et tu risquerais de n'en récupérer qu'une partie.
 
-## Ce qui est couvert
+C'est pour éviter ça qu'existe la **garantie des dépôts**. Depuis la crise financière de 2008, toute l'Union européenne protège l'épargne des particuliers : si une banque fait faillite, un fonds public rembourse ses clients. En Belgique, c'est le **Fonds de garantie**, géré par le SPF Finances.
 
-| | Couvert ? | Détail |
+Ce n'est pas une protection théorique. Elle a déjà joué en Belgique, lors des faillites de Kaupthing et d'Optima.
+
+## Jusqu'où tu es protégé
+
+La règle de base tient en une phrase : tes dépôts sont garantis jusqu'à **100 000 € par personne et par banque**. Ce plafond est fixé au niveau européen.
+
+Les trois mots comptent. « **Dépôts** » couvre les comptes à vue, les comptes d'épargne, les comptes à terme et les bons de caisse, des titres de dette émis par la banque elle-même. « **Par personne** » veut dire qu'un compte commun à deux titulaires est couvert jusqu'à 100 000 € pour chacun. Et « **par banque** » vise l'établissement qui a l'agrément, la licence bancaire belge, pas la marque commerciale : certaines marques appartiennent à la même banque et partagent donc un seul plafond.
+
+Un exemple **fictif** : tu as 130 000 € répartis entre ton compte à vue et ton compte d'épargne, dans la même banque. Si elle fait faillite, 100 000 € te sont remboursés par le Fonds ; les 30 000 € restants ne sont pas garantis. Le même montant réparti entre deux banques différentes, 65 000 € dans chacune, serait couvert en entier. Et un couple qui détient 200 000 € sur un compte commun est couvert pour le tout, à raison de 100 000 € par titulaire.
+
+Certains moments de la vie font gonfler ton compte d'un coup : la vente d'un logement, un héritage, une indemnité. Pour ces sommes exceptionnelles, la protection est temporairement relevée à **500 000 €**, pendant 6 mois.
+
+## Ce qui est couvert, et ce qui ne l'est pas
+
+Tout ce que tu as dans une banque n'est pas un dépôt. Le tableau compare les grands cas.
+
+| Ce que tu détiens | Couvert ? | Pourquoi |
 | --- | --- | --- |
-| Comptes à vue, d'épargne, à terme, bons de caisse | **Oui**, jusqu'à **100 000 €** | Par **personne** et par **banque** (agrément belge) ; un compte commun = 100 000 € par titulaire |
-| Assurance-vie branche 21 | **Oui**, 100 000 € | Protection belge spécifique |
-| Actions, obligations, ETF, fonds sur compte-titres | **Non**, mais… | Ils t'appartiennent : ils ne font pas partie de la faillite, la banque les conserve pour ton compte. Une protection séparée de 20 000 € couvre la fraude |
-| Crypto, produits hors banque | Non | |
+| Comptes à vue, d'épargne, à terme, bons de caisse | Oui, jusqu'à 100 000 € | Ce sont des dépôts, garantis par le Fonds |
+| Assurance-vie branche 21 | Oui, jusqu'à 100 000 € | Protection belge spécifique |
+| Actions, obligations, ETF, fonds sur un compte-titres | Non, mais ils te restent | Ils t'appartiennent et ne tombent pas dans la faillite |
+| Crypto, produits hors banque | Non | Aucun mécanisme de garantie |
 
-Protection temporaire relevée à **500 000 €** pendant 6 mois pour certaines sommes exceptionnelles (vente d'un logement, héritage, indemnité).
+La troisième ligne surprend souvent. Tes actions, obligations ou ETF ne sont pas protégés par la garantie des dépôts, mais ils n'en ont généralement pas besoin : ce ne sont pas des sommes prêtées à la banque. Elle les conserve **pour ton compte**, ils restent ta propriété et ne font pas partie de la faillite. Une protection séparée, de 20 000 €, couvre le cas de fraude. → [[actions-obligations-etf]]
 
-## Comment ça marche
+L'assurance-vie **branche 21**, elle, est une épargne à taux garanti vendue par un assureur ou une banque ; la Belgique l'a ajoutée à la protection, avec le même plafond.
 
-```text
-Faillite déclarée
-  → le Fonds de garantie (SPF Finances) rembourse automatiquement
-  → délai légal : 7 jours ouvrables en principe
-  → sur un compte que tu désignes dans une autre banque
-```
+## Comment se passe le remboursement
+
+Tu n'as presque rien à faire. Une fois la faillite déclarée, le Fonds de garantie rembourse **automatiquement** les clients, dans un délai légal de **7 jours ouvrables** en principe. L'argent est versé sur un compte que tu désignes, dans une autre banque.
 
 ## Ce que ça change pour toi
 
-- Au-delà de 100 000 € d'épargne, **répartis** entre banques (différentes licences : certaines marques appartiennent à la même banque).
-- Les banques en ligne étrangères dépendent du fonds de **leur** pays (même plafond européen, mais procédure dans ce pays).
-- La garantie protège contre la faillite, pas contre l'[[inflation]] ni contre une mauvaise décision de placement.
+Si ton épargne dépasse 100 000 €, **répartis-la** entre plusieurs banques, en vérifiant qu'elles ont bien des licences différentes et pas seulement des noms différents.
+
+Si tu utilises une banque en ligne étrangère, sache qu'elle dépend du fonds de garantie de **son** pays. Le plafond européen est le même, mais la procédure se fait dans ce pays-là.
+
+Enfin, garde en tête ce que la garantie ne fait pas. Elle te protège contre la faillite de ta banque, pas contre l'[[inflation]], la hausse des prix qui grignote la valeur de ton épargne, ni contre une mauvaise décision de placement. → [[rendement-risque-liquidite]]
+
+## À ne pas confondre
+
+La garantie des dépôts ne te protège pas contre la fraude : si quelqu'un te pousse à virer ton argent ou à donner tes codes, c'est une autre histoire, avec d'autres recours. → [[fraude-phishing]]
+
+Elle ne protège pas non plus la valeur de tes placements. Si tes actions baissent, c'est le risque normal d'un placement, pas une faillite.
+
+## Nature des chiffres de cette page
+
+🔴 Le plafond de 100 000 € par personne et par banque, la protection temporaire de 500 000 € pendant 6 mois, la protection de 20 000 € des titres et le délai de 7 jours ouvrables sont des règles officielles. 🔵 Les 130 000 € dans une seule banque, les 65 000 € par banque et le couple à 200 000 € sont des exemples fictifs.

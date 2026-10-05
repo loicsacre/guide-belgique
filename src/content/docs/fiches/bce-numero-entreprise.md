@@ -21,36 +21,47 @@ sidebar:
   order: 8
 ---
 
-## En langage simple
+## Un numéro pour chaque entreprise
 
-Comme chaque personne a un numéro de registre national, chaque entreprise (indépendant en personne physique, société, ASBL) a un **numéro d'entreprise** à 10 chiffres. Il est attribué une fois pour toutes et identifie l'entreprise auprès de **toutes** les administrations : TVA, ONSS, SPF Finances, Région, tribunaux.
+Chaque personne en Belgique a un numéro de registre national. Chaque entreprise a, de la même façon, un **numéro d'entreprise** : dix chiffres, qui s'écrivent sous la forme BE 0xxx.xxx.xxx. Peu importe sa taille ou sa forme : un indépendant qui travaille en son nom propre (en personne physique), une société ou une ASBL en ont un.
 
-## Ce que contient la BCE
+Ce numéro est attribué une fois pour toutes, et il sert partout. C'est par lui que l'entreprise est identifiée auprès de **toutes** les administrations : la TVA, l'ONSS (l'organisme qui perçoit les cotisations sociales des employeurs), le SPF Finances, la Région, les tribunaux. Il n'y a donc pas un numéro pour la TVA et un autre pour le reste : le numéro de TVA, c'est le numéro d'entreprise, une fois la TVA activée. → [[tva]]
 
-| Donnée | Utilité |
-| --- | --- |
-| Dénomination, forme juridique, siège | Vérifier à qui tu as affaire |
-| **Unités d'établissement** | Chaque lieu d'activité a un numéro propre |
-| **Activités** (codes NACE) | Déterminent les obligations (accès à la profession, commission paritaire si employeur) |
-| Fonctions (administrateurs, gérants) | Qui engage la société |
-| Qualités : assujetti TVA, employeur ONSS | |
-| Liens vers le **Moniteur belge** (statuts, nominations) et les **comptes annuels** (BNB) | Transparence |
+Ce numéro est attribué par la **Banque-Carrefour des Entreprises**, la BCE. Malgré son nom, ce n'est pas une banque : c'est le registre public de toutes les entreprises belges, tenu par le SPF Économie.
 
-La consultation publique (**BCE Public Search**) est gratuite : utile avant de signer avec un entrepreneur, un bailleur professionnel ou un vendeur en ligne.
+## Ce qu'on trouve dans la BCE
 
-## Le cycle de vie
+La fiche d'une entreprise dans la BCE dit, en quelques rubriques, qui elle est et ce qu'elle fait.
 
-```text
-Inscription     via un guichet d'entreprise agréé (personne physique) ou après l'acte notarié (société)
-                → numéro BE 0xxx.xxx.xxx ; activation TVA au SPF Finances
-Modifications   nouvelle activité, déménagement, nouveau gérant : à déclarer (guichet, Moniteur)
-Cessation       radiation via le guichet ; dissolution/liquidation pour une société
-```
+- **Sa dénomination, sa forme juridique et son siège** te permettent de vérifier à qui tu as affaire.
+- **Ses unités d'établissement**, c'est-à-dire chaque lieu où elle exerce son activité (un magasin, un atelier), ont chacune leur propre numéro.
+- **Ses activités** sont décrites par des **codes NACE**, une nomenclature européenne des métiers. Elles déterminent certaines obligations, comme l'accès à la profession ou, si l'entreprise emploie du personnel, la commission paritaire dont elle dépend. → [[commission-paritaire]]
+- **Ses fonctions**, c'est-à-dire ses administrateurs ou gérants, disent qui peut engager la société.
+- **Ses qualités** indiquent par exemple si elle est assujettie à la TVA ou inscrite comme employeur à l'ONSS.
+- **Des liens** mènent vers le **Moniteur belge**, le journal officiel où sont publiés les statuts et les nominations, et vers les **comptes annuels** qu'une société dépose à la Banque nationale. C'est la transparence voulue par la loi.
 
-Coût d'inscription d'une unité d'établissement : ≈ 100 € (tarif légal indexé).
+La consultation est publique et gratuite, en ligne, via **BCE Public Search**. C'est un réflexe utile avant de signer avec un entrepreneur, un bailleur professionnel ou un vendeur en ligne : en une minute, tu sais si l'entreprise existe, depuis quand, et qui la dirige.
+
+## Comment une entreprise y entre, change et en sort
+
+**À l'inscription**, le chemin dépend de la forme. Un indépendant en personne physique passe par un **guichet d'entreprise agréé**, un organisme privé reconnu par l'État qui fait l'inscription pour lui. Une société, elle, est inscrite après son acte de création chez le notaire. Dans les deux cas, l'entreprise reçoit son numéro BE 0xxx.xxx.xxx ; l'activation de la TVA se fait ensuite au SPF Finances. L'inscription d'une unité d'établissement coûte environ 100 €, un tarif légal indexé. → [[independant]] · [[srl]]
+
+**Pendant la vie de l'entreprise**, chaque changement important doit être déclaré : une nouvelle activité, un déménagement, un nouveau gérant. Selon le cas, cela passe par le guichet d'entreprise ou par une publication au Moniteur belge.
+
+**À la fin**, un indépendant demande sa radiation via le guichet. Une société, elle, doit être dissoute puis liquidée, c'est-à-dire qu'on vend ce qu'elle possède et qu'on règle ses dettes avant de la faire disparaître.
 
 ## Ce que ça change pour toi
 
-- Le numéro d'entreprise **doit figurer** sur tes factures, ton site, tes courriers : voir [[facturation]].
-- Un prestataire **sans numéro d'entreprise** travaille au noir : aucune garantie, aucune facture déductible, assurance incertaine.
-- Les **comptes annuels** déposés par une société sont publics : tu peux évaluer la santé d'un fournisseur ou d'un futur employeur. Voir [[actif-passif-bilan]].
+Si tu es indépendant, ton numéro d'entreprise **doit figurer** sur tes factures, ton site et tes courriers. → [[facturation]]
+
+Si tu fais appel à un professionnel, méfie-toi de celui qui n'a pas de numéro d'entreprise : il travaille au noir. Tu n'as alors aucune garantie, aucune facture que tu pourrais déduire, et ton assurance pourrait refuser d'intervenir en cas de problème. → [[choisir-entrepreneur]]
+
+Enfin, les **comptes annuels** déposés par une société sont publics. Tu peux donc évaluer la santé financière d'un fournisseur ou d'un futur employeur en lisant son bilan. → [[actif-passif-bilan]]
+
+## À ne pas confondre
+
+Le **numéro d'entreprise** et le **numéro de TVA** sont le même numéro : une entreprise qui n'est pas assujettie à la TVA a quand même un numéro d'entreprise, et celle qui l'est utilise ce numéro comme identifiant TVA. Une **unité d'établissement**, elle, n'est pas une autre entreprise : c'est un lieu d'activité de la même entreprise, avec son propre numéro rattaché au numéro principal. Et la BCE n'est pas le Moniteur belge : la BCE est le registre qui dit qui existe, le Moniteur le journal qui publie les actes officiels.
+
+## Nature des chiffres de cette page
+
+🟠 Le coût d'environ 100 € pour inscrire une unité d'établissement est un ordre de grandeur d'un tarif légal indexé chaque année ; le reste de la page décrit des règles stables.

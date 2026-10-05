@@ -31,63 +31,74 @@ sidebar:
   order: 25
 ---
 
-## En langage simple
+## Pourquoi la commune a son mot à dire
 
-Ta maison t'appartient, mais son **aspect extérieur, son volume et son usage** concernent aussi la rue, les voisins et le territoire : c'est pourquoi la commune a son mot à dire. Le **permis d'urbanisme** est cette autorisation. Pour les petits travaux et la plupart des rénovations énergétiques, la Région a prévu des **dispenses** ou une simple **déclaration** ; pour ce qui touche à la structure ou au volume, il faut en plus un **architecte**. Ne pas demander un permis quand il en faut un crée une **infraction** qui ne disparaît pas avec le temps et ressort au moment de vendre.
+Ta maison t'appartient, mais son **aspect extérieur**, son **volume** et son **usage** concernent aussi la rue, les voisins et le territoire. Une annexe peut priver le jardin d'à côté de soleil, une fenêtre peut donner une vue plongeante chez quelqu'un, une maison divisée en trois appartements amène trois ménages dans la rue. C'est pourquoi il faut, pour certains travaux, une autorisation : le **permis d'urbanisme**, délivré par la commune.
 
-## Pourquoi ça existe
+Ce système protège les voisins (vues, ombres, murs mitoyens, c'est-à-dire partagés avec la maison d'à côté), le paysage et le patrimoine. Il permet aussi à la commune de connaître la **destination** de chaque bâtiment : logement, bureau, nombre de logements. Ce n'est pas un détail, car la taxation et les règles de salubrité en dépendent.
 
-L'aménagement du territoire est régional depuis 1980 : la Wallonie applique le **CoDT** (Code du développement territorial), Bruxelles le **CoBAT**, la Flandre le **VCRO** avec un « permis d'environnement » unique. Les communes instruisent les dossiers. Le système protège les voisins (vues, ombres, mitoyens), le paysage et le patrimoine, et il permet à la commune de connaître la **destination** de chaque bâtiment (logement, bureau, nombre de logements), ce qui conditionne aussi la taxation et la salubrité.
+L'aménagement du territoire est une compétence **régionale** depuis 1980. Il n'y a donc pas une règle belge, mais trois codes : la Wallonie applique le **CoDT** (Code du développement territorial), Bruxelles le **CoBAT**, et la Flandre le **VCRO**, avec un « permis d'environnement » unique (*omgevingsvergunning*). Dans les trois Régions, ce sont les communes qui instruisent les dossiers.
 
-## Comment ça marche
+## Trois cas de figure : rien à demander, déclarer, ou obtenir un permis
 
-### Les trois régimes
+Tous les travaux ne demandent pas la même démarche. En Wallonie, pour prendre cet exemple, on distingue trois régimes.
 
-| Régime | Ce que ça couvre (Wallonie, à titre d'exemple) | Procédure |
-| --- | --- | --- |
-| **Dispense** | Entretien et travaux qui ne modifient ni volume ni aspect architectural, et une liste de petits travaux (voir plus bas) | Rien à demander ; respecter les règlements communaux quand même |
-| **Déclaration urbanistique préalable** | Certains petits ouvrages listés (abris, clôtures, panneaux…) | Formulaire à la commune, 🔴 délai de 30 jours sans réaction = accord |
-| **Permis d'urbanisme** | Construire, agrandir, démolir, modifier la structure portante ou l'aspect, changer d'affectation, diviser en logements, abattre certains arbres | Dossier complet, 🟠 2 à 4 mois (délais de rigueur selon le type), affichage, parfois enquête publique ; avec ou sans architecte |
+- **La dispense.** L'entretien et les travaux qui ne modifient ni le volume ni l'aspect architectural, ainsi qu'une liste de petits travaux, ne demandent rien. Il faut quand même respecter les règlements communaux.
+- **La déclaration urbanistique préalable.** Pour certains petits ouvrages listés (abris, clôtures, panneaux…), tu remplis un formulaire à la commune. Si elle ne réagit pas dans les 30 jours, c'est un accord.
+- **Le permis d'urbanisme.** Construire, agrandir, démolir, modifier la structure portante ou l'aspect, changer d'affectation, diviser en logements ou abattre certains arbres exige un dossier complet. Comptent en général deux à quatre mois, avec des délais de rigueur (que la commune doit respecter) selon le type de dossier, un affichage sur place et parfois une **enquête publique**, où les voisins peuvent réagir. Selon les travaux, avec ou sans architecte.
 
-### Les dispenses de la rénovation énergétique (Wallonie)
+## Ce que la rénovation énergétique peut faire sans permis
 
-:::caution[Règle régionale datée]
-Depuis le 1er septembre 2019 🔴, sont notamment **dispensés de permis** en Wallonie, à condition de respecter les règlements communaux et de ne pas être en site classé : le remplacement d'une **toiture** sans changement de volume ni d'aspect, l'**isolation et le bardage d'une façade** (sous conditions d'épaisseur et de teinte), le placement de **panneaux solaires** sur une toiture existante en suivant la pente, le remplacement de **châssis** sans modifier les baies, les **abris de jardin** jusqu'à 20 m², et de nombreux travaux intérieurs. Beaucoup de ces travaux énergétiques sont aussi **dispensés d'architecte** même lorsqu'un permis reste requis. Les règles bruxelloises et flamandes sont voisines dans l'esprit (travaux « de minime importance »), différentes dans le détail.
+Bonne nouvelle pour qui rénove : la Wallonie a élargi les dispenses pour les travaux qui améliorent l'énergie d'une maison.
+
+:::caution[Règle régionale datée — Wallonie, depuis le 1er septembre 2019]
+Sont notamment **dispensés de permis**, à condition de respecter les règlements communaux et de ne pas être en site classé : le remplacement d'une **toiture** sans changement de volume ni d'aspect, l'**isolation et le bardage d'une façade** (sous conditions d'épaisseur et de teinte), le placement de **panneaux solaires** sur une toiture existante en suivant la pente, le remplacement de **châssis** sans modifier les baies (les ouvertures dans le mur), les **abris de jardin** jusqu'à 20 m², et de nombreux travaux intérieurs. Beaucoup de ces travaux énergétiques sont aussi **dispensés d'architecte** même lorsqu'un permis reste requis.
 :::
 
-Ce qui exige **toujours** un permis : agrandir (annexe, véranda, lucarne qui augmente le volume), créer une fenêtre dans un mur mitoyen ou vers le voisin, transformer un garage ou des combles en pièce habitable si cela change le volume ou la façade, **diviser** la maison en appartements, changer l'usage (commerce → logement), et tout ce qui touche un bien **classé ou inscrit à l'inventaire**.
+Bruxelles et la Flandre suivent le même esprit, avec des travaux dits « de minime importance », mais le détail diffère : vérifie toujours la liste de ta Région.
 
-### L'architecte
+D'autres travaux exigent en revanche **toujours** un permis. C'est le cas quand tu agrandis (annexe, véranda, lucarne qui augmente le volume), quand tu crées une fenêtre dans un mur mitoyen ou vers le voisin, quand tu transformes un garage ou des combles en pièce habitable si cela change le volume ou la façade, quand tu **divises** la maison en appartements, quand tu changes l'usage (un commerce qui devient logement), et pour tout ce qui touche un bien **classé ou inscrit à l'inventaire** du patrimoine. → [[toiture-maison]] · [[isolation-maison]] · [[chassis-vitrage]] · [[panneaux-solaires]]
 
-La loi de 1939 impose l'architecte pour tout travail soumis à permis qui touche à la **stabilité** ou à la **structure** ; les Régions ont allégé la liste pour les travaux qui ne la touchent pas. L'architecte conçoit, dépose le dossier, suit le chantier et engage sa responsabilité (la décennale, voir [[reception-travaux]]). Honoraires 🟠 8 à 12 % du coût des travaux pour une mission complète, ou un forfait pour le seul dossier de permis. Même quand il n'est pas obligatoire, pour une rénovation lourde, il économise souvent plus qu'il ne coûte ([[choisir-entrepreneur]]).
+## Quand faut-il un architecte ?
 
-### Les renseignements urbanistiques et l'infraction
+La loi de 1939 impose l'architecte pour tout travail soumis à permis qui touche à la **stabilité** ou à la **structure** du bâtiment. Les Régions ont allégé la liste pour les travaux qui n'y touchent pas : d'où la différence entre une dispense de permis et une simple dispense d'architecte.
 
-Avant toute vente, le notaire demande à la commune les **renseignements urbanistiques** : affectation au plan de secteur, permis délivrés, infractions constatées. Une annexe construite sans permis en 1995, une division en deux appartements jamais autorisée, une lucarne non déclarée : tout cela figure ou devrait figurer. L'acheteur peut exiger une **régularisation** (nouveau permis, s'il est accordable), une réduction de prix, ou renoncer ([[compromis]]). En Wallonie, les infractions anciennes ne sont pas prescrites pénalement de la même manière partout ; le principe sûr : **une infraction se transmet avec le bien**.
+L'architecte conçoit le projet, dépose le dossier, suit le chantier et engage sa responsabilité, notamment la **décennale**, cette responsabilité de dix ans pour les défauts graves qui menacent la solidité. Ses honoraires tournent autour de 8 à 12 % du coût des travaux pour une mission complète, ou d'un forfait pour le seul dossier de permis. Même quand il n'est pas obligatoire, il économise souvent plus qu'il ne coûte sur une rénovation lourde : il devient le chef d'orchestre des corps de métier et de l'[[ordre-des-travaux|ordre des travaux]]. → [[reception-travaux]] · [[choisir-entrepreneur]]
 
-### Comment vérifier sans se tromper
+## Comment vérifier sans se tromper
 
-Un **courriel au service urbanisme** de la commune, avec photos et croquis, répond gratuitement en quelques jours à la question « faut-il un permis ? ». La réponse écrite te protège. Les communes ont aussi des **règlements communaux d'urbanisme** (teintes, matériaux, clôtures) qui s'appliquent même aux travaux dispensés de permis.
+Le plus simple est un **courriel au service urbanisme** de ta commune, avec photos et croquis. Il répond gratuitement, en quelques jours, à la question « faut-il un permis ? ». Et sa réponse écrite te protège si quelqu'un la conteste plus tard.
 
-## Exemple
+N'oublie pas les **règlements communaux d'urbanisme**, qui fixent par exemple les teintes, les matériaux ou les clôtures autorisés. Ils s'appliquent même aux travaux dispensés de permis.
 
-Camille veut refaire sa toiture en remplaçant les ardoises artificielles par des tuiles noires, isoler les façades par l'extérieur (14 cm, crépi blanc cassé) et poser des panneaux. La commune répond 🔵 : toiture dispensée **si** la teinte reste sombre ; isolation extérieure dispensée mais le crépi doit respecter la palette du règlement communal et la maison ne peut pas déborder sur le trottoir (elle est à l'alignement : il faut donc isoler par l'intérieur côté rue ou demander un permis d'empiètement) ; panneaux dispensés. Sa voisine Lina, qui veut ouvrir une fenêtre dans le pignon vers le jardin de Camille, apprend qu'il faut un permis **et** le respect des distances de vues du Code civil.
+## Un exemple : la toiture de Camille
+
+Camille (exemple **fictif**) veut remplacer ses ardoises artificielles par des tuiles noires, isoler ses façades par l'extérieur (14 cm, crépi blanc cassé) et poser des panneaux. Elle écrit à la commune, qui répond ainsi :
+
+- **La toiture est dispensée**, à condition que la teinte reste sombre.
+- **L'isolation extérieure est dispensée**, mais le crépi doit respecter la palette du règlement communal. Et comme la maison est à l'alignement (sa façade touche le trottoir), l'isolant ne peut pas déborder sur la voie publique : il faut donc isoler par l'intérieur côté rue, ou demander un permis d'empiètement.
+- **Les panneaux sont dispensés.**
+
+Sa voisine Lina veut ouvrir une fenêtre dans le pignon qui donne sur le jardin de Camille. Elle apprend qu'il lui faut un permis, **et** qu'elle doit respecter les distances de vues du Code civil, ces règles qui limitent les fenêtres trop proches de la propriété voisine.
+
+## Ce qui se passe si on oublie le permis
+
+Ne pas demander un permis quand il en fallait un crée une **infraction urbanistique**. Elle ne disparaît pas avec le temps et ressort au moment de vendre.
+
+Avant toute vente, le notaire demande en effet à la commune les **renseignements urbanistiques** : l'affectation du bien au plan de secteur (la carte qui dit ce qu'on peut faire de chaque terrain), les permis délivrés et les infractions constatées. Une annexe construite sans permis en 1995, une division en deux appartements jamais autorisée, une lucarne non déclarée : tout cela y figure, ou devrait y figurer. L'acheteur peut alors exiger une **régularisation** (un nouveau permis, s'il peut être accordé), demander une réduction de prix, ou renoncer à l'achat. → [[compromis]] · [[notaire-acte-authentique]]
+
+En Wallonie, les infractions anciennes ne sont pas prescrites pénalement de la même manière partout. Le principe sûr reste donc celui-ci : **une infraction se transmet avec le bien**.
 
 ## Ce que ça change pour toi
 
-- Avant tout chantier qui touche l'**extérieur, le volume ou l'usage**, un courriel à l'urbanisme : gratuit, rapide, et c'est une preuve.
-- Garde **tous les permis et déclarations** dans le dossier maison : ils seront demandés à la vente.
-- À l'achat, lis les renseignements urbanistiques **avant** le compromis ; une infraction se négocie ou se fuit, elle ne s'ignore pas.
-- Un architecte n'est pas qu'une obligation : pour une rénovation qui combine plusieurs corps de métier, c'est le chef d'orchestre de l'[[ordre-des-travaux]].
+Avant tout chantier qui touche l'**extérieur, le volume ou l'usage** de ta maison, envoie ce courriel à l'urbanisme : c'est gratuit, rapide, et c'est une preuve. Garde ensuite **tous les permis et déclarations** dans ton dossier maison, car ils seront demandés à la vente.
+
+Si tu achètes, lis les renseignements urbanistiques **avant** de signer le compromis. Une infraction se négocie ou se fuit, mais elle ne s'ignore pas.
 
 ## À ne pas confondre
 
-- **Dispense de permis** (rien à demander) et **dispense d'architecte** (permis nécessaire, mais sans architecte) : deux listes différentes.
-- **Permis d'urbanisme** (la Région / commune) et **autorisation de copropriété** ou **servitudes privées** (les voisins, le Code civil) : l'un n'exempte pas de l'autre.
-- **Renseignements urbanistiques** (état des permis d'un bien) et **certificat d'urbanisme** (avis sur ce qu'on pourrait y faire).
+La **dispense de permis** (rien à demander) n'est pas la **dispense d'architecte** (un permis reste nécessaire, mais sans architecte) : ce sont deux listes différentes. Le **permis d'urbanisme**, qui relève de la Région et de la commune, n'exempte pas non plus de l'**autorisation de la copropriété** ni des **servitudes privées**, ces droits que les voisins tiennent du Code civil : l'un ne remplace pas l'autre. Enfin, les **renseignements urbanistiques** décrivent l'état des permis d'un bien, alors que le **certificat d'urbanisme** donne un avis sur ce qu'on pourrait y faire.
 
 ## Nature des chiffres de cette page
 
-- 🔴 Les listes de dispenses et les délais relèvent du CoDT et de ses arrêtés (Wallonie), du CoBAT (Bruxelles) et du VCRO (Flandre), état 2026 ; les règlements communaux peuvent être plus stricts.
-- 🟠 Délais d'instruction, honoraires d'architecte : repères.
-- 🔵 Les réponses de la commune à Camille sont inventées ; elles illustrent le type d'arbitrage courant.
+🔴 Les listes de dispenses (depuis le 1er septembre 2019 en Wallonie, abris jusqu'à 20 m²) et le délai de 30 jours de la déclaration relèvent du CoDT et de ses arrêtés, du CoBAT à Bruxelles et du VCRO en Flandre, état 2026 ; les règlements communaux peuvent être plus stricts. 🟠 Les deux à quatre mois d'instruction et les honoraires d'architecte de 8 à 12 % sont des repères. 🔵 Les réponses de la commune à Camille sont inventées : elles illustrent le type d'arbitrage courant.

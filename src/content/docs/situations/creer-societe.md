@@ -212,7 +212,7 @@ Le comptable pose le calcul sur une feuille, avec une rémunération de 45 000 �
 | --- | ---: | ---: |
 | Bénéfice avant rémunération | 90 000 € | 90 000 € |
 | Rémunération de Sophie | — | − 45 000 € |
-| Frais de structure (comptable, dépôt des comptes, assurances, banque) | − 2 000 € | − 5 000 € |
+| Frais de structure (comptable, dépôt des comptes, assurances, banque) | ≈ 2 000 €, déjà déduits des 90 000 € | − 5 000 € |
 | Cotisations sociales de Sophie | − 18 000 € | − 9 200 € |
 | IPP de Sophie | − 28 000 € | − 11 000 € |
 | Impôt des sociétés (20 % sur ce qui reste dans la société) | — | − 8 000 € |

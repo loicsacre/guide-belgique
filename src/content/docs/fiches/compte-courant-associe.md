@@ -22,7 +22,7 @@ sidebar:
   order: 12
 ---
 
-## En langage simple
+## Une ardoise entre toi et ta société
 
 Ta société et toi avez chacun votre argent. Mais dans la vraie vie, l'argent passe parfois de l'un à l'autre sans être une rémunération ni un dividende : tu paies une facture de la société avec ta carte personnelle, ou tu prends sur le compte de la société de quoi payer une dépense privée. Le comptable enregistre ces mouvements dans un compte à part, le **compte courant** de l'associé.
 

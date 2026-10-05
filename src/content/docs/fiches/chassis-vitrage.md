@@ -28,29 +28,35 @@ sidebar:
   order: 10
 ---
 
-## En langage simple
+## Une fenêtre n'est pas faite pour isoler
 
-Une fenêtre est un trou dans le mur que l'on a rendu transparent. Même la meilleure fenêtre isole 🟠 cinq à six fois moins bien qu'un mur isolé : son rôle n'est pas d'isoler, mais de laisser entrer la lumière et le soleil en perdant le moins possible. Le **châssis** est le cadre (bois, PVC, aluminium) ; le **vitrage** est l'ensemble des feuilles de verre séparées par des lames de gaz ; les **joints** et la **pose** décident de l'étanchéité à l'air.
+Une fenêtre est un trou dans le mur qu'on a rendu transparent. Même la meilleure isole 🟠 cinq à six fois moins bien qu'un mur isolé. Son rôle n'est donc pas d'isoler, mais de laisser entrer la lumière et le soleil en perdant le moins de chaleur possible.
 
-## Pourquoi ça existe
+Elle se compose de trois choses. Le **châssis** est le cadre, en bois, en PVC ou en aluminium. Le **vitrage** est l'ensemble des feuilles de verre séparées par des lames de gaz. Et les **joints** et la **pose** décident de l'étanchéité à l'air.
 
-Le simple vitrage d'avant 1980 laisse passer 🟠 autant de chaleur qu'un mur plein non isolé et, surtout, crée une paroi glaciale devant laquelle on a froid même à 22 °C. Le double vitrage ordinaire (années 1980–2000) fait deux fois mieux ; le double vitrage « haut rendement » actuel, avec couche basse émissivité et argon, quatre à cinq fois mieux ; le triple, six fois. Les Régions ont fixé des exigences PEB sur la valeur **Uw** et accordent des [[primes-renovation|primes]] au remplacement.
+## Pourquoi on remplace les vieux châssis
 
-## Comment ça marche
+Le simple vitrage d'avant 1980 laisse passer 🟠 autant de chaleur qu'un mur plein non isolé. Surtout, il crée une paroi glaciale devant laquelle on a froid même à 22 °C. Le double vitrage ordinaire, celui des années 1980 à 2000, fait deux fois mieux. Le double vitrage « haut rendement » actuel, avec une couche basse émissivité (un dépôt métallique invisible qui renvoie la chaleur vers l'intérieur) et de l'argon entre les feuilles, fait quatre à cinq fois mieux ; le triple, six fois.
 
-### Les trois chiffres
+Les Régions ont donc fixé des exigences PEB (performance énergétique des bâtiments) sur la valeur **Uw** de la fenêtre, et accordent des [[primes-renovation|primes]] au remplacement.
 
-- **Ug** : isolation du vitrage seul. Simple vitrage 🟠 5,8 W/m²K ; double ancien 2,8 à 3 ; double HR 1,0 à 1,1 ; triple 0,5 à 0,7.
-- **Uf** : isolation du cadre. PVC et bois 🟠 1,2 à 1,6 ; aluminium à coupure thermique 1,4 à 2,0 ; aluminium ancien sans coupure 5 à 7 (on sent le cadre glacé).
-- **Uw** : la fenêtre entière, ce que la PEB et les primes regardent. 🔴 La prime wallonne exige Uw ≤ 1,5 W/m²K ; le neuf vise 🟠 ≤ 1,5 (PEB) et souvent ≤ 1,0 en pratique.
+## Les trois chiffres d'une fenêtre
 
-Un triple vitrage dans un cadre médiocre donne un Uw moyen : c'est **l'ensemble** qu'il faut comparer, et le devis doit indiquer le Uw de chaque fenêtre ([[devis-travaux]]).
+Comme pour l'isolation, la performance se lit dans une valeur U : la quantité de chaleur qui traverse un mètre carré, en W/m²K. Plus elle est basse, mieux c'est. Une fenêtre en a trois.
 
-### Le facteur solaire et l'orientation
+- **Ug** mesure le vitrage seul : 🟠 5,8 W/m²K pour un simple vitrage, 2,8 à 3 pour un double ancien, 1,0 à 1,1 pour un double HR, 0,5 à 0,7 pour un triple.
+- **Uf** mesure le cadre : 🟠 1,2 à 1,6 pour le PVC et le bois, 1,4 à 2,0 pour l'aluminium à coupure thermique, et 5 à 7 pour l'aluminium ancien sans coupure, dont on sent le cadre glacé.
+- **Uw** mesure la fenêtre entière, et c'est elle que la PEB et les primes regardent. 🔴 La prime wallonne exige Uw ≤ 1,5 W/m²K ; le neuf vise 🟠 ≤ 1,5 (PEB) et souvent ≤ 1,0 en pratique.
 
-Le vitrage laisse aussi **entrer** la chaleur du soleil (facteur g). Au sud, un vitrage à g élevé chauffe gratuitement la maison en hiver, mais la surchauffe en été sans protection solaire extérieure (volets, stores, débord de toit). Au nord, le triple vitrage se justifie davantage. Un bon menuisier adapte le vitrage par façade ; la plupart posent la même chose partout.
+Résultat : un triple vitrage dans un cadre médiocre donne un Uw moyen. C'est **l'ensemble** qu'il faut comparer, et le devis doit indiquer le Uw de chaque fenêtre. → [[devis-travaux]]
 
-### Les matériaux de châssis
+## Le soleil compte aussi
+
+Le vitrage laisse également **entrer** la chaleur du soleil, ce que mesure le facteur g. Au sud, un vitrage à g élevé chauffe gratuitement la maison en hiver, mais la surchauffe en été s'il n'y a pas de protection solaire extérieure (volets, stores, débord de toit). Au nord, le triple vitrage se justifie davantage. Un bon menuisier adapte donc le vitrage façade par façade ; la plupart posent la même chose partout.
+
+## Bois, PVC ou aluminium
+
+Le choix du matériau joue sur la durée de vie, l'entretien, le prix et l'aspect.
 
 | Matériau | Durée de vie 🟠 | Entretien | Prix 🟠 (posé, fenêtre standard) | Remarques |
 | --- | --- | --- | --- | --- |
@@ -59,37 +65,40 @@ Le vitrage laisse aussi **entrer** la chaleur du soleil (facteur g). Au sud, un 
 | Aluminium | 40 à 60 ans | Aucun | 900 à 1 600 € | Profils fins, grandes baies ; vérifier la coupure thermique |
 | Bois-alu | 50 ans et plus | Faible | 1 100 à 1 800 € | Bois dedans, alu dehors |
 
-### La pose : là où tout se joue
+## La pose, là où tout se joue
 
-Un excellent châssis mal posé fuit. La pose doit assurer trois choses : l'**étanchéité à l'air** côté intérieur (bande ou mastic, pas de mousse seule), l'**étanchéité à l'eau** côté extérieur (membrane, rejet d'eau), et la **continuité de l'isolation** avec le mur (le châssis se place dans le plan de l'isolant, « au nu de l'isolant », si les murs sont isolés par l'extérieur). D'où la question d'ordre : si tu prévois d'isoler les façades par l'extérieur, les nouveaux châssis doivent être posés **en même temps ou juste avant**, en débord, sinon ils se retrouvent au fond d'un tunnel ([[ordre-des-travaux]]).
+Un excellent châssis mal posé fuit. La pose doit assurer trois choses : l'**étanchéité à l'air** côté intérieur (avec une bande ou un mastic, pas de la mousse seule), l'**étanchéité à l'eau** côté extérieur (membrane, rejet d'eau), et la **continuité de l'isolation** avec le mur.
 
-### Ventilation, condensation et bruit
+Ce dernier point pose une question d'ordre. Si les murs sont ou seront isolés par l'extérieur, le châssis doit se placer dans le plan de l'isolant, « au nu de l'isolant ». Si tu prévois d'isoler les façades par l'extérieur, les nouveaux châssis doivent donc être posés **en même temps ou juste avant**, en débord ; sinon, ils se retrouvent au fond d'un tunnel. → [[ordre-des-travaux]]
 
-Des châssis neufs sont étanches : sans **grilles d'aération** (dans le châssis ou ailleurs) et sans extraction, la maison condense ([[ventilation-maison]]). De la **buée à l'intérieur** du double vitrage, entre les deux feuilles, signifie que le joint périphérique a lâché : le vitrage est à remplacer, pas le châssis. Côté bruit, c'est la **dissymétrie** des feuilles (par exemple 4/16/6) et le feuilleté acoustique qui comptent, plus que le nombre de feuilles.
+## Ventilation, buée et bruit
 
-### Urbanisme
+Des châssis neufs sont étanches. Sans **grilles d'aération** (dans le châssis ou ailleurs) et sans extraction, la maison condense. → [[ventilation-maison]]
 
-Remplacer des châssis en respectant l'aspect existant est généralement **dispensé de permis**, mais changer les divisions, la couleur ou le matériau sur une façade visible depuis la rue peut nécessiter une autorisation, surtout en zone protégée ou pour un bien repris à l'inventaire ([[permis-urbanisme]]). La commune répond en quelques jours à une question posée avant de commander.
+De la **buée entre les deux feuilles** d'un double vitrage signifie que le joint périphérique a lâché : c'est le vitrage qu'il faut remplacer, pas le châssis. Côté bruit, ce qui compte est la **dissymétrie** des feuilles (par exemple 4/16/6, soit 4 mm de verre, 16 mm de gaz, 6 mm de verre) et le verre feuilleté acoustique, plus que le nombre de feuilles.
 
-## Exemple
+## Faut-il un permis ?
 
-Lina remplace 🔵 11 fenêtres (22 m²) et une porte d'entrée. Devis PVC double HR Uw 1,1 avec grilles d'aération : 🔵 9 800 € TVAC 6 %. Prime wallonne (catégorie R3, ×3) 🔵 : 22 m² × 26 € × 3 = 1 716 €, plafonnée à 70 % du coût : elle touche 1 716 €. Gain estimé par l'auditeur : 🔵 350 €/an, soit un retour sur investissement de plus de vingt ans sur la facture seule. Elle fait les travaux quand même : les anciens châssis en aluminium sans coupure thermique étaient glacés, bruyants et laissaient passer l'air, et la valeur de revente de la maison en dépend. C'est l'exemple type d'un travail qui se justifie par le **confort**, pas par le temps de retour.
+Remplacer des châssis en respectant l'aspect existant est généralement **dispensé de permis**. Mais changer les divisions, la couleur ou le matériau sur une façade visible depuis la rue peut nécessiter une autorisation, surtout en zone protégée ou pour un bien repris à l'inventaire du patrimoine. La commune répond en quelques jours à une question posée avant de commander. → [[permis-urbanisme]]
+
+## Un exemple : les fenêtres de Lina
+
+Lina remplace 🔵 11 fenêtres (22 m²) et une porte d'entrée. Le devis, en PVC double vitrage HR avec un Uw de 1,1 et des grilles d'aération, s'élève à 🔵 9 800 € TVAC à 6 %.
+
+Elle est 🔵 en catégorie de revenus R3, qui multiplie la prime de base par 3. Sa prime wallonne vaut donc 22 m² × 26 € × 3 = 1 716 €. Elle est plafonnée à 70 % du coût, mais on en est loin : elle touche les 1 716 €. L'auditeur estime le gain à 🔵 350 € par an, soit plus de vingt ans pour rentabiliser les travaux sur la seule facture.
+
+Elle les fait quand même. Ses anciens châssis en aluminium sans coupure thermique étaient glacés, bruyants et laissaient passer l'air, et la valeur de revente de la maison en dépend. C'est l'exemple type d'un travail qui se justifie par le **confort**, pas par le temps de retour.
 
 ## Ce que ça change pour toi
 
-- Compare les devis sur le **Uw par fenêtre**, le type de **pose** et la **ventilation**, pas sur le seul prix au m².
-- Si tu prévois une isolation extérieure des façades, **coordonne** les deux chantiers : châssis posés au nu de l'isolant futur.
-- Réserve le triple vitrage aux façades nord et aux maisons déjà très isolées ; au sud, protège plutôt du soleil d'été.
-- Avant de remplacer un châssis en bois sain, envisage un **remplacement du vitrage seul** : un double HR dans une bonne menuiserie ancienne est une option bon marché et souvent la seule autorisée sur une façade classée.
+Compare les devis sur le **Uw par fenêtre**, le type de **pose** et la **ventilation**, pas sur le seul prix au m². Si tu prévois d'isoler les façades par l'extérieur, **coordonne** les deux chantiers pour que les châssis soient posés au nu de l'isolant futur.
+
+Réserve le triple vitrage aux façades nord et aux maisons déjà très isolées ; au sud, protège plutôt du soleil d'été. Et avant de remplacer un châssis en bois sain, envisage de **remplacer le vitrage seul** : un double HR dans une bonne menuiserie ancienne est une option bon marché, et souvent la seule autorisée sur une façade classée.
 
 ## À ne pas confondre
 
-- **Ug** (vitrage), **Uf** (cadre) et **Uw** (fenêtre) : seul le dernier décrit ce que tu achètes.
-- **Buée à l'intérieur de la pièce** sur la vitre (humidité ambiante, voir ventilation) et **buée entre les feuilles** (vitrage défectueux).
-- **Double vitrage** d'avant 2000 et **double vitrage haut rendement** actuel : même nom, performance très différente ; la mention « HR » ou « HR++ » ou la valeur Ug fait la différence.
+**Ug** décrit le vitrage, **Uf** le cadre et **Uw** la fenêtre : seul le dernier décrit ce que tu achètes. La **buée sur la vitre, côté pièce**, vient de l'humidité ambiante (c'est une affaire de ventilation), alors que la **buée entre les feuilles** trahit un vitrage défectueux. Enfin, le **double vitrage** d'avant 2000 et le **double vitrage haut rendement** actuel portent le même nom, mais leur performance est très différente : la mention « HR » ou « HR++ », ou la valeur Ug, fait la différence.
 
 ## Nature des chiffres de cette page
 
-- 🔴 Le seuil Uw ≤ 1,5 et le montant de base de 26 €/m² relèvent de la prime Habitation wallonne en vigueur jusqu'au 30 septembre 2026 ; les règles de permis relèvent du CoDT et des règlements communaux.
-- 🟠 Valeurs U typiques, durées de vie, prix : repères de marché.
-- 🔵 Le devis et la prime de Lina sont inventés pour illustrer la mécanique.
+🔴 Le seuil Uw ≤ 1,5 et le montant de base de 26 €/m² relèvent de la prime Habitation wallonne en vigueur jusqu'au 30 septembre 2026 ; les règles de permis relèvent du CoDT et des règlements communaux. 🟠 Les valeurs U typiques, les rapports « cinq à six fois » ou « deux fois mieux », les durées de vie et les prix sont des repères de marché. 🔵 Le devis, la prime et le gain annuel de Lina sont inventés pour illustrer la mécanique.

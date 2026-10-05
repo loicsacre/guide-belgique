@@ -24,43 +24,59 @@ sidebar:
   order: 5
 ---
 
-## En langage simple
+## Pourquoi le fraudeur a besoin de toi
 
-Personne ne « pirate » ta banque pour vider ton compte. Le fraudeur a besoin **de toi** : que tu tapes tes codes sur un faux site, que tu lises ton code itsme à un « conseiller » au téléphone, ou que tu valides un paiement en croyant signer autre chose. La sécurité technique est solide ; le maillon faible, c'est l'urgence et la peur qu'ils créent.
+On imagine souvent la fraude bancaire comme un piratage : quelqu'un entre dans les systèmes de ta banque et vide ton compte. En réalité, ça n'arrive presque jamais. La sécurité technique des banques est solide, et le fraudeur le sait.
 
-## Les scénarios classiques
+Il a donc besoin **de toi**. Il faut que tu tapes tes codes sur un faux site, que tu lises ton code itsme à un « conseiller » au téléphone, ou que tu valides un paiement en croyant signer autre chose. itsme, c'est l'application qui te sert de carte d'identité en ligne et qui valide tes opérations bancaires : celui qui obtient ta validation obtient ta signature. → [[identite-numerique]]
 
-| Scénario | Comment ça se présente |
-| --- | --- |
-| **Phishing** | SMS ou e-mail « colis en attente », « amende », « remboursement d'impôt » avec un lien vers un faux site bancaire |
-| **Faux conseiller bancaire** | Appel « du service fraude » : ton compte serait attaqué, il faut « sécuriser » l'argent en le virant ou donner ses codes |
-| **Fraude à l'ami / au proche** | Message WhatsApp d'un « enfant » avec un nouveau numéro qui a besoin d'argent vite |
-| **Faux investissement** | Plateforme de trading ou crypto aux rendements garantis, souvent avec de faux témoignages |
-| **Fraude à la facture** | Facture réelle interceptée, numéro de compte modifié |
+Le maillon faible n'est donc pas la technique, c'est l'**urgence et la peur** que le fraudeur crée. Quelqu'un de pressé et d'inquiet réfléchit moins, et c'est exactement ce qu'il cherche.
+
+## Les scénarios qui reviennent
+
+Les fraudes changent de décor, mais on retrouve presque toujours les mêmes scénarios.
+
+- **Le phishing**, ou hameçonnage, arrive par SMS ou par e-mail : « colis en attente », « amende impayée », « remboursement d'impôt ». Le message contient un lien vers un faux site qui imite celui de ta banque, où tu es invité à te connecter.
+- **Le faux conseiller bancaire** t'appelle en se présentant comme le « service fraude » de ta banque. Ton compte serait attaqué, et il faudrait « sécuriser » ton argent en le virant sur un autre compte, ou lui donner tes codes.
+- **La fraude à l'ami ou au proche** passe souvent par WhatsApp : un « enfant » t'écrit depuis un nouveau numéro et a besoin d'argent vite.
+- **Le faux investissement** te présente une plateforme de trading ou de crypto aux rendements garantis, souvent appuyée par de faux témoignages.
+- **La fraude à la facture** est plus discrète : une vraie facture est interceptée et le numéro de compte y est remplacé par celui du fraudeur.
+
+Tous ces scénarios ont un point commun : on te pousse à agir vite, sans vérifier.
 
 ## Les règles qui te protègent
 
-1. Ni banque, ni administration, ni police **ne demande jamais** tes codes, ni de valider une opération itsme/Bancontact pour « vérifier ».
-2. Ne clique pas sur un lien reçu : **tape toi-même** l'adresse de la banque ou ouvre l'app.
-3. Lis ce que tu **signes** dans l'app : le montant et le bénéficiaire sont affichés avant validation.
-4. Une demande urgente est un signal d'alarme : raccroche, rappelle le numéro officiel.
-5. Vérifie un **numéro de compte** nouveau par un autre canal (téléphone connu).
+Quelques réflexes suffisent à déjouer la plupart de ces tentatives.
 
-## Si c'est arrivé
+1. **Personne ne te demande jamais tes codes.** Ni ta banque, ni une administration, ni la police ne te demandera tes codes, ni de valider une opération itsme ou Bancontact pour « vérifier » quelque chose. Si quelqu'un le fait, c'est une fraude.
+2. **Ne clique pas sur un lien reçu.** Tape toi-même l'adresse de ta banque, ou ouvre directement son application.
+3. **Lis ce que tu signes.** Avant chaque validation, ton app affiche le montant et le bénéficiaire. Si ce n'est pas ce que tu crois faire, n'appuie pas.
+4. **Traite l'urgence comme une alarme.** Une demande pressante est justement le signal qu'il faut ralentir : raccroche, puis rappelle le numéro officiel que tu trouves toi-même.
+5. **Vérifie tout nouveau numéro de compte** par un autre canal, par exemple en appelant un numéro que tu connais déjà.
 
-```text
-Immédiatement   Card Stop : 078 170 170 (cartes, app, itsme) → blocage
-Puis            ta banque (numéro officiel) : contestation, demande de rappel des fonds
-Puis            plainte à la police (nécessaire pour un remboursement)
-Et              signale à suspect@safeonweb.be
-```
+Un exemple **fictif** : un mardi soir, tu reçois un appel de « ta banque ». La voix est calme et professionnelle, elle connaît ton nom et te dit que des paiements suspects viennent d'être tentés sur ton compte. Pour les bloquer, il faudrait valider tout de suite une opération dans ton app. Tu ouvres l'app : elle affiche un virement de 2 500 € vers un compte inconnu. C'est la règle 3 qui te sauve. Tu raccroches, tu appelles le numéro officiel de ta banque, qui confirme qu'elle ne t'a jamais appelé.
 
-La banque **rembourse** une opération non autorisée, sauf si tu as été **gravement négligent** (avoir communiqué tes codes est souvent considéré ainsi). Les banques belges ont par ailleurs mis en place des remboursements partiels pour le phishing dans certains cas : argumente.
+## Si c'est arrivé quand même
+
+Si tu as donné tes codes ou validé un paiement suspect, chaque minute compte. Agis dans cet ordre.
+
+1. **Immédiatement, appelle Card Stop au 078 170 170.** Ce service bloque tes cartes, ton app bancaire et ton itsme, pour que le fraudeur ne puisse plus rien faire.
+2. **Puis contacte ta banque**, au numéro officiel, pour contester l'opération et demander un rappel des fonds, c'est-à-dire une tentative de récupérer l'argent auprès de la banque qui l'a reçu.
+3. **Puis porte plainte à la police.** C'est nécessaire pour obtenir un remboursement.
+4. **Et signale la fraude** à suspect@safeonweb.be, l'adresse de Safeonweb, le service du Centre pour la cybersécurité Belgique (CCB) qui recense les tentatives.
+
+Reste la question du remboursement. La banque doit te **rembourser** une opération que tu n'as pas autorisée, sauf si tu as été **gravement négligent**. Le problème, c'est qu'avoir communiqué tes codes est souvent considéré comme une négligence grave. Mais tout n'est pas perdu : les banques belges ont mis en place des remboursements partiels pour le phishing dans certains cas. Argumente, en expliquant précisément comment tu as été trompé.
+
+:::caution[Dépend de ta situation]
+Le remboursement dépend de la façon dont la fraude s'est déroulée et de l'appréciation de ta banque. Garde toutes les traces : messages, numéros, captures d'écran.
+:::
 
 ## À ne pas confondre
 
-| Terme | Ce que c'est |
-| --- | --- |
-| Fraude | Quelqu'un t'a trompé pour prendre ton argent. |
-| Litige commercial | Tu as payé un bien non livré : c'est de la protection du consommateur. Voir [[contrats-consommation]]. |
-| Faillite bancaire | Couverte par la [[garantie-des-depots]], pas liée à la fraude. |
+Une fraude, c'est quelqu'un qui t'a trompé pour prendre ton argent. Ce n'est pas la même chose qu'un **litige commercial** : si tu as payé un vendeur réel pour un bien jamais livré, c'est la protection du consommateur qui s'applique, avec ses propres recours. → [[contrats-consommation]]
+
+Ce n'est pas non plus une **faillite bancaire**. Si ta banque fait faillite, c'est la [[garantie-des-depots|garantie des dépôts]] qui te protège, et elle n'a rien à voir avec la fraude.
+
+## Nature des chiffres de cette page
+
+🔴 Le numéro de Card Stop, 078 170 170, est un numéro officiel. 🔵 L'appel du faux conseiller et le virement de 2 500 € sont un exemple fictif.

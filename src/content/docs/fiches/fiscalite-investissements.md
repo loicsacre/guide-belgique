@@ -28,36 +28,85 @@ sidebar:
   order: 4
 ---
 
-## En langage simple
+## Pas un impôt, mais plusieurs moments taxés
 
-Il n'y a pas « un impôt sur les placements » mais une **collection de taxes** qui frappent des moments différents : quand tu achètes ou vends, quand tu touches un revenu, quand tu détiens beaucoup, et désormais quand tu réalises un gain. La bonne nouvelle : via une banque ou un courtier **belge**, presque tout est retenu à la source.
+On imagine volontiers qu'il existe « un impôt sur les placements ». En réalité, il y a une **collection de taxes**, et chacune frappe à un moment différent de la vie de ton placement : quand tu achètes ou vends, quand ton placement te rapporte un revenu, quand tu détiens beaucoup, et, depuis 2026, quand tu réalises un gain en revendant.
 
-## La carte des prélèvements
+La bonne nouvelle, c'est que si tu passes par une banque ou un courtier **belge**, presque tout est retenu à la source : l'intermédiaire calcule et verse lui-même les taxes au fisc, et tu n'as quasiment rien à faire. Prenons les moments un par un.
+
+## Quand tu achètes ou vends : la TOB
+
+À chaque transaction en bourse, à l'achat comme à la vente, l'État prélève la **taxe sur les opérations de bourse**, la TOB, qu'on appelle aussi taxe boursière. Son taux dépend de ce que tu achètes : 0,12 % pour les obligations et les ETF de capitalisation enregistrés en Belgique, 0,35 % pour les actions, et **1,32 %** pour les ETF de capitalisation non enregistrés en Belgique. Chaque taux est plafonné par opération.
+
+Un **ETF de capitalisation**, c'est un fonds coté qui réinvestit automatiquement les dividendes qu'il reçoit au lieu de te les verser. Le courtier belge retient la TOB pour toi ; avec un courtier étranger, c'est à toi de la déclarer et de la payer, chaque mois. → [[actions-obligations-etf]]
+
+## Quand ton placement te rapporte : le précompte mobilier
+
+Les **dividendes** (la part du bénéfice qu'une entreprise verse à ses actionnaires) et les **intérêts** (ce que te rapporte un prêt, une obligation ou un compte) subissent le [[precompte-mobilier|précompte mobilier]] de **30 %**. C'est un impôt retenu à la source : la banque belge le prélève au moment où elle te verse le revenu, et en général l'affaire est réglée.
+
+Deux exonérations existent. La première porte sur les intérêts d'un compte d'épargne réglementé, jusqu'à 1 020 €. La seconde porte sur environ 860 € de dividendes par personne, mais la banque retient quand même les 30 % : il faut les récupérer via ta déclaration. → [[dividendes]] · [[compte-epargne]]
+
+Les **fonds obligataires** ont une règle à eux, la « **taxe Reynders** », du nom du ministre qui l'a créée. Quand tu revends un fonds qui détient plus de 10 % d'obligations, la partie de ta plus-value qui correspond aux intérêts accumulés par le fonds est taxée à 30 %, retenus par la banque belge. L'idée : éviter qu'on échappe au précompte sur les intérêts simplement en les laissant s'accumuler dans un fonds.
+
+## Quand tu détiens beaucoup : la taxe sur les comptes-titres
+
+La **taxe annuelle sur les comptes-titres** ne concerne que les gros portefeuilles. Elle est de 0,15 % par an, mais seulement si la valeur moyenne du compte-titres dépasse **1 000 000 €**. La banque belge la retient. Pour la plupart des épargnants, elle ne s'applique jamais.
+
+## Quand tu revends avec un gain : la taxe sur les plus-values
+
+C'est la nouveauté de 2026. Jusqu'ici, les **plus-values**, le gain que tu fais en revendant un placement plus cher que tu ne l'as acheté, n'étaient pas taxées pour un particulier qui gère son patrimoine « en bon père de famille », c'est-à-dire de façon normale et prudente, sans spéculer.
+
+La nouvelle **taxe sur les plus-values financières** change cela : elle prélève **10 %** sur les plus-values réalisées. Mais elle prévoit une exonération annuelle, de l'ordre de 10 000 € et indexée, qui laisse une marge confortable aux petits portefeuilles. Les plus-values dites historiques, accumulées avant l'entrée en vigueur de la taxe, sont exonérées. Des règles particulières s'appliquent aux participations importantes. La taxe est retenue par l'intermédiaire belge, ou passe par la déclaration.
 
 :::note[Règle datée — 2026]
-| Moment | Taxe | Taux / seuil | Qui retient ? |
-| --- | --- | --- | --- |
-| **Achat et vente** | Taxe sur les opérations de bourse (TOB) | 0,12 % (obligations, ETF enregistrés en Belgique de capitalisation), 0,35 % (actions), **1,32 %** (ETF de capitalisation non enregistrés en Belgique) — plafonds par opération | Le courtier belge ; toi-même (déclaration mensuelle) via un courtier étranger |
-| **Revenus** | [[precompte-mobilier\|Précompte mobilier]] sur dividendes et intérêts | **30 %** (exonérations : 1 020 € d'intérêts d'épargne, ≈ 860 € de dividendes) | La banque belge |
-| **Fonds obligataires** | « Taxe Reynders » sur la partie intérêts de la plus-value à la vente d'un fonds détenant > 10 % d'obligations | 30 % | La banque belge |
-| **Détention** | Taxe annuelle sur les comptes-titres | 0,15 % si la valeur moyenne dépasse **1 000 000 €** par compte | La banque belge |
-| **Gain à la vente** | Taxe sur les plus-values financières (nouvelle) | **10 %** sur les plus-values réalisées, avec une exonération annuelle (ordre de 10 000 €, indexée) et des règles particulières pour les participations importantes ; plus-values historiques (avant l'entrée en vigueur) exonérées | Retenue par l'intermédiaire belge ou déclaration |
+Les taux et seuils de la taxe sur les plus-values sont ceux annoncés pour son entrée en vigueur en 2026 : vérifie les modalités définitives et la pratique de ton intermédiaire.
 :::
 
-Les taux et seuils de la taxe sur les plus-values sont ceux annoncés pour son entrée en vigueur en 2026 : vérifie les modalités définitives et la pratique de ton intermédiaire.
+## Toute la carte en un coup d'œil
 
-## Ce qui est favorable
+| Moment | Taxe | Taux / seuil | Qui retient ? |
+| --- | --- | --- | --- |
+| **Achat et vente** | TOB | 0,12 % (obligations, ETF de capitalisation enregistrés en Belgique), 0,35 % (actions), 1,32 % (ETF de capitalisation non enregistrés en Belgique), plafonnés par opération | Le courtier belge ; toi-même, chaque mois, via un courtier étranger |
+| **Revenus** | Précompte mobilier | 30 % (exonérations : 1 020 € d'intérêts d'épargne, ≈ 860 € de dividendes) | La banque belge |
+| **Fonds obligataires** | Taxe Reynders (fonds à plus de 10 % d'obligations) | 30 % sur la partie intérêts de la plus-value | La banque belge |
+| **Détention** | Taxe sur les comptes-titres | 0,15 % au-delà de 1 000 000 € de valeur moyenne par compte | La banque belge |
+| **Gain à la vente** | Taxe sur les plus-values financières | 10 %, exonération annuelle de l'ordre de 10 000 € (indexée), plus-values historiques exonérées | L'intermédiaire belge, ou déclaration |
 
-- Les **plus-values** sur actions étaient historiquement non taxées pour une gestion « en bon père de famille » : la nouvelle taxe change cela, mais l'exonération annuelle laisse une marge pour les petits portefeuilles.
-- Les ETF de **capitalisation** évitent le précompte sur les dividendes réinvestis (pas de 30 % chaque année) : au prix d'une TOB plus élevée à l'achat/vente s'ils ne sont pas enregistrés en Belgique.
-- L'[[epargne-pension]] et l'assurance groupe ont un régime propre, avantageux.
+## Un exemple qu'on suit
 
-## Compte à l'étranger
+Exemple **fictif**, via une banque belge. Tu achètes pour 10 000 € d'actions : la TOB à 0,35 % te coûte 35 €, en plus des frais de ta banque. L'année suivante, ces actions te versent 100 € de dividendes : la banque retient 30 €, et tu en reçois 70. Tu pourras récupérer ces 30 € via ta déclaration, puisqu'ils restent sous l'exonération d'environ 860 € de dividendes. Plus tard, tu revends avec un gain de 2 000 € : tu repaies la TOB sur la vente, mais ce gain reste sous l'exonération annuelle de la taxe sur les plus-values, donc rien à payer de ce côté.
 
-Un courtier étranger (néerlandais, allemand…) ne retient ni TOB ni précompte : tu dois **déclarer** le compte au Point de contact central de la BNB, cocher la case dans ta déclaration, déclarer les dividendes (cadre VII) et payer la TOB toi-même chaque mois. C'est faisable, mais c'est de la paperasse.
+## Ce qui joue en ta faveur
+
+Plusieurs mécanismes restent favorables. Pour les plus-values, l'exonération annuelle laisse une marge pour les petits portefeuilles, même si la nouvelle taxe met fin à l'absence totale d'impôt.
+
+Les ETF de **capitalisation** évitent aussi le précompte sur les dividendes réinvestis : pas de 30 % prélevés chaque année sur les dividendes, puisqu'ils ne te sont pas versés. Le prix à payer, c'est une TOB plus élevée à l'achat et à la vente s'ils ne sont pas enregistrés en Belgique.
+
+Enfin, l'[[epargne-pension]] et l'assurance groupe, la pension complémentaire alimentée par ton employeur, ont un régime fiscal propre, avantageux.
+
+## Si ton compte est à l'étranger
+
+Un courtier établi à l'étranger, aux Pays-Bas ou en Allemagne par exemple, ne retient ni TOB ni précompte belge. Toute la paperasse te revient.
+
+1. Tu dois **déclarer l'existence du compte** au Point de contact central (PCC) de la Banque nationale de Belgique (BNB), le registre où sont signalés les comptes des Belges.
+2. Tu dois **cocher la case** correspondante dans ta [[declaration-fiscale|déclaration d'impôt]].
+3. Tu dois **déclarer tes dividendes** dans le cadre VII de la déclaration ; le fisc calculera les 30 % et te les réclamera.
+4. Tu dois **payer toi-même la TOB**, par une déclaration mensuelle.
+
+C'est faisable, mais c'est un vrai travail administratif. → [[categories-de-revenus]]
 
 ## Ce que ça change pour toi
 
-- Pour un débutant, un **intermédiaire belge** simplifie tout : tout est retenu, rien ou presque à déclarer.
-- Compare le coût total : frais de transaction + TOB + frais du fonds + fiscalité des dividendes.
-- Garde les **relevés d'achat** : ils prouvent le prix d'acquisition pour la taxe sur les plus-values.
+Si tu débutes, un **intermédiaire belge** simplifie tout : les taxes sont retenues à la source, et tu n'as presque rien à déclarer.
+
+Pour comparer deux façons d'investir, regarde le **coût total** : frais de transaction, TOB, frais annuels du fonds et fiscalité des dividendes. Un courtier bon marché peut se révéler plus cher une fois tout additionné, et inversement.
+
+Garde enfin tes **relevés d'achat**. Ils prouvent le prix auquel tu as acheté, et c'est à partir de ce prix qu'on calculera ta plus-value pour la nouvelle taxe.
+
+## À ne pas confondre
+
+Le **précompte mobilier** taxe ce que ton placement te rapporte en cours de route (intérêts, dividendes) ; la **taxe sur les plus-values** taxe le gain fait à la revente ; la **TOB** taxe la transaction elle-même, gain ou pas. Et la **taxe sur les comptes-titres** ne porte ni sur un revenu ni sur un gain, mais sur la valeur détenue, au-delà d'un million.
+
+## Nature des chiffres de cette page
+
+🔴 Les taux de TOB (0,12 %, 0,35 %, 1,32 %), le précompte mobilier de 30 % et ses exonérations (1 020 € d'intérêts, environ 860 € de dividendes), la taxe Reynders sur les fonds à plus de 10 % d'obligations, la taxe de 0,15 % au-delà de 1 000 000 € et la taxe de 10 % sur les plus-values avec son exonération de l'ordre de 10 000 € sont des règles officielles valables en 2026. 🔵 Les 10 000 € d'actions, les 100 € de dividendes et le gain de 2 000 € sont des exemples fictifs.

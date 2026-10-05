@@ -28,7 +28,7 @@ sidebar:
   order: 10
 ---
 
-## En langage simple
+## Ce que ta société te paie pour ton travail
 
 Quand tu travailles pour ta propre société, elle te paie comme elle paierait n'importe qui : c'est ta **rémunération de dirigeant**. Pour la société, c'est une **charge**, qui réduit son bénéfice et donc son [[impot-des-societes|impôt]]. Pour toi, c'est un **revenu professionnel** : tu paies dessus des [[cotisations-independant|cotisations sociales d'indépendant]] et de l'[[ipp|IPP]], comme sur un salaire, avec les mêmes tranches.
 

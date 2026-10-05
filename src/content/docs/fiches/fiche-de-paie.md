@@ -22,28 +22,26 @@ sidebar:
   order: 4
 ---
 
-## En langage simple
+## Le ticket de caisse de ton salaire
 
-La fiche de paie, c'est le **ticket de caisse** de ton salaire. Elle est obligatoire à chaque règlement définitif de la rémunération (en pratique chaque mois), sur papier ou en version électronique. Elle est souvent produite par un **secrétariat social** (SD Worx, Securex, Partena, Acerta, Liantis…) pour le compte de ton employeur.
+Chaque mois, à côté du virement de ton salaire, tu reçois un document plein de lignes et de codes : la fiche de paie. Elle répond à une question simple, « comment mon brut est-il devenu mon net ? », en montrant chaque montant ajouté ou retiré en chemin. C'est le **ticket de caisse** de ton salaire.
 
-## La lire en 4 blocs
+Elle n'est pas facultative. La loi sur la protection de la rémunération oblige l'employeur à te la remettre à chaque règlement définitif de ta rémunération, donc en pratique chaque mois. Elle peut être sur papier ou en version électronique.
 
-```text
-┌ 1. QUI / QUAND ─────────────────────────────────────────┐
-│ employeur, numéro de matricule, période, commission     │
-│ paritaire, jours/heures prestés, régime de travail      │
-├ 2. BRUT ────────────────────────────────────────────────┤
-│ salaire de base, heures sup, primes, avantages en nature│
-├ 3. RETENUES ────────────────────────────────────────────┤
-│ ONSS personnel → IMPOSABLE → précompte professionnel,   │
-│ cotisation spéciale de sécurité sociale                 │
-├ 4. NET ─────────────────────────────────────────────────┤
-│ ± éléments non imposables (frais), − autres retenues    │
-│ = NET À PAYER                                           │
-└─────────────────────────────────────────────────────────┘
-```
+Souvent, ce n'est pas ton employeur lui-même qui la fabrique, mais un **secrétariat social** : une entreprise spécialisée (SD Worx, Securex, Partena, Acerta, Liantis…) qui calcule les salaires et remplit les obligations sociales pour le compte des employeurs. C'est pour cela que le logo en haut de ta fiche n'est pas toujours celui de ta société.
 
-## Une fiche type, ligne par ligne (montants fictifs sauf ONSS)
+## Quatre blocs, toujours dans le même ordre
+
+Une fiche de paie paraît compliquée, mais elle se lit de haut en bas, comme un calcul.
+
+1. **Qui et quand.** L'employeur, ton numéro de matricule (ton identifiant chez lui), la période, ta [[commission-paritaire]] (le secteur dont dépendent tes règles de salaire), les jours ou heures prestés et ton régime de travail (temps plein, mi-temps…).
+2. **Le brut.** Ton salaire de base, les heures supplémentaires, les primes et les avantages en nature.
+3. **Les retenues.** D'abord les cotisations sociales personnelles (ONSS), ce qui donne le montant **imposable** ; puis, sur ce montant, le précompte professionnel et la cotisation spéciale de sécurité sociale.
+4. **Le net.** On ajoute les éléments non imposables (des remboursements de frais), on retire les autres retenues, et on obtient le **net à payer**.
+
+## Une fiche type, ligne par ligne
+
+Voici une fiche de paie **fictive**, pour un brut de 3 500 € avec une voiture de société. Seul le taux ONSS de 13,07 % est réel ; les autres montants sont inventés pour l'exemple.
 
 | Ligne | Montant | Ce que ça veut dire |
 | --- | ---: | --- |
@@ -59,21 +57,29 @@ La fiche de paie, c'est le **ticket de caisse** de ton salaire. Elle est obligat
 | Chèques-repas, part personnelle | − 20,00 | Ta contribution aux chèques-repas. |
 | **Net à payer** | **2 442,55** | Ce qui arrive sur ton compte. |
 
-## Les mentions obligatoires
+Deux lignes déroutent toujours. L'**ATN**, l'avantage de toute nature, est la valeur forfaitaire que le fisc attribue à l'usage privé de ta voiture de société. Il est ajouté pour calculer l'impôt, puis retiré plus bas (la « neutralisation »), parce que tu ne l'as jamais reçu en argent. Résultat : tu paies un peu plus de précompte, mais tu as la voiture. → [[voiture-de-societe]] · [[avantages-extralegaux]]
 
-La loi impose notamment : identité de l'employeur et du travailleur, période, prestations, taux de rémunération de base, montants bruts, retenues de sécurité sociale, montant imposable, précompte professionnel, montants non imposables, retenues diverses (avances, saisies…) et **net à payer**. Certaines commissions paritaires exigent des mentions supplémentaires.
+L'**indemnité de télétravail**, elle, arrive après l'impôt. C'est un remboursement de frais, pas du salaire : elle n'est soumise ni aux cotisations ni à l'impôt, et elle s'ajoute directement au net.
 
-## Ce que ça change pour toi
+La **cotisation spéciale de sécurité sociale** est une petite retenue mensuelle dont le montant définitif dépend des revenus de ton ménage ; elle est régularisée sur l'avertissement-extrait de rôle (AER), le décompte final de ton impôt. → [[avertissement-extrait-de-role]]
 
-1. **Vérifie** chaque mois : jours prestés, primes, heures sup, CP.
-2. **Garde** tes fiches : utiles pour un crédit, un litige, ta pension.
-3. Les mois de **pécule de vacances** et de **13e mois**, le précompte est calculé différemment (taux spécifique), d'où un net qui surprend.
-4. En fin d'année, ton employeur résume tout dans la **fiche fiscale 281.10**, préremplie dans ta [[declaration-fiscale]].
+Tu peux aussi parcourir une [fiche de paie annotée](../../documents/fiche-de-paie/), dont chaque ligne renvoie à sa fiche.
+
+## Ce que la loi oblige à y écrire
+
+La fiche de paie doit notamment mentionner l'identité de l'employeur et du travailleur, la période, les prestations, le taux de rémunération de base, les montants bruts, les retenues de sécurité sociale, le montant imposable, le précompte professionnel, les montants non imposables, les retenues diverses (avances sur salaire, saisies…) et le **net à payer**. Certaines commissions paritaires exigent des mentions supplémentaires.
+
+## Ce que tu dois en faire
+
+- **Vérifie-la chaque mois.** Regarde les jours prestés, les primes, les heures supplémentaires et la commission paritaire indiquée. Une erreur repérée tôt est plus simple à faire corriger.
+- **Garde tes fiches.** Elles te serviront pour demander un crédit, en cas de litige avec un employeur, ou pour vérifier tes droits à la pension.
+- **Ne t'inquiète pas des mois bizarres.** Les mois du **pécule de vacances** et du **13e mois**, le précompte est calculé autrement, avec un taux spécifique plus élevé. Le net surprend, mais c'est normal. → [[pecule-de-vacances]] · [[treizieme-mois]]
+- **Repère la fiche 281.10 en fin d'année.** Ton employeur résume toute l'année dans cette **fiche fiscale**, qui est préremplie dans ta [[declaration-fiscale|déclaration d'impôt]].
 
 ## À ne pas confondre
 
-| Terme | Ce que c'est |
-| --- | --- |
-| Fiche de paie | Mensuelle, établie par l'employeur, pour toi. |
-| Fiche 281.10 | Annuelle, fiscale, envoyée aussi au SPF Finances. |
-| Compte individuel | Récapitulatif annuel tenu par l'employeur (document social). |
+La **fiche de paie** est mensuelle : l'employeur l'établit pour toi. La **fiche 281.10** est annuelle et fiscale : elle récapitule tes revenus de l'année et elle est envoyée aussi au SPF Finances, qui s'en sert pour préremplir ta déclaration. Le **compte individuel**, enfin, est un récapitulatif annuel que l'employeur tient pour chaque travailleur : c'est un document social, pas un document fiscal.
+
+## Nature des chiffres de cette page
+
+🔴 Le taux de 13,07 % de cotisation ONSS personnelle et la liste des mentions obligatoires sont des règles officielles. 🔵 Le brut de 3 500 €, l'ATN de 150 €, le précompte de 700 €, la cotisation spéciale de 30 €, l'indemnité de télétravail de 150 €, la part de chèques-repas de 20 € et le net de 2 442,55 € sont fictifs.

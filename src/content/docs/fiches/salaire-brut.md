@@ -9,7 +9,7 @@ organisme: "Employeur, secrétariat social"
 short: "La rémunération avant les retenues sociales et fiscales : c'est le chiffre du contrat et des offres d'emploi, pas ce que tu reçois."
 aliases: [brut, rémunération brute, salaire mensuel brut]
 prerequisites: [emploi-salarie]
-related: [cotisations-sociales, precompte-professionnel, salaire-net, fiche-de-paie, pecule-de-vacances, treizieme-mois]
+related: [cotisations-sociales, precompte-professionnel, salaire-net, fiche-de-paie, pecule-de-vacances, treizieme-mois, cout-employeur, commission-paritaire]
 last_verified: 2026-10-02
 sources:
   - title: Salaire brut / net
@@ -22,68 +22,71 @@ sidebar:
   order: 2
 ---
 
-## En langage simple
+## Le chiffre dont tout le monde parle
 
-Quand quelqu'un dit « je gagne 3 500 € », il parle presque toujours du **brut mensuel**. C'est le point de départ du calcul, pas le point d'arrivée.
+Quand quelqu'un te dit « je gagne 3 500 € », il parle presque toujours de son **salaire brut mensuel**. C'est le montant écrit dans son contrat, celui des offres d'emploi, celui qu'on négocie. Mais ce n'est pas ce qu'il reçoit sur son compte.
+
+Le brut est un point de départ. Pour arriver au **salaire net**, ce qui tombe réellement sur ton compte, ton employeur retire deux choses :
+
+1. **Tes cotisations sociales personnelles**, ta part pour financer la sécurité sociale (pension, soins de santé, chômage…). → [[cotisations-sociales]]
+2. **Le précompte professionnel**, une avance sur ton impôt, versée chaque mois au fisc à ta place. → [[precompte-professionnel]]
+
+Viennent ensuite d'autres éléments, en plus ou en moins : un avantage, une retenue pour les chèques-repas, un remboursement de frais. Ce qui reste, c'est le net. → [[salaire-net]]
+
+Prenons l'exemple **fictif** d'un employé à 3 500 € brut. Ses cotisations personnelles valent 13,07 % du brut, soit 457,45 €. Il reste 3 042,55 €, et c'est sur ce montant que se calcule le précompte. → [[fiche-de-paie]]
+
+## Pourquoi on parle en brut plutôt qu'en net
+
+Il peut sembler étrange de négocier un chiffre qu'on ne touche jamais. Mais le brut a une qualité que le net n'a pas : il est **le même pour tout le monde**.
+
+Le net, lui, dépend de ta situation personnelle. Deux collègues avec le même brut n'auront pas le même net si l'un vit seul et l'autre a deux enfants à charge, parce que le précompte n'est pas le même. Le net ne peut donc pas servir d'étalon.
+
+C'est pour ça que la loi prend le brut comme **montant de référence**. Tout se calcule à partir de lui : les cotisations, le précompte, les barèmes de ton secteur, l'indexation, le préavis en cas de licenciement, et même ta future pension.
+
+## Un salaire, trois montants
+
+Le brut se trouve au milieu de deux autres chiffres, et il est utile de les situer.
+
+Au-dessus, il y a le **coût total employeur**. C'est ce que ton emploi coûte vraiment à l'entreprise : ton brut, plus les cotisations patronales que l'employeur paie en plus et que tu ne vois pas, plus les avantages. → [[cout-employeur]]
+
+En dessous, il y a le **net**, ce qui arrive sur ton compte après les retenues. Le brut, entre les deux, est le chiffre qu'on négocie.
+
+## Pourquoi on ne touche pas 12 fois son brut
+
+Un employé belge ne reçoit généralement pas douze fois son brut mensuel dans l'année. Il en reçoit plutôt près de quatorze. Voici comment on y arrive, en ordre de grandeur :
 
 ```text
-SALAIRE BRUT
-   │
-   ├── − cotisations sociales personnelles
-   ├── − précompte professionnel
-   └── ± autres éléments (avantages, retenues, remboursements)
-          │
-          ▼
-     SALAIRE NET
+12 salaires mensuels          12    mois
++ 13e mois (selon ta CP)     ≈ 1    mois
++ double pécule de vacances  ≈ 0,92 mois
+= total                     ≈ 13,92 mois
 ```
 
-## Pourquoi ça existe
+Le **[[treizieme-mois|treizième mois]]** est une prime de fin d'année, souvent égale à un mois de brut, que prévoient beaucoup de secteurs. Le **double [[pecule-de-vacances|pécule de vacances]]** est une prime versée avant l'été, d'environ 92 % d'un mois de brut.
 
-Le brut existe parce que la loi veut un montant **de référence** commun à tous : c'est sur lui que se calculent les cotisations, le précompte, les barèmes sectoriels, l'indexation, le préavis et la pension. Le net, lui, varie d'une personne à l'autre selon sa situation ; il ne peut pas servir d'étalon.
-
-## Brut ≠ coût employeur ≠ net
-
-```text
-   coût total employeur      ← brut + cotisations patronales + avantages
-          ▲
-     salaire brut            ← ce qui est négocié
-          ▼
-     salaire net             ← ce qui arrive sur ton compte
-```
-
-## Mensuel vs annuel
-
-Un employé belge ne touche généralement pas 12 fois son brut mensuel :
-
-| Élément | Ordre de grandeur (employé) |
-| --- | --- |
-| 12 salaires mensuels | 12 mois |
-| [[treizieme-mois]] (selon ta CP) | ≈ 1 mois |
-| Double [[pecule-de-vacances]] | ≈ 0,92 mois |
-| **Total** | **≈ 13,92 mois** |
-
-C'est pour ça qu'on compare souvent les offres en **brut annuel** (ou « package »).
+Résultat : pour comparer deux offres, on parle souvent en **brut annuel**, ou en « package » quand on ajoute les avantages. Le brut mensuel seul peut tromper.
 
 :::caution[Dépend de ta situation]
-Le 13e mois dépend de ta [[commission-paritaire]] ; les ouvriers reçoivent leur pécule de vacances par une caisse de vacances et non de l'employeur.
+Le 13e mois dépend de ta [[commission-paritaire]], l'organe de ton secteur qui fixe barèmes et primes : tous les secteurs ne le prévoient pas. Et les ouvriers ne reçoivent pas leur pécule de vacances de leur employeur, mais d'une caisse de vacances.
 :::
 
-## Exemple
+## Un exemple : deux offres qui se ressemblent
 
-Deux offres :
+Imagine deux offres **fictives** pour un poste d'employé. L'offre A paie plus par mois, mais sans treizième mois. L'offre B paie moins par mois, avec un treizième mois.
 
 | | Offre A | Offre B |
 | --- | --- | --- |
 | Brut mensuel | 3 600 € | 3 400 € |
 | 13e mois | non | oui |
-| Brut annuel approximatif | 3 600 × 12,92 ≈ 46 500 € | 3 400 × 13,92 ≈ 47 300 € |
+| Mois payés dans l'année | 12,92 | 13,92 |
+| Brut annuel approximatif | ≈ 46 500 € | ≈ 47 300 € |
 
-Chiffres illustratifs : B paie moins par mois mais plus par an, avant même de compter les avantages.
+L'offre A semble meilleure quand on regarde la fiche de paie de janvier. Mais sur l'année, c'est B qui paie le plus, et cela avant même de compter les avantages comme les chèques-repas ou une assurance.
 
 ## À ne pas confondre
 
-| Terme | Ce que c'est |
-| --- | --- |
-| Brut | Avant retenues. |
-| [[revenu-imposable\|Imposable]] | Brut − cotisations personnelles : la base du précompte. |
-| [[salaire-net\|Net]] | Après toutes les retenues. |
+Le **brut** est le montant avant toute retenue. Le **revenu imposable**, au sens de la fiche de paie, est le brut moins tes cotisations personnelles : c'est la base sur laquelle se calcule le précompte (3 042,55 € dans l'exemple). Le **net** est ce qui reste après toutes les retenues. → [[revenu-imposable]] · [[salaire-net]]
+
+## Nature des chiffres de cette page
+
+🔴 Le taux de cotisations personnelles de 13,07 % est une règle officielle en vigueur en 2026. 🟠 Le treizième mois d'environ un mois, le double pécule d'environ 0,92 mois et le total d'environ 13,92 mois sont des ordres de grandeur pour un employé. 🔵 Le salaire de 3 500 € et les offres A (3 600 €) et B (3 400 €) sont des exemples fictifs.

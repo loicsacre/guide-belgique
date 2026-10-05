@@ -27,55 +27,50 @@ sidebar:
   order: 1
 ---
 
-## En langage simple
+## Pourquoi la comparaison loyer contre mensualité est trompeuse
 
-« Pourquoi payer 950 € de loyer à fonds perdus alors qu'avec 950 € de mensualité je rembourserais mon propre logement ? » L'intuition est compréhensible, mais la comparaison est fausse des deux côtés :
+« Pourquoi payer 950 € de loyer à fonds perdus alors qu'avec 950 € de mensualité je rembourserais mon propre logement ? » L'intuition est compréhensible. Mais la comparaison est fausse des deux côtés.
 
-- la **mensualité n'est pas une dépense** en entier : une part rembourse du capital, qui te revient à la revente ;
-- l'**achat a des coûts que le locataire n'a pas** : frais d'entrée, intérêts, précompte immobilier, assurance du bâtiment, entretien, charges de copropriété non récupérables.
+D'abord, la **mensualité n'est pas une dépense en entier**. La mensualité, c'est ce que tu verses chaque mois à la banque pour rembourser ton crédit. Une partie paie les intérêts, le prix de l'argent emprunté, et celle-là est perdue. L'autre partie rembourse le capital, c'est-à-dire la somme empruntée elle-même : cet argent-là te revient le jour où tu revends, puisque tu dois moins à la banque. → [[mensualite-amortissement]]
 
-La bonne comparaison oppose le **loyer** aux **coûts non récupérables du propriétaire**, et tient compte de ce que le locataire fait de l'argent qu'il n'a pas immobilisé.
+Ensuite, l'**achat a des coûts que le locataire n'a pas** : les frais d'entrée le jour de l'achat, les intérêts, le précompte immobilier, l'assurance du bâtiment, l'entretien, les charges de copropriété qu'on ne peut pas répercuter sur un locataire.
 
-## Pourquoi ça existe
+La bonne comparaison oppose donc le **loyer** aux **coûts non récupérables du propriétaire**, ce qu'il ne reverra jamais. Et elle tient compte de ce que le locataire fait de l'argent qu'il n'a pas mis dans la brique.
 
-La question n'a rien d'universel : en Allemagne ou en Suisse, louer toute sa vie est la norme ; en Belgique, les deux tiers des ménages sont propriétaires. Ce choix dépend du prix relatif des loyers et des biens, de la fiscalité (les Régions favorisent aujourd'hui l'achat du logement unique par des droits réduits), de la stabilité de l'emploi et de préférences personnelles. Il n'y a donc pas de « bonne » réponse en général, seulement une bonne méthode pour la trouver dans ton cas.
+## Pourquoi il n'y a pas de bonne réponse universelle
 
-## Comment ça marche : les deux colonnes
+La question n'a rien d'évident. En Allemagne ou en Suisse, louer toute sa vie est la norme. En Belgique, les deux tiers des ménages sont propriétaires. Ce choix dépend du prix des loyers par rapport au prix des biens, de la fiscalité (les Régions favorisent aujourd'hui l'achat du logement unique par des droits réduits), de la stabilité de l'emploi et de préférences personnelles.
 
-Prenons un appartement de **250 000 €** en Wallonie, acheté avec 50 000 € d'apport et un crédit de 200 000 € à 3 % sur 25 ans (mensualité 948 €), ou loué **950 €** par mois. Tous les chiffres sont fictifs mais réalistes.
+Il n'y a donc pas de « bonne » réponse en général. Il y a seulement une bonne méthode pour la trouver dans ton cas : poser les deux colonnes côte à côte, puis regarder comment elles évoluent avec le temps.
 
-### Ce que paie le propriétaire
+## Ce que paie chacun, mois après mois
 
-| Poste | Montant | Récupérable ? |
-| --- | ---: | --- |
-| Frais d'entrée : [[droits-enregistrement\|droits d'enregistrement]] (3 %, habitation propre et unique), notaire, frais de crédit | ≈ 15 800 € une fois | **Non** |
-| Intérêts du crédit | 500 €/mois au début, décroissants (voir [[mensualite-amortissement]]) | **Non** |
-| Capital remboursé | 448 €/mois au début, croissants | **Oui** : c'est de l'épargne forcée |
-| [[precompte-immobilier\|Précompte immobilier]], [[assurance-habitation\|assurance]], entretien (≈ 1 % de la valeur par an), charges de copropriété non récupérables | ≈ 4 250 €/an, soit ≈ 350 €/mois | **Non** |
-| Apport immobilisé | 65 800 € (apport + frais) | Il ne rapporte plus rien ailleurs |
+Prenons un exemple **fictif** mais réaliste : un appartement de **250 000 €** en Wallonie. Soit tu l'achètes avec 50 000 € d'apport (l'argent que tu mets de ta poche) et un crédit de 200 000 € à 3 % sur 25 ans, soit une mensualité de 948 €. Soit tu loues un logement équivalent **950 €** par mois.
 
-### Ce que paie le locataire
+**Le propriétaire** paie d'abord, une seule fois, environ 15 800 € de frais d'entrée : les [[droits-enregistrement|droits d'enregistrement]], l'impôt régional sur l'achat (ici 3 %, le taux de l'habitation propre et unique en Wallonie), les frais de notaire et les frais de crédit. Ces frais sont perdus. Ensuite, chaque mois :
 
-| Poste | Montant |
-| --- | ---: |
-| Loyer, indexé ≈ 2 %/an | 950 €/mois |
-| Assurance locataire | ≈ 15 €/mois |
-| Son apport reste placé | 65 800 € à 2 % (compte d'épargne) ou plus |
+- **Les intérêts** représentent environ 500 € au début, puis diminuent avec le temps. Ils ne sont pas récupérables.
+- **Le capital remboursé** représente environ 448 € au début, puis augmente. Il est récupérable : c'est une épargne forcée.
+- **Les autres charges** font environ 4 250 € par an, soit 350 € par mois : le [[precompte-immobilier|précompte immobilier]] (l'impôt annuel sur le bien), l'[[assurance-habitation|assurance]], l'entretien (on compte souvent 1 % de la valeur du bien par an) et les charges de copropriété non récupérables. Rien de tout cela n'est récupérable.
 
-### Le piège de la comparaison mensuelle
+Enfin, son apport et ses frais, 65 800 € au total, sont immobilisés dans le logement : cet argent ne rapporte plus rien ailleurs.
+
+**Le locataire**, lui, paie son loyer de 950 €, indexé d'environ 2 % par an (il suit le coût de la vie, voir [[indexation-loyer]]), et une assurance locataire d'environ 15 € par mois. Ses 65 800 € restent placés, par exemple à 2 % sur un compte d'épargne, ou mieux s'il les investit.
+
+Mis côte à côte, les flux mensuels donnent ceci :
 
 ```text
-Propriétaire : 948 € de mensualité + 350 € de charges  = 1 298 €/mois sortent du compte
+Propriétaire : 948 € de mensualité + 350 € de charges = 1 298 €/mois sortent du compte
    dont « vraie dépense » : 500 € d'intérêts + 350 € de charges = 850 €
    dont épargne forcée : 448 € de capital
-Locataire     : 965 €/mois sortent du compte, aucune épargne forcée
+Locataire    : 965 €/mois sortent du compte, aucune épargne forcée
 ```
 
-Mois après mois, le propriétaire « dépense » moins (850 € contre 965 €) **mais** il a payé 15 800 € de frais le premier jour et immobilisé son apport. Tout le raisonnement consiste à savoir en combien de temps l'avantage mensuel rattrape le handicap de départ.
+Voilà le piège. Chaque mois, le propriétaire « dépense » moins que le locataire : 850 € contre 965 €. Mais il a payé 15 800 € de frais le premier jour et immobilisé son apport. Toute la question est donc de savoir **en combien de temps son avantage mensuel rattrape ce handicap de départ**.
 
-## Exemple : la course entre les deux (mêmes hypothèses)
+## Qui gagne la course, et quand
 
-Ce que le propriétaire **récupère s'il revend** (prix − capital restant dû − 2 % de frais de vente), contre ce que le locataire **a accumulé** (apport placé à 2 % + la différence de flux mensuels).
+Pour le savoir, on compare deux montants à différents moments. D'un côté, ce que le propriétaire récupère s'il revend : le prix de vente, moins ce qu'il doit encore à la banque (le capital restant dû), moins environ 2 % de frais de vente. De l'autre, ce que le locataire a accumulé : son apport placé à 2 %, plus la différence de flux mensuels qu'il a épargnée. Le résultat dépend surtout de l'évolution du prix du bien, que personne ne connaît d'avance. Voici trois scénarios, avec les mêmes hypothèses fictives :
 
 | Après | Prix stable | Prix +2 %/an | Prix −1 %/an |
 | --- | --- | --- | --- |
@@ -83,39 +78,46 @@ Ce que le propriétaire **récupère s'il revend** (prix − capital restant dû
 | 7 ans | locataire **+8 000 €** | propriétaire **+29 000 €** | locataire **+25 000 €** |
 | 15 ans | propriétaire **+26 000 €** | propriétaire **+112 000 €** | locataire **+9 000 €** |
 
-Trois lectures :
+Ce tableau dit trois choses.
 
-1. **Le début est toujours défavorable à l'acheteur** : les frais d'entrée et les intérêts des premières années pèsent, le capital remboursé est encore faible. Revendre après 3 ans coûte cher dans tous les scénarios.
-2. **Le point d'équilibre bouge énormément** : vers 10 ans si les prix stagnent, dès 3 ans s'ils montent de 2 % par an, jamais avant 15 ans s'ils baissent de 1 % par an. L'évolution du marché, que personne ne connaît d'avance, pèse plus que tout le reste.
-3. **Le loyer compte autant que le prix** : avec un loyer équivalent de 1 100 € au lieu de 950 €, l'achat l'emporte bien plus vite ; à 800 €, bien plus lentement.
+**Le début est toujours défavorable à l'acheteur.** Les frais d'entrée et les intérêts des premières années pèsent lourd, et le capital remboursé est encore faible. Revendre après 3 ans coûte cher dans tous les scénarios.
+
+**Le point d'équilibre bouge énormément.** Le point d'équilibre, c'est le moment où acheter commence à rapporter plus que louer. Il arrive vers 10 ans si les prix stagnent, dès 3 ans s'ils montent de 2 % par an, et jamais avant 15 ans s'ils baissent de 1 % par an. L'évolution du marché pèse plus que tout le reste.
+
+**Le loyer compte autant que le prix.** Si un logement équivalent se louait 1 100 € au lieu de 950 €, l'achat l'emporterait bien plus vite. À 800 €, bien plus lentement.
 
 :::tip[Repère pratique, pas une règle]
-Les « 7 à 10 ans » qu'on entend partout sont la durée typique pour que, **à prix stable**, le capital remboursé et l'avantage mensuel compensent les frais d'entrée et les intérêts. Ce n'est ni une loi, ni un seuil : c'est un ordre de grandeur sous des hypothèses moyennes. Fais varier les tiennes avec l'[outil louer ou acheter](../../outils/louer-ou-acheter/).
+Les « 7 à 10 ans » qu'on entend partout sont la durée typique pour que, **à prix stable**, le capital remboursé et l'avantage mensuel compensent les frais d'entrée et les intérêts. Ce n'est ni une loi ni un seuil : c'est un ordre de grandeur sous des hypothèses moyennes. Fais varier les tiennes avec l'[outil louer ou acheter](../../outils/louer-ou-acheter/).
 :::
 
-## Dans la vraie vie
+## Ce qui fait pencher d'un côté ou de l'autre
+
+Au-delà des chiffres, ta situation fait souvent la différence. Le tableau suivant met en regard les signaux les plus courants.
 
 | Vers l'achat | Vers la location |
 | --- | --- |
-| Tu es à peu près sûr de rester longtemps (emploi, couple, ville) | Horizon incertain : mutation, séparation possible, envie de bouger |
-| Revenus stables, apport disponible **et** réserve conservée après l'achat | Pas d'apport, ou apport = toute ton épargne |
-| Loyers élevés par rapport aux prix dans ta zone | Prix élevés par rapport aux loyers (grandes villes, quartiers prisés) |
-| Tu veux transformer, choisir, ne plus dépendre d'un bailleur | Tu préfères la mobilité et ne pas gérer l'entretien |
-| Tu sais que sans crédit, tu n'épargnerais pas | Tu as la discipline d'investir la différence chaque mois |
+| Tu es à peu près sûr de rester longtemps (emploi, couple, ville). | Ton horizon est incertain : mutation, séparation possible, envie de bouger. |
+| Tes revenus sont stables, tu as un apport **et** il te reste une réserve après l'achat. | Tu n'as pas d'apport, ou ton apport représente toute ton épargne. |
+| Les loyers sont élevés par rapport aux prix dans ta zone. | Les prix sont élevés par rapport aux loyers (grandes villes, quartiers prisés). |
+| Tu veux transformer, choisir, ne plus dépendre d'un bailleur. | Tu préfères la mobilité et ne pas gérer l'entretien. |
+| Tu sais que sans crédit, tu n'épargnerais pas. | Tu as la discipline d'investir la différence chaque mois. |
 
-Le crédit est une **épargne forcée** : beaucoup de ménages s'enrichissent en achetant non parce que c'est financièrement optimal, mais parce qu'ils n'auraient pas placé la différence s'ils étaient restés locataires.
+La dernière ligne compte plus qu'elle n'en a l'air. Le crédit est une **épargne forcée** : beaucoup de ménages s'enrichissent en achetant, non parce que c'est financièrement optimal, mais parce qu'ils n'auraient pas placé la différence s'ils étaient restés locataires.
 
 ## Ce que ça change pour toi
 
-- Le vrai risque de l'achat n'est pas d'acheter « trop cher », c'est de **devoir revendre tôt** : les frais ne sont pas amortis et le capital restant dû est encore proche du montant emprunté.
-- Avant d'acheter, calcule ton **coût réel d'acquisition** ([[cout-reel-achat]]) et garde une réserve : une maison envoie des factures que le locataire ne voit jamais.
-- Si tu loues, ton patrimoine peut grandir autant, à condition d'**investir** réellement la différence. Voir [[patrimoine-net]] et [[rendement-risque-liquidite]].
-- La fiscalité pèse dans la balance : droits d'enregistrement réduits pour l'habitation unique, loyers imposés sur le revenu cadastral et non sur le loyer réel pour le bailleur, plus-value sur la résidence principale non taxée. Voir [[droits-enregistrement]] et [[revenu-cadastral]].
+Le vrai risque de l'achat n'est pas d'acheter « trop cher ». C'est de **devoir revendre tôt** : les frais d'entrée ne sont pas encore amortis, et le capital restant dû est encore proche du montant emprunté. Avant de te lancer, demande-toi donc honnêtement combien de temps tu comptes rester.
+
+Avant d'acheter, calcule aussi ton **coût réel d'acquisition**, c'est-à-dire le prix plus tous les frais, et garde une réserve : une maison envoie des factures que le locataire ne voit jamais. → [[cout-reel-achat]]
+
+Si tu loues, ton patrimoine peut grandir autant, à condition d'**investir** réellement la différence au lieu de la dépenser. → [[patrimoine-net]] · [[rendement-risque-liquidite]]
+
+Enfin, la fiscalité pèse dans la balance. Les droits d'enregistrement sont réduits pour l'habitation unique. Un bailleur est imposé sur le revenu cadastral (un revenu fictif fixé par l'administration) et non sur le loyer réel. Et la plus-value réalisée en revendant ta résidence principale n'est pas taxée. → [[droits-enregistrement]] · [[revenu-cadastral]]
 
 ## À ne pas confondre
 
-| Terme | Ce que c'est |
-| --- | --- |
-| Mensualité | Ce qui sort du compte : intérêts (coût) + capital (épargne). |
-| Coût non récupérable | Ce que tu ne reverras pas : frais d'entrée, intérêts, taxes, entretien, et le loyer pour le locataire. |
-| Point d'équilibre | L'horizon à partir duquel acheter a rapporté plus que louer **dans un scénario donné**. |
+La **mensualité** est ce qui sort de ton compte chaque mois : elle mélange un coût, les intérêts, et une épargne, le capital. Le **coût non récupérable** est ce que tu ne reverras jamais : les frais d'entrée, les intérêts, les taxes et l'entretien pour le propriétaire, le loyer pour le locataire. Et le **point d'équilibre** n'est pas une durée magique : c'est l'horizon à partir duquel acheter a rapporté plus que louer, **dans un scénario donné**.
+
+## Nature des chiffres de cette page
+
+🟠 Les deux tiers de ménages propriétaires, les 1 % de la valeur par an pour l'entretien et les « 7 à 10 ans » sont des repères, pas des règles. 🔴 Le taux de 3 % des droits d'enregistrement wallons pour l'habitation propre et unique est une règle régionale. 🔵 L'appartement de 250 000 €, le crédit de 200 000 € à 3 % sur 25 ans (948 €/mois), le loyer de 950 €, les 15 800 € de frais, les 350 € de charges, les placements à 2 % et tous les résultats du tableau sont un exemple fictif.

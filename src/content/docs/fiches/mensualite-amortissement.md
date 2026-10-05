@@ -21,11 +21,28 @@ sidebar:
   order: 4
 ---
 
-## En langage simple
+## Une mensualité constante, mais pas toujours la même
 
-Ta mensualité est constante, mais **sa composition change** chaque mois. Les intérêts se calculent sur le capital restant dû ; comme celui-ci diminue, la part d'intérêts baisse et la part de capital augmente. Au début, tu « loues » surtout de l'argent ; à la fin, tu en rembourses.
+Quand tu rembourses un crédit, tu paies en général le même montant chaque mois : c'est la **mensualité**. Pourtant, ce montant identique ne contient pas la même chose au premier mois et au dernier.
 
-## Exemple : 250 000 € à 3 % sur 25 ans → 1 185,53 €/mois
+Chaque mensualité se compose de deux parts. Une part d'**intérêts**, le prix que tu paies à la banque pour l'argent prêté. Et une part de **capital**, c'est-à-dire de remboursement réel de la somme empruntée. → [[credit]]
+
+Les intérêts se calculent chaque mois sur le **capital restant dû**, ce qu'il te reste encore à rembourser. Au début, ce montant est énorme, donc les intérêts aussi : ils prennent la plus grosse part de la mensualité, et il reste peu pour rembourser le capital. Mais chaque mois, le capital restant dû baisse un peu, donc les intérêts baissent, donc la part de capital augmente. Résultat : au début, tu « loues » surtout de l'argent ; à la fin, tu le rembourses.
+
+Le document qui détaille cette évolution, mois par mois, s'appelle le **tableau d'amortissement**. « Amortir » un crédit, c'est le rembourser petit à petit.
+
+## Un exemple : 250 000 € à 3 % sur 25 ans
+
+Prenons un crédit **fictif** de 250 000 € à 3 % sur 25 ans. La mensualité est de 1 185,53 € (pour un emprunt de 200 000 € aux mêmes conditions, elle serait d'environ 948 €).
+
+Au premier mois, la banque calcule les intérêts sur la totalité du capital. Le taux annuel de 3 % est divisé par 12 pour obtenir un taux mensuel :
+
+```text
+Intérêts du mois 1  = 250 000 € × 3 % ÷ 12  = 625,00 €
+Capital remboursé   = 1 185,53 € − 625,00 €  = 560,53 €
+```
+
+Plus de la moitié de ta première mensualité part donc en intérêts. Voici comment la répartition évolue ensuite.
 
 | Mois | Intérêts | Capital remboursé | Capital restant dû après |
 | ---: | ---: | ---: | ---: |
@@ -34,29 +51,39 @@ Ta mensualité est constante, mais **sa composition change** chaque mois. Les in
 | 120 (10 ans) | ≈ 430 € | ≈ 755 € | ≈ 171 700 € |
 | 300 (fin) | ≈ 3 € | ≈ 1 183 € | 0 € |
 
-```text
-Mois 1 :  intérêts = 250 000 × 3 % ÷ 12 = 625 €   ;  capital = 1 185,53 − 625 = 560,53 €
-```
+Au deuxième mois, les intérêts ont baissé de 1,40 €, parce que le capital restant dû a un peu diminué. Au 120e mois, après dix ans, l'équilibre a basculé : la part de capital dépasse nettement celle des intérêts. Au dernier mois, presque tout est du capital.
 
-Après 10 ans, tu as payé 142 000 € de mensualités mais remboursé seulement 78 000 € de capital.
+Le chiffre qui surprend le plus : après 10 ans, tu as payé environ 142 000 € de mensualités, mais tu n'as remboursé que 78 000 € de capital. Le reste, ce sont des intérêts. Tu peux voir un vrai tableau annoté dans le document [Lire un tableau d'amortissement](../../documents/tableau-amortissement/), ou faire le calcul avec tes chiffres dans le [simulateur de crédit](../../outils/credit/).
 
-## Pourquoi c'est utile
+## Pourquoi c'est utile de le savoir
 
-- **Revendre tôt** coûte cher : après 5 ans, le capital restant dû est encore proche du montant initial, alors que tu as payé frais d'achat et intérêts.
-- **Rembourser par anticipation** est le plus rentable **au début** (c'est là que les intérêts sont les plus lourds). En Belgique, tu peux rembourser anticipativement moyennant une **indemnité de remploi** de maximum 3 mois d'intérêts sur le montant remboursé.
-- **Raccourcir** plutôt que réduire la mensualité, lors d'un remboursement anticipé, économise le plus d'intérêts.
+Ce mécanisme a trois conséquences très concrètes.
 
-## Les variantes
+- **Revendre tôt coûte cher.** Après 5 ans, ton capital restant dû est encore proche du montant emprunté au départ. Or tu as déjà payé les frais d'achat et beaucoup d'intérêts. Si tu revends à ce moment-là, le prix de vente sert surtout à rembourser la banque.
+- **Rembourser par anticipation rapporte le plus au début.** C'est là que les intérêts sont les plus lourds, donc chaque euro de capital remboursé en avance t'en fait économiser davantage. En Belgique, tu peux rembourser ton crédit hypothécaire avant terme, moyennant une **indemnité de remploi** (une pénalité qui compense la banque) de maximum 3 mois d'intérêts sur le montant remboursé.
+- **Raccourcir vaut mieux que réduire.** Quand tu rembourses une partie en avance, tu peux choisir de garder la même mensualité sur une durée plus courte, ou de baisser la mensualité sur la même durée. Raccourcir la durée est ce qui économise le plus d'intérêts.
+
+## Les autres façons de rembourser
+
+La mensualité constante est la norme, mais ce n'est pas la seule formule possible.
 
 | Formule | Principe |
 | --- | --- |
-| **Mensualités constantes** (la norme) | Même montant chaque mois |
-| **Amortissement constant** | Même part de capital chaque mois : mensualités dégressives, moins d'intérêts au total, mais début plus lourd |
-| **Progressif / dégressif** | Mensualités qui montent ou descendent selon un pourcentage prévu |
-| **Terme fixe (bullet)** | Intérêts seulement, capital en une fois à la fin (rare, adossé à une assurance ou un placement) |
+| **Mensualités constantes** (la norme) | Le même montant chaque mois, avec la répartition qui évolue comme dans l'exemple. |
+| **Amortissement constant** | La même part de capital chaque mois. Les mensualités sont donc dégressives : le début est plus lourd, mais tu paies moins d'intérêts au total. |
+| **Progressif ou dégressif** | Les mensualités montent ou descendent chaque année selon un pourcentage prévu au contrat. |
+| **Terme fixe (bullet)** | Tu ne paies que les intérêts, puis tout le capital en une fois à la fin. C'est rare, et adossé à une assurance ou un placement qui doit fournir ce capital. |
 
 ## Ce que ça change pour toi
 
-- Demande le **tableau d'amortissement** avec l'offre : il montre le capital restant dû à chaque date, utile pour un rachat ou une vente.
-- Chaque mensualité de capital remboursé augmente ton [[patrimoine-net]] d'autant : c'est de l'épargne forcée.
-- Le même mot « amortissement » a un sens différent en comptabilité : voir [[amortissement-comptable]].
+**Demande le tableau d'amortissement avec l'offre.** Il montre ton capital restant dû à chaque date. C'est le chiffre dont tu auras besoin si tu veux un jour racheter ton crédit, le renégocier ou vendre ton bien.
+
+**Vois la part de capital comme de l'épargne.** Chaque euro de capital remboursé augmente ton [[patrimoine-net]] d'autant : la dette baisse, le bien reste. C'est une forme d'épargne forcée, qui grossit au fil des années.
+
+## À ne pas confondre
+
+L'**amortissement d'un crédit**, c'est son remboursement progressif. En comptabilité, le même mot désigne autre chose : la façon dont une entreprise étale le coût d'un achat (une machine, un ordinateur) sur plusieurs années, à mesure qu'il s'use. → [[amortissement-comptable]]
+
+## Nature des chiffres de cette page
+
+🔴 L'indemnité de remploi de maximum 3 mois d'intérêts est une règle légale du crédit hypothécaire belge. 🔵 Le crédit de 250 000 € à 3 % sur 25 ans, sa mensualité de 1 185,53 €, son tableau et les 948 € pour 200 000 € sont un exemple fictif.

@@ -64,7 +64,6 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 
 ## Prochaines étapes
 
-- **Réécrire les fiches au format article**, chapitre par chapitre (modèle : `avertissement-extrait-de-role`). Commencer par les chapitres Impôts et Travail, les plus consultés.
 - Les autres mises en situation **n'ont pas à être raccourcies**. À faire au cas par cas seulement : vérifier que chaque passage sert l'histoire, et créer ou enrichir les fiches quand une situation est la seule à porter une notion (comme c'était le cas pour la société).
 - **Quiz de chapitre** pour Travail et salaire, puis Les impôts (8 à 12 questions chacun).
 - Écrire de vraies présentations de chapitre plus riches si nécessaire (aujourd'hui un paragraphe chacun) et vérifier l'ordre de lecture de chaque chapitre.
@@ -78,6 +77,21 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 4. Idée en attente : décortiquer une vraie fiche de paie anonymisée de Lolo.
 5. Idée en attente : page « carte des connaissances » (graphe des prérequis), page par niveau, page par tag.
 6. Idée : script `npm run check:links` à lancer depuis le Mac (le proxy de la session cloud bloque node fetch).
+
+## Points à vérifier (relevés lors de la réécriture du 2026-10-05, non corrigés faute de source)
+
+- **Primes wallonnes** : le régime « jusqu'au 30/09/2026 » est terminé ; montants à mettre à jour (primes-renovation, isolation-maison, chassis-vitrage, pompe-a-chaleur, ToolRenovation).
+- **TOB des ETF** (fiscalite-investissements) : 1,32 % / 0,12 % probablement inversés selon l'enregistrement en Belgique.
+- **Chèques-repas** : 10 € dans avantages-extralegaux, encore 8 € dans premier-emploi, premiere-fiche-de-paie, documents/contrat-de-travail.
+- **Fil rouge du salaire** : net de 3 500 € brut ≈ 2 340 € (salaire-net) vs ≈ 2 440 € (fiche-de-paie, revenu) ; 42 000 € tantôt brut annuel, tantôt rémunération imposable.
+- **Préavis** : colonne « démission » du tableau peut-être décalée d'une ligne (preavis-licenciement).
+- **Chômage** : conditions d'accès et allocations d'insertion après la réforme 2025-2026 (fiche déjà en relecture).
+- **Année du mariage** : imposition séparée l'année du mariage, à préciser dans statut-familial et annee-revenus-exercice.
+- **Succession** : Région compétente = domicile fiscal le plus long sur 5 ans (fiche) vs « dernier domicile » (situation deces-proche).
+- **Donations** : taux wallons pour les autres personnes, fourchette 3-27/30 % en ligne directe.
+- **Garantie locative Bruxelles** : 2 ou 3 mois pour la garantie bancaire et CPAS.
+- **Assurances** : suppléments d'honoraires en chambre commune, délai de continuation individuelle hospitalisation, droit à l'oubli, avantage fiscal protection juridique.
+- **Divers** : virement instantané désormais non facturable (UE 2025), plateforme ODR fermée (2025), tarif capacitaire flamand depuis 2023, retenue 30bis non applicable aux particuliers (choisir-entrepreneur), contrôle électrique à la vente (electricite-maison), seuil coût employeur « 1,5 à 2 fois le net » (cout-employeur).
 
 ## Pièges connus
 
@@ -96,6 +110,7 @@ Ce fichier garde le contexte du projet d'une session à l'autre et d'un PC à l'
 - EPUB : `export.mjs` nettoie le HTML (blocs expressive-code → `<pre>`, `align` → style, liens internes → fichiers du livre). Valider avec `epubcheck` (pip) après un changement de rendu.
 
 ## Journal des sessions
+- **2026-10-05 (fin)** — Les 135 autres fiches réécrites au format article (agents par chapitre) ; points douteux relevés ci-dessus ; légende des chiffres en note discrète avec lien vers l'accueil.
 - **2026-10-05 (suite)** — Fiche AER réécrite au format article (et délai de réclamation corrigé : un an, pas six mois) ; règle d'écriture des fiches dans `CLAUDE.md`.
 - **2026-10-05** — Mission « un manuel, pas une formation » : analyse du site, chapitres, retrait de l'effet formation, réécriture de `creer-societe` + 4 fiches, quiz de chapitre, livres par chapitre, mise à jour VVPR-bis / réserve de liquidation.
 - **2026-10-02 (tard)** — Mission « Maison & travaux » (scope complet) : 22 fiches, 2 récits, 3 documents, 2 outils, carte /maison/, intégration accueil/système/fiches liées. Build vérifié (175 pages, captures OK, pas d'erreur console). Non commité : `npm run deploy` à lancer par Lolo.
